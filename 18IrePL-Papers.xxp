@@ -95,7 +95,6 @@ company:
             PKP
         short_name_text_text: PKP
         short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 3]
-        short_name_text_size: 10
         name_stripe_box_suppress: True
         token_2_text_text: $50
         token_3_text_text: $50
@@ -119,7 +118,6 @@ company:
             KKG
         short_name_text_text: KKG
         short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 3]
-        short_name_text_size: 10
         short_name_text_fill: ${colour/xxp/WHITE}
         share_pct_text_fill: ${colour/xxp/WHITE}
         name_stripe_box_suppress: True
@@ -145,7 +143,6 @@ company:
             TKG
         short_name_text_text: TKG
         short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 3]
-        short_name_text_size: 10
         name_stripe_box_suppress: True
         token_2_text_text: $50
         token_3_text_text: $50
@@ -169,7 +166,6 @@ company:
             CMK
         short_name_text_text: CMK
         short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 3]
-        short_name_text_size: 10
         short_name_text_fill: ${colour/xxp/WHITE}
         share_pct_text_fill: ${colour/xxp/WHITE}
         name_stripe_box_suppress: True
@@ -195,7 +191,6 @@ company:
             MW
         short_name_text_text: MW
         short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 3]
-        short_name_text_size: 10
         name_stripe_box_suppress: True
         token_2_text_text: $50
         token_3_text_text: $50
@@ -219,7 +214,6 @@ company:
             LHS
         short_name_text_text: LHS
         short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 3]
-        short_name_text_size: 10
         name_stripe_box_suppress: True
         token_2_text_text: $50
         token_3_text_text: $50
@@ -244,8 +238,8 @@ company:
         long_name_text_text: |
             Minor 1
         short_name_text_text: "1"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -285,8 +279,8 @@ company:
         long_name_text_text: |
             Minor 1
         short_name_text_text: "1"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -312,8 +306,8 @@ company:
         long_name_text_text: |
             Minor 2
         short_name_text_text: "2"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -351,8 +345,8 @@ company:
         long_name_text_text: |
             Minor 2
         short_name_text_text: "2"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -378,8 +372,8 @@ company:
         long_name_text_text: |
             Minor 3
         short_name_text_text: "3"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -419,8 +413,8 @@ company:
         long_name_text_text: |
             Minor 3
         short_name_text_text: "3"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -446,8 +440,8 @@ company:
         long_name_text_text: |
             Minor 4
         short_name_text_text: "4"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -487,8 +481,8 @@ company:
         long_name_text_text: |
             Minor 4
         short_name_text_text: "4"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -514,8 +508,8 @@ company:
         long_name_text_text: |
             Minor 5
         short_name_text_text: "5"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -555,8 +549,8 @@ company:
         long_name_text_text: |
             Minor 5
         short_name_text_text: "5"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -582,8 +576,8 @@ company:
         long_name_text_text: |
             Minor 6
         short_name_text_text: "6"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -623,8 +617,8 @@ company:
         long_name_text_text: |
             Minor 6
         short_name_text_text: "6"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -650,8 +644,8 @@ company:
         long_name_text_text: |
             Minor 7
         short_name_text_text: "7"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -691,8 +685,8 @@ company:
         long_name_text_text: |
             Minor 7
         short_name_text_text: "7"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -718,8 +712,8 @@ company:
         long_name_text_text: |
             Minor 8
         short_name_text_text: "8"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -759,8 +753,8 @@ company:
         long_name_text_text: |
             Minor 8
         short_name_text_text: "8"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -786,8 +780,8 @@ company:
         long_name_text_text: |
             Minor 9
         short_name_text_text: "9"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -827,8 +821,8 @@ company:
         long_name_text_text: |
             Minor 9
         short_name_text_text: "9"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -854,8 +848,8 @@ company:
         long_name_text_text: |
             Minor 10
         short_name_text_text: "10"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -895,8 +889,8 @@ company:
         long_name_text_text: |
             Minor 10
         short_name_text_text: "10"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -922,8 +916,8 @@ company:
         long_name_text_text: |
             Minor 11
         short_name_text_text: "11"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -963,8 +957,8 @@ company:
         long_name_text_text: |
             Minor 11
         short_name_text_text: "11"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -990,8 +984,8 @@ company:
         long_name_text_text: |
             Minor 12
         short_name_text_text: "12"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -1031,8 +1025,8 @@ company:
         long_name_text_text: |
             Minor 12
         short_name_text_text: "12"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -1058,8 +1052,8 @@ company:
         long_name_text_text: |
             Minor 13
         short_name_text_text: "13"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -1099,8 +1093,8 @@ company:
         long_name_text_text: |
             Minor 13
         short_name_text_text: "13"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -1126,8 +1120,8 @@ company:
         long_name_text_text: |
             Minor 14
         short_name_text_text: "14"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -1167,8 +1161,8 @@ company:
         long_name_text_text: |
             Minor 14
         short_name_text_text: "14"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -1194,8 +1188,8 @@ company:
         long_name_text_text: |
             Minor A
         short_name_text_text: "A"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -1238,8 +1232,8 @@ company:
         long_name_text_text: |
             Minor A
         short_name_text_text: "A"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -1265,8 +1259,8 @@ company:
         long_name_text_text: |
             Minor B
         short_name_text_text: "B"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -1311,8 +1305,8 @@ company:
         long_name_text_text: |
             Minor B
         short_name_text_text: "B"
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
-        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
+        short_name_text_size: 19
         name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/white}
         _minor_fill: ${colour/wikipedia/white}
@@ -1429,9 +1423,9 @@ marker:
       token:
         _:
           short_name_text_text: "1"
-          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
           short_name_text_fill: ${colour/wikipedia/white}
-          short_name_text_size: 22
+          short_name_text_size: 19
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/black}
           _minor_fill: ${colour/wikipedia/black}
@@ -1441,9 +1435,9 @@ marker:
       token:
         _:
           short_name_text_text: "2"
-          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
           short_name_text_fill: ${colour/wikipedia/white}
-          short_name_text_size: 22
+          short_name_text_size: 19
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/black}
           _minor_fill: ${colour/wikipedia/black}
@@ -1453,9 +1447,9 @@ marker:
       token:
         _:
           short_name_text_text: "3"
-          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
           short_name_text_fill: ${colour/wikipedia/white}
-          short_name_text_size: 22
+          short_name_text_size: 19
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/black}
           _minor_fill: ${colour/wikipedia/black}
@@ -1465,9 +1459,9 @@ marker:
       token:
         _:
           short_name_text_text: "4"
-          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
           short_name_text_fill: ${colour/wikipedia/white}
-          short_name_text_size: 22
+          short_name_text_size: 19
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/black}
           _minor_fill: ${colour/wikipedia/black}
@@ -1477,9 +1471,9 @@ marker:
       token:
         _:
           short_name_text_text: "5"
-          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
           short_name_text_fill: ${colour/wikipedia/white}
-          short_name_text_size: 22
+          short_name_text_size: 19
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/black}
           _minor_fill: ${colour/wikipedia/black}
@@ -1489,9 +1483,9 @@ marker:
       token:
         _:
           short_name_text_text: "6"
-          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
           short_name_text_fill: ${colour/wikipedia/white}
-          short_name_text_size: 22
+          short_name_text_size: 19
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/black}
           _minor_fill: ${colour/wikipedia/black}
@@ -1501,9 +1495,9 @@ marker:
       token:
         _:
           short_name_text_text: "7"
-          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
           short_name_text_fill: ${colour/wikipedia/white}
-          short_name_text_size: 22
+          short_name_text_size: 19
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/black}
           _minor_fill: ${colour/wikipedia/black}
@@ -1513,9 +1507,9 @@ marker:
       token:
         _:
           short_name_text_text: "8"
-          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
           short_name_text_fill: ${colour/wikipedia/white}
-          short_name_text_size: 22
+          short_name_text_size: 19
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/black}
           _minor_fill: ${colour/wikipedia/black}
@@ -1525,9 +1519,9 @@ marker:
       token:
         _:
           short_name_text_text: "9"
-          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
           short_name_text_fill: ${colour/wikipedia/white}
-          short_name_text_size: 22
+          short_name_text_size: 19
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/black}
           _minor_fill: ${colour/wikipedia/black}
@@ -1537,9 +1531,9 @@ marker:
       token:
         _:
           short_name_text_text: "10"
-          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
           short_name_text_fill: ${colour/wikipedia/white}
-          short_name_text_size: 22
+          short_name_text_size: 19
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/black}
           _minor_fill: ${colour/wikipedia/black}
@@ -1549,9 +1543,9 @@ marker:
       token:
         _:
           short_name_text_text: "11"
-          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
           short_name_text_fill: ${colour/wikipedia/white}
-          short_name_text_size: 22
+          short_name_text_size: 19
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/black}
           _minor_fill: ${colour/wikipedia/black}
@@ -1561,9 +1555,9 @@ marker:
       token:
         _:
           short_name_text_text: "12"
-          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
           short_name_text_fill: ${colour/wikipedia/white}
-          short_name_text_size: 22
+          short_name_text_size: 19
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/black}
           _minor_fill: ${colour/wikipedia/black}
@@ -1573,9 +1567,9 @@ marker:
       token:
         _:
           short_name_text_text: "13"
-          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
           short_name_text_fill: ${colour/wikipedia/white}
-          short_name_text_size: 22
+          short_name_text_size: 19
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/black}
           _minor_fill: ${colour/wikipedia/black}
@@ -1585,9 +1579,9 @@ marker:
       token:
         _:
           short_name_text_text: "14"
-          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
           short_name_text_fill: ${colour/wikipedia/white}
-          short_name_text_size: 22
+          short_name_text_size: 19
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/black}
           _minor_fill: ${colour/wikipedia/black}
@@ -1597,9 +1591,9 @@ marker:
       token:
         _:
           short_name_text_text: "A"
-          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
           short_name_text_fill: ${colour/wikipedia/white}
-          short_name_text_size: 22
+          short_name_text_size: 19
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/black}
           _minor_fill: ${colour/wikipedia/black}
@@ -1609,9 +1603,9 @@ marker:
       token:
         _:
           short_name_text_text: "B"
-          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1]
           short_name_text_fill: ${colour/wikipedia/white}
-          short_name_text_size: 22
+          short_name_text_size: 19
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/black}
           _minor_fill: ${colour/wikipedia/black}
@@ -1621,9 +1615,9 @@ marker:
       token:
         _:
           short_name_text_text: "+10"
-          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 2]
           short_name_text_fill: ${colour/wikipedia/black}
-          short_name_text_size: 15
+          short_name_text_size: 13
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/white}
           _minor_fill: ${colour/wikipedia/white}
@@ -1633,9 +1627,9 @@ marker:
       token:
         _:
           short_name_text_text: "+20"
-          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 2]
           short_name_text_fill: ${colour/wikipedia/black}
-          short_name_text_size: 15
+          short_name_text_size: 13
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/white}
           _minor_fill: ${colour/wikipedia/white}
@@ -1645,9 +1639,9 @@ marker:
       token:
         _:
           short_name_text_text: "50"
-          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1.6]
           short_name_text_fill: ${colour/wikipedia/black}
-          short_name_text_size: 17
+          short_name_text_size: 15
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/white}
           _minor_fill: ${colour/wikipedia/white}
