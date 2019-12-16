@@ -118,6 +118,10 @@ TEMPLATE_stripey_embed:
   - short_name_text
   - outline_circle
 
+token_interior_box:
+  x: 36
+  y: 36
+
 ul_quarter_box:
   x: $[${token_interior_box/x} / 2.0]
   y: $[${token_interior_box/y} / 2]
@@ -180,26 +184,26 @@ vertical stripe_box:
 outer_circle:
   x: $[${token_interior_box/x} / 2]
   y: $[${token_interior_box/y} / 2]
-  radius: 24
+  radius: 20
   fill: ${_/_major_fill}
 
 middle_circle:
   x: $[${token_interior_box/x} / 2]
   y: $[${token_interior_box/y} / 2]
-  radius: 13
+  radius: 11
   fill: ${_/_minor_fill}
 
 inner_circle:
   x: $[${token_interior_box/x} / 2]
   y: $[${token_interior_box/y} / 2]
-  radius: 8
+  radius: 7
   fill: ${_/_related_fill}
 
 middle_box:
-  x: 26
-  y: 26
-  x_inset: $[${token_interior_box/x} / 2 - 13]
-  y_inset: $[${token_interior_box/y} / 2 - 13]
+  x: 20
+  y: 20
+  x_inset: $[${token_interior_box/x} / 2 - 10]
+  y_inset: $[${token_interior_box/y} / 2 - 10]
   fill: ${_/_major_fill}
 
 inner_box:
