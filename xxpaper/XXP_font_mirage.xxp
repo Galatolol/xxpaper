@@ -1,0 +1,11 @@
+xxpaper:
+  typefaces:
+    - Mirage.ttf
+
+DEFAULT:
+  typeface: "Mirage"
+  typeface_bold: ${DEFAULT/typeface}
+  typeface_bold_italic: ${DEFAULT/typeface}
+  typeface_bold_oblique: ${DEFAULT/typeface}
+  typeface_italic: ${DEFAULT/typeface}
+  typeface_oblique: ${DEFAULT/typeface}

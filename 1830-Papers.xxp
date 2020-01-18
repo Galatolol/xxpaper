@@ -1,8 +1,28 @@
 company:
-
   _:
     token_1_text_text: Free
     token_2_text_text: $40
+  charter:
+    _:
+      #long_name_text_size: 15
+      token_1_text_y: 202
+      token_5_circle_y: 10
+      token_5_text_y: -20
+      token_1_text_size: 12
+      token_2_text_size: 12
+      token_3_text_size: 12
+      token_4_text_size: 12
+      comment_text_text: ""
+  share:
+    _:
+      type_bar_box_fill: ${colour/wikipedia/golden_yellow}
+      #long_name_text_size: 3
+      type_bar_box_y: 13
+      side_bar_lsplit_box_suppress: True
+      side_bar_rsplit_box_suppress: True
+  token:
+    _:
+      short_name_text_size: 8
 
   index:
 
@@ -10,20 +30,17 @@ company:
       _:
         long_name_text_text: |
             Boston & Maine
-        short_name_text_text: B&M
-        token_1_text_text: Free
-        token_2_text_text: $40
-        _major_fill: ${colour/wikipedia/ultramarine}
+        short_name_text_text: BM
+        _major_fill: ${colour/hollasch/brown_ochre}
+        _minor_fill: ${_\_major_fill}
+        _related_fill: ${colour/hollasch/brick}
         name_stripe_box_suppress: True
-        comment_text_text: |
-            "Banks & Money"
-        _related_fill: ${colour/wikipedia/han_blue}
-        _share_pct_text_fill_x: ${colour/xxp/WHITE}
       token:
         _:
-          _major_fill: ${colour/wikipedia/ultramarine}
-          _minor_fill: ${colour/wikipedia/ultramarine}
-          short_name_text_fill: $[black_or_white (${colour/wikipedia/ultramarine})]
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 13
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -2
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
         index: $[index_of (5)]
@@ -31,63 +48,57 @@ company:
     B&O:
       _:
         long_name_text_text: |
-            Baltimore & Ohio
-        short_name_text_text: B&O
-        token_1_text_text: Free
-        token_2_text_text: $40
+            Baltimore
+            & Ohio
+        short_name_text_text: BO
         token_3_text_text: $100
-        _major_fill: ${colour/wikipedia/banana_yellow}
-        _minor_fill: ${colour/hollasch/blue}
-        comment_text_text: |
-            "Backward & Obsolete"
+        _major_fill: ${colour/wikipedia/blue_ryb}
+        _major_fill_2: ${colour/wikipedia/banana_yellow}
+        _minor_fill_2: ${_/_major_fill_2}
+        _minor_fill: ${_/_major_fill}
+        _minor_fill_2: ${_/_major_fill_2}
         _related_fill: ${colour/hollasch/steel_blue}
-        _share_pct_text_fill_x: ${colour/xxp/WHITE}
       token:
-        _:
-          _major_fill_1: ${colour/wikipedia/banana_yellow}
-          _major_fill_2: ${colour/hollasch/blue}
-          _minor_fill_1: ${colour/hollasch/blue}
-          _minor_fill_2: ${colour/wikipedia/banana_yellow}
-        ELEMENTS: ${TEMPLATE_chequer/.}
-        EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
+        ELEMENTS: ${TEMPLATE_stripey/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
         index: $[index_of (6)]
 
     CPR:
       _:
         long_name_text_text: |
-            Canadian Pacific
+            Canada Pacific
             Railroad
         short_name_text_text: CPR
-        token_1_text_text: Free
-        token_2_text_text: $40
         token_3_text_text: $100
         token_4_text_text: $100
-        _major_fill: ${colour/hollasch/brown_ochre}
-        _minor_fill: ${colour/hollasch/brown_ochre}
-        comment_text_text: |
-            "Can't Please"
-        _related_fill: ${colour/hollasch/brick}
-        _share_pct_text_fill_x: ${colour/xxp/WHITE}
+        _major_fill: ${colour/x11/red}
+        _minor_fill: ${_/_major_fill}
+        #_minor_fill: ${colour/wikipedia/coral_pink}
+        _related_fill: ${colour/hollasch/tomato}
       token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        vertical stripe_box:
+          fill: ${colour/xxp/BLACK}
         index: $[index_of (7)]
 
     C&O:
       _:
         long_name_text_text: |
-            Chesapeake & Ohio
-            Railroad
-        short_name_text_text: C&O
-        token_1_text_text: Free
-        token_2_text_text: $40
+            Chesapeake 
+            & Ohio
+        short_name_text_text: CO
         token_3_text_text: $100
-        _major_fill: ${colour/hollasch/cerulean}
-        name_stripe_box_suppress: True
-        comment_text_text: |
-            "Chessie & the Orphan"
+        _major_fill: ${colour/wikipedia/light_sky_blue}
+        _minor_fill: ${_/_major_fill}
         _related_fill: ${colour/hollasch/powder_blue}
+        name_stripe_box_suppress: True
       token:
         _:
-          short_name_text_fill: $[black_or_white (${colour/wikipedia/ultramarine})]
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 13
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -2
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
         index: $[index_of (6)]
@@ -96,89 +107,106 @@ company:
       _:
         long_name_text_text: |
             Erie Railroad
-        short_name_text_text: ERIE
-        token_1_text_text: Free
-        token_2_text_text: $40
+        short_name_text_text: Erie
         token_3_text_text: $100
-        _major_fill: ${colour/x11/yellow}
-        _minor_fill: ${colour/x11/yellow}
-        comment_text_text: |
-            "The scarlet woman
-            of Wall Street"
-        _related_fill: ${colour/x11/darkgoldenrod1}
-      token:
-        index: $[index_of (6)]
-
-    NYNH&H:
-      _:
-        long_name_text_text: |
-            New York, New Haven
-            & Hartford Railway
-        short_name_text_text: NYH
-        token_1_text_text: Free
-        token_2_text_text: $40
-        _major_fill: ${colour/x11/sandybrown}
-        _major_fill_2: ${colour/x11/bisque}
-        _minor_fill_2: ${colour/x11/bisque}
+        _major_fill: ${colour/wikipedia/canary_yellow}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/wikipedia/icterine}
         name_stripe_box_suppress: True
-        comment_text_text: |
-            "Not Yet, No How & Hopeless"
-        _related_fill: ${colour/hollasch/tan}
-      share:
-        long_name_text:
-          size: 13
       token:
         _:
-          _major_fill: ${colour/x11/sandybrown}
-          _minor_fill: ${colour/x11/sandybrown}
-          short_name_text_fill: $[black_or_white (${colour/x11/sandybrown})]
-        ELEMENTS: ${TEMPLATE_stripey/.}
-        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 13
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -2
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of (7)]
+        #ELEMENTS: ${TEMPLATE_cross/.}
+        #EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        #vertical stripe_box:
+        #  fill: ${colour/xxp/BLACK}
+        index: "$[index_of (6)]"
+
+    NYNH:
+      _:
+        long_name_text_text: |
+            New York
+            New Haven
+        short_name_text_text: NYNH
+        _major_fill: ${colour/wikipedia/carrot_orange}
+        _minor_fill: ${colour/x11/orangered}
+        _related_fill: ${colour/wikipedia/pink_orange}
+        #name_stripe_box_suppress: True
+      token:
+        #_:
+        #  short_name_text_fill: $[black_or_white (${_/_major_fill})]
+        #  short_name_text_size: 9
+        #  short_name_text_x_inset: 0
+        #  short_name_text_y_inset: -1
+        #ELEMENTS: ${TEMPLATE_solid/.}
+        #EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
         index: $[index_of (5)]
 
     NYC:
       _:
         long_name_text_text: |
-            New York Central
-            Railroad
+            New York
+            Central
         short_name_text_text: NYC
-        token_1_text_text: Free
-        token_2_text_text: $100
         token_3_text_text: $100
         token_4_text_text: $100
         _major_fill: ${colour/xxp/BLACK}
-        _minor_fill: ${colour/xxp/BLACK}
-        comment_text_text: |
-            "No You Can't"
-        _related_fill: ${colour/x11/gray50}
+        _major_fill: ${colour/xxp/BLACK}
+        _minor_fill: ${colour/xxp/WHITE}
+        _related_fill: ${colour/x11/gray43}
         _share_pct_text_fill_x: ${colour/xxp/WHITE}
+      concession:
+        _:
+          closes_text_text: "Closes in brown phase or when power used"
+          long_name_text_text: |
+              Mohawk & Hudson
+              Railroad
+          power_text_text: |
+              Blocks: D18.
+              Owning player may exchange for
+              a share of NYC from bank or IPO.
+          cost_text_text: "Cost: $110"
+          bid_text_text: "Revenue: $20"
+          bid_text_x: 168
+          long_name_text_size: 11
+          long_name_text_x: 86
+          long_name_text_y: 78
+          bottom_bar_box_y: 13
+          closes_text_size: 7
+          power_text_size: 8
+          token_embed_x_inset: 130
+          token_embed_y_inset: 30
+          asset_interior_box_fill: ${colour/xxp/H_BROWN}
+        index: "$[index_of (1)]"
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
-        vertical stripe_box:
-          fill: ${colour/xxp/WHITE}
-        index: $[index_of (7)]
+        index: "$[index_of (7)]"
 
     PRR:
       _:
         long_name_text_text: |
-             Pennsylania
+             Pennsylvania
              Railroad
         short_name_text_text: PRR
-        token_1_text_text: Free
-        token_2_text_text: $40
         token_3_text_text: $100
         token_4_text_text: $100
-        _major_fill: ${colour/hollasch/cadmium_red_light}
+        _major_fill: ${colour/xxp/D_GREEN}
+        _minor_fill: ${colour/xxp/D_GREEN}
+        _related_fill: ${colour/hollasch/cinnabar_green}
         name_stripe_box_suppress: True
-        comment_text_text: |
-            "Poor Ragged Rascal"
-        _related_fill: ${colour/hollasch/tomato}
-        _share_pct_text_fill_x: ${colour/xxp/WHITE}
-        short_name_text_fill: $[black_or_white (${colour/hollasch/cadmium_red_light})]
       token:
         _:
-          short_name_text_fill: $[black_or_white (${colour/wikipedia/ultramarine})]
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 13
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -2
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
         index: $[index_of (7)]
@@ -199,18 +227,23 @@ marker:
         fill: ${colour/xxp/M_RED}
 
       middle_circle:
-        fill: ${colour/xxp/M_BLUE}
-
-      inner_circle:
         fill: ${colour/xxp/WHITE}
 
+      inner_circle:
+        fill: ${colour/xxp/M_BLUE}
+
 private:
+  _:
+    long_name_text_size: 11
+    money_bar_box_y: 13
+    closes_text_size: 7
+    power_text_size: 8
+    revenue_text_x: 168
 
   index:
 
     SV:
       _:
-        asset_interior_box_fill: ${colour/scale/yellow_0}
         long_name_text_text: |
             Schuykill Valley
             Railroad
@@ -220,7 +253,6 @@ private:
 
     C&StL:
       _:
-        asset_interior_box_fill: ${colour/scale/lime_0}
         long_name_text_text: |
             Champlain & St Larence
             Railway
@@ -234,7 +266,6 @@ private:
 
     D&H:
       _:
-        asset_interior_box_fill: ${colour/scale/azure_0}
         long_name_text_text: |
             Delaware & Hudson
             Railroad
@@ -248,21 +279,20 @@ private:
 
     M&H:
       _:
-        asset_interior_box_fill: ${colour/scale/magenta_0}
-        closes_text_text: "Closes: In BROWN phase or when power used"
+        closes_text_text: "Closes in brown phase or when power used"
         long_name_text_text: |
             Mohawk & Hudson
             Railroad
         power_text_text: |
             Blocks: D18.
-            Owning player may exchange for a share
-            of NYC from bank or IPO.
+            Owning player may exchange for
+            a share of NYC from bank or IPO.
+            
         cost_text_text: "Cost: $110"
         revenue_text_text: "Revenue: $20"
 
     C&A:
       _:
-        asset_interior_box_fill: ${colour/scale/red_1}
         long_name_text_text: |
             Camden & Amboy
             Railroad
@@ -274,15 +304,16 @@ private:
 
     B&O:
       _:
-        asset_interior_box_fill: ${colour/scale/green_1}
+        closes_text_text: "Closes in brown phase or when BO buys train"
+        closes_text_x_inset: -1
         long_name_text_text: |
             Baltimore & Ohio
             Railroad
         power_text_text: |
             Blocks: I13 & I15.
-            Purchaser receives B&O presidency and
-            sets par price. May not be sold to a
-            public company.
+            Purchaser receives BO presidency
+            and sets par price. 
+            May not be sold.
         cost_text_text: "Cost: $200"
         revenue_text_text: "Revenue: $30"
 

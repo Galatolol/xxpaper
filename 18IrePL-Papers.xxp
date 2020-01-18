@@ -1,10 +1,15 @@
 private:
+  long_name_text:
+    size: 11
+  money_bar_box: 
+    y: 13
+
   index:
     P1:
       _:
         long_name_text_text: |
             Wrocław–Oława Railway
-        cost_text_text: "Cost: $22"
+        cost_text_text: "Cost: $20"
         revenue_text_text: "Revenue: $5"
 
     P2:
@@ -13,9 +18,9 @@ private:
             Industrialisation of Łódź
         power_text_text: |
             Owning company may place
-            a +$22 marker in Łódź (F12).
-            Increases the value of the city
-            for all companies.
+            a +$20 marker in Łódź (F12).
+            Permanently increases the value
+            of the city for all companies.
         cost_text_text: "Cost: $40"
         revenue_text_text: "Revenue: $10"
 
@@ -25,9 +30,10 @@ private:
             Bridge Company
         power_text_text: |
             Owning company ignores
-            all terrain costs.
-        cost_text_text: "Cost: $60"
-        revenue_text_text: "Revenue: $15"
+            all terrain costs until
+            the end of the game.
+        cost_text_text: "Cost: $55"
+        revenue_text_text: "Revenue: $10"
 
     P4:
       _:
@@ -38,10 +44,10 @@ private:
             by a company, that company may
             immediately place a yellow track.
             Once per game, owning company
-            may pay $22 to place an additional
+            may pay $20 to place an additional
             yellow track.
-        cost_text_text: "Cost: $80"
-        revenue_text_text: "Revenue: $22"
+        cost_text_text: "Cost: $70"
+        revenue_text_text: "Revenue: $10"
 
     P5:
       _:
@@ -50,10 +56,11 @@ private:
         power_text_text: |
             Owning company may place a $50
             marker in any port (A3, C1, F2).
-            That company may use it as a
-            revenue center for its trains.
+            For the rest of the game, that
+            company may use it as a revenue
+            center for its trains.
         cost_text_text: "Cost: $100"
-        revenue_text_text: "Revenue: $25"
+        revenue_text_text: "Revenue: $15"
 
     P6:
       _:
@@ -68,16 +75,27 @@ private:
             Par price is the highest yellow par 
             value that is not more than half the bid.
         power_text_size: 8
-        cost_text_text: "Cost: $122"
+        cost_text_text: "Cost: $120"
         revenue_text_text: "Revenue: $0"
 
 company:
+  share:
+    _:
+      share_desc_text_typeface: ${DEFAULT/typeface_bold}
+      side_bar_lsplit_box_suppress: True
+      side_bar_rsplit_box_suppress: True
 
   charter:
     _:
       outside_box_radius: 0
       outside_box_width: 2
       title_box_width: 2
+      token_1_text_y: 202
+      token_5_circle_y: 10
+      token_5_text_y: -20
+      token_1_text_size: 12
+      token_2_text_szie: 12
+      token_3_text_size: 12
 
   minor_charter:
     _:
@@ -103,12 +121,13 @@ company:
         _related_fill: ${colour/hollasch/sky_blue_light}
       share:
         _:
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
           type_bar_box_suppress: True
           comment_text_text: "Polskie Koleje Państwowe"
           comment_text_y: 70
-
+      charter:
+        _:
+          label_text_size: 10
+          label_text_text: "Polskie Koleje Państwowe"
       token:
         index: $[index_of (5)]
 
@@ -133,7 +152,10 @@ company:
           type_bar_box_suppress: True
           comment_text_text: "Kolej Krakowsko-Górnośląska"
           comment_text_y: 70
-
+      charter:
+        _:
+          label_text_size: 10
+          label_text_text: "Kolej Krakowsko-Górnośląska"
       token:
         index: $[index_of (5)]
 
@@ -156,7 +178,10 @@ company:
           type_bar_box_suppress: True
           comment_text_text: "Towarzystwo Kolei Górnośląskiej"
           comment_text_y: 70
-
+      charter:
+        _:
+          label_text_size: 10
+          label_text_text: "Towarzystwo Kolei Górnośląskiej"
       token:
         index: $[index_of (5)]
 
@@ -181,7 +206,10 @@ company:
           type_bar_box_suppress: True
           comment_text_text: "Centralna Magistrala Kolejowa"
           comment_text_y: 70
-
+      charter:
+        _:
+          label_text_size: 10
+          label_text_text: "Centralna Magistrala Kolejowa"
       token:
         index: $[index_of (5)]
 
@@ -204,7 +232,10 @@ company:
           type_bar_box_suppress: True
           comment_text_text: "Magistrala Węglowa"
           comment_text_y: 70
-
+      charter:
+        _:
+          label_text_size: 10
+          label_text_text: "Magistrala Węglowa"
       token:
         index: $[index_of (5)]
 
@@ -227,7 +258,10 @@ company:
           type_bar_box_suppress: True
           comment_text_text: "Linia Hutniczo-Siarkowa"
           comment_text_y: 70
-
+      charter:
+        _:
+          label_text_size: 10
+          label_text_text: "Linia Hutniczo-Siarkowa"
       token:
         index: $[index_of (5)]
 
@@ -1339,7 +1373,7 @@ train:
         cost_text_text_p: $80
         #rusted_text_fill: ${colour/wikipedia/black}
       model:
-        index: $[index_of (7)]
+        index: $[index_of (6)]
 
     3T:
       _:
@@ -1353,7 +1387,7 @@ train:
         #cost_text_fill: ${colour/wikipedia/black}
         #rusted_text_fill: ${colour/wikipedia/black}
       model:
-        index: $[index_of (4)]
+        index: $[index_of (5)]
 
     4T:
       _:
@@ -1627,7 +1661,7 @@ marker:
       token:
         _:
           short_name_text_text: "+20"
-          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 2]
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
           short_name_text_fill: ${colour/wikipedia/black}
           short_name_text_size: 13
           name_stripe_box_suppress: True
@@ -1645,7 +1679,22 @@ marker:
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/white}
           _minor_fill: ${colour/wikipedia/white}
-        index: $[index_of (1)]
+        index: $[index_of (2)]
+
+    no_terrain_cost_marker:
+      token:
+        _:
+          short_name_text_text: |
+            No
+            terrain
+            cost
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
+          short_name_text_fill: ${colour/wikipedia/black}
+          short_name_text_size: 6
+          name_stripe_box_suppress: True
+          _major_fill: ${colour/wikipedia/white}
+          _minor_fill: ${colour/wikipedia/white}
+        index: $[index_of (2)]       
 
     round:
       token:
@@ -1660,5 +1709,3 @@ marker:
           _minor_fill_2: ${colour/wikipedia/red}
         ELEMENTS: ${TEMPLATE_chequer/.}
         index: $[index_of (1)]
-
-

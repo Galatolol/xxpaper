@@ -273,7 +273,8 @@ company:
         token_4_text_text: $100
         _major_fill: ${colour/xxp/M_RED}
         _major_fill_2: ${colour/xxp/L_YELLOW}
-        _minor_fill_2: ${colour/xxp/L_YELLOW}
+        _minor_fill: ${_/_major_fill}
+        _minor_fill_2: ${_/_major_fill_2}
         _related_fill: ${colour/x11/lightcoral}
         comment_text_text: |
             "Narrow & Wobbly"
@@ -323,7 +324,7 @@ company:
         token_2_text_text: $100
         token_3_text_text: $100
         _major_fill: ${colour/xxp/BLACK}
-        _minor_fill: ${colour/xxp/BLACK}
+        _minor_fill: ${colour/xxp/WHITE}
         comment_text_text: |
             "No You Can't"
         _related_fill: ${colour/x11/gray50}
@@ -331,8 +332,6 @@ company:
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
-        vertical stripe_box:
-          fill: ${colour/xxp/WHITE}
         index: "$[index_of (10)]"
 
     OS&H:

@@ -78,7 +78,7 @@ share_desc_text:
   y: 1.5
   h_center: 0
   v_center: 1
-  typeface: ${DEFAULT/typeface_bold}
+  typeface: ${DEFAULT/typeface_regular}
   size: 11
   suppress: True
 

@@ -1,0 +1,284 @@
+company:
+  charter:
+    _:
+      label_text_text: "Stations                              Loans"
+      comment_text_text: #May place extra yellow tile for $20 (in any order)
+      long_name_text_x: 130
+      type_text_text: 2 Share
+      type_circle_fill: ${colour/wikipedia/pink}
+      token_1_circle_suppress: False
+      token_1_circle_fill: ${colour/wikipedia/pink}
+      token_2_circle_suppress: False
+      token_2_circle_fill: ${colour/wikipedia/robin_egg_blue}
+      token_3_circle_suppress: False
+      token_3_circle_fill: ${colour/wikipedia/pale_aqua}
+      token_4_circle_suppress: False
+      token_4_circle_fill: ${colour/wikipedia/pale_aqua}
+      token_5_circle_suppress: False
+      token_6_circle_suppress: False
+      token_7_circle_suppress: False
+
+  share:
+    _:
+      share_desc_text_suppress: False
+      share_desc_text_text: 1 Share
+      share_desc_text_x: 55
+      share_num_text_text: 20/10%
+      share_num_text_x: 170
+      share_pct_text_text: 
+      side_bar_lsplit_box_suppress: True
+      side_bar_rsplit_box_suppress: True
+      comment_text_size: 11
+      comment_text_y: 24
+      type_bar_box_fill: ${colour/wikipedia/lemon}
+      #asset_interior_box_fill: ${colour/xxp/WHITE}
+    index:
+      "1":
+        share_pct_text:
+          text:
+        comment_text:
+          text: "President"
+        share_desc_text:
+          text: "2 Shares"
+        share_num_text:
+          text: "100/40/20%"
+      "2":
+      "3":
+      "4":
+      "5":
+      "6":
+      "7":
+      "8":
+      "9":
+      "10":
+      "11":
+      "12":
+      "13":
+      "14":
+      "15":
+      "16":
+      "17":
+      "18":
+      "19":
+      "20":
+        share_desc_text:
+          x: 66
+          text: Short Share
+          fill: ${colour/wikipedia/red} 
+        share_num_text:
+          text: -20/10%
+          fill: ${colour/wikipedia/red} 
+        asset_interior_box:
+          fill: ${colour/wikipedia/pink}
+      "21":
+        share_desc_text:
+          x: 66
+          text: Short Share
+          fill: ${colour/wikipedia/red} 
+        share_num_text:
+          text: -20/10%
+          fill: ${colour/wikipedia/red} 
+        asset_interior_box:
+          fill: ${colour/wikipedia/pink}
+      "22":
+        share_desc_text:
+          x: 66
+          text: Short Share
+          fill: ${colour/wikipedia/red} 
+        share_num_text:
+          text: -20/10%
+          fill: ${colour/wikipedia/red} 
+        asset_interior_box:
+          fill: ${colour/wikipedia/pink}
+      "23":
+        share_desc_text:
+          x: 66
+          text: Short Share
+          fill: ${colour/wikipedia/red} 
+        share_num_text:
+          text: -20/10%
+          fill: ${colour/wikipedia/red} 
+        asset_interior_box:
+          fill: ${colour/wikipedia/pink}
+      "24":
+        share_desc_text:
+          x: 66
+          text: Short Share
+          fill: ${colour/wikipedia/red} 
+        share_num_text:
+          text: -20/10%
+          fill: ${colour/wikipedia/red} 
+        asset_interior_box:
+          fill: ${colour/wikipedia/pink}
+      "25":
+        share_desc_text:
+          x: 66
+          text: Short Share
+          fill: ${colour/wikipedia/red} 
+        share_num_text:
+          text: -20/10%
+          fill: ${colour/wikipedia/red} 
+        asset_interior_box:
+          fill: ${colour/wikipedia/pink}
+      "26":
+        share_desc_text:
+          x: 66
+          text: Short Share
+          fill: ${colour/wikipedia/red} 
+        share_num_text:
+          text: -20/10%
+          fill: ${colour/wikipedia/red} 
+        asset_interior_box:
+          fill: ${colour/wikipedia/pink}
+      "27":
+        share_desc_text:
+          x: 66
+          text: Short Share
+          fill: ${colour/wikipedia/red} 
+        share_num_text:
+          text: -20/10%
+          fill: ${colour/wikipedia/red} 
+        asset_interior_box:
+          fill: ${colour/wikipedia/pink}
+      "28":
+        share_desc_text:
+          x: 66
+          text: Short Share
+          fill: ${colour/wikipedia/red} 
+        share_num_text:
+          text: -20/10%
+          fill: ${colour/wikipedia/red} 
+        asset_interior_box:
+          fill: ${colour/wikipedia/pink}
+      "29":
+        share_desc_text:
+          x: 66
+          text: Short Share
+          fill: ${colour/wikipedia/red} 
+        share_num_text:
+          text: -20/10%
+          fill: ${colour/wikipedia/red} 
+        asset_interior_box:
+          fill: ${colour/wikipedia/pink}
+
+
+  index:
+
+    # bright green
+    RR:
+      _:
+        long_name_text_text: |
+            Rutland Railroad
+        short_name_text_text: RR
+        _major_fill: ${colour/x11/limegreen}
+        _major_fill_2: ${colour/wikipedia/pastel_yellow}
+        _minor_fill_2: ${_/_major_fill_2}
+        _related_fill: ${colour/wikipedia/electric_green}
+      token:
+        ELEMENTS: ${TEMPLATE_stripey/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
+        index: $[index_of (1)]
+
+    # green
+    PRR:
+      _:
+        long_name_text_text: |
+            Pennsylvania
+            Railroad
+        short_name_text_text: PRR
+        _major_fill: ${colour/xxp/D_GREEN}
+        _minor_fill: ${colour/xxp/H_GREEN}
+        _related_fill: ${colour/wikipedia/forest_green_web}
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: $[index_of (1)]
+
+    # lime
+    PLE:
+      _:
+        long_name_text_text: |
+            Pittsburgh and
+            Lake Erie Railroad
+        short_name_text_text: PLE
+        _major_fill: ${colour/wikipedia/yellow_green}
+        _minor_fill: ${colour/wikipedia/lemon_lime}
+        _related_fill: ${colour/wikipedia/green_yellow}
+      token:
+        _:
+          outer_circle_fill: ${_/_major_fill}
+          middle_circle_fill: ${_/_minor_fill}
+          inner_circle_fill: ${_/_major_fill}
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: $[index_of (1)]    
+
+    # red
+    BAR:
+      _:
+        long_name_text_text: |
+            Boston and
+            Albany Railroad
+        short_name_text_text: BAR
+        _major_fill: ${colour/wikipedia/rosso_corsa}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/wikipedia/red_orange}
+      
+      token:
+        _:
+          outer_circle_fill: ${_/_major_fill}
+          middle_circle_fill: ${_/_related_fill}
+          inner_circle_fill: ${_/_major_fill}
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: $[index_of (1)]
+
+    # navy blue
+    UR:
+      _:
+        long_name_text_text: |
+            Union Railroad
+        short_name_text_text: UR
+        _major_fill: ${colour/wikipedia/international_klein_blue}
+        _minor_fill: ${colour/wikipedia/little_boy_blue}
+        _related_fill: ${colour/wikipedia/imperial_blue}
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: $[index_of (1)]      
+
+    # blue
+    BO:
+      _:
+        long_name_text_text: |
+            Baltimore
+            and Ohio
+        short_name_text_text: BO
+        _major_fill: ${colour/wikipedia/blue_ryb}
+        _major_fill_2: ${colour/wikipedia/banana_yellow}
+        _minor_fill_2: ${_/_major_fill_2}
+        _related_fill: ${colour/hollasch/steel_blue}
+      token:
+        ELEMENTS: ${TEMPLATE_stripey/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
+        index: $[index_of (1)]
+
+    # light blue
+    HR:
+      _:
+        long_name_text_text: |
+            Housatonic
+            Railroad
+        short_name_text_text: HR
+        _major_fill: ${colour/wikipedia/maya_blue}
+        _minor_fill: ${colour/wikipedia/light_cyan}
+        _related_fill: ${colour/wikipedia/light_sky_blue}
+      token:
+        _:
+          outer_circle_fill: ${_/_major_fill}
+          middle_circle_fill: ${_/_minor_fill}
+          inner_circle_fill: ${_/_major_fill}
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: $[index_of (1)]
+

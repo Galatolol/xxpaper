@@ -84,3 +84,4 @@ private:
     typeface: ${DEFAULT/typeface_bold_italic}
     size: 11
     fill: $[black_or_white (${money_bar_box/fill})]
+
