@@ -162,16 +162,16 @@ bottom_half_box:
 
 top_line_box:
   x: ${token_interior_box/x}
-  y: 4
+  y: 3
   x_inset: 0
-  y_inset: $[${token_interior_box/y} / 2.0 + 8]
+  y_inset: $[${token_interior_box/y} / 2.0 + 7]
   fill: ${_/_major_fill_2}
 
 bottom_line_box:
   x: ${token_interior_box/x}
-  y: 4
+  y: 3
   x_inset: 0
-  y_inset: $[${token_interior_box/y} / 2.0 - 12]
+  y_inset: $[${token_interior_box/y} / 2.0 - 10]
   fill: ${_/_minor_fill_2}
 
 vertical stripe_box:
