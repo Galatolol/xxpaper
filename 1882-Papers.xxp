@@ -1,9 +1,7 @@
 company:
-  _:
-    token_1_text_text: Free
-    token_2_text_text: $40
   charter:
     _:
+      #long_name_text_size: 15
       token_1_text_y: 202
       token_5_circle_y: 10
       token_5_text_y: -20
@@ -12,6 +10,7 @@ company:
       token_3_text_size: 12
       token_4_text_size: 12
       comment_text_text: ""
+      comment_text_typeface: ${DEFAULT/typeface_regular}
   share:
     _:
       type_bar_box_fill: ${colour/wikipedia/golden_yellow}
@@ -24,43 +23,30 @@ company:
       short_name_text_size: 8
 
   index:
-
-    B&M:
+    SC:
       _:
         long_name_text_text: |
-            Boston & Maine
-        short_name_text_text: BM
-        _major_fill: ${colour/hollasch/brown_ochre}
-        _minor_fill: ${_\_major_fill}
-        _related_fill: ${colour/hollasch/brick}
-        name_stripe_box_suppress: True
-      token:
-        _:
-          short_name_text_fill: $[black_or_white (${_/_major_fill})]
-          short_name_text_size: 12
-          short_name_text_x_inset: 0
-          short_name_text_y_inset: -1
-        ELEMENTS: ${TEMPLATE_solid/.}
-        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (5)]
-
-    B&O:
-      _:
-        long_name_text_text: |
-            Baltimore
-            & Ohio
-        short_name_text_text: BO
-        token_3_text_text: $100
+            Saskatchewan
+            Central
+        short_name_text_text: SC
+        token_1_text_text: Free
+        token_2_text_text: Neutral
+        token_2_circle_fill: ${colour/wikipedia/lavender_gray}
         _major_fill: ${colour/wikipedia/blue_ryb}
         _major_fill_2: ${colour/wikipedia/banana_yellow}
         _minor_fill_2: ${_/_major_fill_2}
         _minor_fill: ${_/_major_fill}
         _minor_fill_2: ${_/_major_fill_2}
         _related_fill: ${colour/hollasch/steel_blue}
+      charter:
+        _:
+          comment_text_text: |
+            Can be started only as the result of the conversion
+            of Saskatchewan Central private company.
       token:
         ELEMENTS: ${TEMPLATE_stripey/.}
         EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
-        index: $[index_of (6)]
+        index: $[index_of (4)]
 
     CPR:
       _:
@@ -68,6 +54,8 @@ company:
             Canadian Pacific
             Railroad
         short_name_text_text: CPR
+        token_1_text_text: Free
+        token_2_text_text: $40
         token_3_text_text: $100
         token_4_text_text: $100
         _major_fill: ${colour/x11/red}
@@ -79,33 +67,40 @@ company:
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
         index: $[index_of (7)]
 
-    C&O:
+    CN:
       _:
         long_name_text_text: |
-            Chesapeake 
-            & Ohio
-        short_name_text_text: CO
-        token_3_text_text: $100
-        _major_fill: ${colour/wikipedia/light_sky_blue}
-        _minor_fill: ${_/_major_fill}
-        _related_fill: ${colour/hollasch/powder_blue}
+            Canadian
+            National
+        short_name_text_text: CN
+        _major_fill: ${colour/wikipedia/red_pigment}
+        _minor_fill: ${colour/wikipedia/lavender_gray}
+        _related_fill: ${colour/wikipedia/lavender_gray}
         name_stripe_box_suppress: True
-      token:
+        middle_box_fill: ${colour/wikipedia/dark_gray}
+      charter:
         _:
-          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          comment_text_text: |
+            Cannot be started if no neutral station on the board.
+            Uses neutral stations as its own.
+      token:
+        ELEMENTS: ${TEMPLATE_boxes/.}
+        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
+        _:
           short_name_text_size: 12
           short_name_text_x_inset: 0
           short_name_text_y_inset: -1
-        ELEMENTS: ${TEMPLATE_solid/.}
-        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (6)]
+        index: $[index_of (3)]
 
-    ERIE:
+    QL:
       _:
         long_name_text_text: |
-            Erie Railroad
-        short_name_text_text: Erie
-        token_3_text_text: $100
+            Qu'appelle
+        short_name_text_text: QL
+        token_1_text_text: Free
+        token_2_text_text: $40  
+        token_3_text_text: Neutral
+        token_3_circle_fill: ${colour/wikipedia/lavender_gray}
         _major_fill: ${colour/wikipedia/canary_yellow}
         _minor_fill: ${_/_major_fill}
         _related_fill: ${colour/wikipedia/icterine}
@@ -123,16 +118,18 @@ company:
         #EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
         #vertical stripe_box:
         #  fill: ${colour/xxp/BLACK}
-        index: "$[index_of (6)]"
+        index: "$[index_of (5)]"
 
-    NYNH:
+    HB:
       _:
         long_name_text_text: |
-            New York
-            New Haven
-        short_name_text_text: NYNH
-        #_major_fill: ${colour/wikipedia/carrot_orange}
-        #_minor_fill: ${colour/x11/orangered}
+            Hudson Bay
+        short_name_text_text: HB
+        token_1_text_text: Free
+        token_2_text_text: $40  
+        token_3_text_text: $100
+        token_4_text_text: Neutral
+        token_4_circle_fill: ${colour/wikipedia/lavender_gray}
         _major_fill: ${colour/wikipedia/amber_sae_ece}
         _minor_fill: ${colour/x11/white}        
         _related_fill: ${colour/wikipedia/pink_orange}
@@ -142,58 +139,39 @@ company:
           inner_circle_radius: 9
         ELEMENTS: ${TEMPLATE_bullseye/.}
         EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
-        index: $[index_of (5)]
+        index: $[index_of (6)]
 
-    NYC:
+    GTP:
       _:
         long_name_text_text: |
-            New York
-            Central
-        short_name_text_text: NYC
+            Grand Trunk
+            Pacific
+        short_name_text_text: GTP
+        token_1_text_text: Free
+        token_2_text_text: $40  
         token_3_text_text: $100
-        token_4_text_text: $100
+        token_4_text_text: Neutral
+        token_4_circle_fill: ${colour/wikipedia/lavender_gray}
         _major_fill: ${colour/xxp/BLACK}
         _minor_fill: ${colour/xxp/WHITE}
         _related_fill: ${colour/x11/gray43}
         _share_pct_text_fill_x: ${colour/xxp/WHITE}
-      concession:
-        _:
-          closes_text_text: "Closes in brown phase or when power used"
-          long_name_text_text: |
-              Mohawk & Hudson
-              Railroad
-          power_text_text: |
-              Blocks D18.
-
-              Owning player may exchange for
-              a share of NYC from bank or IPO.
-          cost_text_text: "Cost: $110"
-          bid_text_text: "Revenue: $20"
-          bid_text_x: 168
-          long_name_text_size: 11
-          long_name_text_x: 86
-          long_name_text_y: 78
-          bottom_bar_box_y: 13
-          closes_text_size: 7
-          power_text_size: 8
-          token_embed_x_inset: 130
-          token_embed_y_inset: 30
-          asset_interior_box_fill: ${colour/scale/yellow_0}
-          #asset_interior_box_fill: ${colour/xxp/H_BROWN}
-        index: "$[index_of (1)]"
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
-        index: "$[index_of (7)]"
+        index: "$[index_of (6)]"
 
-    PRR:
+    CNor:
       _:
         long_name_text_text: |
-             Pennsylvania
-             Railroad
-        short_name_text_text: PRR
+             Canadian
+             Northern
+        short_name_text_text: CNor
+        token_1_text_text: Free
+        token_2_text_text: $40  
         token_3_text_text: $100
-        token_4_text_text: $100
+        token_4_text_text: Neutral
+        token_4_circle_fill: ${colour/wikipedia/lavender_gray}
         _major_fill: ${colour/xxp/D_GREEN}
         _minor_fill: ${colour/xxp/D_GREEN}
         _related_fill: ${colour/hollasch/cinnabar_green}
@@ -206,10 +184,11 @@ company:
           #short_name_text_y_inset: -2
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (7)]
+        index: $[index_of (6)]
 
 marker:
   index:
+
     round:
       token:
         ELEMENTS:
@@ -224,7 +203,23 @@ marker:
       middle_circle:
         fill: ${colour/galatolol/green}
       inner_circle:
-        fill: ${colour/galatolol/brown}
+        fill: ${colour/galatolol/brown}    
+
+    neutral:
+      token:
+        ELEMENTS:
+          - token_interior_box
+          - outer_circle
+          - middle_circle
+          - inner_circle
+
+        index: $[index_of (6)]
+      outer_circle:
+        fill: ${colour/wikipedia/lavender_gray}
+      middle_circle:
+        fill: ${colour/wikipedia/lavender_gray}
+      inner_circle:
+        fill: ${colour/wikipedia/lavender_gray}
 
 private:
   _:
@@ -238,70 +233,79 @@ private:
 
   index:
 
-    SV:
+    HB:
       _:
         long_name_text_text: |
-            Schuykill Valley
-            Railroad
-        power_text_text: "Blocks G15."
+            Hudson Bay
+        power_text_text: "Blocks K3."
         cost_text_text: "Cost: $20"
         revenue_text_text: "Revenue: $5"
 
-    C&StL:
+    SC:
       _:
+        closes_text_text: "Closed by 6 or when power used"
         long_name_text_text: |
-            Champlain & St Larence
-            Railroad
+            Saskatchewan Central
         power_text_text: |
-            Blocks: B20.
+            Blocks D8.
 
-            Owning company may place a free
-            track tile at B20 in addition to
-            its normal track tile lay.
-        cost_text_text: "Cost: $40"
+            May convert to Saskatchewan Central
+            public company.
+        cost_text_text: "Cost: $50"
         revenue_text_text: "Revenue: $10"
 
-    D&H:
+    NWR:
       _:
         long_name_text_text: |
-            Delaware & Hudson
-            Railroad
+            North-West Rebellion
         power_text_text: |
-            Blocks: F16.
-
-            Owning company may place a yellow
-            track tile, or a yellow tile and station
-            (must be both) at F16 for $120.
-        cost_text_text: "Cost: $70"
+            Move one of company's on-map 
+            stations to an NWR hex city and
+            optionally perform lay or upgrade 
+            action on the destination.								
+        cost_text_text: "Cost: $80"
         revenue_text_text: "Revenue: $15"
 
-    C&A:
+    TB:
       _:
         long_name_text_text: |
-            Camden & Amboy
-            Railroad
+            Trestle Bridge
         power_text_text: |
-            Blocks H18.
+            Blocks I7.
 
-            Comes with a 10% share of PRR.
-        cost_text_text: "Cost: $160"
-        revenue_text_text: "Revenue: $25"
+            Comes with a 10% share of one of:
+            CNor, CP, GTP, HB, QL.
+            Revenue of $10 from bank for each
+            newly established river crossing.
+        cost_text_text: "Cost: $140"
+        revenue_text_text: "Revenue: ?"
 
-    B&O:
+    CP:
       _:
-        closes_text_text: "Closed by 5 or when BO buys train"
-        closes_text_x_inset: -1
+        closes_text_text: "Closed by 5 or when CP buys train"
         long_name_text_text: |
-            Baltimore & Ohio
-            Railroad
+            Canadian Pacific
         power_text_text: |
-            Blocks I13 and I15.
-
-            Comes with the presidency of BO.
+            Comes with the presidency of CPR.
             
             Cannot be sold to a public company.
-        cost_text_text: "Cost: $200"
-        revenue_text_text: "Revenue: $30"
+        cost_text_text: "Cost: $180"
+        revenue_text_text: "Revenue: $25"
+
+    NWR_card:
+      _:
+        close_bar_box_suppress: True
+        money_bar_box_suppress: True
+        long_name_text_text: |
+            North-West Rebellion
+        power_text_text: |
+            When revealed, remove all
+            yellow tiles from NWR-marked hexes. 
+            Stations remain.
+        closes_text_text: ""
+        cost_text_text: ""
+        revenue_text_text: ""
+        asset_interior_box_fill: ${colour/wikipedia/black}
 
 train:
   index:
@@ -323,7 +327,14 @@ train:
         long_name_text_text: "3"
         cost_text_text_p: $180
       model:
-        index: $[index_of (5)]
+        index:
+          "1":
+            top_note_text:
+              text: Additional
+          "2":
+          "3":
+          "4":
+          "5":
 
     4T:
       _:
@@ -334,7 +345,14 @@ train:
         cost_text_text_p: $300
         note_text_text: "To D: $800"
       model:
-        index: $[index_of (4)]
+        index:
+          "1":
+            top_note_text:
+              text: |
+                Additional
+          "2":
+          "3":
+          "4":
 
     5T:
       _:
@@ -345,7 +363,13 @@ train:
         rusted_text_text: Permanent
         note_text_text: "To D: $800"
       model:
-        index: $[index_of (3)]
+        index:
+          "1":
+            top_note_text:
+              text: |
+                Additional
+          "2":
+          "3":
 
     6T:
       _:
@@ -360,7 +384,7 @@ train:
           "1":
             top_note_text:
               text: |
-                Optional
+                Additional
           "2":
           "3":
 

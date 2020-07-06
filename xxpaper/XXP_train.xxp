@@ -10,6 +10,7 @@ train:
       - asset_interior_box
       - long_name_text
       - cost_text
+      - top_note_text
       - note_text
       - rust_bar_box
       - rusted_text
@@ -41,6 +42,16 @@ train:
     x: 50
     y: 70
     text: "Cost: ${_/cost_text_text_p}"
+
+  top_note_text:
+    fill: $[black_or_white (${asset_interior_box/fill})]
+    suppress: False
+    typeface: ${DEFAULT/typeface_italic}
+    size: 10
+    h_center: 0
+    v_center: -1
+    x: 50
+    y: 160
 
   note_text:
     fill: $[black_or_white (${asset_interior_box/fill})]

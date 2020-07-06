@@ -1,0 +1,1085 @@
+private:
+  index:
+    P1:
+      _:
+        long_name_text_text: |
+            Wrocław–Oława Railway
+        cost_text_text: "Cost: $22"
+        revenue_text_text: "Revenue: $5"
+
+
+
+company:
+
+  charter:
+    _:
+      label_text_text: ""
+      comment_text_typeface: ${DEFAULT/typeface}
+      comment_text_size: 12
+      token_1_circle_y: 255
+      token_1_text_y: 227
+      token_5_circle_y: 60
+      token_5_text_y: 32
+      token_1_text_size: 10
+      token_2_text_size: 10
+      comment_text_size: 10
+
+  index:
+    SFTN:
+      _:
+        long_name_text_text: |
+            Strada di Ferro 
+            da Torino a Novara
+        short_name_text_text: SFTN
+        token_1_text_text: Torino
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL
+        token_2_circle_fill: ${colour/hollasch/grey}
+        token_3_text_text: NULL
+        token_4_text_text: NULL
+        token_5_text_text: NULL
+        _major_fill: ${colour/hollasch/hot_pink}
+        _minor_fill: ${colour/hollasch/misty_rose}
+        _related_fill: ${colour/hollasch/pink}
+      charter:
+        _:
+          comment_text_text: |
+            2-5 stations, L.50 each
+      share:
+        _:
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          comment_text_y: 70
+
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: "$[index_of (7)]"
+
+    IRSFF:
+      _:
+        long_name_text_text: |
+            Imperial Regia
+            Strada Ferrata
+            Ferdinandea
+        short_name_text_text: IRSFF
+        token_1_text_text: Milano 
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: Venezia
+        token_2_circle_fill: ${colour/hollasch/grey}
+        token_3_text_text: NULL
+        token_4_text_text: NULL
+        token_5_text_text: NULL
+        _major_fill: ${colour/wikipedia/tangelo}
+        _minor_fill: ${colour/wikipedia/topaz}
+        _related_fill: ${colour/wikipedia/amber_sae_ece}
+      charter:
+        _:
+          comment_text_text: |
+            Phase 4: split into SB and SFL
+            2-5 stations, L.50 each
+      share:
+        _:
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          comment_text_y: 70
+
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: "$[index_of (7)]"
+
+    SB:
+      _:
+        long_name_text_text: |
+            Strada di Ferro 
+            da Torino a Cuneo
+        short_name_text_text: SB
+        token_1_text_text: Venezia
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL
+        token_2_circle_fill: ${colour/hollasch/grey}
+        token_3_text_text: NULL
+        token_4_text_text: NULL
+        token_5_text_text: NULL
+        inner_circle_fill: ${colour/hollasch/cadmium_yellow}
+        middle_circle_fill: ${colour/hollasch/yellow}
+        outer_circle_fill: ${colour/hollasch/cadmium_yellow}
+        _related_fill: ${colour/wikipedia/amber}
+      charter:
+        _:
+          comment_text_text: |
+            Phase 4: split from IRSFF
+            Gets half the IRSFF's stations
+      share:
+        _:
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          comment_text_y: 70
+
+      token:
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: "$[index_of (7)]"
+
+    SFL:
+      _:
+        long_name_text_text: |
+            Strade Ferrate
+            della Lombardia
+            & dell'Italia Centrale
+        short_name_text_text: SFL
+        token_1_text_text: Milano
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL
+        token_2_circle_fill: ${colour/hollasch/grey}
+        token_3_text_text: NULL
+        token_4_text_text: NULL
+        token_5_text_text: NULL
+        inner_circle_fill: ${colour/wikipedia/jungle_green}
+        middle_circle_fill: ${colour/hollasch/turquoise_pale}
+        outer_circle_fill: ${colour/wikipedia/jungle_green}
+        _related_fill: ${colour/hollasch/turquoise_pale}
+      charter:
+        _:
+          comment_text_text: |
+            Phase 4: split from IRSFF
+            Gets half the IRSFF's stations
+      share:
+        _:
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          comment_text_y: 70
+
+      token:
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: "$[index_of (7)]"
+
+    SFTG:
+      _:
+        long_name_text_text: |
+            Strada Ferrata
+            da Torino a Genova
+        short_name_text_text: SFTG
+        token_1_text_text: Torino
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: Alessandria
+        token_2_circle_fill: ${colour/hollasch/grey}
+        token_3_text_text: NULL
+        token_4_text_text: NULL
+        token_5_text_text: NULL
+        _major_fill: ${colour/wikipedia/true_blue}
+        _minor_fill: ${colour/wikipedia/sky_blue}
+        _related_fill: ${colour/wikipedia/rich_electric_blue}
+      charter:
+        _:
+          comment_text_text: |
+            2-5 stations, L.50 each
+      share:
+        _:
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          comment_text_y: 70
+
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: "$[index_of (7)]"
+
+    SSFL:
+      _:
+        long_name_text_text: |
+            Società per la
+            Strada Ferrata
+            Leopolda
+        short_name_text_text: SSFL
+        token_1_text_text: Pisa
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL
+        token_2_circle_fill: ${colour/hollasch/grey}
+        token_3_text_text: NULL
+        token_4_text_text: NULL
+        token_5_text_text: NULL
+        _major_fill: ${colour/wikipedia/palatinate_purple}
+        _minor_fill: ${colour/wikipedia/plum_web}
+        _related_fill: ${colour/wikipedia/plum_traditional}
+      charter:
+        _:
+          comment_text_text: |
+            Phase 4: merges with SFLP
+            and SFMA to form SFLi
+            2-5 stations, L.50 each
+      share:
+        _:
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          comment_text_y: 70
+
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: "$[index_of (7)]"
+
+    SFTC:
+      _:
+        long_name_text_text: |
+            Strada di Ferro
+            da Torino a Cuneo
+        short_name_text_text: SFTC
+        token_1_text_text: Cuneo
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL
+        token_2_circle_fill: ${colour/hollasch/grey}
+        token_3_text_text: NULL
+        token_4_text_text: NULL
+        token_5_text_text: NULL
+        _major_fill: ${colour/wikipedia/canary_yellow}
+        _minor_fill: ${colour/xxp/BLACK}
+        _related_fill: ${colour/wikipedia/electric_yellow}
+      charter:
+        _:
+          comment_text_text: |
+            2-5 stations, L.50 each
+      share:
+        _:
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          comment_text_y: 70
+
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: "$[index_of (7)]"
+
+    SFLi:
+      _:
+        long_name_text_text: |
+            Strada di Ferro
+            da Torino a Cuneo
+        short_name_text_text: SFLi
+        token_1_text_text: Pisa
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: Firenze
+        token_2_circle_fill: ${colour/hollasch/grey}
+        token_3_text_text: NULL
+        token_3_circle_fill: ${colour/hollasch/grey}
+        token_4_text_text: NULL
+        token_4_circle_fill: ${colour/hollasch/grey}
+        token_5_text_text: NULL
+        token_5_circle_fill: ${colour/hollasch/grey}
+        inner_circle_fill: ${colour/wikipedia/barn_red}
+        middle_circle_fill: ${colour/wikipedia/burnt_orange}
+        outer_circle_fill: ${colour/wikipedia/barn_red}
+        _related_fill: ${colour/wikipedia/chinese_red}
+      charter:
+        _:
+          comment_text_text: |
+            Phase 4: formed from
+            SFLP, SFMA and SSFL
+            Always has 5 stations
+      share:
+        _:
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          comment_text_y: 70
+
+      token:
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: "$[index_of (7)]"
+
+    SFLP:
+      _:
+        long_name_text_text: |
+            Strada Ferrata
+            da Lucca a Pistoia
+        short_name_text_text: "SFLP"
+        token_1_text_text: Lucca
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL       
+        _related_fill: ${colour/wikipedia/french_lime}
+      token:
+        _:
+          _major_fill_1: ${colour/hollasch/chartreuse}
+          _major_fill_2: ${colour/hollasch/mint_cream}
+          _minor_fill_1: ${colour/hollasch/mint_cream}
+          _minor_fill_2: ${colour/hollasch/chartreuse}
+        ELEMENTS: ${TEMPLATE_chequer/.}
+        EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
+        index: $[index_of (4)]    
+      share:
+        _:
+          share_num_text_text: 1 Share
+          share_pct_text_text: 20%
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          share_desc_text_suppress: True
+        index:
+          "1":
+            share_desc_text:
+              suppress: True
+            type_bar_box:
+              suppress: True
+            token_1_embed:
+              suppress: False
+            token_2a_embed:
+              suppress: True
+            token_2b_embed:
+              suppress: True
+          "2":
+          "3":
+      charter:
+        _:
+          label_text_text: 5-share company
+          comment_text_text: |
+            Phase 4: merges with SFMA,
+            then with SSFL to form SFLi
+            1-2 stations, L.50 each
+    SFLP_pres:
+      _:
+        long_name_text_text: |
+            Strada Ferrata
+            da Lucca a Pistoia
+        short_name_text_text: "SFLP"
+        _related_fill: ${colour/wikipedia/french_lime}
+      charter:
+        index:
+      share:
+        _:
+          share_num_text_text: 2 Shares
+          share_pct_text_text: 40%
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+        index:
+          "1":
+      token:
+        _:
+          _major_fill_1: ${colour/hollasch/chartreuse}
+          _major_fill_2: ${colour/hollasch/mint_cream}
+          _minor_fill_1: ${colour/hollasch/mint_cream}
+          _minor_fill_2: ${colour/hollasch/chartreuse}
+        ELEMENTS: ${TEMPLATE_chequer/.}
+        EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
+        index: $[index_of (4)] 
+
+    SFMA:
+      _:
+        long_name_text_text: |
+            Strada Ferrata
+            Maria Antonia
+        short_name_text_text: "SFMA"
+        token_1_text_text: Firenze
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL       
+        _related_fill: ${colour/wikipedia/ferrari_red}
+        share_pct_text_fill: ${colour/xxp/WHITE}
+      token:
+        _:
+          _major_fill_1: ${colour/wikipedia/candy_apple_red}
+          _major_fill_2: ${colour/x11/pink1}
+          _minor_fill_1: ${colour/x11/pink1}
+          _minor_fill_2: ${colour/wikipedia/candy_apple_red}
+        ELEMENTS: ${TEMPLATE_chequer/.}
+        EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
+        index: $[index_of (4)]    
+      share:
+        _:
+          share_num_text_text: 1 Share
+          share_pct_text_text: 20%
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          share_desc_text_suppress: True
+        index:
+          "1":
+            share_desc_text:
+              suppress: True
+            type_bar_box:
+              suppress: True
+            token_1_embed:
+              suppress: False
+            token_2a_embed:
+              suppress: True
+            token_2b_embed:
+              suppress: True
+          "2":
+          "3":
+      charter:
+        _:
+          label_text_text: 5-share company
+          comment_text_text: |
+            Phase 4: merges with SFLP,
+            then with SSFL to form SFLi
+            1-2 stations, L.50 each
+    SFMA_pres:
+      _:
+        long_name_text_text: |
+            Strada Ferrata
+            Maria Antonia
+        short_name_text_text: "SFMA"
+        _related_fill: ${colour/wikipedia/ferrari_red}
+      charter:
+        index:
+      share:
+        _:
+          share_num_text_text: 2 Shares
+          share_pct_text_text: 40%
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+        index:
+          "1":
+      token:
+        _:
+          _major_fill_1: ${colour/wikipedia/candy_apple_red}
+          _major_fill_2: ${colour/x11/pink1}
+          _minor_fill_1: ${colour/x11/pink1}
+          _minor_fill_2: ${colour/wikipedia/candy_apple_red}
+        ELEMENTS: ${TEMPLATE_chequer/.}
+        EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
+        index: $[index_of (4)] 
+
+
+    SLDV:
+      _:
+        long_name_text_text: |
+            Società
+            Leonardo da Vinci
+        short_name_text_text: "SLDV"
+        token_1_text_text: NULL
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL     
+        share_pct_text_fill: ${colour/xxp/WHITE}
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+        _major_fill: ${colour/wikipedia/chocolate_traditional}
+        _minor_fill: ${colour/x11/tan3}
+        middle_box_fill: ${_/_minor_fill}
+        _related_fill: ${colour/wikipedia/copper}
+      token:
+        _:
+        ELEMENTS: ${TEMPLATE_boxes/.}
+        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
+        index: $[index_of (4)]    
+      share:
+        _:
+          share_num_text_text: 1 Share
+          share_pct_text_text: 20%
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          share_desc_text_suppress: True
+        index:
+          "1":
+            share_desc_text:
+              suppress: True
+            type_bar_box:
+              suppress: True
+            token_1_embed:
+              suppress: False
+            token_2a_embed:
+              suppress: True
+            token_2b_embed:
+              suppress: True
+          "2":
+          "3":
+      charter:
+        _:
+          label_text_text: 5-share company
+          comment_text_text: |
+            Phase 4: merges with SFMA,
+            then with SSFL to form SFLi
+            1-2 stations, L.50 each
+    SLDV_pres:
+      _:
+        long_name_text_text: |
+            Società
+            Leonardo da Vinci
+        short_name_text_text: "SLDV"
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+        _major_fill: ${colour/wikipedia/chocolate_traditional}
+        _minor_fill: ${colour/x11/tan3}
+        middle_box_fill: ${_/_minor_fill}
+        _related_fill: ${colour/wikipedia/copper}
+      charter:
+        index:
+      share:
+        _:
+          share_num_text_text: 2 Shares
+          share_pct_text_text: 40%
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+        index:
+          "1":
+      token:
+        _:
+        ELEMENTS: ${TEMPLATE_boxes/.}
+        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
+
+
+    FTP:
+      _:
+        long_name_text_text: |
+            Ferrovie
+            Trans Padane
+        short_name_text_text: "FTP"
+        token_1_text_text: NULL
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL     
+        share_pct_text_fill: ${colour/xxp/WHITE}
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+        _minor_fill: ${colour/xxp/WHITE}
+        _major_fill: ${colour/x11/grey50}
+        middle_box_fill: ${_/_minor_fill}
+        _related_fill: ${colour/x11/grey99}
+      token:
+        _:
+        ELEMENTS: ${TEMPLATE_boxes/.}
+        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
+        index: $[index_of (4)]    
+      share:
+        _:
+          share_num_text_text: 1 Share
+          share_pct_text_text: 20%
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          share_desc_text_suppress: True
+        index:
+          "1":
+            share_desc_text:
+              suppress: True
+            type_bar_box:
+              suppress: True
+            token_1_embed:
+              suppress: False
+            token_2a_embed:
+              suppress: True
+            token_2b_embed:
+              suppress: True
+          "2":
+          "3":
+      charter:
+        _:
+          label_text_text: 5-share company
+          comment_text_text: |
+            Phase 4: merges with SFMA,
+            then with SSFL to form SFLi
+            1-2 stations, L.50 each
+    FTP_pres:
+      _:
+        long_name_text_text: |
+            Ferrovie
+            Trans Padane
+        short_name_text_text: "FTP"
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+        _minor_fill: ${colour/xxp/WHITE}
+        _major_fill: ${colour/x11/grey50}
+        middle_box_fill: ${_/_minor_fill}
+        _related_fill: ${colour/x11/grey99}
+      charter:
+        index:
+      share:
+        _:
+          share_num_text_text: 2 Shares
+          share_pct_text_text: 40%
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+        index:
+          "1":
+      token:
+        _:
+        ELEMENTS: ${TEMPLATE_boxes/.}
+        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
+
+    CTLP:
+      _:
+        long_name_text_text: |
+            Compagnia
+            Trasporti La Patria
+        short_name_text_text: "CTLP"
+        token_1_text_text: NULL
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL     
+        share_pct_text_fill: ${colour/xxp/WHITE}
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+        _major_fill: ${colour/x11/grey89}
+        _minor_fill: ${colour/x11/grey49}
+        middle_box_fill: ${_/_minor_fill}
+        _related_fill: ${colour/x11/grey59}
+      token:
+        _:
+        ELEMENTS: ${TEMPLATE_boxes/.}
+        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
+        index: $[index_of (4)]    
+      share:
+        _:
+          share_num_text_text: 1 Share
+          share_pct_text_text: 20%
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          share_desc_text_suppress: True
+        index:
+          "1":
+            share_desc_text:
+              suppress: True
+            type_bar_box:
+              suppress: True
+            token_1_embed:
+              suppress: False
+            token_2a_embed:
+              suppress: True
+            token_2b_embed:
+              suppress: True
+          "2":
+          "3":
+      charter:
+        _:
+          label_text_text: 5-share company
+          comment_text_text: |
+            Phase 4: merges with SFMA,
+            then with SSFL to form SFLi
+            1-2 stations, L.50 each
+    CTLP_pres:
+      _:
+        long_name_text_text: |
+            Compagnia
+            Trasporti La Patria
+        short_name_text_text: "CTLP"
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+        _major_fill: ${colour/x11/grey89}
+        _minor_fill: ${colour/x11/grey49}
+        middle_box_fill: ${_/_minor_fill}
+        _related_fill: ${colour/x11/grey59}
+      charter:
+        index:
+      share:
+        _:
+          share_num_text_text: 2 Shares
+          share_pct_text_text: 40%
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+        index:
+          "1":
+      token:
+        _:
+        ELEMENTS: ${TEMPLATE_boxes/.}
+        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
+
+    RATF:
+      _:
+        long_name_text_text: |
+            Regia Azienda
+            Trasporti Ferroviari
+        short_name_text_text: RATF
+        token_1_text_text: NULL
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL
+        token_2_circle_fill: ${colour/hollasch/grey}
+        token_3_text_text: NULL
+        token_4_text_text: NULL
+        token_5_text_text: NULL
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+        _major_fill: ${colour/wikipedia/liver}
+        _minor_fill: ${colour/wikipedia/liver}
+        _related_fill: ${colour/wikipedia/onyx}
+      charter:
+        _:
+          comment_text_text: |
+            2-5 stations, L.25/50/100/200 each
+      share:
+        _:
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          comment_text_y: 70
+      token:
+        index: "$[index_of (7)]"
+
+    ILTF:
+      _:
+        long_name_text_text: |
+            Impresa Latina
+            Trasporti su Ferro
+        short_name_text_text: ILTF
+        token_1_text_text: NULL
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL
+        token_2_circle_fill: ${colour/hollasch/grey}
+        token_3_text_text: NULL
+        token_4_text_text: NULL
+        token_5_text_text: NULL
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+        _major_fill: ${colour/x11/chartreuse4}
+        _minor_fill: ${colour/x11/chartreuse4}
+        _related_fill: ${colour/x11/chartreuse3}
+      charter:
+        _:
+          comment_text_text: |
+          comment_text_text: |
+            2-5 stations, L.25/50/100/200 each
+      share:
+        _:
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          comment_text_y: 70
+      token:
+        index: "$[index_of (7)]"
+
+    AFI:
+      _:
+        long_name_text_text: |
+            Azienda
+            Ferroviaria Italica
+        short_name_text_text: AFI
+        token_1_text_text: NULL
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL
+        token_2_circle_fill: ${colour/hollasch/grey}
+        token_3_text_text: NULL
+        token_4_text_text: NULL
+        token_5_text_text: NULL
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+        _major_fill: ${colour/x11/red3}
+        _minor_fill: ${colour/x11/red3}
+        _related_fill: ${colour/x11/red}
+      charter:
+        _:
+          comment_text_text: |
+          comment_text_text: |
+            2-5 stations, L.25/50/100/200 each
+      share:
+        _:
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          comment_text_y: 70
+      token:
+        index: "$[index_of (7)]"
+
+    RSFS:
+      _:
+        long_name_text_text: |
+            Reale Società
+            Ferroviaria Sabanda
+        short_name_text_text: RSFS
+        token_1_text_text: NULL
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL
+        token_2_circle_fill: ${colour/hollasch/grey}
+        token_3_text_text: NULL
+        token_4_text_text: NULL
+        token_5_text_text: NULL
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+        _major_fill: ${colour/x11/turquoise4}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/x11/turquoise3}
+      charter:
+        _:
+          comment_text_text: |
+          comment_text_text: |
+            2-5 stations, L.25/50/100/200 each
+      share:
+        _:
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          comment_text_y: 70
+      token:
+        index: "$[index_of (7)]"
+
+    IFAI:
+      _:
+        long_name_text_text: |
+            Impresa Ferroviaria
+            Alta Italia
+        short_name_text_text: IFAI
+        token_1_text_text: NULL
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL
+        token_2_circle_fill: ${colour/hollasch/grey}
+        token_3_text_text: NULL
+        token_4_text_text: NULL
+        token_5_text_text: NULL
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+        _major_fill: ${colour/x11/dodgerblue3}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/x11/dodgerblue2}
+      charter:
+        _:
+          comment_text_text: |
+          comment_text_text: |
+            2-5 stations, L.25/50/100/200 each
+      share:
+        _:
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          comment_text_y: 70
+      token:
+        index: "$[index_of (7)]"
+
+    ICSF:
+      _:
+        long_name_text_text: |
+            Impresa Centrale
+            Strade Ferrate
+        short_name_text_text: ICSF
+        token_1_text_text: NULL
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL
+        token_2_circle_fill: ${colour/hollasch/grey}
+        token_3_text_text: NULL
+        token_4_text_text: NULL
+        token_5_text_text: NULL
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+        _major_fill: ${colour/x11/orangered}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/wikipedia/safety_orange_blaze_orange}
+      charter:
+        _:
+          comment_text_text: |
+          comment_text_text: |
+            2-5 stations, L.25/50/100/200 each
+      share:
+        _:
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          comment_text_y: 70
+      token:
+        index: "$[index_of (7)]"
+
+    CTS:
+      _:
+        long_name_text_text: |
+            Compagnia
+            Trasporti Subalpini
+        short_name_text_text: CTS
+        token_1_text_text: NULL
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL
+        token_2_circle_fill: ${colour/hollasch/grey}
+        token_3_text_text: NULL
+        token_4_text_text: NULL
+        token_5_text_text: NULL
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+        _major_fill: ${colour/x11/darkorchid3}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/x11/blueviolet}
+      charter:
+        _:
+          comment_text_text: |
+          comment_text_text: |
+            2-5 stations, L.25/50/100/200 each
+      share:
+        _:
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          comment_text_y: 70
+      token:
+        index: "$[index_of (7)]"
+
+    CTDA:
+      _:
+        long_name_text_text: |
+            Compagnia Trasporti
+            Dante Alighieri
+        short_name_text_text: CTDA
+        token_1_text_text: NULL
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL
+        token_2_circle_fill: ${colour/hollasch/grey}
+        token_3_text_text: NULL
+        token_4_text_text: NULL
+        token_5_text_text: NULL
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+        _major_fill: ${colour/x11/antiquewhite2}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/x11/antiquewhite}
+      charter:
+        _:
+          comment_text_text: |
+          comment_text_text: |
+            2-5 stations, L.25/50/100/200 each
+      share:
+        _:
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          comment_text_y: 70
+      token:
+        index: "$[index_of (7)]"
+
+    CGTF:
+      _:
+        long_name_text_text: |
+            Compagnia Garibaldi
+            per i Trasporti
+            Ferroviari
+        short_name_text_text: CGTF
+        token_1_text_text: NULL
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL
+        token_2_circle_fill: ${colour/hollasch/grey}
+        token_3_text_text: NULL
+        token_4_text_text: NULL
+        token_5_text_text: NULL
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+        _major_fill: ${colour/x11/green2}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/x11/chartreuse2}
+      charter:
+        _:
+          comment_text_text: |
+          comment_text_text: |
+            2-5 stations, L.25/50/100/200 each
+      share:
+        _:
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          comment_text_y: 70
+      token:
+        index: "$[index_of (7)]"
+
+    CFCC:
+      _:
+        long_name_text_text: |
+            Compagnia 
+            Ferroviaria
+            Cante di Cavour
+        short_name_text_text: CFCC
+        token_1_text_text: NULL
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL
+        token_2_circle_fill: ${colour/hollasch/grey}
+        token_3_text_text: NULL
+        token_4_text_text: NULL
+        token_5_text_text: NULL
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+        _major_fill: ${colour/x11/white}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/x11/white}
+      charter:
+        _:
+          comment_text_text: |
+          comment_text_text: |
+            2-5 stations, L.25/50/100/200 each
+      share:
+        _:
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          comment_text_y: 70
+      token:
+        index: "$[index_of (7)]"
+
+    ATFA:
+      _:
+        long_name_text_text: |
+            Azienda Trasporti
+            Ferroviari Ansonia
+        short_name_text_text: ATFA
+        token_1_text_text: NULL
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL
+        token_2_circle_fill: ${colour/hollasch/grey}
+        token_3_text_text: NULL
+        token_4_text_text: NULL
+        token_5_text_text: NULL
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+        _major_fill: ${colour/wikipedia/waterspout}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/wikipedia/bubbles}
+      charter:
+        _:
+          comment_text_text: |
+          comment_text_text: |
+            2-5 stations, L.25/50/100/200 each
+      share:
+        _:
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          comment_text_y: 70
+      token:
+        index: "$[index_of (7)]"
+
+train:
+  index:
+    2T:
+      _:
+        asset_interior_box_fill: ${colour/galatolol/1841_yellow}
+        rust_bar_box_fill: ${colour/galatolol/1841_green}
+        rusted_text_text: "Rusted by 4"
+        rusted_text_size: 14
+        rusted_text_fill: ${colour/xxp/BLACK}
+        long_name_text_text: "2"
+        cost_text_text: "L.100"
+      model:
+        index: $[index_of (8)]
+    3T:
+      _:
+        asset_interior_box_fill: ${colour/galatolol/1841_green}
+        rust_bar_box_fill: ${colour/galatolol/brown}
+        rusted_text_text: "Rusted by 5"
+        rusted_text_size: 14
+        long_name_text_text: "3"
+        cost_text_text: "L.200"
+        long_name_text_fill: ${colour/xxp/BLACK}
+        cost_text_fill: ${colour/xxp/BLACK}
+      model:
+        index: $[index_of (6)]
+    4T:
+      _:
+        asset_interior_box_fill: ${colour/galatolol/1841_green}
+        rust_bar_box_fill: ${colour/galatolol/brown}
+        rusted_text_text: "Rusted by 7"
+        rusted_text_size: 14
+        long_name_text_text: "4"
+        cost_text_text: "L.350"
+        long_name_text_fill: ${colour/xxp/BLACK}
+        cost_text_fill: ${colour/xxp/BLACK}
+      model:
+        index: $[index_of (4)]
+    5T:
+      _:
+        asset_interior_box_fill: ${colour/galatolol/brown}
+        rust_bar_box_fill: ${colour/galatolol/brown}
+        rusted_text_text: "Rusted by 8"
+        rusted_text_size: 14
+        long_name_text_text: "5"
+        cost_text_text: "L.550"
+      model:
+        index: $[index_of (3)]
+    6T:
+      _:
+        asset_interior_box_fill: ${colour/galatolol/brown}
+        rust_bar_box_fill: ${colour/xxp/BLACK}
+        rusted_text_text: "Permanent"
+        rusted_text_size: 14
+        long_name_text_text: "6"
+        cost_text_text: "L.800"
+      model:
+        index: $[index_of (2)]
+    7T:
+      _:
+        asset_interior_box_fill: ${colour/galatolol/brown}
+        rust_bar_box_fill: ${colour/xxp/BLACK}
+        rusted_text_text: "Permanent"
+        rusted_text_size: 14
+        long_name_text_text: "7"
+        cost_text_text: "L.1100"
+      model:
+        index: $[index_of (2)]
+    8T:
+      _:
+        asset_interior_box_fill: ${colour/galatolol/brown}
+        rust_bar_box_fill: ${colour/xxp/BLACK}
+        rusted_text_text: "Permanent"
+        rusted_text_size: 14
+        long_name_text_text: "8"
+        cost_text_text: "L.1450"
+      model:
+        index: $[index_of (7)]
+
+marker:
+  index:
+    round:
+      _:
+        short_name_text_text: "Round"
+        inner_circle_fill: ${colour/x11/chocolate4}
+        middle_circle_fill: ${colour/x11/chartreuse3}
+        outer_circle_fill: ${colour/x11/yellow}
+      token:
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        index: "$[index_of (1)]"
+

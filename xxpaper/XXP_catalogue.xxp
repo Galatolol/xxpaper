@@ -46,7 +46,7 @@ CATALOGUE:
     klass: private
     typ: -missing-
     name_index: private/index
-    instance_index:
+    instance_index: model/index
   share:
     tile_type: asset_tile
     klass: company

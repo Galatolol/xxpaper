@@ -11,12 +11,19 @@ company:
       token_2_circle_suppress: False
       token_2_circle_fill: ${colour/wikipedia/robin_egg_blue}
       token_3_circle_suppress: False
-      token_3_circle_fill: ${colour/wikipedia/pale_aqua}
+      token_3_circle_fill: ${colour/wikipedia/wisteria}
       token_4_circle_suppress: False
-      token_4_circle_fill: ${colour/wikipedia/pale_aqua}
-      token_5_circle_suppress: False
+      token_4_circle_fill: ${colour/wikipedia/wisteria}
+      token_5_circle_suppress: True
       token_6_circle_suppress: False
       token_7_circle_suppress: False
+      token_8_circle_suppress: False
+      token_9_circle_suppress: False
+      token_10_circle_suppress: False
+      loan_1_square_shape_suppress: False
+      loan_1_text_text: "2 share"
+      loan_6_square_shape_suppress: False
+      loan_6_text_text: "2 share"
 
   share:
     _:
@@ -24,14 +31,15 @@ company:
       share_desc_text_text: 1 Share
       share_desc_text_x: 55
       share_num_text_text: 20/10%
-      share_num_text_x: 170
       share_pct_text_text: 
       side_bar_lsplit_box_suppress: True
       side_bar_rsplit_box_suppress: True
-      comment_text_size: 11
+      comment_text_size: 12
+      comment_text_typeface: ${DEFAULT/typeface_bold}
       comment_text_y: 24
-      type_bar_box_fill: ${colour/wikipedia/lemon}
-      #asset_interior_box_fill: ${colour/xxp/WHITE}
+      type_bar_box_fill: ${colour/wikipedia/golden_yellow}
+      type_bar_box_y: 12
+      share_num_text_x: 167
     index:
       "1":
         share_pct_text:
