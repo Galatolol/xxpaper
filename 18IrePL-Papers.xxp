@@ -1688,7 +1688,7 @@ marker:
             No
             terrain
             cost
-          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 1.5]
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 5]
           short_name_text_fill: ${colour/wikipedia/black}
           short_name_text_size: 6
           name_stripe_box_suppress: True
