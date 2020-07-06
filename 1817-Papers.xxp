@@ -20,6 +20,10 @@ company:
       token_8_circle_suppress: False
       token_9_circle_suppress: False
       token_10_circle_suppress: False
+      loan_1_square_shape_suppress: False
+      loan_1_text_text: "2 share"
+      loan_6_square_shape_suppress: False
+      loan_6_text_text: "2 share"
 
   share:
     _:
