@@ -55,7 +55,6 @@ company:
         _major_fill_2: ${colour/wikipedia/banana_yellow}
         _minor_fill_2: ${_/_major_fill_2}
         _minor_fill: ${_/_major_fill}
-        _minor_fill_2: ${_/_major_fill_2}
         _related_fill: ${colour/hollasch/steel_blue}
       token:
         ELEMENTS: ${TEMPLATE_stripey/.}

@@ -172,34 +172,45 @@ company:
 
   index:
 
-    # bright green
+    # green
     RR:
       _:
         long_name_text_text: |
             Rutland Railroad
         short_name_text_text: RR
+        short_name_text_size: 20
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2)]
+        short_name_text_fill: ${colour/xxp/WHITE}
+        name_stripe_box_suppress: True
         _major_fill: ${colour/x11/limegreen}
-        _major_fill_2: ${colour/wikipedia/pastel_yellow}
+        #_major_fill_2: ${colour/wikipedia/dark_green}
+        _major_fill_2: ${_/_major_fill}
         _minor_fill_2: ${_/_major_fill_2}
-        _related_fill: ${colour/wikipedia/electric_green}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/wikipedia/green_ryb}
       token:
         ELEMENTS: ${TEMPLATE_stripey/.}
         EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
         index: $[index_of (1)]
 
-    # green
-    PRR:
+    # dark green
+    J:
       _:
         long_name_text_text: |
-            Pennsylvania
-            Railroad
-        short_name_text_text: PRR
-        _major_fill: ${colour/xxp/D_GREEN}
-        _minor_fill: ${colour/xxp/H_GREEN}
-        _related_fill: ${colour/wikipedia/forest_green_web}
+            Elgin, Jollet and
+            Eastern Railway
+        short_name_text_text: J
+        short_name_text_size: 32
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 3]
+        short_name_text_fill: ${colour/xxp/WHITE}
+        name_stripe_box_suppress: True
+        _major_fill: ${colour/wikipedia/british_racing_green}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/wikipedia/green_html_css_green}
+        #_minor_fill: ${colour/xxp/D_GREEN}
+        #_minor_fill: ${colour/xxp/H_GREEN}
+        #_related_fill: ${colour/wikipedia/forest_green_web}
       token:
-        ELEMENTS: ${TEMPLATE_cross/.}
-        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
         index: $[index_of (1)]
 
     # lime
