@@ -119,15 +119,15 @@ company:
         long_name_text_text: |
             PKP
         short_name_text_text: PKP
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 3]
-        short_name_text_size: 10
-        name_stripe_box_suppress: True
+        short_name_text_size: 8
         token_2_text_text: Free
         token_3_text_text: $50
         token_4_text_text: $50
-        _major_fill: ${colour/hollasch/sky_blue_deep}
-        _minor_fill: ${colour/hollasch/sky_blue_deep}
-        _related_fill: ${colour/hollasch/sky_blue_light}
+        _major_fill: ${colour/wikipedia/blue_ryb}
+        _major_fill_2: ${colour/wikipedia/white}
+        _minor_fill_2: ${_/_major_fill_2}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/hollasch/steel_blue}
       share:
         _:
           comment_text_text: "Polskie Koleje Państwowe"
@@ -136,35 +136,39 @@ company:
         _:
           label_text_text: "Polskie Koleje Państwowe"
       token:
+        ELEMENTS: ${TEMPLATE_stripey/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
         index: $[index_of (6)]
 
-    KKG:
+    KWW:
       _:
         long_name_text_text: |
-            KKG
-        short_name_text_text: KKG
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 3]
-        short_name_text_size: 10
-        short_name_text_fill: ${colour/xxp/WHITE}
+            KWW
+        short_name_text_text: KWW
+        short_name_text_size: 8
         share_pct_text_fill: ${colour/xxp/WHITE}
-        name_stripe_box_suppress: True
         token_2_text_text: Free
         token_3_text_text: $50
         token_4_text_text: $50
-        _major_fill: ${colour/hollasch/blue_violet}
-        _minor_fill: ${colour/hollasch/blue_violet}
-        _related_fill: ${colour/hollasch/orchid_medium}
+        _major_fill: ${colour/wikipedia/rich_lavender}
+        _minor_fill: ${colour/wikipedia/black}
+        _related_fill: ${colour/wikipedia/plum_web}
       share:
         _:
           side_bar_lsplit_box_suppress: True
           side_bar_rsplit_box_suppress: True
-
-          comment_text_text: "Kolej Krakowsko-Górnośląska"
+          comment_text_text: "Kolej Warszawsko-Wiedeńska"
           comment_text_y: 70
       charter:
         _:
-          label_text_text: "Kolej Krakowsko-Górnośląska"
+          label_text_text: "Kolej Warszawsko-Wiedeńska"
       token:
+        _:
+          inner_circle_fill: ${_/_major_fill}
+          inner_circle_radius: 9
+          short_name_text_size: 8
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
         index: $[index_of (6)]
 
     TKG:
@@ -172,26 +176,28 @@ company:
         long_name_text_text: |
             TKG
         short_name_text_text: TKG
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 3]
-        short_name_text_size: 10
-        name_stripe_box_suppress: True
+        short_name_text_size: 8
         token_2_text_text: Free
         token_3_text_text: $50
         token_4_text_text: $50
-        _major_fill: ${colour/scale/orange_4}
-        _minor_fill: ${colour/scale/orange_4}
-        _related_fill: ${colour/scale/orange_2}
+        _major_fill: ${colour/wikipedia/amber_sae_ece}
+        _minor_fill: ${colour/x11/white}        
+        _related_fill: ${colour/wikipedia/pink_orange}
       share:
         _:
           side_bar_lsplit_box_suppress: True
           side_bar_rsplit_box_suppress: True
-
           comment_text_text: "Towarzystwo Kolei Górnośląskiej"
           comment_text_y: 70
       charter:
         _:
           label_text_text: "Towarzystwo Kolei Górnośląskiej"
       token:
+        _:
+          inner_circle_fill: ${_/_major_fill}
+          inner_circle_radius: 9
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
         index: $[index_of (6)]
 
     CMK:
@@ -199,28 +205,26 @@ company:
         long_name_text_text: |
             CMK
         short_name_text_text: CMK
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 3]
-        short_name_text_size: 10
-        short_name_text_fill: ${colour/xxp/WHITE}
+        short_name_text_size: 8
         share_pct_text_fill: ${colour/xxp/WHITE}
-        name_stripe_box_suppress: True
         token_2_text_text: Free
         token_3_text_text: $50
         token_4_text_text: $50
-        _major_fill: ${colour/scale/colour_00_4}
-        _minor_fill: ${colour/scale/colour_00_4}
-        _related_fill: ${colour/scale/colour_00_2}
+        _major_fill: ${colour/x11/red}
+        _minor_fill: ${colour/xxp/BLACK}
+        _related_fill: ${colour/hollasch/tomato}
       share:
         _:
           side_bar_lsplit_box_suppress: True
           side_bar_rsplit_box_suppress: True
-
           comment_text_text: "Centralna Magistrala Kolejowa"
           comment_text_y: 70
       charter:
         _:
           label_text_text: "Centralna Magistrala Kolejowa"
       token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
         index: $[index_of (6)]
 
     MW:
@@ -257,13 +261,14 @@ company:
         short_name_text_text: LHS
         short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 3]
         short_name_text_size: 10
+        short_name_text_fill: ${colour/xxp/WHITE}
         name_stripe_box_suppress: True
         token_2_text_text: Free
         token_3_text_text: $50
         token_4_text_text: $50
-        _major_fill: ${colour/hollasch/lime_green}
-        _minor_fill: ${colour/hollasch/lime_green}
-        _related_fill: ${colour/hollasch/green_pale}
+        _major_fill: ${colour/xxp/D_GREEN}
+        _minor_fill: ${colour/xxp/D_GREEN}
+        _related_fill: ${colour/hollasch/cinnabar_green}
       share:
         _:
           side_bar_lsplit_box_suppress: True
@@ -358,14 +363,14 @@ company:
         _related_fill: ${colour/wikipedia/light_gray}
       charter:
         _:
-          label_text_text: ""
-          comment_text_text: "Home station in Gdańsk (E3)"
+          comment_text_text: |
+              Home station in Gdańsk (E3)
+              Doesn't pay the terrain cost of that hex
         index: $[index_of (1)]
       share:
         _:
           share_num_text_text: 1 Share
           share_pct_text_text: 20%
-
           side_bar_lsplit_box_suppress: True
           side_bar_rsplit_box_suppress: True
           share_desc_text_suppress: True
@@ -1096,13 +1101,14 @@ company:
       charter:
         _:
           label_text_text: ""
-          comment_text_text: "Home station in Kraków (G13)"
+          comment_text_text: |
+              Home station in Kraków (G13)
+              Doesn't pay the terrain cost of that hex
         index: $[index_of (1)]
       share:
         _:
           share_num_text_text: 1 Share
           share_pct_text_text: 20%
-
           side_bar_lsplit_box_suppress: True
           side_bar_rsplit_box_suppress: True
           share_desc_text_suppress: True
