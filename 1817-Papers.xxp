@@ -4,16 +4,32 @@ company:
       label_text_text: "Stations                              Loans"
       comment_text_text: #May place extra yellow tile for $20 (in any order)
       long_name_text_x: 130
+      long_name_text_size: 14
       type_text_text: 2 Share
+      type_text_size: 7
+      type_text_y: 310
       type_circle_fill: ${colour/wikipedia/pink}
       token_1_circle_suppress: False
       token_1_circle_fill: ${colour/wikipedia/pink}
+      token_1_text_text: "2 Share"
+      token_1_text_size: 7
+      token_1_text_x: 42
+      token_1_text_y: 230
       token_2_circle_suppress: False
       token_2_circle_fill: ${colour/wikipedia/robin_egg_blue}
+      token_2_text_text: "5 Share"
+      token_2_text_size: 7
+      token_2_text_y: 174
       token_3_circle_suppress: False
       token_3_circle_fill: ${colour/wikipedia/wisteria}
+      token_3_text_text: "10 Share"
+      token_3_text_size: 7
+      token_3_text_y: 118
       token_4_circle_suppress: False
       token_4_circle_fill: ${colour/wikipedia/wisteria}
+      token_4_text_text: "10 Share"
+      token_4_text_size: 7
+      token_4_text_y: 63
       token_5_circle_suppress: True
       token_6_circle_suppress: False
       token_7_circle_suppress: False
@@ -21,10 +37,45 @@ company:
       token_9_circle_suppress: False
       token_10_circle_suppress: False
       loan_1_square_shape_suppress: False
-      loan_1_text_text: "2 share"
+      loan_1_square_shape_fill: ${colour/wikipedia/wisteria}
+      loan_1_text_text: "10 Share"
+      loan_1_text_size: 6
+      loan_2_square_shape_suppress: False
+      loan_2_square_shape_fill: ${colour/wikipedia/wisteria}
+      loan_2_text_text: "10 Share"
+      loan_2_text_size: 6
+      loan_3_square_shape_suppress: False  
+      loan_3_square_shape_fill: ${colour/wikipedia/wisteria}
+      loan_3_text_text: "10 Share"
+      loan_3_text_size: 6
+      loan_4_square_shape_suppress: False
+      loan_4_square_shape_fill: ${colour/wikipedia/wisteria}
+      loan_4_text_text: "10 Share"
+      loan_4_text_size: 6
+      loan_5_square_shape_suppress: False
+      loan_5_square_shape_fill: ${colour/wikipedia/wisteria}
+      loan_5_text_text: "10 Share"
+      loan_5_text_size: 6
       loan_6_square_shape_suppress: False
-      loan_6_text_text: "2 share"
-
+      loan_6_square_shape_fill: ${colour/wikipedia/pink}
+      loan_6_text_text: "2 Share"
+      loan_6_text_size: 6
+      loan_7_square_shape_suppress: False
+      loan_7_square_shape_fill: ${colour/wikipedia/pink}
+      loan_7_text_text: "2 Share"
+      loan_7_text_size: 6
+      loan_8_square_shape_suppress: False
+      loan_8_square_shape_fill: ${colour/wikipedia/robin_egg_blue}
+      loan_8_text_text: "5 Share"
+      loan_8_text_size: 6
+      loan_9_square_shape_suppress: False
+      loan_9_square_shape_fill: ${colour/wikipedia/robin_egg_blue}
+      loan_9_text_text: "5 Share"
+      loan_9_text_size: 6
+      loan_10_square_shape_suppress: False
+      loan_10_square_shape_fill: ${colour/wikipedia/robin_egg_blue}
+      loan_10_text_text: "5 Share"
+      loan_10_text_size: 6
   share:
     _:
       share_desc_text_suppress: False
@@ -168,6 +219,9 @@ company:
           fill: ${colour/wikipedia/red} 
         asset_interior_box:
           fill: ${colour/wikipedia/pink}
+  token:
+    _:
+      short_name_text_size: 8
 
 
   index:

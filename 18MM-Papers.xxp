@@ -780,7 +780,7 @@ train:
             OR2:  $90
             OR3:  $60
         note_text_text: |
-            may run into offboards
+            May run into offboards
       model:
         index:
           "1":
@@ -804,7 +804,7 @@ train:
             OR3:  $60
         note_text_text: |
             +$10 per coal marker
-            may run into offboards
+            May run into offboards
       model:
         index:
           "1":
@@ -828,7 +828,7 @@ train:
             OR2:  $90
             OR3:  $60
         note_text_text: |
-          immediately replace
+          Immediately replaced
           by either 2A or 2+
       model:
         index:
@@ -853,7 +853,7 @@ train:
             OR2:  $90
             OR3:  $60
         note_text_text: |
-          may be bought
+          May be bought
           before running
       model:
         index: $[index_of (5)]
@@ -869,7 +869,7 @@ train:
             OR2:  $75
             OR3:  $50
         note_text_text: |
-            runs once more
+            Runs once more
             before rusting
       model:
         index: $[index_of (5)]
@@ -902,7 +902,7 @@ train:
             OR2: $180
             OR3: $120
         note_text_text: |
-            may run into offboards
+            May run into offboards
       model:
         index:
           "1":
@@ -942,7 +942,7 @@ train:
             OR3: $120
         note_text_text: |
             +$10 per coal marker
-            may run into offboards
+            May run into offboards
       model:
         index:
           "1":
@@ -962,7 +962,7 @@ train:
             OR2: $225
             OR3: $150
         note_text_text: |
-          immediately replace
+          Immediately replaced
           by either 3A or 3+
       model:
         index: $[index_of (2)]
@@ -978,7 +978,7 @@ train:
             OR2: $225
             OR3: $150
         note_text_text: |
-          may be bought
+          May be bought
           before running
       model:
         index: $[index_of (2)]
@@ -994,7 +994,7 @@ train:
             OR2: $225
             OR3: $150
         note_text_text: |
-            runs once more
+            Runs once more
             before rusting
       model:
         index: $[index_of (2)]
@@ -1023,7 +1023,7 @@ train:
             OR2: $300
             OR3: $200
         note_text_text: |
-            may run into offboards
+            May run into offboards
       model:
         index: $[index_of (1)]
 
@@ -1055,7 +1055,7 @@ train:
             OR3: $200
         note_text_text: |
             +$10 per coal marker
-            may run into offboards
+            May run into offboards
       model:
         index: $[index_of (1)] 
 
@@ -1070,7 +1070,7 @@ train:
             OR2: $330
             OR3: $220
         note_text_text: |
-            runs once more
+            Runs once more
             before rusting
       model:
         index:
@@ -1089,7 +1089,7 @@ train:
             OR2: $330
             OR3: $220
         note_text_text: |
-            may be bought
+            May be bought
             before running
       model:
         index:
