@@ -107,12 +107,12 @@ company:
       short_name_text_size: 8
 
   index:
-    ET:
+    RRR:
       _:
         long_name_text_text: |
-          Eastern
-          Transport
-        short_name_text_text: ET
+          Raging River
+          Railroad
+        short_name_text_text: RRR
         _major_fill: ${colour/wikipedia/blue_ryb}
         _major_fill_2: ${colour/wikipedia/banana_yellow}
         _minor_fill_2: ${_/_major_fill_2}
@@ -122,7 +122,7 @@ company:
       token:
         ELEMENTS: ${TEMPLATE_stripey/.}
         EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
-        index: $[index_of (6)]
+        index: $[index_of (10)]
 
     RD:
       _:
@@ -135,7 +135,7 @@ company:
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
-        index: $[index_of (6)]        
+        index: $[index_of (10)]        
 
     RP:
       _:
@@ -155,7 +155,7 @@ company:
           short_name_text_y_inset: -1
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (6)]        
+        index: $[index_of (10)]        
 
     MH:
       _:
@@ -175,7 +175,7 @@ company:
           short_name_text_y_inset: -1
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (6)]
+        index: $[index_of (10)]
 
     UR:
       _:
@@ -195,8 +195,7 @@ company:
           short_name_text_y_inset: -1
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (7)]
-        index: $[index_of (6)]        
+        index: $[index_of (10)]        
 
     TR:
       _:
@@ -213,7 +212,7 @@ company:
           inner_circle_radius: 9
         ELEMENTS: ${TEMPLATE_bullseye/.}
         EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
-        index: $[index_of (6)]
+        index: $[index_of (10)]
 
     WR:
       _:
@@ -228,7 +227,7 @@ company:
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
-        index: $[index_of (6)]
+        index: $[index_of (10)]
 
     GNR:
       _:
@@ -247,7 +246,7 @@ company:
           short_name_text_y_inset: -1
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (6)]
+        index: $[index_of (10)]
 
     LL:
       _:
@@ -265,7 +264,7 @@ company:
           short_name_text_size: 8
         ELEMENTS: ${TEMPLATE_bullseye/.}
         EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
-        index: $[index_of (6)]
+        index: $[index_of (10)]
 
     GV:
       _:
@@ -276,7 +275,7 @@ company:
         _minor_fill: ${colour/x11/limegreen}
         _related_fill: ${colour/x11/yellowgreen}
       token:
-        index: $[index_of (6)]
+        index: $[index_of (10)]
 
     HF:
       _:
@@ -288,22 +287,7 @@ company:
         _minor_fill: ${_/_major_fill}
         _related_fill: ${colour/x11/antiquewhite}
       token:
-        index: "$[index_of (7)]"
-        index: $[index_of (6)]
-
-    RRR:
-      _:
-        long_name_text_text: |
-          Raging River
-          Railroad
-        short_name_text_text: RRR
-        _major_fill: ${colour/wikipedia/international_klein_blue}
-        _minor_fill: ${colour/wikipedia/little_boy_blue}
-        _related_fill: ${colour/wikipedia/imperial_blue}
-      token:
-        ELEMENTS: ${TEMPLATE_cross/.}
-        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
-        index: $[index_of (6)]
+        index: $[index_of (10)]
   
     TE:
       _:
@@ -323,7 +307,7 @@ company:
           short_name_text_size: 12
           short_name_text_x_inset: 0
           short_name_text_y_inset: -1
-        index: $[index_of (6)]
+        index: $[index_of (10)]
   
     SF:
       _:
@@ -340,7 +324,7 @@ company:
           inner_circle_fill: ${_/_major_fill}
         ELEMENTS: ${TEMPLATE_bullseye/.}
         EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
-        index: $[index_of (6)]
+        index: $[index_of (10)]
   
     NC:
       _:
@@ -354,8 +338,7 @@ company:
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
-        index: "$[index_of (7)]"
-        index: $[index_of (6)]
+        index: $[index_of (10)]
   
     BT:
       _:
@@ -366,47 +349,22 @@ company:
         _minor_fill: ${colour/wikipedia/barn_red} 
         _related_fill: ${colour/wikipedia/chinese_red}
       token:
-        index: $[index_of (6)]
+        index: $[index_of (10)]
 
-
-
-
-
-
-marker:
-  index:
-
-    round:
+    #turquoise
+    ET:
+      _:
+        long_name_text_text: |
+            Eastern
+            Transport
+        short_name_text_text: ET
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+        _major_fill: ${colour/x11/turquoise4}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/x11/turquoise3}
       token:
-        ELEMENTS:
-          - token_interior_box
-          - outer_circle
-          - middle_circle
-          - inner_circle
+        index: $[index_of (10)]
 
-        index: $[index_of (1)]
-      outer_circle:
-        fill: ${colour/galatolol/yellow}
-      middle_circle:
-        fill: ${colour/galatolol/green}
-      inner_circle:
-        fill: ${colour/galatolol/brown}    
-
-    neural:
-      token:
-        ELEMENTS:
-          - token_interior_box
-          - outer_circle
-          - middle_circle
-          - inner_circle
-
-        index: $[index_of (6)]
-      outer_circle:
-        fill: ${colour/wikipedia/lavender_gray}
-      middle_circle:
-        fill: ${colour/wikipedia/lavender_gray}
-      inner_circle:
-        fill: ${colour/wikipedia/lavender_gray}
 
 private:
   _:
@@ -474,10 +432,10 @@ private:
             Engineering Company
         value_text_text: "$50"
         power_text_text: |
-            Owning company may directly
-            lay city and plain tracks
-            of current colour. May upgrade
-            plain tracks to one colour higher.
+            Owning company may directly lay city
+            and plain tracks of current colour. 
+            May upgrade plain tracks
+            to one colour higher.
         cost_text_text: ""
         revenue_text_text: "Revenue $10 if owned by player"
       model:
@@ -534,8 +492,8 @@ private:
             Owning company may place a port
             token on a non-metropolis coastal
             city. Increases the city's value by 
-            20 for companies that have a station
-            there and by 10 for the others.
+            $20 for companies that have a station
+            there and by $10 for the others.
         cost_text_text: ""
         revenue_text_text: "Revenue $10 if owned by player"
       model:
@@ -550,7 +508,7 @@ private:
             Owning company may buy trains of
             the higher rank if 2 or fewer trains are
             available of the current rank.
-            Trains bought in advance cost 25% more.
+            Those trains cost 25% more.
             This doesn't trigger a phase change.
         cost_text_text: ""
         revenue_text_text: "Revenue $20 if owned by player"
@@ -1143,7 +1101,7 @@ train:
         asset_interior_box_fill_p: GREEN
         rust_bar_box_fill_p: RED
         rusted_text_text: Rusted by Red
-        long_name_text_text: "2A/2+"
+        long_name_text_text: "3A/3+"
         long_name_text_size: 30
         cost_text_text: |
             OR1: $300
@@ -1362,6 +1320,9 @@ train:
         index: $[index_of (12)]
 
 marker:
+  _:
+    short_name_text_size: 8
+    
   index:
 
     round:
@@ -1417,7 +1378,7 @@ marker:
       token:
         _:
           short_name_text_text: "5 Share"
-          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1.5]
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 4.5]
           short_name_text_size: 7
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/robin_egg_blue}
@@ -1428,21 +1389,91 @@ marker:
       token:
         _:
           short_name_text_text: "10 Share"
-          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1.5]
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 4.5]
           short_name_text_size: 7
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/wisteria}
           _minor_fill: ${colour/wikipedia/wisteria}
         index: $[index_of (16)]
 
-    coal:
+    et:
+      _:
+        short_name_text_text: ET
       token:
-        ELEMENTS: ${TEMPLATE_solid/.}
-        index: $[index_of (10)]
-      token_interior_box:
-        fill: ${colour/galatolol/white} 
-      short_name_text:
-        text: "+10"
-        y: 4
-      name_stripe_box:
-        suppress: true
+        index: "$[index_of (1)]"    
+    BT:
+      _:
+        short_name_text_text: BT
+      token:
+        index: "$[index_of (1)]"    
+    gnr:
+      _:
+        short_name_text_text: GNR
+      token:
+        index: "$[index_of (1)]"    
+    cts:
+      _:
+        short_name_text_text: GV
+
+      token:
+        index: "$[index_of (1)]"    
+    ratf:
+      _:
+        short_name_text_text: HF
+      token:
+        index: "$[index_of (1)]"    
+    ctlp:
+      _:
+        short_name_text_text: LL
+      token:
+        index: "$[index_of (1)]"    
+    cda:
+      _:
+        short_name_text_text: MH
+      token:
+        index: "$[index_of (1)]"    
+    icsf:
+      _:
+        short_name_text_text: NC
+      token:
+        index: "$[index_of (1)]"    
+    ftp:
+      _:
+        short_name_text_text: RD
+      token:
+        index: "$[index_of (1)]"    
+    cts:
+      _:
+        short_name_text_text: RRR
+      token:
+        index: "$[index_of (1)]"    
+    iltf:
+      _:
+        short_name_text_text: SF
+      token:
+        index: "$[index_of (1)]"    
+    ifai:
+      _:
+        short_name_text_text: TE
+      token:
+        index: "$[index_of (1)]"    
+    irsff:
+      _:
+        short_name_text_text: TR
+      token:
+        index: "$[index_of (1)]"    
+    rsfs:
+      _:
+        short_name_text_text: UR
+      token:
+        index: "$[index_of (1)]"    
+    sflp:
+      _:
+        short_name_text_text: WR
+      token:
+        index: "$[index_of (1)]"    
+    rp:
+      _:
+        short_name_text_text: RP
+      token:
+        index: "$[index_of (1)]"    
