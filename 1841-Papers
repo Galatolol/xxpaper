@@ -1,18 +1,23 @@
 private:
   index:
-    P1:
+    bayard:
       _:
         long_name_text_text: |
-            Wrocław–Oława Railway
-        cost_text_text: "Cost: $22"
-        revenue_text_text: "Revenue: $5"
-
-
+            Bayard (1)
+        cost_text_text: "Cost L.50 from the market"
+        cost_text_size: 10
+        long_name_text_size: 12
+        revenue_text_text: ""
+        bid_text_text: ""
+        power_text_text: |
+          Owning player gains L.20
+          at the end of a Stock Round.
 
 company:
 
   charter:
     _:
+      long_name_text_size: 14
       label_text_text: ""
       comment_text_typeface: ${DEFAULT/typeface}
       comment_text_size: 12
@@ -23,6 +28,17 @@ company:
       token_1_text_size: 10
       token_2_text_size: 10
       comment_text_size: 10
+  share:
+    _:
+      long_name_text_size: 12    
+      type_bar_box_fill: ${colour/wikipedia/golden_yellow}
+      type_bar_box_y: 13
+      side_bar_lsplit_box_suppress: True
+      side_bar_rsplit_box_suppress: True
+      share_num_text_x: 167
+  token:
+    _:
+      short_name_text_size: 8
 
   index:
     SFTN:
@@ -50,7 +66,33 @@ company:
           side_bar_lsplit_box_suppress: True
           side_bar_rsplit_box_suppress: True
           comment_text_y: 70
-
+      concession:
+        _:
+          closes_text_text: "Removed in phase 4"
+          long_name_text_text: |
+              SFTN Concession (5)
+          power_text_text: |
+              Owning player may start 
+              SFTN.
+              Owning player can't lose the
+              presidency of SFTN.
+              If SFTN not started at the end of SR,
+              this concession is put in the market.
+          cost_text_text: "Cost L.50 from the market"
+          cost_text_size: 10
+          bid_text_text: ""
+          bid_text_x: 168
+          long_name_text_size: 12
+          long_name_text_x: 86
+          long_name_text_y: 78
+          bottom_bar_box_y: 13
+          power_text_h_center: 1
+          power_text_x_inset: 4
+          power_text_size: 8
+          token_embed_x_inset: 130
+          token_embed_y_inset: 30
+          asset_interior_box_fill: ${colour/hollasch/pink}
+        index: "$[index_of (1)]"
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
@@ -83,7 +125,33 @@ company:
           side_bar_lsplit_box_suppress: True
           side_bar_rsplit_box_suppress: True
           comment_text_y: 70
-
+      concession:
+        _:
+          closes_text_text: "Removed in phase 4"
+          long_name_text_text: |
+              IRSFF Concession (8)
+          power_text_text: |
+              Owning player may start 
+              IRSFF.
+              Owning player can't lose the
+              presidency of IRSFF.
+              If IRSFF not started at the end of SR,
+              this concession is put in the market.
+          cost_text_text: "Cost L.50 from the market"
+          cost_text_size: 10
+          bid_text_text: ""
+          bid_text_x: 168
+          long_name_text_size: 12
+          long_name_text_x: 86
+          long_name_text_y: 78
+          bottom_bar_box_y: 13
+          power_text_h_center: 1
+          power_text_x_inset: 4
+          power_text_size: 8
+          token_embed_x_inset: 130
+          token_embed_y_inset: 30
+          asset_interior_box_fill: ${colour/wikipedia/amber_sae_ece}
+        index: "$[index_of (1)]"
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
@@ -102,10 +170,14 @@ company:
         token_3_text_text: NULL
         token_4_text_text: NULL
         token_5_text_text: NULL
-        inner_circle_fill: ${colour/hollasch/cadmium_yellow}
-        middle_circle_fill: ${colour/hollasch/yellow}
-        outer_circle_fill: ${colour/hollasch/cadmium_yellow}
-        _related_fill: ${colour/wikipedia/amber}
+        #inner_circle_fill: ${colour/hollasch/cadmium_yellow}
+        #middle_circle_fill: ${colour/hollasch/yellow}
+        #outer_circle_fill: ${colour/hollasch/cadmium_yellow}
+        #_related_fill: ${colour/wikipedia/amber}        
+        inner_circle_fill: ${colour/wikipedia/tangelo}
+        middle_circle_fill: ${colour/wikipedia/topaz}
+        outer_circle_fill: ${colour/wikipedia/tangelo}
+        _related_fill: ${colour/wikipedia/amber_sae_ece}
       charter:
         _:
           comment_text_text: |
@@ -116,7 +188,6 @@ company:
           side_bar_lsplit_box_suppress: True
           side_bar_rsplit_box_suppress: True
           comment_text_y: 70
-
       token:
         ELEMENTS: ${TEMPLATE_bullseye/.}
         EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
@@ -127,7 +198,7 @@ company:
         long_name_text_text: |
             Strade Ferrate
             della Lombardia
-            & dell'Italia Centrale
+        #& dell'Italia Centrale
         short_name_text_text: SFL
         token_1_text_text: Milano
         token_1_circle_fill: ${colour/hollasch/grey}
@@ -150,7 +221,6 @@ company:
           side_bar_lsplit_box_suppress: True
           side_bar_rsplit_box_suppress: True
           comment_text_y: 70
-
       token:
         ELEMENTS: ${TEMPLATE_bullseye/.}
         EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
@@ -181,7 +251,33 @@ company:
           side_bar_lsplit_box_suppress: True
           side_bar_rsplit_box_suppress: True
           comment_text_y: 70
-
+      concession:
+        _:
+          closes_text_text: "Removed in phase 4"
+          long_name_text_text: |
+              SFTG Concession (7)
+          power_text_text: |
+              Owning player may start 
+              SFTG.
+              Owning player can't lose the
+              presidency of SFTG.
+              If SFTG not started at the end of SR,
+              this concession is put in the market.
+          cost_text_text: "Cost L.50 from the market"
+          cost_text_size: 10
+          bid_text_text: ""
+          bid_text_x: 168
+          long_name_text_size: 12
+          long_name_text_x: 86
+          long_name_text_y: 78
+          bottom_bar_box_y: 13
+          power_text_h_center: 1
+          power_text_x_inset: 4
+          power_text_size: 8
+          token_embed_x_inset: 130
+          token_embed_y_inset: 30
+          asset_interior_box_fill: ${colour/wikipedia/rich_electric_blue}
+        index: "$[index_of (1)]"
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
@@ -215,7 +311,33 @@ company:
           side_bar_lsplit_box_suppress: True
           side_bar_rsplit_box_suppress: True
           comment_text_y: 70
-
+      concession:
+        _:
+          closes_text_text: "Removed in phase 4"
+          long_name_text_text: |
+              SSFL Concession (6)
+          power_text_text: |
+              Owning player may start 
+              SSFL.
+              Owning player can't lose the
+              presidency of SSFL.
+              If SSFL not started at the end of SR,
+              this concession is put in the market.
+          cost_text_text: "Cost L.50 from the market"
+          cost_text_size: 10
+          bid_text_text: ""
+          bid_text_x: 168
+          long_name_text_size: 12
+          long_name_text_x: 86
+          long_name_text_y: 78
+          bottom_bar_box_y: 13
+          power_text_h_center: 1
+          power_text_x_inset: 4
+          power_text_size: 8
+          token_embed_x_inset: 130
+          token_embed_y_inset: 30
+          asset_interior_box_fill: ${colour/wikipedia/plum_traditional}
+        index: "$[index_of (1)]"          
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
@@ -246,7 +368,33 @@ company:
           side_bar_lsplit_box_suppress: True
           side_bar_rsplit_box_suppress: True
           comment_text_y: 70
-
+      concession:
+        _:
+          closes_text_text: "Removed in phase 4"
+          long_name_text_text: |
+              SFTC Concession (3)
+          power_text_text: |
+              Owning player may start 
+              SFTC.
+              Owning player can't lose the
+              presidency of SFTC.
+              If SFTC not started at the end of SR,
+              this concession is put in the market.
+          cost_text_text: "Cost L.50 from the market"
+          cost_text_size: 10
+          bid_text_text: ""
+          bid_text_x: 168
+          long_name_text_size: 12
+          long_name_text_x: 86
+          long_name_text_y: 78
+          bottom_bar_box_y: 13
+          power_text_h_center: 1
+          power_text_x_inset: 4
+          power_text_size: 8
+          token_embed_x_inset: 130
+          token_embed_y_inset: 30
+          asset_interior_box_fill: ${colour/wikipedia/electric_yellow}
+        index: "$[index_of (1)]"
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
@@ -268,10 +416,10 @@ company:
         token_4_circle_fill: ${colour/hollasch/grey}
         token_5_text_text: NULL
         token_5_circle_fill: ${colour/hollasch/grey}
-        inner_circle_fill: ${colour/wikipedia/barn_red}
-        middle_circle_fill: ${colour/wikipedia/burnt_orange}
-        outer_circle_fill: ${colour/wikipedia/barn_red}
-        _related_fill: ${colour/wikipedia/chinese_red}
+        inner_circle_fill: ${colour/wikipedia/yellow_green}
+        middle_circle_fill: ${colour/wikipedia/lemon_lime}
+        outer_circle_fill: ${colour/wikipedia/yellow_green}
+        _related_fill: ${colour/wikipedia/green_yellow}
       charter:
         _:
           comment_text_text: |
@@ -298,13 +446,13 @@ company:
         token_1_text_text: Lucca
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL       
-        _related_fill: ${colour/wikipedia/french_lime}
+        _related_fill: ${colour/wikipedia/green_yellow}
       token:
         _:
-          _major_fill_1: ${colour/hollasch/chartreuse}
-          _major_fill_2: ${colour/hollasch/mint_cream}
-          _minor_fill_1: ${colour/hollasch/mint_cream}
-          _minor_fill_2: ${colour/hollasch/chartreuse}
+          _major_fill_1: ${colour/wikipedia/yellow_green}
+          _major_fill_2: ${colour/wikipedia/lemon_lime}
+          _minor_fill_1: ${colour/wikipedia/lemon_lime}
+          _minor_fill_2: ${colour/wikipedia/yellow_green}
         ELEMENTS: ${TEMPLATE_chequer/.}
         EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
         index: $[index_of (4)]    
@@ -331,18 +479,45 @@ company:
           "3":
       charter:
         _:
-          label_text_text: 5-share company
+          label_text_text: 5 share company
           comment_text_text: |
             Phase 4: merges with SFMA,
             then with SSFL to form SFLi
             1-2 stations, L.50 each
+      concession:
+        _:
+          closes_text_text: "Removed in phase 4"
+          long_name_text_text: |
+              SFLP Concession (2)
+          power_text_text: |
+              Owning player may start 
+              SFLP.
+              Owning player can't lose the
+              presidency of SFLP.
+              If SFLP not started at the end of SR,
+              this concession is put in the market.
+          cost_text_text: "Cost L.50 from the market"
+          cost_text_size: 10
+          bid_text_text: ""
+          bid_text_x: 168
+          long_name_text_size: 12
+          long_name_text_x: 86
+          long_name_text_y: 78
+          bottom_bar_box_y: 13
+          power_text_h_center: 1
+          power_text_x_inset: 4
+          power_text_size: 8
+          token_embed_x_inset: 130
+          token_embed_y_inset: 30
+          asset_interior_box_fill: ${colour/wikipedia/green_yellow}
+        index: "$[index_of (1)]"
     SFLP_pres:
       _:
         long_name_text_text: |
             Strada Ferrata
             da Lucca a Pistoia
         short_name_text_text: "SFLP"
-        _related_fill: ${colour/wikipedia/french_lime}
+        _related_fill: ${colour/wikipedia/green_yellow}
       charter:
         index:
       share:
@@ -356,8 +531,8 @@ company:
       token:
         _:
           _major_fill_1: ${colour/hollasch/chartreuse}
-          _major_fill_2: ${colour/hollasch/mint_cream}
-          _minor_fill_1: ${colour/hollasch/mint_cream}
+          _major_fill_2: ${colour/wikipedia/pastel_yellow}
+          _minor_fill_1: ${colour/wikipedia/pastel_yellow}
           _minor_fill_2: ${colour/hollasch/chartreuse}
         ELEMENTS: ${TEMPLATE_chequer/.}
         EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
@@ -406,11 +581,38 @@ company:
           "3":
       charter:
         _:
-          label_text_text: 5-share company
+          label_text_text: 5 share company
           comment_text_text: |
             Phase 4: merges with SFLP,
             then with SSFL to form SFLi
             1-2 stations, L.50 each
+      concession:
+        _:
+          closes_text_text: "Removed in phase 4"
+          long_name_text_text: |
+              SFMA Concession (4)
+          power_text_text: |
+              Owning player may start 
+              SFMA.
+              Owning player can't lose the
+              presidency of SFMA.
+              If SFMA not started at the end of SR,
+              this concession is put in the market.
+          cost_text_text: "Cost L.50 from the market"
+          cost_text_size: 10
+          bid_text_text: ""
+          bid_text_x: 168
+          long_name_text_size: 12
+          long_name_text_x: 86
+          long_name_text_y: 78
+          bottom_bar_box_y: 13
+          power_text_h_center: 1
+          power_text_x_inset: 4
+          power_text_size: 8
+          token_embed_x_inset: 130
+          token_embed_y_inset: 30
+          asset_interior_box_fill: ${colour/wikipedia/ferrari_red}
+        index: "$[index_of (1)]"
     SFMA_pres:
       _:
         long_name_text_text: |
@@ -482,11 +684,9 @@ company:
           "3":
       charter:
         _:
-          label_text_text: 5-share company
+          label_text_text: 5 share company
           comment_text_text: |
-            Phase 4: merges with SFMA,
-            then with SSFL to form SFLi
-            1-2 stations, L.50 each
+            1-2 stations, L.25/50/100/200 each
     SLDV_pres:
       _:
         long_name_text_text: |
@@ -520,15 +720,14 @@ company:
             Ferrovie
             Trans Padane
         short_name_text_text: "FTP"
+        name_stripe_box_fill: ${colour/xxp/BLACK}
         token_1_text_text: NULL
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL     
-        share_pct_text_fill: ${colour/xxp/WHITE}
-        name_stripe_box_fill: ${colour/xxp/BLACK}
-        _minor_fill: ${colour/xxp/WHITE}
+        _minor_fill: ${colour/x11/gray93}
         _major_fill: ${colour/x11/grey50}
         middle_box_fill: ${_/_minor_fill}
-        _related_fill: ${colour/x11/grey99}
+        _related_fill: ${colour/x11/gray79}
       token:
         _:
         ELEMENTS: ${TEMPLATE_boxes/.}
@@ -557,11 +756,9 @@ company:
           "3":
       charter:
         _:
-          label_text_text: 5-share company
+          label_text_text: 5 share company
           comment_text_text: |
-            Phase 4: merges with SFMA,
-            then with SSFL to form SFLi
-            1-2 stations, L.50 each
+            1-2 stations, L.25/50/100/200 each
     FTP_pres:
       _:
         long_name_text_text: |
@@ -631,11 +828,9 @@ company:
           "3":
       charter:
         _:
-          label_text_text: 5-share company
+          label_text_text: 5 share company
           comment_text_text: |
-            Phase 4: merges with SFMA,
-            then with SSFL to form SFLi
-            1-2 stations, L.50 each
+            1-2 stations, L.25/50/100/200 each
     CTLP_pres:
       _:
         long_name_text_text: |
@@ -795,9 +990,9 @@ company:
         token_4_text_text: NULL
         token_5_text_text: NULL
         name_stripe_box_fill: ${colour/xxp/BLACK}
-        _major_fill: ${colour/x11/dodgerblue3}
-        _minor_fill: ${_/_major_fill}
-        _related_fill: ${colour/x11/dodgerblue2}
+        _major_fill: ${colour/wikipedia/barn_red}
+        _minor_fill: ${colour/wikipedia/barn_red} #${colour/wikipedia/burnt_orange}
+        _related_fill: ${colour/wikipedia/chinese_red}
       charter:
         _:
           comment_text_text: |
@@ -825,9 +1020,10 @@ company:
         token_4_text_text: NULL
         token_5_text_text: NULL
         name_stripe_box_fill: ${colour/xxp/BLACK}
-        _major_fill: ${colour/x11/orangered}
+        #_major_fill: ${colour/x11/orangered}
+        _major_fill: ${colour/wikipedia/gold_metallic}
         _minor_fill: ${_/_major_fill}
-        _related_fill: ${colour/wikipedia/safety_orange_blaze_orange}
+        _related_fill: ${colour/wikipedia/jonquil}
       charter:
         _:
           comment_text_text: |
@@ -874,9 +1070,12 @@ company:
     CTDA:
       _:
         long_name_text_text: |
-            Compagnia Trasporti
+            Compagnia
             Dante Alighieri
-        short_name_text_text: CTDA
+        #Compagnia
+        #Trasporti
+        #Dante Alighieri
+        short_name_text_text: CDA
         token_1_text_text: NULL
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL
@@ -904,10 +1103,12 @@ company:
     CGTF:
       _:
         long_name_text_text: |
-            Compagnia Garibaldi
-            per i Trasporti
-            Ferroviari
-        short_name_text_text: CGTF
+            Garibaldi
+            Trasporti Ferroviari
+        #Compagnia Garibaldi
+        #per i Trasporti
+        #Ferroviari
+        short_name_text_text: GTF
         token_1_text_text: NULL
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL
@@ -936,9 +1137,11 @@ company:
       _:
         long_name_text_text: |
             Compagnia 
-            Ferroviaria
             Cante di Cavour
-        short_name_text_text: CFCC
+        #Compagnia 
+        #Ferroviaria
+        #Cante di Cavour
+        short_name_text_text: CCC
         token_1_text_text: NULL
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL
@@ -997,8 +1200,8 @@ train:
   index:
     2T:
       _:
-        asset_interior_box_fill: ${colour/galatolol/1841_yellow}
-        rust_bar_box_fill: ${colour/galatolol/1841_green}
+        asset_interior_box_fill_p: YELLOW
+        rust_bar_box_fill_p: BLUE
         rusted_text_text: "Rusted by 4"
         rusted_text_size: 14
         rusted_text_fill: ${colour/xxp/BLACK}
@@ -1008,8 +1211,8 @@ train:
         index: $[index_of (8)]
     3T:
       _:
-        asset_interior_box_fill: ${colour/galatolol/1841_green}
-        rust_bar_box_fill: ${colour/galatolol/brown}
+        asset_interior_box_fill_p: GREEN
+        rust_bar_box_fill_p: BROWN
         rusted_text_text: "Rusted by 5"
         rusted_text_size: 14
         long_name_text_text: "3"
@@ -1020,8 +1223,8 @@ train:
         index: $[index_of (6)]
     4T:
       _:
-        asset_interior_box_fill: ${colour/galatolol/1841_green}
-        rust_bar_box_fill: ${colour/galatolol/brown}
+        asset_interior_box_fill_p: BLUE
+        rust_bar_box_fill_p: PURPLE
         rusted_text_text: "Rusted by 7"
         rusted_text_size: 14
         long_name_text_text: "4"
@@ -1032,8 +1235,8 @@ train:
         index: $[index_of (4)]
     5T:
       _:
-        asset_interior_box_fill: ${colour/galatolol/brown}
-        rust_bar_box_fill: ${colour/galatolol/brown}
+        asset_interior_box_fill_p: BROWN
+        rust_bar_box_fill: ${colour/wikipedia/cool_black}
         rusted_text_text: "Rusted by 8"
         rusted_text_size: 14
         long_name_text_text: "5"
@@ -1042,8 +1245,8 @@ train:
         index: $[index_of (3)]
     6T:
       _:
-        asset_interior_box_fill: ${colour/galatolol/brown}
-        rust_bar_box_fill: ${colour/xxp/BLACK}
+        asset_interior_box_fill_p: GRAY
+        rust_bar_box_fill_p: BLACK
         rusted_text_text: "Permanent"
         rusted_text_size: 14
         long_name_text_text: "6"
@@ -1052,8 +1255,8 @@ train:
         index: $[index_of (2)]
     7T:
       _:
-        asset_interior_box_fill: ${colour/galatolol/brown}
-        rust_bar_box_fill: ${colour/xxp/BLACK}
+        asset_interior_box_fill_p: PURPLE
+        rust_bar_box_fill_p: BLACK
         rusted_text_text: "Permanent"
         rusted_text_size: 14
         long_name_text_text: "7"
@@ -1062,7 +1265,7 @@ train:
         index: $[index_of (2)]
     8T:
       _:
-        asset_interior_box_fill: ${colour/galatolol/brown}
+        asset_interior_box_fill: ${colour/wikipedia/cool_black}
         rust_bar_box_fill: ${colour/xxp/BLACK}
         rusted_text_text: "Permanent"
         rusted_text_size: 14
@@ -1072,6 +1275,12 @@ train:
         index: $[index_of (7)]
 
 marker:
+  token:
+    _:
+      short_name_text_size: 8
+      major_fill: ${colour/wikipedia/white}
+      minor_fill: ${colour/wikipedia/white}
+
   index:
     round:
       _:
@@ -1082,4 +1291,114 @@ marker:
       token:
         ELEMENTS: ${TEMPLATE_bullseye/.}
         index: "$[index_of (1)]"
+    atfa:
+      _:
+        short_name_text_text: ATFA
+      token:
+        index: "$[index_of (1)]"    
+    gtf:
+      _:
+        short_name_text_text: GTF
+      token:
+        index: "$[index_of (1)]"    
+    ccc:
+      _:
+        short_name_text_text: CCC
+      token:
+        index: "$[index_of (1)]"    
+    cts:
+      _:
+        short_name_text_text: CTS
 
+      token:
+        index: "$[index_of (1)]"    
+    ratf:
+      _:
+        short_name_text_text: RATF
+      token:
+        index: "$[index_of (1)]"    
+    ctlp:
+      _:
+        short_name_text_text: CTLP
+      token:
+        index: "$[index_of (1)]"    
+    cda:
+      _:
+        short_name_text_text: CDA
+      token:
+        index: "$[index_of (1)]"    
+    icsf:
+      _:
+        short_name_text_text: ICSF
+      token:
+        index: "$[index_of (1)]"    
+    ftp:
+      _:
+        short_name_text_text: FTP
+      token:
+        index: "$[index_of (1)]"    
+    cts:
+      _:
+        short_name_text_text: CTS
+      token:
+        index: "$[index_of (1)]"    
+    iltf:
+      _:
+        short_name_text_text: ILTF
+      token:
+        index: "$[index_of (1)]"    
+    ifai:
+      _:
+        short_name_text_text: IFAI
+      token:
+        index: "$[index_of (1)]"    
+    irsff:
+      _:
+        short_name_text_text: IRSFF
+      token:
+        index: "$[index_of (1)]"    
+    rsfs:
+      _:
+        short_name_text_text: RSFS
+      token:
+        index: "$[index_of (1)]"    
+    sflp:
+      _:
+        short_name_text_text: SFLP
+      token:
+        index: "$[index_of (1)]"    
+    sfma:
+      _:
+        short_name_text_text: SFMA
+      token:
+        index: "$[index_of (1)]"    
+    sfli:
+      _:
+        short_name_text_text: SFLi
+      token:
+        index: "$[index_of (1)]"    
+    sftg:
+      _:
+        short_name_text_text: SFTG
+      token:
+        index: "$[index_of (1)]"    
+    sftc:
+      _:
+        short_name_text_text: SFTC
+      token:
+        index: "$[index_of (1)]"    
+    sftn:
+      _:
+        short_name_text_text: SFTN
+      token:
+        index: "$[index_of (1)]"    
+    sldv:
+      _:
+        short_name_text_text: SLDV
+      token:
+        index: "$[index_of (1)]"    
+    ssfl:
+      _:
+        short_name_text_text: SSFL
+      token:
+        index: "$[index_of (1)]"   

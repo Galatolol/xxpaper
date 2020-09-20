@@ -1,19 +1,215 @@
+private:
+  _:
+    long_name_text_size: 11
+    money_bar_box_y: 13
+    closes_text_size: 7
+    power_text_size: 8
+    revenue_text_size: 9
+    revenue_text_y: 3
+    revenue_h_center: 0
+    revenue_v_center: -1
+    close_bar_box_suppress: true
+    closes_text_text: ""
+    long_name_text_y: 87
+    asset_interior_box_fill: ${colour/scale/yellow_0}
+
+  index:
+
+    pittsburgh:
+      _:
+        long_name_text_text: |
+            Pittsburgh Steel Mill
+        value_text_text: "$40"
+        power_text_text: |
+            May place yellow B tile in
+            Pittsburgh (F13).
+            Doesn't have to be connected.
+            This counts as a yellow tile lay.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    mountainEng:
+      _:
+        long_name_text_text: |
+            Mountain Engineers
+        value_text_text: "$40"
+        power_text_text: |
+            Gain $20 after every yellow tile
+            lay in a mountain hex.
+            Has to pay the hex's cost first.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    ohioBridge:
+      _:
+        long_name_text_text: |
+            Ohio Bridge Co
+        value_text_text: "$40"
+        power_text_text: |
+            1 bridge token.
+            Place yellow tiles in river hexes for free.
+            May place a bridge token in a river city.
+            Doesn't have to be connected.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    unionBridge:
+      _:
+        long_name_text_text: |
+            Union Bridge Co
+        value_text_text: "$80"
+        power_text_text: |
+            2 bridge tokens.
+            Place yellow tiles in river hexes for free.
+            May place a bridge token in a river city.
+            Doesn't have to be connected.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    trainStation:
+      _:
+        long_name_text_text: |
+            Train Station
+        value_text_text: "$80"
+        power_text_text: |
+            Additional station.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    minorCoal:
+      _:
+        long_name_text_text: |
+            Minor Coal Mine
+        value_text_text: "$30"
+        power_text_text: |
+            1 coal token.
+            May place a coal token upon
+            laying a yellow tile in a mountain hex
+            adjacent to a city or an offboard.
+            Doesn't pay the hex's cost then.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    coal:
+      _:
+        long_name_text_text: |
+            Coal Mine
+        value_text_text: "$60"
+        power_text_text: |
+            2 coal tokens.
+            May place a coal token upon
+            laying a yellow tile in a mountain hex
+            adjacent to a city or an offboard.
+            Doesn't pay the hex's cost then.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    majorCoal:
+      _:
+        long_name_text_text: |
+            Major Coal Mine
+        value_text_text: "$90"
+        power_text_text: |
+            3 coal tokens.
+            May place a coal token upon
+            laying a yellow tile in a mountain hex
+            adjacent to a city or an offboard.
+            Doesn't pay the hex's cost then.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    minorMail:
+      _:
+        long_name_text_text: |
+            Minor Mail Contract
+        value_text_text: "$60"
+        power_text_text: ""
+        cost_text_text: ""
+        revenue_text_text: "Revenue $10 if has a train"
+        revenue_text_x: 125
+      model:
+        index: $[index_of (1)]
+
+    mail:
+      _:
+        long_name_text_text: |
+            Mail Contract
+        value_text_text: "$90"
+        power_text_text: ""
+        cost_text_text: ""
+        revenue_text_text: "Revenue $15 if has a train"
+        revenue_text_x: 125
+      model:
+        index: $[index_of (1)]
+
+    majorMail:
+      _:
+        long_name_text_text: |
+            Major Mail Contract
+        value_text_text: "$120"
+        power_text_text: ""
+        cost_text_text: ""
+        revenue_text_text: "Revenue $20 if has a train"
+        revenue_text_x: 125
+      model:
+        index: $[index_of (1)]
+
 company:
   charter:
     _:
       label_text_text: "Stations                              Loans"
       comment_text_text: #May place extra yellow tile for $20 (in any order)
       long_name_text_x: 130
+      long_name_text_size: 14
       type_text_text: 2 Share
+      type_text_size: 7
+      type_text_y: 310
       type_circle_fill: ${colour/wikipedia/pink}
       token_1_circle_suppress: False
       token_1_circle_fill: ${colour/wikipedia/pink}
+      token_1_text_text: "2 Share"
+      token_1_text_size: 7
+      token_1_text_x: 42
+      token_1_text_y: 230
       token_2_circle_suppress: False
       token_2_circle_fill: ${colour/wikipedia/robin_egg_blue}
+      token_2_text_text: "5 Share"
+      token_2_text_size: 7
+      token_2_text_y: 174
       token_3_circle_suppress: False
       token_3_circle_fill: ${colour/wikipedia/wisteria}
+      token_3_text_text: "10 Share"
+      token_3_text_size: 7
+      token_3_text_y: 118
       token_4_circle_suppress: False
       token_4_circle_fill: ${colour/wikipedia/wisteria}
+      token_4_text_text: "10 Share"
+      token_4_text_size: 7
+      token_4_text_y: 63
       token_5_circle_suppress: True
       token_6_circle_suppress: False
       token_7_circle_suppress: False
@@ -21,10 +217,45 @@ company:
       token_9_circle_suppress: False
       token_10_circle_suppress: False
       loan_1_square_shape_suppress: False
-      loan_1_text_text: "2 share"
+      loan_1_square_shape_fill: ${colour/wikipedia/wisteria}
+      loan_1_text_text: "10 Share"
+      loan_1_text_size: 6
+      loan_2_square_shape_suppress: False
+      loan_2_square_shape_fill: ${colour/wikipedia/wisteria}
+      loan_2_text_text: "10 Share"
+      loan_2_text_size: 6
+      loan_3_square_shape_suppress: False  
+      loan_3_square_shape_fill: ${colour/wikipedia/wisteria}
+      loan_3_text_text: "10 Share"
+      loan_3_text_size: 6
+      loan_4_square_shape_suppress: False
+      loan_4_square_shape_fill: ${colour/wikipedia/wisteria}
+      loan_4_text_text: "10 Share"
+      loan_4_text_size: 6
+      loan_5_square_shape_suppress: False
+      loan_5_square_shape_fill: ${colour/wikipedia/wisteria}
+      loan_5_text_text: "10 Share"
+      loan_5_text_size: 6
       loan_6_square_shape_suppress: False
-      loan_6_text_text: "2 share"
-
+      loan_6_square_shape_fill: ${colour/wikipedia/pink}
+      loan_6_text_text: "2 Share"
+      loan_6_text_size: 6
+      loan_7_square_shape_suppress: False
+      loan_7_square_shape_fill: ${colour/wikipedia/pink}
+      loan_7_text_text: "2 Share"
+      loan_7_text_size: 6
+      loan_8_square_shape_suppress: False
+      loan_8_square_shape_fill: ${colour/wikipedia/robin_egg_blue}
+      loan_8_text_text: "5 Share"
+      loan_8_text_size: 6
+      loan_9_square_shape_suppress: False
+      loan_9_square_shape_fill: ${colour/wikipedia/robin_egg_blue}
+      loan_9_text_text: "5 Share"
+      loan_9_text_size: 6
+      loan_10_square_shape_suppress: False
+      loan_10_square_shape_fill: ${colour/wikipedia/robin_egg_blue}
+      loan_10_text_text: "5 Share"
+      loan_10_text_size: 6
   share:
     _:
       share_desc_text_suppress: False
@@ -168,39 +399,40 @@ company:
           fill: ${colour/wikipedia/red} 
         asset_interior_box:
           fill: ${colour/wikipedia/pink}
-
+  token:
+    _:
+      short_name_text_size: 8
 
   index:
 
-    # bright green
+    # green
     RR:
       _:
         long_name_text_text: |
             Rutland Railroad
         short_name_text_text: RR
-        _major_fill: ${colour/x11/limegreen}
-        _major_fill_2: ${colour/wikipedia/pastel_yellow}
-        _minor_fill_2: ${_/_major_fill_2}
-        _related_fill: ${colour/wikipedia/electric_green}
+        _major_fill: ${colour/x11/gold}
+        _minor_fill: ${colour/x11/limegreen}
+        _related_fill: ${colour/x11/yellowgreen}
       token:
-        ELEMENTS: ${TEMPLATE_stripey/.}
-        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
-        index: $[index_of (1)]
+        index: $[index_of (10)]
 
-    # green
-    PRR:
+    # dark green
+    J:
       _:
         long_name_text_text: |
-            Pennsylvania
-            Railroad
-        short_name_text_text: PRR
+            Elgin, Jollet and
+            Eastern Railway
+        short_name_text_text: J
+        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2)]
+        short_name_text_fill: ${colour/xxp/WHITE}
+        name_stripe_box_suppress: True
         _major_fill: ${colour/xxp/D_GREEN}
-        _minor_fill: ${colour/xxp/H_GREEN}
-        _related_fill: ${colour/wikipedia/forest_green_web}
+        _minor_fill: ${colour/xxp/D_GREEN}
+        _related_fill: ${colour/hollasch/cinnabar_green}
       token:
-        ELEMENTS: ${TEMPLATE_cross/.}
-        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
-        index: $[index_of (1)]
+        index: $[index_of (10)]
 
     # lime
     PLE:
@@ -219,7 +451,7 @@ company:
           inner_circle_fill: ${_/_major_fill}
         ELEMENTS: ${TEMPLATE_bullseye/.}
         EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
-        index: $[index_of (1)]    
+        index: $[index_of (10)]    
 
     # red
     BAR:
@@ -228,18 +460,13 @@ company:
             Boston and
             Albany Railroad
         short_name_text_text: BAR
-        _major_fill: ${colour/wikipedia/rosso_corsa}
-        _minor_fill: ${_/_major_fill}
-        _related_fill: ${colour/wikipedia/red_orange}
-      
+        _major_fill: ${colour/x11/red}
+        _minor_fill: ${colour/xxp/BLACK}
+        _related_fill: ${colour/hollasch/tomato}
       token:
-        _:
-          outer_circle_fill: ${_/_major_fill}
-          middle_circle_fill: ${_/_related_fill}
-          inner_circle_fill: ${_/_major_fill}
-        ELEMENTS: ${TEMPLATE_bullseye/.}
-        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
-        index: $[index_of (1)]
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: $[index_of (10)]
 
     # navy blue
     UR:
@@ -247,29 +474,31 @@ company:
         long_name_text_text: |
             Union Railroad
         short_name_text_text: UR
-        _major_fill: ${colour/wikipedia/international_klein_blue}
+        _major_fill: ${colour/wikipedia/imperial_blue}
         _minor_fill: ${colour/wikipedia/little_boy_blue}
-        _related_fill: ${colour/wikipedia/imperial_blue}
+        _related_fill: ${colour/wikipedia/international_klein_blue}
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
-        index: $[index_of (1)]      
+        index: $[index_of (10)]      
 
     # blue
-    BO:
+    PS:
       _:
         long_name_text_text: |
-            Baltimore
-            and Ohio
-        short_name_text_text: BO
+            Pittsburgh and
+            Shawmut
+        short_name_text_text: PS
         _major_fill: ${colour/wikipedia/blue_ryb}
         _major_fill_2: ${colour/wikipedia/banana_yellow}
+        _minor_fill_2: ${_/_major_fill_2}
+        _minor_fill: ${_/_major_fill}
         _minor_fill_2: ${_/_major_fill_2}
         _related_fill: ${colour/hollasch/steel_blue}
       token:
         ELEMENTS: ${TEMPLATE_stripey/.}
         EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
-        index: $[index_of (1)]
+        index: $[index_of (10)]
 
     # light blue
     HR:
@@ -278,15 +507,483 @@ company:
             Housatonic
             Railroad
         short_name_text_text: HR
-        _major_fill: ${colour/wikipedia/maya_blue}
-        _minor_fill: ${colour/wikipedia/light_cyan}
-        _related_fill: ${colour/wikipedia/light_sky_blue}
+        _major_fill: ${colour/wikipedia/light_sky_blue}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/hollasch/powder_blue}
+        name_stripe_box_suppress: True
       token:
         _:
-          outer_circle_fill: ${_/_major_fill}
-          middle_circle_fill: ${_/_minor_fill}
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 12
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of (10)]
+
+    #orange
+    WTR:
+      _:
+        long_name_text_text: |
+          Warren and
+          Trumbull Railway
+        short_name_text_text: WTR
+        _major_fill: ${colour/wikipedia/amber_sae_ece}
+        _minor_fill: ${colour/x11/white}        
+        _related_fill: ${colour/wikipedia/pink_orange}
+      token:
+        _:
           inner_circle_fill: ${_/_major_fill}
+          inner_circle_radius: 9
         ELEMENTS: ${TEMPLATE_bullseye/.}
         EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
-        index: $[index_of (1)]
+        index: $[index_of (10)]
 
+    #natural
+    PWR:
+      _:
+        long_name_text_text: |
+          Providence and
+          Worcester Railway
+        short_name_text_text: PWR
+        _major_fill: ${colour/x11/antiquewhite2}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/x11/antiquewhite}
+      token:
+        index: $[index_of (10)]
+
+    #black
+    Bess:
+      _:
+        long_name_text_text: |
+          Bessemer and
+          Lake Erie Railroad
+        short_name_text_text: Bess
+        _major_fill: ${colour/xxp/BLACK}
+        _minor_fill: ${colour/xxp/WHITE}
+        _related_fill: ${colour/x11/gray43}
+        _share_pct_text_fill_x: ${colour/xxp/WHITE}
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: $[index_of (10)]
+
+    #gray
+    DL:
+      _:
+        long_name_text_text: |
+          Delaware and
+          Lackawanna
+        short_name_text_text: DL
+        _major_fill: ${colour/wikipedia/black}
+        _minor_fill: ${colour/wikipedia/lavender_gray}
+        _related_fill: ${colour/wikipedia/lavender_gray}
+        name_stripe_box_suppress: True
+        middle_box_fill: ${colour/wikipedia/dark_gray}
+      token:
+        ELEMENTS: ${TEMPLATE_boxes/.}
+        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
+        _:
+          short_name_text_size: 12
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
+        index: $[index_of (10)]
+
+    #pink
+    MER:
+      _:
+        long_name_text_text: |
+          Morristown and
+          Erie Railway
+        short_name_text_text: MER
+        _major_fill: ${colour/hollasch/hot_pink}
+        _minor_fill: ${colour/hollasch/misty_rose}
+        _related_fill: ${colour/hollasch/pink}
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: $[index_of (10)]
+
+    #yellow
+    AAR:
+      _:
+        long_name_text_text: |
+          Arcade and
+          Attica Railroad
+        short_name_text_text: AAR
+        _major_fill: ${colour/wikipedia/canary_yellow}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/wikipedia/icterine}
+        name_stripe_box_suppress: True
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 10
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of (10)]  
+
+    #white
+    BRC:
+      _:
+        long_name_text_text: |
+          Belt Railway
+          of Chicago
+        short_name_text_text: BRC
+        _major_fill: ${colour/xxp/WHITE}
+        _minor_fill: ${colour/xxp/BLACK}
+        _related_fill: ${colour/x11/gray93}
+        _share_pct_text_fill_x: ${colour/xxp/WHITE}
+        #name_stripe_box_fill: ${colour/xxp/BLACK}
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: $[index_of (10)]
+
+    #purple
+    GRWT:
+      _:
+        long_name_text_text: |
+          Grand Trunk
+          Western Railroad
+        short_name_text_text: GRWT
+        _major_fill: ${colour/wikipedia/rich_lavender}
+        _minor_fill: ${colour/wikipedia/black}
+        _related_fill: ${colour/wikipedia/plum_web}
+      token:
+        _:
+          inner_circle_fill: ${_/_major_fill}
+          inner_circle_radius: 9
+          short_name_text_size: 8
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: $[index_of (10)]
+
+    #brown
+    WC:
+      _:
+        long_name_text_text: |
+          West Chester
+        short_name_text_text: WC
+        _major_fill: ${colour/hollasch/brown_ochre}
+        _minor_fill: ${_\_major_fill}
+        _related_fill: ${colour/hollasch/brick}
+        name_stripe_box_suppress: True
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 12
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of (10)]
+
+    #red_brown
+    ASR:
+      _:
+        long_name_text_text: |
+          Alton and
+          Southern Railway
+        short_name_text_text: ASR
+        _major_fill: ${colour/wikipedia/barn_red}
+        _minor_fill: ${colour/wikipedia/barn_red} 
+        _related_fill: ${colour/wikipedia/chinese_red}
+      token:
+        index: $[index_of (10)]
+
+    #gold
+    S:
+      _:
+        long_name_text_text: |
+            Susquehanna
+            Railway
+        short_name_text_text: S
+        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 2]
+        name_stripe_box_suppress: True
+        token_1_text_text: NULL
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL
+        token_2_circle_fill: ${colour/hollasch/grey}
+        token_3_text_text: NULL
+        token_4_text_text: NULL
+        token_5_text_text: NULL
+        #_major_fill: ${colour/x11/orangered}
+        _major_fill: ${colour/wikipedia/gold_metallic}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/wikipedia/jonquil}
+      token:
+        index: $[index_of (10)]
+
+    #red_and_yellow
+    W:
+      _:
+        long_name_text_text: |
+            Western
+            Railway
+        short_name_text_text: W
+        short_name_text_size: 15
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2 - 1)]
+        short_name_text_fill: ${colour/xxp/WHITE}
+        name_stripe_box_suppress: True
+        _major_fill: ${colour/xxp/M_RED}
+        _major_fill_2: ${colour/xxp/L_YELLOW}
+        _minor_fill: ${_/_major_fill}
+        _minor_fill_2: ${_/_major_fill_2}
+        _related_fill: ${colour/x11/lightcoral}
+      token:
+        ELEMENTS: ${TEMPLATE_stripey/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
+        index: "$[index_of (10)]"
+
+    #turquoise
+    SR:
+      _:
+        long_name_text_text: |
+            Strasbourg
+            Railroad
+        short_name_text_text: SR
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+        _major_fill: ${colour/x11/turquoise4}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/x11/turquoise3}
+      token:
+        index: $[index_of (10)]
+
+
+train:
+  _:
+    long_name_text_size: 58
+    note_text_size: 9
+
+  index:
+    2T:
+      _:
+        asset_interior_box_fill_p: YELLOW
+        rust_bar_box_fill_p: BLUE
+        rusted_text_text: Rusted by Blue
+        long_name_text_text: "2"
+        cost_text_text: "Cost: $100"
+      model:
+        index: $[index_of (15)]
+
+    2Plus:
+      _:
+        asset_interior_box_fill: ${colour/wikipedia/yellow_orange}
+        rust_bar_box_fill_p: BLUE
+        rusted_text_text: Rusted by 4
+        long_name_text_text: "2+"
+        cost_text_text: "Cost: $100"
+        note_text_text: |
+            Runs once more
+            before rusting
+      model:
+        index: $[index_of (4)]
+
+    3T:
+      _:
+        asset_interior_box_fill_p: GREEN
+        rust_bar_box_fill_p: RED
+        rusted_text_text: Rusted by 6
+        long_name_text_text: "3"
+        cost_text_text: "Cost: $250"
+      model:
+        index: $[index_of (12)]
+
+    4T:
+      _:
+        asset_interior_box_fill_p: BLUE
+        rust_bar_box_fill_p: PURPLE
+        rusted_text_text: Rusted by 8
+        long_name_text_text: "4"
+        cost_text_text: "Cost: $400"
+      model:
+        index: $[index_of (8)]
+
+    5T:
+      _:
+        asset_interior_box_fill_p: BROWN
+        rust_bar_box_fill_p: BLACK
+        rusted_text_text: Permanent
+        long_name_text_text: "5"
+        cost_text_text: "Cost: $600"
+      model:
+        index: $[index_of (5)]
+
+    6T:
+      _:
+        asset_interior_box_fill_p: RED
+        rust_bar_box_fill_p: BLACK
+        rusted_text_text: Permanent
+        long_name_text_text: "6"
+        cost_text_text: "Cost: $750"
+      model:
+        index: $[index_of (4)]
+
+    7T:
+      _:
+        asset_interior_box_fill_p: GRAY
+        rust_bar_box_fill_p: BLACK
+        rusted_text_text: Permanent
+        long_name_text_text: "7"
+        cost_text_text: "Cost: $900"
+      model:
+        index: $[index_of (3)]
+
+    8T:
+      _:
+        asset_interior_box_fill_p: PURPLE
+        rust_bar_box_fill_p: BLACK
+        rusted_text_text: Permanent
+        long_name_text_text: "8"
+        cost_text_text: "Cost: $1100"
+      model:
+        index: $[index_of (10)]
+
+marker:
+  _:
+    short_name_text_size: 8
+    
+  index:
+
+    round:
+      token:
+        ELEMENTS:
+          - token_interior_box
+          - outer_circle
+          - middle_circle
+          - inner_circle
+
+        index: $[index_of (1)]
+      outer_circle:
+        fill: ${colour/galatolol/yellow}
+      middle_circle:
+        fill: ${colour/galatolol/green}
+      inner_circle:
+        fill: ${colour/galatolol/brown}    
+
+    5share:
+      token:
+        _:
+          short_name_text_text: "5 Share"
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 4.5]
+          short_name_text_size: 7
+          name_stripe_box_suppress: True
+          _major_fill: ${colour/wikipedia/robin_egg_blue}
+          _minor_fill: ${colour/wikipedia/robin_egg_blue}
+        index: $[index_of (20)]
+
+    10share:
+      token:
+        _:
+          short_name_text_text: "10 Share"
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 4.5]
+          short_name_text_size: 7
+          name_stripe_box_suppress: True
+          _major_fill: ${colour/wikipedia/wisteria}
+          _minor_fill: ${colour/wikipedia/wisteria}
+        index: $[index_of (20)]
+
+    aar:
+      _:
+        short_name_text_text: AAR
+      token:
+        index: "$[index_of (1)]"    
+    asr:
+      _:
+        short_name_text_text: ASR
+      token:
+        index: "$[index_of (1)]"    
+    bar:
+      _:
+        short_name_text_text: BAR
+      token:
+        index: "$[index_of (1)]"        
+    bess:
+      _:
+        short_name_text_text: Bess
+      token:
+        index: "$[index_of (1)]"    
+    brc:
+      _:
+        short_name_text_text: BRC
+      token:
+        index: "$[index_of (1)]"    
+    dl:
+      _:
+        short_name_text_text: DL
+      token:
+        index: "$[index_of (1)]"    
+    grwt:
+      _:
+        short_name_text_text: GRWT
+      token:
+        index: "$[index_of (1)]"    
+    hr:
+      _:
+        short_name_text_text: HR
+      token:
+        index: "$[index_of (1)]"    
+    j:
+      _:
+        short_name_text_text: J
+      token:
+        index: "$[index_of (1)]"    
+    mer:
+      _:
+        short_name_text_text: MER
+      token:
+        index: "$[index_of (1)]"    
+    ple:
+      _:
+        short_name_text_text: PLE
+      token:
+        index: "$[index_of (1)]"    
+    ps:
+      _:
+        short_name_text_text: PS
+      token:
+        index: "$[index_of (1)]"    
+    pwr:
+      _:
+        short_name_text_text: PWR
+      token:
+        index: "$[index_of (1)]"    
+    rr:
+      _:
+        short_name_text_text: RR
+      token:
+        index: "$[index_of (1)]"    
+    s:
+      _:
+        short_name_text_text: S
+      token:
+        index: "$[index_of (1)]"      
+    sr:
+      _:
+        short_name_text_text: SR
+      token:
+        index: "$[index_of (1)]"    
+    ur:
+      _:
+        short_name_text_text: UR
+      token:
+        index: "$[index_of (1)]"    
+    w:
+      _:
+        short_name_text_text: W
+      token:
+        index: "$[index_of (1)]"    
+    wc:
+      _:
+        short_name_text_text: WC
+      token:
+        index: "$[index_of (1)]"      
+    wtr:
+      _:
+        short_name_text_text: WTR
+      token:
+        index: "$[index_of (1)]"         
