@@ -1401,7 +1401,7 @@ marker:
         short_name_text_text: ET
       token:
         index: "$[index_of (1)]"    
-    BT:
+    bt:
       _:
         short_name_text_text: BT
       token:
@@ -1411,63 +1411,62 @@ marker:
         short_name_text_text: GNR
       token:
         index: "$[index_of (1)]"    
-    cts:
+    gv:
       _:
         short_name_text_text: GV
-
       token:
         index: "$[index_of (1)]"    
-    ratf:
+    hf:
       _:
         short_name_text_text: HF
       token:
         index: "$[index_of (1)]"    
-    ctlp:
+    ll:
       _:
         short_name_text_text: LL
       token:
         index: "$[index_of (1)]"    
-    cda:
+    mh:
       _:
         short_name_text_text: MH
       token:
         index: "$[index_of (1)]"    
-    icsf:
+    nc:
       _:
         short_name_text_text: NC
       token:
         index: "$[index_of (1)]"    
-    ftp:
+    rd:
       _:
         short_name_text_text: RD
       token:
         index: "$[index_of (1)]"    
-    cts:
+    rrr:
       _:
         short_name_text_text: RRR
       token:
         index: "$[index_of (1)]"    
-    iltf:
+    sf:
       _:
         short_name_text_text: SF
       token:
         index: "$[index_of (1)]"    
-    ifai:
+    te:
       _:
         short_name_text_text: TE
       token:
         index: "$[index_of (1)]"    
-    irsff:
+    tr:
       _:
         short_name_text_text: TR
       token:
         index: "$[index_of (1)]"    
-    rsfs:
+    ur:
       _:
         short_name_text_text: UR
       token:
         index: "$[index_of (1)]"    
-    sflp:
+    wr:
       _:
         short_name_text_text: WR
       token:
