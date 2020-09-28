@@ -71,7 +71,6 @@ company:
         token_4_text_text: $100
         _major_fill: ${colour/x11/red}
         _minor_fill: ${colour/xxp/BLACK}
-        #_minor_fill: ${colour/wikipedia/coral_pink}
         _related_fill: ${colour/hollasch/tomato}
       token:
         ELEMENTS: ${TEMPLATE_cross/.}

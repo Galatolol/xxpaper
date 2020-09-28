@@ -21,7 +21,7 @@ private:
             Pittsburgh Steel Mill
         value_text_text: "$40"
         power_text_text: |
-            May place yellow B tile in
+            May place the yellow B tile in
             Pittsburgh (F13).
             Doesn't have to be connected.
             This counts as a yellow tile lay.
@@ -37,8 +37,8 @@ private:
             Mountain Engineers
         value_text_text: "$40"
         power_text_text: |
-            Gain $20 after every yellow tile
-            lay in a mountain hex.
+            Gain $20 after laying a yellow
+            tile in a mountain hex.
             Has to pay the hex's cost first.
         money_bar_box_suppress: true
         cost_text_text: ""
@@ -421,11 +421,11 @@ company:
     J:
       _:
         long_name_text_text: |
-            Elgin, Jollet and
-            Eastern Railway
+            Jollet Railway
         short_name_text_text: J
-        short_name_text_size: 22
-        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2)]
+        #short_name_text_typeface: ${XXP_font_mirage/typeface}
+        short_name_text_size: 20
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 2]
         short_name_text_fill: ${colour/xxp/WHITE}
         name_stripe_box_suppress: True
         _major_fill: ${colour/xxp/D_GREEN}
@@ -439,11 +439,11 @@ company:
       _:
         long_name_text_text: |
             Pittsburgh and
-            Lake Erie Railroad
+              Lake Erie
         short_name_text_text: PLE
         _major_fill: ${colour/wikipedia/yellow_green}
         _minor_fill: ${colour/wikipedia/lemon_lime}
-        _related_fill: ${colour/wikipedia/green_yellow}
+        _related_fill: ${colour/wikipedia/lemon_lime}
       token:
         _:
           outer_circle_fill: ${_/_major_fill}
@@ -525,9 +525,9 @@ company:
     WTR:
       _:
         long_name_text_text: |
-          Warren and
-          Trumbull Railway
-        short_name_text_text: WTR
+          Ontario and
+          Western
+        short_name_text_text: OW
         _major_fill: ${colour/wikipedia/amber_sae_ece}
         _minor_fill: ${colour/x11/white}        
         _related_fill: ${colour/wikipedia/pink_orange}
@@ -543,9 +543,8 @@ company:
     PWR:
       _:
         long_name_text_text: |
-          Providence and
-          Worcester Railway
-        short_name_text_text: PWR
+          Central Vermont
+        short_name_text_text: CV
         _major_fill: ${colour/x11/antiquewhite2}
         _minor_fill: ${_/_major_fill}
         _related_fill: ${colour/x11/antiquewhite}
@@ -556,8 +555,8 @@ company:
     Bess:
       _:
         long_name_text_text: |
-          Bessemer and
-          Lake Erie Railroad
+          Bessemer
+          Railroad
         short_name_text_text: Bess
         _major_fill: ${colour/xxp/BLACK}
         _minor_fill: ${colour/xxp/WHITE}
@@ -575,7 +574,7 @@ company:
           Delaware and
           Lackawanna
         short_name_text_text: DL
-        _major_fill: ${colour/wikipedia/black}
+        _major_fill: ${colour/wikipedia/onyx}
         _minor_fill: ${colour/wikipedia/lavender_gray}
         _related_fill: ${colour/wikipedia/lavender_gray}
         name_stripe_box_suppress: True
@@ -637,18 +636,150 @@ company:
         _related_fill: ${colour/x11/gray93}
         _share_pct_text_fill_x: ${colour/xxp/WHITE}
         #name_stripe_box_fill: ${colour/xxp/BLACK}
+      share:
+        _:
+          asset_interior_box_fill: ${colour/xxp/WHITE}
+        index:
+          "1":
+            share_pct_text:
+              text:
+            comment_text:
+              text: "President"
+            share_desc_text:
+              text: "2 Shares"
+            share_num_text:
+              text: "100/40/20%"
+          "2":
+          "3":
+          "4":
+          "5":
+          "6":
+          "7":
+          "8":
+          "9":
+          "10":
+          "11":
+          "12":
+          "13":
+          "14":
+          "15":
+          "16":
+          "17":
+          "18":
+          "19":
+          "20":
+            share_desc_text:
+              x: 66
+              text: Short Share
+              fill: ${colour/wikipedia/red} 
+            share_num_text:
+              text: -20/10%
+              fill: ${colour/wikipedia/red} 
+            asset_interior_box:
+              fill: ${colour/wikipedia/pink}
+          "21":
+            share_desc_text:
+              x: 66
+              text: Short Share
+              fill: ${colour/wikipedia/red} 
+            share_num_text:
+              text: -20/10%
+              fill: ${colour/wikipedia/red} 
+            asset_interior_box:
+              fill: ${colour/wikipedia/pink}
+          "22":
+            share_desc_text:
+              x: 66
+              text: Short Share
+              fill: ${colour/wikipedia/red} 
+            share_num_text:
+              text: -20/10%
+              fill: ${colour/wikipedia/red} 
+            asset_interior_box:
+              fill: ${colour/wikipedia/pink}
+          "23":
+            share_desc_text:
+              x: 66
+              text: Short Share
+              fill: ${colour/wikipedia/red} 
+            share_num_text:
+              text: -20/10%
+              fill: ${colour/wikipedia/red} 
+            asset_interior_box:
+              fill: ${colour/wikipedia/pink}
+          "24":
+            share_desc_text:
+              x: 66
+              text: Short Share
+              fill: ${colour/wikipedia/red} 
+            share_num_text:
+              text: -20/10%
+              fill: ${colour/wikipedia/red} 
+            asset_interior_box:
+              fill: ${colour/wikipedia/pink}
+          "25":
+            share_desc_text:
+              x: 66
+              text: Short Share
+              fill: ${colour/wikipedia/red} 
+            share_num_text:
+              text: -20/10%
+              fill: ${colour/wikipedia/red} 
+            asset_interior_box:
+              fill: ${colour/wikipedia/pink}
+          "26":
+            share_desc_text:
+              x: 66
+              text: Short Share
+              fill: ${colour/wikipedia/red} 
+            share_num_text:
+              text: -20/10%
+              fill: ${colour/wikipedia/red} 
+            asset_interior_box:
+              fill: ${colour/wikipedia/pink}
+          "27":
+            share_desc_text:
+              x: 66
+              text: Short Share
+              fill: ${colour/wikipedia/red} 
+            share_num_text:
+              text: -20/10%
+              fill: ${colour/wikipedia/red} 
+            asset_interior_box:
+              fill: ${colour/wikipedia/pink}
+          "28":
+            share_desc_text:
+              x: 66
+              text: Short Share
+              fill: ${colour/wikipedia/red} 
+            share_num_text:
+              text: -20/10%
+              fill: ${colour/wikipedia/red} 
+            asset_interior_box:
+              fill: ${colour/wikipedia/pink}
+          "29":
+            share_desc_text:
+              x: 66
+              text: Short Share
+              fill: ${colour/wikipedia/red} 
+            share_num_text:
+              text: -20/10%
+              fill: ${colour/wikipedia/red} 
+            asset_interior_box:
+              fill: ${colour/wikipedia/pink}
+
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
         index: $[index_of (10)]
 
     #purple
-    GRWT:
+    GTW:
       _:
         long_name_text_text: |
           Grand Trunk
-          Western Railroad
-        short_name_text_text: GRWT
+          Western
+        short_name_text_text: GWT
         _major_fill: ${colour/wikipedia/rich_lavender}
         _minor_fill: ${colour/wikipedia/black}
         _related_fill: ${colour/wikipedia/plum_web}
@@ -689,9 +820,13 @@ company:
           Southern Railway
         short_name_text_text: ASR
         _major_fill: ${colour/wikipedia/barn_red}
-        _minor_fill: ${colour/wikipedia/barn_red} 
+        _major_fill_2: ${colour/wikipedia/tractor_red}
+        _minor_fill: ${_/_major_fill}
+        _minor_fill_2: ${_/_major_fill_2}
         _related_fill: ${colour/wikipedia/chinese_red}
       token:
+        ELEMENTS: ${TEMPLATE_stripey/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
         index: $[index_of (10)]
 
     #gold
@@ -758,6 +893,7 @@ train:
   _:
     long_name_text_size: 58
     note_text_size: 9
+    top_note_text_typeface: ${DEFAULT/typeface}
 
   index:
     2T:
@@ -768,7 +904,7 @@ train:
         long_name_text_text: "2"
         cost_text_text: "Cost: $100"
       model:
-        index: $[index_of (15)]
+        index: $[index_of (17)]
 
     2Plus:
       _:
@@ -870,22 +1006,22 @@ marker:
         _:
           short_name_text_text: "5 Share"
           short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 4.5]
-          short_name_text_size: 7
+          short_name_text_size: 5
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/robin_egg_blue}
           _minor_fill: ${colour/wikipedia/robin_egg_blue}
-        index: $[index_of (20)]
+        index: $[index_of (36)]
 
     10share:
       token:
         _:
           short_name_text_text: "10 Share"
           short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 4.5]
-          short_name_text_size: 7
+          short_name_text_size: 5
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/wisteria}
           _minor_fill: ${colour/wikipedia/wisteria}
-        index: $[index_of (20)]
+        index: $[index_of (36)]
 
     aar:
       _:
@@ -917,9 +1053,9 @@ marker:
         short_name_text_text: DL
       token:
         index: "$[index_of (1)]"    
-    grwt:
+    gwt:
       _:
-        short_name_text_text: GRWT
+        short_name_text_text: GWT
       token:
         index: "$[index_of (1)]"    
     hr:
@@ -947,9 +1083,9 @@ marker:
         short_name_text_text: PS
       token:
         index: "$[index_of (1)]"    
-    pwr:
+    vc:
       _:
-        short_name_text_text: PWR
+        short_name_text_text: VC
       token:
         index: "$[index_of (1)]"    
     rr:
@@ -982,8 +1118,8 @@ marker:
         short_name_text_text: WC
       token:
         index: "$[index_of (1)]"      
-    wtr:
+    ow:
       _:
-        short_name_text_text: WTR
+        short_name_text_text: OW
       token:
         index: "$[index_of (1)]"         

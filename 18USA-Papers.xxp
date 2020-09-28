@@ -1,0 +1,572 @@
+private:
+  _:
+    long_name_text_size: 11
+    money_bar_box_y: 13
+    closes_text_size: 7
+    power_text_size: 7
+    revenue_text_size: 9
+    revenue_text_y: 3
+    revenue_h_center: 0
+    revenue_v_center: -1
+    close_bar_box_suppress: true
+    closes_text_text: ""
+    long_name_text_y: 87
+    asset_interior_box_fill: ${colour/scale/yellow_0}
+
+  index:
+    lehighCoal:
+      _:
+        long_name_text_text: |
+            Lehigh Coal Mine Co.
+        value_text_text: "$30"
+        power_text_text: |
+            1 coal token.
+            May place a coal token upon laying
+            a yellow tile. Doesn't pay the hex's cost then.
+            The tile can be upgraded. 
+            Train may pass through the hex only once.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    foxBridge:
+      _:
+        long_name_text_text: |
+            Fox Bridge Works
+        value_text_text: "$40"
+        power_text_text: |
+            1 bridge token.
+            Place yellow tiles in river hexes for free.
+            May place a bridge token in a river city.
+            Not in New Orleans if it is metropolis.
+            Must be connected.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    reeceOil:
+      _:
+        long_name_text_text: |
+            Reece Oil and Gas
+        value_text_text: "$30"
+        power_text_text: |
+            1 oil token.
+            May place an oil token upon laying
+            a yellow tile.
+            The tile can be upgraded. 
+            Train may pass through the hex only once.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    hendricksonIron:
+      _:
+        long_name_text_text: |
+            Hendrickson Iron
+        value_text_text: "$30"
+        power_text_y_inset: 4
+        power_text_text: |
+            1 ore token.
+            May place an ore token upon laying
+            a yellow tile. Doesn't pay the hex's cost then.
+            The tile cannot be upgraded. 
+            Train may pass through the hex only once.
+            Ore token may be upgraded to $20
+            by using a track upgrade action.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    nobel:
+      _:
+        long_name_text_text: |
+            Nobel's Blasting Powder
+        value_text_text: "$30"
+        power_text_text: |
+            Doesn't pay mountain cost.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]    
+        
+    import:
+      _:
+        long_name_text_text: |
+            Import/Export Hub
+        value_text_text: "$30"
+        power_text_text: |
+            Discard to replace an offboard value tile. 
+            Must be connected.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    trackEngineers:
+      _:
+        long_name_text_text: |
+            Track Engineers
+        value_text_text: "$40"
+        power_text_text: |
+            Pay $20 to perform three track actions,
+            one may be upgrade. 
+            This replaces the normal track action.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    expressFreight:
+      _:
+        long_name_text_text: |
+            Express Freight Service
+        value_text_text: "$40"
+        power_text_text: |
+            Place a station in an offboard.
+            Increases the offboard's value by 10 for
+            the company.
+            Must be conected.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    boomtown:
+      _:
+        long_name_text_text: |
+            Boomtown
+        value_text_text: "$40"
+        power_text_text: |
+            Discard to upgrade a yellow non-metropolis
+            city to green, even before Phase 3.
+            Doesn't count as a normal track laying action.
+            Must be connected.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    carnegieSteel:
+      _:
+        long_name_text_text: |
+            Carnegie Steel Company
+        value_text_text: "$40"
+        power_text_text: |
+            If used to start a company in
+            a potential metropolis city that
+            isn't a metropolis, it becomes metropolis.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    pettibone:
+      _:
+        long_name_text_text: |
+            Pettibone & Mulliken
+        value_text_text: "$40"
+        power_text_text: |
+            May upgrade two tracks when paying
+            $20 to perform two track actions.
+            Only one upgrade may be a city.
+            May upgrade non-city track to a colour
+            one higher than the current phase allows.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    stdOil:
+      _:
+        long_name_text_text: |
+            Standard Oil Co.
+        value_text_text: "$60"
+        power_text_text: |
+            2 oil tokens.
+            May place an oil token upon laying
+            a yellow tile.
+            The tile can be upgraded. 
+            Train may pass through the hex only once.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]    
+
+    pennBoneyard:
+      _:
+        long_name_text_text: |
+            Pennsy Boneyard
+        value_text_text: "$60"
+        power_text_text: |
+            Discard to make one train run
+            once more before rusting.
+            The train cannot be traded and doesn't
+            count against the train limit.
+            May not be used on a + train.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]    
+
+    piramidScheme:
+      _:
+        long_name_text_text: |
+            Piramid Scheme
+        value_text_text: "$60"
+        power_text_text: ""
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]      
+
+    westernLandGrant:
+      _:
+        long_name_text_text: |
+            Western Land Grant
+        value_text_text: "$60"
+        power_text_text: |
+            May take one extra loan at a fixed
+            $5 interest. Place the loan on this card.
+            Loans may be repaid in any order.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]         
+
+    regionalHQ:
+      _:
+        long_name_text_text: |
+            Regional Headquarters
+        value_text_text: "$60"
+        power_text_text: |
+            May use the Reg. HQ tile to upgrade
+            a green or brown non-metropolis
+            city after Phase 5 begins.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]   
+
+    greatNorthernRailway:
+      _:
+        long_name_text_text: |
+            Great Northern Railway
+        value_text_text: "$60"
+        power_text_text: |
+            $30 revenue bonus when one train runs
+            through Fargo (B14) and Helena (B8).
+            $60 instead if the same train runs also
+            through Seattle (B2) and Chicago (D20).
+            May place an extra yellow tile, ignoring
+            any costs, in GNR-marked hexes. 
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]  
+
+    peabodyCoal:
+      _:
+        long_name_text_text: |
+            Peabody Coal Company
+        value_text_text: "$60"
+        power_text_text: |
+            2 coal tokens.
+            May place a coal token upon laying
+            a yellow tile. Doesn't pay the hex's cost then.
+            The tile can be upgraded. 
+            Train may pass through the hex only once.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    unionSwitch:
+      _:
+        long_name_text_text: |
+            Union Switch & Signal
+        value_text_text: "$80"
+        power_text_text: |
+            May allow one train to treat a single city
+            as if it were a non-city hex with no stations.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    suem:
+      _:
+        long_name_text_text: |
+            Suem & Wynn Law Firm
+        value_text_text: "$80"
+        power_text_text: |
+            Discard to place a station into a city
+            that doesn't have available station slot.
+            Must be connected.
+            This is an extra station placement.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    keystone:
+      _:
+        long_name_text_text: |
+            Keystone Bridge Co.
+        value_text_text: "$80"
+        power_text_text: |
+            1 of each bridge, ore, and coal tokens.
+            Only one of either ore or coal
+            may be placed.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    americanBridge:
+      _:
+        long_name_text_text: |
+            American Bridge Company
+        value_text_text: "$80"
+        power_text_text: |
+            2 bridge tokens.
+            Place yellow tiles in river hexes for free.
+            May place a bridge token in a river city.
+            Not in New Orleans if it is metropolis.
+            Must be connected.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    baileyYard:
+      _:
+        long_name_text_text: |
+            Bailey Yard
+        value_text_text: "$80"
+        power_text_text: |
+            Additional station.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    anacondaCopper:
+      _:
+        long_name_text_text: |
+            Anaconda Copper
+        value_text_text: "$90"
+        power_text_y_inset: 4
+        power_text_text: |
+            2 ore tokens.
+            May place an ore token upon laying
+            a yellow tile. Doesn't pay the hex's cost then.
+            The tile cannot be upgraded. 
+            Train may pass through the hex only once.
+            Ore token may be upgraded to $20
+            by using a track upgrade action.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    americanLocomotive:
+      _:
+        long_name_text_text: |
+            American Locomotive Co.
+        value_text_text: "$90"
+        power_text_text: |
+            10% discount on all trains.
+            Discard to buy a train prior to the run trains
+            step, still at 10% discount.
+            Discard after the first 6T is bought.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    ruralJunction:
+      _:
+        long_name_text_text: |
+            Rural Junction
+        value_text_text: "$90"
+        power_text_text: |
+            May place the rural junction tiles
+            in empty city hexes.
+            Must be connected.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    companyTown:
+      _:
+        long_name_text_text: |
+            Company Town
+        value_text_text: "$90"
+        power_text_text: |
+            May place a Co. Town tile in an
+            empty hex not adjacent to a metropolis.
+            Then place a station there.
+            Must be connected.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    consolidationCoal:
+      _:
+        long_name_text_text: |
+            Consolidation Coal Co.
+        value_text_text: "$90"
+        power_text_text: |
+            3 coal tokens.
+            May place a coal token upon laying
+            a yellow tile. Doesn't pay the hex's cost then.
+            The tile can be upgraded. 
+            Train may pass through the hex only once.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    bankruptRailroad:
+      _:
+        long_name_text_text: |
+            Bankrupt Railroad
+        value_text_text: "$120"
+        power_text_text: |
+            If used to start a company in a city
+            with "No subsidy" subsidy tile, the company
+            immediately receives a free 2T.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    doubleHeading:
+      _:
+        long_name_text_text: |
+            Double Heading
+        value_text_text: "$120"
+        power_text_text: |
+            Each turn, one non-permanent train
+            has its range temporarily increased by 1.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+train:
+  index:
+    2PlusUSA:
+      _:
+        asset_interior_box_fill: ${colour/wikipedia/yellow_orange}
+        rust_bar_box_fill_p: BLUE
+        rusted_text_text: Rusted by 4
+        long_name_text_text: "2+"
+        cost_text_text: "Cost: $100"
+        note_text_text: |
+            Runs once more
+            before rusting
+        top_note_text_text: "18USA"
+      model:
+        index: $[index_of (1)]
+
+    3PlusUSA:
+      _:
+        asset_interior_box_fill: ${colour/galatolol/green_dark}
+        rust_bar_box_fill_p: RED
+        rusted_text_text: Rusted by 6
+        long_name_text_text: "3+"
+        cost_text_text: "Cost: $250"
+        note_text_text: |
+            Runs once more
+            before rusting
+        top_note_text_text: "18USA"
+      model:
+        index: $[index_of (2)]
+
+    4PlusUSA:
+      _:
+        asset_interior_box_fill: ${colour/galatolol/blue_dark}
+        rust_bar_box_fill_p: PURPLE
+        rusted_text_text: Rusted by 8
+        long_name_text_text: "4+"
+        cost_text_text: "Cost: $400"
+        note_text_text: |
+            Runs once more
+            before rusting
+        top_note_text_text: "18USA"
+      model:
+        index: $[index_of (1)]
+
+    5TUSA:
+      _:
+        asset_interior_box_fill_p: BROWN
+        rust_bar_box_fill_p: BLACK
+        rusted_text_text: Permanent
+        long_name_text_text: "5"
+        cost_text_text: "Cost: $600"
+        top_note_text_text: "18USA"
+      model:
+        index: $[index_of (1)]
+
+    6TUSA:
+      _:
+        asset_interior_box_fill_p: RED
+        rust_bar_box_fill_p: BLACK
+        rusted_text_text: Permanent
+        long_name_text_text: "6"
+        cost_text_text: "Cost: $750"
+        top_note_text_text: "18USA"
+      model:
+        index: $[index_of (1)]
+
+    PullmanUSA:
+      _:
+        asset_interior_box_fill: ${colour/xxp/WHITE}
+        rust_bar_box_fill: ${colour/xxp/WHITE}
+        rusted_text_size: 12
+        rusted_text_text: "Discard for $50"
+        rusted_text_size: 10
+        long_name_text_text: "P"
+        cost_text_text: "$200"
+        note_text_text: |
+          +$20 per city
+          for one train
+      model:
+        index: $[index_of (9)]    

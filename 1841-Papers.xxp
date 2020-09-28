@@ -4,6 +4,7 @@ private:
       _:
         long_name_text_text: |
             Bayard (1)
+        closes_text_text: "Removed in Phase 4"
         cost_text_text: "Cost L.50 from the market"
         cost_text_size: 10
         long_name_text_size: 12
@@ -12,6 +13,7 @@ private:
         power_text_text: |
           Owning player gains L.20
           at the end of a Stock Round.
+        asset_interior_box_fill: ${colour/scale/yellow_0}
 
 company:
 
@@ -68,7 +70,7 @@ company:
           comment_text_y: 70
       concession:
         _:
-          closes_text_text: "Removed in phase 4"
+          closes_text_text: "Removed in Phase 4"
           long_name_text_text: |
               SFTN Concession (5)
           power_text_text: |
@@ -91,7 +93,7 @@ company:
           power_text_size: 8
           token_embed_x_inset: 130
           token_embed_y_inset: 30
-          asset_interior_box_fill: ${colour/hollasch/pink}
+          asset_interior_box_fill: ${colour/scale/yellow_0}
         index: "$[index_of (1)]"
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
@@ -127,7 +129,7 @@ company:
           comment_text_y: 70
       concession:
         _:
-          closes_text_text: "Removed in phase 4"
+          closes_text_text: "Removed in Phase 4"
           long_name_text_text: |
               IRSFF Concession (8)
           power_text_text: |
@@ -150,7 +152,7 @@ company:
           power_text_size: 8
           token_embed_x_inset: 130
           token_embed_y_inset: 30
-          asset_interior_box_fill: ${colour/wikipedia/amber_sae_ece}
+          asset_interior_box_fill: ${colour/scale/yellow_0}
         index: "$[index_of (1)]"
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
@@ -160,8 +162,8 @@ company:
     SB:
       _:
         long_name_text_text: |
-            Strada di Ferro 
-            da Torino a Cuneo
+            Strade Ferrate
+            del Sud dell'Austria
         short_name_text_text: SB
         token_1_text_text: Venezia
         token_1_circle_fill: ${colour/hollasch/grey}
@@ -210,7 +212,7 @@ company:
         inner_circle_fill: ${colour/wikipedia/jungle_green}
         middle_circle_fill: ${colour/hollasch/turquoise_pale}
         outer_circle_fill: ${colour/wikipedia/jungle_green}
-        _related_fill: ${colour/hollasch/turquoise_pale}
+        _related_fill: ${colour/galatolol/turquoise_light}
       charter:
         _:
           comment_text_text: |
@@ -253,7 +255,7 @@ company:
           comment_text_y: 70
       concession:
         _:
-          closes_text_text: "Removed in phase 4"
+          closes_text_text: "Removed in Phase 4"
           long_name_text_text: |
               SFTG Concession (7)
           power_text_text: |
@@ -276,7 +278,7 @@ company:
           power_text_size: 8
           token_embed_x_inset: 130
           token_embed_y_inset: 30
-          asset_interior_box_fill: ${colour/wikipedia/rich_electric_blue}
+          asset_interior_box_fill: ${colour/scale/yellow_0}
         index: "$[index_of (1)]"
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
@@ -297,9 +299,9 @@ company:
         token_3_text_text: NULL
         token_4_text_text: NULL
         token_5_text_text: NULL
-        _major_fill: ${colour/wikipedia/palatinate_purple}
+        _major_fill: ${colour/x11/blueviolet}
         _minor_fill: ${colour/wikipedia/plum_web}
-        _related_fill: ${colour/wikipedia/plum_traditional}
+        _related_fill: ${colour/wikipedia/royal_purple}
       charter:
         _:
           comment_text_text: |
@@ -313,7 +315,7 @@ company:
           comment_text_y: 70
       concession:
         _:
-          closes_text_text: "Removed in phase 4"
+          closes_text_text: "Removed in Phase 4"
           long_name_text_text: |
               SSFL Concession (6)
           power_text_text: |
@@ -336,7 +338,7 @@ company:
           power_text_size: 8
           token_embed_x_inset: 130
           token_embed_y_inset: 30
-          asset_interior_box_fill: ${colour/wikipedia/plum_traditional}
+          asset_interior_box_fill: ${colour/scale/yellow_0}
         index: "$[index_of (1)]"          
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
@@ -370,7 +372,7 @@ company:
           comment_text_y: 70
       concession:
         _:
-          closes_text_text: "Removed in phase 4"
+          closes_text_text: "Removed in Phase 4"
           long_name_text_text: |
               SFTC Concession (3)
           power_text_text: |
@@ -393,7 +395,7 @@ company:
           power_text_size: 8
           token_embed_x_inset: 130
           token_embed_y_inset: 30
-          asset_interior_box_fill: ${colour/wikipedia/electric_yellow}
+          asset_interior_box_fill: ${colour/scale/yellow_0}
         index: "$[index_of (1)]"
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
@@ -403,8 +405,8 @@ company:
     SFLi:
       _:
         long_name_text_text: |
-            Strada di Ferro
-            da Torino a Cuneo
+            Strade Ferrate
+            Livornesi
         short_name_text_text: SFLi
         token_1_text_text: Pisa
         token_1_circle_fill: ${colour/hollasch/grey}
@@ -419,7 +421,7 @@ company:
         inner_circle_fill: ${colour/wikipedia/yellow_green}
         middle_circle_fill: ${colour/wikipedia/lemon_lime}
         outer_circle_fill: ${colour/wikipedia/yellow_green}
-        _related_fill: ${colour/wikipedia/green_yellow}
+        _related_fill: ${colour/wikipedia/lemon_lime}
       charter:
         _:
           comment_text_text: |
@@ -446,7 +448,7 @@ company:
         token_1_text_text: Lucca
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL       
-        _related_fill: ${colour/wikipedia/green_yellow}
+        _related_fill: ${colour/wikipedia/lemon_lime}
       token:
         _:
           _major_fill_1: ${colour/wikipedia/yellow_green}
@@ -486,7 +488,7 @@ company:
             1-2 stations, L.50 each
       concession:
         _:
-          closes_text_text: "Removed in phase 4"
+          closes_text_text: "Removed in Phase 4"
           long_name_text_text: |
               SFLP Concession (2)
           power_text_text: |
@@ -509,7 +511,7 @@ company:
           power_text_size: 8
           token_embed_x_inset: 130
           token_embed_y_inset: 30
-          asset_interior_box_fill: ${colour/wikipedia/green_yellow}
+          asset_interior_box_fill: ${colour/scale/yellow_0}
         index: "$[index_of (1)]"
     SFLP_pres:
       _:
@@ -517,7 +519,7 @@ company:
             Strada Ferrata
             da Lucca a Pistoia
         short_name_text_text: "SFLP"
-        _related_fill: ${colour/wikipedia/green_yellow}
+        _related_fill: ${colour/wikipedia/lemon_lime}
       charter:
         index:
       share:
@@ -530,13 +532,12 @@ company:
           "1":
       token:
         _:
-          _major_fill_1: ${colour/hollasch/chartreuse}
-          _major_fill_2: ${colour/wikipedia/pastel_yellow}
-          _minor_fill_1: ${colour/wikipedia/pastel_yellow}
-          _minor_fill_2: ${colour/hollasch/chartreuse}
+          _major_fill_1: ${colour/wikipedia/yellow_green}
+          _major_fill_2: ${colour/wikipedia/lemon_lime}
+          _minor_fill_1: ${colour/wikipedia/lemon_lime}
+          _minor_fill_2: ${colour/wikipedia/yellow_green}
         ELEMENTS: ${TEMPLATE_chequer/.}
         EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
-        index: $[index_of (4)] 
 
     SFMA:
       _:
@@ -588,7 +589,7 @@ company:
             1-2 stations, L.50 each
       concession:
         _:
-          closes_text_text: "Removed in phase 4"
+          closes_text_text: "Removed in Phase 4"
           long_name_text_text: |
               SFMA Concession (4)
           power_text_text: |
@@ -611,7 +612,7 @@ company:
           power_text_size: 8
           token_embed_x_inset: 130
           token_embed_y_inset: 30
-          asset_interior_box_fill: ${colour/wikipedia/ferrari_red}
+          asset_interior_box_fill: ${colour/scale/yellow_0}
         index: "$[index_of (1)]"
     SFMA_pres:
       _:
@@ -638,7 +639,6 @@ company:
           _minor_fill_2: ${colour/wikipedia/candy_apple_red}
         ELEMENTS: ${TEMPLATE_chequer/.}
         EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
-        index: $[index_of (4)] 
 
 
     SLDV:
@@ -646,12 +646,14 @@ company:
         long_name_text_text: |
             Società
             Leonardo da Vinci
-        short_name_text_text: "SLDV"
+        short_name_text_text: "LDV"
+        short_name_text_fill: ${colour/xxp/BLACK}
+        short_name_text_size: 10
         token_1_text_text: NULL
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL     
         share_pct_text_fill: ${colour/xxp/WHITE}
-        name_stripe_box_fill: ${colour/xxp/BLACK}
+        name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/chocolate_traditional}
         _minor_fill: ${colour/x11/tan3}
         middle_box_fill: ${_/_minor_fill}
@@ -692,8 +694,10 @@ company:
         long_name_text_text: |
             Società
             Leonardo da Vinci
-        short_name_text_text: "SLDV"
-        name_stripe_box_fill: ${colour/xxp/BLACK}
+        short_name_text_text: "LDV"
+        short_name_text_fill: ${colour/xxp/BLACK}
+        short_name_text_size: 10
+        name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/chocolate_traditional}
         _minor_fill: ${colour/x11/tan3}
         middle_box_fill: ${_/_minor_fill}
@@ -720,15 +724,21 @@ company:
             Ferrovie
             Trans Padane
         short_name_text_text: "FTP"
-        name_stripe_box_fill: ${colour/xxp/BLACK}
+        name_stripe_box_suppress: True
         token_1_text_text: NULL
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL     
+        short_name_text_size: 10
         _minor_fill: ${colour/x11/gray93}
         _major_fill: ${colour/x11/grey50}
         middle_box_fill: ${_/_minor_fill}
         _related_fill: ${colour/x11/gray79}
       token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          #short_name_text_size: 12
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
         _:
         ELEMENTS: ${TEMPLATE_boxes/.}
         EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
@@ -765,11 +775,12 @@ company:
             Ferrovie
             Trans Padane
         short_name_text_text: "FTP"
-        name_stripe_box_fill: ${colour/xxp/BLACK}
-        _minor_fill: ${colour/xxp/WHITE}
+        short_name_text_size: 10
+        name_stripe_box_suppress: True
+        _minor_fill: ${colour/x11/gray93}
         _major_fill: ${colour/x11/grey50}
         middle_box_fill: ${_/_minor_fill}
-        _related_fill: ${colour/x11/grey99}
+        _related_fill: ${colour/x11/gray79}
       charter:
         index:
       share:
@@ -782,20 +793,28 @@ company:
           "1":
       token:
         _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 12
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
+        _:
         ELEMENTS: ${TEMPLATE_boxes/.}
         EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
 
     CTLP:
       _:
         long_name_text_text: |
-            Compagnia
-            Trasporti La Patria
-        short_name_text_text: "CTLP"
+            La Patria
+        #    Compagnia
+        #    Trasporti La Patria
+        short_name_text_text: "LP"
+        short_name_text_size: 10
+        short_name_text_fill: ${colour/xxp/WHITE}
         token_1_text_text: NULL
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL     
         share_pct_text_fill: ${colour/xxp/WHITE}
-        name_stripe_box_fill: ${colour/xxp/BLACK}
+        name_stripe_box_suppress: True
         _major_fill: ${colour/x11/grey89}
         _minor_fill: ${colour/x11/grey49}
         middle_box_fill: ${_/_minor_fill}
@@ -834,10 +853,13 @@ company:
     CTLP_pres:
       _:
         long_name_text_text: |
-            Compagnia
-            Trasporti La Patria
-        short_name_text_text: "CTLP"
-        name_stripe_box_fill: ${colour/xxp/BLACK}
+            La Patria
+        #    Compagnia
+        #    Trasporti La Patria
+        short_name_text_text: "LP"
+        short_name_text_size: 10
+        short_name_text_fill: ${colour/xxp/WHITE}
+        name_stripe_box_suppress: True
         _major_fill: ${colour/x11/grey89}
         _minor_fill: ${colour/x11/grey49}
         middle_box_fill: ${_/_minor_fill}
@@ -860,9 +882,10 @@ company:
     RATF:
       _:
         long_name_text_text: |
-            Regia Azienda
-            Trasporti Ferroviari
-        short_name_text_text: RATF
+            Azienda Trasporti
+        #    Regia Azienda
+        #    Trasporti Ferroviari
+        short_name_text_text: AT
         token_1_text_text: NULL
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL
@@ -870,10 +893,10 @@ company:
         token_3_text_text: NULL
         token_4_text_text: NULL
         token_5_text_text: NULL
-        name_stripe_box_fill: ${colour/xxp/BLACK}
-        _major_fill: ${colour/wikipedia/liver}
-        _minor_fill: ${colour/wikipedia/liver}
-        _related_fill: ${colour/wikipedia/onyx}
+        name_stripe_box_suppress: True
+        _major_fill: ${colour/xxp/BLACK}
+        _minor_fill: ${colour/xxp/BLACK}
+        _related_fill: ${colour/x11/gray43}
       charter:
         _:
           comment_text_text: |
@@ -884,14 +907,20 @@ company:
           side_bar_rsplit_box_suppress: True
           comment_text_y: 70
       token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 12
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
         index: "$[index_of (7)]"
 
     ILTF:
       _:
         long_name_text_text: |
-            Impresa Latina
-            Trasporti su Ferro
-        short_name_text_text: ILTF
+            Latina Trasporti
+        #    Impresa Latina
+        #    Trasporti su Ferro
+        short_name_text_text: LT
         token_1_text_text: NULL
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL
@@ -899,10 +928,10 @@ company:
         token_3_text_text: NULL
         token_4_text_text: NULL
         token_5_text_text: NULL
-        name_stripe_box_fill: ${colour/xxp/BLACK}
-        _major_fill: ${colour/x11/chartreuse4}
-        _minor_fill: ${colour/x11/chartreuse4}
-        _related_fill: ${colour/x11/chartreuse3}
+        _major_fill: ${colour/xxp/D_GREEN}
+        _minor_fill: ${colour/xxp/D_GREEN}
+        _related_fill: ${colour/hollasch/cinnabar_green}
+        name_stripe_box_suppress: True
       charter:
         _:
           comment_text_text: |
@@ -914,6 +943,11 @@ company:
           side_bar_rsplit_box_suppress: True
           comment_text_y: 70
       token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 12
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
         index: "$[index_of (7)]"
 
     AFI:
@@ -929,10 +963,10 @@ company:
         token_3_text_text: NULL
         token_4_text_text: NULL
         token_5_text_text: NULL
-        name_stripe_box_fill: ${colour/xxp/BLACK}
-        _major_fill: ${colour/x11/red3}
-        _minor_fill: ${colour/x11/red3}
-        _related_fill: ${colour/x11/red}
+        name_stripe_box_suppress: True
+        _major_fill: ${colour/x11/red}
+        _minor_fill: ${colour/x11/red}
+        _related_fill: ${colour/hollasch/tomato}
       charter:
         _:
           comment_text_text: |
@@ -944,14 +978,19 @@ company:
           side_bar_rsplit_box_suppress: True
           comment_text_y: 70
       token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 10
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
         index: "$[index_of (7)]"
 
     RSFS:
       _:
         long_name_text_text: |
             Reale Società
-            Ferroviaria Sabanda
-        short_name_text_text: RSFS
+        #    Ferroviaria Sabanda
+        short_name_text_text: RS
         token_1_text_text: NULL
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL
@@ -959,10 +998,10 @@ company:
         token_3_text_text: NULL
         token_4_text_text: NULL
         token_5_text_text: NULL
-        name_stripe_box_fill: ${colour/xxp/BLACK}
-        _major_fill: ${colour/x11/turquoise4}
-        _minor_fill: ${_/_major_fill}
-        _related_fill: ${colour/x11/turquoise3}
+        name_stripe_box_suppress: True
+        _major_fill: ${colour/wikipedia/imperial_blue}
+        _minor_fill: ${colour/wikipedia/imperial_blue}
+        _related_fill: ${colour/wikipedia/international_klein_blue}
       charter:
         _:
           comment_text_text: |
@@ -974,14 +1013,21 @@ company:
           side_bar_rsplit_box_suppress: True
           comment_text_y: 70
       token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 12
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
         index: "$[index_of (7)]"
 
     IFAI:
       _:
         long_name_text_text: |
-            Impresa Ferroviaria
-            Alta Italia
-        short_name_text_text: IFAI
+            Presa Alta
+            Ferroviaria 
+        #    Impresa Ferroviaria
+        #    Alta Italia
+        short_name_text_text: PAF
         token_1_text_text: NULL
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL
@@ -989,7 +1035,7 @@ company:
         token_3_text_text: NULL
         token_4_text_text: NULL
         token_5_text_text: NULL
-        name_stripe_box_fill: ${colour/xxp/BLACK}
+        name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/barn_red}
         _minor_fill: ${colour/wikipedia/barn_red} #${colour/wikipedia/burnt_orange}
         _related_fill: ${colour/wikipedia/chinese_red}
@@ -1004,14 +1050,20 @@ company:
           side_bar_rsplit_box_suppress: True
           comment_text_y: 70
       token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 10
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
         index: "$[index_of (7)]"
 
     ICSF:
       _:
         long_name_text_text: |
             Impresa Centrale
-            Strade Ferrate
-        short_name_text_text: ICSF
+        #    Impresa Centrale
+        #    Strade Ferrate
+        short_name_text_text: IC
         token_1_text_text: NULL
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL
@@ -1019,11 +1071,10 @@ company:
         token_3_text_text: NULL
         token_4_text_text: NULL
         token_5_text_text: NULL
-        name_stripe_box_fill: ${colour/xxp/BLACK}
-        #_major_fill: ${colour/x11/orangered}
-        _major_fill: ${colour/wikipedia/gold_metallic}
+        name_stripe_box_suppress: True
+        _major_fill: ${colour/galatolol/gold}
         _minor_fill: ${_/_major_fill}
-        _related_fill: ${colour/wikipedia/jonquil}
+        _related_fill: ${colour/wikipedia/gold_metallic}
       charter:
         _:
           comment_text_text: |
@@ -1035,14 +1086,19 @@ company:
           side_bar_rsplit_box_suppress: True
           comment_text_y: 70
       token:
+        _:
+          short_name_text_fill: ${colour/xxp/BLACK}
+          short_name_text_size: 12
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
         index: "$[index_of (7)]"
 
     CTS:
       _:
         long_name_text_text: |
-            Compagnia
             Trasporti Subalpini
-        short_name_text_text: CTS
+        #Compagnia Trasporti Subalpini
+        short_name_text_text: TS
         token_1_text_text: NULL
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL
@@ -1050,10 +1106,10 @@ company:
         token_3_text_text: NULL
         token_4_text_text: NULL
         token_5_text_text: NULL
-        name_stripe_box_fill: ${colour/xxp/BLACK}
-        _major_fill: ${colour/x11/darkorchid3}
+        name_stripe_box_suppress: True
+        _major_fill: ${colour/wikipedia/lavender_floral}
         _minor_fill: ${_/_major_fill}
-        _related_fill: ${colour/x11/blueviolet}
+        _related_fill: ${colour/wikipedia/plum_web}
       charter:
         _:
           comment_text_text: |
@@ -1065,6 +1121,11 @@ company:
           side_bar_rsplit_box_suppress: True
           comment_text_y: 70
       token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 12
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
         index: "$[index_of (7)]"
 
     CTDA:
@@ -1083,7 +1144,7 @@ company:
         token_3_text_text: NULL
         token_4_text_text: NULL
         token_5_text_text: NULL
-        name_stripe_box_fill: ${colour/xxp/BLACK}
+        name_stripe_box_suppress: True
         _major_fill: ${colour/x11/antiquewhite2}
         _minor_fill: ${_/_major_fill}
         _related_fill: ${colour/x11/antiquewhite}
@@ -1098,6 +1159,11 @@ company:
           side_bar_rsplit_box_suppress: True
           comment_text_y: 70
       token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 10
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
         index: "$[index_of (7)]"
 
     CGTF:
@@ -1116,7 +1182,7 @@ company:
         token_3_text_text: NULL
         token_4_text_text: NULL
         token_5_text_text: NULL
-        name_stripe_box_fill: ${colour/xxp/BLACK}
+        name_stripe_box_suppress: True
         _major_fill: ${colour/x11/green2}
         _minor_fill: ${_/_major_fill}
         _related_fill: ${colour/x11/chartreuse2}
@@ -1131,6 +1197,11 @@ company:
           side_bar_rsplit_box_suppress: True
           comment_text_y: 70
       token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 10
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
         index: "$[index_of (7)]"
 
     CFCC:
@@ -1149,10 +1220,10 @@ company:
         token_3_text_text: NULL
         token_4_text_text: NULL
         token_5_text_text: NULL
-        name_stripe_box_fill: ${colour/xxp/BLACK}
+        name_stripe_box_suppress: True
         _major_fill: ${colour/x11/white}
         _minor_fill: ${_/_major_fill}
-        _related_fill: ${colour/x11/white}
+        _related_fill: ${colour/x11/gray93}
       charter:
         _:
           comment_text_text: |
@@ -1162,16 +1233,23 @@ company:
         _:
           side_bar_lsplit_box_suppress: True
           side_bar_rsplit_box_suppress: True
+          asset_interior_box_fill: ${colour/xxp/WHITE}
           comment_text_y: 70
       token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 10
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
         index: "$[index_of (7)]"
 
     ATFA:
       _:
         long_name_text_text: |
-            Azienda Trasporti
             Ferroviari Ansonia
-        short_name_text_text: ATFA
+        #    Azienda Trasporti
+        #    Ferroviari Ansonia
+        short_name_text_text: FA
         token_1_text_text: NULL
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL
@@ -1179,10 +1257,10 @@ company:
         token_3_text_text: NULL
         token_4_text_text: NULL
         token_5_text_text: NULL
-        name_stripe_box_fill: ${colour/xxp/BLACK}
-        _major_fill: ${colour/wikipedia/waterspout}
+        name_stripe_box_suppress: True
+        _major_fill: ${colour/wikipedia/light_sky_blue}
         _minor_fill: ${_/_major_fill}
-        _related_fill: ${colour/wikipedia/bubbles}
+        _related_fill: ${colour/hollasch/powder_blue}
       charter:
         _:
           comment_text_text: |
@@ -1194,6 +1272,11 @@ company:
           side_bar_rsplit_box_suppress: True
           comment_text_y: 70
       token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 12
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
         index: "$[index_of (7)]"
 
 train:
@@ -1273,7 +1356,7 @@ train:
         cost_text_text: "L.1450"
       model:
         index: $[index_of (7)]
-
+        
 marker:
   token:
     _:
@@ -1293,7 +1376,7 @@ marker:
         index: "$[index_of (1)]"
     atfa:
       _:
-        short_name_text_text: ATFA
+        short_name_text_text: FA
       token:
         index: "$[index_of (1)]"    
     gtf:
@@ -1308,18 +1391,17 @@ marker:
         index: "$[index_of (1)]"    
     cts:
       _:
-        short_name_text_text: CTS
-
+        short_name_text_text: TS
       token:
         index: "$[index_of (1)]"    
     ratf:
       _:
-        short_name_text_text: RATF
+        short_name_text_text: AT
       token:
         index: "$[index_of (1)]"    
     ctlp:
       _:
-        short_name_text_text: CTLP
+        short_name_text_text: LP
       token:
         index: "$[index_of (1)]"    
     cda:
@@ -1329,27 +1411,22 @@ marker:
         index: "$[index_of (1)]"    
     icsf:
       _:
-        short_name_text_text: ICSF
+        short_name_text_text: IC
       token:
         index: "$[index_of (1)]"    
     ftp:
       _:
         short_name_text_text: FTP
       token:
-        index: "$[index_of (1)]"    
-    cts:
-      _:
-        short_name_text_text: CTS
-      token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"        
     iltf:
       _:
-        short_name_text_text: ILTF
+        short_name_text_text: LT
       token:
         index: "$[index_of (1)]"    
     ifai:
       _:
-        short_name_text_text: IFAI
+        short_name_text_text: PAF
       token:
         index: "$[index_of (1)]"    
     irsff:
@@ -1359,9 +1436,19 @@ marker:
         index: "$[index_of (1)]"    
     rsfs:
       _:
-        short_name_text_text: RSFS
+        short_name_text_text: RS
+      token:
+        index: "$[index_of (1)]"      
+    sb:
+      _:
+        short_name_text_text: SB
       token:
         index: "$[index_of (1)]"    
+    sfl:
+      _:
+        short_name_text_text: SFL
+      token:
+        index: "$[index_of (1)]"   
     sflp:
       _:
         short_name_text_text: SFLP
@@ -1394,11 +1481,16 @@ marker:
         index: "$[index_of (1)]"    
     sldv:
       _:
-        short_name_text_text: SLDV
+        short_name_text_text: LDV
       token:
         index: "$[index_of (1)]"    
     ssfl:
       _:
         short_name_text_text: SSFL
+      token:
+        index: "$[index_of (1)]"       
+    afi:
+      _:
+        short_name_text_text: AFI
       token:
         index: "$[index_of (1)]"   
