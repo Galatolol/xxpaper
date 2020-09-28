@@ -1356,22 +1356,7 @@ train:
         cost_text_text: "L.1450"
       model:
         index: $[index_of (7)]
-
-    PullmanUSA:
-      _:
-        asset_interior_box_fill: ${colour/xxp/WHITE}
-        rust_bar_box_fill: ${colour/xxp/WHITE}
-        rusted_text_size: 12
-        rusted_text_text: "Discard for $50"
-        rusted_text_size: 10
-        long_name_text_text: "P"
-        cost_text_text: "$200"
-        note_text_text: |
-          +$20 per city
-          for one train
-      model:
-        index: $[index_of (9)]    
-
+        
 marker:
   token:
     _:

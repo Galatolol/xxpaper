@@ -40,7 +40,7 @@ private:
             1 bridge token.
             Place yellow tiles in river hexes for free.
             May place a bridge token in a river city.
-            Not in New Orleans if New Orleans is metropolis.
+            Not in New Orleans if it is metropolis.
             Must be connected.
         money_bar_box_suppress: true
         cost_text_text: ""
@@ -70,7 +70,7 @@ private:
         long_name_text_text: |
             Hendrickson Iron
         value_text_text: "$30"
-        power_text_y_inset: 3
+        power_text_y_inset: 4
         power_text_text: |
             1 ore token.
             May place an ore token upon laying
@@ -118,9 +118,9 @@ private:
             Track Engineers
         value_text_text: "$40"
         power_text_text: |
-            Pay $20 to lay three tiles,
-            one may be upgrade. This replaces
-            the normal track laying action.
+            Pay $20 to perform three track actions,
+            one may be upgrade. 
+            This replaces the normal track action.
         money_bar_box_suppress: true
         cost_text_text: ""
         revenue_text_text: ""
@@ -134,8 +134,8 @@ private:
         value_text_text: "$40"
         power_text_text: |
             Place a station in an offboard.
-            Increases the offboard's value by 10
-            for the company.
+            Increases the offboard's value by 10 for
+            the company.
             Must be conected.
         money_bar_box_suppress: true
         cost_text_text: ""
@@ -149,9 +149,9 @@ private:
             Boomtown
         value_text_text: "$40"
         power_text_text: |
-            Discard to upgrade a yellow
-            non-metropolis city to green. Doesn't
-            count as a nomral track laying action.
+            Discard to upgrade a yellow non-metropolis
+            city to green, even before Phase 3.
+            Doesn't count as a normal track laying action.
             Must be connected.
         money_bar_box_suppress: true
         cost_text_text: ""
@@ -181,8 +181,8 @@ private:
         value_text_text: "$40"
         power_text_text: |
             May upgrade two tracks when paying
-            $20 to perform two track operations.
-            Only one upgrade mayu be a city.
+            $20 to perform two track actions.
+            Only one upgrade may be a city.
             May upgrade non-city track to a colour
             one higher than the current phase allows.
         money_bar_box_suppress: true
@@ -218,7 +218,7 @@ private:
             once more before rusting.
             The train cannot be traded and doesn't
             count against the train limit.
-            May not be used on an + train.
+            May not be used on a + train.
         money_bar_box_suppress: true
         cost_text_text: ""
         revenue_text_text: ""
@@ -259,8 +259,8 @@ private:
         value_text_text: "$60"
         power_text_text: |
             May use the Reg. HQ tile to upgrade
-            a green o brown non-metropolis
-            city after phase 5 begins.
+            a green or brown non-metropolis
+            city after Phase 5 begins.
         money_bar_box_suppress: true
         cost_text_text: ""
         revenue_text_text: ""
@@ -275,9 +275,9 @@ private:
         power_text_text: |
             $30 revenue bonus when one train runs
             through Fargo (B14) and Helena (B8).
-            $60 instead if the the same train runs also
+            $60 instead if the same train runs also
             through Seattle (B2) and Chicago (D20).
-            May place an extra yellow track, ignoring
+            May place an extra yellow tile, ignoring
             any costs, in GNR-marked hexes. 
         money_bar_box_suppress: true
         cost_text_text: ""
@@ -309,8 +309,7 @@ private:
         value_text_text: "$80"
         power_text_text: |
             May allow one train to treat a single city
-            as if it were a non-city hex with no stations
-            (the train may bypass the city).
+            as if it were a non-city hex with no stations.
         money_bar_box_suppress: true
         cost_text_text: ""
         revenue_text_text: ""
@@ -340,7 +339,8 @@ private:
         value_text_text: "$80"
         power_text_text: |
             1 of each bridge, ore, and coal tokens.
-            Only one of eigher ore or coal may be placed.
+            Only one of either ore or coal
+            may be placed.
         money_bar_box_suppress: true
         cost_text_text: ""
         revenue_text_text: ""
@@ -350,12 +350,13 @@ private:
     americanBridge:
       _:
         long_name_text_text: |
-            American Bridge company
+            American Bridge Company
         value_text_text: "$80"
         power_text_text: |
             2 bridge tokens.
             Place yellow tiles in river hexes for free.
             May place a bridge token in a river city.
+            Not in New Orleans if it is metropolis.
             Must be connected.
         money_bar_box_suppress: true
         cost_text_text: ""
@@ -381,7 +382,7 @@ private:
         long_name_text_text: |
             Anaconda Copper
         value_text_text: "$90"
-        power_text_y_inset: 3
+        power_text_y_inset: 4
         power_text_text: |
             2 ore tokens.
             May place an ore token upon laying
@@ -435,7 +436,7 @@ private:
         power_text_text: |
             May place a Co. Town tile in an
             empty hex not adjacent to a metropolis.
-            Than place the station there.
+            Then place a station there.
             Must be connected.
         money_bar_box_suppress: true
         cost_text_text: ""
