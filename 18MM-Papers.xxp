@@ -17,17 +17,17 @@ company:
       token_2_circle_suppress: False
       token_2_circle_fill: ${colour/wikipedia/robin_egg_blue}
       token_2_text_text: "$50"
-      token_2_inside_text_text: "2 Share"
+      token_2_inside_text_text: "5 Share"
       token_2_inside_text_size: 7
       token_3_circle_suppress: False
       token_3_circle_fill: ${colour/wikipedia/wisteria}
       token_3_text_text: "$50"
-      token_3_inside_text_text: "2 Share"
+      token_3_inside_text_text: "10 Share"
       token_3_inside_text_size: 7
       token_4_circle_suppress: False
       token_4_circle_fill: ${colour/wikipedia/wisteria}
       token_4_text_text: "$50"
-      token_4_inside_text_text: "2 Share"
+      token_4_inside_text_text: "10 Share"
       token_4_inside_text_size: 7
       loan_1_square_shape_suppress: False
       loan_1_square_shape_fill: ${colour/wikipedia/wisteria}
@@ -1345,8 +1345,8 @@ marker:
       token:
         _:
           short_name_text_text: "SR1"
-          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1.5]
-          short_name_text_size: 14
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 3]
+          short_name_text_size: 10
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/white}
           _minor_fill: ${colour/wikipedia/white}
@@ -1356,8 +1356,8 @@ marker:
       token:
         _:
           short_name_text_text: "SR2"
-          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1.5]
-          short_name_text_size: 14
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 3]
+          short_name_text_size: 10
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/white}
           _minor_fill: ${colour/wikipedia/white}
@@ -1367,8 +1367,8 @@ marker:
       token:
         _:
           short_name_text_text: "SR3"
-          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 1.5]
-          short_name_text_size: 14
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 3]
+          short_name_text_size: 10
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/white}
           _minor_fill: ${colour/wikipedia/white}
@@ -1379,7 +1379,7 @@ marker:
         _:
           short_name_text_text: "5 Share"
           short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 4.5]
-          short_name_text_size: 7
+          short_name_text_size: 5
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/robin_egg_blue}
           _minor_fill: ${colour/wikipedia/robin_egg_blue}
@@ -1390,7 +1390,7 @@ marker:
         _:
           short_name_text_text: "10 Share"
           short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 4.5]
-          short_name_text_size: 7
+          short_name_text_size: 5
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/wisteria}
           _minor_fill: ${colour/wikipedia/wisteria}
