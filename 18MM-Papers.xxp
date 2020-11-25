@@ -316,7 +316,7 @@ company:
         short_name_text_text: SF
         _major_fill: ${colour/wikipedia/yellow_green}
         _minor_fill: ${colour/wikipedia/lemon_lime}
-        _related_fill: ${colour/wikipedia/green_yellow}
+        _related_fill: ${colour/wikipedia/lemon_lime}
       token:
         _:
           outer_circle_fill: ${_/_major_fill}
@@ -346,10 +346,13 @@ company:
           Big Transport
         short_name_text_text: BT
         _major_fill: ${colour/wikipedia/barn_red}
-        _minor_fill: ${colour/wikipedia/barn_red} 
+        _major_fill_2: ${colour/wikipedia/tractor_red}
+        _minor_fill: ${_/_major_fill}
+        _minor_fill_2: ${_/_major_fill_2}
         _related_fill: ${colour/wikipedia/chinese_red}
       token:
-        index: $[index_of (10)]
+        ELEMENTS: ${TEMPLATE_stripey/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
 
     #turquoise
     ET:

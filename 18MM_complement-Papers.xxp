@@ -1,0 +1,140 @@
+company:
+  charter:
+    _:
+      label_text_text: "Stations                              Loans"
+      comment_text_text: #May place extra yellow tile for $20 (in any order)
+      long_name_text_x: 130
+      #long_name_text_size: 14
+      type_text_text: 2 Share
+      type_text_size: 7
+      type_text_y: 310
+      type_circle_fill: ${colour/wikipedia/pink}
+      token_1_circle_suppress: False
+      token_1_circle_fill: ${colour/wikipedia/pink}
+      token_1_text_text: "Free"
+      token_1_inside_text_text: "2 Share"
+      token_1_inside_text_size: 7
+      token_2_circle_suppress: False
+      token_2_circle_fill: ${colour/wikipedia/robin_egg_blue}
+      token_2_text_text: "$50"
+      token_2_inside_text_text: "5 Share"
+      token_2_inside_text_size: 7
+      token_3_circle_suppress: False
+      token_3_circle_fill: ${colour/wikipedia/wisteria}
+      token_3_text_text: "$50"
+      token_3_inside_text_text: "10 Share"
+      token_3_inside_text_size: 7
+      token_4_circle_suppress: False
+      token_4_circle_fill: ${colour/wikipedia/wisteria}
+      token_4_text_text: "$50"
+      token_4_inside_text_text: "10 Share"
+      token_4_inside_text_size: 7
+      loan_1_square_shape_suppress: False
+      loan_1_square_shape_fill: ${colour/wikipedia/wisteria}
+      loan_1_text_text: "10 Share"
+      loan_1_text_size: 6
+      loan_2_square_shape_suppress: False
+      loan_2_square_shape_fill: ${colour/wikipedia/wisteria}
+      loan_2_text_text: "10 Share"
+      loan_2_text_size: 6
+      loan_3_square_shape_suppress: False  
+      loan_3_square_shape_fill: ${colour/wikipedia/wisteria}
+      loan_3_text_text: "10 Share"
+      loan_3_text_size: 6
+      loan_4_square_shape_suppress: False
+      loan_4_square_shape_fill: ${colour/wikipedia/wisteria}
+      loan_4_text_text: "10 Share"
+      loan_4_text_size: 6
+      loan_5_square_shape_suppress: False
+      loan_5_square_shape_fill: ${colour/wikipedia/wisteria}
+      loan_5_text_text: "10 Share"
+      loan_5_text_size: 6
+      loan_6_square_shape_suppress: False
+      loan_6_square_shape_fill: ${colour/wikipedia/pink}
+      loan_6_text_text: "2 Share"
+      loan_6_text_size: 6
+      loan_7_square_shape_suppress: False
+      loan_7_square_shape_fill: ${colour/wikipedia/pink}
+      loan_7_text_text: "2 Share"
+      loan_7_text_size: 6
+      loan_8_square_shape_suppress: False
+      loan_8_square_shape_fill: ${colour/wikipedia/robin_egg_blue}
+      loan_8_text_text: "5 Share"
+      loan_8_text_size: 6
+      loan_9_square_shape_suppress: False
+      loan_9_square_shape_fill: ${colour/wikipedia/robin_egg_blue}
+      loan_9_text_text: "5 Share"
+      loan_9_text_size: 6
+      loan_10_square_shape_suppress: False
+      loan_10_square_shape_fill: ${colour/wikipedia/robin_egg_blue}
+      loan_10_text_text: "5 Share"
+      loan_10_text_size: 6
+  share:
+    _:
+      share_desc_text_suppress: False
+      share_desc_text_text: 1 Share
+      share_desc_text_x: 55
+      share_num_text_text: 20/10%
+      share_pct_text_text: 
+      side_bar_lsplit_box_suppress: True
+      side_bar_rsplit_box_suppress: True
+      comment_text_size: 12
+      comment_text_typeface: ${DEFAULT/typeface_bold}
+      comment_text_y: 24
+      type_bar_box_fill: ${colour/wikipedia/golden_yellow}
+      type_bar_box_y: 12
+      share_num_text_x: 167
+    index:
+      "1":
+        share_pct_text:
+          text:
+        comment_text:
+          text: "President"
+        share_desc_text:
+          text: "2 Shares"
+        share_num_text:
+          text: "100/40/20%"
+      "2":
+      "3":
+      "4":
+      "5":
+      "6":
+      "7":
+      "8":
+      "9":
+  token:
+    _:
+      short_name_text_size: 8
+
+  index:       
+    SF:
+      _:
+        long_name_text_text: |
+          South Fork
+        short_name_text_text: SF
+        _major_fill: ${colour/wikipedia/yellow_green}
+        _minor_fill: ${colour/wikipedia/lemon_lime}
+        _related_fill: ${colour/wikipedia/lemon_lime}
+      token:
+        _:
+          outer_circle_fill: ${_/_major_fill}
+          middle_circle_fill: ${_/_minor_fill}
+          inner_circle_fill: ${_/_major_fill}
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: $[index_of (10)]
+  
+    BT:
+      _:
+        long_name_text_text: |
+          Big Transport
+        short_name_text_text: BT
+        _major_fill: ${colour/wikipedia/barn_red}
+        _major_fill_2: ${colour/wikipedia/tractor_red}
+        _minor_fill: ${_/_major_fill}
+        _minor_fill_2: ${_/_major_fill_2}
+        _related_fill: ${colour/wikipedia/chinese_red}
+      token:
+        ELEMENTS: ${TEMPLATE_stripey/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
+        index: $[index_of (10)]

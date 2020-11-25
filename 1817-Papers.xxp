@@ -415,7 +415,7 @@ company:
         _minor_fill: ${colour/x11/limegreen}
         _related_fill: ${colour/x11/yellowgreen}
       token:
-        index: $[index_of (10)]
+        index: $[index_of (12)]
 
     # dark green
     J:
@@ -432,7 +432,7 @@ company:
         _minor_fill: ${colour/xxp/D_GREEN}
         _related_fill: ${colour/hollasch/cinnabar_green}
       token:
-        index: $[index_of (10)]
+        index: $[index_of (12)]
 
     # lime
     PLE:
@@ -451,7 +451,7 @@ company:
           inner_circle_fill: ${_/_major_fill}
         ELEMENTS: ${TEMPLATE_bullseye/.}
         EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
-        index: $[index_of (10)]    
+        index: $[index_of (12)]    
 
     # red
     BAR:
@@ -466,7 +466,7 @@ company:
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
-        index: $[index_of (10)]
+        index: $[index_of (12)]
 
     # navy blue
     UR:
@@ -480,7 +480,7 @@ company:
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
-        index: $[index_of (10)]      
+        index: $[index_of (12)]      
 
     # blue
     PS:
@@ -498,7 +498,7 @@ company:
       token:
         ELEMENTS: ${TEMPLATE_stripey/.}
         EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
-        index: $[index_of (10)]
+        index: $[index_of (12)]
 
     # light blue
     HR:
@@ -519,10 +519,10 @@ company:
           short_name_text_y_inset: -1
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (10)]
+        index: $[index_of (12)]
 
     #orange
-    WTR:
+    OW:
       _:
         long_name_text_text: |
           Ontario and
@@ -537,10 +537,10 @@ company:
           inner_circle_radius: 9
         ELEMENTS: ${TEMPLATE_bullseye/.}
         EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
-        index: $[index_of (10)]
+        index: $[index_of (12)]
 
     #natural
-    PWR:
+    CV:
       _:
         long_name_text_text: |
           Central Vermont
@@ -549,7 +549,7 @@ company:
         _minor_fill: ${_/_major_fill}
         _related_fill: ${colour/x11/antiquewhite}
       token:
-        index: $[index_of (10)]
+        index: $[index_of (12)]
 
     #black
     Bess:
@@ -565,7 +565,7 @@ company:
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
-        index: $[index_of (10)]
+        index: $[index_of (12)]
 
     #gray
     DL:
@@ -586,7 +586,7 @@ company:
           short_name_text_size: 12
           short_name_text_x_inset: 0
           short_name_text_y_inset: -1
-        index: $[index_of (10)]
+        index: $[index_of (12)]
 
     #pink
     MER:
@@ -601,7 +601,7 @@ company:
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
-        index: $[index_of (10)]
+        index: $[index_of (12)]
 
     #yellow
     AAR:
@@ -622,7 +622,7 @@ company:
           short_name_text_y_inset: -1
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (10)]  
+        index: $[index_of (12)]  
 
     #white
     BRC:
@@ -771,7 +771,7 @@ company:
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
-        index: $[index_of (10)]
+        index: $[index_of (12)]
 
     #purple
     GTW:
@@ -779,7 +779,7 @@ company:
         long_name_text_text: |
           Grand Trunk
           Western
-        short_name_text_text: GWT
+        short_name_text_text: GTW
         _major_fill: ${colour/wikipedia/rich_lavender}
         _minor_fill: ${colour/wikipedia/black}
         _related_fill: ${colour/wikipedia/plum_web}
@@ -790,7 +790,7 @@ company:
           short_name_text_size: 8
         ELEMENTS: ${TEMPLATE_bullseye/.}
         EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
-        index: $[index_of (10)]
+        index: $[index_of (12)]
 
     #brown
     WC:
@@ -810,7 +810,7 @@ company:
           short_name_text_y_inset: -1
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (10)]
+        index: $[index_of (12)]
 
     #red_brown
     ASR:
@@ -827,7 +827,7 @@ company:
       token:
         ELEMENTS: ${TEMPLATE_stripey/.}
         EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
-        index: $[index_of (10)]
+        index: $[index_of (12)]
 
     #gold
     S:
@@ -839,19 +839,12 @@ company:
         short_name_text_size: 22
         short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 2]
         name_stripe_box_suppress: True
-        token_1_text_text: NULL
-        token_1_circle_fill: ${colour/hollasch/grey}
-        token_2_text_text: NULL
-        token_2_circle_fill: ${colour/hollasch/grey}
-        token_3_text_text: NULL
-        token_4_text_text: NULL
-        token_5_text_text: NULL
         #_major_fill: ${colour/x11/orangered}
         _major_fill: ${colour/wikipedia/gold_metallic}
         _minor_fill: ${_/_major_fill}
         _related_fill: ${colour/wikipedia/jonquil}
       token:
-        index: $[index_of (10)]
+        index: $[index_of (12)]
 
     #red_and_yellow
     W:
@@ -872,7 +865,7 @@ company:
       token:
         ELEMENTS: ${TEMPLATE_stripey/.}
         EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
-        index: "$[index_of (10)]"
+        index: "$[index_of (12)]"
 
     #turquoise
     SR:
@@ -886,7 +879,42 @@ company:
         _minor_fill: ${_/_major_fill}
         _related_fill: ${colour/x11/turquoise3}
       token:
-        index: $[index_of (10)]
+        index: $[index_of (12)]
+
+
+#18mm complement
+
+    SF:
+      _:
+        long_name_text_text: |
+          South Fork
+        short_name_text_text: SF
+        _major_fill: ${colour/wikipedia/yellow_green}
+        _minor_fill: ${colour/wikipedia/lemon_lime}
+        _related_fill: ${colour/wikipedia/lemon_lime}
+      token:
+        _:
+          outer_circle_fill: ${_/_major_fill}
+          middle_circle_fill: ${_/_minor_fill}
+          inner_circle_fill: ${_/_major_fill}
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: $[index_of (12)]
+  
+    BT:
+      _:
+        long_name_text_text: |
+          Big Transport
+        short_name_text_text: BT
+        _major_fill: ${colour/wikipedia/barn_red}
+        _major_fill_2: ${colour/wikipedia/tractor_red}
+        _minor_fill: ${_/_major_fill}
+        _minor_fill_2: ${_/_major_fill_2}
+        _related_fill: ${colour/wikipedia/chinese_red}
+      token:
+        ELEMENTS: ${TEMPLATE_stripey/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
+        index: $[index_of (12)]
 
 
 train:
@@ -900,7 +928,7 @@ train:
       _:
         asset_interior_box_fill_p: YELLOW
         rust_bar_box_fill_p: BLUE
-        rusted_text_text: Rusted by Blue
+        rusted_text_text: Rusted by 4
         long_name_text_text: "2"
         cost_text_text: "Cost: $100"
       model:
@@ -1004,9 +1032,11 @@ marker:
     5share:
       token:
         _:
-          short_name_text_text: "5 Share"
+          short_name_text_text: |
+            5
+            Share
           short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 4.5]
-          short_name_text_size: 5
+          short_name_text_size: 8
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/robin_egg_blue}
           _minor_fill: ${colour/wikipedia/robin_egg_blue}
@@ -1015,9 +1045,11 @@ marker:
     10share:
       token:
         _:
-          short_name_text_text: "10 Share"
+          short_name_text_text: |
+            10
+            Share
           short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 4.5]
-          short_name_text_size: 5
+          short_name_text_size: 8
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/wisteria}
           _minor_fill: ${colour/wikipedia/wisteria}
@@ -1026,100 +1058,227 @@ marker:
     aar:
       _:
         short_name_text_text: AAR
+        _major_fill: ${colour/wikipedia/white}
+        _minor_fill: ${_/_major_fill}
+        name_stripe_box_suppress: True
       token:
-        index: "$[index_of (1)]"    
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 10
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: "$[index_of (3)]"    
     asr:
       _:
         short_name_text_text: ASR
+        _major_fill: ${colour/wikipedia/white}
+        _major_fill_2: ${colour/wikipedia/white}
+        _minor_fill: ${_/_major_fill}
+        _minor_fill_2: ${_/_major_fill_2}
       token:
-        index: "$[index_of (1)]"    
+        ELEMENTS: ${TEMPLATE_stripey/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
+        index: "$[index_of (3)]"      
     bar:
       _:
         short_name_text_text: BAR
+        _major_fill: ${colour/wikipedia/white}
+        _minor_fill: ${colour/wikipedia/white}
       token:
-        index: "$[index_of (1)]"        
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: "$[index_of (3)]"          
     bess:
       _:
         short_name_text_text: Bess
+        _major_fill: ${colour/xxp/WHITE}
+        _minor_fill: ${colour/xxp/WHITE}
+        _share_pct_text_fill_x: ${colour/xxp/WHITE}
       token:
-        index: "$[index_of (1)]"    
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: "$[index_of (3)]"     
     brc:
       _:
         short_name_text_text: BRC
+        _major_fill: ${colour/xxp/WHITE}
+        _minor_fill: ${colour/xxp/WHITE}
+        _share_pct_text_fill_x: ${colour/xxp/WHITE}
       token:
-        index: "$[index_of (1)]"    
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: "$[index_of (3)]"               
     dl:
       _:
         short_name_text_text: DL
+        _major_fill: ${colour/xxp/WHITE}
+        _minor_fill: ${colour/xxp/WHITE}
+        name_stripe_box_suppress: True
+        middle_box_fill: ${colour/xxp/WHITE}
       token:
-        index: "$[index_of (1)]"    
-    gwt:
+        ELEMENTS: ${TEMPLATE_boxes/.}
+        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
+        _:
+          short_name_text_size: 12
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
+        index: "$[index_of (3)]"    
+    gtw:
       _:
-        short_name_text_text: GWT
+        short_name_text_text: GTW
+        _major_fill: ${colour/xxp/WHITE}
+        _minor_fill: ${colour/xxp/WHITE}
       token:
-        index: "$[index_of (1)]"    
+        _:
+          inner_circle_fill: ${_/_major_fill}
+          inner_circle_radius: 9
+          short_name_text_size: 8
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: "$[index_of (3)]"     
     hr:
       _:
         short_name_text_text: HR
+        _major_fill: ${colour/xxp/WHITE}
+        _minor_fill: ${_/_major_fill}
+        name_stripe_box_suppress: True
       token:
-        index: "$[index_of (1)]"    
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 12
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: "$[index_of (3)]"      
     j:
       _:
         short_name_text_text: J
+        short_name_text_size: 20
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 2]
+        short_name_text_fill: ${colour/xxp/BLACK}
+        name_stripe_box_suppress: True
+        _major_fill: ${colour/xxp/WHITE}
+        _minor_fill: ${colour/xxp/WHITE}
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (3)]"    
+
     mer:
       _:
         short_name_text_text: MER
+        _major_fill: ${colour/xxp/WHITE}
+        _minor_fill: ${colour/xxp/WHITE}
       token:
-        index: "$[index_of (1)]"    
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: "$[index_of (3)]"    
     ple:
       _:
         short_name_text_text: PLE
+        _major_fill: ${colour/xxp/WHITE}
+        _minor_fill: ${colour/xxp/WHITE}
       token:
-        index: "$[index_of (1)]"    
+        _:
+          outer_circle_fill: ${_/_major_fill}
+          middle_circle_fill: ${_/_minor_fill}
+          inner_circle_fill: ${_/_major_fill}
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: "$[index_of (3)]"      
     ps:
       _:
         short_name_text_text: PS
+        _major_fill: ${colour/xxp/WHITE}
+        _major_fill_2: ${colour/xxp/WHITE}
+        _minor_fill_2: ${_/_major_fill_2}
+        _minor_fill: ${_/_major_fill}
+        _minor_fill_2: ${_/_major_fill_2}
       token:
-        index: "$[index_of (1)]"    
-    vc:
+        ELEMENTS: ${TEMPLATE_stripey/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
+        index: "$[index_of (3)]"     
+    cv:
       _:
-        short_name_text_text: VC
+        short_name_text_text: CV
+        _major_fill: ${colour/xxp/WHITE}
+        _minor_fill: ${_/_major_fill}
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (3)]"      
     rr:
       _:
         short_name_text_text: RR
+        _major_fill: ${colour/xxp/WHITE}
+        _minor_fill: ${colour/xxp/WHITE}
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (3)]"      
     s:
       _:
         short_name_text_text: S
+        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 2]
+        name_stripe_box_suppress: True
+        _major_fill: ${colour/xxp/WHITE}
+        _minor_fill: ${_/_major_fill}
       token:
-        index: "$[index_of (1)]"      
+        index: "$[index_of (3)]"       
     sr:
       _:
         short_name_text_text: SR
+        name_stripe_box_fill: ${colour/xxp/WHITE}
+        _major_fill: ${colour/xxp/WHITE}
+        _minor_fill: ${_/_major_fill}
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (3)]"     
     ur:
       _:
         short_name_text_text: UR
+        _major_fill: ${colour/xxp/WHITE}
+        _minor_fill: ${colour/xxp/WHITE}
       token:
-        index: "$[index_of (1)]"    
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: "$[index_of (3)]"    
     w:
       _:
         short_name_text_text: W
+        short_name_text_size: 15
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2 - 1)]
+        short_name_text_fill: ${colour/xxp/BLACK}
+        name_stripe_box_suppress: True
+        _major_fill: ${colour/xxp/WHITE}
+        _major_fill_2: ${colour/xxp/WHITE}
+        _minor_fill: ${_/_major_fill}
+        _minor_fill_2: ${_/_major_fill_2}
       token:
-        index: "$[index_of (1)]"    
+        ELEMENTS: ${TEMPLATE_stripey/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
+        index: "$[index_of (3)]"      
     wc:
       _:
         short_name_text_text: WC
+        _major_fill: ${colour/xxp/WHITE}
+        _minor_fill: ${_\_major_fill}
+        name_stripe_box_suppress: True
       token:
-        index: "$[index_of (1)]"      
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 12
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: "$[index_of (3)]"        
     ow:
       _:
         short_name_text_text: OW
+        _major_fill: ${colour/xxp/WHITE}
+        _minor_fill: ${colour/x11/white}        
       token:
-        index: "$[index_of (1)]"         
+        _:
+          inner_circle_fill: ${_/_major_fill}
+          inner_circle_radius: 9
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: "$[index_of (3)]"          
