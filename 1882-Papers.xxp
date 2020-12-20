@@ -120,11 +120,12 @@ company:
         #  fill: ${colour/xxp/BLACK}
         index: "$[index_of (5)]"
 
-    HB:
+    HBR:
       _:
         long_name_text_text: |
             Hudson Bay
-        short_name_text_text: HB
+            Railway
+        short_name_text_text: HBR
         token_1_text_text: Free
         token_2_text_text: $40  
         token_3_text_text: $100
@@ -274,7 +275,7 @@ private:
             Blocks I7.
 
             Comes with a 10% share of one of:
-            CNor, CP, GTP, HB, QL.
+            CNor, CP, GTP, HBR, QL.
             Revenue of $10 from bank for each
             newly established river crossing.
         cost_text_text: "Cost: $140"
@@ -282,7 +283,7 @@ private:
 
     CP:
       _:
-        closes_text_text: "Closed by 5 or when CP buys train"
+        closes_text_text: "Closed by 5 or when CPR buys train"
         long_name_text_text: |
             Canadian Pacific
         power_text_text: |

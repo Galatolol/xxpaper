@@ -1040,7 +1040,7 @@ marker:
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/robin_egg_blue}
           _minor_fill: ${colour/wikipedia/robin_egg_blue}
-        index: $[index_of (36)]
+        index: $[index_of (20)]
 
     10share:
       token:
@@ -1053,7 +1053,7 @@ marker:
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/wisteria}
           _minor_fill: ${colour/wikipedia/wisteria}
-        index: $[index_of (36)]
+        index: $[index_of (20)]
 
     aar:
       _:

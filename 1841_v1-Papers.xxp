@@ -40,7 +40,6 @@ company:
         _:
           comment_text_text: |
             Phase 4: split from IRSFF
-            Gets half the IRSFF's stations
       share:
         _:
           share_num_text_text: 1 Share
@@ -65,6 +64,8 @@ company:
       charter:
         _:
           label_text_text: 5 share company
+          comment_text_text: |
+            Phase 4: splits from IRSFF
       token:
         _:
           _major_fill_1: ${colour/wikipedia/topaz}
@@ -114,8 +115,7 @@ company:
       charter:
         _:
           comment_text_text: |
-            Phase 4: split from IRSFF
-            Gets half the IRSFF's stations
+            Phase 4: splits from IRSFF
       share:
         _:
           share_num_text_text: 1 Share
@@ -140,6 +140,8 @@ company:
       charter:
         _:
           label_text_text: 5 share company
+          comment_text_text: |
+            Phase 4: splits from IRSFF
       token:
         _:
           _major_fill_1: ${colour/hollasch/turquoise_pale}
@@ -188,8 +190,9 @@ company:
         _related_fill: ${colour/wikipedia/electric_yellow}
       charter:
         _:
+          label_text_text: 5 share company
           comment_text_text: |
-            2-5 stations, L.50 each
+            1-2 stations, L.50 each
       share:
         _:
           share_num_text_text: 1 Share
@@ -211,9 +214,6 @@ company:
               suppress: True
           "2":
           "3":
-      charter:
-        _:
-          label_text_text: 5 share company
       concession:
         _:
           closes_text_text: "Removed in Phase 4"
@@ -275,6 +275,83 @@ company:
           _minor_fill_2: ${colour/wikipedia/canary_yellow}
         ELEMENTS: ${TEMPLATE_chequer/.}
         EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
+
+
+
+    SB2:
+      _:
+        long_name_text_text: |
+            Strade Ferrate
+            del Sud dell'Austria
+        short_name_text_text: SB
+        token_1_text_text: Venezia
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL
+        token_2_circle_fill: ${colour/hollasch/grey}
+        token_3_text_text: NULL
+        token_4_text_text: NULL
+        token_5_text_text: NULL
+        #inner_circle_fill: ${colour/hollasch/cadmium_yellow}
+        #middle_circle_fill: ${colour/hollasch/yellow}
+        #outer_circle_fill: ${colour/hollasch/cadmium_yellow}
+        #_related_fill: ${colour/wikipedia/amber}        
+        inner_circle_fill: ${colour/wikipedia/tangelo}
+        middle_circle_fill: ${colour/wikipedia/topaz}
+        outer_circle_fill: ${colour/wikipedia/tangelo}
+        _related_fill: ${colour/wikipedia/amber_sae_ece}
+      charter:
+        _:
+          comment_text_text: |
+            Phase 4: splits from IRSFF
+      share:
+        _:
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          comment_text_y: 70
+      token:
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: "$[index_of (7)]"
+
+    SFL2:
+      _:
+        long_name_text_text: |
+            Strade Ferrate
+            della Lombardia
+        #& dell'Italia Centrale
+        short_name_text_text: SFL
+        token_1_text_text: Milano
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL
+        token_2_circle_fill: ${colour/hollasch/grey}
+        token_3_text_text: NULL
+        token_4_text_text: NULL
+        token_5_text_text: NULL
+        inner_circle_fill: ${colour/wikipedia/jungle_green}
+        middle_circle_fill: ${colour/hollasch/turquoise_pale}
+        outer_circle_fill: ${colour/wikipedia/jungle_green}
+        _related_fill: ${colour/galatolol/turquoise_light}
+      charter:
+        _:
+          comment_text_text: |
+            Phase 4: splits from IRSFF
+      share:
+        _:
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          comment_text_y: 70
+      token:
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: "$[index_of (7)]"
+
+
+
+
+
+
+
+
 
 marker:
   token:

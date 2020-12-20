@@ -1380,9 +1380,11 @@ marker:
     5share:
       token:
         _:
-          short_name_text_text: "5 Share"
+          short_name_text_text: |
+            5
+            Share
           short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 4.5]
-          short_name_text_size: 5
+          short_name_text_size: 8
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/robin_egg_blue}
           _minor_fill: ${colour/wikipedia/robin_egg_blue}
@@ -1391,9 +1393,11 @@ marker:
     10share:
       token:
         _:
-          short_name_text_text: "10 Share"
+          short_name_text_text: |
+            10
+            Share
           short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 4.5]
-          short_name_text_size: 5
+          short_name_text_size: 8
           name_stripe_box_suppress: True
           _major_fill: ${colour/wikipedia/wisteria}
           _minor_fill: ${colour/wikipedia/wisteria}
