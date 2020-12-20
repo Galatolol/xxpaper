@@ -9,13 +9,6 @@ private:
     P1:
       _:
         long_name_text_text: |
-            Wrocław–Oława Railway
-        cost_text_text: "Cost: $20"
-        revenue_text_text: "Revenue: $5"
-
-    P2:
-      _:
-        long_name_text_text: |
             Industrialisation of Łódź
         power_text_text: |
             Owning company may place
@@ -23,6 +16,19 @@ private:
             Permanently increases the value
             of the city for all companies.
             Must be placed when this closes.
+        cost_text_text: "Cost: $20"
+        revenue_text_text: "Revenue: $5"
+
+    P2:
+      _:
+        long_name_text_text: |
+            Wrocław–Oława Railway
+        power_text_text: |
+            Once per game, owning company
+            may place an additional yellow
+            tile in either Zielona Góra (B10),
+            Wałbrzych (B12), Bielsko-Biała (F18)
+            or Zakopane (G19).
         cost_text_text: "Cost: $40"
         revenue_text_text: "Revenue: $10"
 
@@ -32,7 +38,7 @@ private:
             Bridge Company
         power_text_text: |
             Owning company ignores
-            all terrain costs until
+            river costs until
             the end of the game.
         cost_text_text: "Cost: $55"
         revenue_text_text: "Revenue: $10"
@@ -56,7 +62,7 @@ private:
         long_name_text_text: |
             Baltic Shipping
         power_text_text: |
-            Owning company may place a 50
+            Owning company may place a $50
             marker in any port (A3, C1, F2).
             For the rest of the game, that
             company uses it instead of the
@@ -91,9 +97,9 @@ company:
 
   charter:
     _:
-      outside_box_radius: 0
-      outside_box_width: 2
-      title_box_width: 2
+      #outside_box_radius: 0
+      #outside_box_width: 2
+      #title_box_width: 2
       token_1_text_y: 202
       token_5_circle_y: 10
       token_5_text_y: -20
@@ -101,8 +107,11 @@ company:
       token_2_text_size: 12
       token_3_text_size: 12
       token_4_text_size: 12
-      comment_text_size: 12
-      label_text_size: 12
+      token_2_text_text: Free
+      token_3_text_text: $40
+      token_4_text_text: $40
+      comment_text_size: 10
+      label_text_size: 10
 
   minor_charter:
     _:
@@ -120,9 +129,6 @@ company:
             PKP
         short_name_text_text: PKP
         short_name_text_size: 8
-        token_2_text_text: Free
-        token_3_text_text: $50
-        token_4_text_text: $50
         _major_fill: ${colour/wikipedia/blue_ryb}
         _major_fill_2: ${colour/wikipedia/white}
         _minor_fill_2: ${_/_major_fill_2}
@@ -147,9 +153,6 @@ company:
         short_name_text_text: KWW
         short_name_text_size: 8
         share_pct_text_fill: ${colour/xxp/WHITE}
-        token_2_text_text: Free
-        token_3_text_text: $50
-        token_4_text_text: $50
         _major_fill: ${colour/wikipedia/rich_lavender}
         _minor_fill: ${colour/wikipedia/black}
         _related_fill: ${colour/wikipedia/plum_web}
@@ -177,9 +180,6 @@ company:
             TKG
         short_name_text_text: TKG
         short_name_text_size: 8
-        token_2_text_text: Free
-        token_3_text_text: $50
-        token_4_text_text: $50
         _major_fill: ${colour/wikipedia/amber_sae_ece}
         _minor_fill: ${colour/x11/white}        
         _related_fill: ${colour/wikipedia/pink_orange}
@@ -207,9 +207,6 @@ company:
         short_name_text_text: CMK
         short_name_text_size: 8
         share_pct_text_fill: ${colour/xxp/WHITE}
-        token_2_text_text: Free
-        token_3_text_text: $50
-        token_4_text_text: $50
         _major_fill: ${colour/x11/red}
         _minor_fill: ${colour/xxp/BLACK}
         _related_fill: ${colour/hollasch/tomato}
@@ -234,9 +231,6 @@ company:
         short_name_text_text: MW
         short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 3]
         name_stripe_box_suppress: True
-        token_2_text_text: Free
-        token_3_text_text: $50
-        token_4_text_text: $50
         _major_fill: ${colour/scale/yellow_4}
         _minor_fill: ${colour/scale/yellow_4}
         _related_fill: ${colour/scale/yellow_2}
@@ -262,9 +256,6 @@ company:
         short_name_text_size: 10
         short_name_text_fill: ${colour/xxp/WHITE}
         name_stripe_box_suppress: True
-        token_2_text_text: Free
-        token_3_text_text: $50
-        token_4_text_text: $50
         _major_fill: ${colour/xxp/D_GREEN}
         _minor_fill: ${colour/xxp/D_GREEN}
         _related_fill: ${colour/hollasch/cinnabar_green}
@@ -1399,7 +1390,7 @@ train:
         rust_bar_box_fill_p: GRAY
         rusted_text_text: "Rusted by 4D"
         rusted_text_size: 14
-        long_name_text_text: "4"
+        long_name_text_text: "3+"
         cost_text_text_p: $280
         #long_name_text_fill: ${colour/wikipedia/black}
         #cost_text_fill: ${colour/wikipedia/black}
@@ -1411,20 +1402,20 @@ train:
       _:
         asset_interior_box_fill: ${colour/galatolol/brown}
         rust_bar_box_fill_p: BLACK
-        long_name_text_text: "5"
-        cost_text_text_p: $400
+        long_name_text_text: "4"
+        cost_text_text_p: $360
         rusted_text_text: Permanent
         rusted_text_size: 14
         #long_name_text_fill: ${colour/wikipedia/black}
         #cost_text_fill: ${colour/wikipedia/black}
       model:
-        index: $[index_of (2)]
+        index: $[index_of (3)]
 
     6T:
       _:
         asset_interior_box_fill_p: RED
         rust_bar_box_fill_p: BLACK
-        long_name_text_text: "6"
+        long_name_text_text: "4+"
         cost_text_text_p: $480
         rusted_text_text: Permanent
         rusted_text_size: 14
