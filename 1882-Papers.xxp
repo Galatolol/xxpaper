@@ -14,10 +14,10 @@ company:
   share:
     _:
       type_bar_box_fill: ${colour/wikipedia/golden_yellow}
-      #long_name_text_size: 3
       type_bar_box_y: 13
       side_bar_lsplit_box_suppress: True
       side_bar_rsplit_box_suppress: True
+      share_num_text_x: 167
   token:
     _:
       short_name_text_size: 8
@@ -38,6 +38,11 @@ company:
         _minor_fill: ${_/_major_fill}
         _minor_fill_2: ${_/_major_fill_2}
         _related_fill: ${colour/hollasch/steel_blue}
+      charter:
+        _:
+          comment_text_text: |
+            Can be started only as the result of the conversion
+            of Saskatchewan Central private company.
       token:
         ELEMENTS: ${TEMPLATE_stripey/.}
         EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
@@ -75,7 +80,9 @@ company:
         middle_box_fill: ${colour/wikipedia/dark_gray}
       charter:
         _:
-          comment_text_text: Uses neutral stations as its own.
+          comment_text_text: |
+            Cannot be started if no neutral station on the board.
+            Uses neutral stations as its own.
       token:
         ELEMENTS: ${TEMPLATE_boxes/.}
         EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
@@ -113,11 +120,12 @@ company:
         #  fill: ${colour/xxp/BLACK}
         index: "$[index_of (5)]"
 
-    HB:
+    HBR:
       _:
         long_name_text_text: |
             Hudson Bay
-        short_name_text_text: HB
+            Railway
+        short_name_text_text: HBR
         token_1_text_text: Free
         token_2_text_text: $40  
         token_3_text_text: $100
@@ -129,6 +137,7 @@ company:
       token:
         _:
           inner_circle_fill: ${_/_major_fill}
+          inner_circle_radius: 9
         ELEMENTS: ${TEMPLATE_bullseye/.}
         EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
         index: $[index_of (6)]
@@ -138,7 +147,7 @@ company:
         long_name_text_text: |
             Grand Trunk
             Pacific
-        short_name_text_text: GT
+        short_name_text_text: GTP
         token_1_text_text: Free
         token_2_text_text: $40  
         token_3_text_text: $100
@@ -197,7 +206,7 @@ marker:
       inner_circle:
         fill: ${colour/galatolol/brown}    
 
-    neural:
+    neutral:
       token:
         ELEMENTS:
           - token_interior_box
@@ -217,15 +226,16 @@ private:
   _:
     long_name_text_size: 11
     money_bar_box_y: 13
-    closes_text_size: 7
+    closes_text_size: 8
+    closes_text_text: "Closed by 5"
     power_text_size: 8
     revenue_text_x: 168
+    asset_interior_box_fill: ${colour/scale/yellow_0}
 
   index:
 
     HB:
       _:
-        closes_text_text: "Closed by 5"
         long_name_text_text: |
             Hudson Bay
         power_text_text: "Blocks K3."
@@ -239,6 +249,7 @@ private:
             Saskatchewan Central
         power_text_text: |
             Blocks D8.
+
             May convert to Saskatchewan Central
             public company.
         cost_text_text: "Cost: $50"
@@ -246,12 +257,11 @@ private:
 
     NWR:
       _:
-        closes_text_text: "Closed by 5"
         long_name_text_text: |
-            North West Rebellion
+            North-West Rebellion
         power_text_text: |
             Move one of company's on-map 
-            stations to an NWE hex city and
+            stations to an NWR hex city and
             optionally perform lay or upgrade 
             action on the destination.								
         cost_text_text: "Cost: $80"
@@ -259,11 +269,13 @@ private:
 
     TB:
       _:
-        closes_text_text: "Closed by 5"
         long_name_text_text: |
             Trestle Bridge
         power_text_text: |
             Blocks I7.
+
+            Comes with a 10% share of one of:
+            CNor, CP, GTP, HBR, QL.
             Revenue of $10 from bank for each
             newly established river crossing.
         cost_text_text: "Cost: $140"
@@ -271,10 +283,13 @@ private:
 
     CP:
       _:
-        closes_text_text: "Closed by 5 or when CP buys train"
+        closes_text_text: "Closed by 5 or when CPR buys train"
         long_name_text_text: |
             Canadian Pacific
         power_text_text: |
+            Comes with the presidency of CPR.
+            
+            Cannot be sold to a public company.
         cost_text_text: "Cost: $180"
         revenue_text_text: "Revenue: $25"
 
@@ -283,7 +298,7 @@ private:
         close_bar_box_suppress: True
         money_bar_box_suppress: True
         long_name_text_text: |
-            North West Rebellion
+            North-West Rebellion
         power_text_text: |
             When revealed, remove all
             yellow tiles from NWR-marked hexes. 
@@ -315,7 +330,7 @@ train:
       model:
         index:
           "1":
-            note_text:
+            top_note_text:
               text: Additional
           "2":
           "3":
@@ -333,10 +348,9 @@ train:
       model:
         index:
           "1":
-            note_text:
+            top_note_text:
               text: |
                 Additional
-                To D: $800
           "2":
           "3":
           "4":
@@ -352,10 +366,9 @@ train:
       model:
         index:
           "1":
-            note_text:
+            top_note_text:
               text: |
                 Additional
-                To D: $800
           "2":
           "3":
 
@@ -370,10 +383,9 @@ train:
       model:
         index:
           "1":
-            note_text:
+            top_note_text:
               text: |
                 Additional
-                To D: $800
           "2":
           "3":
 

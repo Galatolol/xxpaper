@@ -1,0 +1,378 @@
+company:
+
+  charter:
+    _:
+      long_name_text_size: 14
+      label_text_text: ""
+      comment_text_typeface: ${DEFAULT/typeface}
+      comment_text_size: 12
+      token_1_circle_y: 255
+      token_1_text_y: 227
+      token_5_circle_y: 60
+      token_5_text_y: 32
+      token_1_text_size: 10
+      token_2_text_size: 10
+      comment_text_size: 10
+  share:
+    _:
+      long_name_text_size: 12    
+      type_bar_box_fill: ${colour/wikipedia/golden_yellow}
+      type_bar_box_y: 13
+      side_bar_lsplit_box_suppress: True
+      side_bar_rsplit_box_suppress: True
+      share_num_text_x: 167
+  token:
+    _:
+      short_name_text_size: 8
+
+  index:
+    SB:
+      _:
+        long_name_text_text: |
+            Strade Ferrate
+            del Sud dell'Austria
+        short_name_text_text: SB
+        token_1_text_text: Venezia
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL
+        _related_fill: ${colour/wikipedia/amber_sae_ece}
+      charter:
+        _:
+          comment_text_text: |
+            Phase 4: split from IRSFF
+      share:
+        _:
+          share_num_text_text: 1 Share
+          share_pct_text_text: 20%
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          share_desc_text_suppress: True
+        index:
+          "1":
+            share_desc_text:
+              suppress: True
+            type_bar_box:
+              suppress: True
+            token_1_embed:
+              suppress: False
+            token_2a_embed:
+              suppress: True
+            token_2b_embed:
+              suppress: True
+          "2":
+          "3":
+      charter:
+        _:
+          label_text_text: 5 share company
+          comment_text_text: |
+            Phase 4: splits from IRSFF
+      token:
+        _:
+          _major_fill_1: ${colour/wikipedia/topaz}
+          _major_fill_2: ${colour/wikipedia/tangelo}
+          _minor_fill_1: ${colour/wikipedia/tangelo}
+          _minor_fill_2: ${colour/wikipedia/topaz}
+        ELEMENTS: ${TEMPLATE_chequer/.}
+        EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
+        index: $[index_of (4)]  
+    SB_pres:
+      _:
+        long_name_text_text: |
+            Strade Ferrate
+            del Sud dell'Austria
+        short_name_text_text: SB
+        _related_fill: ${colour/wikipedia/amber_sae_ece}
+      charter:
+        index:
+      share:
+        _:
+          share_num_text_text: 2 Shares
+          share_pct_text_text: 40%
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+        index:
+          "1":
+      token:
+        _:
+          _major_fill_1: ${colour/wikipedia/topaz}
+          _major_fill_2: ${colour/wikipedia/tangelo}
+          _minor_fill_1: ${colour/wikipedia/tangelo}
+          _minor_fill_2: ${colour/wikipedia/topaz}
+        ELEMENTS: ${TEMPLATE_chequer/.}
+        EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
+
+    SFL:
+      _:
+        long_name_text_text: |
+            Strade Ferrate
+            della Lombardia
+        #& dell'Italia Centrale
+        short_name_text_text: SFL
+        token_1_text_text: Milano
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL
+        _related_fill: ${colour/galatolol/turquoise_light}
+      charter:
+        _:
+          comment_text_text: |
+            Phase 4: splits from IRSFF
+      share:
+        _:
+          share_num_text_text: 1 Share
+          share_pct_text_text: 20%
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          share_desc_text_suppress: True
+        index:
+          "1":
+            share_desc_text:
+              suppress: True
+            type_bar_box:
+              suppress: True
+            token_1_embed:
+              suppress: False
+            token_2a_embed:
+              suppress: True
+            token_2b_embed:
+              suppress: True
+          "2":
+          "3":
+      charter:
+        _:
+          label_text_text: 5 share company
+          comment_text_text: |
+            Phase 4: splits from IRSFF
+      token:
+        _:
+          _major_fill_1: ${colour/hollasch/turquoise_pale}
+          _major_fill_2: ${colour/wikipedia/jungle_green}
+          _minor_fill_1: ${colour/wikipedia/jungle_green}
+          _minor_fill_2: ${colour/hollasch/turquoise_pale}
+        ELEMENTS: ${TEMPLATE_chequer/.}
+        EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
+        index: $[index_of (4)]  
+    SFL_pres:
+      _:
+        long_name_text_text: |
+            Strade Ferrate
+            della Lombardia
+        #& dell'Italia Centrale
+        short_name_text_text: SFL
+        _related_fill: ${colour/galatolol/turquoise_light}
+      charter:
+        index:
+      share:
+        _:
+          share_num_text_text: 2 Shares
+          share_pct_text_text: 40%
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+        index:
+          "1":
+      token:
+        _:
+          _major_fill_1: ${colour/hollasch/turquoise_pale}
+          _major_fill_2: ${colour/wikipedia/jungle_green}
+          _minor_fill_1: ${colour/wikipedia/jungle_green}
+          _minor_fill_2: ${colour/hollasch/turquoise_pale}
+        ELEMENTS: ${TEMPLATE_chequer/.}
+        EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
+
+    SFTC:
+      _:
+        long_name_text_text: |
+            Strada di Ferro
+            da Torino a Cuneo
+        short_name_text_text: SFTC
+        token_1_text_text: Cuneo
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL  
+        _related_fill: ${colour/wikipedia/electric_yellow}
+      charter:
+        _:
+          label_text_text: 5 share company
+          comment_text_text: |
+            1-2 stations, L.50 each
+      share:
+        _:
+          share_num_text_text: 1 Share
+          share_pct_text_text: 20%
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          share_desc_text_suppress: True
+        index:
+          "1":
+            share_desc_text:
+              suppress: True
+            type_bar_box:
+              suppress: True
+            token_1_embed:
+              suppress: False
+            token_2a_embed:
+              suppress: True
+            token_2b_embed:
+              suppress: True
+          "2":
+          "3":
+      concession:
+        _:
+          closes_text_text: "Removed in Phase 4"
+          long_name_text_text: |
+              SFTC Concession (3)
+          power_text_text: |
+              Owning player may start 
+              SFTC.
+              Owning player can't lose the
+              presidency of SFTC.
+              If SFTC not started at the end of SR,
+              this concession is put in the market.
+          cost_text_text: "Cost L.50 from the market"
+          cost_text_size: 10
+          bid_text_text: ""
+          bid_text_x: 168
+          long_name_text_size: 12
+          long_name_text_x: 86
+          long_name_text_y: 78
+          bottom_bar_box_y: 13
+          power_text_h_center: 1
+          power_text_x_inset: 4
+          power_text_size: 8
+          token_embed_x_inset: 130
+          token_embed_y_inset: 30
+          asset_interior_box_fill: ${colour/scale/yellow_0}
+        index: "$[index_of (1)]"
+      token:
+        _:
+          _major_fill_1: ${colour/wikipedia/canary_yellow}
+          _major_fill_2: ${colour/xxp/BLACK}
+          _minor_fill_1: ${colour/xxp/BLACK}
+          _minor_fill_2: ${colour/wikipedia/canary_yellow}
+        ELEMENTS: ${TEMPLATE_chequer/.}
+        EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
+        index: $[index_of (4)]  
+    SFTC_pres:
+      _:
+        long_name_text_text: |
+            Strada di Ferro
+            da Torino a Cuneo
+        short_name_text_text: SFTC
+        _related_fill: ${colour/wikipedia/electric_yellow}
+      charter:
+        index:
+      share:
+        _:
+          share_num_text_text: 2 Shares
+          share_pct_text_text: 40%
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+        index:
+          "1":
+      token:
+        _:
+          _major_fill_1: ${colour/wikipedia/canary_yellow}
+          _major_fill_2: ${colour/xxp/BLACK}
+          _minor_fill_1: ${colour/xxp/BLACK}
+          _minor_fill_2: ${colour/wikipedia/canary_yellow}
+        ELEMENTS: ${TEMPLATE_chequer/.}
+        EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
+
+
+
+    SB2:
+      _:
+        long_name_text_text: |
+            Strade Ferrate
+            del Sud dell'Austria
+        short_name_text_text: SB
+        token_1_text_text: Venezia
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL
+        token_2_circle_fill: ${colour/hollasch/grey}
+        token_3_text_text: NULL
+        token_4_text_text: NULL
+        token_5_text_text: NULL
+        #inner_circle_fill: ${colour/hollasch/cadmium_yellow}
+        #middle_circle_fill: ${colour/hollasch/yellow}
+        #outer_circle_fill: ${colour/hollasch/cadmium_yellow}
+        #_related_fill: ${colour/wikipedia/amber}        
+        inner_circle_fill: ${colour/wikipedia/tangelo}
+        middle_circle_fill: ${colour/wikipedia/topaz}
+        outer_circle_fill: ${colour/wikipedia/tangelo}
+        _related_fill: ${colour/wikipedia/amber_sae_ece}
+      charter:
+        _:
+          comment_text_text: |
+            Phase 4: splits from IRSFF
+      share:
+        _:
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          comment_text_y: 70
+      token:
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: "$[index_of (7)]"
+
+    SFL2:
+      _:
+        long_name_text_text: |
+            Strade Ferrate
+            della Lombardia
+        #& dell'Italia Centrale
+        short_name_text_text: SFL
+        token_1_text_text: Milano
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL
+        token_2_circle_fill: ${colour/hollasch/grey}
+        token_3_text_text: NULL
+        token_4_text_text: NULL
+        token_5_text_text: NULL
+        inner_circle_fill: ${colour/wikipedia/jungle_green}
+        middle_circle_fill: ${colour/hollasch/turquoise_pale}
+        outer_circle_fill: ${colour/wikipedia/jungle_green}
+        _related_fill: ${colour/galatolol/turquoise_light}
+      charter:
+        _:
+          comment_text_text: |
+            Phase 4: splits from IRSFF
+      share:
+        _:
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          comment_text_y: 70
+      token:
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: "$[index_of (7)]"
+
+
+
+
+
+
+
+
+
+marker:
+  token:
+    _:
+      short_name_text_size: 8
+      major_fill: ${colour/wikipedia/white}
+      minor_fill: ${colour/wikipedia/white}
+
+  index:
+    sftc:
+      _:
+        short_name_text_text: SFTC
+      token:
+        index: "$[index_of (1)]"    
+    sb:
+      _:
+        short_name_text_text: SB
+      token:
+        index: "$[index_of (1)]"    
+    sfl:
+      _:
+        short_name_text_text: SFL
+      token:
+        index: "$[index_of (1)]"    

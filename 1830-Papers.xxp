@@ -4,7 +4,6 @@ company:
     token_2_text_text: $40
   charter:
     _:
-      #long_name_text_size: 15
       token_1_text_y: 202
       token_5_circle_y: 10
       token_5_text_y: -20
@@ -16,10 +15,10 @@ company:
   share:
     _:
       type_bar_box_fill: ${colour/wikipedia/golden_yellow}
-      #long_name_text_size: 3
       type_bar_box_y: 13
       side_bar_lsplit_box_suppress: True
       side_bar_rsplit_box_suppress: True
+      share_num_text_x: 167
   token:
     _:
       short_name_text_size: 8
@@ -56,7 +55,6 @@ company:
         _major_fill_2: ${colour/wikipedia/banana_yellow}
         _minor_fill_2: ${_/_major_fill_2}
         _minor_fill: ${_/_major_fill}
-        _minor_fill_2: ${_/_major_fill_2}
         _related_fill: ${colour/hollasch/steel_blue}
       token:
         ELEMENTS: ${TEMPLATE_stripey/.}
@@ -73,7 +71,6 @@ company:
         token_4_text_text: $100
         _major_fill: ${colour/x11/red}
         _minor_fill: ${colour/xxp/BLACK}
-        #_minor_fill: ${colour/wikipedia/coral_pink}
         _related_fill: ${colour/hollasch/tomato}
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
@@ -131,7 +128,7 @@ company:
         long_name_text_text: |
             New York
             New Haven
-        short_name_text_text: NYH
+        short_name_text_text: NYNH
         #_major_fill: ${colour/wikipedia/carrot_orange}
         #_minor_fill: ${colour/x11/orangered}
         _major_fill: ${colour/wikipedia/amber_sae_ece}
@@ -140,6 +137,7 @@ company:
       token:
         _:
           inner_circle_fill: ${_/_major_fill}
+          inner_circle_radius: 9
         ELEMENTS: ${TEMPLATE_bullseye/.}
         EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
         index: $[index_of (5)]
@@ -163,7 +161,8 @@ company:
               Mohawk & Hudson
               Railroad
           power_text_text: |
-              Blocks: D18.
+              Blocks D18.
+
               Owning player may exchange for
               a share of NYC from bank or IPO.
           cost_text_text: "Cost: $110"
@@ -177,7 +176,8 @@ company:
           power_text_size: 8
           token_embed_x_inset: 130
           token_embed_y_inset: 30
-          asset_interior_box_fill: ${colour/xxp/H_BROWN}
+          asset_interior_box_fill: ${colour/scale/yellow_0}
+          #asset_interior_box_fill: ${colour/xxp/H_BROWN}
         index: "$[index_of (1)]"
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
@@ -208,7 +208,6 @@ company:
 
 marker:
   index:
-
     round:
       token:
         ELEMENTS:
@@ -229,9 +228,11 @@ private:
   _:
     long_name_text_size: 11
     money_bar_box_y: 13
-    closes_text_size: 7
+    closes_text_size: 8
+    closes_text_text: "Closed by 5"
     power_text_size: 8
     revenue_text_x: 168
+    asset_interior_box_fill: ${colour/scale/yellow_0}
 
   index:
 
@@ -240,7 +241,7 @@ private:
         long_name_text_text: |
             Schuykill Valley
             Railroad
-        power_text_text: "Blocks: G15"
+        power_text_text: "Blocks G15."
         cost_text_text: "Cost: $20"
         revenue_text_text: "Revenue: $5"
 
@@ -248,10 +249,11 @@ private:
       _:
         long_name_text_text: |
             Champlain & St Larence
-            Railway
+            Railroad
         power_text_text: |
-            Blocks: B20.
-            Owning corporation may place a free,
+            Blocks B20.
+
+            Owning company may place a free
             track tile at B20 in addition to
             its normal track tile lay.
         cost_text_text: "Cost: $40"
@@ -263,26 +265,13 @@ private:
             Delaware & Hudson
             Railroad
         power_text_text: |
-            Blocks: F16.
-            Owning corporation may place a yellow
+            Blocks F16.
+
+            Owning company may place a yellow
             track tile, or a yellow tile and station
-            marker (must be both) at F16 for $120.
+            (must be both) at F16 for $120.
         cost_text_text: "Cost: $70"
         revenue_text_text: "Revenue: $15"
-
-    M&H:
-      _:
-        closes_text_text: "Closes in brown phase or when power used"
-        long_name_text_text: |
-            Mohawk & Hudson
-            Railroad
-        power_text_text: |
-            Blocks: D18.
-            Owning player may exchange for
-            a share of NYC from bank or IPO.
-            
-        cost_text_text: "Cost: $110"
-        revenue_text_text: "Revenue: $20"
 
     C&A:
       _:
@@ -290,23 +279,25 @@ private:
             Camden & Amboy
             Railroad
         power_text_text: |
-            Blocks: H18.
-            Purchaser receives 10% PRR share.
+            Blocks H18.
+
+            Comes with a 10% share of PRR.
         cost_text_text: "Cost: $160"
         revenue_text_text: "Revenue: $25"
 
     B&O:
       _:
-        closes_text_text: "Closes in brown phase or when BO buys train"
+        closes_text_text: "Closed by 5 or when BO buys train"
         closes_text_x_inset: -1
         long_name_text_text: |
             Baltimore & Ohio
             Railroad
         power_text_text: |
-            Blocks: I13 & I15.
-            Purchaser receives BO presidency
-            and sets par price. 
-            May not be sold.
+            Blocks I13 and I15.
+
+            Comes with the presidency of BO.
+            
+            Cannot be sold to a public company.
         cost_text_text: "Cost: $200"
         revenue_text_text: "Revenue: $30"
 
@@ -365,10 +356,9 @@ train:
       model:
         index:
           "1":
-            note_text:
+            top_note_text:
               text: |
                 Optional
-                To D: $800
           "2":
           "3":
 

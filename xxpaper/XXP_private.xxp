@@ -2,6 +2,8 @@ private:
 
   index:
 
+  model:
+
   -missing-:
     ELEMENTS:
       - asset_interior_box
@@ -9,6 +11,7 @@ private:
       - close_bar_box
       - closes_text
       - long_name_text
+      - value_text
       - power_text
       - money_bar_box
       - cost_text
@@ -19,6 +22,7 @@ private:
   _:
     closes_text_text: "Closes in brown phase"
     long_name_text_text: ""
+    value_text: ""
     power_text_text: ""
     cost_text_text: "Cost: £XXX"
     revenue_text_text: "Revenue: £XXX"
@@ -50,6 +54,15 @@ private:
     size: 11
     x: 86
     y: 78
+    fill: $[black_or_white (${asset_interior_box/fill})]
+
+  value_text:
+    h_center: 0
+    v_center: -1
+    size: 20
+    x: 86
+    y: 65
+    typeface: ${DEFAULT/typeface_bold}
     fill: $[black_or_white (${asset_interior_box/fill})]
 
   power_text:
@@ -85,3 +98,5 @@ private:
     size: 11
     fill: $[black_or_white (${money_bar_box/fill})]
 
+  model:
+    index: $[index_of (1)]

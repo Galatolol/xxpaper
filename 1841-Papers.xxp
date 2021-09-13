@@ -1,0 +1,567 @@
+private:
+  index:
+    bayard:
+      _:
+        long_name_text_text: |
+            Bayard (1)
+        closes_text_text: "Removed in Phase 4"
+        cost_text_text: "Cost L.50 from the market"
+        cost_text_size: 10
+        long_name_text_size: 12
+        revenue_text_text: ""
+        bid_text_text: ""
+        power_text_text: |
+          Owning player gains L.20
+          at the end of a Stock Round.
+        asset_interior_box_fill: ${colour/scale/yellow_0}
+
+company:
+
+  charter:
+    _:
+      long_name_text_size: 14
+      label_text_text: ""
+      comment_text_typeface: ${DEFAULT/typeface}
+      comment_text_size: 12
+      token_1_circle_y: 255
+      token_1_text_y: 227
+      token_5_circle_y: 60
+      token_5_text_y: 32
+      token_1_text_size: 10
+      token_2_text_size: 10
+      comment_text_size: 10
+  share:
+    _:
+      long_name_text_size: 12    
+      type_bar_box_fill: ${colour/wikipedia/golden_yellow}
+      type_bar_box_y: 13
+      side_bar_lsplit_box_suppress: True
+      side_bar_rsplit_box_suppress: True
+      share_num_text_x: 167
+  token:
+    _:
+      short_name_text_size: 8
+
+  index:
+
+
+    SB:
+      _:
+        long_name_text_text: |
+            Strade Ferrate
+            del Sud dell'Austria
+        short_name_text_text: SB
+        token_1_text_text: Venezia
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL
+        token_2_circle_fill: ${colour/hollasch/grey}
+        token_3_text_text: NULL
+        token_4_text_text: NULL
+        token_5_text_text: NULL
+        #inner_circle_fill: ${colour/hollasch/cadmium_yellow}
+        #middle_circle_fill: ${colour/hollasch/yellow}
+        #outer_circle_fill: ${colour/hollasch/cadmium_yellow}
+        #_related_fill: ${colour/wikipedia/amber}        
+        inner_circle_fill: ${colour/wikipedia/tangelo}
+        middle_circle_fill: ${colour/wikipedia/topaz}
+        outer_circle_fill: ${colour/wikipedia/tangelo}
+        _related_fill: ${colour/wikipedia/amber_sae_ece}
+      charter:
+        _:
+          comment_text_text: |
+            Phase 4: splits from IRSFF
+      share:
+        _:
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          comment_text_y: 70
+      token:
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: "$[index_of (7)]"
+
+
+
+    SFTG:
+      _:
+        long_name_text_text: |
+            Strada Ferrata
+            da Torino a Genova
+        short_name_text_text: SFTG
+        token_1_text_text: Torino
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: Alessandria
+        token_2_circle_fill: ${colour/hollasch/grey}
+        token_3_text_text: NULL
+        token_4_text_text: NULL
+        token_5_text_text: NULL
+        _major_fill: ${colour/wikipedia/true_blue}
+        _minor_fill: ${colour/wikipedia/sky_blue}
+        _related_fill: ${colour/wikipedia/rich_electric_blue}
+      charter:
+        _:
+          comment_text_text: |
+            2-5 stations, L.50 each
+      share:
+        _:
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          comment_text_y: 70
+      concession:
+        _:
+          closes_text_text: "Removed in Phase 4"
+          long_name_text_text: |
+              SFTG Concession (7)
+          power_text_text: |
+              Owning player may start 
+              SFTG.
+              Owning player can't lose the
+              presidency of SFTG.
+              If SFTG not started at the end of SR,
+              this concession is put in the market.
+          cost_text_text: "Cost L.50 from the market"
+          cost_text_size: 10
+          bid_text_text: ""
+          bid_text_x: 168
+          long_name_text_size: 12
+          long_name_text_x: 86
+          long_name_text_y: 78
+          bottom_bar_box_y: 13
+          power_text_h_center: 1
+          power_text_x_inset: 4
+          power_text_size: 8
+          token_embed_x_inset: 130
+          token_embed_y_inset: 30
+          asset_interior_box_fill: ${colour/scale/yellow_0}
+        index: "$[index_of (1)]"
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: "$[index_of (7)]"
+
+
+
+    SFLi:
+      _:
+        long_name_text_text: |
+            Strade Ferrate
+            Livornesi
+        short_name_text_text: SFLi
+        token_1_text_text: Pisa
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: Firenze
+        token_2_circle_fill: ${colour/hollasch/grey}
+        token_3_text_text: NULL
+        token_3_circle_fill: ${colour/hollasch/grey}
+        token_4_text_text: NULL
+        token_4_circle_fill: ${colour/hollasch/grey}
+        token_5_text_text: NULL
+        token_5_circle_fill: ${colour/hollasch/grey}
+        inner_circle_fill: ${colour/wikipedia/yellow_green}
+        middle_circle_fill: ${colour/wikipedia/lemon_lime}
+        outer_circle_fill: ${colour/wikipedia/yellow_green}
+        _related_fill: ${colour/wikipedia/lemon_lime}
+      charter:
+        _:
+          comment_text_text: |
+            Phase 4: formed from
+            SFLP, SFMA and SSFL
+            Always has 5 stations
+      share:
+        _:
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          comment_text_y: 70
+
+      token:
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: "$[index_of (7)]"
+
+
+
+
+    SLDV:
+      _:
+        long_name_text_text: |
+            Società
+            Leonardo da Vinci
+        short_name_text_text: "LDV"
+        short_name_text_fill: ${colour/xxp/BLACK}
+        short_name_text_size: 8
+        token_1_text_text: NULL
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL     
+        share_pct_text_fill: ${colour/xxp/WHITE}
+        name_stripe_box_suppress: True
+        _major_fill: ${colour/wikipedia/chocolate_traditional}
+        _minor_fill: ${colour/x11/tan3}
+        middle_box_fill: ${_/_minor_fill}
+        _related_fill: ${colour/wikipedia/copper}
+      token:
+        _:
+        ELEMENTS: ${TEMPLATE_boxes/.}
+        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
+        index: $[index_of (4)]    
+      share:
+        _:
+          share_num_text_text: 1 Share
+          share_pct_text_text: 20%
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          share_desc_text_suppress: True
+        index:
+          "1":
+            share_desc_text:
+              suppress: True
+            type_bar_box:
+              suppress: True
+            token_1_embed:
+              suppress: False
+            token_2a_embed:
+              suppress: True
+            token_2b_embed:
+              suppress: True
+          "2":
+          "3":
+      charter:
+        _:
+          label_text_text: 5 share company
+          comment_text_text: |
+            1-2 stations, L.25/50/100/200 each
+    SLDV_pres:
+      _:
+        long_name_text_text: |
+            Società
+            Leonardo da Vinci
+        short_name_text_text: "LDV"
+        short_name_text_fill: ${colour/xxp/BLACK}
+        short_name_text_size: 10
+        name_stripe_box_suppress: True
+        _major_fill: ${colour/wikipedia/chocolate_traditional}
+        _minor_fill: ${colour/x11/tan3}
+        middle_box_fill: ${_/_minor_fill}
+        _related_fill: ${colour/wikipedia/copper}
+      charter:
+        index:
+      share:
+        _:
+          share_num_text_text: 2 Shares
+          share_pct_text_text: 40%
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+        index:
+          "1":
+      token:
+        _:
+        ELEMENTS: ${TEMPLATE_boxes/.}
+        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
+
+
+    FTP:
+      _:
+        long_name_text_text: |
+            Ferrovie
+            Trans Padane
+        short_name_text_text: "FTP"
+        name_stripe_box_suppress: True
+        token_1_text_text: NULL
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL     
+        short_name_text_size: 9
+        _minor_fill: ${colour/x11/gray93}
+        _major_fill: ${colour/x11/grey50}
+        middle_box_fill: ${_/_minor_fill}
+        _related_fill: ${colour/x11/gray79}
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          #short_name_text_size: 12
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
+        _:
+        ELEMENTS: ${TEMPLATE_boxes/.}
+        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
+        index: $[index_of (4)]    
+      share:
+        _:
+          share_num_text_text: 1 Share
+          share_pct_text_text: 20%
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          share_desc_text_suppress: True
+        index:
+          "1":
+            share_desc_text:
+              suppress: True
+            type_bar_box:
+              suppress: True
+            token_1_embed:
+              suppress: False
+            token_2a_embed:
+              suppress: True
+            token_2b_embed:
+              suppress: True
+          "2":
+          "3":
+      charter:
+        _:
+          label_text_text: 5 share company
+          comment_text_text: |
+            1-2 stations, L.25/50/100/200 each
+    FTP_pres:
+      _:
+        long_name_text_text: |
+            Ferrovie
+            Trans Padane
+        short_name_text_text: "FTP"
+        short_name_text_size: 10
+        name_stripe_box_suppress: True
+        _minor_fill: ${colour/x11/gray93}
+        _major_fill: ${colour/x11/grey50}
+        middle_box_fill: ${_/_minor_fill}
+        _related_fill: ${colour/x11/gray79}
+      charter:
+        index:
+      share:
+        _:
+          share_num_text_text: 2 Shares
+          share_pct_text_text: 40%
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+        index:
+          "1":
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 12
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
+        _:
+        ELEMENTS: ${TEMPLATE_boxes/.}
+        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
+
+    CTLP:
+      _:
+        long_name_text_text: |
+            La Patria
+        #    Compagnia
+        #    Trasporti La Patria
+        short_name_text_text: "LP"
+        short_name_text_size: 10
+        short_name_text_fill: ${colour/xxp/WHITE}
+        token_1_text_text: NULL
+        token_1_circle_fill: ${colour/hollasch/grey}
+        token_2_text_text: NULL     
+        share_pct_text_fill: ${colour/xxp/WHITE}
+        name_stripe_box_suppress: True
+        _major_fill: ${colour/x11/grey89}
+        _minor_fill: ${colour/x11/grey49}
+        middle_box_fill: ${_/_minor_fill}
+        _related_fill: ${colour/x11/grey59}
+      token:
+        _:
+        ELEMENTS: ${TEMPLATE_boxes/.}
+        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
+        index: $[index_of (4)]    
+      share:
+        _:
+          share_num_text_text: 1 Share
+          share_pct_text_text: 20%
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+          share_desc_text_suppress: True
+        index:
+          "1":
+            share_desc_text:
+              suppress: True
+            type_bar_box:
+              suppress: True
+            token_1_embed:
+              suppress: False
+            token_2a_embed:
+              suppress: True
+            token_2b_embed:
+              suppress: True
+          "2":
+          "3":
+      charter:
+        _:
+          label_text_text: 5 share company
+          comment_text_text: |
+            1-2 stations, L.25/50/100/200 each
+    CTLP_pres:
+      _:
+        long_name_text_text: |
+            La Patria
+        #    Compagnia
+        #    Trasporti La Patria
+        short_name_text_text: "LP"
+        short_name_text_size: 10
+        short_name_text_fill: ${colour/xxp/WHITE}
+        name_stripe_box_suppress: True
+        _major_fill: ${colour/x11/grey89}
+        _minor_fill: ${colour/x11/grey49}
+        middle_box_fill: ${_/_minor_fill}
+        _related_fill: ${colour/x11/grey59}
+      charter:
+        index:
+      share:
+        _:
+          share_num_text_text: 2 Shares
+          share_pct_text_text: 40%
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+        index:
+          "1":
+      token:
+        _:
+        ELEMENTS: ${TEMPLATE_boxes/.}
+        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
+
+
+
+
+
+
+
+
+
+
+
+
+train:
+  index:
+    2T:
+      _:
+        asset_interior_box_fill_p: YELLOW
+        rust_bar_box_fill_p: BLUE
+        rusted_text_text: "Rusted by 4"
+        rusted_text_size: 14
+        rusted_text_fill: ${colour/xxp/BLACK}
+        long_name_text_text: "2"
+        cost_text_text: "L.100"
+      model:
+        index: $[index_of (8)]
+    3T:
+      _:
+        asset_interior_box_fill_p: GREEN
+        rust_bar_box_fill_p: BROWN
+        rusted_text_text: "Rusted by 5"
+        rusted_text_size: 14
+        long_name_text_text: "3"
+        cost_text_text: "L.200"
+        long_name_text_fill: ${colour/xxp/BLACK}
+        cost_text_fill: ${colour/xxp/BLACK}
+      model:
+        index: $[index_of (6)]
+    4T:
+      _:
+        asset_interior_box_fill_p: BLUE
+        rust_bar_box_fill_p: GRAY
+        rusted_text_text: "Rusted by 7"
+        rusted_text_size: 14
+        long_name_text_text: "4"
+        cost_text_text: "L.350"
+        long_name_text_fill: ${colour/xxp/BLACK}
+        cost_text_fill: ${colour/xxp/BLACK}
+      model:
+        index: $[index_of (4)]
+    5T:
+      _:
+        asset_interior_box_fill_p: BROWN
+        rust_bar_box_fill_p: PURPLE
+        rusted_text_text: "Rusted by 8"
+        rusted_text_size: 14
+        long_name_text_text: "5"
+        cost_text_text: "L.550"
+      model:
+        index: $[index_of (3)]
+    6T:
+      _:
+        asset_interior_box_fill_p: RED
+        rust_bar_box_fill_p: BLACK
+        rusted_text_text: "Permanent"
+        rusted_text_size: 14
+        long_name_text_text: "6"
+        cost_text_text: "L.800"
+      model:
+        index: $[index_of (2)]
+    7T:
+      _:
+        asset_interior_box_fill_p: GRAY
+        rust_bar_box_fill_p: BLACK
+        rusted_text_text: "Permanent"
+        rusted_text_size: 14
+        long_name_text_text: "7"
+        cost_text_text: "L.1100"
+      model:
+        index: $[index_of (2)]
+    8T:
+      _:
+        asset_interior_box_fill_p: PURPLE
+        rust_bar_box_fill_p: BLACK
+        rusted_text_text: "Permanent"
+        rusted_text_size: 14
+        long_name_text_text: "8"
+        cost_text_text: "L.1450"
+      model:
+        index: $[index_of (7)]
+        
+marker:
+  token:
+    _:
+      short_name_text_size: 8
+      major_fill: ${colour/wikipedia/white}
+      minor_fill: ${colour/wikipedia/white}
+
+  index:
+    round:
+      _:
+        short_name_text_text: "Round"
+        inner_circle_fill: ${colour/x11/chocolate4}
+        middle_circle_fill: ${colour/x11/chartreuse3}
+        outer_circle_fill: ${colour/x11/yellow}
+      token:
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        index: "$[index_of (1)]" 
+    gtf:
+      _:
+        short_name_text_text: GTF
+      token:
+        index: "$[index_of (1)]"           
+    icsf:
+      _:
+        short_name_text_text: IC
+      token:
+        index: "$[index_of (1)]"    
+    ftp:
+      _:
+        short_name_text_text: FTP
+      token:
+        index: "$[index_of (1)]"             
+    irsff:
+      _:
+        short_name_text_text: IRSFF
+      token:
+        index: "$[index_of (1)]"     
+    sfli:
+      _:
+        short_name_text_text: SFLi
+      token:
+        index: "$[index_of (1)]"    
+    sftg:
+      _:
+        short_name_text_text: SFTG
+      token:  
+        index: "$[index_of (1)]"    
+    sldv:
+      _:
+        short_name_text_text: LDV
+      token:
+        index: "$[index_of (1)]"    
+    ssfl:
+      _:
+        short_name_text_text: SSFL
+      token:
+        index: "$[index_of (1)]"      

@@ -3,6 +3,7 @@ xxpaper:
     - LibreBaskerville-Bold.ttf
     - LibreBaskerville-Italic.ttf
     - LibreBaskerville-Regular.ttf
+    - cmuntt.ttf
 
 DEFAULT:
   typeface: "LibreBaskerville-Regular"
@@ -12,3 +13,4 @@ DEFAULT:
   typeface_bold_oblique: ${DEFAULT/typeface_bold_italic}
   typeface_italic: "LibreBaskerville-Italic"
   typeface_oblique: ${DEFAULT/typeface_italic}
+  typeface_mono: "cmuntt" #"CMU Typewriter Text Regular"
