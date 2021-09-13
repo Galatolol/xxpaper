@@ -10,7 +10,7 @@ from .xlate_frame import XlateFrame
 
 LOG = logging.getLogger (__name__)
 
-class Page (object):
+class Page:
 
   @logtool.log_call
   def __init__ (self, canvas):
@@ -117,6 +117,7 @@ class Page (object):
     new_typ = Config.get ("CATALOGUE/" + asset)["tile_type"]
     if old_typ != new_typ:
       self._start_page (asset, new_typ)
+      Config.set ("xxpaper/tile_type", new_typ)
     self.ndx += 1
     try:
       return next (self.line)
