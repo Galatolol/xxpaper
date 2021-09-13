@@ -458,7 +458,7 @@ train:
     4T:
       _:
         asset_interior_box_fill_p: BLUE
-        rust_bar_box_fill_p: PURPLE
+        rust_bar_box_fill_p: GRAY
         rusted_text_text: "Rusted by 7"
         rusted_text_size: 14
         long_name_text_text: "4"
@@ -470,7 +470,7 @@ train:
     5T:
       _:
         asset_interior_box_fill_p: BROWN
-        rust_bar_box_fill: ${colour/wikipedia/cool_black}
+        rust_bar_box_fill_p: PURPLE
         rusted_text_text: "Rusted by 8"
         rusted_text_size: 14
         long_name_text_text: "5"

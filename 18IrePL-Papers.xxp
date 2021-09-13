@@ -1392,6 +1392,9 @@ train:
         rusted_text_size: 14
         long_name_text_text: "3+"
         cost_text_text_p: $280
+        note_text_text: |
+            To 4D:
+            $440
         #long_name_text_fill: ${colour/wikipedia/black}
         #cost_text_fill: ${colour/wikipedia/black}
         #rusted_text_fill: ${colour/wikipedia/black}
@@ -1406,6 +1409,9 @@ train:
         cost_text_text_p: $360
         rusted_text_text: Permanent
         rusted_text_size: 14
+        note_text_text: |
+            To 4D:
+            $360
         #long_name_text_fill: ${colour/wikipedia/black}
         #cost_text_fill: ${colour/wikipedia/black}
       model:
@@ -1419,6 +1425,9 @@ train:
         cost_text_text_p: $480
         rusted_text_text: Permanent
         rusted_text_size: 14
+        note_text_text: |
+            To 4D:
+            $240
         #long_name_text_fill: ${colour/wikipedia/black}
         #cost_text_fill: ${colour/wikipedia/black}
       model:

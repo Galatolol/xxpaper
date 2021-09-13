@@ -1,0 +1,458 @@
+company:
+  _:
+    token_1_text_text: Free
+    token_2_text_text: F40
+  charter:
+    _:
+      token_1_text_y: 202
+      token_5_circle_y: 10
+      token_5_text_y: -20
+      token_1_text_size: 12
+      token_2_text_size: 12
+      token_3_text_size: 12
+      token_4_text_size: 12
+      comment_text_text: ""
+  share:
+    _:
+      type_bar_box_fill: ${colour/wikipedia/golden_yellow}
+      type_bar_box_y: 13
+      side_bar_lsplit_box_suppress: True
+      side_bar_rsplit_box_suppress: True
+      share_num_text_x: 167
+  token:
+    _:
+      short_name_text_size: 8
+
+  index:
+
+    CAB:
+      _:
+        long_name_text_text: |
+            CAB
+        short_name_text_text: CAB
+        token_3_text_text: F60
+        _major_fill: ${colour/hollasch/brown_ochre}
+        _minor_fill: ${_\_major_fill}
+        _related_fill: ${colour/hollasch/brick}
+        name_stripe_box_suppress: True
+      charter:
+        _:
+          label_text_text: |
+            Compagnie des chemins de fer
+            d'Amiens à Boulogne
+          label_text_size: 12
+      share:
+        _:
+          comment_text_text: |
+            Compagnie du chemin de fer
+            d'Amiens à Boulogne
+          comment_text_y: 65
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 12
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of (7)]
+
+    Ouest:
+      _:
+        long_name_text_text: |
+            Ouest
+        short_name_text_text: Ouest
+        token_3_text_text: F60
+        token_3_text_text: F80
+        _major_fill: ${colour/wikipedia/blue_ryb}
+        _major_fill_2: ${colour/wikipedia/banana_yellow}
+        _minor_fill_2: ${_/_major_fill_2}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/hollasch/steel_blue}
+      charter:
+        _:
+          label_text_text: "Compagnie des chemins de fer de l'Ouest"
+          label_text_size: 12
+      share:
+        _:
+          comment_text_text: |
+            Compagnie des chemins de fer
+            de l'Ouest
+          comment_text_y: 65
+      token:
+        ELEMENTS: ${TEMPLATE_stripey/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
+        index: $[index_of (7)]
+
+    Nord:
+      _:
+        long_name_text_text: |
+            Nord
+        short_name_text_text: Nord
+        token_3_text_text: F60
+        token_3_text_text: F80
+        token_3_text_text: F100
+        _major_fill: ${colour/x11/red}
+        _minor_fill: ${colour/xxp/BLACK}
+        _related_fill: ${colour/hollasch/tomato}
+      charter:
+        _:
+          label_text_text: "Compagnie des chemins de fer du Nord"
+          label_text_size: 12
+      share:
+        _:
+          comment_text_text: |
+            Compagnie des chemins de fer
+            du Nord
+          comment_text_y: 65
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: $[index_of (8)]
+
+    GR:
+      _:
+        long_name_text_text: |
+            GR
+        short_name_text_text: GR
+        token_3_text_text: F60
+        token_3_text_text: F80
+        token_3_text_text: F100
+        _major_fill: ${colour/wikipedia/canary_yellow}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/wikipedia/icterine}
+        name_stripe_box_suppress: True
+      charter:
+        _:
+          label_text_text: "Gent Railroad"
+          label_text_size: 12
+      share:
+        _:
+          comment_text_text: |
+            Gent Railroad
+          comment_text_y: 73
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 10
+          short_name_text_x_inset: 0
+          #short_name_text_y_inset: -2
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of (7)]
+        #ELEMENTS: ${TEMPLATE_cross/.}
+        #EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        #vertical stripe_box:
+        #  fill: ${colour/xxp/BLACK}
+        index: "$[index_of (8)]"
+
+    Est:
+      _:
+        long_name_text_text: |
+            Est
+        short_name_text_text: Est
+        token_3_text_text: F60
+        token_3_text_text: F80
+        token_3_text_text: F100
+        _major_fill: ${colour/wikipedia/amber_sae_ece}
+        _minor_fill: ${colour/x11/white}        
+        _related_fill: ${colour/wikipedia/pink_orange}
+      charter:
+        _:
+          label_text_text: "Compagnie des chemins de fer de l'Est"
+          label_text_size: 12
+      share:
+        _:
+          comment_text_text: |
+            Compagnie des chemins de fer
+            de l'Est
+          comment_text_y: 65
+      token:
+        _:
+          inner_circle_fill: ${_/_major_fill}
+          inner_circle_radius: 9
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: $[index_of (8)]
+
+    PLM:
+      _:
+        long_name_text_text: |
+            PLM
+        short_name_text_text: PLM
+        token_3_text_text: F60
+        share_pct_text_fill: ${colour/xxp/BLACK}
+        _major_fill: ${colour/wikipedia/rich_lavender}
+        _minor_fill: ${colour/wikipedia/black}
+        _related_fill: ${colour/wikipedia/plum_web}
+      charter:
+        _:
+          label_text_text: |
+            Compagnie des chemins de fer
+            de Paris à Lyon et à la Méditerranée
+          label_text_size: 12
+      share:
+        _:
+          comment_text_text: |
+            Compagnie des chemins de fer de
+            Paris à Lyon et à la Méditerranée
+          comment_text_y: 65
+          #comment_text_size: 7
+      token:
+        _:
+          inner_circle_fill: ${_/_major_fill}
+          inner_circle_radius: 9
+          short_name_text_size: 8
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: $[index_of (6)]
+
+    Belge:
+      _:
+        long_name_text_text: |
+             Belge
+        short_name_text_text: Belge
+        token_3_text_text: F60
+        token_4_text_text: F80
+        _major_fill: ${colour/xxp/D_GREEN}
+        _minor_fill: ${colour/xxp/D_GREEN}
+        _related_fill: ${colour/hollasch/cinnabar_green}
+        name_stripe_box_suppress: True
+      charter:
+        _:
+          label_text_text: "Chemins de fer de l'État belge"
+          label_text_size: 12
+      share:
+        _:
+          comment_text_text: |
+            Chemins de fer de l'État belge
+          comment_text_y: 73
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 10
+          short_name_text_x_inset: 0
+          #short_name_text_y_inset: -2
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of (7)]
+
+marker:
+  index:
+    round:
+      token:
+        ELEMENTS:
+          - token_interior_box
+          - outer_circle
+          - middle_circle
+          - inner_circle
+
+        index: $[index_of (1)]
+      outer_circle:
+        fill: ${colour/galatolol/yellow}
+      middle_circle:
+        fill: ${colour/galatolol/green}
+      inner_circle:
+        fill: ${colour/galatolol/brown}
+
+private:
+  _:
+    long_name_text_size: 11
+    long_name_text_y: 77
+    closes_text_size: 8
+    closes_text_text: "Closed by 6"
+    power_text_size: 8
+    power_text_y: 2
+    revenue_text_x: 168
+    asset_interior_box_fill: ${colour/scale/yellow_0}
+    money_bar_box_y: 13
+    money_bar_box_fill: ${colour/wikipedia/wild_watermelon}
+    cost_text_fill: ${colour/xxp/BLACK}
+    revenue_text_fill: ${colour/xxp/BLACK}
+
+  index:
+
+    P1:
+      _:
+        long_name_text_text: |
+             Jhangeli
+        #(Luxembourgs' narrow gauge rails)
+        power_text_text: |
+            Blocks I17.
+            Owning company may place a yellow
+            track in I17, in addition to the regular
+            track action.
+            Doesn't have to be connected.
+        power_text_y: 5.5
+        cost_text_text: "Cost: F20"
+        revenue_text_text: "Revenue: F5"
+
+    P2:
+      _:
+        long_name_text_text: |
+            Antwerpen–Centraal
+        power_text_text: |
+            Blocks E11.
+            Owning company may place or upgrade
+            a track tile in Arras (E11), along
+            with an optional station marker.
+            Doesn't have to be connected,
+            must pay for the station marker.
+        power_text_y: 5.5
+        cost_text_text: "Cost: F50"
+        revenue_text_text: "Revenue: F10"
+
+    P3:
+      _:
+        long_name_text_text: |
+            Ligne
+            de Saint-Quentin à Guise
+        power_text_text: |
+            Revenue of this is equal to the value
+            of the city of Saint-Quentin (G11).
+        cost_text_text: "Cost: F80"
+        revenue_text_text: "Revenue: F?"
+
+    P4:
+      _:
+        long_name_text_text: |
+            Bourse
+        power_text_text: |
+            In stock round, instead of buying
+            a share, owning player may exchange
+            this against any share from IPO.
+        cost_text_text: "Cost: F90"
+        revenue_text_text: "Revenue: F15"
+
+    P5:
+      _:
+        long_name_text_text: |
+            CAB minor stakeholding
+        power_text_text: |
+            Comes with a 10% share of CAB.
+        cost_text_text: "Cost: F140"
+        revenue_text_text: "Revenue: F20"
+
+    P6:
+      _:
+        closes_text_text: "Closed by 6 or when PLM buys train"
+        closes_text_x_inset: -1
+        long_name_text_text: |
+            PLM major stakeholding
+        power_text_text: |
+            Comes with the presidency of PLM.
+            Cannot be sold to a public company.
+        cost_text_text: "Cost: F180"
+        revenue_text_text: "Revenue: F25"
+
+train:
+  _:
+    rusted_text_size: 14
+    rust_bar_box_y: 27
+  index:
+    2T:
+      _:
+        asset_interior_box_fill_p: YELLOW
+        rust_bar_box_fill_p: BLUE
+        rusted_text_text: Rusted by 4
+        long_name_text_text: "2"
+        cost_text_text_p: "F80"
+        note_text_text: |
+            Upgrade to 3: F140
+      model:
+        index: $[index_of (6)]
+
+    3T:
+      _:
+        asset_interior_box_fill_p: GREEN
+        rust_bar_box_fill_p: RED
+        rusted_text_text: Rusted by 6
+        long_name_text_text: "3"
+        cost_text_text_p: "F180"
+        note_text_text: |
+            Upgrade to 4: F210
+      model:
+        index: $[index_of (5)]
+
+    4T:
+      _:
+        asset_interior_box_fill_p: BLUE
+        rust_bar_box_fill_p: GRAY
+        rusted_text_text: Rusted by 7
+        long_name_text_text: "4"
+        cost_text_text_p: "F300"
+        note_text_text: |
+            Upgrade to 5: F300
+      model:
+        index: $[index_of (4)]
+
+    5T:
+      _:
+        asset_interior_box_fill_p: BROWN
+        rust_bar_box_fill_p: PURPLE
+        long_name_text_text: "5"
+        rusted_text_text: Rusted by D
+        cost_text_text_p: "F450"
+        note_text_text: |
+            Upgrade to 6: F375
+            Upgrade to D: F675
+      model:
+        index: $[index_of (3)]
+
+    6T:
+      _:
+        asset_interior_box_fill_p: RED
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "6"
+        rusted_text_text: Permanent
+        cost_text_text_p: "F600"
+        note_text_text: |
+            Upgrade to 7: F450
+            Upgrade to D: F600
+      model:
+        index: $[index_of (3)]
+
+    7T:
+      _:
+        asset_interior_box_fill_p: GRAY
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "7"
+        rusted_text_text: Permanent
+        cost_text_text_p: "F750"
+        note_text_text: |
+            Upgrade to D: F525
+      model:
+        index: $[index_of (2)]
+
+    D:
+      _:
+        asset_interior_box_fill_p: PURPLE
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "D"
+        cost_text_text_p: "F900"
+        rusted_text_text: Permanent
+      model:
+        index: $[index_of (8)]
+
+    4T_41:
+      _:
+        asset_interior_box_fill_p: BLUE
+        rust_bar_box_fill_p: GRAY
+        rusted_text_text: "Rusted by 7"
+        rusted_text_size: 14
+        long_name_text_text: "4"
+        cost_text_text: "L.350"
+        long_name_text_fill: ${colour/xxp/BLACK}
+        cost_text_fill: ${colour/xxp/BLACK}
+      model:
+        index: $[index_of (4)]
+    5T_41:
+      _:
+        asset_interior_box_fill_p: BROWN
+        rust_bar_box_fill_p: PURPLE
+        rusted_text_text: "Rusted by 8"
+        rusted_text_size: 14
+        long_name_text_text: "5"
+        cost_text_text: "L.550"
+      model:
+        index: $[index_of (3)]

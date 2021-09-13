@@ -1,0 +1,563 @@
+company:
+  _:
+    token_1_text_text: Free
+    token_2_text_text: £40
+
+  token:
+    short_name_text:
+      x_inset: 0
+      y_inset: 0
+      typeface: ${DEFAULT/typeface}
+      size: 8
+
+  charter:
+    _:
+      token_1_text_y: 202
+      token_5_circle_y: 10
+      token_5_text_y: -20
+      token_1_text_size: 12
+      token_2_text_size: 12
+      token_3_text_size: 12
+      token_4_text_size: 12
+      comment_text_text: ""
+      long_name_text_typeface: ${DEFAULT/typeface}
+
+  share:
+    share_num_text:
+        typeface: ${DEFAULT/typeface}
+    share_pct_text:
+        typeface: ${DEFAULT/typeface}
+    share_desc_text:
+        typeface: ${DEFAULT/typeface}
+    comment_text:
+        typeface: ${DEFAULT/typeface}
+    long_name_text:
+        typeface: ${DEFAULT/typeface}
+    _:
+      side_bar_lsplit_box_suppress: True
+      side_bar_rsplit_box_suppress: True
+      type_bar_box_fill: ${colour/wikipedia/golden_yellow}
+      type_bar_box_y: 13
+      share_num_text_x: 167
+  index:
+    CN:
+      _:
+        long_name_text_text: |
+          Cowes & Newport
+        short_name_text_text: CN
+        token_1_text_text: F2
+        token_3_text_text: £100
+        token_4_text_text: £100
+        _major_fill: ${colour/wikipedia/light_sky_blue}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/hollasch/powder_blue}
+        name_stripe_box_suppress: True
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 13
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1.4
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of (7)]
+      share:
+        index:
+         "1":
+         "2":
+         "3":
+         "4":
+         "5":
+         "6":
+         "7":
+         "8":
+         "9":
+           comment_text:
+             fill: ${colour/wikipedia/red}
+             text: |
+               While in IPO:
+               reserved for exchange
+               for the CMH private company
+
+    IOW:
+      _:
+        long_name_text_text: |
+          Isle of Wight
+        short_name_text_text: IOW
+        token_1_text_text: I3
+        token_3_text_text: £100
+        token_4_text_text: £100
+        _major_fill: ${colour/x11/red}
+        _minor_fill: ${colour/xxp/BLACK}
+        _related_fill: ${colour/hollasch/tomato}
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: $[index_of (7)]
+      share:
+        index:
+         "1":
+         "2":
+         "3":
+         "4":
+         "5":
+         "6":
+         "7":
+         "8":
+         "9":
+           comment_text:
+             fill: ${colour/wikipedia/red}
+             text: |
+               While in IPO:
+               reserved for exchange
+               for the RP&SC private company
+
+    IWNJ:
+      _:
+        long_name_text_text: |
+            Isle of Wight,
+            Newport Junction
+        short_name_text_text: IWNJ
+        token_1_text_text: G7
+        token_3_text_text: £100
+        _major_fill: ${colour/xxp/BLACK}
+        _minor_fill: ${colour/xxp/WHITE}
+        _related_fill: ${colour/x11/gray43}
+        _share_pct_text_fill_x: ${colour/xxp/WHITE}
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: $[index_of (6)]
+
+    FYN:
+      _:
+        long_name_text_text: |
+            Freshwater,
+            Yarmouth
+            & Newport
+        short_name_text_text: FYN
+        token_1_text_text: B4
+        token_3_text_text: £100
+        _major_fill: ${colour/hollasch/brown_ochre}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/hollasch/brick}
+        name_stripe_box_suppress: True
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 13
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1.4
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of (6)]
+      share:
+        index:
+         "1":
+         "2":
+         "3":
+         "4":
+         "5":
+         "6":
+         "7":
+         "8":
+         "9":
+           comment_text:
+             fill: ${colour/wikipedia/red}
+             text: |
+               While in IPO:
+               reserved for exchange
+               for the YHC private company
+
+    NGSL:
+      _:
+        long_name_text_text: |
+            Newport, Godshill
+            & St. Lawrence
+        short_name_text_text: NGSL
+        token_1_text_text: G9
+        _major_fill: ${colour/wikipedia/canary_yellow}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/wikipedia/icterine}
+        name_stripe_box_suppress: True
+      token:
+        _:
+            short_name_text_fill: $[black_or_white (${_/_major_fill})]
+            short_name_text_size: 11
+            short_name_text_x_inset: 0
+            short_name_text_y_inset: -0.8
+        index: $[index_of (6)]
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+
+    BHIR:
+      _:
+        long_name_text_text: |
+            Brading Harbour
+            Improvement
+            & Railway
+        short_name_text_text: BHIR
+        token_1_text_text: L6
+        _major_fill: ${colour/wikipedia/rich_lavender}
+        _minor_fill: ${colour/wikipedia/black}
+        _related_fill: ${colour/wikipedia/plum_web}
+      token:
+        _:
+          inner_circle_fill: ${_/_major_fill}
+          inner_circle_radius: 9
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: $[index_of (5)]
+      share:
+        index:
+         "1":
+         "2":
+         "3":
+         "4":
+         "5":
+         "6":
+         "7":
+         "8":
+         "9":
+           comment_text:
+             fill: ${colour/wikipedia/red}
+             text: |
+               While in IPO:
+               reserved for exchange
+               for the BHC private company
+
+    SC:
+      _:
+        long_name_text_text: |
+            Shanklin & Chale
+        short_name_text_text: SC
+        token_1_text_text: F12
+        _major_fill: ${colour/wikipedia/blue_ryb}
+        _major_fill_2: ${colour/wikipedia/banana_yellow}
+        _minor_fill: ${_/_major_fill}
+        _minor_fill_2: ${_/_major_fill_2}
+        _related_fill: ${colour/hollasch/steel_blue}
+      token:
+        ELEMENTS: ${TEMPLATE_stripey/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
+        index: $[index_of (5)]
+
+    VYSC:
+      _:
+        long_name_text_text: |
+             Ventnor, Yarmouth
+             & South Coast
+        short_name_text_text: VYSC
+        token_1_text_text: E9
+        _major_fill: ${colour/xxp/D_GREEN}
+        _minor_fill: ${colour/xxp/D_GREEN}
+        _related_fill: ${colour/hollasch/cinnabar_green}
+        name_stripe_box_suppress: True
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 11
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -0.8
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of (5)]
+      share:
+        long_name_text:
+          text: |
+            Ventnor,
+            Yarmouth
+            & South Coast
+
+marker:
+  index:
+    round:
+      token:
+        ELEMENTS:
+          - token_interior_box
+          - outer_circle
+          - middle_circle
+          - inner_circle
+
+        index: $[index_of (1)]
+
+      outer_circle:
+        fill: ${colour/x11/gold}
+      middle_circle:
+        fill: ${colour/x11/limegreen}
+      inner_circle:
+        fill: ${colour/x11/sienna3}
+
+private:
+  closes_text:
+    typeface: ${DEFAULT/typeface}
+  cost_text:
+    typeface: ${DEFAULT/typeface}
+  revenue_text:
+    typeface: ${DEFAULT/typeface}
+  long_name_text:
+    typeface: ${DEFAULT/typeface}
+  _:
+    closes_text_text: "Closes when FFC bought or power used"
+    money_bar_box_y: 13
+    closes_text_size: 8
+    power_text_size: 8
+    power_text_y: 3
+    revenue_text_x: 168
+    long_name_text_size: 11
+    long_name_text_y: 77
+
+  index:
+    BHC:
+      _:
+        asset_interior_box_fill: ${colour/wikipedia/plum_web}
+        long_name_text_text: |
+            Brading Harbour Company
+        power_text_text: |
+            Can be exchanged for a share of BHIR
+            during player's turn in Stock Round.
+            Does not count as an action.
+        cost_text_text: "Cost: £30"
+        revenue_text_text: "Revenue: £5"
+
+    YHC:
+      _:
+        asset_interior_box_fill: ${colour/resene/Viola}
+        long_name_text_text: |
+            Yarmouth Harbour Company
+        power_text_text: |
+            Can be exchanged for a share of FYN
+            during player's turn in Stock Round.
+            Does not count as an action.
+        cost_text_text: "Cost: £50"
+        revenue_text_text: "Revenue: £10"
+
+    CMH:
+      _:
+        asset_interior_box_fill: ${colour/hollasch/powder_blue}
+        long_name_text_text: |
+            Cowes Marina and Harbour
+        power_text_text: |
+            Can be exchanged for a share of CN
+            during player's turn in Stock Round.
+            Does not count as an action.
+        cost_text_text: "Cost: £90"
+        revenue_text_text: "Revenue: £20"
+
+    RP&SC:
+      _:
+        asset_interior_box_fill: ${colour/hollasch/tomato}
+        long_name_text_text: |
+            Ryde Pier & Shipping
+            Company
+        power_text_text: |
+            Can be exchanged for a share of IOW
+            during player's turn in Stock Round.
+            Does not count as an action.
+        cost_text_text: "Cost: £130"
+        revenue_text_text: "Revenue: £30"
+
+    FFC:
+      _:
+        asset_interior_box_fill: ${colour/scale/yellow_0}
+        closes_text_text: "Operates until the end of the game"
+        long_name_text_text: |
+            Fishbourne Ferry Company
+        power_text_text: |
+            Becomes available in red phase.
+            Closes all other private companies.
+        cost_text_text: "Cost: £200"
+        revenue_text_text: "Revenue: £25"
+
+    C&N:
+      _:
+        asset_interior_box_fill: ${colour/hollasch/powder_blue}
+        closes_text_text: "NOT A PRIVATE COMPANY"
+        long_name_text_text: |
+            CN Presidency
+        power_text_text: |
+            Place the CN President share
+            for auction (instead of this).
+            Winner sets the par price
+            and pays twice as much.
+        cost_text_text: "Cost: -"
+        revenue_text_text: "Revenue: -"
+
+    IOW:
+      _:
+        asset_interior_box_fill: ${colour/hollasch/tomato}
+        closes_text_text: "NOT A PRIVATE COMPANY"
+        long_name_text_text: |
+            IOW Presidency
+        power_text_text: |
+            Place the IOW President share
+            for auction (instead of this).
+            Winner sets the par price
+            and pays twice as much.
+        cost_text_text: "Cost: -"
+        revenue_text_text: "Revenue: -"
+
+    BANKRUPT:
+      _:
+        asset_interior_box_fill: ${colour/scale/red_1}
+        close_bar_box_fill: ${_/asset_interior_box_fill}
+        money_bar_box_fill: ${_/asset_interior_box_fill}
+        closes_text_text: ""
+        long_name_text_size: 16
+        long_name_text_text: |
+            BANKRUPT
+        power_text_text: |
+            Company retains trains and treasury.
+            Available for re-floatation
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (8)]
+
+    RECEIV:
+      _:
+        asset_interior_box_fill: ${colour/scale/gray_1}
+        close_bar_box_fill: ${_/asset_interior_box_fill}
+        money_bar_box_fill: ${_/asset_interior_box_fill}
+        closes_text_text: ""
+        long_name_text_size: 16
+        long_name_text_text: |
+            RECEIVERSHIP
+        power_text_text: |
+            NO DIRECTOR
+            
+            May not build track nor stations.
+            Company withholds the revenue.
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (8)]
+
+    INSOLVENT:
+      _:
+        asset_interior_box_fill: ${colour/scale/yellow_2}
+        close_bar_box_suppress: true
+        money_bar_box_suppress: true
+        closes_text_text: ""
+        long_name_text_size: 16
+        long_name_text_text: |
+            INSOLVENT
+        power_text_text: |
+            May not build stations nor costly track.
+            Company must withhold the revenue
+            to pay for the next train.
+            Leases the smallest available train
+            in the bank pool/initial offering:
+            4 = 120, 5 = 140, 6 = 160,
+            7 = 180, 8 = 200, 9 = 220
+        power_text_y: -5
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (8)]
+
+train:
+  long_name_text:
+      typeface: ${DEFAULT/typeface}
+
+  index:
+    2+1T:
+      _:
+        asset_interior_box_fill_p: YELLOW
+        rust_bar_box_fill_p: BLUE
+        long_name_text_text: "2+1"
+        rusted_text_text: "Rusted by 4+2"
+        cost_text_text_p: £250
+      long_name_text:
+        typeface: ${DEFAULT/typeface}
+        size: 42
+      model:
+        index: $[index_of (5)]
+
+    3+2T:
+      _:
+        asset_interior_box_fill_p: GREEN
+        rust_bar_box_fill_p: RED
+        long_name_text_text: "3+2"
+        cost_text_text_p: £300
+        rusted_text_text: "Rusted by 6+3"
+      long_name_text:
+        size: 42
+      model:
+        index: $[index_of (4)]
+
+    4+2T:
+      _:
+        asset_interior_box_fill_p: BLUE
+        rust_bar_box_fill_p: GRAY
+        long_name_text_text: "4+2"
+        cost_text_text_p: £350
+        rusted_text_text: "Rusted by 7+4"
+      long_name_text:
+        size: 42
+      model:
+        index: $[index_of (3)]
+
+    5+3T:
+      _:
+        asset_interior_box_fill_p: BROWN
+        rust_bar_box_fill_p: PURPLE
+        long_name_text_text: "5+3"
+        cost_text_text_p: £400
+        rusted_text_text: "Rusted by 8+4"
+      long_name_text:
+        size: 42
+      model:
+        index: $[index_of (2)]
+
+    6+3T:
+      _:
+        asset_interior_box_fill_p: RED
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "6+3"
+        cost_text_text_p: £500
+        rusted_text_text: Permanent
+      long_name_text:
+        size: 42
+      model:
+        index: $[index_of (2)]
+
+    7+4T:
+      _:
+        asset_interior_box_fill_p: GRAY
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "7+4"
+        cost_text_text_p: £600
+        rusted_text_text: Permanent
+      long_name_text:
+        size: 42
+      model:
+        index:
+          "1":
+            top_note_text:
+              text: Optional
+          "2":
+
+    8+4T:
+      _:
+        asset_interior_box_fill_p: PURPLE
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "8+4"
+        cost_text_text_p: £700
+        rusted_text_text: Permanent
+      long_name_text:
+        size: 42
+      model:
+        index: $[index_of (1)]
+
+    9+5T:
+      _:
+        asset_interior_box_fill: ${colour/wikipedia/cool_black}
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "9+5"
+        cost_text_text_p: £800
+        rusted_text_text: Permanent
+      long_name_text:
+        size: 42
+      model:
+        index: $[index_of (12)]

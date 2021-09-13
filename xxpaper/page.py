@@ -88,10 +88,10 @@ class Page (object):
                           stroke = 1, fill = 0)
       self.canvas.setFillColorRGB (0, 0, 0)
       self.canvas.circle (0.75 * inch, 0,
-                          0.1253 * inch / 2.0,
+                          0.12 * inch / 2.0,
                           stroke = 0, fill = 1)
       self.canvas.circle (6.75 * inch, 0,
-                          0.1253 * inch / 2.0,
+                          0.12 * inch / 2.0,
                           stroke = 0, fill = 1)
       self.canvas.setFillColorRGB (0, 0, 0)
       self.canvas.setFont ("Times-Roman", 10)

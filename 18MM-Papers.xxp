@@ -880,9 +880,9 @@ train:
         rusted_text_text: Rusted by Blue
         long_name_text_text: "2"
         cost_text_text: |
-            OR1: $100
-            OR2:  $75
-            OR3:  $50
+            OR1  : $100
+            OR2  :  $75
+            OR3.1:  $50
       model:
         index:
           "1":
@@ -901,9 +901,9 @@ train:
         rusted_text_text: Rusted by Blue
         long_name_text_text: "2P"
         cost_text_text: |
-            OR1: $120
-            OR2:  $90
-            OR3:  $60
+            OR1  : $120
+            OR2  :  $90
+            OR3.1:  $60
         note_text_text: |
             $10 per city
             into company
@@ -925,9 +925,9 @@ train:
         rusted_text_text: Rusted by Blue
         long_name_text_text: "2H"
         cost_text_text: |
-            OR1: $120
-            OR2:  $90
-            OR3:  $60
+            OR1  : $120
+            OR2  :  $90
+            OR3.1:  $60
         note_text_text: |
             May run into offboards
       model:
@@ -948,9 +948,9 @@ train:
         rusted_text_text: Rusted by Blue
         long_name_text_text: "2F"
         cost_text_text: |
-            OR1: $120
-            OR2:  $90
-            OR3:  $60
+            OR1  : $120
+            OR2  :  $90
+            OR3.1:  $60
         note_text_text: |
             +$10 per coal marker
             May run into offboards
@@ -973,12 +973,9 @@ train:
         long_name_text_text: "2A/2+"
         long_name_text_size: 30
         cost_text_text: |
-            OR1: $120
-            OR2:  $90
-            OR3:  $60
         note_text_text: |
-          Immediately replaced
-          by either 2A or 2+
+          Remove when 2A
+          or is 2+ bought
       model:
         index:
           "1":
@@ -998,9 +995,9 @@ train:
         rusted_text_text: Rusted by Blue
         long_name_text_text: "2A"
         cost_text_text: |
-            OR1: $120
-            OR2:  $90
-            OR3:  $60
+            OR2  : $140
+            OR3.1: $105
+            OR3.2:  $70
         note_text_text: |
           May be bought
           before running
@@ -1014,9 +1011,9 @@ train:
         rusted_text_text: Rusted by Blue
         long_name_text_text: "2+"
         cost_text_text: |
-            OR1: $100
-            OR2:  $75
-            OR3:  $50
+            OR2  : $100
+            OR3.1:  $75
+            OR3.2:  $50
         note_text_text: |
             Runs once more
             before rusting
@@ -1030,9 +1027,9 @@ train:
         rusted_text_text: Rusted by Red
         long_name_text_text: "3"
         cost_text_text: |
-            OR1: $200
-            OR2: $150
-            OR3: $100
+            OR3.1: $200
+            OR3.2: $150
+            OR4.1: $100
       model:
         index:
           "1":
@@ -1047,9 +1044,9 @@ train:
         rusted_text_text: Rusted by Red
         long_name_text_text: "3H"
         cost_text_text: |
-            OR1: $240
-            OR2: $180
-            OR3: $120
+            OR3.1: $240
+            OR3.2: $180
+            OR4.1: $120
         note_text_text: |
             May run into offboards
       model:
@@ -1066,9 +1063,9 @@ train:
         rusted_text_text: Rusted by Red
         long_name_text_text: "3P"
         cost_text_text: |
-            OR1: $240
-            OR2: $180
-            OR3: $120
+            OR3.1: $240
+            OR3.2: $180
+            OR4.1: $120
         note_text_text: |
             $10 per city
             into company
@@ -1086,9 +1083,9 @@ train:
         rusted_text_text: Rusted by Red
         long_name_text_text: "3F"
         cost_text_text: |
-            OR1: $240
-            OR2: $180
-            OR3: $120
+            OR3.1: $240
+            OR3.2: $180
+            OR4.1: $120
         note_text_text: |
             +$10 per coal marker
             May run into offboards
@@ -1107,12 +1104,9 @@ train:
         long_name_text_text: "3A/3+"
         long_name_text_size: 30
         cost_text_text: |
-            OR1: $300
-            OR2: $225
-            OR3: $150
         note_text_text: |
-          Immediately replaced
-          by either 3A or 3+
+          Remove when 3A
+          or 3+ is bought
       model:
         index: $[index_of (2)]
           
@@ -1123,9 +1117,9 @@ train:
         rusted_text_text: Rusted by Red
         long_name_text_text: "3A"
         cost_text_text: |
-            OR1: $300
-            OR2: $225
-            OR3: $150
+            OR3.1: $300
+            OR3.2: $225
+            OR4.1: $150
         note_text_text: |
           May be bought
           before running
@@ -1139,9 +1133,9 @@ train:
         rusted_text_text: Rusted by Red
         long_name_text_text: "3+"
         cost_text_text: |
-            OR1: $300
-            OR2: $225
-            OR3: $150
+            OR3.1: $300
+            OR3.2: $225
+            OR4.1: $150
         note_text_text: |
             Runs once more
             before rusting
@@ -1155,9 +1149,9 @@ train:
         rusted_text_text: Rusted by Purple
         long_name_text_text: "4"
         cost_text_text: |
-            OR1: $360
-            OR2: $270
-            OR3: $180
+            OR4.1: $360
+            OR4.2: $270
+            OR5.1: $180
       model:
         index: $[index_of (1)]
 
@@ -1168,9 +1162,9 @@ train:
         rusted_text_text: Rusted by Purple
         long_name_text_text: "5H"
         cost_text_text: |
-            OR1: $400
-            OR2: $300
-            OR3: $200
+            OR4.1: $400
+            OR4.2: $300
+            OR5.1: $200
         note_text_text: |
             May run into offboards
       model:
@@ -1183,9 +1177,9 @@ train:
         rusted_text_text: Rusted by Purple
         long_name_text_text: "4P"
         cost_text_text: |
-            OR1: $400
-            OR2: $300
-            OR3: $200
+            OR4.1: $400
+            OR4.2: $300
+            OR5.1: $200
         note_text_text: |
             $10 per city
             into company
@@ -1199,9 +1193,9 @@ train:
         rusted_text_text: Rusted by Purple
         long_name_text_text: "4F"
         cost_text_text: |
-            OR1: $400
-            OR2: $300
-            OR3: $200
+            OR4.1: $400
+            OR4.2: $300
+            OR5.1: $200
         note_text_text: |
             +$10 per coal marker
             May run into offboards
@@ -1215,9 +1209,9 @@ train:
         rusted_text_text: Rusted by Purple
         long_name_text_text: "4+"
         cost_text_text: |
-            OR1: $440
-            OR2: $330
-            OR3: $220
+            OR4.1: $440
+            OR4.2: $330
+            OR5.1: $220
         note_text_text: |
             Runs once more
             before rusting
@@ -1234,9 +1228,9 @@ train:
         rusted_text_text: Rusted by Purple
         long_name_text_text: "4A"
         cost_text_text: |
-            OR1: $440
-            OR2: $330
-            OR3: $220
+            OR4.1: $440
+            OR4.2: $330
+            OR5.1: $220
         note_text_text: |
             May be bought
             before running

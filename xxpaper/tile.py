@@ -142,7 +142,7 @@ class Tile (object):
         self.canvas.drawString (x, y, t)
       else:
         raise ValueError
-      y -= line_height
+      y -= (line_height + 1)
 
   @logtool.log_call
   def path_text (self, key):

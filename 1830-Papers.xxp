@@ -251,7 +251,7 @@ private:
             Champlain & St Larence
             Railroad
         power_text_text: |
-            Blocks: B20.
+            Blocks B20.
 
             Owning company may place a free
             track tile at B20 in addition to
@@ -265,7 +265,7 @@ private:
             Delaware & Hudson
             Railroad
         power_text_text: |
-            Blocks: F16.
+            Blocks F16.
 
             Owning company may place a yellow
             track tile, or a yellow tile and station
