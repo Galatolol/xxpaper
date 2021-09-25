@@ -237,6 +237,33 @@ company:
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
         index: $[index_of (7)]
 
+    French1:
+      _:
+        long_name_text_text: |
+          French 1
+        short_name_text_text: F1
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+        _related_fill: ${colour/hollasch/pink}
+      charter:
+        _:
+          label_text_text: |
+            Becomes available in red phase.
+            Must start in France.
+          label_text_size: 12
+      share:
+        _:
+          comment_text_text: ""
+          comment_text_y: 73
+      token:
+        _:
+          _major_fill_1: ${colour/hollasch/misty_rose}
+          _major_fill_2: ${colour/hollasch/hot_pink}
+          _minor_fill_1: ${colour/hollasch/hot_pink}
+          _minor_fill_2: ${colour/hollasch/misty_rose}
+        ELEMENTS: ${TEMPLATE_chequer/.}
+        EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
+        index: $[index_of (5)]    
+
 marker:
   index:
     round:
@@ -280,8 +307,8 @@ private:
         power_text_text: |
             Blocks I17.
             Owning company may place a yellow
-            track in I17, in addition to the regular
-            track action.
+            track tile in I17, in addition to
+            the regular track action.
             Doesn't have to be connected.
         power_text_y: 5.5
         cost_text_text: "Cost: F20"
