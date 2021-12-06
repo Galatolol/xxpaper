@@ -106,7 +106,7 @@ token_2b_embed:
   suppress: True
   typ: token
   x_inset: -4
-  dfgfgy_inset: 20
+  y_inset: 20
   y_inset: 12
 
 token_3a_embed:

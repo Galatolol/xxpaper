@@ -1,16 +1,15 @@
 company:
   _:
-    token_1_text_text: Free
     token_2_text_text: F40
   charter:
     _:
       token_1_text_y: 202
       token_5_circle_y: 10
       token_5_text_y: -20
-      token_1_text_size: 12
-      token_2_text_size: 12
-      token_3_text_size: 12
-      token_4_text_size: 12
+      token_1_text_size: 9
+      token_2_text_size: 10
+      token_3_text_size: 10
+      token_4_text_size: 10
       comment_text_text: ""
   share:
     _:
@@ -30,6 +29,7 @@ company:
         long_name_text_text: |
             CAB
         short_name_text_text: CAB
+        token_1_text_text: Amiens (E7)
         token_3_text_text: F60
         _major_fill: ${colour/hollasch/brown_ochre}
         _minor_fill: ${_\_major_fill}
@@ -62,6 +62,7 @@ company:
         long_name_text_text: |
             Ouest
         short_name_text_text: Ouest
+        token_1_text_text: Rouen (D4)
         token_3_text_text: F60
         token_3_text_text: F80
         _major_fill: ${colour/wikipedia/blue_ryb}
@@ -89,11 +90,14 @@ company:
         long_name_text_text: |
             Nord
         short_name_text_text: Nord
+        token_1_text_text: Lille (D12)
         token_3_text_text: F60
         token_3_text_text: F80
         token_3_text_text: F100
         _major_fill: ${colour/x11/red}
-        _minor_fill: ${colour/xxp/BLACK}
+        _major_fill_2: ${colour/xxp/BLACK}
+        _minor_fill_2: ${_/_major_fill_2}
+        _minor_fill: ${_/_major_fill}
         _related_fill: ${colour/hollasch/tomato}
       charter:
         _:
@@ -106,8 +110,8 @@ company:
             du Nord
           comment_text_y: 65
       token:
-        ELEMENTS: ${TEMPLATE_cross/.}
-        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        ELEMENTS: ${TEMPLATE_stripey/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
         index: $[index_of (8)]
 
     GR:
@@ -115,6 +119,7 @@ company:
         long_name_text_text: |
             GR
         short_name_text_text: GR
+        token_1_text_text: Gent (D17)
         token_3_text_text: F60
         token_3_text_text: F80
         token_3_text_text: F100
@@ -151,6 +156,7 @@ company:
         long_name_text_text: |
             Est
         short_name_text_text: Est
+        token_1_text_text: Reims (I9)
         token_3_text_text: F60
         token_3_text_text: F80
         token_3_text_text: F100
@@ -180,6 +186,7 @@ company:
         long_name_text_text: |
             PLM
         short_name_text_text: PLM
+        token_1_text_text: Paris (G5)
         token_3_text_text: F60
         share_pct_text_fill: ${colour/xxp/BLACK}
         _major_fill: ${colour/wikipedia/rich_lavender}
@@ -212,6 +219,8 @@ company:
         long_name_text_text: |
              Belge
         short_name_text_text: Belge
+        token_1_text_text: Bruxelles (F16)
+        token_1_text_size: 8
         token_3_text_text: F60
         token_4_text_text: F80
         _major_fill: ${colour/xxp/D_GREEN}
@@ -242,13 +251,14 @@ company:
         long_name_text_text: |
           French 1
         short_name_text_text: F1
+        token_1_text_text: France
         name_stripe_box_fill: ${colour/xxp/BLACK}
         _related_fill: ${colour/hollasch/pink}
       charter:
         _:
           label_text_text: |
-            Becomes available in red phase.
-            Must start in France.
+            Available from brown phase.
+            Doesn't operate in first OR.
           label_text_size: 12
       share:
         _:
@@ -263,6 +273,113 @@ company:
         ELEMENTS: ${TEMPLATE_chequer/.}
         EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
         index: $[index_of (5)]    
+
+    French2:
+      _:
+        long_name_text_text: |
+          French 2
+        short_name_text_text: F2
+        token_1_text_text: France
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+        _related_fill: ${colour/wikipedia/green_yellow}
+      charter:
+        _:
+          label_text_text: |
+            Available from brown phase. 4–player.
+            Doesn't operate in first OR.
+          label_text_size: 12
+      share:
+        _:
+          comment_text_text: ""
+          comment_text_y: 73
+      token:
+        _:
+          _major_fill_1: ${colour/wikipedia/yellow_green}
+          _major_fill_2: ${colour/wikipedia/lemon_lime}
+          _minor_fill_1: ${colour/wikipedia/lemon_lime}
+          _minor_fill_2: ${colour/wikipedia/yellow_green}
+        ELEMENTS: ${TEMPLATE_chequer/.}
+        EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
+        index: $[index_of (5)] 
+
+    Belgian1:
+      _:
+        long_name_text_text: |
+          Belgian 1
+        short_name_text_text: B1
+        token_1_text_text: Belgium
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+        _related_fill: ${colour/wikipedia/green_yellow}
+      charter:
+        _:
+          label_text_text: |
+            Available from brown phase.
+            Doesn't operate in first OR.
+          label_text_size: 12
+      share:
+        _:
+          comment_text_text: ""
+          comment_text_y: 73
+      token:
+        _:
+          _major_fill_1: ${colour/wikipedia/yellow_green}
+          _major_fill_2: ${colour/wikipedia/lemon_lime}
+          _minor_fill_1: ${colour/wikipedia/lemon_lime}
+          _minor_fill_2: ${colour/wikipedia/yellow_green}
+        ELEMENTS: ${TEMPLATE_chequer/.}
+        EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
+        index: $[index_of (5)] 
+
+    Belgian1:
+      _:
+        long_name_text_text: |
+          Belgian 1
+        short_name_text_text: B2
+        token_1_text_text: Belgium
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+        _major_fill: ${colour/x11/bisque2}
+        _minor_fill: ${colour/xxp/BLACK}
+        _related_fill: ${colour/x11/antiquewhite1}
+      charter:
+        _:
+          label_text_text: |
+            Available from brown phase.
+            Doesn't operate in first OR.
+          label_text_size: 12
+      share:
+        _:
+          comment_text_text: ""
+          comment_text_y: 65
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: $[index_of (8)]
+
+    Belgian2:
+      _:
+        long_name_text_text: |
+          Belgian 2
+        short_name_text_text: B2
+        token_1_text_text: Belgium
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+        _major_fill: ${colour/x11/grey50}
+        _minor_fill: ${colour/xxp/BLACK}
+        _related_fill: ${colour/x11/gray79}
+      charter:
+        _:
+          label_text_text: |
+            Available from brown phase. 4–player.
+            Doesn't operate in first OR.
+          label_text_size: 12
+      share:
+        _:
+          comment_text_text: ""
+          comment_text_y: 65
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: $[index_of (8)]
+
 
 marker:
   index:
@@ -293,7 +410,7 @@ private:
     revenue_text_x: 168
     asset_interior_box_fill: ${colour/scale/yellow_0}
     money_bar_box_y: 13
-    money_bar_box_fill: ${colour/wikipedia/wild_watermelon}
+    money_bar_box_fill: ${colour/wikipedia/bubble_gum}
     cost_text_fill: ${colour/xxp/BLACK}
     revenue_text_fill: ${colour/xxp/BLACK}
 
@@ -317,12 +434,12 @@ private:
     P2:
       _:
         long_name_text_text: |
-            Antwerpen–Centraal
+            Gare d'Arras
         power_text_text: |
             Blocks E11.
-            Owning company may place or upgrade
-            a track tile in Arras (E11), along
-            with an optional station marker.
+            Owning company may place or
+            upgrade a track tile in Arras (E11),
+            along with an optional station marker.
             Doesn't have to be connected,
             must pay for the station marker.
         power_text_y: 5.5
@@ -337,17 +454,19 @@ private:
         power_text_text: |
             Revenue of this is equal to the value
             of the city of Saint-Quentin (G11).
-        cost_text_text: "Cost: F80"
+        cost_text_text: "Cost: F55"
         revenue_text_text: "Revenue: F?"
 
     P4:
       _:
         long_name_text_text: |
-            Bourse
+            Port company
         power_text_text: |
-            In stock round, instead of buying
-            a share, owning player may exchange
-            this against any share from IPO.
+            Owning company may place a +10
+            marker in England (A11). For that
+            company only, England's value is
+            F10 higher.
+            The marker is never removed.
         cost_text_text: "Cost: F90"
         revenue_text_text: "Revenue: F15"
 
@@ -392,8 +511,8 @@ train:
     3T:
       _:
         asset_interior_box_fill_p: GREEN
-        rust_bar_box_fill_p: RED
-        rusted_text_text: Rusted by 6
+        rust_bar_box_fill_p: BROWN
+        rusted_text_text: Rusted by 5
         long_name_text_text: "3"
         cost_text_text_p: "F180"
         note_text_text: |
@@ -449,7 +568,7 @@ train:
         note_text_text: |
             Upgrade to D: F525
       model:
-        index: $[index_of (2)]
+        index: $[index_of (3)]
 
     D:
       _:
@@ -460,26 +579,3 @@ train:
         rusted_text_text: Permanent
       model:
         index: $[index_of (8)]
-
-    4T_41:
-      _:
-        asset_interior_box_fill_p: BLUE
-        rust_bar_box_fill_p: GRAY
-        rusted_text_text: "Rusted by 7"
-        rusted_text_size: 14
-        long_name_text_text: "4"
-        cost_text_text: "L.350"
-        long_name_text_fill: ${colour/xxp/BLACK}
-        cost_text_fill: ${colour/xxp/BLACK}
-      model:
-        index: $[index_of (4)]
-    5T_41:
-      _:
-        asset_interior_box_fill_p: BROWN
-        rust_bar_box_fill_p: PURPLE
-        rusted_text_text: "Rusted by 8"
-        rusted_text_size: 14
-        long_name_text_text: "5"
-        cost_text_text: "L.550"
-      model:
-        index: $[index_of (3)]

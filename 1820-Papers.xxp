@@ -1,0 +1,386 @@
+company:
+  charter:
+    _:
+      long_name_text_size: 14
+      label_text_text: ""
+      comment_text_typeface: ${DEFAULT/typeface}
+      comment_text_size: 12
+      token_1_circle_y: 255
+      token_1_text_y: 260
+      token_5_circle_y: 60
+      token_5_text_y: 32
+      token_4_text_y: 110
+      token_2_text_size: 10
+      token_4_text_size: 10
+      comment_text_size: 10
+      token_2_text_text: free
+      token_4_text_text: £40
+      token_3_text_y: 100
+      token_3_text_size: 10
+      token_3_text_text: £100
+      token_3_circle_suppress: True
+  share:
+    _:
+      long_name_text_size: 12
+      share_desc_text_suppress: False
+      share_desc_text_text: 1 Share
+      share_desc_text_x: 55
+      share_num_text_text: 20/10/5/2%
+      share_pct_text_text: 
+      side_bar_lsplit_box_suppress: True
+      side_bar_rsplit_box_suppress: True
+      comment_text_size: 12
+      comment_text_typeface: ${DEFAULT/typeface_bold}
+      comment_text_y: 24
+      type_bar_box_fill: ${colour/wikipedia/golden_yellow}
+      type_bar_box_y: 12
+      share_num_text_x: 167
+    index:
+      "1":
+        share_pct_text:
+          text:
+        long_name_text:
+          fill: ${colour/xxp/WHITE}
+        comment_text:
+          text: "President"
+          fill: ${colour/xxp/WHITE}
+        share_desc_text:
+          text: "1 Share"
+        share_num_text:
+          text: "100%"
+        asset_interior_box:
+          fill: ${colour/x11/grey32}
+        token_1_embed:
+          suppress: False
+        token_2a_embed:
+          suppress: True
+        token_2b_embed:
+          suppress: True
+        token_3a_embed:
+          suppress: True
+        token_3b_embed:
+          suppress: True
+      "2":
+      "3":
+      "4":
+      "5":
+      "6":
+      "7":
+      "8":
+      "9":
+      "10":        
+      "11":
+        share_desc_text:
+          text: "2 Shares"
+        share_num_text:
+          text: "10/4%"
+        token_2a_embed:
+          suppress: False
+        token_3a_embed:
+          suppress: True
+        token_1_embed:
+          suppress: True
+        token_3b_embed:
+          suppress: True
+        token_2b_embed:
+          suppress: False
+      "12":
+        share_desc_text:
+          text: "2 Shares"
+        share_num_text:
+          text: "10/4%"
+        token_2a_embed:
+          suppress: False
+        token_3a_embed:
+          suppress: True
+        token_1_embed:
+          suppress: True
+        token_3b_embed:
+          suppress: True
+        token_2b_embed:
+          suppress: False
+      "13":
+        share_desc_text:
+          text: "2 Shares"
+        share_num_text:
+          text: "10/4%"
+        token_2a_embed:
+          suppress: False
+        token_3a_embed:
+          suppress: True
+        token_1_embed:
+          suppress: True
+        token_3b_embed:
+          suppress: True
+        token_2b_embed:
+          suppress: False
+      "14":
+        share_desc_text:
+          text: "2 Shares"
+        share_num_text:
+          text: "10/4%"
+        token_2a_embed:
+          suppress: False
+        token_3a_embed:
+          suppress: True
+        token_1_embed:
+          suppress: True
+        token_3b_embed:
+          suppress: True
+        token_2b_embed:
+          suppress: False      
+      "15":
+        share_desc_text:
+          text: "2 Shares"
+        share_num_text:
+          text: "10/4%"
+        token_2a_embed:
+          suppress: False
+        token_3a_embed:
+          suppress: True
+        token_1_embed:
+          suppress: True
+        token_3b_embed:
+          suppress: True
+        token_2b_embed:
+          suppress: False
+      "16":
+        share_desc_text:
+          text: "2 Shares"
+        share_num_text:
+          text: "10/4%"
+        token_2a_embed:
+          suppress: False
+        token_3a_embed:
+          suppress: True
+        token_1_embed:
+          suppress: True
+        token_3b_embed:
+          suppress: True
+        token_2b_embed:
+          suppress: False
+      "17":
+        share_desc_text:
+          text: "4 Shares"
+        share_num_text:
+          text: "24%"
+        token_2a_embed:
+          suppress: False
+        token_3a_embed:
+          suppress: False
+        token_1_embed:
+          suppress: True
+        token_3b_embed:
+          suppress: False
+        token_2b_embed:
+          suppress: False
+      "18":
+        share_desc_text:
+          text: "4 Shares"
+        share_num_text:
+          text: "24%"
+        token_2a_embed:
+          suppress: False
+        token_3a_embed:
+          suppress: False
+        token_1_embed:
+          suppress: True
+        token_3b_embed:
+          suppress: False
+        token_2b_embed:
+          suppress: False
+      "19":
+        share_desc_text:
+          text: "4 Shares"
+        share_num_text:
+          text: "24%"
+        token_2a_embed:
+          suppress: False
+        token_3a_embed:
+          suppress: False
+        token_1_embed:
+          suppress: True
+        token_3b_embed:
+          suppress: False
+        token_2b_embed:
+          suppress: False
+      "20":
+        share_desc_text:
+          text: "4 Shares"
+        share_num_text:
+          text: "24%"
+        token_2a_embed:
+          suppress: False
+        token_3a_embed:
+          suppress: False
+        token_1_embed:
+          suppress: True
+        token_3b_embed:
+          suppress: False
+        token_2b_embed:
+          suppress: False
+      "21":
+        share_desc_text:
+          text: "4 Shares"
+        share_num_text:
+          text: "24%"
+        token_2a_embed:
+          suppress: False
+        token_3a_embed:
+          suppress: False
+        token_1_embed:
+          suppress: True
+        token_3b_embed:
+          suppress: False
+        token_2b_embed:
+          suppress: False
+      "22":
+        share_desc_text:
+          text: "4 Shares"
+        share_num_text:
+          text: "24%"
+        token_2a_embed:
+          suppress: False
+        token_3a_embed:
+          suppress: False
+        token_1_embed:
+          suppress: True
+        token_3b_embed:
+          suppress: False
+        token_2b_embed:
+          suppress: False
+      "23":
+        comment_text:
+          text: "President"
+        type_bar_box: 
+          suppress: False
+        share_desc_text:
+          text: "2 Shares"
+        share_num_text:
+          text: "100%"
+        token_2a_embed:
+          suppress: False
+        token_3a_embed:
+          suppress: True
+        token_1_embed:
+          suppress: True
+        token_3b_embed:
+          suppress: True
+        token_2b_embed:
+          suppress: False
+      "24":
+        comment_text:
+          text: "President"
+        type_bar_box: 
+          suppress: False
+        share_desc_text:
+          text: "2 Shares"
+        share_num_text:
+          text: "40%"
+        token_2a_embed:
+          suppress: False
+        token_3a_embed:
+          suppress: True
+        token_1_embed:
+          suppress: True
+        token_3b_embed:
+          suppress: True
+        token_2b_embed:
+          suppress: False      
+      "25":
+        comment_text:
+          text: "President"
+        type_bar_box: 
+          suppress: False
+        share_desc_text:
+          text: "2 Shares"
+        share_num_text:
+          text: "20%"
+        token_2a_embed:
+          suppress: False
+        token_3a_embed:
+          suppress: True
+        token_1_embed:
+          suppress: True
+        token_3b_embed:
+          suppress: True
+        token_2b_embed:
+          suppress: False      
+      "26":
+        comment_text:
+          text: "President"
+        type_bar_box: 
+          suppress: False
+        share_desc_text:
+          text: "4 Shares"
+        share_num_text:
+          text: "20%"
+        token_2a_embed:
+          suppress: False
+        token_3a_embed:
+          suppress: False
+        token_1_embed:
+          suppress: True
+        token_3b_embed:
+          suppress: False
+        token_2b_embed:
+          suppress: False      
+      "27":
+        comment_text:
+          text: "President"
+        type_bar_box: 
+          suppress: False
+        share_desc_text:
+          text: "5 Shares"
+        share_num_text:
+          text: "10%"
+        token_2a_embed:
+          suppress: False
+        token_3a_embed:
+          suppress: False
+        token_1_embed:
+          suppress: False
+        token_3b_embed:
+          suppress: False
+        token_2b_embed:
+          suppress: False
+  token:
+    _:
+      short_name_text_size: 8
+    index: "$[index_of (20)]"
+
+  index:
+    SFTN:
+      _:
+        long_name_text_text: |
+          Bristol & Gloucester
+          Railway
+        short_name_text_text: BG
+        _major_fill: ${colour/hollasch/hot_pink}
+        _minor_fill: ${colour/hollasch/misty_rose}
+        _related_fill: ${colour/hollasch/pink}
+      charter:
+        _:
+          comment_text_text: |
+           
+      share:
+        _:
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+
+
+train:
+  index:
+    
+marker:
+  token:
+    _:
+      short_name_text_size: 8
+      major_fill: ${colour/wikipedia/white}
+      minor_fill: ${colour/wikipedia/white}
+
+  index:
+    
