@@ -129,7 +129,7 @@ company:
         name_stripe_box_suppress: True
       charter:
         _:
-          label_text_text: "Gent Railroad"
+          label_text_text: "Gent Railway"
           label_text_size: 12
       share:
         _:
@@ -258,7 +258,6 @@ company:
         _:
           label_text_text: |
             Available from brown phase.
-            Doesn't operate in first OR.
           label_text_size: 12
       share:
         _:
@@ -286,7 +285,6 @@ company:
         _:
           label_text_text: |
             Available from brown phase. 4–player.
-            Doesn't operate in first OR.
           label_text_size: 12
       share:
         _:
@@ -300,7 +298,7 @@ company:
           _minor_fill_2: ${colour/wikipedia/yellow_green}
         ELEMENTS: ${TEMPLATE_chequer/.}
         EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
-        index: $[index_of (5)] 
+        index: $[index_of (5)]
 
     Belgian1:
       _:
@@ -309,42 +307,13 @@ company:
         short_name_text_text: B1
         token_1_text_text: Belgium
         name_stripe_box_fill: ${colour/xxp/BLACK}
-        _related_fill: ${colour/wikipedia/green_yellow}
-      charter:
-        _:
-          label_text_text: |
-            Available from brown phase.
-            Doesn't operate in first OR.
-          label_text_size: 12
-      share:
-        _:
-          comment_text_text: ""
-          comment_text_y: 73
-      token:
-        _:
-          _major_fill_1: ${colour/wikipedia/yellow_green}
-          _major_fill_2: ${colour/wikipedia/lemon_lime}
-          _minor_fill_1: ${colour/wikipedia/lemon_lime}
-          _minor_fill_2: ${colour/wikipedia/yellow_green}
-        ELEMENTS: ${TEMPLATE_chequer/.}
-        EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
-        index: $[index_of (5)] 
-
-    Belgian1:
-      _:
-        long_name_text_text: |
-          Belgian 1
-        short_name_text_text: B2
-        token_1_text_text: Belgium
-        name_stripe_box_fill: ${colour/xxp/BLACK}
-        _major_fill: ${colour/x11/bisque2}
+        _major_fill: ${colour/x11/grey50}
         _minor_fill: ${colour/xxp/BLACK}
-        _related_fill: ${colour/x11/antiquewhite1}
+        _related_fill: ${colour/x11/gray79}
       charter:
         _:
           label_text_text: |
             Available from brown phase.
-            Doesn't operate in first OR.
           label_text_size: 12
       share:
         _:
@@ -362,14 +331,13 @@ company:
         short_name_text_text: B2
         token_1_text_text: Belgium
         name_stripe_box_fill: ${colour/xxp/BLACK}
-        _major_fill: ${colour/x11/grey50}
+        _major_fill: ${colour/x11/bisque2}
         _minor_fill: ${colour/xxp/BLACK}
-        _related_fill: ${colour/x11/gray79}
+        _related_fill: ${colour/x11/antiquewhite1}
       charter:
         _:
           label_text_text: |
             Available from brown phase. 4–player.
-            Doesn't operate in first OR.
           label_text_size: 12
       share:
         _:
@@ -379,7 +347,6 @@ company:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
         index: $[index_of (8)]
-
 
 marker:
   index:
@@ -419,12 +386,12 @@ private:
     P1:
       _:
         long_name_text_text: |
-             Jhangeli
-        #(Luxembourgs' narrow gauge rails)
+            Ligne Longwy–Villerupt–Micheville
+        #Jhangeli - (Luxembourgs' narrow gauge rails)
         power_text_text: |
-            Blocks I17.
+            Blocks I14.
             Owning company may place a yellow
-            track tile in I17, in addition to
+            track tile in I14, in addition to
             the regular track action.
             Doesn't have to be connected.
         power_text_y: 5.5
@@ -434,14 +401,14 @@ private:
     P2:
       _:
         long_name_text_text: |
-            Gare d'Arras
+            Charleroi–Sud
         power_text_text: |
-            Blocks E11.
+            Blocks G14.
             Owning company may place or
-            upgrade a track tile in Arras (E11),
+            upgrade a track tile in Charleroi (G14),
             along with an optional station marker.
-            Doesn't have to be connected,
-            must pay for the station marker.
+            Counts as a track build.
+            Doesn't have to be connected.
         power_text_y: 5.5
         cost_text_text: "Cost: F50"
         revenue_text_text: "Revenue: F10"
@@ -450,11 +417,12 @@ private:
       _:
         long_name_text_text: |
             Ligne
-            de Saint-Quentin à Guise
+            de Saint–Quentin à Guise
         power_text_text: |
+            Never closes.
             Revenue of this is equal to the value
-            of the city of Saint-Quentin (G11).
-        cost_text_text: "Cost: F55"
+            of the city of Saint-Quentin (G10).
+        cost_text_text: "Cost: F80"
         revenue_text_text: "Revenue: F?"
 
     P4:
@@ -463,7 +431,7 @@ private:
             Port company
         power_text_text: |
             Owning company may place a +10
-            marker in England (A11). For that
+            marker in England (A10). For that
             company only, England's value is
             F10 higher.
             The marker is never removed.
@@ -495,6 +463,7 @@ train:
   _:
     rusted_text_size: 14
     rust_bar_box_y: 27
+    long_name_text_y: 95
   index:
     2T:
       _:
@@ -543,7 +512,14 @@ train:
             Upgrade to 6: F375
             Upgrade to D: F675
       model:
-        index: $[index_of (3)]
+        index:
+          "1":
+            top_note_text:
+              text: |
+                4-player
+          "2":
+          "3":
+          "4":
 
     6T:
       _:
