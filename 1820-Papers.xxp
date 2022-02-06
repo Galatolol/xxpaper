@@ -350,7 +350,7 @@ company:
     index: "$[index_of (20)]"
 
   index:
-    SFTN:
+    BG:
       _:
         long_name_text_text: |
           Bristol & Gloucester
@@ -370,6 +370,29 @@ company:
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+
+    MH:
+      _:
+        long_name_text_text: |
+          Mid-Hants
+          Railway
+        short_name_text_text: BG
+        _major_fill: ${colour/hollasch/hot_pink}
+        _minor_fill: ${colour/hollasch/misty_rose}
+        _related_fill: ${colour/hollasch/pink}
+      charter:
+        _:
+          comment_text_text: |
+           
+      share:
+        _:
+          side_bar_lsplit_box_suppress: True
+          side_bar_rsplit_box_suppress: True
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+
+    
 
 
 train:
