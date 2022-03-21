@@ -2,14 +2,11 @@ company:
   _:
     token_1_text_text: Free
     token_2_text_text: £40
-
   token:
     short_name_text:
       x_inset: 0
       y_inset: 0
-      typeface: ${DEFAULT/typeface}
       size: 8
-
   charter:
     _:
       token_1_text_y: 202
@@ -20,25 +17,19 @@ company:
       token_3_text_size: 12
       token_4_text_size: 12
       comment_text_text: ""
-      long_name_text_typeface: ${DEFAULT/typeface}
-
+      long_name_text_size: 13
   share:
-    share_num_text:
-        typeface: ${DEFAULT/typeface}
-    share_pct_text:
-        typeface: ${DEFAULT/typeface}
-    share_desc_text:
-        typeface: ${DEFAULT/typeface}
-    comment_text:
-        typeface: ${DEFAULT/typeface}
-    long_name_text:
-        typeface: ${DEFAULT/typeface}
     _:
       side_bar_lsplit_box_suppress: True
       side_bar_rsplit_box_suppress: True
       type_bar_box_fill: ${colour/wikipedia/golden_yellow}
       type_bar_box_y: 13
       share_num_text_x: 167
+      long_name_text_size: 11
+  token:
+    _:
+      short_name_text_size: 8
+
   index:
     CN:
       _:
@@ -132,8 +123,7 @@ company:
     FYN:
       _:
         long_name_text_text: |
-            Freshwater,
-            Yarmouth
+            Freshwater, Yarmouth
             & Newport
         short_name_text_text: FYN
         token_1_text_text: B4
@@ -289,23 +279,19 @@ marker:
         fill: ${colour/x11/sienna3}
 
 private:
-  closes_text:
-    typeface: ${DEFAULT/typeface}
-  cost_text:
-    typeface: ${DEFAULT/typeface}
-  revenue_text:
-    typeface: ${DEFAULT/typeface}
-  long_name_text:
-    typeface: ${DEFAULT/typeface}
   _:
-    closes_text_text: "Closes when FFC bought or power used"
-    money_bar_box_y: 13
-    closes_text_size: 8
-    power_text_size: 8
-    power_text_y: 3
-    revenue_text_x: 168
     long_name_text_size: 11
     long_name_text_y: 77
+    closes_text_size: 8
+    closes_text_text: "Closes when FFC bought or power used"
+    power_text_size: 8
+    power_text_y: 2
+    revenue_text_x: 168
+    asset_interior_box_fill: ${colour/scale/yellow_0}
+    money_bar_box_y: 13
+    money_bar_box_fill: ${colour/wikipedia/bubble_gum}
+    cost_text_fill: ${colour/xxp/BLACK}
+    revenue_text_fill: ${colour/xxp/BLACK}
 
   index:
     BHC:
@@ -324,7 +310,8 @@ private:
       _:
         asset_interior_box_fill: ${colour/resene/Viola}
         long_name_text_text: |
-            Yarmouth Harbour Company
+            Yarmouth Harbour
+            Company
         power_text_text: |
             Can be exchanged for a share of FYN
             during player's turn in Stock Round.
@@ -424,7 +411,7 @@ private:
         long_name_text_text: |
             RECEIVERSHIP
         power_text_text: |
-            NO DIRECTOR
+            NO PRESIDENT
             
             May not build track nor stations.
             Company withholds the revenue.
@@ -459,6 +446,7 @@ private:
 train:
   long_name_text:
       typeface: ${DEFAULT/typeface}
+      size: 42
 
   index:
     2+1T:
@@ -559,5 +547,338 @@ train:
         rusted_text_text: Permanent
       long_name_text:
         size: 42
+      model:
+        index: $[index_of (12)]
+
+    A1-2,9T:
+      _:
+        asset_interior_box_fill_p: YELLOW
+        long_name_text_text: "2+0"
+        rust_bar_box_fill_p: BLUE
+        rusted_text_text: "Rusted by C"
+        cost_text_text_p: £200
+      model:
+        index:
+          "1":
+            top_left_note_text:
+              text: "A1"
+          "2":
+            top_left_note_text:
+              text: "A2"
+          "3":
+            top_left_note_text:
+              text: "A9"
+
+    A3-5,8T:
+      _:
+        asset_interior_box_fill_p: YELLOW
+        long_name_text_text: "2+1"
+        rust_bar_box_fill_p: BLUE
+        rusted_text_text: "Rusted by C"
+        cost_text_text_p: £250
+      model:
+        index:
+          "1":
+            top_left_note_text:
+              text: "A3"
+          "2":
+            top_left_note_text:
+              text: "A4"
+          "3":
+            top_left_note_text:
+              text: "A5"
+          "4":
+            top_left_note_text:
+              text: "A8"
+
+    A6-7T:
+      _:
+        asset_interior_box_fill_p: YELLOW
+        long_name_text_text: "2+2"
+        rust_bar_box_fill_p: GREEN
+        rusted_text_text: "Rusted by B"
+        cost_text_text_p: £100
+        top_note_text_text: "Surplus"
+        note_text_text: "Runs at least twice"
+      model:
+        index:
+          "1":
+            top_left_note_text:
+              text: "A6"
+          "2":
+            top_left_note_text:
+              text: "A7"
+
+    A10T:
+      _:
+        asset_interior_box_fill_p: YELLOW
+        long_name_text_text: "2+2"
+        rust_bar_box_fill_p: BLUE
+        rusted_text_text: "Rusted by C"
+        cost_text_text_p: £270
+        top_left_note_text_text: "A10"
+        top_left_note_text_x: 12
+      model:
+        index: $[index_of (1)]
+
+    B1T:
+      _:
+        asset_interior_box_fill_p: GREEN
+        long_name_text_text: "3+0"
+        rust_bar_box_fill_p: BROWN
+        rusted_text_text: "Rusted by D"
+        cost_text_text_p: £220
+        note_text_text: |
+          When rusted,
+          may be upgraded
+          to 3+2 for £130
+        top_left_note_text_text: "B1"
+      model:
+        index: $[index_of (1)]
+
+    B1uT:
+      _:
+        asset_interior_box_fill_p: GREEN
+        long_name_text_text: "3+2"
+        rust_bar_box_fill_p: RED
+        rusted_text_text: "Rusted by E"
+        cost_text_text: "Upgrade: £130"
+        note_text_text: "Upgraded from B1"
+        top_left_note_text_text: "B1u"
+        top_left_note_text_x: 12
+      model:
+        index: $[index_of (1)]
+
+    B2T:
+      _:
+        asset_interior_box_fill_p: GREEN
+        long_name_text_text: "3+0"
+        rust_bar_box_fill: ${colour/xxp/WHITE}
+        rusted_text_text: "Rusts after 2 runs"
+        cost_text_text_p: £300
+        note_text_text: |
+          When rusted, the
+          owner gets
+          £150 rebate
+        top_note_text_text: "Surplus"
+        top_left_note_text_text: "B2"
+      model:
+        index: $[index_of (1)]
+
+    B3T:
+      _:
+        asset_interior_box_fill_p: GREEN
+        long_name_text_text: "3+3"
+        rust_bar_box_fill_p: BROWN
+        rusted_text_text: "Rusted by D"
+        cost_text_text_p: £250
+        top_left_note_text_text: "B3"
+        note_text_text: "Runs at least twice"
+      model:
+        index: $[index_of (1)]
+
+    B4T:
+      _:
+        asset_interior_box_fill_p: GREEN
+        long_name_text_text: "3+1"
+        rust_bar_box_fill_p: BROWN
+        rusted_text_text: "Rusted by D"
+        cost_text_text_p: £150
+        top_left_note_text_text: "B4"
+        top_note_text_text: "Surplus"
+      model:
+        index: $[index_of (1)]
+
+    B5-6,10T:
+      _:
+        asset_interior_box_fill_p: GREEN
+        long_name_text_text: "3+2"
+        rust_bar_box_fill_p: RED
+        rusted_text_text: "Rusted by E"
+        cost_text_text_p: £300
+      model:
+        index:
+          "1":
+            top_left_note_text:
+              text: "B5"
+          "2":
+            top_left_note_text:
+              text: "B6"
+          "3":
+            top_left_note_text:
+              text: "B10"
+              x: 12
+
+    B7T:
+      _:
+        asset_interior_box_fill_p: GREEN
+        long_name_text_text: "3+2"
+        rust_bar_box_fill_p: GRAY
+        rusted_text_text: "Rusted by F"
+        cost_text_text_p: £300
+        top_left_note_text_text: "B7"
+      model:
+        index: $[index_of (1)]
+
+    B8T:
+      _:
+        asset_interior_box_fill_p: GREEN
+        long_name_text_text: "2+4"
+        rust_bar_box_fill_p: GRAY
+        rusted_text_text: "Rusted by F"
+        cost_text_text_p: £300
+        top_left_note_text_text: "B8"
+      model:
+        index: $[index_of (1)]
+
+    B9T:
+      _:
+        asset_interior_box_fill_p: GREEN
+        long_name_text_text: "3+2"
+        rust_bar_box_fill_p: GRAY
+        rusted_text_text: "Rusted by F"
+        cost_text_text_p: £350
+        top_left_note_text_text: "B9"
+        note_text_text: |
+          First run for £0
+          Fell into the sea
+          on delivery
+      model:
+        index: $[index_of (1)]
+
+    B11T:
+      _:
+        asset_interior_box_fill_p: GREEN
+        long_name_text_text: "3+3"
+        rust_bar_box_fill_p: RED
+        rusted_text_text: "Rusted by E"
+        cost_text_text_p: £330
+        top_left_note_text_text: "B11"
+        top_left_note_text_x: 12
+      model:
+        index: $[index_of (1)]
+
+    C1T:
+      _:
+        asset_interior_box_fill_p: BLUE
+        long_name_text_text: "3+5"
+        rust_bar_box_fill_p: PURPLE
+        rusted_text_text: "Rusted by G"
+        cost_text_text_p: £400
+        top_left_note_text_text: "C1"
+      model:
+        index: $[index_of (1)]
+
+    C2,4-5,7-8T:
+      _:
+        asset_interior_box_fill_p: BLUE
+        long_name_text_text: "4+2"
+        rust_bar_box_fill_p: GRAY
+        rusted_text_text: "Rusted by F"
+        cost_text_text_p: £350
+        top_left_note_text_text: "C2"
+      model:
+        index:
+          "1":
+            top_left_note_text:
+              text: "C2"
+          "2":
+            top_left_note_text:
+              text: "C4"
+          "3":
+            top_left_note_text:
+              text: "C5"
+          "4":
+            top_left_note_text:
+              text: "C7"
+          "5":
+            top_left_note_text:
+              text: "C8"
+
+    C3T:
+      _:
+        asset_interior_box_fill_p: BLUE
+        long_name_text_text: "2+5"
+        rust_bar_box_fill_p: RED
+        rusted_text_text: "Rusted by E"
+        cost_text_text_p: £150
+        top_left_note_text_text: "C3"
+        top_note_text_text: "Surplus"
+      model:
+        index: $[index_of (1)]
+
+    C6T:
+      _:
+        asset_interior_box_fill_p: BLUE
+        long_name_text_text: "3+4"
+        rust_bar_box_fill_p: RED
+        rusted_text_text: "Rusted by E"
+        cost_text_text_p: £200
+        top_left_note_text_text: "C6"
+        top_note_text_text: "Surplus"
+      model:
+        index: $[index_of (1)]
+
+    DT:
+      _:
+        asset_interior_box_fill_p: BROWN
+        rust_bar_box_fill_p: PURPLE
+        long_name_text_text: "5+3"
+        cost_text_text_p: £400
+        rusted_text_text: "Rusted by G"
+        top_left_note_text_text: "D"
+        top_left_note_text_x: 8
+      model:
+        index: $[index_of (2)]
+
+    ET:
+      _:
+        asset_interior_box_fill_p: RED
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "4x"
+        cost_text_text_p: £500
+        rusted_text_text: Permanent
+        top_left_note_text_text: "E"
+        top_left_note_text_x: 8
+      model:
+        index: $[index_of (2)]
+
+    FT:
+      _:
+        asset_interior_box_fill_p: GRAY
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "5x"
+        cost_text_text_p: £600
+        rusted_text_text: Permanent
+        top_left_note_text_text: "F"
+        top_left_note_text_x: 8
+      model:
+        index:
+          "1":
+            top_note_text:
+              text: Optional
+          "2":
+
+    GT:
+      _:
+        asset_interior_box_fill_p: PURPLE
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "6x"
+        cost_text_text_p: £700
+        rusted_text_text: Permanent
+        top_left_note_text_text: "G"
+        top_left_note_text_x: 8
+      model:
+        index: $[index_of (1)]
+
+    HT:
+      _:
+        asset_interior_box_fill: ${colour/wikipedia/cool_black}
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "7x"
+        cost_text_text_p: £800
+        rusted_text_text: Permanent
+        top_left_note_text_text: "H"
+        top_left_note_text_x: 8
       model:
         index: $[index_of (12)]
