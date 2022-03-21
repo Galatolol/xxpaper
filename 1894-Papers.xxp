@@ -23,7 +23,6 @@ company:
       short_name_text_size: 8
 
   index:
-
     CAB:
       _:
         long_name_text_text: |
@@ -38,13 +37,13 @@ company:
       charter:
         _:
           label_text_text: |
-            Compagnie des chemins de fer
+            Chemins de fer
             d'Amiens à Boulogne
           label_text_size: 12
       share:
         _:
           comment_text_text: |
-            Compagnie du chemin de fer
+            Chemins de fer
             d'Amiens à Boulogne
           comment_text_y: 65
       token:
@@ -55,7 +54,7 @@ company:
           short_name_text_y_inset: -1
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (7)]
+        index: $[index_of (8)]
 
     Ouest:
       _:
@@ -72,18 +71,17 @@ company:
         _related_fill: ${colour/hollasch/steel_blue}
       charter:
         _:
-          label_text_text: "Compagnie des chemins de fer de l'Ouest"
+          label_text_text: "Chemins de fer de l'Ouest"
           label_text_size: 12
       share:
         _:
           comment_text_text: |
-            Compagnie des chemins de fer
-            de l'Ouest
+            Chemins de fer de l'Ouest
           comment_text_y: 65
       token:
         ELEMENTS: ${TEMPLATE_stripey/.}
         EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
-        index: $[index_of (7)]
+        index: $[index_of (8)]
 
     Nord:
       _:
@@ -101,13 +99,12 @@ company:
         _related_fill: ${colour/hollasch/tomato}
       charter:
         _:
-          label_text_text: "Compagnie des chemins de fer du Nord"
+          label_text_text: "Chemins de fer du Nord"
           label_text_size: 12
       share:
         _:
           comment_text_text: |
-            Compagnie des chemins de fer
-            du Nord
+            Chemins de fer du Nord
           comment_text_y: 65
       token:
         ELEMENTS: ${TEMPLATE_stripey/.}
@@ -161,17 +158,16 @@ company:
         token_3_text_text: F80
         token_3_text_text: F100
         _major_fill: ${colour/wikipedia/amber_sae_ece}
-        _minor_fill: ${colour/x11/white}        
+        _minor_fill: ${colour/x11/white}
         _related_fill: ${colour/wikipedia/pink_orange}
       charter:
         _:
-          label_text_text: "Compagnie des chemins de fer de l'Est"
+          label_text_text: "Chemins de fer de l'Est"
           label_text_size: 12
       share:
         _:
           comment_text_text: |
-            Compagnie des chemins de fer
-            de l'Est
+            Chemins de fer de l'Est
           comment_text_y: 65
       token:
         _:
@@ -195,14 +191,14 @@ company:
       charter:
         _:
           label_text_text: |
-            Compagnie des chemins de fer
-            de Paris à Lyon et à la Méditerranée
+            Chemins de fer de Paris à Lyon
+            et à la Méditerranée
           label_text_size: 12
       share:
         _:
           comment_text_text: |
-            Compagnie des chemins de fer de
-            Paris à Lyon et à la Méditerranée
+            Chemins de fer de Paris à Lyon
+            et à la Méditerranée
           comment_text_y: 65
           #comment_text_size: 7
       token:
@@ -212,7 +208,7 @@ company:
           short_name_text_size: 8
         ELEMENTS: ${TEMPLATE_bullseye/.}
         EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
-        index: $[index_of (6)]
+        index: $[index_of (7)]
 
     Belge:
       _:
@@ -322,7 +318,7 @@ company:
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
-        index: $[index_of (8)]
+        index: $[index_of (5)]
 
     Belgian2:
       _:
@@ -346,7 +342,7 @@ company:
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
-        index: $[index_of (8)]
+        index: $[index_of (5)]
 
 marker:
   index:
@@ -365,6 +361,30 @@ marker:
         fill: ${colour/galatolol/green}
       inner_circle:
         fill: ${colour/galatolol/brown}
+
+    ferry:
+      token:
+        _:
+          name_stripe_box_suppress: True
+          short_name_text_text: ferry
+          short_name_text_fill: ${colour/xxp/BLACK}
+          short_name_text_size: 10
+          outer_circle_fill: ${colour/wikipedia/baby_blue}
+          middle_circle_fill: ${colour/wikipedia/white}
+        ELEMENTS: ${TEMPLATE_ring/.}
+        index: "$[index_of (4)]"
+
+    plus10:
+      token:
+        _:
+          name_stripe_box_suppress: True
+          short_name_text_text: +10
+          short_name_text_fill: ${colour/xxp/BLACK}
+          short_name_text_size: 10
+          outer_circle_fill: ${colour/wikipedia/white}
+          middle_circle_fill: ${colour/wikipedia/white}
+        ELEMENTS: ${TEMPLATE_ring/.}
+        index: "$[index_of (2)]"
 
 private:
   _:
@@ -386,15 +406,15 @@ private:
     P1:
       _:
         long_name_text_text: |
-            Ligne Longwy–Villerupt–Micheville
+            Ligne Longwy–
+            –Villerupt–Micheville
         #Jhangeli - (Luxembourgs' narrow gauge rails)
         power_text_text: |
             Blocks I14.
-            Owning company may place a yellow
+            Owning company may lay a yellow
             track tile in I14, in addition to
             the regular track action.
             Doesn't have to be connected.
-        power_text_y: 5.5
         cost_text_text: "Cost: F20"
         revenue_text_text: "Revenue: F5"
 
@@ -404,12 +424,12 @@ private:
             Charleroi–Sud
         power_text_text: |
             Blocks G14.
-            Owning company may place or
-            upgrade a track tile in Charleroi (G14),
-            along with an optional station marker.
+            Owning company may lay a yellow
+            track tile or upgrade a yellow track tile
+            in Charleroi (G14), along with an
+            optional free station marker.
             Counts as a track build.
             Doesn't have to be connected.
-        power_text_y: 5.5
         cost_text_text: "Cost: F50"
         revenue_text_text: "Revenue: F10"
 
@@ -420,7 +440,7 @@ private:
             de Saint–Quentin à Guise
         power_text_text: |
             Never closes.
-            Revenue of this is equal to the value
+            Revenue of this is equal to the revenue
             of the city of Saint-Quentin (G10).
         cost_text_text: "Cost: F80"
         revenue_text_text: "Revenue: F?"
@@ -455,7 +475,7 @@ private:
             PLM major stakeholding
         power_text_text: |
             Comes with the presidency of PLM.
-            Cannot be sold to a public company.
+            Cannot be purchased by a company.
         cost_text_text: "Cost: F180"
         revenue_text_text: "Revenue: F25"
 
@@ -473,9 +493,9 @@ train:
         long_name_text_text: "2"
         cost_text_text_p: "F80"
         note_text_text: |
-            Upgrade to 3: F140
+            Upgrade to 3: F120
       model:
-        index: $[index_of (6)]
+        index: $[index_of (7)]
 
     3T:
       _:
@@ -483,9 +503,9 @@ train:
         rust_bar_box_fill_p: BROWN
         rusted_text_text: Rusted by 5
         long_name_text_text: "3"
-        cost_text_text_p: "F180"
+        cost_text_text_p: "F160"
         note_text_text: |
-            Upgrade to 4: F210
+            Upgrade to 4: F220
       model:
         index: $[index_of (5)]
 
@@ -497,9 +517,9 @@ train:
         long_name_text_text: "4"
         cost_text_text_p: "F300"
         note_text_text: |
-            Upgrade to 5: F300
+            Upgrade to 5: F250
       model:
-        index: $[index_of (4)]
+        index: $[index_of (3)]
 
     5T:
       _:
@@ -507,10 +527,10 @@ train:
         rust_bar_box_fill_p: PURPLE
         long_name_text_text: "5"
         rusted_text_text: Rusted by D
-        cost_text_text_p: "F450"
+        cost_text_text_p: "F400"
         note_text_text: |
-            Upgrade to 6: F375
-            Upgrade to D: F675
+            Upgrade to 6: F400
+            Upgrade to D: F700
       model:
         index:
           "1":
@@ -554,4 +574,4 @@ train:
         cost_text_text_p: "F900"
         rusted_text_text: Permanent
       model:
-        index: $[index_of (8)]
+        index: $[index_of (10)]
