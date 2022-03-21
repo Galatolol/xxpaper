@@ -4,7 +4,8 @@ company:
     token_3_text_text: $100
   charter:
     _:
-      long_name_text_size: 12
+      long_name_text_size: 13
+      long_name_text_y_inset: -10
       token_1_text_y: 202
       token_5_circle_y: 10
       token_5_text_y: -20

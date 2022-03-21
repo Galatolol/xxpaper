@@ -18,6 +18,7 @@ company:
       token_4_text_size: 12
       comment_text_text: ""
       long_name_text_size: 13
+      long_name_text_y_inset: -10
   share:
     _:
       side_bar_lsplit_box_suppress: True
@@ -135,7 +136,7 @@ company:
       token:
         _:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
-          short_name_text_size: 13
+          short_name_text_size: 11
           short_name_text_x_inset: 0
           short_name_text_y_inset: -1.4
         ELEMENTS: ${TEMPLATE_solid/.}
@@ -173,7 +174,7 @@ company:
       token:
         _:
             short_name_text_fill: $[black_or_white (${_/_major_fill})]
-            short_name_text_size: 11
+            short_name_text_size: 9
             short_name_text_x_inset: 0
             short_name_text_y_inset: -0.8
         index: $[index_of (6)]
@@ -246,7 +247,7 @@ company:
       token:
         _:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
-          short_name_text_size: 11
+          short_name_text_size: 9
           short_name_text_x_inset: 0
           short_name_text_y_inset: -0.8
         ELEMENTS: ${TEMPLATE_solid/.}
