@@ -10,6 +10,8 @@ company:
       token_2_text_size: 10
       token_3_text_size: 10
       token_4_text_size: 10
+      token_7_text_size: 10
+      token_8_text_size: 10
       comment_text_text: ""
   share:
     _:
@@ -28,8 +30,10 @@ company:
         long_name_text_text: |
             CAB
         short_name_text_text: CAB
-        token_1_text_text: Amiens (E7)
-        token_3_text_text: F60
+        token_1_text_text: Amiens (E6)
+        token_8_text_text: F60
+        token_3_text_text: F80
+        token_7_text_text: F100
         _major_fill: ${colour/hollasch/brown_ochre}
         _minor_fill: ${_\_major_fill}
         _related_fill: ${colour/hollasch/brick}
@@ -61,9 +65,10 @@ company:
         long_name_text_text: |
             Ouest
         short_name_text_text: Ouest
-        token_1_text_text: Rouen (D4)
-        token_3_text_text: F60
+        token_1_text_text: Rouen (D3)
+        token_8_text_text: F60
         token_3_text_text: F80
+        token_7_text_text: F100
         _major_fill: ${colour/wikipedia/blue_ryb}
         _major_fill_2: ${colour/wikipedia/banana_yellow}
         _minor_fill_2: ${_/_major_fill_2}
@@ -88,10 +93,10 @@ company:
         long_name_text_text: |
             Nord
         short_name_text_text: Nord
-        token_1_text_text: Lille (D12)
-        token_3_text_text: F60
+        token_1_text_text: Lille (D11)
+        token_8_text_text: F60
         token_3_text_text: F80
-        token_3_text_text: F100
+        token_7_text_text: F100
         _major_fill: ${colour/x11/red}
         _major_fill_2: ${colour/xxp/BLACK}
         _minor_fill_2: ${_/_major_fill_2}
@@ -116,10 +121,10 @@ company:
         long_name_text_text: |
             GR
         short_name_text_text: GR
-        token_1_text_text: Gent (D17)
-        token_3_text_text: F60
+        token_1_text_text: Gent (D15)
+        token_8_text_text: F60
         token_3_text_text: F80
-        token_3_text_text: F100
+        token_7_text_text: F100
         _major_fill: ${colour/wikipedia/canary_yellow}
         _minor_fill: ${_/_major_fill}
         _related_fill: ${colour/wikipedia/icterine}
@@ -153,10 +158,10 @@ company:
         long_name_text_text: |
             Est
         short_name_text_text: Est
-        token_1_text_text: Reims (I9)
-        token_3_text_text: F60
+        token_1_text_text: Reims (I8)
+        token_8_text_text: F60
         token_3_text_text: F80
-        token_3_text_text: F100
+        token_7_text_text: F100
         _major_fill: ${colour/wikipedia/amber_sae_ece}
         _minor_fill: ${colour/x11/white}
         _related_fill: ${colour/wikipedia/pink_orange}
@@ -182,8 +187,9 @@ company:
         long_name_text_text: |
             PLM
         short_name_text_text: PLM
-        token_1_text_text: Paris (G5)
-        token_3_text_text: F60
+        token_1_text_text: Paris (G4)
+        token_8_text_text: F60
+        token_3_text_text: F80
         share_pct_text_fill: ${colour/xxp/BLACK}
         _major_fill: ${colour/wikipedia/rich_lavender}
         _minor_fill: ${colour/wikipedia/black}
@@ -215,10 +221,10 @@ company:
         long_name_text_text: |
              Belge
         short_name_text_text: Belge
-        token_1_text_text: Bruxelles (F16)
+        token_1_text_text: Bruxelles (F15)
         token_1_text_size: 8
-        token_3_text_text: F60
-        token_4_text_text: F80
+        token_8_text_text: F60
+        token_3_text_text: F80
         _major_fill: ${colour/xxp/D_GREEN}
         _minor_fill: ${colour/xxp/D_GREEN}
         _related_fill: ${colour/hollasch/cinnabar_green}
@@ -378,7 +384,7 @@ marker:
       token:
         _:
           name_stripe_box_suppress: True
-          short_name_text_text: +10
+          short_name_text_text: "+10"
           short_name_text_fill: ${colour/xxp/BLACK}
           short_name_text_size: 10
           outer_circle_fill: ${colour/wikipedia/white}
@@ -391,7 +397,7 @@ private:
     long_name_text_size: 11
     long_name_text_y: 77
     closes_text_size: 8
-    closes_text_text: "Closed by 6"
+    closes_text_text: "Closed in red phase"
     power_text_size: 8
     power_text_y: 2
     revenue_text_x: 168
@@ -439,11 +445,12 @@ private:
             Ligne
             de Saint–Quentin à Guise
         power_text_text: |
-            Never closes.
-            Revenue of this is equal to the revenue
-            of the city of Saint-Quentin (G10).
-        cost_text_text: "Cost: F80"
+            Revenue of this is equal
+            to twice the revenue
+            of the city of Saint–Quentin (G10).
+        cost_text_text: "Cost: F70"
         revenue_text_text: "Revenue: F?"
+        closes_text_text: "Closed in gray phase"
 
     P4:
       _:
@@ -455,7 +462,7 @@ private:
             company only, England's value is
             F10 higher.
             The marker is never removed.
-        cost_text_text: "Cost: F90"
+        cost_text_text: "Cost: F100"
         revenue_text_text: "Revenue: F15"
 
     P5:
@@ -469,7 +476,7 @@ private:
 
     P6:
       _:
-        closes_text_text: "Closed by 6 or when PLM buys train"
+        closes_text_text: "Closed in green phase"
         closes_text_x_inset: -1
         long_name_text_text: |
             PLM major stakeholding

@@ -406,7 +406,7 @@ private:
 
             Only owning company may lay a track
             tile in F15.
-        closes_text_text: "Closes when track laid in F15"
+        closes_text_text: "Closed when track laid in F15"
         cost_text_text: "Cost: $80"
         revenue_text_text: "Revenue: $15"
 
