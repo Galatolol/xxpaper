@@ -1,13 +1,9 @@
 DEFAULT:
   text: ""
-  typeface: "LibreBaskerville-Regular"
+  typeface: "Times-Roman"
   typeface_bold: "Times-Bold"
   typeface_bold_italic: "Times-BoldItalic"
-  typeface_italic: "Times-Italic"  
-  #typeface: "Times-Roman"
-  #typeface_bold: "Times-Bold"
-  #typeface_bold_italic: "Times-BoldItalic"
-  #typeface_italic: "Times-Italic"
+  typeface_italic: "Times-Italic"
   typeface_bold_oblique: ${DEFAULT/typeface_bold_italic}
   typeface_oblique: ${DEFAULT/typeface_italic}
   typeface_sans: "Helvetica"

@@ -1,0 +1,427 @@
+company:
+  charter:
+    _:
+      token_1_text_y: 202
+      token_5_circle_y: 10
+      token_5_text_y: -20
+      token_1_text_size: 10
+      token_2_text_size: 12
+      token_3_text_size: 12
+      token_4_text_size: 12
+      comment_text_text: ""
+      token_2_circle_suppress: False
+      token_3_circle_suppress: False
+      token_3_text_text: " "
+  share:
+    _:
+      type_bar_box_fill: ${colour/wikipedia/golden_yellow}
+      type_bar_box_y: 13
+      side_bar_lsplit_box_suppress: True
+      side_bar_rsplit_box_suppress: True
+      share_num_text_x: 167
+    index:
+      "1":
+        share_pct_text:
+          text: "20%"
+        share_num_text:
+          text: "2 Shares"
+      "2":
+      "3":
+      "4":
+      "5":
+      "6":
+      "7":
+      "8":
+        share_pct_text:
+          text: "20%"
+        share_num_text:
+          text: "2 Shares"
+        token_2a_embed:
+          suppress: False
+        token_3a_embed:
+          suppress: True
+        token_1_embed:
+          suppress: True
+        token_3b_embed:
+          suppress: True
+        token_2b_embed:
+          suppress: False
+      "9":
+        supress: True
+  token:
+    _:
+      short_name_text_size: 8
+
+  index:
+    IFT:
+      _:
+        long_name_text_text: |
+            Impresa Ferroviaria
+            Trinacria
+        short_name_text_text: IFT
+        token_1_text_text: Catania (L9)
+        _major_fill: ${colour/wikipedia/blue_ryb}
+        _major_fill_2: ${colour/wikipedia/banana_yellow}
+        _minor_fill_2: ${_/_major_fill_2}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/hollasch/steel_blue}
+      charter:
+        _:
+          label_text_text: "Station fee: L.90"
+      token:
+        ELEMENTS: ${TEMPLATE_stripey/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
+        index: $[index_of (5)]
+
+    AFG:
+      _:
+        long_name_text_text: |
+            Azienda Ferroviaria
+            Garivaldi
+        short_name_text_text: AFG
+        token_1_text_text: "A4 H9 I14 K14 N3"
+        token_1_text_size: 7
+        _major_fill: ${colour/x11/red}
+        _minor_fill: ${colour/xxp/BLACK}
+        _related_fill: ${colour/hollasch/tomato}
+      charter:
+        _:
+          label_text_text: "Station fee: L.40"
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: $[index_of (5)]
+
+    SFA:
+      _:
+        long_name_text_text: |
+            Società Ferroviaria
+            Akragas
+        short_name_text_text: SFA
+        token_1_text_text: Girgenti (F11)
+        share_pct_text_fill: ${colour/xxp/BLACK}
+        _major_fill: ${colour/wikipedia/rich_lavender}
+        _minor_fill: ${colour/wikipedia/black}
+        _related_fill: ${colour/wikipedia/plum_web}
+      charter:
+        _:
+          label_text_text: "Station fee: L.40"
+      token:
+        _:
+          inner_circle_fill: ${_/_major_fill}
+          inner_circle_radius: 9
+          short_name_text_size: 8
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: $[index_of (5)]
+
+    CTL:
+      _:
+        long_name_text_text: |
+            Compagnia Trasporti
+            Lilibeo
+        short_name_text_text: CTL
+        token_1_text_text: Marsala (A6)
+        _major_fill: ${colour/wikipedia/canary_yellow}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/wikipedia/icterine}
+        name_stripe_box_suppress: True
+      charter:
+        _:
+          label_text_text: "Station fee: L.40"
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 10
+          short_name_text_x_inset: 0
+          #short_name_text_y_inset: -2
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: "$[index_of (5)]"
+
+    RCS:
+      _:
+        long_name_text_text: |
+            Rete Centrale
+            Sicula
+        short_name_text_text: RCS
+        token_1_text_text: Palermo (E4)
+        _major_fill: ${colour/wikipedia/amber_sae_ece}
+        _minor_fill: ${colour/x11/white}        
+        _related_fill: ${colour/wikipedia/pink_orange}
+      charter:
+        _:
+          label_text_text: "Station fee: L.130"
+      token:
+        _:
+          inner_circle_fill: ${_/_major_fill}
+          inner_circle_radius: 9
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: $[index_of (5)]
+
+    ATA:
+      _:
+        long_name_text_text: |
+            Azienda Trasporti
+            Archimede
+        short_name_text_text: ATA
+        token_1_text_text: Siacusa (M14)
+        _major_fill: ${colour/xxp/D_GREEN}
+        _minor_fill: ${colour/xxp/D_GREEN}
+        _related_fill: ${colour/hollasch/cinnabar_green}
+        name_stripe_box_suppress: True
+      charter:
+        _:
+          label_text_text: "Station fee: L.30"
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 10
+          short_name_text_x_inset: 0
+          #short_name_text_y_inset: -2
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of (7)]
+
+marker:
+  index:
+    round:
+      token:
+        ELEMENTS:
+          - token_interior_box
+          - outer_circle
+          - middle_circle
+          - inner_circle
+
+        index: $[index_of (1)]
+      outer_circle:
+        fill: ${colour/galatolol/yellow}
+      middle_circle:
+        fill: ${colour/galatolol/green}
+      inner_circle:
+        fill: ${colour/galatolol/brown}
+
+    plus20:
+      token:
+        _:
+          name_stripe_box_suppress: True
+          short_name_text_text: "+20"
+          short_name_text_fill: ${colour/xxp/BLACK}
+          short_name_text_size: 10
+          outer_circle_fill: ${colour/wikipedia/white}
+          middle_circle_fill: ${colour/wikipedia/white}
+        ELEMENTS: ${TEMPLATE_ring/.}
+        index: "$[index_of (2)]"
+
+    ter40:
+      token:
+        _:
+          name_stripe_box_suppress: True
+          short_name_text_text: "40"
+          short_name_text_fill: ${colour/xxp/BLACK}
+          short_name_text_size: 10
+          outer_circle_fill: ${colour/wikipedia/white}
+          middle_circle_fill: ${colour/wikipedia/white}
+        ELEMENTS: ${TEMPLATE_ring/.}
+        index: "$[index_of (9)]"
+
+    ter80:
+      token:
+        _:
+          name_stripe_box_suppress: True
+          short_name_text_text: "80"
+          short_name_text_fill: ${colour/xxp/BLACK}
+          short_name_text_size: 10
+          outer_circle_fill: ${colour/wikipedia/white}
+          middle_circle_fill: ${colour/wikipedia/white}
+        ELEMENTS: ${TEMPLATE_ring/.}
+        index: "$[index_of (9)]"
+
+    ter160:
+      token:
+        _:
+          name_stripe_box_suppress: True
+          short_name_text_text: "160"
+          short_name_text_fill: ${colour/xxp/BLACK}
+          short_name_text_size: 10
+          outer_circle_fill: ${colour/wikipedia/white}
+          middle_circle_fill: ${colour/wikipedia/white}
+        ELEMENTS: ${TEMPLATE_ring/.}
+        index: "$[index_of (9)]"
+
+private:
+  _:
+    long_name_text_size: 13
+    money_bar_box_y: 12
+    closes_text_size: 8
+    closes_text_text: "Closed by 12H"
+    power_text_size: 9
+    revenue_text_x: 168
+    asset_interior_box_fill: ${colour/scale/yellow_0}
+    money_bar_box_fill: ${colour/wikipedia/bubble_gum}
+    cost_text_fill: ${colour/xxp/BLACK}
+    revenue_text_fill: ${colour/xxp/BLACK}
+
+  index:
+
+    P1:
+      _:
+        long_name_text_text: |
+            Società Corriere Etnee
+        power_text_text: "Blocks Acireale (M8)."
+        cost_text_text: "Cost: L.20"
+        revenue_text_text: "Revenue: L.5"
+
+    P2:
+      _:
+        long_name_text_text: |
+            Studio di Ingegneria
+            Giuseppe Incorpora
+        power_text_text: |
+            For owning company laying or upgrading
+            standard gauge track costs half
+            the terrain cost.
+            Narrow gauge track costs normal.
+        cost_text_text: "Cost: L.45"
+        revenue_text_text: "Revenue: L.10"
+
+    P3:
+      _:
+        long_name_text_text: |
+            Compagnia Navale
+            Mediterranea
+        power_text_text: |
+            Owning company may close this private
+            company in order to place the +20 marker
+            on any port. The port is worth L.20 more
+            for the owning company only.
+        cost_text_text: "Cost: L.75"
+        revenue_text_text: "Revenue: L.15"
+
+    P4:
+      _:
+        long_name_text_text: |
+            Società Marittima Siciliana
+        power_text_text: |
+            Owning company may close this private
+            company instead of performing track and
+            station actions.
+            Owning company then selects any coastal
+            hex, optionally lays or upgrades track there,
+            then optionally places a station there.
+        cost_text_text: "Cost: L.110"
+        revenue_text_text: "Revenue: L.20"
+
+    P5:
+      _:
+        closes_text_text: "Closed by 12H / when linked company buys train"
+        closes_text_x_inset: -2
+        closes_text_size: 8
+        long_name_text_text: |
+            Reale Società d'Affari
+        power_text_text: |
+            Comes with the presidency of
+            the first company.
+            
+            Cannot be sold to a public company.
+        cost_text_text: "Cost: L.150"
+        revenue_text_text: "Revenue: L.25"
+
+train:
+  _:
+    long_name_text_size: 50
+
+  index:
+    4H:
+      _:
+        asset_interior_box_fill_p: YELLOW
+        rust_bar_box_fill_p: BLUE
+        rusted_text_text: Rusted by 4
+        long_name_text_text: "8H"
+        cost_text_text_p: L.100
+      model:
+        index: $[index_of (4)]
+
+    6H:
+      _:
+        asset_interior_box_fill_p: GREEN
+        rust_bar_box_fill_p: RED
+        rusted_text_text: Rusted by 10H
+        long_name_text_text: "6H"
+        cost_text_text_p: L.200
+      model:
+        index:
+          "1":
+            top_note_text:
+              text: |
+                4-5 player
+          "2":
+          "3":
+          "4":
+
+    8H:
+      _:
+        asset_interior_box_fill_p: BLUE
+        rust_bar_box_fill_p: GRAY
+        rusted_text_text: Rusted by 16H
+        long_name_text_text: "8H"
+        cost_text_text_p: L.350
+      model:
+        index:
+          "1":
+            top_note_text:
+              text: |
+                4-5 player
+          "2":
+          "3":
+
+    10H:
+      _:
+        asset_interior_box_fill_p: BROWN
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "10H"
+        cost_text_text_p: L.550
+        rusted_text_text: Permanent
+      model:
+        index: $[index_of (2)]
+
+    12H:
+      _:
+        asset_interior_box_fill_p: RED
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "12H"
+        cost_text_text_p: L.800
+        rusted_text_text: Permanent
+      model:
+        index: $[index_of (1)]
+
+    16H:
+      _:
+        asset_interior_box_fill_p: GRAY
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "16H"
+        cost_text_text_p: L.1100
+        rusted_text_text: Permanent
+      model:
+      model:
+        index:
+          "1":
+            top_note_text:
+              text: |
+                4-5 player
+          "2":
+          "3":
+          "4":
+          "5":
+
+    R6H:
+      _:
+        asset_interior_box_fill: ${colour/wikipedia/cool_black}
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "R6H"
+        cost_text_text_p: L.350
+        rusted_text_text: Permanent
+        long_name_text_size: 40
+      model:
+        index: $[index_of (2)]
