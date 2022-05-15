@@ -208,7 +208,7 @@ marker:
           name_stripe_box_suppress: True
           short_name_text_text: "+20"
           short_name_text_fill: ${colour/xxp/BLACK}
-          short_name_text_size: 10
+          short_name_text_size: 11
           outer_circle_fill: ${colour/wikipedia/white}
           middle_circle_fill: ${colour/wikipedia/white}
         ELEMENTS: ${TEMPLATE_ring/.}
@@ -220,7 +220,7 @@ marker:
           name_stripe_box_suppress: True
           short_name_text_text: "40"
           short_name_text_fill: ${colour/xxp/BLACK}
-          short_name_text_size: 10
+          short_name_text_size: 11
           outer_circle_fill: ${colour/wikipedia/white}
           middle_circle_fill: ${colour/wikipedia/white}
         ELEMENTS: ${TEMPLATE_ring/.}
@@ -232,7 +232,7 @@ marker:
           name_stripe_box_suppress: True
           short_name_text_text: "80"
           short_name_text_fill: ${colour/xxp/BLACK}
-          short_name_text_size: 10
+          short_name_text_size: 11
           outer_circle_fill: ${colour/wikipedia/white}
           middle_circle_fill: ${colour/wikipedia/white}
         ELEMENTS: ${TEMPLATE_ring/.}
@@ -244,7 +244,7 @@ marker:
           name_stripe_box_suppress: True
           short_name_text_text: "160"
           short_name_text_fill: ${colour/xxp/BLACK}
-          short_name_text_size: 10
+          short_name_text_size: 11
           outer_circle_fill: ${colour/wikipedia/white}
           middle_circle_fill: ${colour/wikipedia/white}
         ELEMENTS: ${TEMPLATE_ring/.}
