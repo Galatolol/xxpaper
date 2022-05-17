@@ -346,7 +346,7 @@ train:
     6H:
       _:
         asset_interior_box_fill_p: GREEN
-        rust_bar_box_fill_p: RED
+        rust_bar_box_fill_p: BROWN
         rusted_text_text: Rusted by 10H
         long_name_text_text: "6H"
         cost_text_text_p: L.200
