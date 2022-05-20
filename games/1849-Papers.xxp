@@ -337,8 +337,8 @@ train:
       _:
         asset_interior_box_fill_p: YELLOW
         rust_bar_box_fill_p: BLUE
-        rusted_text_text: Rusted by 4
-        long_name_text_text: "8H"
+        rusted_text_text: Rusted by 8H
+        long_name_text_text: "4H"
         cost_text_text_p: L.100
       model:
         index: $[index_of (4)]

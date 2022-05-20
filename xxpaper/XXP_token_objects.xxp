@@ -1,3 +1,7 @@
+token_interior_box:
+  x: 36
+  y: 36
+
 CUT_ELEMENT: cutline_circle
 
 TEMPLATE_basketball:
@@ -337,16 +341,16 @@ bottom_half_box:
 
 top_line_box:
   x: ${token_interior_box/x}
-  y: 4
+  y: 3
   x_inset: 0
-  y_inset: $[${token_interior_box/y} / 2.0 + 8]
+  y_inset: $[${token_interior_box/y} / 2.0 + 7]
   fill: ${_/_major_fill_2}
 
 bottom_line_box:
   x: ${token_interior_box/x}
-  y: 4
+  y: 3
   x_inset: 0
-  y_inset: $[${token_interior_box/y} / 2.0 - 12]
+  y_inset: $[${token_interior_box/y} / 2.0 - 10]
   fill: ${_/_minor_fill_2}
 
 top_rotate:
@@ -371,26 +375,26 @@ vertical_stripe_box:
 outer_circle:
   x: $[${token_interior_box/x} / 2]
   y: $[${token_interior_box/y} / 2]
-  radius: 24
+  radius: 20
   fill: ${_/_major_fill}
 
 middle_circle:
   x: $[${token_interior_box/x} / 2]
   y: $[${token_interior_box/y} / 2]
-  radius: 13
+  radius: 11
   fill: ${_/_minor_fill}
 
 inner_circle:
   x: $[${token_interior_box/x} / 2]
   y: $[${token_interior_box/y} / 2]
-  radius: 8
+  radius: 7
   fill: ${_/_related_fill}
 
 middle_box:
-  x: 26
-  y: 26
-  x_inset: $[${token_interior_box/x} / 2 - ${middle_box/x} / 2]
-  y_inset: $[${token_interior_box/y} / 2 - ${middle_box/y} / 2]
+  x: 20
+  y: 20
+  x_inset: $[${token_interior_box/x} / 2 - 10]
+  y_inset: $[${token_interior_box/y} / 2 - 10]
   fill: ${_/_major_fill}
 
 middle_rotate:

@@ -1,0 +1,316 @@
+private:
+  _:
+    long_name_text_size: 11
+    money_bar_box_y: 13
+    closes_text_size: 7
+    power_text_size: 9
+    power_text_y_inset: 5
+    revenue_text_size: 10
+    revenue_text_y: 3
+    revenue_h_center: 0
+    revenue_v_center: -1
+    close_bar_box_suppress: true
+    closes_text_text: ""
+    long_name_text_y: 87
+    asset_interior_box_fill: ${colour/scale/yellow_0}
+    money_bar_box_suppress: true
+    cost_text_text: ""
+    revenue_text_text: ""
+    number_text_y: -1
+
+  index:
+    MinorCoal:
+      _:
+        long_name_text_text: |
+            Minor Coal Mine
+        number_text_text: "1"
+        power_text_text: |
+            1 coal token.
+            May place a coal token upon laying
+            a yellow tile on a mountain hex
+            adjacent to a city or an off-board.
+            No terrain cost for that lay.
+            That tile cannot be upgraded.
+        value_text_text: "$30"
+
+    MediumCoal:
+      _:
+        long_name_text_text: |
+            Coal Mine
+        number_text_text: "5"
+        value_text_text: "$60"
+        power_text_text: |
+            2 coal tokens.
+            May place a coal token upon laying
+            a yellow tile on a mountain hex
+            adjacent to a city or an off-board.
+            No terrain cost for that lay.
+            That tile cannot be upgraded.
+
+    MajorCoal:
+      _:
+        long_name_text_text: |
+            Major Coal Mine
+        number_text_text: "10"
+        value_text_text: "$90"
+        power_text_text: |
+            3 coal tokens.
+            May place a coal token upon laying
+            a yellow tile on a mountain hex
+            adjacent to a city or an off-board.
+            No terrain cost for that lay.
+            That tile cannot be upgraded.
+
+    Engineers:
+      _:
+        long_name_text_text: |
+            Mountain Engineers
+        number_text_text: "3"
+        value_text_text: "$40"
+        power_text_text: |
+            Gains $20 after laying a yellow
+            tile on a mountain hex.
+            Terrain cost must be paid first.
+
+    SmallBridge:
+      _:
+        long_name_text_text: |
+            Ohio Bridge Co.
+        number_text_text: "2"
+        value_text_text: "$40"
+        power_text_text: |
+            1 bridge token.
+            May place a bridge token on
+            a river city (G6, H3, H9).
+            No connection required.
+            Does not pay terrain cost for rivers.
+
+    BigBridge:
+      _:
+        long_name_text_text: |
+            Union Bridge Co.
+        number_text_text: "8"
+        value_text_text: "$80"
+        power_text_text: |
+            2 bridge tokens.
+            May place a bridge token on
+            a river city (G6, H3, H9).
+            No connection required.
+            Does not pay terrain cost for rivers.
+
+    TrainStation:
+      _:
+        long_name_text_text: |
+            Train Station
+        number_text_text: "7"
+        value_text_text: "$80"
+        power_text_text: |
+            Gains an additional station.
+
+    MinorMail:
+      _:
+        long_name_text_text: |
+            Minor Mail Contract
+        number_text_text: "6"
+        value_text_text: "$60"
+        money_bar_box_suppress: false
+        revenue_text_x: 4
+        revenue_text_h_center: 1
+        revenue_text_text: "Revenue: $10 if owns a train"
+        power_text_text: ""
+
+    MediumMail:
+      _:
+        long_name_text_text: |
+            Mail Contract
+        number_text_text: "9"
+        value_text_text: "$90"
+        revenue_text_x: 4
+        revenue_text_h_center: 1
+        money_bar_box_suppress: false
+        revenue_text_text: "Revenue: $15 if owns a train"
+        power_text_text: ""
+
+    MajorMail:
+      _:
+        long_name_text_text: |
+            Major Mail Contract
+        number_text_text: "11"
+        value_text_text: "$120"
+        revenue_text_x: 4
+        revenue_text_h_center: 1
+        money_bar_box_suppress: false
+        revenue_text_text: "Revenue: $20 if owns a train"
+        power_text_text: ""
+
+    Pittsburgh:
+      _:
+        long_name_text_text: |
+            Pittsburgh Steel Mill
+        number_text_text: "4"
+        value_text_text: "$40"
+        power_text_text: |
+            May place a yellow B tile
+            in Pittsburgh (F13).
+            Does not have to be connected.
+            Counts as a yellow tile lay.
+
+    Buffalo:
+      _:
+        long_name_text_text: |
+            Buffalo Rail Center
+        number_text_text: "16"
+        value_text_text: "$40"
+        power_text_text: |
+            May place a yellow B tile
+            in Buffalo (C14).
+            Does not have to be connected.
+            Counts as a yellow tile lay.
+
+    Toledo:
+      _:
+        long_name_text_text: |
+            Toledo Industry
+        number_text_text: "17"
+        value_text_text: "$40"
+        power_text_text: |
+            May place a yellow B tile
+            in Toledo (D7).
+            Does not have to be connected.
+            Counts as a yellow tile lay.
+
+    Indianapolis:
+      _:
+        long_name_text_text: |
+            Indianapolis Market
+        number_text_text: "24"
+        value_text_text: "$40"
+        power_text_text: |
+            May place a yellow B tile
+            in Indianapolis (F3).
+            Does not have to be connected.
+            Counts as a yellow tile lay.
+
+    StationSubsidy:
+      _:
+        long_name_text_text: |
+            Station Subsidy
+        number_text_text: "21"
+        value_text_text: "$70"
+        power_text_text: |
+            Gains $50 every time it converts.
+
+    Shark:
+      _:
+        long_name_text_text: |
+            Loan Shark
+        number_text_text: "12"
+        value_text_text: "$60"
+        power_text_text: |
+            Gains $60 along with this private.
+            Pay extra $10 interests for
+            the rest of the game.
+
+    Ponzi:
+      _:
+        long_name_text_text: |
+            Ponzi Scheme
+        number_text_text: "13"
+        value_text_text: "$100"
+        power_text_text: |
+            No special power.
+
+    Parachute:
+      _:
+        long_name_text_text: |
+            Golden Parachute
+        number_text_text: "20"
+        value_text_text: "$100"
+        power_text_text: |
+            The president of this company gains
+            $100 when the Golden Parachute
+            is transferred to a company with
+            a different player as president
+            or is discarded to the bank.
+
+    Inventor:
+      _:
+        long_name_text_text: |
+            Inventor
+        number_text_text: "14"
+        value_text_text: "$70"
+        power_text_text: |
+            Gains cash when the first train of
+            each type is purchased or exported:
+            10x the train size.
+            Exception: no payment for a 2+.
+
+    Scrapper:
+      _:
+        long_name_text_text: |
+            Scrapper
+        number_text_text: "15"
+        value_text_text: "$40"
+        power_text_text: |
+            Receives compensation for
+            each train it owns that rusts:
+            2/2+: $30
+            3: $75
+            4: $150
+
+    ExpressTrack:
+      _:
+        long_name_text_text: |
+            Express Track
+        number_text_text: "18"
+        value_text_text: "$30"
+        power_text_text: |
+            The first tile operation costs $10.
+            The second costs $0.
+            If it owns Efficient Track too,
+            both operations cost $0.
+
+    EfficientTrack:
+      _:
+        long_name_text_text: |
+            Efficient Track
+        number_text_text: "19"
+        value_text_text: "$40"
+        power_text_text: |
+            The second tile operation costs $10.
+            If it owns Express Track too,
+            both operations cost $0.
+
+    CountryRanch:
+      _:
+        long_name_text_text: |
+            Country Ranch
+        number_text_text: "22"
+        value_text_text: "$30"
+        power_text_size: 7
+        power_text_text: |
+            1 ranch token.
+            May place a ranch token upon laying
+            a yellow tile that is adjacent to
+            a city or an offboard.
+            Cannot be placed next to a Bcity,
+            Atlanta (J7), Chicago (D1), nor on or
+            East of a mountain in that hex row.
+            That tile cannot be upgraded.
+
+    RuralRanch:
+      _:
+        long_name_text_text: |
+            Rural Ranch
+        number_text_text: "23"
+        value_text_text: "$60"
+        power_text_size: 7
+        power_text_text: |
+            2 ranch tokens.
+            May place a ranch token upon laying
+            a yellow tile that is adjacent to
+            a city or an off-board.
+            Cannot be placed next to a B-city,
+            Atlanta (J7), Chicago (D1), nor on or
+            East of a mountain in that hex row.
+            That tile cannot be upgraded.
