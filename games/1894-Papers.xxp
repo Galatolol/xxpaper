@@ -16,9 +16,9 @@ company:
   share:
     _:
       type_bar_box_fill: ${colour/wikipedia/golden_yellow}
-      type_bar_box_y: 13
-      side_bar_lsplit_box_suppress: True
-      side_bar_rsplit_box_suppress: True
+      #type_bar_box_y: 13
+      #side_bar_lsplit_box_suppress: True
+      #side_bar_rsplit_box_suppress: True
       share_num_text_x: 167
   token:
     _:
@@ -395,17 +395,20 @@ marker:
 private:
   _:
     long_name_text_size: 11
-    long_name_text_y: 77
+    #long_name_text_y: 77
     closes_text_size: 8
     closes_text_text: "Closed in red phase"
     power_text_size: 8
-    power_text_y: 2
+    power_text_y: -1
     revenue_text_x: 168
     asset_interior_box_fill: ${colour/scale/yellow_0}
-    money_bar_box_y: 13
+    money_bar_box_y: 12
     money_bar_box_fill: ${colour/wikipedia/bubble_gum}
     cost_text_fill: ${colour/xxp/BLACK}
     revenue_text_fill: ${colour/xxp/BLACK}
+    sell_bar_box_suppress: False
+    sell_bar_box_fill: ${colour/wikipedia/bubble_gum}
+    long_name_text_y: 68
 
   index:
 
@@ -414,13 +417,12 @@ private:
         long_name_text_text: |
             Ligne Longwy–
             –Villerupt–Micheville
-        #Jhangeli - (Luxembourgs' narrow gauge rails)
         power_text_text: |
             Blocks I14.
-            Owning company may lay a yellow
-            track tile in I14, in addition to
-            the regular track action.
+            Owning company may lay a yellow track tile
+            in I14, in addition to the regular track action.
             Doesn't have to be connected.
+        sell_text_text: "May be sold for F10 – F40"
         cost_text_text: "Cost: F20"
         revenue_text_text: "Revenue: F5"
 
@@ -430,38 +432,38 @@ private:
             Charleroi–Sud
         power_text_text: |
             Blocks G14.
-            Owning company may lay a yellow
-            track tile or upgrade a yellow track tile
-            in Charleroi (G14), along with an
-            optional free station marker.
+            Owning company may lay a yellow track tile
+            or upgrade a yellow track tile in Charleroi (G14),
+            then place an optional free station marker there.
             Counts as a track build.
             Doesn't have to be connected.
+        sell_text_text: "May be sold for F25 – F100"
         cost_text_text: "Cost: F50"
         revenue_text_text: "Revenue: F10"
 
     P3:
       _:
         long_name_text_text: |
-            Ligne
-            de Saint–Quentin à Guise
+            Ligne de Saint–Quentin à Guise
         power_text_text: |
-            Revenue of this is equal
-            to twice the revenue
-            of the city of Saint–Quentin (G10).
-        cost_text_text: "Cost: F70"
+            Revenue of this is equal to twice the revenue
+            of the city of Saint–Quentin (G10) if that
+            city is green or brown, otherwise it's F0.
+        sell_text_text: "May be sold for F45 – F180"
+        cost_text_text: "Cost: F90"
         revenue_text_text: "Revenue: F?"
         closes_text_text: "Closed in gray phase"
 
     P4:
       _:
         long_name_text_text: |
-            Port company
+            London shipping
         power_text_text: |
-            Owning company may place a +10
-            marker in England (A10). For that
-            company only, England's value is
-            F10 higher.
+            Owning company may place a +10 marker
+            in London (A10). For that company only,
+            London's value is F10 higher.
             The marker is never removed.
+        sell_text_text: "May be sold for F50 – F200"
         cost_text_text: "Cost: F100"
         revenue_text_text: "Revenue: F15"
 
@@ -471,6 +473,7 @@ private:
             CAB minor stakeholding
         power_text_text: |
             Comes with a 10% share of CAB.
+        sell_text_text: "May be sold for F70 – F280"
         cost_text_text: "Cost: F140"
         revenue_text_text: "Revenue: F20"
 
@@ -482,14 +485,15 @@ private:
             PLM major stakeholding
         power_text_text: |
             Comes with the presidency of PLM.
-            Cannot be purchased by a company.
-        cost_text_text: "Cost: F180"
+        sell_text_text: "Cannot be sold"
+        cost_text_text: "Cost: F200"
         revenue_text_text: "Revenue: F25"
 
 train:
   _:
-    rusted_text_size: 14
-    rust_bar_box_y: 27
+    rusted_text_size: 13
+    rusted_text_y: 6
+    rust_bar_box_y: 20
     long_name_text_y: 95
   index:
     2T:
@@ -500,7 +504,8 @@ train:
         long_name_text_text: "2"
         cost_text_text_p: "F80"
         note_text_text: |
-            Upgrade to 3: F120
+            Upgrade to
+            3: F120
       model:
         index: $[index_of (7)]
 
@@ -512,7 +517,8 @@ train:
         long_name_text_text: "3"
         cost_text_text_p: "F160"
         note_text_text: |
-            Upgrade to 4: F220
+            Upgrade to
+            4: F220
       model:
         index: $[index_of (5)]
 
@@ -524,7 +530,8 @@ train:
         long_name_text_text: "4"
         cost_text_text_p: "F300"
         note_text_text: |
-            Upgrade to 5: F250
+            Upgrade to
+            5: F250
       model:
         index: $[index_of (3)]
 
@@ -533,11 +540,12 @@ train:
         asset_interior_box_fill_p: BROWN
         rust_bar_box_fill_p: PURPLE
         long_name_text_text: "5"
-        rusted_text_text: Rusted by D
+        rusted_text_text: Rusted by Diesel
         cost_text_text_p: "F400"
         note_text_text: |
-            Upgrade to 6: F400
-            Upgrade to D: F700
+            Upgrade to
+            6: F400
+            Diesel: F700
       model:
         index:
           "1":
@@ -556,8 +564,9 @@ train:
         rusted_text_text: Permanent
         cost_text_text_p: "F600"
         note_text_text: |
-            Upgrade to 7: F450
-            Upgrade to D: F600
+            Upgrade to
+            7: F450
+            Diesel: F600
       model:
         index: $[index_of (3)]
 
@@ -569,7 +578,8 @@ train:
         rusted_text_text: Permanent
         cost_text_text_p: "F750"
         note_text_text: |
-            Upgrade to D: F525
+            Upgrade to
+            Diesel: F525
       model:
         index: $[index_of (3)]
 
@@ -577,7 +587,8 @@ train:
       _:
         asset_interior_box_fill_p: PURPLE
         rust_bar_box_fill_p: BLACK
-        long_name_text_text: "D"
+        long_name_text_text: "Diesel"
+        long_name_text_size: 32
         cost_text_text_p: "F900"
         rusted_text_text: Permanent
       model:

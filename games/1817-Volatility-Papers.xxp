@@ -17,6 +17,7 @@ private:
     cost_text_text: ""
     revenue_text_text: ""
     number_text_y: -1
+    value_text_size: 24
 
   index:
     MinorCoal:
@@ -314,3 +315,73 @@ private:
             Atlanta (J7), Chicago (D1), nor on or
             East of a mountain in that hex row.
             That tile cannot be upgraded.
+
+train:
+  _:
+    rusted_text_size: 14
+    rust_bar_box_y: 27
+    long_name_text_y: 95
+
+  index:
+    2T:
+      _:
+        asset_interior_box_fill_p: YELLOW
+        rust_bar_box_fill_p: BLUE
+        rusted_text_text: Rusted by 4
+        long_name_text_text: "2"
+        cost_text_text_p: "F80"
+        note_text_text: |
+            Upgrade to 3: F120
+      model:
+        index: $[index_of (1)]
+
+    3T:
+      _:
+        asset_interior_box_fill_p: GREEN
+        rust_bar_box_fill_p: BROWN
+        rusted_text_text: Rusted by 5
+        long_name_text_text: "3"
+        cost_text_text_p: "F160"
+        note_text_text: |
+            Upgrade to 4: F220
+      model:
+        index: $[index_of (1)]
+
+    4T:
+      _:
+        asset_interior_box_fill_p: BLUE
+        rust_bar_box_fill_p: GRAY
+        rusted_text_text: Rusted by 7
+        long_name_text_text: "4"
+        cost_text_text_p: "F300"
+        note_text_text: |
+            Upgrade to 5: F250
+      model:
+        index: $[index_of (1)]
+
+    5T:
+      _:
+        asset_interior_box_fill_p: BROWN
+        rust_bar_box_fill_p: PURPLE
+        long_name_text_text: "5"
+        rusted_text_text: Rusted by D
+        cost_text_text_p: "F400"
+        note_text_text: |
+            Upgrade to 6: F400
+            Upgrade to D: F700
+      model:
+        index:
+          "1":
+
+    6T:
+      _:
+        asset_interior_box_fill_p: RED
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "6"
+        rusted_text_text: Permanent
+        cost_text_text_p: "F600"
+        note_text_text: |
+            Upgrade to 7: F450
+            Upgrade to D: F600
+      model:
+        index: $[index_of (1)]

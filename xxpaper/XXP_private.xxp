@@ -17,6 +17,8 @@ private:
       - cost_text
       - revenue_text
       - number_text
+      - sell_bar_box
+      - sell_text
 
     CUT_ELEMENT: cutline_box
 
@@ -28,6 +30,7 @@ private:
     cost_text_text: "Cost: £XXX"
     revenue_text_text: "Revenue: £XXX"
     number_text_text: ""
+    sell_text_text: "May be sold for:"
 
   cutline_box: ${DEFAULT/asset_tile}
 
@@ -52,6 +55,26 @@ private:
     x: 4
     y: 0
     fill: $[black_or_white (${close_bar_box/fill})]
+
+  sell_bar_box:
+    x_inset: 0
+    y_inset: $[${asset_interior_box/x} - ${close_bar_box/y} - 11]
+    x: ${asset_interior_box/y}
+    y: 11
+    fill: ${colour/xxp/WHITE}
+    suppress: True
+
+  sell_text:
+    h_center: 1
+    v_center: 0
+    typeface: ${DEFAULT/typeface_bold}
+    size: 8
+    x_inset: 0
+    y_inset: $[${asset_interior_box/x} - 11 - 11 + 3]
+    x: 4
+    y: 0
+    fill: $[black_or_white (${sell_bar_box/fill})]
+    suppress: ${sell_bar_box/suppress}
 
   number_text:
     h_center: 1

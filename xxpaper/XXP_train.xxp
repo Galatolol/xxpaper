@@ -61,7 +61,7 @@ train:
     h_center: 0
     v_center: -1
     x: 50
-    y: 34
+    y: 28
 
   rust_bar_box:
     fill: ${colour/xxp/TRAIN_${_/rust_bar_box_fill_p}}
