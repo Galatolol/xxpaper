@@ -14,6 +14,7 @@ train:
       - note_text
       - rust_bar_box
       - rusted_text
+      - top_left_note_text
 
   _:
     cost_text_text_p: $999
@@ -75,3 +76,12 @@ train:
     v_center: -1
     x: 50
     y: $[${rust_bar_box/y} / 2 - ${rusted_text/size} / 2]
+
+  top_left_note_text:
+    fill: $[black_or_white (${asset_interior_box/fill})]
+    suppress: False
+    size: 10
+    h_center: 1
+    v_center: -1
+    x: 2
+    y: ${top_note_text/y}

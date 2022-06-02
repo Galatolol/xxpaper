@@ -495,6 +495,7 @@ train:
     rusted_text_y: 6
     rust_bar_box_y: 20
     long_name_text_y: 95
+    
   index:
     2T:
       _:

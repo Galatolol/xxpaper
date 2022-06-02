@@ -21,10 +21,10 @@ company:
       long_name_text_y_inset: -10
   share:
     _:
-      side_bar_lsplit_box_suppress: True
-      side_bar_rsplit_box_suppress: True
+      #side_bar_lsplit_box_suppress: True
+      #side_bar_rsplit_box_suppress: True
       type_bar_box_fill: ${colour/wikipedia/golden_yellow}
-      type_bar_box_y: 13
+      #type_bar_box_y: 13
       share_num_text_x: 167
       long_name_text_size: 11
   token:
@@ -282,14 +282,17 @@ marker:
 private:
   _:
     long_name_text_size: 11
-    long_name_text_y: 77
+    #long_name_text_y: 77
+    long_name_text_y: 68
     closes_text_size: 8
     closes_text_text: "Closes when FFC bought or power used"
     power_text_size: 8
-    power_text_y: 2
+    #power_text_y: 2
+    power_text_y: -1
     revenue_text_x: 168
     asset_interior_box_fill: ${colour/scale/yellow_0}
-    money_bar_box_y: 13
+    #money_bar_box_y: 13
+    money_bar_box_y: 12
     money_bar_box_fill: ${colour/wikipedia/bubble_gum}
     cost_text_fill: ${colour/xxp/BLACK}
     revenue_text_fill: ${colour/xxp/BLACK}
@@ -348,7 +351,7 @@ private:
     FFC:
       _:
         asset_interior_box_fill: ${colour/scale/yellow_0}
-        closes_text_text: "Operates until the end of the game"
+        closes_text_text: "Never closes"
         long_name_text_text: |
             Fishbourne Ferry Company
         power_text_text: |
@@ -445,9 +448,14 @@ private:
         index: $[index_of (8)]
 
 train:
+  _:
+    rusted_text_size: 13
+    rusted_text_y: 6
+    rust_bar_box_y: 20
+    long_name_text_y: 95
   long_name_text:
       typeface: ${DEFAULT/typeface}
-      size: 42
+      size: 50
 
   index:
     2+1T:
