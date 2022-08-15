@@ -24,7 +24,7 @@ class Page:
 
   @logtool.log_call
   def _borders (self):
-    if (Config.get ("xxpaper/cutline", {"default": False})
+    if (Config.get ("xxpaper/cutline", {"default": False}) #if True:
         and self.asset is not None):
       for x, y in itertools.product (range (self.x_dim), range (self.y_dim)):
         with XlateFrame (self.canvas,

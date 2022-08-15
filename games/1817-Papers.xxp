@@ -882,41 +882,6 @@ company:
         index: $[index_of (12)]
 
 
-#18mm complement
-
-    SF:
-      _:
-        long_name_text_text: |
-          South Fork
-        short_name_text_text: SF
-        _major_fill: ${colour/wikipedia/yellow_green}
-        _minor_fill: ${colour/wikipedia/lemon_lime}
-        _related_fill: ${colour/wikipedia/lemon_lime}
-      token:
-        _:
-          outer_circle_fill: ${_/_major_fill}
-          middle_circle_fill: ${_/_minor_fill}
-          inner_circle_fill: ${_/_major_fill}
-        ELEMENTS: ${TEMPLATE_bullseye/.}
-        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
-        index: $[index_of (12)]
-  
-    BT:
-      _:
-        long_name_text_text: |
-          Big Transport
-        short_name_text_text: BT
-        _major_fill: ${colour/wikipedia/barn_red}
-        _major_fill_2: ${colour/wikipedia/tractor_red}
-        _minor_fill: ${_/_major_fill}
-        _minor_fill_2: ${_/_major_fill_2}
-        _related_fill: ${colour/wikipedia/chinese_red}
-      token:
-        ELEMENTS: ${TEMPLATE_stripey/.}
-        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
-        index: $[index_of (12)]
-
-
 train:
   _:
     long_name_text_size: 58

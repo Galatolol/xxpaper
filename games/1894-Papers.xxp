@@ -508,7 +508,7 @@ train:
             Upgrade to
             3: F120
       model:
-        index: $[index_of (7)]
+        index: $[index_of (8)]
 
     3T:
       _:
@@ -521,7 +521,7 @@ train:
             Upgrade to
             4: F220
       model:
-        index: $[index_of (5)]
+        index: $[index_of (6)]
 
     4T:
       _:
@@ -548,14 +548,7 @@ train:
             6: F400
             Diesel: F700
       model:
-        index:
-          "1":
-            top_note_text:
-              text: |
-                4-player
-          "2":
-          "3":
-          "4":
+        index: $[index_of (3)]
 
     6T:
       _:
@@ -566,8 +559,8 @@ train:
         cost_text_text_p: "F600"
         note_text_text: |
             Upgrade to
-            7: F450
-            Diesel: F600
+            7: F400
+            Diesel: F500
       model:
         index: $[index_of (3)]
 
@@ -577,12 +570,12 @@ train:
         rust_bar_box_fill_p: BLACK
         long_name_text_text: "7"
         rusted_text_text: Permanent
-        cost_text_text_p: "F750"
+        cost_text_text_p: "F700"
         note_text_text: |
             Upgrade to
-            Diesel: F525
+            Diesel: F450
       model:
-        index: $[index_of (3)]
+        index: $[index_of (2)]
 
     D:
       _:
@@ -590,7 +583,7 @@ train:
         rust_bar_box_fill_p: BLACK
         long_name_text_text: "Diesel"
         long_name_text_size: 32
-        cost_text_text_p: "F900"
+        cost_text_text_p: "F800"
         rusted_text_text: Permanent
       model:
-        index: $[index_of (10)]
+        index: $[index_of (9)]

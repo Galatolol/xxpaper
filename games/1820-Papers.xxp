@@ -1,22 +1,21 @@
 company:
   charter:
     _:
-      long_name_text_size: 14
-      label_text_text: ""
+      #long_name_text_size: 14
+      #label_text_text: ""
       comment_text_typeface: ${DEFAULT/typeface}
-      comment_text_size: 12
+      #comment_text_size: 12
       token_1_circle_y: 255
       token_1_text_y: 260
       token_5_circle_y: 60
       token_5_text_y: 32
       token_4_text_y: 110
-      token_2_text_size: 10
-      token_4_text_size: 10
-      comment_text_size: 10
-      token_2_text_text: free
+      token_2_text_size: 11
+      token_4_text_size: 11
+      token_2_text_text: Free
       token_4_text_text: £40
       token_3_text_y: 100
-      token_3_text_size: 10
+      token_3_text_size: 11
       token_3_text_text: £100
       token_3_circle_suppress: True
   share:
@@ -27,8 +26,6 @@ company:
       share_desc_text_x: 55
       share_num_text_text: 20/10/5/2%
       share_pct_text_text: 
-      side_bar_lsplit_box_suppress: True
-      side_bar_rsplit_box_suppress: True
       comment_text_size: 12
       comment_text_typeface: ${DEFAULT/typeface_bold}
       comment_text_y: 24
@@ -163,7 +160,7 @@ company:
         share_desc_text:
           text: "4 Shares"
         share_num_text:
-          text: "24%"
+          text: "8%"
         token_2a_embed:
           suppress: False
         token_3a_embed:
@@ -178,7 +175,7 @@ company:
         share_desc_text:
           text: "4 Shares"
         share_num_text:
-          text: "24%"
+          text: "8%"
         token_2a_embed:
           suppress: False
         token_3a_embed:
@@ -193,7 +190,7 @@ company:
         share_desc_text:
           text: "4 Shares"
         share_num_text:
-          text: "24%"
+          text: "8%"
         token_2a_embed:
           suppress: False
         token_3a_embed:
@@ -208,7 +205,7 @@ company:
         share_desc_text:
           text: "4 Shares"
         share_num_text:
-          text: "24%"
+          text: "8%"
         token_2a_embed:
           suppress: False
         token_3a_embed:
@@ -223,7 +220,7 @@ company:
         share_desc_text:
           text: "4 Shares"
         share_num_text:
-          text: "24%"
+          text: "8%"
         token_2a_embed:
           suppress: False
         token_3a_embed:
@@ -238,7 +235,7 @@ company:
         share_desc_text:
           text: "4 Shares"
         share_num_text:
-          text: "24%"
+          text: "8%"
         token_2a_embed:
           suppress: False
         token_3a_embed:
@@ -268,6 +265,10 @@ company:
           suppress: True
         token_2b_embed:
           suppress: False
+        side_bar_lsplit_box:
+          suppress: False
+        side_bar_rsplit_box:
+          suppress: False
       "24":
         comment_text:
           text: "President"
@@ -286,6 +287,10 @@ company:
         token_3b_embed:
           suppress: True
         token_2b_embed:
+          suppress: False
+        side_bar_lsplit_box:
+          suppress: False
+        side_bar_rsplit_box:
           suppress: False      
       "25":
         comment_text:
@@ -305,6 +310,10 @@ company:
         token_3b_embed:
           suppress: True
         token_2b_embed:
+          suppress: False
+        side_bar_lsplit_box:
+          suppress: False
+        side_bar_rsplit_box:
           suppress: False      
       "26":
         comment_text:
@@ -324,6 +333,10 @@ company:
         token_3b_embed:
           suppress: False
         token_2b_embed:
+          suppress: False
+        side_bar_lsplit_box:
+          suppress: False
+        side_bar_rsplit_box:
           suppress: False      
       "27":
         comment_text:
@@ -344,6 +357,10 @@ company:
           suppress: False
         token_2b_embed:
           suppress: False
+        side_bar_lsplit_box:
+          suppress: False
+        side_bar_rsplit_box:
+          suppress: False
   token:
     _:
       short_name_text_size: 8
@@ -359,44 +376,333 @@ company:
         _major_fill: ${colour/hollasch/hot_pink}
         _minor_fill: ${colour/hollasch/misty_rose}
         _related_fill: ${colour/hollasch/pink}
-      charter:
-        _:
-          comment_text_text: |
-           
-      share:
-        _:
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: $[index_of (20)] 
+
+    CQ:
+      _:
+        long_name_text_text: |
+          Connah's Quay
+          Railway
+        short_name_text_text: CQ
+        _major_fill: ${colour/wikipedia/canary_yellow}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/wikipedia/icterine}
+        name_stripe_box_suppress: True
+      token:
+        _:
+          short_name_text_size: 12
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of (20)]  
+
+    MB:
+      _:
+        long_name_text_text: |
+          Manchester & Birmingham
+          Railway
+        short_name_text_text: MB
+        _major_fill: ${colour/xxp/BLACK}
+        _minor_fill: ${colour/xxp/WHITE}
+        _related_fill: ${colour/x11/gray43}
+      charter:
+        _:
+          long_name_text_size: 13        
+      share:
+        _:
+          long_name_text_size: 10
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: $[index_of (20)]  
+
+    SD:
+      _:
+        long_name_text_text: |
+          Stockton & Darlington
+          Railway
+        short_name_text_text: SD
+        _major_fill: ${colour/wikipedia/blue_ryb}
+        _major_fill_2: ${colour/wikipedia/banana_yellow}
+        _minor_fill_2: ${_/_major_fill_2}
+        _minor_fill: ${_/_major_fill}
+        _minor_fill_2: ${_/_major_fill_2}
+        _related_fill: ${colour/hollasch/steel_blue}
+      charter:
+        _:
+          long_name_text_size: 13       
+      share:
+        _:
+          long_name_text_size: 10
+      token:
+        ELEMENTS: ${TEMPLATE_stripey/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
+        index: $[index_of (20)] 
+
+    CN:
+      _:
+        long_name_text_text: |
+          Chipping Norton
+          Railway
+        short_name_text_text: CN
+        _major_fill: ${colour/hollasch/brown_ochre}
+        _minor_fill: ${_\_major_fill}
+        _related_fill: ${colour/hollasch/brick}
+        name_stripe_box_suppress: True
+      token:        
+        _:
+          short_name_text_size: 12
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of (20)]  
+
+    LD:
+      _:
+        long_name_text_text: |
+          London & Dover
+          Railway
+        short_name_text_text: LD
+        _major_fill: ${colour/wikipedia/yellow_green}
+        _minor_fill: ${colour/wikipedia/lemon_lime}
+        _related_fill: ${colour/wikipedia/lemon_lime}
+      token:  
+        _:      
+          outer_circle_fill: ${_/_major_fill}
+          middle_circle_fill: ${_/_minor_fill}
+          inner_circle_fill: ${_/_major_fill}
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: $[index_of (20)]  
+
+    WM:
+      _:
+        long_name_text_text: |
+          Wrexham & Mold
+          Railway
+        short_name_text_text: WM
+        _major_fill: ${colour/x11/red}
+        _minor_fill: ${colour/xxp/BLACK}
+        _related_fill: ${colour/hollasch/tomato}
+      token:  
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: $[index_of (20)]  
 
     MH:
       _:
         long_name_text_text: |
           Mid-Hants
           Railway
-        short_name_text_text: BG
-        _major_fill: ${colour/hollasch/hot_pink}
-        _minor_fill: ${colour/hollasch/misty_rose}
-        _related_fill: ${colour/hollasch/pink}
-      charter:
+        short_name_text_text: MH
+        _major_fill: ${colour/x11/gold}
+        _minor_fill: ${colour/x11/limegreen}
+        _related_fill: ${colour/x11/yellowgreen}  
+      token:  
+        index: $[index_of (20)]  
+
+    W:
+      _:
+        long_name_text_text: |
+          Worcester
+          Railway
+        short_name_text_text: W
+        short_name_text_size: 15
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2 - 2)]
+        short_name_text_fill: ${colour/xxp/WHITE}
+        name_stripe_box_suppress: True
+        _major_fill: ${colour/xxp/M_RED}
+        _major_fill_2: ${colour/xxp/L_YELLOW}
+        _minor_fill: ${_/_major_fill}
+        _minor_fill_2: ${_/_major_fill_2}
+        _related_fill: ${colour/x11/lightcoral}
+      token:  
+        ELEMENTS: ${TEMPLATE_stripey/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
+        index: $[index_of (20)] 
+
+    J:
+      _:
+        long_name_text_text: |
+          Johnshaven
+          Railway
+        long_name_text_fill: ${colour/xxp/WHITE}
+        short_name_text_text: J
+        short_name_text_size: 20
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2)]
+        short_name_text_fill: ${colour/xxp/WHITE}
+        name_stripe_box_suppress: True
+        _major_fill: ${colour/xxp/D_GREEN}
+        _minor_fill: ${colour/xxp/D_GREEN}
+        _related_fill: ${colour/hollasch/cinnabar_green}
+      token:  
+        index: $[index_of (20)]  
+
+    S:
+      _:
+        long_name_text_text: |
+          Staffordshire
+          Railway
+        short_name_text_text: S
+        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2)]
+        name_stripe_box_suppress: True
+        _major_fill: ${colour/wikipedia/gold_metallic}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/wikipedia/jonquil}
+      token:  
+        index: $[index_of (20)]  
+
+    IW:
+      _:
+        long_name_text_text: |
+          Ipswich & Woodbridge
+          Railway
+        short_name_text_text: IW
+        _major_fill: ${colour/wikipedia/rich_lavender}
+        _minor_fill: ${colour/wikipedia/black}
+        _related_fill: ${colour/wikipedia/plum_web}
+      token:  
         _:
-          comment_text_text: |
-           
-      share:
-        _:
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
+          inner_circle_fill: ${_/_major_fill}
+          inner_circle_radius: 9
+          short_name_text_size: 8
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: $[index_of (20)]  
+
+    CS:
+      _:
+        long_name_text_text: |
+          Cambridge & Stamford
+          Railway
+        short_name_text_text: CS
+        _major_fill: ${colour/wikipedia/onyx}
+        _minor_fill: ${colour/wikipedia/lavender_gray}
+        _related_fill: ${colour/wikipedia/lavender_gray}
+        name_stripe_box_suppress: True
+        middle_box_fill: ${colour/wikipedia/dark_gray}
       token:
-        ELEMENTS: ${TEMPLATE_cross/.}
-        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        ELEMENTS: ${TEMPLATE_boxes/.}
+        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
+        _:
+          short_name_text_size: 12
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
+        index: $[index_of (20)]  
 
-    
+    DLC:
+      _:
+        long_name_text_text: |
+          Derby, Leek & Crewe
+          Railway
+        short_name_text_text: DLC
+        _major_fill: ${colour/wikipedia/amber_sae_ece}
+        _minor_fill: ${colour/x11/white}        
+        _related_fill: ${colour/wikipedia/pink_orange}
+      token:
+        _:
+          inner_circle_fill: ${_/_major_fill}
+          inner_circle_radius: 9
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: $[index_of (20)] 
 
+    NN:
+      _:
+        long_name_text_text: |
+          Norwich & Northampton
+          Railway
+        short_name_text_text: NN
+        _major_fill: ${colour/wikipedia/light_sky_blue}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/hollasch/powder_blue}
+        name_stripe_box_suppress: True
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 12
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of (20)] 
 
 train:
   index:
+    yellow:
+      _:
+        asset_interior_box_fill_p: YELLOW
+        rust_bar_box_fill_p: ${_/_asset_interior_box}
+        rusted_text_text: ""
+        long_name_text_text: "2"
+        cost_text_text: "Cost: £100"
+      model:
+        index: $[index_of (18)]
+
+    gold:
+      _:
+        asset_interior_box_fill: ${colour/wikipedia/yellow_orange}
+        rust_bar_box_fill_p: ${_/_asset_interior_box}
+        rusted_text_text: ""
+        long_name_text_text: "2+"
+        cost_text_text: "Cost: £120"
+      model:
+        index: $[index_of (18)]
+
+    green:
+      _:
+        asset_interior_box_fill_p: GREEN
+        rust_bar_box_fill_p: ${_/_asset_interior_box}
+        rusted_text_text: ""
+        long_name_text_text: "3+"
+        cost_text_text: "Cost: £250"
+      model:
+        index: $[index_of (17)]
+
+    blue:
+      _:
+        asset_interior_box_fill_p: BLUE
+        rust_bar_box_fill_p: ${_/_asset_interior_box}
+        rusted_text_text: ""
+        long_name_text_text: "5+"
+        cost_text_text: "Cost: £450"
+      model:
+        index: $[index_of (12)]
+
+    brown:
+      _:
+        asset_interior_box_fill_p: BROWN
+        rust_bar_box_fill_p: ${_/_asset_interior_box}
+        rusted_text_text: ""
+        long_name_text_text: "7+"
+        cost_text_text: "Cost: £800"
+      model:
+        index: $[index_of (11)]
+
+    red:
+      _:
+        asset_interior_box_fill_p: RED
+        rust_bar_box_fill_p: ${_/_asset_interior_box}
+        rusted_text_text: ""
+        long_name_text_text: "5D+"
+        long_name_text_size: 42
+        cost_text_text: "Cost: £1250"
+      model:
+        index: $[index_of (10)]
+
+    gray:
+      _:
+        asset_interior_box_fill_p: GRAY
+        rust_bar_box_fill_p: ${_/_asset_interior_box}
+        rusted_text_text: ""
+        long_name_text_text: "FLOOD"
+        long_name_text_size: 26
+        cost_text_text: "Cost: £2000"
+      model:
+        index: $[index_of (9)]
     
 marker:
   token:
