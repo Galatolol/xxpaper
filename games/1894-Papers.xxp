@@ -17,7 +17,7 @@ company:
       token_4_text_size: 10
       token_5_text_size: 10
       token_2_text_text: F40
-      token_3_text_text: F80
+      token_3_text_text: F100
       comment_text_text: ""
       label_text_size: 11
       comment_text_x: 130
@@ -39,8 +39,8 @@ company:
         short_name_text_text: CFOR
         token_1_text_text: D3
         token_2_text_text: H2
-        token_4_text_text: F80
-        token_5_text_text: F120
+        token_4_text_text: F100
+        token_5_text_text: F140
         _major_fill: ${colour/hollasch/brown_ochre}
         _minor_fill: ${_\_major_fill}
         _related_fill: ${colour/hollasch/brick}
@@ -73,8 +73,8 @@ company:
         short_name_text_text: Ouest
         token_1_text_text: B3
         token_2_text_text: E6
-        token_4_text_text: F80
-        token_5_text_text: F120
+        token_4_text_text: F100
+        token_5_text_text: F140
         _major_fill: ${colour/wikipedia/blue_ryb}
         _major_fill_2: ${colour/wikipedia/banana_yellow}
         _minor_fill_2: ${_/_major_fill_2}
@@ -82,11 +82,11 @@ company:
         _related_fill: ${colour/hollasch/steel_blue}
       charter:
         _:
-          label_text_text: "Chemins de fer de l'Ouest"
+          label_text_text: "Chemins de fer de l’Ouest"
       share:
         _:
           comment_text_text: |
-            Chemins de fer de l'Ouest
+            Chemins de fer de l’Ouest
           comment_text_y: 65
       token:
         ELEMENTS: ${TEMPLATE_stripey/.}
@@ -100,7 +100,7 @@ company:
         short_name_text_text: Nord
         token_1_text_text: E10
         token_2_text_text: G14
-        token_4_text_text: F80
+        token_4_text_text: F100
         _major_fill: ${colour/x11/red}
         _major_fill_2: ${colour/xxp/BLACK}
         _minor_fill_2: ${_/_major_fill_2}
@@ -125,7 +125,7 @@ company:
             GR
         short_name_text_text: GR
         token_1_text_text: D15
-        token_4_text_text: F80
+        token_4_text_text: F100
         _major_fill: ${colour/wikipedia/canary_yellow}
         _minor_fill: ${_/_major_fill}
         _related_fill: ${colour/wikipedia/icterine}
@@ -151,14 +151,14 @@ company:
             Est
         short_name_text_text: Est
         token_1_text_text: I9
-        token_4_text_text: F80
-        token_5_text_text: F120
+        token_4_text_text: F100
+        token_5_text_text: F140
         _major_fill: ${colour/wikipedia/amber_sae_ece}
         _minor_fill: ${colour/x11/white}
         _related_fill: ${colour/wikipedia/pink_orange}
       charter:
         _:
-          label_text_text: "Chemins de fer de l'Est"
+          label_text_text: "Chemins de fer de l’Est"
           comment_text_text: |
             For this company only, the
             revenue of Centre & Bourgogne
@@ -166,7 +166,7 @@ company:
       share:
         _:
           comment_text_text: |
-            Chemins de fer de l'Est
+            Chemins de fer de l’Est
           comment_text_y: 65
       token:
         _:
@@ -182,8 +182,8 @@ company:
             PLM
         short_name_text_text: PLM
         token_1_text_text: G4
-        token_4_text_text: F80
-        token_5_text_text: F120
+        token_4_text_text: F100
+        token_5_text_text: F140
         share_pct_text_fill: ${colour/xxp/BLACK}
         _major_fill: ${colour/wikipedia/rich_lavender}
         _minor_fill: ${colour/wikipedia/black}
@@ -225,12 +225,12 @@ company:
         _:
           label_text_text: |
             Chemins de fer
-            de l'État belge
+            de l’État belge
       share:
         _:
           comment_text_text: |
             Chemins de fer
-            de l'État belge
+            de l’État belge
           comment_text_y: 60
       token:
         _:
@@ -242,7 +242,7 @@ company:
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
         index: $[index_of (7)]
 
-    French1:
+    LF:
       _:
         long_name_text_text: |
           Late French
@@ -268,12 +268,13 @@ company:
         EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
         index: $[index_of (5)]
 
-    Belgian1:
+    LB:
       _:
         long_name_text_text: |
           Late Belgian
         short_name_text_text: LB
         token_1_text_text: Belgium
+        token_3_text_text: ""
         name_stripe_box_fill: ${colour/xxp/BLACK}
         _related_fill: ${colour/x11/grey75}
       charter:
@@ -287,8 +288,8 @@ company:
       token:
         _:
           _major_fill_1: ${colour/x11/grey45}
-          _major_fill_2: ${colour/x11/grey69}
-          _minor_fill_1: ${colour/x11/grey69}
+          _major_fill_2: ${colour/x11/grey80}
+          _minor_fill_1: ${colour/x11/grey80}
           _minor_fill_2: ${colour/x11/grey45}
         ELEMENTS: ${TEMPLATE_chequer/.}
         EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
@@ -376,6 +377,9 @@ private:
         long_name_text_text: |
             Antwerpen–Rotterdamsche
             Spoorwegmaatschappij
+        note_text_text: |
+            3–player
+        note_text_y_inset: -11
         power_text_text: |
             Revenue of this is eaual to F10
             if ownd by a company.
@@ -409,23 +413,41 @@ private:
             London (A10) is increased by the largest
             non–London, non–Luxembourg
             revenue on the route.
-        sell_text_text: "May be sold for F50 – F200"
+        sell_text_text: "May be sold for F45 – F180"
         cost_text_text: "Cost: F90"
         revenue_text_text: "Revenue: F15"
 
-    P4:
+    P4_3p:
       _:
         long_name_text_text: |
             Ligne de Saint–Quentin à Guise
+        note_text_text: |
+            3–player
         power_text_text: |
             Revenue of this is equal to F70 if
             Saint–Quentin (G10) is green,
             to F100 if it is brown,
             or to F0 otherwise.
-        sell_text_text: "May be sold for F45 – F180"
+        sell_text_text: "May be sold for F50 – F200"
         cost_text_text: "Cost: F100"
         revenue_text_text: "Revenue: F0 / 70 / 100"
-        closes_text_text: "Closed in gray phase"
+        closes_text_text: "Closed in purple phase"
+
+    P4_4p:
+      _:
+        long_name_text_text: |
+            Ligne de Saint–Quentin à Guise
+        note_text_text: |
+            4–player
+        power_text_text: |
+            Revenue of this is equal to F70 if
+            Saint–Quentin (G10) is green,
+            to F100 if it is brown,
+            or to F0 otherwise.
+        sell_text_text: "May be sold for F35 – F140"
+        cost_text_text: "Cost: F70"
+        revenue_text_text: "Revenue: F0 / 70 / 100"
+        closes_text_text: "Closed in purple phase"
 
     P5:
       _:

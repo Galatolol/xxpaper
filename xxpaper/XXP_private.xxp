@@ -11,6 +11,7 @@ private:
       - close_bar_box
       - closes_text
       - long_name_text
+      - note_text
       - value_text
       - power_text
       - money_bar_box
@@ -25,6 +26,7 @@ private:
   _:
     closes_text_text: "Closes in brown phase"
     long_name_text_text: ""
+    note_text_text: ""
     value_text: ""
     power_text_text: ""
     cost_text_text: "Cost: £XXX"
@@ -48,7 +50,6 @@ private:
     h_center: 1
     v_center: 0
     typeface: ${DEFAULT/typeface_bold}
-    #typeface: ${DEFAULT/typeface_bold_italic}
     size: 8
     x_inset: 0
     y_inset: $[${asset_interior_box/x} - 11 + 3]
@@ -93,14 +94,16 @@ private:
     y: 78
     fill: $[black_or_white (${asset_interior_box/fill})]
 
-  value_text:
+  note_text:
     h_center: 0
     v_center: -1
-    size: 20
+    size: 9
+    x_inset: 0
+    y_inset: 0
     x: 86
-    y: 65
-    typeface: ${DEFAULT/typeface_bold}
-    fill: $[black_or_white (${asset_interior_box/fill})]
+    y: $[${long_name_text/y} - 11]
+    typeface: ${DEFAULT/typeface_italic}
+    fill: $[black_or_white (${asset_interior_box/fill})]  
 
   power_text:
     h_center: 0
@@ -116,6 +119,15 @@ private:
     x: ${asset_interior_box/y}
     y: 13
     fill: ${colour/wikipedia/bubble_gum}
+
+  value_text:
+    h_center: 0
+    v_center: -1
+    size: 20
+    x: 86
+    y: 65
+    typeface: ${DEFAULT/typeface_bold}
+    fill: $[black_or_white (${asset_interior_box/fill})]
 
   cost_text:
     x: 4
