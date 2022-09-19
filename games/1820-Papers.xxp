@@ -1,7 +1,8 @@
 company:
   charter:
     _:
-      #long_name_text_size: 14
+      long_name_text_size: 13
+      label_text_size: 12
       #label_text_text: ""
       comment_text_typeface: ${DEFAULT/typeface}
       #comment_text_size: 12
@@ -710,6 +711,46 @@ marker:
       short_name_text_size: 8
       major_fill: ${colour/wikipedia/white}
       minor_fill: ${colour/wikipedia/white}
-
+      
   index:
+    round:
+      token:
+        ELEMENTS:
+          - token_interior_box
+          - outer_circle
+          - middle_circle
+          - inner_circle
+
+        index: $[index_of (1)]
+      outer_circle:
+        fill: ${colour/galatolol/yellow}
+      middle_circle:
+        fill: ${colour/galatolol/green}
+      inner_circle:
+        fill: ${colour/galatolol/brown}
+
+    green20:
+      token:
+        _:
+          name_stripe_box_suppress: True
+          short_name_text_text: "20"
+          short_name_text_fill: ${colour/xxp/BLACK}
+          short_name_text_size: 11
+          outer_circle_fill: ${colour/xxp/TRAIN_GREEN}
+          middle_circle_fill: ${colour/xxp/TRAIN_GREEN}
+        ELEMENTS: ${TEMPLATE_ring/.}
+        index: "$[index_of (15)]"
+
+    brown30:
+      token:
+        _:
+          name_stripe_box_suppress: True
+          short_name_text_text: "30"
+          short_name_text_fill: ${colour/xxp/BLACK}
+          short_name_text_size: 11
+          outer_circle_fill: ${colour/xxp/TRAIN_BROWN}
+          middle_circle_fill: ${colour/xxp/TRAIN_BROWN}
+        ELEMENTS: ${TEMPLATE_ring/.}
+        index: "$[index_of (15)]"
+
     

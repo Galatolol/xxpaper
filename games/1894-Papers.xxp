@@ -59,7 +59,7 @@ company:
       token:
         _:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
-          short_name_text_size: 10
+          short_name_text_size: 9
           short_name_text_x_inset: 0
           short_name_text_y_inset: 0
         ELEMENTS: ${TEMPLATE_solid/.}
@@ -117,13 +117,13 @@ company:
       token:
         ELEMENTS: ${TEMPLATE_stripey/.}
         EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
-        index: $[index_of (8)]
+        index: $[index_of (7)]
 
-    GR:
+    AG:
       _:
         long_name_text_text: |
-            GR
-        short_name_text_text: GR
+            AG
+        short_name_text_text: AG
         token_1_text_text: D15
         token_4_text_text: F100
         _major_fill: ${colour/wikipedia/canary_yellow}
@@ -132,18 +132,20 @@ company:
         name_stripe_box_suppress: True
       charter:
         _:
-          label_text_text: "Gent Railway"
+          label_text_text: |
+            Chemin de fer
+            d'Anvers à Gand
       share:
         _:
           comment_text_text: |
-            Gent Railroad
+            chemin de fer
+            d'Anvers à Gand
           comment_text_y: 65
       token:
         _:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
           short_name_text_size: 10
-          short_name_text_x_inset: 062}
-        index: "$[index_of (8)]"
+        index: "$[index_of (7)]"
 
     Est:
       _:
@@ -191,16 +193,14 @@ company:
       charter:
         _:
           label_text_text: |
-            Chemins de fer
-            de Paris à Lyon
-            et à la Méditerranée
+            Chemins de fer de Paris
+            à Lyon et à la Méditerranée
           label_text_y_inset: 250
       share:
         _:
           comment_text_text: |
-            Chemins de fer
-            de Paris à Lyon
-            et à la Méditerranée
+            Chemins de fer de Paris
+            à Lyon et à la Méditerranée
           comment_text_y: 50
       token:
         _:
@@ -209,7 +209,7 @@ company:
           short_name_text_size: 8
         ELEMENTS: ${TEMPLATE_bullseye/.}
         EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
-        index: $[index_of (7)]
+        index: $[index_of (8)]
 
     Belge:
       _:
@@ -240,7 +240,7 @@ company:
           #short_name_text_y_inset: -2
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (7)]
+        index: $[index_of (6)]
 
     LF:
       _:
@@ -266,7 +266,7 @@ company:
           _minor_fill_2: ${colour/hollasch/misty_rose}
         ELEMENTS: ${TEMPLATE_chequer/.}
         EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
-        index: $[index_of (5)]
+        index: $[index_of (6)]
 
     LB:
       _:
@@ -325,18 +325,6 @@ marker:
         ELEMENTS: ${TEMPLATE_ring/.}
         index: "$[index_of (4)]"
 
-    plus10:
-      token:
-        _:
-          name_stripe_box_suppress: True
-          short_name_text_text: "+10"
-          short_name_text_fill: ${colour/xxp/BLACK}
-          short_name_text_size: 10
-          outer_circle_fill: ${colour/wikipedia/white}
-          middle_circle_fill: ${colour/wikipedia/white}
-        ELEMENTS: ${TEMPLATE_ring/.}
-        index: "$[index_of (2)]"
-
 private:
   _:
     long_name_text_size: 11
@@ -381,8 +369,8 @@ private:
             3–player
         note_text_y_inset: -11
         power_text_text: |
-            Revenue of this is eaual to F10
-            if ownd by a company.
+            Revenue of this is equal to F10
+            if owned by a company.
         sell_text_text: "May be sold for F13 – F50"
         cost_text_text: "Cost: F25"
         revenue_text_text: "Revenue: F5 / 10"
@@ -444,7 +432,7 @@ private:
             Saint–Quentin (G10) is green,
             to F100 if it is brown,
             or to F0 otherwise.
-        sell_text_text: "May be sold for F35 – F140"
+        sell_text_text: "May be sold for F35 – F140 (not in red/gray phase)"
         cost_text_text: "Cost: F70"
         revenue_text_text: "Revenue: F0 / 70 / 100"
         closes_text_text: "Closed in purple phase"
@@ -452,9 +440,9 @@ private:
     P5:
       _:
         long_name_text_text: |
-            CAB minor shareholding
+            Nord minor shareholding
         power_text_text: |
-            Comes with a 10% stock certificate of CAB.
+            Comes with a share of the Nord.
         sell_text_text: "May be sold for F70 – F280"
         cost_text_text: "Cost: F140"
         revenue_text_text: "Revenue: F20"
@@ -518,7 +506,7 @@ train:
             Upgrade to
             4: F230
       model:
-        index: $[index_of (6)]
+        index: $[index_of (5)]
 
     4T:
       _:
@@ -543,7 +531,7 @@ train:
         note_text_text: |
             Upgrade to
             6: F400
-            Diesel: F700
+            Diesel: F620
       model:
         index: $[index_of (3)]
 
@@ -556,8 +544,8 @@ train:
         cost_text_text_p: "F600"
         note_text_text: |
             Upgrade to
-            7: F400
-            Diesel: F500
+            7: F410
+            Diesel: F520
       model:
         index: $[index_of (3)]
 
@@ -567,10 +555,10 @@ train:
         rust_bar_box_fill_p: BLACK
         long_name_text_text: "7"
         rusted_text_text: Permanent
-        cost_text_text_p: "F700"
+        cost_text_text_p: "F710"
         note_text_text: |
             Upgrade to
-            Diesel: F450
+            Diesel: F465
       model:
         index: $[index_of (2)]
 
@@ -580,7 +568,87 @@ train:
         rust_bar_box_fill_p: BLACK
         long_name_text_text: "Diesel"
         long_name_text_size: 32
-        cost_text_text_p: "F800"
+        cost_text_text_p: "F820"
         rusted_text_text: Permanent
       model:
-        index: $[index_of (7)]
+        index: $[index_of (9)]
+
+    p1Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "1"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (2)]"
+
+    p2Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "2"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (2)]"
+
+    p3Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "3"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (2)]"
+
+    p4Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "4"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (2)]"
+
+    p1Pb:
+      _:
+        asset_interior_box_fill: ${colour/xxp/L_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "1"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (2)]"
+
+    p2Pb:
+      _:
+        asset_interior_box_fill: ${colour/xxp/L_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "2"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (2)]"
+
+    p3Pb:
+      _:
+        asset_interior_box_fill: ${colour/xxp/L_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "3"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (2)]"
+
+    p4Pb:
+      _:
+        asset_interior_box_fill: ${colour/xxp/L_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "4"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (2)]"

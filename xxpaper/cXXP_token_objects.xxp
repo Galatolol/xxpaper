@@ -1148,7 +1148,7 @@ name_stripe_box:
 short_name_text:
   typeface: ${DEFAULT/typeface_bold}
   x: $[${token_interior_box/x} / 2]
-  y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 3.9]
+  y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 4.1]
   h_center: 0
   v_center: 0
   size: 9
