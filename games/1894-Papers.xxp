@@ -102,7 +102,7 @@ company:
         token_2_text_text: G14
         token_4_text_text: F100
         _major_fill: ${colour/x11/red}
-        _major_fill_2: ${colour/xxp/BLACK}
+        _major_fill_2: ${colour/wikipedia/carmine}
         _minor_fill_2: ${_/_major_fill_2}
         _minor_fill: ${_/_major_fill}
         _related_fill: ${colour/hollasch/tomato}
@@ -345,7 +345,6 @@ private:
     long_name_text_y: 68
 
   index:
-
     P1:
       _:
         long_name_text_text: |
@@ -499,7 +498,7 @@ train:
       _:
         asset_interior_box_fill_p: GREEN
         rust_bar_box_fill_p: BROWN
-        rusted_text_text: "Rusted by 5+"
+        rusted_text_text: "Rusted by 5"
         long_name_text_text: "3"
         cost_text_text_p: "F140"
         note_text_text: |
@@ -525,7 +524,7 @@ train:
       _:
         asset_interior_box_fill_p: BROWN
         rust_bar_box_fill_p: PURPLE
-        long_name_text_text: "5+"
+        long_name_text_text: "5"
         rusted_text_text: Rusted by Diesel
         cost_text_text_p: "F400"
         note_text_text: |
@@ -547,7 +546,7 @@ train:
             7: F410
             Diesel: F520
       model:
-        index: $[index_of (3)]
+        index: $[index_of (2)]
 
     7T:
       _:
@@ -560,7 +559,7 @@ train:
             Upgrade to
             Diesel: F465
       model:
-        index: $[index_of (2)]
+        index: $[index_of (3)]
 
     D:
       _:

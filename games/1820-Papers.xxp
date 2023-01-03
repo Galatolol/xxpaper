@@ -31,7 +31,6 @@ company:
       comment_text_typeface: ${DEFAULT/typeface_bold}
       comment_text_y: 24
       type_bar_box_fill: ${colour/wikipedia/golden_yellow}
-      type_bar_box_y: 12
       share_num_text_x: 167
     index:
       "1":
@@ -529,7 +528,6 @@ company:
         long_name_text_text: |
           Johnshaven
           Railway
-        long_name_text_fill: ${colour/xxp/WHITE}
         short_name_text_text: J
         short_name_text_size: 20
         short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2)]
@@ -538,6 +536,8 @@ company:
         _major_fill: ${colour/xxp/D_GREEN}
         _minor_fill: ${colour/xxp/D_GREEN}
         _related_fill: ${colour/hollasch/cinnabar_green}
+      charter:
+        long_name_text_fill: ${colour/xxp/WHITE}
       token:  
         index: $[index_of (20)]  
 
@@ -641,7 +641,7 @@ train:
         long_name_text_text: "2"
         cost_text_text: "Cost: £100"
       model:
-        index: $[index_of (18)]
+        index: $[index_of (30)]
 
     gold:
       _:
@@ -704,6 +704,86 @@ train:
         cost_text_text: "Cost: £2000"
       model:
         index: $[index_of (9)]
+
+    p1Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "1"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p2Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "2"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p3Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "3"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p4Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "4"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p1Pb:
+      _:
+        asset_interior_box_fill: ${colour/xxp/L_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "1"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p2Pb:
+      _:
+        asset_interior_box_fill: ${colour/xxp/L_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "2"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p3Pb:
+      _:
+        asset_interior_box_fill: ${colour/xxp/L_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "3"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p4Pb:
+      _:
+        asset_interior_box_fill: ${colour/xxp/L_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "4"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
     
 marker:
   token:
@@ -721,7 +801,7 @@ marker:
           - middle_circle
           - inner_circle
 
-        index: $[index_of (1)]
+        index: $[index_of (2)]
       outer_circle:
         fill: ${colour/galatolol/yellow}
       middle_circle:
@@ -753,4 +833,261 @@ marker:
         ELEMENTS: ${TEMPLATE_ring/.}
         index: "$[index_of (15)]"
 
-    
+    cn:
+      _:
+        short_name_text_text: CN
+        _major_fill: ${colour/wikipedia/white}
+        _minor_fill: ${_/_major_fill}
+        name_stripe_box_suppress: True
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 12
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: "$[index_of (1)]"
+    cs:
+      _:
+        short_name_text_text: CS
+        _major_fill: ${colour/wikipedia/white}
+        _minor_fill: ${colour/wikipedia/white}
+        _related_fill: ${colour/wikipedia/shite}
+        name_stripe_box_suppress: True
+        middle_box_fill: ${colour/wikipedia/white}
+      token:
+        ELEMENTS: ${TEMPLATE_boxes/.}
+        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
+        _:
+          short_name_text_size: 12
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
+        index: "$[index_of (1)]"  
+    cq:
+      _:
+        short_name_text_text: CQ
+        _major_fill: ${colour/wikipedia/white}
+        _minor_fill: ${colour/wikipedia/white}
+        _related_fill: ${colour/wikipedia/shite}
+        name_stripe_box_suppress: True
+        middle_box_fill: ${colour/wikipedia/white}
+      token:
+        ELEMENTS: ${TEMPLATE_boxes/.}
+        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
+        _:
+          short_name_text_size: 12
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
+        index: "$[index_of (1)]"      
+    bg:
+      _:
+        short_name_text_text: BG
+        _major_fill: ${colour/xxp/WHITE}
+        _minor_fill: ${colour/xxp/WHITE}
+        _share_pct_text_fill_x: ${colour/xxp/WHITE}
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: "$[index_of (1)]" 
+    iw:
+      _:
+        short_name_text_text: IW
+        _major_fill: ${colour/xxp/WHITE}
+        _minor_fill: ${colour/xxp/WHITE}
+        _share_pct_text_fill_x: ${colour/xxp/WHITE}
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: "$[index_of (1)]"           
+    ld:
+      _:
+        short_name_text_text: LD
+        _major_fill: ${colour/xxp/WHITE}
+        _minor_fill: ${colour/xxp/WHITE}
+        _share_pct_text_fill_x: ${colour/xxp/WHITE}
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: "$[index_of (1)]"
+    dlc:
+      _:
+        short_name_text_text: DLC
+        _major_fill: ${colour/xxp/WHITE}
+        _minor_fill: ${colour/xxp/WHITE}
+      token:
+        _:
+          inner_circle_fill: ${_/_major_fill}
+          inner_circle_radius: 9
+          short_name_text_size: 8
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: "$[index_of (1)]" 
+    j:
+      _:
+        short_name_text_text: J
+        short_name_text_size: 20
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 2]
+        short_name_text_fill: ${colour/xxp/BLACK}
+        name_stripe_box_suppress: True
+        _major_fill: ${colour/xxp/WHITE}
+        _minor_fill: ${colour/xxp/WHITE}
+      token:
+        index: "$[index_of (1)]"
+    mh:
+      _:
+        short_name_text_text: MH
+        _major_fill: ${colour/xxp/WHITE}
+        _minor_fill: ${colour/xxp/WHITE}
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: "$[index_of (1)]"
+    mb:
+      _:
+        short_name_text_text: MB
+        _major_fill: ${colour/xxp/WHITE}
+        _minor_fill: ${colour/xxp/WHITE}
+      token:
+        _:
+          outer_circle_fill: ${_/_major_fill}
+          middle_circle_fill: ${_/_minor_fill}
+          inner_circle_fill: ${_/_major_fill}
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: "$[index_of (1)]"  
+    nn:
+      _:
+        short_name_text_text: NN
+        _major_fill: ${colour/wikipedia/white}
+        _minor_fill: ${colour/wikipedia/white}
+        _related_fill: ${colour/wikipedia/shite}
+        name_stripe_box_suppress: True
+        middle_box_fill: ${colour/wikipedia/white}
+      token:
+        ELEMENTS: ${TEMPLATE_boxes/.}
+        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
+        _:
+          short_name_text_size: 12
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
+        index: "$[index_of (1)]" 
+    s:
+      _:
+        short_name_text_text: S
+        short_name_text_size: 22
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) - 2]
+        name_stripe_box_suppress: True
+        _major_fill: ${colour/xxp/WHITE}
+        _minor_fill: ${_/_major_fill}
+      token:
+        index: "$[index_of (1)]"   
+    w:
+      _:
+        short_name_text_text: W
+        short_name_text_size: 15
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2 - 1)]
+        short_name_text_fill: ${colour/xxp/BLACK}
+        name_stripe_box_suppress: True
+        _major_fill: ${colour/xxp/WHITE}
+        _major_fill_2: ${colour/xxp/WHITE}
+        _minor_fill: ${_/_major_fill}
+        _minor_fill_2: ${_/_major_fill_2}
+      token:
+        ELEMENTS: ${TEMPLATE_stripey/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
+        index: "$[index_of (1)]"  
+    wm:
+      _:
+        short_name_text_text: WM
+        _major_fill: ${colour/xxp/WHITE}
+        _minor_fill: ${colour/xxp/WHITE}
+        _share_pct_text_fill_x: ${colour/xxp/WHITE}
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: "$[index_of (1)]"    
+    sd:
+      _:
+        short_name_text_text: SD
+        _major_fill: ${colour/xxp/WHITE}
+        _minor_fill: ${colour/x11/white}        
+      token:
+        _:
+          inner_circle_fill: ${_/_major_fill}
+          inner_circle_radius: 9
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: "$[index_of (1)]" 
+
+    private:
+      token:
+        _:
+          short_name_text_text: |
+            Private
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 4.5]
+          short_name_text_size: 6
+          name_stripe_box_suppress: True
+          _major_fill: ${colour/wikipedia/white}
+          _minor_fill: ${colour/wikipedia/white}
+        index: $[index_of (10)]
+    2share:
+      token:
+        _:
+          short_name_text_text: |
+            2
+            Share
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 4.5]
+          short_name_text_size: 8
+          name_stripe_box_suppress: True
+          _major_fill: ${colour/wikipedia/white}
+          _minor_fill: ${colour/wikipedia/white}
+        index: $[index_of (10)]
+    5share:
+      token:
+        _:
+          short_name_text_text: |
+            5
+            Share
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 4.5]
+          short_name_text_size: 8
+          name_stripe_box_suppress: True
+          _major_fill: ${colour/wikipedia/white}
+          _minor_fill: ${colour/wikipedia/white}
+        index: $[index_of (10)]
+    10share:
+      token:
+        _:
+          short_name_text_text: |
+            10
+            Share
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 4.5]
+          short_name_text_size: 8
+          name_stripe_box_suppress: True
+          _major_fill: ${colour/wikipedia/white}
+          _minor_fill: ${colour/wikipedia/white}
+        index: $[index_of (10)]
+    20share:
+      token:
+        _:
+          short_name_text_text: |
+            20
+            Share
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 4.5]
+          short_name_text_size: 8
+          name_stripe_box_suppress: True
+          _major_fill: ${colour/wikipedia/white}
+          _minor_fill: ${colour/wikipedia/white}
+        index: $[index_of (10)]
+    50share:
+      token:
+        _:
+          short_name_text_text: |
+            50
+            Share
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 4.5]
+          short_name_text_size: 8
+          name_stripe_box_suppress: True
+          _major_fill: ${colour/wikipedia/white}
+          _minor_fill: ${colour/wikipedia/white}
+        index: $[index_of (6)]

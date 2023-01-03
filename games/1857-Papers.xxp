@@ -1,0 +1,226 @@
+private:
+  _:
+    long_name_text_size: 11
+    long_name_text_y: 85
+    money_bar_box_y: 13
+    closes_text_size: 8
+    closes_text_text: ""
+    close_bar_box_suppress: True
+    power_text_size: 8
+    revenue_text_x: 168
+    asset_interior_box_fill: ${colour/scale/yellow_0}
+    money_bar_box_y: 11
+    cost_text_text: "Cost: $40"
+    revenue_text_text: "Revenue: $10"
+
+  index:
+
+    P1:
+      _:
+        long_name_text_text: |
+            Saint Sebastian
+            Trading Company
+        power_text_text: |
+            May be traded for one share at any time.
+            This action closes the private company.
+            Stops paying revenue when the first
+            5 Train is purchased.
+            Closes when the first 5 Train is purchased
+            if owned by a public company.
+    P2:
+      _:
+        long_name_text_text: |
+            Saint Dominic
+            Road Company
+        power_text_text: |
+            Owning public company may lay or upgrade
+            one track in addition ot the normal track action.
+            This action closes the private company.
+            Closes when the first 5 Train is purchased.
+    P3:
+      _:
+        long_name_text_text: |
+            Camino de Hierro
+            de Buenos Aires al Oeste
+        power_text_text: |
+            Blocks G16.
+            Only the owning public company may
+            lay track in G16.
+            May be purchased in yellow phase.
+            Closes when the first 5 Train is purchased.
+    P4:
+      _:
+        long_name_text_text: |
+            Saint Pedro
+            Shipping Company
+        power_text_text: |
+            Owning public company has
+            the value of E20 is increased by 10.
+            Stops paying revenue when the first
+            5 Train is purchased.
+            Closes when the first 5 Train is purchased
+            if owned by a player.
+    P5:
+      _:
+        long_name_text_text: |
+            Saint Barbara
+            Mining Company
+        power_text_text: |
+            Owning public company doubles
+            the value of D11 for one run.
+            Stops paying revenue when the first
+            5 Train is purchased.
+            Closes when the first 5 Train is purchased
+            if owned by a player.
+    P6:
+      _:
+        long_name_text_text: |
+            Saint Zolius
+            Land Company
+        power_text_text: |
+            Owning public company may place
+            a station for free.
+            This action closes the private company.
+            Stops paying revenue when the first
+            5 Train is purchased.
+            Closes when the first 5 Train is purchased
+            if owned by a player.
+
+train:
+  _:
+    rusted_text_size: 13
+    rusted_text_y: 6
+    rust_bar_box_y: 20
+    long_name_text_y: 95
+
+  index:
+
+    2T:
+      _:
+        asset_interior_box_fill_p: YELLOW
+        rust_bar_box_fill_p: BLUE
+        rusted_text_text: Rusted by 4
+        long_name_text_text: "2"
+        cost_text_text_p: "$80"
+      model:
+        index: "$[index_of (5)]"
+
+    3T:
+      _:
+        asset_interior_box_fill_p: GREEN
+        rust_bar_box_fill_p: RED
+        rusted_text_text: "Rusted by 6"
+        long_name_text_text: "3"
+        cost_text_text_p: "$180"
+      model:
+        index: $[index_of (4)]
+
+    4T:
+      _:
+        asset_interior_box_fill_p: BLUE
+        rust_bar_box_fill_p: GRAY
+        rusted_text_text: Rusted by Diesel
+        long_name_text_text: "4"
+        cost_text_text_p: "$300"
+        note_text_text: "To Diesel: $800"
+      model:
+        index: $[index_of (3)]
+
+    5T:
+      _:
+        asset_interior_box_fill_p: BROWN
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "5"
+        cost_text_text_p: "$450"
+        rusted_text_text: Permanent
+        note_text_text: "To Diesel: $800"
+      model:
+        index: $[index_of (2)]
+
+    6T:
+      _:
+        asset_interior_box_fill_p: RED
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "6"
+        cost_text_text_p: "$630"
+        rusted_text_text: Permanent
+        note_text_text: "To Diesel: $800"
+      model:
+        index: $[index_of (2)]
+
+    D:
+      _:
+        asset_interior_box_fill_p: GRAY
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "Diesel"
+        long_name_text_size: 32
+        cost_text_text_p: "$1100"
+        rusted_text_text: Permanent
+        note_text_text: $800
+      model:
+        index: $[index_of (8)]
+
+    p1Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "1"
+        long_name_text_size: 80
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p2Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "2"
+        long_name_text_size: 80
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p3Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "3"
+        long_name_text_size: 80
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p4Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "4"
+        long_name_text_size: 80
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p5Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "5"
+        long_name_text_size: 80
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p6Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "6"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"

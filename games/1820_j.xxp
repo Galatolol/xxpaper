@@ -1,0 +1,114 @@
+train:
+  _:
+  index:
+
+    yellow:
+      _:
+        asset_interior_box_fill_p: YELLOW
+        rust_bar_box_fill_p: ${_/_asset_interior_box}
+        rusted_text_text: ""
+        long_name_text_text: "2"
+        cost_text_text: "Cost: £100"
+      model:
+        index: $[index_of (6)]
+
+
+    p1Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "1"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (2)]"
+
+    p2Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "2"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (2)]"
+
+    p3Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "3"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (2)]"
+
+    p4Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "4"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p5Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "5"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (0)]"
+
+    p6Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "6"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (0)]"
+
+    p1Pb:
+      _:
+        asset_interior_box_fill: ${colour/xxp/L_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "1"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (2)]"
+
+    p2Pb:
+      _:
+        asset_interior_box_fill: ${colour/xxp/L_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "2"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (2)]"
+
+    p3Pb:
+      _:
+        asset_interior_box_fill: ${colour/xxp/L_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "3"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (2)]"
+
+    p4Pb:
+      _:
+        asset_interior_box_fill: ${colour/xxp/L_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "4"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
