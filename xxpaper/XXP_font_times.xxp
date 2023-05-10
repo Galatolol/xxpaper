@@ -1,0 +1,14 @@
+xxpaper:
+  typefaces:
+    - fonts/times/Times.ttf
+    - fonts/times/times-it.ttf
+    - fonts/times/Times Bold.ttf
+    - fonts/times/NTTimes BoldItalic.ttf
+
+DEFAULT:
+  typeface: "Times"
+  typeface_bold: "Times Bold"
+  typeface_bold_italic: "NTTimes BoldItalic"
+  typeface_bold_oblique: ${DEFAULT/typeface_bold_italic}
+  typeface_italic: "times-it"
+  typeface_oblique: ${DEFAULT/typeface_italic}

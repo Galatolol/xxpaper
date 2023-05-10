@@ -1,0 +1,57 @@
+train:
+  _:
+    rusted_text_size: 13
+    rusted_text_y: 6
+    rust_bar_box_y: 20
+    long_name_text_y: 95
+
+  index:
+    2T:
+      _:
+        asset_interior_box_fill_p: YELLOW
+        rust_bar_box_fill_p: BLUE
+        rusted_text_text: Rusted by 4
+        long_name_text_text: "2"
+        cost_text_text_p: "F80"
+        note_text_text: |
+            Upgrade to
+            3: F80
+      model:
+        index: $[index_of (8)]
+
+    3T:
+      _:
+        asset_interior_box_fill_p: GREEN
+        rust_bar_box_fill_p: BROWN
+        rusted_text_text: "Rusted by 5"
+        long_name_text_text: "3"
+        cost_text_text_p: "F120"
+        note_text_text: |
+            Upgrade to
+            4: F240
+      model:
+        index: $[index_of (5)]
+
+    4T:
+      _:
+        asset_interior_box_fill_p: BLUE
+        rust_bar_box_fill_p: GRAY
+        rusted_text_text: Rusted by 7
+        long_name_text_text: "4"
+        cost_text_text_p: "F300"
+        note_text_text: |
+            Upgrade to
+            5: F250
+      model:
+        index: $[index_of (4)]
+
+    D:
+      _:
+        asset_interior_box_fill_p: PURPLE
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "Diesel"
+        long_name_text_size: 32
+        cost_text_text_p: "F820"
+        rusted_text_text: Permanent
+      model:
+        index: $[index_of (3)]

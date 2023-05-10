@@ -1,0 +1,472 @@
+company:
+  charter:
+    _:
+      token_2_text_text: 40 zł
+      token_3_text_text: 100 zł
+      comment_text_text: ""
+      label_text_size: 11
+      comment_text_x: 130
+      comment_text_size: 10
+      comment_text_typeface: ${DEFAULT/typeface}
+  share:
+    _:
+      type_bar_box_fill: ${colour/wikipedia/golden_yellow}
+      share_num_text_x: 165
+  token:
+    _:
+      short_name_text_size: 8
+
+  index:
+    CLB:
+      _:
+        long_name_text_text: |
+            CLB
+        short_name_text_text: CLB
+        token_1_text_text: L8
+        token_4_text_text: 100 zł
+        _major_fill: ${colour/hollasch/brown_ochre}
+        _minor_fill: ${_\_major_fill}
+        _related_fill: ${colour/hollasch/brick}
+        name_stripe_box_suppress: True
+      charter:
+        _:
+          label_text_text: |
+            Kolej
+            Galicyjska
+      share:
+        _:
+          comment_text_text: |
+            Kolej
+            Galicyjska
+          comment_text_y: 60
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 9
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: 0
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of (7)]
+
+    KN:
+      _:
+        long_name_text_text: |
+            KN
+        short_name_text_text: KN
+        token_1_text_text: M3
+        token_4_text_text: 100 zł
+        _major_fill: ${colour/wikipedia/blue_ryb}
+        _major_fill_2: ${colour/wikipedia/banana_yellow}
+        _minor_fill_2: ${_/_major_fill_2}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/hollasch/steel_blue}
+      charter:
+        _:
+          label_text_text: |
+            Kolej Nadwiślańska
+      share:
+        _:
+          comment_text_text: |
+            Kolej Nadwiślańska
+          comment_text_y: 65
+      token:
+        ELEMENTS: ${TEMPLATE_stripey/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
+        index: $[index_of (7)]
+
+    CMK:
+      _:
+        long_name_text_text: |
+            CMK
+        short_name_text_text: CMK
+        token_1_text_text: F8
+        _major_fill: ${colour/x11/red}
+        _major_fill_2: ${colour/wikipedia/black}
+        _minor_fill_2: ${_/_major_fill_2}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/hollasch/tomato}
+      charter:
+        _:
+          label_text_text: |
+            Centralna
+            Magistrala Kolejowa
+      share:
+        _:
+          comment_text_text: |
+            Centralna
+            Magistrala Kolejowa
+          comment_text_y: 65
+      token:
+        ELEMENTS: ${TEMPLATE_stripey/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
+        index: $[index_of (6)]
+
+    MW:
+      _:
+        long_name_text_text: |
+            MW
+        short_name_text_text: MW
+        token_1_text_text: E9
+        token_4_text_text: 100 zł
+        _major_fill: ${colour/wikipedia/canary_yellow}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/wikipedia/icterine}
+        name_stripe_box_suppress: True
+      charter:
+        _:
+          label_text_text: |
+            Magistrala Węglowa
+      share:
+        _:
+          comment_text_text: |
+            Magistrala Węglowa
+          comment_text_y: 65
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 10
+        index: "$[index_of (7)]"
+
+    TKG:
+      _:
+        long_name_text_text: |
+            TKG
+        short_name_text_text: TKG
+        token_1_text_text: B4
+        token_4_text_text: 100 zł
+        _major_fill: ${colour/wikipedia/amber_sae_ece}
+        _minor_fill: ${colour/x11/white}
+        _related_fill: ${colour/wikipedia/pink_orange}
+      charter:
+        _:
+          label_text_text: |
+            Towarzystwo Kolei Górnośląskiej
+      share:
+        _:
+          comment_text_text: |
+            Towarzystwo Kolei Górnośląskiej
+          comment_text_y: 65
+      token:
+        _:
+          inner_circle_fill: ${_/_major_fill}
+          inner_circle_radius: 9
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: $[index_of (7)]
+
+    KKG:
+      _:
+        long_name_text_text: |
+            KKG
+        short_name_text_text: KKG
+        token_1_text_text: H8
+        token_3_text_text: ""
+        share_pct_text_fill: ${colour/xxp/BLACK}
+        _major_fill: ${colour/wikipedia/rich_lavender}
+        _minor_fill: ${colour/wikipedia/black}
+        _related_fill: ${colour/wikipedia/plum_web}
+      charter:
+        _:
+          label_text_text: |
+            Kolej
+            Krakowsko–Górnośląska
+      share:
+        _:
+          comment_text_text: |
+            Kolej
+            Krakowsko–Górnośląska
+          comment_text_y: 50
+      token:
+        _:
+          inner_circle_fill: ${_/_major_fill}
+          inner_circle_radius: 9
+          short_name_text_size: 8
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: $[index_of (5)]
+
+    LHS:
+      _:
+        long_name_text_text: |
+             LHS
+        short_name_text_text: LHS
+        token_1_text_text: F8
+        _major_fill: ${colour/xxp/D_GREEN}
+        _minor_fill: ${colour/xxp/D_GREEN}
+        _related_fill: ${colour/hollasch/cinnabar_green}
+        name_stripe_box_suppress: True
+      charter:
+        _:
+          label_text_text: |
+            Linia
+            Hutniczo–Siarkowa
+      share:
+        _:
+          comment_text_text: |
+            Linia
+            Hutniczo–Siarkowa
+          comment_text_y: 60
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 10
+          short_name_text_x_inset: 0
+          #short_name_text_y_inset: -2
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of (6)]
+
+    KFNB:
+      _:
+        long_name_text_text: |
+          KFNB
+        short_name_text_text: KFNB
+        token_1_text_text: G11
+        _major_fill: ${colour/xxp/BLACK}
+        _minor_fill: ${colour/xxp/WHITE}
+        _related_fill: ${colour/x11/gray43}
+        _share_pct_text_fill_x: ${colour/xxp/WHITE}
+      charter:
+        _:
+          label_text_text: |
+            Kolej Północna
+      share:
+        _:
+          comment_text_text: |
+            Kolej Północna
+          comment_text_y: 60
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: "$[index_of (6)]"
+
+marker:
+  index:
+    round:
+      token:
+        ELEMENTS:
+          - token_interior_box
+          - outer_circle
+          - middle_circle
+          - inner_circle
+
+        index: $[index_of (1)]
+      outer_circle:
+        fill: ${colour/galatolol/yellow}
+      middle_circle:
+        fill: ${colour/galatolol/green}
+      inner_circle:
+        fill: ${colour/galatolol/brown}
+
+    ferry:
+      token:
+        _:
+          name_stripe_box_suppress: True
+          short_name_text_text: ferry
+          short_name_text_fill: ${colour/xxp/BLACK}
+          short_name_text_size: 10
+          outer_circle_fill: ${colour/wikipedia/baby_blue}
+          middle_circle_fill: ${colour/wikipedia/white}
+        ELEMENTS: ${TEMPLATE_ring/.}
+        index: "$[index_of (4)]"
+
+private:
+  _:
+    long_name_text_size: 11
+    closes_text_size: 8
+    closes_text_text: "Closed in brown phase if onwed by player"
+    power_text_size: 8
+    power_text_y: -1
+    revenue_text_x: 168
+    revenue_text_size: 10
+    cost_text_size: 10
+    asset_interior_box_fill: ${colour/scale/yellow_0}
+    money_bar_box_y: 11
+    money_bar_box_fill: ${colour/wikipedia/bubble_gum}
+    cost_text_fill: ${colour/xxp/BLACK}
+    revenue_text_fill: ${colour/xxp/BLACK}
+    sell_bar_box_suppress: False
+    sell_bar_box_fill: ${colour/wikipedia/bubble_gum}
+    long_name_text_y: 68
+    sell_text_text: "May be sold for 20 – 80 zł"
+    cost_text_text: "Cost: 40 zł"
+    revenue_text_text: "Revenue: 10 zł"
+
+  index:
+    P1:
+      _:
+        long_name_text_text: |
+            Raglot
+        power_text_text: |
+            Each Operating Round, revenue of Rzeszów (L8)
+            is doubled for one of the owning company’s trains.
+            Stops paying revenue in brown phase
+            if owned by company.
+
+    P2:
+      _:
+        long_name_text_text: |
+            Stowarzyszenie
+            Architektów Polskich
+        power_text_text: |
+            Owning company may close this
+            to place a station marker for free.
+            Stops paying revenue in brown phase
+            if owned by company.
+
+    P3:
+      _:
+        long_name_text_text: |
+            Towarzystwo Akcyjne
+            Dróg Zelaznych
+        power_text_text: |
+            At any time, owning player may close this to
+            take a share of any company from IPO or bank pool.
+            Closes in brown phase if owned by company.
+
+    P4:
+      _:
+        long_name_text_text: |
+            Schodnica & Cynkownia
+        power_text_text: |
+            For the owning company only, revenue of 
+            Bielsko–Biała (G11) is considered to be 10 higher.
+            Stops paying revenue in brown phase
+            if owned by a public company.
+
+    P5:
+      _:
+        long_name_text_text: |
+            Galicyjska Kolej
+            Transwersalna
+        power_text_text: |
+            Owning company may close this to lay two
+            connected #8/9 yellow tracks on empty hexes.
+            It's extra track lay. Doesn't have to be connected.
+            Stops paying revenue in brown phase
+            if owned by a public company.
+
+    P6:
+      _:
+        closes_text_text: "Closed when the associated company operates"
+        closes_text_x_inset: -1
+        long_name_text_text: |
+            K. Rudzki i S-ka
+        power_text_text: |
+            Owning company may close this to ignore
+            terrain cost for one of its yellow track lays.
+            Stops paying revenue in brown phase
+            if owned by a public company.
+
+train:
+  _:
+    rusted_text_size: 13
+    rusted_text_y: 6
+    rust_bar_box_y: 20
+    long_name_text_y: 95
+
+  index:
+    2T:
+      _:
+        asset_interior_box_fill_p: YELLOW
+        rust_bar_box_fill_p: BLUE
+        rusted_text_text: Rusted by 4
+        long_name_text_text: "2"
+        cost_text_text_p: 80 zł
+      model:
+        index: $[index_of (5)]
+
+    3T:
+      _:
+        asset_interior_box_fill_p: GREEN
+        rust_bar_box_fill_p: BROWN
+        rusted_text_text: "Rusted by 6"
+        long_name_text_text: "3"
+        cost_text_text_p: 180 zł
+      model:
+        index: $[index_of (4)]
+
+    4T:
+      _:
+        asset_interior_box_fill_p: BLUE
+        rust_bar_box_fill_p: GRAY
+        rusted_text_text: Rusted by D
+        long_name_text_text: "4"
+        cost_text_text_p: 300 zł
+        note_text_text: "To Diesel: 800 zł"
+      model:
+        index: $[index_of (2)]
+
+    5T:
+      _:
+        asset_interior_box_fill_p: BROWN
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "5"
+        cost_text_text_p: 450 zł
+        rusted_text_text: Permanent
+        note_text_text: "To Diesel: 800 zł"
+      model:
+        index: $[index_of (3)]
+
+    6T:
+      _:
+        asset_interior_box_fill_p: RED
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "6"
+        cost_text_text_p: 630 zł
+        rusted_text_text: Permanent
+        note_text_text: "To Diesel: 800 zł"
+      model:
+        index: $[index_of (2)]
+
+    D:
+      _:
+        asset_interior_box_fill_p: GRAY
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "Diesel"
+        long_name_text_size: 32
+        cost_text_text_p: 1100 zł
+        rusted_text_text: Permanent
+      model:
+        index: $[index_of (2)]
+
+    p1Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/L_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "1"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p2Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/L_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "2"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p3Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/L_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "3"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p4Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/L_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "4"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
