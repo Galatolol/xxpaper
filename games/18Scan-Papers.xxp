@@ -1,0 +1,476 @@
+company:
+  charter:
+    _:
+      token_2_text_text: K40
+      token_3_text_text: K100
+      comment_text_text: ""
+      label_text_size: 11
+      comment_text_x: 130
+      comment_text_size: 10
+      comment_text_typeface: ${DEFAULT/typeface}
+  share:
+    _:
+      type_bar_box_fill: ${colour/wikipedia/golden_yellow}
+      share_num_text_x: 165
+  token:
+    _:
+      short_name_text_size: 8
+
+  index:
+    SJ:
+      _:
+        long_name_text_text: |
+            SJ
+        short_name_text_text: SJ
+        token_1_text_text: K100
+        token_2_text_text: ""
+        token_3_text_text: ""
+        name_stripe_box_fill: ${colour/wikipedia/banana_yellow}
+        _major_fill: ${colour/wikipedia/blue_ryb}
+        _minor_fill: ${colour/wikipedia/banana_yellow}
+        _related_fill: ${colour/hollasch/steel_blue}
+      charter:
+        _:
+          label_text_text: |
+            Statens Järnvägar
+      share:
+        _:
+          comment_text_text: |
+            Statens Järnvägar
+          comment_text_y: 65
+        index:
+         "1":
+         "2":
+         "3":
+         "4":
+         "5":
+         "6":
+         "7":
+            _:
+              comment_text_text: |
+                Statens Järnvägar
+                Reserved for exchange
+         "8":
+            _:
+              comment_text_text: |
+                Statens Järnvägar
+                Reserved for exchange
+         "9":
+            _:
+              comment_text_text: |
+                Statens Järnvägar
+                Reserved for exchange
+
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: $[index_of (8)]
+
+    DSB:
+      _:
+        long_name_text_text: |
+            DSB
+        short_name_text_text: DSB
+        token_1_text_text: F3
+        _major_fill: ${colour/x11/red}
+        _minor_fill: ${colour/wikipedia/white}
+        _related_fill: ${colour/hollasch/tomato}
+      charter:
+        _:
+          label_text_text: |
+            Danske Statsbaner
+      share:
+        _:
+          comment_text_text: |
+            Danske Statsbaner
+          comment_text_y: 65
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: $[index_of (5)]
+
+    NSB:
+      _:
+        long_name_text_text: |
+            NSB
+        short_name_text_text: NSB
+        token_1_text_text: D7
+        token_4_text_text: K100
+        _major_fill: ${colour/wikipedia/alizarin_crimson}
+        _minor_fill: ${colour/x11/white}
+        _related_fill: ${colour/x11/gray43}
+      charter:
+        _:
+          label_text_text: |
+            Norge Statsbaner
+      share:
+        _:
+          comment_text_text: |
+            Norge Statsbaner
+          comment_text_y: 65
+      token:
+        _:
+          inner_circle_fill: ${colour/wikipedia/blue_pigment}
+          inner_circle_radius: 9
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: $[index_of (6)]
+
+    M1:
+      _:
+        long_name_text_text: |
+            M1
+        short_name_text_text: M1
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 2]
+        token_1_text_text: G4
+        token_2_text_text: "D: E6"
+        token_3_text_text: ""
+        share_pct_text_fill: ${colour/xxp/BLACK}
+        short_name_text_size: 15
+        name_stripe_box_suppress: True
+        short_name_text_fill: ${colour/wikipedia/banana_yellow}
+        _major_fill: ${colour/wikipedia/blue_ryb}
+        _minor_fill: ${colour/wikipedia/blue_ryb}
+        _related_fill: ${colour/wikipedia/baby_blue_eyes}
+      charter:
+        _:
+          label_text_text: |
+            Södra Stambanan
+          comment_text_text: |
+            Cost/starting capital: K260
+      share:
+        index: $[index_of (0)]
+      token:
+        index: $[index_of (2)]
+
+    M2:
+      _:
+        long_name_text_text: |
+            M2
+        short_name_text_text: M2
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 2]
+        token_1_text_text: F11
+        token_2_text_text: "D: B11"
+        token_3_text_text: ""
+        share_pct_text_fill: ${colour/xxp/BLACK}
+        short_name_text_size: 15
+        name_stripe_box_suppress: True
+        short_name_text_fill: ${colour/wikipedia/banana_yellow}
+        _major_fill: ${colour/wikipedia/blue_ryb}
+        _minor_fill: ${colour/wikipedia/blue_ryb}
+        _related_fill: ${colour/wikipedia/baby_blue_eyes}
+      charter:
+        _:
+          label_text_text: |
+            Nordvästra Stambanan
+          comment_text_text: |
+            Cost/starting capital: K220
+      share:
+        index: $[index_of (0)]
+      token:
+        index: $[index_of (2)]
+
+    M3:
+      _:
+        long_name_text_text: |
+            M3
+        short_name_text_text: M3
+        short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 2]
+        token_1_text_text: F11
+        token_2_text_text: "D: D7"
+        token_3_text_text: ""
+        share_pct_text_fill: ${colour/xxp/BLACK}
+        short_name_text_size: 15
+        name_stripe_box_suppress: True
+        short_name_text_fill: ${colour/wikipedia/banana_yellow}
+        _major_fill: ${colour/wikipedia/blue_ryb}
+        _minor_fill: ${colour/wikipedia/blue_ryb}
+        _related_fill: ${colour/wikipedia/baby_blue_eyes}
+      charter:
+        _:
+          label_text_text: |
+            Västra Stambanan
+          comment_text_text: |
+            Cost/starting capital: K200
+      share:
+        index: $[index_of (0)]
+      token:
+        index: $[index_of (2)]
+
+    SNJ:
+      _:
+        long_name_text_text: |
+             SNJ
+        short_name_text_text: SNJ
+        token_1_text_text: B20
+        token_3_text_text: K100
+        _major_fill: ${colour/xxp/D_GREEN}
+        _minor_fill: ${colour/xxp/D_GREEN}
+        _related_fill: ${colour/hollasch/cinnabar_green}
+        name_stripe_box_suppress: True
+      charter:
+        _:
+          label_text_text: |
+            Sveriges & Norges Järnvägar
+      share:
+        _:
+          comment_text_text: |
+            Sveriges & Norges Järnvägar
+          comment_text_y: 60
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 10
+          short_name_text_x_inset: 0
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of (5)]
+
+    VR:
+      _:
+        long_name_text_text: |
+          VR
+        short_name_text_text: VR
+        token_1_text_text: G14
+        token_4_text_text: K100
+        name_stripe_box_fill: ${colour/wikipedia/air_force_blue_usaf}
+        _major_fill: ${colour/xxp/WHITE}
+        _minor_fill: ${colour/wikipedia/air_force_blue_usaf}
+        _related_fill: ${colour/wikipedia/glitter}
+        _share_pct_text_fill_x: ${colour/xxp/WHITE}
+      charter:
+        _:
+          label_text_text: |
+            Valtionrautatiet
+      share:
+        _:
+          comment_text_text: |
+            Valtionrautatiet
+          comment_text_y: 60
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: "$[index_of (6)]"
+
+marker:
+  index:
+    round:
+      token:
+        ELEMENTS:
+          - token_interior_box
+          - outer_circle
+          - middle_circle
+          - inner_circle
+
+        index: $[index_of (1)]
+      outer_circle:
+        fill: ${colour/galatolol/yellow}
+      middle_circle:
+        fill: ${colour/galatolol/green}
+      inner_circle:
+        fill: ${colour/galatolol/brown}
+
+    p20:
+      token:
+        _:
+          name_stripe_box_suppress: True
+          short_name_text_text: "+20"
+          short_name_text_fill: ${colour/xxp/BLACK}
+          short_name_text_size: 10
+          outer_circle_fill: ${colour/wikipedia/baby_blue}
+          middle_circle_fill: ${colour/wikipedia/white}
+        ELEMENTS: ${TEMPLATE_ring/.}
+        index: "$[index_of (2)]"
+
+    p50:
+      token:
+        _:
+          name_stripe_box_suppress: True
+          short_name_text_text: "+50"
+          short_name_text_fill: ${colour/xxp/BLACK}
+          short_name_text_size: 10
+          outer_circle_fill: ${colour/wikipedia/gray}
+          middle_circle_fill: ${colour/wikipedia/white}
+        ELEMENTS: ${TEMPLATE_ring/.}
+        index: "$[index_of (1)]"
+
+private:
+  _:
+    long_name_text_size: 11
+    closes_text_size: 8
+    closes_text_text: "Closed in brown phase"
+    power_text_size: 8
+    power_text_y: -1
+    revenue_text_x: 168
+    revenue_text_size: 10
+    cost_text_size: 10
+    asset_interior_box_fill: ${colour/scale/yellow_0}
+    money_bar_box_y: 11
+    money_bar_box_fill: ${colour/wikipedia/bubble_gum}
+    cost_text_fill: ${colour/xxp/BLACK}
+    revenue_text_fill: ${colour/xxp/BLACK}
+    long_name_text_y: 68
+
+  index:
+    P1:
+      _:
+        long_name_text_text: |
+            Stockholm-Åbo Ferry
+        power_text_text: |
+            Comes with a VR share.
+            May sell +20 bonus marker for K20.
+            The marker increases runs using ferry (G12).
+            Closes when all two markers are sold.
+        cost_text_text: "Cost: K120"
+        revenue_text_text: "Revenue: K20"
+
+    P2:
+      _:
+        long_name_text_text: |
+            Lapland Ore Line
+        power_text_text: |
+            Comes with a SNJ share.
+            May sell +50 bonus marker for K50.
+            The marker improves Kiruna (A20)
+            for one run per OR.
+            Closes when the marker is sold.
+        cost_text_text: "Cost: K150"
+        revenue_text_text: "Revenue: K25"
+
+    P3:
+      _:
+        long_name_text_text: |
+            Sjællandske
+            Jernbaneselskab
+        power_text_text: |
+            Comes with the DSB president certificate.
+            May lay or upgrade yellow COP tile (F3)
+            at no cost.
+            Closes when DSB buys its first train.
+        cost_text_text: "Cost: K180"
+        revenue_text_text: "Revenue: K30"
+
+train:
+  _:
+    rusted_text_size: 13
+    rusted_text_y: 6
+    rust_bar_box_y: 20
+    long_name_text_y: 95
+
+  index:
+    2T:
+      _:
+        asset_interior_box_fill_p: YELLOW
+        rust_bar_box_fill_p: BLUE
+        rusted_text_text: Rusted by 4/3+3
+        long_name_text_text: "2"
+        cost_text_text_p: K100
+      model:
+        index: $[index_of (6)]
+
+    1+1:
+      _:
+        asset_interior_box_fill_p: YELLOW
+        rust_bar_box_fill_p: BLUE
+        rusted_text_text: Rusted by 4/3+3
+        long_name_text_text: "1+1"
+        long_name_text_size: 50
+        cost_text_text_p: K80
+      model:
+        index: $[index_of (6)]
+
+
+
+    3T:
+      _:
+        asset_interior_box_fill_p: GREEN
+        rust_bar_box_fill_p: BROWN
+        rusted_text_text: "Rusted by 5/4+4"
+        long_name_text_text: "3"
+        cost_text_text_p: K200
+      model:
+        index: $[index_of (4)]
+
+    2+2:
+      _:
+        asset_interior_box_fill_p: GREEN
+        rust_bar_box_fill_p: BROWN
+        rusted_text_text: "Rusted by 5/4+4"
+        long_name_text_text: "2+2"
+        long_name_text_size: 50
+        cost_text_text_p: K180
+      model:
+        index: $[index_of (4)]
+
+
+
+    4T:
+      _:
+        asset_interior_box_fill_p: BLUE
+        rust_bar_box_fill_p: GRAY
+        rusted_text_text: Rusted by 4D
+        long_name_text_text: "4"
+        cost_text_text_p: K300
+      model:
+        index: $[index_of (3)]
+
+    3+3:
+      _:
+        asset_interior_box_fill_p: BLUE
+        rust_bar_box_fill_p: GRAY
+        rusted_text_text: Rusted by 4D
+        long_name_text_text: "3+3"
+        long_name_text_size: 50
+        cost_text_text_p: K280
+      model:
+        index: $[index_of (3)]
+
+
+
+    5T:
+      _:
+        asset_interior_box_fill_p: BROWN
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "5"
+        cost_text_text_p: K500
+        rusted_text_text: Permanent
+      model:
+        index: $[index_of (2)]
+
+    4+4:
+      _:
+        asset_interior_box_fill_p: BROWN
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "4+4"
+        long_name_text_size: 50
+        cost_text_text_p: K480
+        rusted_text_text: Permanent
+      model:
+        index: $[index_of (2)]
+
+
+
+
+
+    5E:
+      _:
+        asset_interior_box_fill_p: RED
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "5E"
+        cost_text_text_p: K600
+        rusted_text_text: Permanent
+      model:
+        index: $[index_of (2)]
+
+
+
+    4D:
+      _:
+        asset_interior_box_fill_p: GRAY
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "4D"
+        cost_text_text_p: K800
+        rusted_text_text: Permanent
+        note_text_text: Ignores towns
+      model:
+        index: $[index_of (6)]

@@ -391,7 +391,7 @@ train:
       _:
         asset_interior_box_fill_p: BLUE
         rust_bar_box_fill_p: GRAY
-        rusted_text_text: Rusted by D
+        rusted_text_text: Rusted by Diesel
         long_name_text_text: "4"
         cost_text_text_p: 300 zł
         note_text_text: "To Diesel: 800 zł"
