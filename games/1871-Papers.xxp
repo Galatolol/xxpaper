@@ -1,0 +1,796 @@
+company:
+  charter:
+    _:
+      token_1_text_text: Free
+      token_2_text_text: $80
+      token_3_text_text: $80
+      token_4_text_text: $80
+      comment_text_text: ""
+      label_text_size: 11
+      comment_text_x: 130
+      comment_text_size: 10
+      comment_text_typeface: ${DEFAULT/typeface}
+  share:
+    _:
+      type_bar_box_fill: ${colour/wikipedia/golden_yellow}
+      share_num_text_x: 165
+  token:
+    _:
+      short_name_text_size: 8
+
+  index:
+    PEIR:
+      _:
+        long_name_text_text: |
+          Prince Edward Island
+          Railway
+        short_name_text_text: PEIR
+        token_1_text_text: ""
+        token_2_text_text: ""
+        token_3_text_text: ""
+        token_4_text_text: ""
+        _major_fill_1: ${colour/hollasch/hot_pink}
+        _major_fill_2: ${colour/hollasch/misty_rose}
+        _major_fill_1: ${colour/hollasch/misty_rose}
+        _major_fill_2: ${colour/hollasch/hot_pink}
+        _related_fill: ${colour/hollasch/pink}
+        _angle: 30
+        _rotation: 0
+      token:
+        _:
+          inner_circle_suppress: True
+        index: $[index_of (6)]
+        ELEMENTS: ${TEMPLATE_wedges/.}
+        EMBED_ELEMENTS: ${TEMPLATE_wedges_embed/.}
+      charter:
+        comment_text:
+          text: |
+            May half-pay.
+            May buy only one train from the bank per round.
+            Buying from other companies is not limited.
+      share:
+        long_name_text:
+          size: 12
+        share_pct_text:
+          text: "$80"
+          x: 45
+          y: 1.5
+        share_num_text:
+          text: "1 Share"
+        share_desc_text:
+          text: ""
+        comment_text:
+          size: 11
+          y: 24
+          typeface: ${DEFAULT/typeface}
+        index:
+          "1":
+            type_bar_box:
+              suppress: True
+            comment_text:
+              text: |
+                #1 Souris
+            token_1_embed:
+              suppress: False
+            token_2a_embed:
+              suppress: True
+            token_2b_embed:
+              suppress: True
+            share_desc_text:
+              text: ""
+            asset_interior_box:
+              fill: ${colour/wikipedia/lavender_gray}
+            side_bar_rsplit_box:
+              suppress: True
+            side_bar_lsplit_box:
+              suppress: True
+          "2":
+            comment_text:
+              text: |
+                #2 Alberton
+              fill: ${colour/xxp/WHITE}
+            share_num_text:
+              fill: ${colour/xxp/WHITE}
+            share_pct_text:
+              fill: ${colour/xxp/WHITE}
+            long_name_text:
+              fill: ${colour/xxp/WHITE}
+            asset_interior_box:
+              fill: ${colour/hollasch/brick}
+          "3":
+            comment_text:
+              text: |
+                #3 Mount Steward
+            asset_interior_box:
+              fill: ${colour/wikipedia/icterine}
+          "4":
+            comment_text:
+              text: |
+                #4 Murray River
+              fill: ${colour/xxp/WHITE}
+            share_num_text:
+              fill: ${colour/xxp/WHITE}
+            share_pct_text:
+              fill: ${colour/xxp/WHITE}
+            long_name_text:
+              fill: ${colour/xxp/WHITE}
+            asset_interior_box:
+              fill: ${colour/hollasch/steel_blue}
+          "5":
+            comment_text:
+              text: |
+                #5 Summerside
+              fill: ${colour/xxp/WHITE}
+            share_num_text:
+              fill: ${colour/xxp/WHITE}
+            share_pct_text:
+              fill: ${colour/xxp/WHITE}
+            long_name_text:
+              fill: ${colour/xxp/WHITE}
+            asset_interior_box:
+              fill: ${colour/hollasch/cinnabar_green}
+          "6":
+            comment_text:
+              text: |
+                #6 Georgetown
+            asset_interior_box:
+              fill: ${colour/wikipedia/lemon_lime}
+          "7":
+            comment_text:
+              text: |
+                #7 Charlottetown
+              fill: ${colour/xxp/WHITE}
+            share_num_text:
+              fill: ${colour/xxp/WHITE}
+            share_pct_text:
+              fill: ${colour/xxp/WHITE}
+            long_name_text:
+              fill: ${colour/xxp/WHITE}
+            asset_interior_box:
+              fill: ${colour/hollasch/tomato}
+
+    UB:
+      _:
+        long_name_text_text: |
+          Union Bank
+        short_name_text_text: "$"
+        token_1_text_text: ""
+        token_2_text_text: ""
+        token_3_text_text: ""
+        token_4_text_text: ""
+        name_stripe_box_suppress: True
+        _major_fill: ${colour/wikipedia/gold_metallic}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/wikipedia/jonquil}
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 20
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -4
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+      charter:
+        comment_text:
+          text: |
+            Owner may act on behalf of UB once per SR.
+            UB can buy a share or start a company.
+            UB must pay as much as possible, then the owner
+            must contribute the missing cash (if any).
+            Shares owned by UB may never be sold voluntarily.
+            At the end of the game, UB's possesions
+            are transferred to the owning player.
+      share:
+        index:
+
+    MS:
+      _:
+        long_name_text_text: |
+          Mount Steward
+        short_name_text_text: MS
+        token_1_text_text: M13
+        _major_fill: ${colour/wikipedia/canary_yellow}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/wikipedia/icterine}
+        name_stripe_box_suppress: True
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 16
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -2.5
+        index: $[index_of(7)]
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+
+    A:
+      _:
+        long_name_text_text: |
+          Alberton
+        short_name_text_text: A
+        token_1_text_text: D6
+        _major_fill: ${colour/hollasch/brown_ochre}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/hollasch/brick}
+        name_stripe_box_suppress: True
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 20
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -4
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of(7)]
+
+    S:
+      _:
+        long_name_text_text: |
+            Summerside
+        short_name_text_text: S
+        token_1_text_text: F14
+        _major_fill: ${colour/xxp/D_GREEN}
+        _minor_fill: ${colour/xxp/D_GREEN}
+        _related_fill: ${colour/hollasch/cinnabar_green}
+        name_stripe_box_suppress: True
+        side_bar_lsplit_box_fill: ${colour/xxp/WHITE}
+        side_bar_rsplit_box_fill: ${colour/xxp/WHITE}
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 20
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -4
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of(7)]
+
+    CT:
+      _:
+        long_name_text_text: |
+            Charlottetown
+        short_name_text_text: CT
+        token_1_text_text: L16
+        _major_fill: ${colour/x11/red}
+        _minor_fill: ${colour/xxp/BLACK}
+        _related_fill: ${colour/hollasch/tomato}
+        side_bar_lsplit_box_fill: ${colour/xxp/WHITE}
+        side_bar_rsplit_box_fill: ${colour/xxp/WHITE}
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: $[index_of(7)]
+
+    GT:
+      _:
+        long_name_text_text: |
+            Georgetown
+        short_name_text_text: GT
+        token_1_text_text: R16
+        _major_fill: ${colour/wikipedia/yellow_green}
+        _minor_fill: ${colour/wikipedia/lemon_lime}
+        _related_fill: ${colour/wikipedia/lemon_lime}
+      token:
+        _:
+          outer_circle_fill: ${_/_major_fill}
+          middle_circle_fill: ${_/_minor_fill}
+          inner_circle_fill: ${_/_major_fill}
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: $[index_of(7)]
+
+    Sou:
+      _:
+        long_name_text_text: |
+          Souris
+        short_name_text_text: Sou
+        token_1_text_text: T12
+        _major_fill: ${colour/wikipedia/onyx}
+        _minor_fill: ${colour/wikipedia/lavender_gray}
+        _related_fill: ${colour/wikipedia/lavender_gray}
+        name_stripe_box_suppress: True
+        middle_box_fill: ${colour/wikipedia/dark_gray}
+      token:
+        ELEMENTS: ${TEMPLATE_boxes/.}
+        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
+        _:
+          short_name_text_size: 12
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
+        index: $[index_of(7)]
+
+    MR:
+      _:
+        long_name_text_text: |
+            Murray River
+        short_name_text_text: MR
+        token_1_text_text: Q21
+        _major_fill: ${colour/wikipedia/blue_ryb}
+        _major_fill_2: ${colour/wikipedia/banana_yellow}
+        _minor_fill: ${_/_major_fill}
+        _minor_fill_2: ${_/_major_fill_2}
+        _related_fill: ${colour/hollasch/steel_blue}
+      token:
+        ELEMENTS: ${TEMPLATE_stripey/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
+        index: $[index_of(7)]
+
+    CB:
+      _:
+        long_name_text_text: |
+            Cornwall Branch
+        short_name_text_text: CB
+        _major_fill_1: ${colour/xxp/WHITE}
+        _minor_fill_1: ${colour/x11/gray55}
+        _major_fill_2: ${_/_minor_fill_1}
+        _minor_fill_2: ${_/_major_fill_1}
+        _related_fill: ${colour/x11/gray88}
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+        ELEMENTS: ${TEMPLATE_chequer/.}
+        EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
+        index: $[index_of (7)]
+
+    SB:
+      _:
+        long_name_text_text: |
+            Stratford Branch
+        short_name_text_text: SB
+        _major_fill_1: ${colour/wikipedia/rich_lavender}
+        _minor_fill_1: ${colour/wikipedia/royal_purple}
+        _major_fill_2: ${_/_minor_fill_1}
+        _minor_fill_2: ${_/_major_fill_1}
+        _related_fill: ${colour/wikipedia/plum_web}
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+        ELEMENTS: ${TEMPLATE_chequer/.}
+        EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
+        index: $[index_of (7)]
+
+    MB:
+      _:
+        long_name_text_text: |
+            Morel Branch
+        short_name_text_text: MB
+        _major_fill_1: ${colour/wikipedia/light_sky_blue}
+        _minor_fill_1: ${colour/wikipedia/blue_crayola}
+        _major_fill_2: ${_/_minor_fill_1}
+        _minor_fill_2: ${_/_major_fill_1}
+        _related_fill: ${colour/hollasch/powder_blue}
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+        ELEMENTS: ${TEMPLATE_chequer/.}
+        EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
+        index: $[index_of (7)]
+
+    HRB:
+      _:
+        long_name_text_text: |
+            Hunter River Branch
+        short_name_text_text: HRB
+        _major_fill_1: ${colour/x11/limegreen}
+        _minor_fill_1: ${colour/wikipedia/pakistan_green}
+        _major_fill_2: ${_/_minor_fill_1}
+        _minor_fill_2: ${_/_major_fill_1}
+        _related_fill: ${colour/x11/yellowgreen}
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+      share:
+        long_name_text:
+          text: |
+              Hunter River
+              Branch
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+        ELEMENTS: ${TEMPLATE_chequer/.}
+        EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
+        index: $[index_of (7)]
+
+    BB:
+      _:
+        long_name_text_text: |
+            Belfast Branch
+        short_name_text_text: BB
+        _major_fill_1: ${colour/wikipedia/amber}
+        _minor_fill_1: ${colour/wikipedia/amber_sae_ece}
+        _major_fill_2: ${_/_minor_fill_1}
+        _minor_fill_2: ${_/_major_fill_1}
+        _related_fill: ${colour/wikipedia/pink_orange}
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+        ELEMENTS: ${TEMPLATE_chequer/.}
+        EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
+        index: $[index_of (7)]
+
+    WB:
+      _:
+        long_name_text_text: |
+            Wellington Branch
+        short_name_text_text: WB
+        _major_fill_1: ${colour/x11/antiquewhite2}
+        _minor_fill_1: ${colour/wikipedia/sand}
+        _major_fill_2: ${_/_minor_fill_1}
+        _minor_fill_2: ${_/_major_fill_1}
+        _related_fill: ${colour/x11/antiquewhite}
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+        ELEMENTS: ${TEMPLATE_chequer/.}
+        EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
+        index: $[index_of (7)]
+
+marker:
+  index:
+    round:
+      token:
+        ELEMENTS:
+          - token_interior_box
+          - outer_circle
+          - middle_circle
+          - inner_circle
+
+        index: $[index_of (1)]
+
+      outer_circle:
+        fill: ${colour/x11/gold}
+      middle_circle:
+        fill: ${colour/x11/limegreen}
+      inner_circle:
+        fill: ${colour/x11/sienna3}
+
+private:
+  _:
+    closes_text_text: "Closed by 4+"
+    asset_interior_box_fill: ${colour/scale/yellow_0}
+
+  index:
+    MCo:
+      _:
+        closes_text_text: "Closed by 4+ / when power used"
+        long_name_text_text: |
+            Merchants and Co.
+        power_text_text: |
+            May be exchanged for a 10% share
+            of Shortline during SR.
+            Forced exchange if closed by 4+.
+        cost_text_text: "Cost: $40"
+        revenue_text_text: "Revenue: $5"
+
+    VRBC:
+      _:
+        closes_text_text: "Closed by 4+ / when power used"
+        long_name_text_text: |
+            Vernon River
+            Bridge Company
+        power_text_text: |
+            Blocks: N18. Owner may allow
+            to build there.
+
+            May be exchanged for a 10% share
+            of Shortline during SR.
+            Forced exchange if closed by 4+.
+        cost_text_text: "Cost: $40"
+        revenue_text_text: "Revenue: $5"
+
+    IBS:
+      _:
+        closes_text_text: "Closed by 4+ / when power used"
+        long_name_text_text: |
+            Ice Boat Shipping
+        player_count_text_text: "4"
+        power_text_text: |
+            May be exchanged for a 10% share
+            from the market that is NOT
+            the Mainline or the Shortline.
+        cost_text_text: "Cost: $40"
+        revenue_text_text: "Revenue: $5"
+
+    RAS:
+      _:
+        long_name_text_text: |
+            Royal Agricultural Society
+        power_text_text: |
+            Comes with a 10% share of Mainline.
+        cost_text_text: "Cost: $110"
+        revenue_text_text: "Revenue: $10"
+
+    RF:
+      _:
+        long_name_text_text: |
+            Railcar Ferry
+        power_text_text: |
+            Comes with a 10% share of Mainline.
+        cost_text_text: "Cost: $120"
+        revenue_text_text: "Revenue: $15"
+
+    SB:
+      _:
+        closes_text_text: "Closed by 4+ / when power used"
+        long_name_text_text: |
+            Shipbuilding
+        power_text_text: |
+            May be exchanged for a 10% share
+            of Shortline during SR.
+            Forced exchange if closed by 4+.
+        cost_text_text: "Cost: $90"
+        revenue_text_text: "Revenue: $15"
+
+    HSE:
+      _:
+        closes_text_text: "Closed by 4+ / when power used"
+        long_name_text_text: |
+            Hunslet Steam Engine
+        power_text_text: |
+            Can be sold to a public company
+            for $1 to $200 from phase 4H.
+
+            Owning company may buy a train from
+            the bank anytime during its operation.
+        cost_text_text: "Cost: $110"
+        revenue_text_text: "Revenue: $20"
+
+    MC:
+      _:
+        closes_text_text: "Closes when the Mainline operates"
+        long_name_text_text: |
+            Mainline Concession
+        power_text_text: |
+            Comes with the presidency of Mainline.
+            Mainline floats immediately.
+        cost_text_text: "Cost: $160"
+        revenue_text_text: "Revenue: $20"
+
+    SBC:
+      _:
+        long_name_text_text: |
+            Schreiber and Burpee
+            Construction
+        power_text_text: |
+            Comes with the #9 tile.
+            Any company, that the owner is
+            the president of, may lay this tile.
+            Standard tile laying rules apply.
+        cost_text_text: "Cost: $100"
+        revenue_text_text: "Revenue: $30"
+
+    SC:
+      _:
+        closes_text_text: "Closes when the Shortline operates"
+        long_name_text_text: |
+            Shortline Concession
+        power_text_text: |
+            Comes with the presidency of Shortline.
+        cost_text_text: "Cost: $160"
+        revenue_text_text: "Revenue: $30"
+
+    UB:
+      _:
+        closes_text_text: "Never closes"
+        long_name_text_text: |
+            Union Bank
+        power_text_text: |
+            UB starts with a 10% share of Mainline
+            and a 10% share of a random company
+            (not Mainline or Shortline).
+
+            Owner may act on behalf of UB once per SR.
+            At the end of the game, UB's possesions
+            are transferred to the owning player.
+        cost_text_text: "Cost: $120"
+        revenue_text_text: "Revenue: -"
+
+    KM:
+      _:
+        long_name_text_text: |
+            King's Mail
+        player_count_text_text: "PEIR"
+        cost_text_text: "Cost: -"
+        revenue_text_text: "Revenue: $80"
+
+train:
+  _:
+    rusted_text_size: 13
+    rusted_text_y: 6
+    rust_bar_box_y: 20
+    long_name_text_y: 95
+
+  index:
+    2HT:
+      _:
+        asset_interior_box_fill_p: YELLOW
+        rust_bar_box_fill_p: MEDIUM_GREEN
+        long_name_text_text: "2H"
+        long_name_text_size: 64
+        cost_text_text_p: $80
+        rusted_text_text: "Rusted by 5H"
+      model:
+        index: $[index_of (4)]
+
+    3HT:
+      _:
+        asset_interior_box_fill_p: DARK_YELLOW
+        rust_bar_box_fill_p: DARK_GREEN
+        long_name_text_text: "3H"
+        long_name_text_size: 64
+        cost_text_text_p: $100
+        rusted_text_text: "Rusted by 6H"
+      model:
+        index: $[index_of (3)]
+
+    4HT:
+      _:
+        asset_interior_box_fill_p: LIGHT_GREEN
+        rust_bar_box_fill_p: BLUE
+        long_name_text_text: "4H"
+        long_name_text_size: 64
+        cost_text_text_p: $120
+        rusted_text_text: "Rusted by 2+"
+      model:
+        index: $[index_of (3)]
+
+    5HT:
+      _:
+        asset_interior_box_fill_p: MEDIUM_GREEN
+        rust_bar_box_fill_p: MEDIUM_BLUE
+        long_name_text_text: "5H"
+        long_name_text_size: 64
+        cost_text_text_p: $160
+        rusted_text_text: "Rusted by 3+"
+      model:
+        index: $[index_of (3)]
+
+    6HT:
+      _:
+        asset_interior_box_fill_p: DARK_GREEN
+        rust_bar_box_fill_p: BROWN
+        long_name_text_text: "6H"
+        long_name_text_size: 64
+        cost_text_text_p: $180
+        rusted_text_text: "Rusted by 4+"
+      model:
+        index: $[index_of (2)]
+
+    2+T:
+      _:
+        asset_interior_box_fill_p: BLUE
+        rust_bar_box_fill_p: RED
+        long_name_text_text: "2+"
+        long_name_text_size: 64
+        cost_text_text_p: $220
+        rusted_text_text: "Rusted by 7"
+      model:
+        index: $[index_of (4)]
+
+    3+T:
+      _:
+        asset_interior_box_fill_p: MEDIUM_BLUE
+        rust_bar_box_fill_p: GRAY
+        long_name_text_text: "3+"
+        long_name_text_size: 64
+        cost_text_text_p: $240
+        rusted_text_text: "Rusted by Diesel"
+      model:
+        index: $[index_of (3)]
+
+    4+T:
+      _:
+        asset_interior_box_fill_p: BROWN
+        rust_bar_box_fill_p: GRAY
+        long_name_text_text: "4+"
+        long_name_text_size: 64
+        cost_text_text_p: $200
+        rusted_text_text: "Rusted by Diesel"
+        note_text_text: "Runs at least once"
+      model:
+        index: $[index_of (2)]
+
+    7T:
+      _:
+        asset_interior_box_fill_p: RED
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "7"
+        long_name_text_size: 64
+        cost_text_text_p: $500
+        rusted_text_text: "Permanent"
+      model:
+        index: $[index_of (4)]
+
+    Diesel:
+      _:
+        asset_interior_box_fill_p: GRAY
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "Diesel"
+        long_name_text_size: 32
+        cost_text_text_p: $600
+        rusted_text_text: "Permanent"
+      model:
+        index: $[index_of (8)]
+
+    p1Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "1"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p2Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "2"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p3Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "3"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p4Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "4"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p1Pb:
+      _:
+        asset_interior_box_fill: ${colour/xxp/L_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "1"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p2Pb:
+      _:
+        asset_interior_box_fill: ${colour/xxp/L_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "2"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p3Pb:
+      _:
+        asset_interior_box_fill: ${colour/xxp/L_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "3"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p4Pb:
+      _:
+        asset_interior_box_fill: ${colour/xxp/L_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "4"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
