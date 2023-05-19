@@ -3,6 +3,6 @@ user:
     x: $[72 * 0.5118] #0,5118
     y: $[72 * 0.5118]
     x_num: 13
-    y_num: 15
+    y_num: 13
   token_tile_x_adjust: 64 #bylo 62
   token_tile_y_adjust: 57 #bylo 56.6

@@ -259,17 +259,29 @@ marker:
       inner_circle:
         fill: ${colour/galatolol/brown}
 
-    ferry:
+    p10:
       token:
         _:
           name_stripe_box_suppress: True
-          short_name_text_text: ferry
+          short_name_text_text: "+10"
           short_name_text_fill: ${colour/xxp/BLACK}
           short_name_text_size: 10
-          outer_circle_fill: ${colour/wikipedia/baby_blue}
+          outer_circle_fill: ${colour/wikipedia/glitter}
           middle_circle_fill: ${colour/wikipedia/white}
         ELEMENTS: ${TEMPLATE_ring/.}
-        index: "$[index_of (4)]"
+        index: "$[index_of (2)]"
+
+    x2:
+      token:
+        _:
+          name_stripe_box_suppress: True
+          short_name_text_text: "x2"
+          short_name_text_fill: ${colour/xxp/BLACK}
+          short_name_text_size: 10
+          outer_circle_fill: ${colour/wikipedia/glitter}
+          middle_circle_fill: ${colour/wikipedia/white}
+        ELEMENTS: ${TEMPLATE_ring/.}
+        index: "$[index_of (2)]"
 
 private:
   _:

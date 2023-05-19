@@ -331,7 +331,7 @@ private:
   _:
     long_name_text_size: 11
     closes_text_size: 8
-    closes_text_text: "Closed in red phase"
+    closes_text_text: "Closes in red phase"
     power_text_size: 8
     power_text_y: -1
     revenue_text_x: 168
@@ -420,7 +420,7 @@ private:
         sell_text_text: "May be sold for F50 – 200 (until red phase)"
         cost_text_text: "Cost: F100"
         revenue_text_text: "Revenue: F0 / 70 / 100"
-        closes_text_text: "Closed in purple phase"
+        closes_text_text: "Closes in purple phase"
 
     P4_4p:
       _:
@@ -436,7 +436,7 @@ private:
         sell_text_text: "May be sold for F35 – 140 (until red phase)"
         cost_text_text: "Cost: F70"
         revenue_text_text: "Revenue: F0 / 70 / 100"
-        closes_text_text: "Closed in purple phase"
+        closes_text_text: "Closes in purple phase"
 
     P5:
       _:
@@ -450,7 +450,7 @@ private:
 
     P6:
       _:
-        closes_text_text: "Closed when the associated company operates"
+        closes_text_text: "Closes when the associated company operates"
         closes_text_x_inset: -1
         long_name_text_text: |
             French major shareholding
@@ -464,7 +464,7 @@ private:
 
     P7:
       _:
-        closes_text_text: "Closed when the Belge operates"
+        closes_text_text: "Closes when the Belge operates"
         closes_text_x_inset: -1
         long_name_text_text: |
             Belge major shareholding

@@ -29,8 +29,6 @@ company:
         token_2_text_text: ""
         token_3_text_text: ""
         token_4_text_text: ""
-        _major_fill_1: ${colour/hollasch/hot_pink}
-        _major_fill_2: ${colour/hollasch/misty_rose}
         _major_fill_1: ${colour/hollasch/misty_rose}
         _major_fill_2: ${colour/hollasch/hot_pink}
         _related_fill: ${colour/hollasch/pink}
@@ -100,7 +98,7 @@ company:
           "3":
             comment_text:
               text: |
-                #3 Mount Steward
+                #3 Mount Stewart
             asset_interior_box:
               fill: ${colour/wikipedia/icterine}
           "4":
@@ -186,11 +184,14 @@ company:
     MS:
       _:
         long_name_text_text: |
-          Mount Steward
+          Mount Stewart
         short_name_text_text: MS
         token_1_text_text: M13
         _major_fill: ${colour/wikipedia/canary_yellow}
         _minor_fill: ${_/_major_fill}
+        #_major_fill_1: ${colour/wikipedia/canary_yellow}
+        #_major_fill_2: ${colour/wikipedia/amber_sae_ece}
+        #_minor_fill: ${colour/wikipedia/blue_crayola}
         _related_fill: ${colour/wikipedia/icterine}
         name_stripe_box_suppress: True
       token:
@@ -199,9 +200,12 @@ company:
           short_name_text_size: 16
           short_name_text_x_inset: 0
           short_name_text_y_inset: -2.5
+          inner_circle_suppress: True
         index: $[index_of(7)]
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        #ELEMENTS: ${TEMPLATE_wedges/.}
+        #EMBED_ELEMENTS: ${TEMPLATE_wedges_embed/.}
 
     A:
       _:
@@ -240,7 +244,7 @@ company:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
           short_name_text_size: 20
           short_name_text_x_inset: 0
-          short_name_text_y_inset: -4
+          short_name_text_y_inset: -3
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
         index: $[index_of(7)]

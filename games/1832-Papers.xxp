@@ -10,16 +10,18 @@ company:
       token_2_text_size: 10
       token_3_text_size: 10
       token_4_text_size: 10
+      token_8_text_size: 10
+      token_7_text_size: 10
       comment_text_text: ""
       long_name_text_size: 14
   share:
     _:
-      type_bar_box_fill: ${colour/wikipedia/golden_yellow}
-      type_bar_box_y: 13
       side_bar_lsplit_box_suppress: True
       side_bar_rsplit_box_suppress: True
       share_num_text_x: 167
       long_name_text_size: 12
+      type_bar_box_fill: ${colour/wikipedia/golden_yellow}
+      share_num_text_x: 165
   token:
     _:
       short_name_text_size: 8
@@ -55,8 +57,7 @@ company:
       share:
         long_name_text:
           text: |
-            Atlanta
-            & West Point
+            Atlanta & West Point
       token:
         _:
           outer_circle_fill: ${_/_major_fill}
@@ -683,7 +684,7 @@ marker:
           name_stripe_box_suppress: True
           short_name_text_text: coal
           short_name_text_fill: ${colour/xxp/WHITE}
-          short_name_text_size: 12
+          short_name_text_size: 14
           outer_circle_fill: ${colour/xxp/BLACK}
           middle_circle_fill: ${colour/x11/gray50}
         ELEMENTS: ${TEMPLATE_ring/.}
@@ -752,8 +753,20 @@ marker:
 
 private:
   _:
-    closes_text_text: "Closes in phase 5"
+    long_name_text_size: 11
+    closes_text_size: 8
+    closes_text_text: "Closes in brown phase"
+    power_text_size: 8
+    power_text_y: -1
+    revenue_text_x: 168
+    revenue_text_size: 10
+    cost_text_size: 10
     asset_interior_box_fill: ${colour/scale/yellow_0}
+    money_bar_box_y: 11
+    money_bar_box_fill: ${colour/wikipedia/bubble_gum}
+    cost_text_fill: ${colour/xxp/BLACK}
+    revenue_text_fill: ${colour/xxp/BLACK}
+    #long_name_text_y: 68
 
   index:
     CSC:
@@ -769,11 +782,11 @@ private:
         long_name_text_text: |
             Cotton Warehouse
         power_text_text: |
-            Owning company may place a Cotton token
+            Owning company may place a +10 marker
             in any non-coastal city.
-            Increases the value of that city by $10
+            Increases the value of that city by 10
             for the owning company only.
-            The Cotton token is removed in phase 6.
+            The marker is removed in red phase.
         cost_text_text: "Cost: $40"
         revenue_text_text: "Revenue: $10"
 
@@ -782,12 +795,11 @@ private:
         long_name_text_text: |
             Atlantic Shipping
         power_text_text: |
-            Owning company may place a Port token
+            Owning company may place a +20/10 marker
             in any coastal city.
-            Increases the value of that city by $20
-            for the owning company
-            and by $10 for all other companies.
-            The Port token is removed in phase 6.
+            Increases the value of that city by 20 for the
+            owning company and by 10 for other companies.
+            The marker is removed in red phase.
         cost_text_text: "Cost: $50"
         revenue_text_text: "Revenue: $10"
 
@@ -797,41 +809,40 @@ private:
         long_name_text_text: |
             London Investment
         power_text_text: |
-            Purchase (for free) a share of a company
+            Get a free share of a company
             that started in the same SR.
             Counts as a stock purchase during SR.
-            May not be sold to a public company.
+            May not be sold to a company.
         cost_text_text: "Cost: $70"
         revenue_text_text: "Revenue: $10"
 
     WVCF:
       _:
         long_name_text_text: |
-            West Virginia
-            Coal Fields
+            West Virginia Coal Fields
         power_text_text: |
-            Owning company receives a coal token.
+            Owning company receives a coal marker.
             Other companies that connect to WVCF
-            may buy a coal token for $80
+            may buy a coal marker for $80
             ($40 is paid to the owner of this private).
-            May be sold to a public company
-            for up to full face value in yellow phase.
+            May be sold to a company
+            for $1–80 in yellow phase.
         cost_text_text: "Cost: $80"
         revenue_text_text: "Revenue: $15"
 
     SB:
       _:
-        closes_text_text: "Operates until the end of the game"
+        closes_text_text: "Never closes"
         long_name_text_text: |
             Southern Bank
         power_text_text: |
             Owner may loan money to a company
-            by mortgaging an asset for 50-200% value.
+            by mortgaging an asset for 50–200% value.
             At the start of each OR, the company
-            pays interests (10% of the asset value).
-            Company may repay the loan for 50-100%.
+            pays interests (10% of the asset's value).
+            Company may repay the loan for 50–100%.
             State of the loan can be changed once per OR.
-            Not counted against cert limit while mortgaged.
+            Doesn't count against cert limit while mortgaged.
             May not be sold to a public company.
         power_text_size: 7
         cost_text_text: "Cost: $100"
@@ -839,7 +850,7 @@ private:
 
     CRRC:
       _:
-        closes_text_text: "Closes in phase 5 or when CG buys a train"
+        closes_text_text: "Closes in brown phase or when CG buys a train"
         long_name_text_text: |
             Central Rail Road and Canal
         power_text_text: |
@@ -850,6 +861,12 @@ private:
         revenue_text_text: "Revenue: $30"
 
 train:
+  _:
+    rusted_text_size: 13
+    rusted_text_y: 6
+    rust_bar_box_y: 20
+    long_name_text_y: 95
+  
   index:
     2T:
       _:
