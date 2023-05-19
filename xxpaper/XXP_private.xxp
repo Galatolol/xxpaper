@@ -40,6 +40,7 @@ private:
     fill: ${colour/scale/yellow_0}
 
   close_bar_box:
+    suppress: False
     x_inset: 0
     y_inset: $[${asset_interior_box/x} - 11]
     x: ${asset_interior_box/y}
@@ -58,12 +59,12 @@ private:
     fill: $[black_or_white (${close_bar_box/fill})]
 
   sell_bar_box:
+    suppress: True
     x_inset: 0
     y_inset: $[${asset_interior_box/x} - ${close_bar_box/y} - 11]
     x: ${asset_interior_box/y}
     y: 11
     fill: ${colour/xxp/WHITE}
-    suppress: True
 
   sell_text:
     h_center: 1
@@ -116,6 +117,7 @@ private:
     fill: $[black_or_white (${asset_interior_box/fill})]
 
   money_bar_box:
+    suppress: False
     x: ${asset_interior_box/y}
     y: 13
     fill: ${colour/wikipedia/bubble_gum}

@@ -60,16 +60,25 @@ company:
         share_desc_text:
           text: ""
         comment_text:
-          size: 11
+          size: 12
           y: 24
-          typeface: ${DEFAULT/typeface}
+          typeface: ${DEFAULT/typeface_bold}
         index:
           "1":
             type_bar_box:
               suppress: True
             comment_text:
               text: |
-                #1 Souris
+                ~ 1 ~
+                Souris
+                (T12)
+              fill: ${colour/xxp/WHITE}
+            share_num_text:
+              fill: ${colour/xxp/WHITE}
+            share_pct_text:
+              fill: ${colour/xxp/WHITE}
+            long_name_text:
+              fill: ${colour/xxp/WHITE}
             token_1_embed:
               suppress: False
             token_2a_embed:
@@ -79,7 +88,7 @@ company:
             share_desc_text:
               text: ""
             asset_interior_box:
-              fill: ${colour/wikipedia/lavender_gray}
+              fill: ${colour/x11/gray43}
             side_bar_rsplit_box:
               suppress: True
             side_bar_lsplit_box:
@@ -87,7 +96,9 @@ company:
           "2":
             comment_text:
               text: |
-                #2 Alberton
+                ~ 2 ~
+                Alberton
+                (D6)
               fill: ${colour/xxp/WHITE}
             share_num_text:
               fill: ${colour/xxp/WHITE}
@@ -100,45 +111,41 @@ company:
           "3":
             comment_text:
               text: |
-                #3 Mount Stewart
+                ~ 3 ~
+                Mount Stewart
+                (M13)
             asset_interior_box:
               fill: ${colour/wikipedia/icterine}
           "4":
             comment_text:
               text: |
-                #4 Murray River
-              fill: ${colour/xxp/WHITE}
-            share_num_text:
-              fill: ${colour/xxp/WHITE}
-            share_pct_text:
-              fill: ${colour/xxp/WHITE}
-            long_name_text:
-              fill: ${colour/xxp/WHITE}
+                ~ 4 ~
+                Murray River
+                (Q21)
             asset_interior_box:
-              fill: ${colour/hollasch/steel_blue}
+              fill: ${colour/hollasch/powder_blue}
           "5":
             comment_text:
               text: |
-                #5 Summerside
-              fill: ${colour/xxp/WHITE}
-            share_num_text:
-              fill: ${colour/xxp/WHITE}
-            share_pct_text:
-              fill: ${colour/xxp/WHITE}
-            long_name_text:
-              fill: ${colour/xxp/WHITE}
+                ~ 5 ~
+                Summerside
+                (F14)
             asset_interior_box:
               fill: ${colour/hollasch/cinnabar_green}
           "6":
             comment_text:
               text: |
-                #6 Georgetown
+                ~ 6 ~
+                Georgetown
+                (R16)
             asset_interior_box:
-              fill: ${colour/wikipedia/lemon_lime}
+              fill: ${colour/wikipedia/lavender_gray}
           "7":
             comment_text:
               text: |
-                #7 Charlottetown
+                ~ 7 ~
+                Charlottetown
+                (L16)
               fill: ${colour/xxp/WHITE}
             share_num_text:
               fill: ${colour/xxp/WHITE}
@@ -147,7 +154,7 @@ company:
             long_name_text:
               fill: ${colour/xxp/WHITE}
             asset_interior_box:
-              fill: ${colour/hollasch/tomato}
+              fill: ${colour/wikipedia/carmine_m_p}
 
     UB:
       _:
@@ -300,24 +307,6 @@ company:
         _minor_fill: ${colour/wikipedia/canary_yellow}
         _related_fill: ${colour/x11/gray43}
         middle_rotate_angle: 135
-      concession:
-        _:
-          long_name_text_text: |
-              Prince Edward Island
-              Railway
-          power_text_text: |
-              #1 Souris
-          long_name_text_size: 11
-          long_name_text_x: 86
-          long_name_text_y: 78
-          close_bar_box_suppress: True
-          bottom_bar_box_suppress: True
-          cost_text_text: "$80"
-          power_text_size: 8
-          token_embed_x_inset: 130
-          token_embed_y_inset: 30
-          asset_interior_box_fill: ${colour/x11/gray43}
-        index: "$[index_of (1)]"
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
@@ -461,7 +450,12 @@ marker:
 private:
   _:
     closes_text_text: "Closed by 4+"
+    revenue_text_x: 168
+    revenue_text_size: 10
+    cost_text_size: 10
     asset_interior_box_fill: ${colour/scale/yellow_0}
+    money_bar_box_y: 11
+    money_bar_box_fill: ${colour/wikipedia/bubble_gum}
 
   index:
     MCo:
