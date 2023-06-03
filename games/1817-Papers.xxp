@@ -181,7 +181,7 @@ private:
 company:
   charter:
     _:
-      label_text_text: "Stations                              Loans"
+      label_text_text: "Stations                                  Loans"
       comment_text_text: #May place extra yellow tile for $20 (in any order)
       long_name_text_x: 130
       long_name_text_size: 14
