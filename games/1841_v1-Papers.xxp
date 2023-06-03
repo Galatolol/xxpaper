@@ -233,7 +233,7 @@ company:
           long_name_text_size: 12
           long_name_text_x: 86
           long_name_text_y: 78
-          bottom_bar_box_y: 13
+          cost_bar_box_y: 13
           power_text_h_center: 1
           power_text_x_inset: 4
           power_text_size: 8

@@ -8,7 +8,7 @@ TEMPLATE_concession_default:
   - long_name_text
   - power_text
   - comment_text
-  - bottom_bar_box
+  - cost_bar_box
   - cost_text
   - bid_text
 
@@ -35,7 +35,7 @@ closes_text:
   suppress: ${close_bar_box/suppress}
   h_center: 1
   v_center: 0
-  typeface: ${DEFAULT/typeface_bold_italic}
+  typeface: ${DEFAULT/typeface_bold}
   size: 8
   x_inset: 0
   y_inset: 92
@@ -81,28 +81,28 @@ comment_text:
   typeface: ${DEFAULT/typeface_italic}
   size: 8
 
-bottom_bar_box:
+cost_bar_box:
   suppress: False
   x: ${asset_interior_box/y}
   y: 11
   fill: ${colour/xxp/L_RED}
 
 cost_text:
-  #suppress: ${bottom_bar_box/suppress}
+  #suppress: ${cost_bar_box/suppress}
   x: 4
   y: 2
   h_center: 1
   v_center: 0
   typeface: ${DEFAULT/typeface_bold}
   size: 11
-  fill: $[black_or_white (${bottom_bar_box/fill})]
+  fill: $[black_or_white (${cost_bar_box/fill})]
 
 bid_text:
-  #suppress: ${bottom_bar_box/suppress}
+  #suppress: ${cost_bar_box/suppress}
   x: 158
   y: 2
   h_center: -1
   v_center: 0
   typeface: ${DEFAULT/typeface_bold}
   size: 11
-  fill: $[black_or_white (${bottom_bar_box/fill})]
+  fill: $[black_or_white (${cost_bar_box/fill})]

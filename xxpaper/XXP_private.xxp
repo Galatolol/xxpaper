@@ -119,7 +119,7 @@ private:
   money_bar_box:
     suppress: False
     x: ${asset_interior_box/y}
-    y: 13
+    y: 11
     fill: ${colour/wikipedia/bubble_gum}
 
   value_text:

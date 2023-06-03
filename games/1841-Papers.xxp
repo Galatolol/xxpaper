@@ -72,8 +72,7 @@ company:
           long_name_text_text: |
               SFTN Concession (5)
           power_text_text: |
-              Owning player may start 
-              SFTN.
+              Owning player may start SFTN.
               Owning player can't lose the
               presidency of SFTN.
               If SFTN not started at the end of SR,
@@ -85,7 +84,7 @@ company:
           long_name_text_size: 12
           long_name_text_x: 86
           long_name_text_y: 78
-          bottom_bar_box_y: 13
+          cost_bar_box_y: 11
           power_text_h_center: 1
           power_text_x_inset: 4
           power_text_size: 8
@@ -131,8 +130,7 @@ company:
           long_name_text_text: |
               IRSFF Concession (8)
           power_text_text: |
-              Owning player may start 
-              IRSFF.
+              Owning player may start IRSFF.
               Owning player can't lose the
               presidency of IRSFF.
               If IRSFF not started at the end of SR,
@@ -144,7 +142,7 @@ company:
           long_name_text_size: 12
           long_name_text_x: 86
           long_name_text_y: 78
-          bottom_bar_box_y: 13
+          cost_bar_box_y: 11
           power_text_h_center: 1
           power_text_x_inset: 4
           power_text_size: 8
@@ -257,8 +255,7 @@ company:
           long_name_text_text: |
               SFTG Concession (7)
           power_text_text: |
-              Owning player may start 
-              SFTG.
+              Owning player may start SFTG.
               Owning player can't lose the
               presidency of SFTG.
               If SFTG not started at the end of SR,
@@ -270,7 +267,7 @@ company:
           long_name_text_size: 12
           long_name_text_x: 86
           long_name_text_y: 78
-          bottom_bar_box_y: 13
+          cost_bar_box_y: 11
           power_text_h_center: 1
           power_text_x_inset: 4
           power_text_size: 8
@@ -317,8 +314,7 @@ company:
           long_name_text_text: |
               SSFL Concession (6)
           power_text_text: |
-              Owning player may start 
-              SSFL.
+              Owning player may start SSFL.
               Owning player can't lose the
               presidency of SSFL.
               If SSFL not started at the end of SR,
@@ -330,7 +326,7 @@ company:
           long_name_text_size: 12
           long_name_text_x: 86
           long_name_text_y: 78
-          bottom_bar_box_y: 13
+          cost_bar_box_y: 11
           power_text_h_center: 1
           power_text_x_inset: 4
           power_text_size: 8
@@ -374,8 +370,7 @@ company:
           long_name_text_text: |
               SFTC Concession (3)
           power_text_text: |
-              Owning player may start 
-              SFTC.
+              Owning player may start SFTC.
               Owning player can't lose the
               presidency of SFTC.
               If SFTC not started at the end of SR,
@@ -387,7 +382,7 @@ company:
           long_name_text_size: 12
           long_name_text_x: 86
           long_name_text_y: 78
-          bottom_bar_box_y: 13
+          cost_bar_box_y: 11
           power_text_h_center: 1
           power_text_x_inset: 4
           power_text_size: 8
@@ -490,8 +485,7 @@ company:
           long_name_text_text: |
               SFLP Concession (2)
           power_text_text: |
-              Owning player may start 
-              SFLP.
+              Owning player may start SFLP.
               Owning player can't lose the
               presidency of SFLP.
               If SFLP not started at the end of SR,
@@ -503,7 +497,7 @@ company:
           long_name_text_size: 12
           long_name_text_x: 86
           long_name_text_y: 78
-          bottom_bar_box_y: 13
+          cost_bar_box_y: 11
           power_text_h_center: 1
           power_text_x_inset: 4
           power_text_size: 8
@@ -592,8 +586,7 @@ company:
           long_name_text_text: |
               SFMA Concession (4)
           power_text_text: |
-              Owning player may start 
-              SFMA.
+              Owning player may start SFMA.
               Owning player can't lose the
               presidency of SFMA.
               If SFMA not started at the end of SR,
@@ -605,7 +598,7 @@ company:
           long_name_text_size: 12
           long_name_text_x: 86
           long_name_text_y: 78
-          bottom_bar_box_y: 13
+          cost_bar_box_y: 11
           power_text_h_center: 1
           power_text_x_inset: 4
           power_text_size: 8
