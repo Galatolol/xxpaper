@@ -23,8 +23,9 @@ company:
             SJ
         short_name_text_text: SJ
         token_1_text_text: K100
-        token_2_text_text: ""
-        token_3_text_text: ""
+        token_2_text_text: "K100"
+        token_3_text_text: "K100"
+        token_4_text_text: "K100"
         name_stripe_box_fill: ${colour/wikipedia/banana_yellow}
         _major_fill: ${colour/wikipedia/blue_ryb}
         _minor_fill: ${colour/wikipedia/banana_yellow}
@@ -33,6 +34,8 @@ company:
         _:
           label_text_text: |
             Statens Järnvägar
+          comment_text_text: |
+            +1 train limit
       share:
         _:
           comment_text_text: |
@@ -123,7 +126,7 @@ company:
         short_name_text_text: M1
         short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 2]
         token_1_text_text: G4
-        token_2_text_text: "D: E6"
+        token_2_text_text: "E6 / K40"
         token_3_text_text: ""
         share_pct_text_fill: ${colour/xxp/BLACK}
         short_name_text_size: 15
@@ -137,11 +140,22 @@ company:
           label_text_text: |
             Södra Stambanan
           comment_text_text: |
-            Cost/starting capital: K260
+            Destination: E6
+            Cost / starting capital: K260
+      concession:
+        _:
+          long_name_text_suppress: True
+          power_text_text: |
+              Control of M1
+          token_embed_x_inset: 65
+          token_embed_y_inset: 30
+          close_bar_box_suppress: True
+          cost_bar_box_suppress: True
+        index: "$[index_of (1)]"
       share:
         index: $[index_of (0)]
       token:
-        index: $[index_of (2)]
+        index: $[index_of (3)]
 
     M2:
       _:
@@ -150,7 +164,7 @@ company:
         short_name_text_text: M2
         short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 2]
         token_1_text_text: F11
-        token_2_text_text: "D: B11"
+        token_2_text_text: "B11 / K40"
         token_3_text_text: ""
         share_pct_text_fill: ${colour/xxp/BLACK}
         short_name_text_size: 15
@@ -164,11 +178,22 @@ company:
           label_text_text: |
             Nordvästra Stambanan
           comment_text_text: |
-            Cost/starting capital: K220
+            Destination: B11
+            Cost / starting capital: K220
+      concession:
+        _:
+          long_name_text_suppress: True
+          power_text_text: |
+              Control of M2
+          token_embed_x_inset: 65
+          token_embed_y_inset: 30
+          close_bar_box_suppress: True
+          cost_bar_box_suppress: True
+        index: "$[index_of (1)]"
       share:
         index: $[index_of (0)]
       token:
-        index: $[index_of (2)]
+        index: $[index_of (3)]
 
     M3:
       _:
@@ -177,7 +202,7 @@ company:
         short_name_text_text: M3
         short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 2]
         token_1_text_text: F11
-        token_2_text_text: "D: D7"
+        token_2_text_text: "D7 / K40"
         token_3_text_text: ""
         share_pct_text_fill: ${colour/xxp/BLACK}
         short_name_text_size: 15
@@ -191,11 +216,22 @@ company:
           label_text_text: |
             Västra Stambanan
           comment_text_text: |
-            Cost/starting capital: K200
+            Destination: D7
+            Cost / starting capital: K200
+      concession:
+        _:
+          long_name_text_suppress: True
+          power_text_text: |
+              Control of M3
+          token_embed_x_inset: 65
+          token_embed_y_inset: 30
+          close_bar_box_suppress: True
+          cost_bar_box_suppress: True
+        index: "$[index_of (1)]"
       share:
         index: $[index_of (0)]
       token:
-        index: $[index_of (2)]
+        index: $[index_of (3)]
 
     SNJ:
       _:
@@ -252,230 +288,6 @@ company:
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
         index: "$[index_of (6)]"
 
-    CLB:
-      _:
-        long_name_text_text: |
-            CLB
-        short_name_text_text: CLB
-        token_1_text_text: L8
-        token_4_text_text: 100 zł
-        _major_fill: ${colour/hollasch/brown_ochre}
-        _minor_fill: ${_\_major_fill}
-        _related_fill: ${colour/hollasch/brick}
-        name_stripe_box_suppress: True
-      charter:
-        _:
-          label_text_text: |
-            Kolej
-            Galicyjska
-      share:
-        _:
-          comment_text_text: |
-            Kolej
-            Galicyjska
-          comment_text_y: 60
-      token:
-        _:
-          short_name_text_fill: $[black_or_white (${_/_major_fill})]
-          short_name_text_size: 9
-          short_name_text_x_inset: 0
-          short_name_text_y_inset: 0
-        ELEMENTS: ${TEMPLATE_solid/.}
-        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (7)]
-
-    KN:
-      _:
-        long_name_text_text: |
-            KN
-        short_name_text_text: KN
-        token_1_text_text: M3
-        token_4_text_text: 100 zł
-        _major_fill: ${colour/wikipedia/blue_ryb}
-        _major_fill_2: ${colour/wikipedia/banana_yellow}
-        _minor_fill_2: ${_/_major_fill_2}
-        _minor_fill: ${_/_major_fill}
-        _related_fill: ${colour/hollasch/steel_blue}
-      charter:
-        _:
-          label_text_text: |
-            Kolej Nadwiślańska
-      share:
-        _:
-          comment_text_text: |
-            Kolej Nadwiślańska
-          comment_text_y: 65
-      token:
-        ELEMENTS: ${TEMPLATE_stripey/.}
-        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
-        index: $[index_of (7)]
-
-    CMK:
-      _:
-        long_name_text_text: |
-            CMK
-        short_name_text_text: CMK
-        token_1_text_text: F8
-        _major_fill: ${colour/x11/red}
-        _major_fill_2: ${colour/wikipedia/black}
-        _minor_fill_2: ${_/_major_fill_2}
-        _minor_fill: ${_/_major_fill}
-        _related_fill: ${colour/hollasch/tomato}
-      charter:
-        _:
-          label_text_text: |
-            Centralna
-            Magistrala Kolejowa
-      share:
-        _:
-          comment_text_text: |
-            Centralna
-            Magistrala Kolejowa
-          comment_text_y: 65
-      token:
-        ELEMENTS: ${TEMPLATE_stripey/.}
-        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
-        index: $[index_of (6)]
-
-    MW:
-      _:
-        long_name_text_text: |
-            MW
-        short_name_text_text: MW
-        token_1_text_text: E9
-        token_4_text_text: 100 zł
-        _major_fill: ${colour/wikipedia/canary_yellow}
-        _minor_fill: ${_/_major_fill}
-        _related_fill: ${colour/wikipedia/icterine}
-        name_stripe_box_suppress: True
-      charter:
-        _:
-          label_text_text: |
-            Magistrala Węglowa
-      share:
-        _:
-          comment_text_text: |
-            Magistrala Węglowa
-          comment_text_y: 65
-      token:
-        _:
-          short_name_text_fill: $[black_or_white (${_/_major_fill})]
-          short_name_text_size: 10
-        index: "$[index_of (7)]"
-
-    TKG:
-      _:
-        long_name_text_text: |
-            TKG
-        short_name_text_text: TKG
-        token_1_text_text: B4
-        token_4_text_text: 100 zł
-        _major_fill: ${colour/wikipedia/amber_sae_ece}
-        _minor_fill: ${colour/x11/white}
-        _related_fill: ${colour/wikipedia/pink_orange}
-      charter:
-        _:
-          label_text_text: |
-            Towarzystwo Kolei Górnośląskiej
-      share:
-        _:
-          comment_text_text: |
-            Towarzystwo Kolei Górnośląskiej
-          comment_text_y: 65
-      token:
-        _:
-          inner_circle_fill: ${_/_major_fill}
-          inner_circle_radius: 9
-        ELEMENTS: ${TEMPLATE_bullseye/.}
-        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
-        index: $[index_of (7)]
-
-    KKG:
-      _:
-        long_name_text_text: |
-            KKG
-        short_name_text_text: KKG
-        token_1_text_text: H8
-        token_3_text_text: ""
-        share_pct_text_fill: ${colour/xxp/BLACK}
-        _major_fill: ${colour/wikipedia/rich_lavender}
-        _minor_fill: ${colour/wikipedia/black}
-        _related_fill: ${colour/wikipedia/plum_web}
-      charter:
-        _:
-          label_text_text: |
-            Kolej
-            Krakowsko–Górnośląska
-      share:
-        _:
-          comment_text_text: |
-            Kolej
-            Krakowsko–Górnośląska
-          comment_text_y: 50
-      token:
-        _:
-          inner_circle_fill: ${_/_major_fill}
-          inner_circle_radius: 9
-          short_name_text_size: 8
-        ELEMENTS: ${TEMPLATE_bullseye/.}
-        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
-        index: $[index_of (5)]
-
-    LHS:
-      _:
-        long_name_text_text: |
-             LHS
-        short_name_text_text: LHS
-        token_1_text_text: F8
-        _major_fill: ${colour/xxp/D_GREEN}
-        _minor_fill: ${colour/xxp/D_GREEN}
-        _related_fill: ${colour/hollasch/cinnabar_green}
-        name_stripe_box_suppress: True
-      charter:
-        _:
-          label_text_text: |
-            Linia
-            Hutniczo–Siarkowa
-      share:
-        _:
-          comment_text_text: |
-            Linia
-            Hutniczo–Siarkowa
-          comment_text_y: 60
-      token:
-        _:
-          short_name_text_fill: $[black_or_white (${_/_major_fill})]
-          short_name_text_size: 10
-          short_name_text_x_inset: 0
-          #short_name_text_y_inset: -2
-        ELEMENTS: ${TEMPLATE_solid/.}
-        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (6)]
-
-    KFNB:
-      _:
-        long_name_text_text: |
-          KFNB
-        short_name_text_text: KFNB
-        token_1_text_text: G11
-        _major_fill: ${colour/xxp/BLACK}
-        _minor_fill: ${colour/xxp/WHITE}
-        _related_fill: ${colour/x11/gray43}
-        _share_pct_text_fill_x: ${colour/xxp/WHITE}
-      charter:
-        _:
-          label_text_text: |
-            Kolej Północna
-      share:
-        _:
-          comment_text_text: |
-            Kolej Północna
-          comment_text_y: 60
-      token:
-        ELEMENTS: ${TEMPLATE_cross/.}
-        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
-        index: "$[index_of (6)]"
-
 marker:
   index:
     round:
@@ -518,29 +330,50 @@ marker:
         ELEMENTS: ${TEMPLATE_ring/.}
         index: "$[index_of (1)]"
 
-    p10:
+    m1:
       token:
         _:
           name_stripe_box_suppress: True
-          short_name_text_text: "+10"
+          short_name_text_text: "M1"
           short_name_text_fill: ${colour/xxp/BLACK}
           short_name_text_size: 10
-          outer_circle_fill: ${colour/wikipedia/light_gray}
-          middle_circle_fill: ${colour/wikipedia/white}
-        ELEMENTS: ${TEMPLATE_ring/.}
+        index: "$[index_of (1)]"
+
+    m2:
+      token:
+        _:
+          name_stripe_box_suppress: True
+          short_name_text_text: "M2"
+          short_name_text_fill: ${colour/xxp/BLACK}
+          short_name_text_size: 10
+        index: "$[index_of (1)]"
+
+    m3:
+      token:
+        _:
+          name_stripe_box_suppress: True
+          short_name_text_text: "M3"
+          short_name_text_fill: ${colour/xxp/BLACK}
+          short_name_text_size: 10
+        index: "$[index_of (1)]"
+
+    y:
+      token:
+        _:
+          name_stripe_box_suppress: True
+          short_name_text_text: "Y"
+          short_name_text_fill: ${colour/xxp/BLACK}
+          short_name_text_size: 10
         index: "$[index_of (2)]"
 
-    x2:
+    o:
       token:
         _:
           name_stripe_box_suppress: True
-          short_name_text_text: "x2"
+          short_name_text_text: "O"
           short_name_text_fill: ${colour/xxp/BLACK}
           short_name_text_size: 10
-          outer_circle_fill: ${colour/wikipedia/light_gray}
-          middle_circle_fill: ${colour/wikipedia/white}
-        ELEMENTS: ${TEMPLATE_ring/.}
-        index: "$[index_of (2)]"
+        index: "$[index_of (1)]"
 
 private:
   _:
@@ -592,7 +425,7 @@ private:
             Jernbaneselskab
         power_text_text: |
             Comes with the DSB president certificate.
-            May lay or upgrade yellow COP tile (F3)
+            May lay or upgrade yellow COP tile (F3) 
             at no cost.
             Closes when DSB buys its first train.
         cost_text_text: "Cost: K180"
@@ -696,10 +529,6 @@ train:
       model:
         index: $[index_of (2)]
 
-
-
-
-
     5E:
       _:
         asset_interior_box_fill_p: RED
@@ -709,8 +538,6 @@ train:
         rusted_text_text: Permanent
       model:
         index: $[index_of (2)]
-
-
 
     4D:
       _:
@@ -722,48 +549,3 @@ train:
         note_text_text: Ignores towns
       model:
         index: $[index_of (6)]
-
-    2HT:
-      _:
-        asset_interior_box_fill_p: YELLOW
-        rust_bar_box_fill_p: MEDIUM_GREEN
-        long_name_text_text: "2H"
-        long_name_text_size: 64
-        cost_text_text_p: $80
-        rusted_text_text: "Rusted by 5H"
-      model:
-        index: $[index_of (4)]
-
-    2+T:
-      _:
-        asset_interior_box_fill_p: BLUE
-        rust_bar_box_fill_p: RED
-        long_name_text_text: "2+"
-        long_name_text_size: 64
-        cost_text_text_p: $220
-        rusted_text_text: "Rusted by 7"
-      model:
-        index: $[index_of (4)]
-
-    4+T:
-      _:
-        asset_interior_box_fill_p: BROWN
-        rust_bar_box_fill_p: GRAY
-        long_name_text_text: "4+"
-        long_name_text_size: 64
-        cost_text_text_p: $200
-        rusted_text_text: "Rusted by Diesel"
-        note_text_text: "Runs at least once"
-      model:
-        index: $[index_of (2)]
-
-    7T:
-      _:
-        asset_interior_box_fill_p: RED
-        rust_bar_box_fill_p: BLACK
-        long_name_text_text: "7"
-        long_name_text_size: 64
-        cost_text_text_p: $500
-        rusted_text_text: "Permanent"
-      model:
-        index: $[index_of (4)]
