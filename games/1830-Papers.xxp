@@ -117,10 +117,6 @@ company:
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
         index: $[index_of (7)]
-        #ELEMENTS: ${TEMPLATE_cross/.}
-        #EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
-        #vertical stripe_box:
-        #  fill: ${colour/xxp/BLACK}
         index: "$[index_of (6)]"
 
     NYNH:

@@ -36,6 +36,7 @@ company:
             Statens Järnvägar
           comment_text_text: |
             +1 train limit
+        index: $[index_of (2)]
       share:
         _:
           comment_text_text: |
@@ -50,19 +51,34 @@ company:
          "6":
          "7":
             _:
-              comment_text_text: |
-                Statens Järnvägar
+              note_text_text: |
                 Reserved for exchange
+              note_text_fill: ${colour/wikipedia/red}
          "8":
             _:
-              comment_text_text: |
-                Statens Järnvägar
+              note_text_text: |
                 Reserved for exchange
+              note_text_fill: ${colour/wikipedia/red}
          "9":
             _:
-              comment_text_text: |
-                Statens Järnvägar
+              note_text_text: |
                 Reserved for exchange
+              note_text_fill: ${colour/wikipedia/red}
+         "10":
+            _:
+              note_text_text: |
+                Reserved for exchange
+              note_text_fill: ${colour/wikipedia/red}
+         "11":
+            _:
+              note_text_text: |
+                Reserved for exchange
+              note_text_fill: ${colour/wikipedia/red}
+         "12":
+            _:
+              note_text_text: |
+                Reserved for exchange
+              note_text_fill: ${colour/wikipedia/red}
 
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
@@ -142,6 +158,7 @@ company:
           comment_text_text: |
             Destination: E6
             Cost / starting capital: K260
+        index: $[index_of (2)]
       concession:
         _:
           long_name_text_suppress: True
@@ -151,11 +168,13 @@ company:
           token_embed_y_inset: 30
           close_bar_box_suppress: True
           cost_bar_box_suppress: True
-        index: "$[index_of (1)]"
+        index: "$[index_of (2)]"
       share:
         index: $[index_of (0)]
       token:
-        index: $[index_of (3)]
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of (4)]
 
     M2:
       _:
@@ -180,6 +199,7 @@ company:
           comment_text_text: |
             Destination: B11
             Cost / starting capital: K220
+        index: $[index_of (2)]
       concession:
         _:
           long_name_text_suppress: True
@@ -189,11 +209,13 @@ company:
           token_embed_y_inset: 30
           close_bar_box_suppress: True
           cost_bar_box_suppress: True
-        index: "$[index_of (1)]"
+        index: "$[index_of (2)]"
       share:
         index: $[index_of (0)]
       token:
-        index: $[index_of (3)]
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of (4)]
 
     M3:
       _:
@@ -218,6 +240,7 @@ company:
           comment_text_text: |
             Destination: D7
             Cost / starting capital: K200
+        index: $[index_of (2)]
       concession:
         _:
           long_name_text_suppress: True
@@ -227,11 +250,13 @@ company:
           token_embed_y_inset: 30
           close_bar_box_suppress: True
           cost_bar_box_suppress: True
-        index: "$[index_of (1)]"
+        index: "$[index_of (2)]"
       share:
         index: $[index_of (0)]
       token:
-        index: $[index_of (3)]
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of (4)]
 
     SNJ:
       _:
@@ -337,7 +362,7 @@ marker:
           short_name_text_text: "M1"
           short_name_text_fill: ${colour/xxp/BLACK}
           short_name_text_size: 10
-        index: "$[index_of (1)]"
+        index: "$[index_of (2)]"
 
     m2:
       token:
@@ -346,7 +371,7 @@ marker:
           short_name_text_text: "M2"
           short_name_text_fill: ${colour/xxp/BLACK}
           short_name_text_size: 10
-        index: "$[index_of (1)]"
+        index: "$[index_of (2)]"
 
     m3:
       token:
@@ -355,7 +380,7 @@ marker:
           short_name_text_text: "M3"
           short_name_text_fill: ${colour/xxp/BLACK}
           short_name_text_size: 10
-        index: "$[index_of (1)]"
+        index: "$[index_of (2)]"
 
     y:
       token:
@@ -364,7 +389,7 @@ marker:
           short_name_text_text: "Y"
           short_name_text_fill: ${colour/xxp/BLACK}
           short_name_text_size: 10
-        index: "$[index_of (2)]"
+        index: "$[index_of (4)]"
 
     o:
       token:
@@ -373,7 +398,7 @@ marker:
           short_name_text_text: "O"
           short_name_text_fill: ${colour/xxp/BLACK}
           short_name_text_size: 10
-        index: "$[index_of (1)]"
+        index: "$[index_of (2)]"
 
 private:
   _:
@@ -528,6 +553,8 @@ train:
         rusted_text_text: Permanent
       model:
         index: $[index_of (2)]
+
+
 
     5E:
       _:

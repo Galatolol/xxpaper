@@ -10,6 +10,7 @@ TEMPLATE_share_default:
   - share_num_text
   - long_name_text
   - comment_text
+  - note_text
   - token_2a_embed
   - token_3a_embed
   - token_1_embed
@@ -89,6 +90,17 @@ comment_text:
   v_center: -1
   typeface: ${DEFAULT/typeface_italic}
   size: 8
+
+note_text:
+  h_center: 0
+  v_center: -1
+  size: 9
+  x_inset: 0
+  y_inset: 0
+  x: 101
+  y: $[${long_name_text/y} - 60]
+  typeface: ${DEFAULT/typeface_italic}
+  fill: $[black_or_white (${asset_interior_box/fill})]  
 
 token_1_embed:
   suppress: False
