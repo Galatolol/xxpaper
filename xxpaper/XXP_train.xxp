@@ -33,7 +33,7 @@ train:
     fill: $[black_or_white (${asset_interior_box/fill})]
     size: 72
     x: 50
-    y: 100
+    y: 95
 
   cost_text:
     fill: $[black_or_white (${asset_interior_box/fill})]
@@ -67,15 +67,15 @@ train:
   rust_bar_box:
     fill: ${colour/xxp/TRAIN_${_/rust_bar_box_fill_p}}
     x: ${asset_interior_box/x}
-    y: 30
+    y: 20
 
   rusted_text:
     fill: $[black_or_white (${rust_bar_box/fill})]
-    size: 11
+    size: 13
     h_center: 0
     v_center: -1
     x: 50
-    y: $[${rust_bar_box/y} / 2 - ${rusted_text/size} / 2]
+    y: 6 #$[${rust_bar_box/y} / 2 - ${rusted_text/size} / 2]
 
   top_left_note_text:
     fill: $[black_or_white (${asset_interior_box/fill})]

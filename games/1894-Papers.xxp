@@ -83,6 +83,9 @@ company:
       charter:
         _:
           label_text_text: "Chemins de fer de l’Ouest"
+          comment_text_text: |
+            Capitalised at 110%
+            instead of 100%
       share:
         _:
           comment_text_text: |
@@ -161,10 +164,6 @@ company:
       charter:
         _:
           label_text_text: "Chemins de fer de l’Est"
-          comment_text_text: |
-            For this company only, the
-            revenue of Centre & Bourgogne
-            (I2) is considered to be F60.
       share:
         _:
           comment_text_text: |
@@ -227,7 +226,7 @@ company:
             Chemins de fer
             de l’État belge
           comment_text_text: |
-            May not redeem shares.
+            May not redeem shares
       share:
         _:
           comment_text_text: |
@@ -254,7 +253,8 @@ company:
         _related_fill: ${colour/hollasch/pink}
       charter:
         _:
-          label_text_text: |
+          label_text_text: ""
+          comment_text_text: |
             Available from brown phase
       share:
         _:
@@ -276,12 +276,12 @@ company:
           Late Belgian
         short_name_text_text: LB
         token_1_text_text: Belgium
-        token_3_text_text: ""
         name_stripe_box_fill: ${colour/xxp/BLACK}
         _related_fill: ${colour/x11/grey75}
       charter:
         _:
-          label_text_text: |
+          label_text_text: ""
+          comment_text_text: |
             Available from brown phase
       share:
         _:
@@ -295,7 +295,7 @@ company:
           _minor_fill_2: ${colour/x11/grey45}
         ELEMENTS: ${TEMPLATE_chequer/.}
         EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
-        index: $[index_of (5)]
+        index: $[index_of (6)]
 
 marker:
   index:
@@ -355,10 +355,10 @@ private:
         power_text_text: |
             Blocks I14.
             Once per game owning company
-            may pay F50 to lay a yellow track tile,
-            in addition to the regular track action.
-        sell_text_text: "May be sold for F13 – 50"
-        cost_text_text: "Cost: F25"
+            may pay F60 to lay a yellow track tile,
+            in addition to regular track actions.
+        sell_text_text: "May be sold for F10 – F40"
+        cost_text_text: "Cost: F20"
         revenue_text_text: "Revenue: F5"
 
     P1_5:
@@ -372,22 +372,22 @@ private:
         power_text_text: |
             Revenue of this is equal to F10
             if owned by a company.
-        sell_text_text: "May be sold for F10 – 40"
-        cost_text_text: "Cost: F20"
+        sell_text_text: "May be sold for F13 – F50"
+        cost_text_text: "Cost: F25"
         revenue_text_text: "Revenue: F5 / 10"
 
     P2:
       _:
         long_name_text_text: |
-            Gare de Liège-Guillemins
+            Gare de Liège–Guillemins
         power_text_text: |
             Blocks H17.
             Owning company may lay a yellow track tile
-            or upgrade a yellow track tile in Liège (H17), then
-            optionally place a station marker for free there.
-            Counts as track action and station marker placement.
+            or upgrade a track tile in Liège (H17), then
+            optionally place a station there for free.
+            Counts as track action and station placement.
             Doesn't have to be connected.
-        sell_text_text: "May be sold for F25 – 100"
+        sell_text_text: "May be sold for F25 – F100"
         cost_text_text: "Cost: F50"
         revenue_text_text: "Revenue: F10"
 
@@ -396,44 +396,26 @@ private:
         long_name_text_text: |
             London shipping
         power_text_text: |
+            Comes with a ferry marker.
             Owning company may place one of its
             station markers in A12.
-            For that company only, the revenue of
-            London (A10) is increased by the largest
-            non–London, non–Luxembourg
-            revenue on the route.
-        sell_text_text: "May be sold for F45 – 180"
+            For that company only, the revenue of London (A10)
+            is increased by the largest non–London,
+            non–Luxembourg revenue on the route.
+        sell_text_text: "May be sold for F45 – F180"
         cost_text_text: "Cost: F90"
         revenue_text_text: "Revenue: F15"
 
-    P4_3p:
+    P4:
       _:
         long_name_text_text: |
             Ligne de Saint–Quentin à Guise
-        note_text_text: |
-            3–player
         power_text_text: |
             Revenue of this is equal to F70 if
             Saint–Quentin (G10) is green,
             to F100 if it is brown,
             or to F0 otherwise.
-        sell_text_text: "May be sold for F50 – 200 (until red phase)"
-        cost_text_text: "Cost: F100"
-        revenue_text_text: "Revenue: F0 / 70 / 100"
-        closes_text_text: "Closes in purple phase"
-
-    P4_4p:
-      _:
-        long_name_text_text: |
-            Ligne de Saint–Quentin à Guise
-        note_text_text: |
-            4–player
-        power_text_text: |
-            Revenue of this is equal to F70 if
-            Saint–Quentin (G10) is green,
-            to F100 if it is brown,
-            or to F0 otherwise.
-        sell_text_text: "May be sold for F35 – 140 (until red phase)"
+        sell_text_text: "May be sold for F35 – F140 (until red phase)"
         cost_text_text: "Cost: F70"
         revenue_text_text: "Revenue: F0 / 70 / 100"
         closes_text_text: "Closes in purple phase"
@@ -484,7 +466,7 @@ private:
         long_name_text_text: |
             Starting French company
         power_text_text: |
-            May not redeem shares.
+            May not redeem shares
         cost_text_text: ""
         revenue_text_text: ""
       model:
@@ -509,7 +491,7 @@ train:
             Upgrade to
             3: F80
       model:
-        index: $[index_of (8)]
+        index: $[index_of (7)]
 
     3T:
       _:
@@ -520,7 +502,7 @@ train:
         cost_text_text_p: "F120"
         note_text_text: |
             Upgrade to
-            4: F240
+            4: F260
       model:
         index: $[index_of (5)]
 
@@ -530,10 +512,10 @@ train:
         rust_bar_box_fill_p: GRAY
         rusted_text_text: Rusted by 7
         long_name_text_text: "4"
-        cost_text_text_p: "F300"
+        cost_text_text_p: "F280"
         note_text_text: |
             Upgrade to
-            5: F250
+            5: F260
       model:
         index: $[index_of (4)]
 
@@ -549,7 +531,7 @@ train:
             6: F400
             Diesel: F600
       model:
-        index: $[index_of (3)]
+        index: $[index_of (5)]
 
     6T:
       _:
@@ -561,7 +543,8 @@ train:
         note_text_text: |
             Upgrade to
             7: F400
-            Diesel: F500
+            Express: F500
+            Diesel: F600
       model:
         index: $[index_of (2)]
 
@@ -578,8 +561,20 @@ train:
       model:
         index: $[index_of (3)]
 
+    #E:
+    #  _:
+    #    asset_interior_box_fill_p: PURPLE
+    #    rust_bar_box_fill_p: BLACK
+    #    long_name_text_text: "Express"
+    #    long_name_text_size: 28
+    #    cost_text_text_p: "F800"
+    #    rusted_text_text: Permanent
+    #  model:
+    #    index: $[index_of (1)]    
+
     D:
       _:
+        #asset_interior_box_fill: ${colour/wikipedia/cool_black}
         asset_interior_box_fill_p: PURPLE
         rust_bar_box_fill_p: BLACK
         long_name_text_text: "Diesel"

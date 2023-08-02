@@ -460,7 +460,7 @@ private:
   index:
     MCo:
       _:
-        closes_text_text: "Closed by 4+ / when power used"
+        closes_text_text: "Closed by 4+ or when power used"
         long_name_text_text: |
             Merchants and Co.
         power_text_text: |
@@ -472,13 +472,12 @@ private:
 
     VRBC:
       _:
-        closes_text_text: "Closed by 4+ / when power used"
+        closes_text_text: "Closed by 4+ or when power used"
         long_name_text_text: |
             Vernon River
             Bridge Company
         power_text_text: |
-            Blocks: N18. Owner may allow
-            to build there.
+            Blocks N18. Owner may allow to build there.
 
             May be exchanged for a 10% share
             of Shortline during SR.
@@ -488,10 +487,11 @@ private:
 
     IBS:
       _:
-        closes_text_text: "Closed by 4+ / when power used"
+        closes_text_text: "Closed by 4+ or when power used"
         long_name_text_text: |
             Ice Boat Shipping
         player_count_text_text: "4"
+        note_text_text: "4–player only"
         power_text_text: |
             May be exchanged for a 10% share
             from the market that is NOT
@@ -519,7 +519,7 @@ private:
 
     SB:
       _:
-        closes_text_text: "Closed by 4+ / when power used"
+        closes_text_text: "Closed by 4+ or when power used"
         long_name_text_text: |
             Shipbuilding
         power_text_text: |
@@ -531,21 +531,21 @@ private:
 
     HSE:
       _:
-        closes_text_text: "Closed by 4+ / when power used"
+        closes_text_text: "Closed by 4+ or when power used"
         long_name_text_text: |
             Hunslet Steam Engine
         power_text_text: |
             Can be sold to a public company
-            for $1 to $200 from phase 4H.
+            for $1 to $200 in phase 4H or later.
 
             Owning company may buy a train from
-            the bank anytime during its operation.
+            the supply anytime during its operation.
         cost_text_text: "Cost: $110"
         revenue_text_text: "Revenue: $20"
 
     MC:
       _:
-        closes_text_text: "Closes when the Mainline operates"
+        closes_text_text: "Closed when the Mainline operates"
         long_name_text_text: |
             Mainline Concession
         power_text_text: |
@@ -569,7 +569,7 @@ private:
 
     SC:
       _:
-        closes_text_text: "Closes when the Shortline operates"
+        closes_text_text: "Closed when the Shortline operates"
         long_name_text_text: |
             Shortline Concession
         power_text_text: |
@@ -579,7 +579,7 @@ private:
 
     UB:
       _:
-        closes_text_text: "Never closes"
+        closes_text_text: "Never closed"
         long_name_text_text: |
             Union Bank
         power_text_text: |

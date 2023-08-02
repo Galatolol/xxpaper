@@ -323,7 +323,7 @@ marker:
           - middle_circle
           - inner_circle
 
-        index: $[index_of (1)]
+        index: $[index_of (2)]
       outer_circle:
         fill: ${colour/galatolol/yellow}
       middle_circle:

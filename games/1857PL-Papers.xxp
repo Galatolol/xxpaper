@@ -2,7 +2,7 @@ company:
   charter:
     _:
       token_2_text_text: 40 zł
-      token_3_text_text: 100 zł
+      token_3_text_text: 60 zł
       comment_text_text: ""
       label_text_size: 11
       comment_text_x: 130
@@ -23,7 +23,7 @@ company:
             CLB
         short_name_text_text: CLB
         token_1_text_text: L8
-        token_4_text_text: 100 zł
+        token_4_text_text: 60 zł
         _major_fill: ${colour/hollasch/brown_ochre}
         _minor_fill: ${_\_major_fill}
         _related_fill: ${colour/hollasch/brick}
@@ -55,7 +55,7 @@ company:
             KN
         short_name_text_text: KN
         token_1_text_text: M3
-        token_4_text_text: 100 zł
+        token_4_text_text: 60 zł
         _major_fill: ${colour/wikipedia/blue_ryb}
         _major_fill_2: ${colour/wikipedia/banana_yellow}
         _minor_fill_2: ${_/_major_fill_2}
@@ -108,7 +108,7 @@ company:
             MW
         short_name_text_text: MW
         token_1_text_text: E9
-        token_4_text_text: 100 zł
+        token_4_text_text: 60 zł
         _major_fill: ${colour/wikipedia/canary_yellow}
         _minor_fill: ${_/_major_fill}
         _related_fill: ${colour/wikipedia/icterine}
@@ -134,7 +134,7 @@ company:
             TKG
         short_name_text_text: TKG
         token_1_text_text: B4
-        token_4_text_text: 100 zł
+        token_4_text_text: 60 zł
         _major_fill: ${colour/wikipedia/amber_sae_ece}
         _minor_fill: ${colour/x11/white}
         _related_fill: ${colour/wikipedia/pink_orange}
@@ -311,8 +311,9 @@ private:
         long_name_text_text: |
             Raglot
         power_text_text: |
-            Each Operating Round, revenue of Rzeszów (L8)
-            is doubled for one of the owning company’s trains.
+            For owning company only,
+            revenue of Rzeszów (L8) is doubled
+            for one of the company’s trains.
             Stops paying revenue in brown phase
             if owned by company.
 
@@ -333,8 +334,9 @@ private:
             Towarzystwo Akcyjne
             Dróg Zelaznych
         power_text_text: |
-            At any time, owning player may close this to
-            take a share of any company from IPO or bank pool.
+            At any time, owning player may close
+            this to take a share of any company
+            from IPO or bank pool.
             Closes in brown phase if owned by company.
 
     P4:
@@ -342,8 +344,8 @@ private:
         long_name_text_text: |
             Schodnica & Cynkownia
         power_text_text: |
-            For the owning company only, revenue of 
-            Bielsko–Biała (G11) is considered to be 10 higher.
+            For owning company only, revenue of 
+            Bielsko–Biała (G11) is 10 higher.
             Stops paying revenue in brown phase
             if owned by a public company.
 
@@ -370,7 +372,6 @@ private:
             terrain cost for one of its yellow track lays.
             Stops paying revenue in brown phase
             if owned by a public company.
-
 train:
   _:
     rusted_text_size: 13
