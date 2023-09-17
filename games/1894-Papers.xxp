@@ -16,6 +16,7 @@ company:
       token_3_text_size: 10
       token_4_text_size: 10
       token_5_text_size: 10
+      token_1_text_typeface: ${DEFAULT/typeface_italic}
       token_2_text_text: F40
       token_3_text_text: F100
       comment_text_text: ""
@@ -39,6 +40,7 @@ company:
         short_name_text_text: CFOR
         token_1_text_text: D3
         token_2_text_text: H2
+        token_2_text_typeface: ${DEFAULT/typeface_italic}
         token_4_text_text: F100
         token_5_text_text: F100
         _major_fill: ${colour/hollasch/brown_ochre}
@@ -73,6 +75,7 @@ company:
         short_name_text_text: Ouest
         token_1_text_text: B3
         token_2_text_text: E6
+        token_2_text_typeface: ${DEFAULT/typeface_italic}
         token_4_text_text: F100
         token_5_text_text: F100
         _major_fill: ${colour/wikipedia/blue_ryb}
@@ -83,9 +86,6 @@ company:
       charter:
         _:
           label_text_text: "Chemins de fer de l’Ouest"
-          comment_text_text: |
-            Capitalised at 110%
-            instead of 100%
       share:
         _:
           comment_text_text: |
@@ -103,6 +103,7 @@ company:
         short_name_text_text: Nord
         token_1_text_text: E10
         token_2_text_text: G14
+        token_2_text_typeface: ${DEFAULT/typeface_italic}
         token_4_text_text: F100
         _major_fill: ${colour/x11/red}
         _major_fill_2: ${colour/wikipedia/carmine}
@@ -361,14 +362,14 @@ private:
         cost_text_text: "Cost: F20"
         revenue_text_text: "Revenue: F5"
 
-    P1_5:
+    P2:
       _:
         long_name_text_text: |
             Antwerpen–Rotterdamsche
             Spoorwegmaatschappij
-        note_text_text: |
-            3–player
-        note_text_y_inset: -11
+#        note_text_text: |
+#            3–player
+#        note_text_y_inset: -11
         power_text_text: |
             Revenue of this is equal to F10
             if owned by a company.
@@ -376,7 +377,7 @@ private:
         cost_text_text: "Cost: F25"
         revenue_text_text: "Revenue: F5 / 10"
 
-    P2:
+    P3:
       _:
         long_name_text_text: |
             Gare de Liège–Guillemins
@@ -391,22 +392,22 @@ private:
         cost_text_text: "Cost: F50"
         revenue_text_text: "Revenue: F10"
 
-    P3:
+    P4:
       _:
         long_name_text_text: |
             London shipping
         power_text_text: |
-            Comes with a ferry marker.
+            Owning company pays F40 for ferry marker.
             Owning company may place one of its
             station markers in A12.
-            For that company only, the revenue of London (A10)
+            For that company the revenue of London (A10)
             is increased by the largest non–London,
             non–Luxembourg revenue on the route.
         sell_text_text: "May be sold for F45 – F180"
         cost_text_text: "Cost: F90"
         revenue_text_text: "Revenue: F15"
 
-    P4:
+    P5:
       _:
         long_name_text_text: |
             Ligne de Saint–Quentin à Guise
@@ -420,7 +421,7 @@ private:
         revenue_text_text: "Revenue: F0 / 70 / 100"
         closes_text_text: "Closes in purple phase"
 
-    P5:
+    P6:
       _:
         long_name_text_text: |
             Nord minor shareholding
@@ -430,7 +431,7 @@ private:
         cost_text_text: "Cost: F140"
         revenue_text_text: "Revenue: F20"
 
-    P6:
+    P7:
       _:
         closes_text_text: "Closes when the associated company operates"
         closes_text_x_inset: -1
@@ -444,7 +445,7 @@ private:
         cost_text_text: "Cost: F180"
         revenue_text_text: "Revenue: F25"
 
-    P7:
+    P8:
       _:
         closes_text_text: "Closes when the Belge operates"
         closes_text_x_inset: -1
@@ -559,18 +560,7 @@ train:
             Upgrade to
             Diesel: F450
       model:
-        index: $[index_of (3)]
-
-    #E:
-    #  _:
-    #    asset_interior_box_fill_p: PURPLE
-    #    rust_bar_box_fill_p: BLACK
-    #    long_name_text_text: "Express"
-    #    long_name_text_size: 28
-    #    cost_text_text_p: "F800"
-    #    rusted_text_text: Permanent
-    #  model:
-    #    index: $[index_of (1)]    
+        index: $[index_of (3)]   
 
     D:
       _:
