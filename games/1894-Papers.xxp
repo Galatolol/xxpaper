@@ -66,7 +66,7 @@ company:
           short_name_text_y_inset: 0
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (8)]
+        index: $[index_of (9)]
 
     Ouest:
       _:
@@ -94,7 +94,7 @@ company:
       token:
         ELEMENTS: ${TEMPLATE_stripey/.}
         EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
-        index: $[index_of (8)]
+        index: $[index_of (9)]
 
     Nord:
       _:
@@ -121,7 +121,7 @@ company:
       token:
         ELEMENTS: ${TEMPLATE_stripey/.}
         EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
-        index: $[index_of (7)]
+        index: $[index_of (8)]
 
     AG:
       _:
@@ -149,7 +149,7 @@ company:
         _:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
           short_name_text_size: 10
-        index: "$[index_of (7)]"
+        index: "$[index_of (8)]"
 
     Est:
       _:
@@ -176,7 +176,7 @@ company:
           inner_circle_radius: 9
         ELEMENTS: ${TEMPLATE_bullseye/.}
         EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
-        index: $[index_of (8)]
+        index: $[index_of (9)]
 
     PLM:
       _:
@@ -209,7 +209,7 @@ company:
           short_name_text_size: 8
         ELEMENTS: ${TEMPLATE_bullseye/.}
         EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
-        index: $[index_of (8)]
+        index: $[index_of (9)]
 
     Belge:
       _:
@@ -242,7 +242,7 @@ company:
           #short_name_text_y_inset: -2
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (6)]
+        index: $[index_of (7)]
 
     LF:
       _:
@@ -269,7 +269,7 @@ company:
           _minor_fill_2: ${colour/hollasch/misty_rose}
         ELEMENTS: ${TEMPLATE_chequer/.}
         EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
-        index: $[index_of (6)]
+        index: $[index_of (7)]
 
     LB:
       _:
@@ -296,7 +296,7 @@ company:
           _minor_fill_2: ${colour/x11/grey45}
         ELEMENTS: ${TEMPLATE_chequer/.}
         EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
-        index: $[index_of (6)]
+        index: $[index_of (7)]
 
 marker:
   index:
@@ -472,6 +472,50 @@ private:
         revenue_text_text: ""
       model:
         index: $[index_of (1)]
+
+    P3_b:
+      _:
+        long_name_text_text: |
+            Station Antwerpen–Centraal
+        power_text_text: |
+            Blocks D17.
+            Owning company may lay a yellow track tile
+            or upgrade a track tile in Antwerpen (D17), then
+            optionally place a station there for free.
+            Counts as track action and station placement.
+            Doesn't have to be connected.
+        sell_text_text: "May be sold for F25 – F100"
+        cost_text_text: "Cost: F50"
+        revenue_text_text: "Revenue: F10"
+
+    P4_b:
+      _:
+        long_name_text_text: |
+            Ligne de Coudekerque-Branche
+            aux Fontinettesg
+        power_text_text: |
+            Owning company pays F40 for ferry marker.
+            Owning company may pay F60 to place a special
+            station marker in Calais (B9) or Dunkerque (B11).
+            Counts as station placement. Has to be connected.
+        sell_text_text: "May be sold for F45 – F180"
+        cost_text_text: "Cost: F90"
+        revenue_text_text: "Revenue: F15"
+
+    P5_b:
+      _:
+        long_name_text_text: |
+            Crédit Mobilier
+        power_text_text: |
+            At the start of blue phase,
+            owning player gets F500 from the bank.
+            From the next Stock Round and until this closes,
+            at the start of each Operating Round,
+            they must pay F60 to the bank.
+        sell_text_text: "Cannot be sold"
+        cost_text_text: "Cost: F70"
+        revenue_text_text: "Revenue: F0 / –60"
+        closes_text_text: "Closes in purple phase"
 
 train:
   _:
