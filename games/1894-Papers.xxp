@@ -290,10 +290,10 @@ company:
           comment_text_y: 65
       token:
         _:
-          _major_fill_1: ${colour/x11/grey45}
-          _major_fill_2: ${colour/x11/grey80}
-          _minor_fill_1: ${colour/x11/grey80}
-          _minor_fill_2: ${colour/x11/grey45}
+          _major_fill_1: ${colour/x11/grey80}
+          _major_fill_2: ${colour/x11/grey45}
+          _minor_fill_1: ${colour/x11/grey45}
+          _minor_fill_2: ${colour/x11/grey80}
         ELEMENTS: ${TEMPLATE_chequer/.}
         EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
         index: $[index_of (7)]
@@ -377,6 +377,21 @@ private:
         cost_text_text: "Cost: F25"
         revenue_text_text: "Revenue: F5 / 10"
 
+    P2_2:
+      _:
+        long_name_text_text: |
+            Antwerpen–Rotterdamsche
+            Spoorwegmaatschappij
+#        note_text_text: |
+#            3–player
+#        note_text_y_inset: -11
+        power_text_text: |
+            Revenue of this is equal to F10
+            if owned by a company.
+        sell_text_text: "May be sold for F13 – F50"
+        cost_text_text: "Cost: F25"
+        revenue_text_text: "Revenue: F5 / 10"
+
     P3:
       _:
         long_name_text_text: |
@@ -393,6 +408,21 @@ private:
         revenue_text_text: "Revenue: F10"
 
     P4:
+      _:
+        long_name_text_text: |
+            London shipping
+        power_text_text: |
+            Owning company pays F40 for ferry marker.
+            Owning company may place one of its
+            station markers in A12.
+            For that company the revenue of London (A10)
+            is increased by the largest non–London,
+            non–Luxembourg revenue on the route.
+        sell_text_text: "May be sold for F45 – F180"
+        cost_text_text: "Cost: F90"
+        revenue_text_text: "Revenue: F15"
+
+    P4_2:
       _:
         long_name_text_text: |
             London shipping
