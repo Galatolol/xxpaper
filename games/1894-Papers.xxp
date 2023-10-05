@@ -78,10 +78,8 @@ company:
         token_2_text_typeface: ${DEFAULT/typeface_italic}
         token_4_text_text: F100
         token_5_text_text: F100
-        _major_fill: ${colour/wikipedia/blue_ryb}
-        _major_fill_2: ${colour/wikipedia/banana_yellow}
-        _minor_fill_2: ${_/_major_fill_2}
-        _minor_fill: ${_/_major_fill}
+        _major_fill: ${colour/hollasch/cornflower}
+        _minor_fill: ${colour/hollasch/blue}
         _related_fill: ${colour/hollasch/steel_blue}
       charter:
         _:
@@ -105,8 +103,9 @@ company:
         token_2_text_text: G14
         token_2_text_typeface: ${DEFAULT/typeface_italic}
         token_4_text_text: F100
-        _major_fill: ${colour/x11/red}
-        _major_fill_2: ${colour/wikipedia/carmine}
+        _major_fill: ${colour/xxp/M_RED}
+        _major_fill_2: ${colour/xxp/L_YELLOW}
+        _minor_fill: ${_/_major_fill}
         _minor_fill_2: ${_/_major_fill_2}
         _minor_fill: ${_/_major_fill}
         _related_fill: ${colour/hollasch/tomato}
@@ -215,7 +214,7 @@ company:
       _:
         long_name_text_text: |
              Belge
-        short_name_text_text: Belge
+        short_name_text_text: B
         token_1_text_text: D17
         _major_fill: ${colour/xxp/D_GREEN}
         _minor_fill: ${colour/xxp/D_GREEN}
@@ -237,9 +236,10 @@ company:
       token:
         _:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
-          short_name_text_size: 10
-          short_name_text_x_inset: 0
-          #short_name_text_y_inset: -2
+          short_name_text_size: 20
+          #short_name_text_x_inset: 0
+          short_name_text_y: 11 
+          #16 jeśli nie token
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
         index: $[index_of (7)]
