@@ -868,6 +868,7 @@ private:
 train:
   _:
     cost_text_typeface: ${DEFAULT/typeface_mono}
+    cost_text_y: 70
     cost_text_size: 12
     long_name_text_size: 58
     note_text_size: 9
@@ -880,8 +881,9 @@ train:
         rusted_text_text: Rusted by Blue
         long_name_text_text: "2"
         cost_text_text: |
-            OR1  : $100
-            OR2  :  $75
+            Cost:
+            OR1:   $100
+            OR2:     $75
             OR3.1:  $50
       model:
         index:
@@ -1247,7 +1249,7 @@ train:
         long_name_text_text: "6"
         cost_text_text_p: $600
         rusted_text_text: Permanent
-        note_text_text: can act as F or P train
+        note_text_text: acts as F or P train
       model:
         index:
           "1":
@@ -1269,7 +1271,7 @@ train:
         long_name_text_size: 34
         cost_text_text_p: $800
         rusted_text_text: Permanent
-        note_text_text: can act as F or P train        
+        note_text_text: acts as F or P train        
       model:
         index:
           "1":
@@ -1291,7 +1293,7 @@ train:
         long_name_text_text: "4D"
         cost_text_text_p: $1000
         rusted_text_text: Permanent
-        note_text_text: can act as F or P train        
+        note_text_text: acts as F or P train        
       model:
         index:
           "1":
@@ -1312,7 +1314,7 @@ train:
         long_name_text_text: "5D"
         cost_text_text_p: $1200
         rusted_text_text: Permanent
-        note_text_text: can act as F or P train        
+        note_text_text: acts as F or P train        
       model:
         index: $[index_of (12)]
 
