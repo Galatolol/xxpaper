@@ -290,15 +290,15 @@ center_stripe_box:
 left_circle:
   x: $[${token_interior_box/x} + 15]
   y: $[${token_interior_box/y} / 2]
-  radius: 30
-  width: 3
+  radius: 28
+  width: 2
   stroke: ${_/_minor_fill}
 
 right_circle:
   x: -15
   y: $[${token_interior_box/y} / 2]
-  radius: 30
-  width: 3
+  radius: 28
+  width: 2
   stroke: ${_/_minor_fill}
 
 ul_quarter_box:
