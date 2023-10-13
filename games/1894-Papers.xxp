@@ -44,9 +44,9 @@ company:
         token_4_text_text: F100
         token_5_text_text: F100
         _major_fill: ${colour/hollasch/brown_ochre}
-        _minor_fill: ${_\_major_fill}
+        _minor_fill: ${colour/wikipedia/white}
         _related_fill: ${colour/hollasch/brick}
-        name_stripe_box_suppress: True
+        name_stripe_box_suppress: False
       charter:
         _:
           label_text_text: |
@@ -60,13 +60,11 @@ company:
           comment_text_y: 60
       token:
         _:
-          short_name_text_fill: $[black_or_white (${_/_major_fill})]
-          short_name_text_size: 9
-          short_name_text_x_inset: 0
-          short_name_text_y_inset: 0
-        ELEMENTS: ${TEMPLATE_solid/.}
-        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (9)]
+          #short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          #center_stripe_box_suppress: True
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: $[index_of (8)]
 
     Ouest:
       _:
@@ -92,7 +90,7 @@ company:
       token:
         ELEMENTS: ${TEMPLATE_stripey/.}
         EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
-        index: $[index_of (9)]
+        index: $[index_of (8)]
 
     Nord:
       _:
@@ -104,11 +102,11 @@ company:
         token_2_text_typeface: ${DEFAULT/typeface_italic}
         token_4_text_text: F100
         _major_fill: ${colour/xxp/M_RED}
-        _major_fill_2: ${colour/xxp/L_YELLOW}
-        _minor_fill: ${_/_major_fill}
-        _minor_fill_2: ${_/_major_fill_2}
-        _minor_fill: ${_/_major_fill}
+        _minor_fill: ${colour/wikipedia/buff}
+        _major_fill_1: ${_/_major_fill}
+        _major_fill_2: ${_/_minor_fill}
         _related_fill: ${colour/hollasch/tomato}
+        name_stripe_box_suppress: False
       charter:
         _:
           label_text_text: "Chemins de fer du Nord"
@@ -118,9 +116,16 @@ company:
             Chemins de fer du Nord
           comment_text_y: 65
       token:
-        ELEMENTS: ${TEMPLATE_stripey/.}
-        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
-        index: $[index_of (8)]
+        _:
+          _rotation: 0
+          _angle: $[360 / 10]
+          #short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          bottom_half_box_fill: ${_/_major_fill}
+          inner_circle_suppress: True
+        index: $[index_of(7)]
+        ELEMENTS: ${TEMPLATE_wedges/.}
+        EMBED_ELEMENTS: ${TEMPLATE_wedges_embed/.}
+        index: $[index_of (7)]
 
     AG:
       _:
@@ -148,7 +153,7 @@ company:
         _:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
           short_name_text_size: 10
-        index: "$[index_of (8)]"
+        index: "$[index_of (7)]"
 
     Est:
       _:
@@ -175,7 +180,7 @@ company:
           inner_circle_radius: 9
         ELEMENTS: ${TEMPLATE_bullseye/.}
         EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
-        index: $[index_of (9)]
+        index: $[index_of (8)]
 
     PLM:
       _:
@@ -186,9 +191,11 @@ company:
         token_4_text_text: F100
         token_5_text_text: F100
         share_pct_text_fill: ${colour/xxp/BLACK}
-        _major_fill: ${colour/wikipedia/rich_lavender}
-        _minor_fill: ${colour/wikipedia/black}
+        _major_fill: ${colour/wikipedia/violet_ryb}
+        _minor_fill: ${colour/wikipedia/canary_yellow}
         _related_fill: ${colour/wikipedia/plum_web}
+        middle_rotate_angle: 135
+        name_stripe_box_fill: ${colour/xxp/BLACK}
       charter:
         _:
           label_text_text: |
@@ -202,13 +209,9 @@ company:
             à Lyon et à la Méditerranée
           comment_text_y: 50
       token:
-        _:
-          inner_circle_fill: ${_/_major_fill}
-          inner_circle_radius: 9
-          short_name_text_size: 8
-        ELEMENTS: ${TEMPLATE_bullseye/.}
-        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
-        index: $[index_of (9)]
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: $[index_of (8)]
 
     Belge:
       _:
@@ -242,7 +245,7 @@ company:
           #16 jeśli nie token
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (7)]
+        index: $[index_of (6)]
 
     LF:
       _:
@@ -250,7 +253,8 @@ company:
           Late French
         short_name_text_text: LF
         token_1_text_text: France
-        name_stripe_box_fill: ${colour/xxp/BLACK}
+        #name_stripe_box_fill: ${colour/xxp/BLACK}
+        name_stripe_box_suppress: True
         _related_fill: ${colour/hollasch/pink}
       charter:
         _:
@@ -263,13 +267,19 @@ company:
           comment_text_y: 73
       token:
         _:
-          _major_fill_1: ${colour/hollasch/misty_rose}
+          _major_fill_1: ${colour/hollasch/black}
           _major_fill_2: ${colour/hollasch/hot_pink}
-          _minor_fill_1: ${colour/hollasch/hot_pink}
-          _minor_fill_2: ${colour/hollasch/misty_rose}
-        ELEMENTS: ${TEMPLATE_chequer/.}
-        EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
-        index: $[index_of (7)]
+          _minor_fill_1: ${_/_major_fill_2}
+          _minor_fill_2: ${_/_major_fill_1}
+          _rotation: 0
+          _angle: $[360 / 10]
+          #short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          inner_circle_suppress: False
+          inner_circle_fill: ${colour/hollasch/pink_light}
+        index: $[index_of(7)]
+        ELEMENTS: ${TEMPLATE_wedges/.}
+        EMBED_ELEMENTS: ${TEMPLATE_wedges_embed/.}
+        index: $[index_of (6)]
 
     LB:
       _:
@@ -296,7 +306,7 @@ company:
           _minor_fill_2: ${colour/x11/grey80}
         ELEMENTS: ${TEMPLATE_chequer/.}
         EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
-        index: $[index_of (7)]
+        index: $[index_of (6)]
 
 marker:
   index:
