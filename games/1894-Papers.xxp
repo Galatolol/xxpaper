@@ -146,9 +146,9 @@ company:
       share:
         _:
           comment_text_text: |
-            chemin de fer
+            Chemin de fer
             d'Anvers à Gand
-          comment_text_y: 65
+          comment_text_y: 60
       token:
         _:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
@@ -207,7 +207,7 @@ company:
           comment_text_text: |
             Chemins de fer de Paris
             à Lyon et à la Méditerranée
-          comment_text_y: 50
+          comment_text_y: 60
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
@@ -264,7 +264,7 @@ company:
       share:
         _:
           comment_text_text: ""
-          comment_text_y: 73
+          comment_text_y: 65
       token:
         _:
           _major_fill_1: ${colour/hollasch/black}
@@ -513,34 +513,34 @@ private:
         cost_text_text: "Cost: F50"
         revenue_text_text: "Revenue: F10"
 
-    P4_b:
-      _:
-        long_name_text_text: |
-            Ligne de Coudekerque-Branche
-            aux Fontinettesg
-        power_text_text: |
-            Owning company pays F40 for ferry marker.
-            Owning company may pay F60 to place a special
-            station marker in Calais (B9) or Dunkerque (B11).
-            Counts as station placement. Has to be connected.
-        sell_text_text: "May be sold for F45 – F180"
-        cost_text_text: "Cost: F90"
-        revenue_text_text: "Revenue: F15"
+    #P4_b:
+    #  _:
+    #    long_name_text_text: |
+    #        Ligne de Coudekerque-Branche
+    #        aux Fontinettesg
+    #    power_text_text: |
+    #        Owning company pays F40 for ferry marker.
+    #        Owning company may pay F60 to place a special
+    #        station marker in Calais (B9) or Dunkerque (B11).
+    #        Counts as station placement. Has to be connected.
+    #    sell_text_text: "May be sold for F45 – F180"
+    #    cost_text_text: "Cost: F90"
+    #    revenue_text_text: "Revenue: F15"
 
-    P5_b:
-      _:
-        long_name_text_text: |
-            Crédit Mobilier
-        power_text_text: |
-            At the start of blue phase,
-            owning player gets F500 from the bank.
-            From the next Stock Round and until this closes,
-            at the start of each Operating Round,
-            they must pay F60 to the bank.
-        sell_text_text: "Cannot be sold"
-        cost_text_text: "Cost: F70"
-        revenue_text_text: "Revenue: F0 / –60"
-        closes_text_text: "Closes in purple phase"
+    #P5_b:
+    #  _:
+    #    long_name_text_text: |
+    #        Crédit Mobilier
+    #    power_text_text: |
+    #        At the start of blue phase,
+    #        owning player gets F500 from the bank.
+    #        From the next Stock Round and until this closes,
+    #        at the start of each Operating Round,
+    #        they must pay F60 to the bank.
+    #    sell_text_text: "Cannot be sold"
+    #    cost_text_text: "Cost: F70"
+    #    revenue_text_text: "Revenue: F0 / –60"
+    #    closes_text_text: "Closes in purple phase"
 
 train:
   _:
@@ -650,7 +650,7 @@ train:
         cost_text_text:
         rusted_text_text:
       model:
-        index:  "$[index_of (2)]"
+        index:  "$[index_of (1)]"
 
     p2Pa:
       _:
@@ -660,7 +660,7 @@ train:
         cost_text_text:
         rusted_text_text:
       model:
-        index:  "$[index_of (2)]"
+        index:  "$[index_of (1)]"
 
     p3Pa:
       _:
@@ -670,7 +670,7 @@ train:
         cost_text_text:
         rusted_text_text:
       model:
-        index:  "$[index_of (2)]"
+        index:  "$[index_of (1)]"
 
     p4Pa:
       _:
@@ -680,7 +680,7 @@ train:
         cost_text_text:
         rusted_text_text:
       model:
-        index:  "$[index_of (2)]"
+        index:  "$[index_of (1)]"
 
     p1Pb:
       _:
@@ -690,7 +690,7 @@ train:
         cost_text_text:
         rusted_text_text:
       model:
-        index:  "$[index_of (2)]"
+        index:  "$[index_of (1)]"
 
     p2Pb:
       _:
@@ -700,7 +700,7 @@ train:
         cost_text_text:
         rusted_text_text:
       model:
-        index:  "$[index_of (2)]"
+        index:  "$[index_of (1)]"
 
     p3Pb:
       _:
@@ -710,7 +710,7 @@ train:
         cost_text_text:
         rusted_text_text:
       model:
-        index:  "$[index_of (2)]"
+        index:  "$[index_of (1)]"
 
     p4Pb:
       _:
@@ -720,4 +720,4 @@ train:
         cost_text_text:
         rusted_text_text:
       model:
-        index:  "$[index_of (2)]"
+        index:  "$[index_of (1)]"
