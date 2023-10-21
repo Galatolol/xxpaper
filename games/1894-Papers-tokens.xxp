@@ -202,6 +202,7 @@ company:
             Chemins de fer de Paris
             à Lyon et à la Méditerranée
           label_text_y_inset: 250
+        index: $[index_of (4)]
       share:
         _:
           comment_text_text: |
@@ -241,7 +242,8 @@ company:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
           short_name_text_size: 20
           #short_name_text_x_inset: 0
-          short_name_text_y: 15
+          short_name_text_y: 11 
+          #15 jeśli nie token
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
         index: $[index_of (6)]
@@ -372,6 +374,21 @@ private:
         revenue_text_text: "Revenue: F5"
 
     P2:
+      _:
+        long_name_text_text: |
+            Antwerpen–Rotterdamsche
+            Spoorwegmaatschappij
+#        note_text_text: |
+#            3–player
+#        note_text_y_inset: -11
+        power_text_text: |
+            Revenue of this is equal to F10
+            if owned by a company.
+        sell_text_text: "May be sold for F13 – F50"
+        cost_text_text: "Cost: F25"
+        revenue_text_text: "Revenue: F5 / 10"
+
+    P2_2:
       _:
         long_name_text_text: |
             Antwerpen–Rotterdamsche
