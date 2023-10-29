@@ -360,8 +360,20 @@ private:
     P1:
       _:
         long_name_text_text: |
-            Ligne Longwy–
-            –Villerupt–Micheville
+            Ligne de Reims à Charleville
+        power_text_text: |
+            Blocks I14.
+            Once per game owning company
+            may pay F60 to lay a yellow track tile,
+            in addition to regular track actions.
+        sell_text_text: "May be sold for F10 – F40"
+        cost_text_text: "Cost: F20"
+        revenue_text_text: "Revenue: F5"
+
+    P1b:
+      _:
+        long_name_text_text: |
+            Ligne de Reims à Charleville
         power_text_text: |
             Blocks I14.
             Once per game owning company

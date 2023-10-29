@@ -64,7 +64,7 @@ company:
           #center_stripe_box_suppress: True
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
-        index: $[index_of (8)]
+        index: $[index_of (9)]
 
     Ouest:
       _:
@@ -90,7 +90,7 @@ company:
       token:
         ELEMENTS: ${TEMPLATE_stripey/.}
         EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
-        index: $[index_of (8)]
+        index: $[index_of (9)]
 
     Nord:
       _:
@@ -125,7 +125,7 @@ company:
         index: $[index_of(7)]
         ELEMENTS: ${TEMPLATE_wedges/.}
         EMBED_ELEMENTS: ${TEMPLATE_wedges_embed/.}
-        index: $[index_of (7)]
+        index: $[index_of (8)]
 
     AG:
       _:
@@ -153,7 +153,7 @@ company:
         _:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
           short_name_text_size: 10
-        index: "$[index_of (7)]"
+        index: "$[index_of (8)]"
 
     Est:
       _:
@@ -180,7 +180,7 @@ company:
           inner_circle_radius: 9
         ELEMENTS: ${TEMPLATE_bullseye/.}
         EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
-        index: $[index_of (8)]
+        index: $[index_of (9)]
 
     PLM:
       _:
@@ -212,7 +212,7 @@ company:
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
-        index: $[index_of (8)]
+        index: $[index_of (9)]
 
     Belge:
       _:
@@ -246,7 +246,7 @@ company:
           #15 jeśli nie token
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (6)]
+        index: $[index_of (7)]
 
     LF:
       _:
@@ -280,7 +280,7 @@ company:
         index: $[index_of(7)]
         ELEMENTS: ${TEMPLATE_wedges/.}
         EMBED_ELEMENTS: ${TEMPLATE_wedges_embed/.}
-        index: $[index_of (6)]
+        index: $[index_of (7)]
 
     LB:
       _:
@@ -307,7 +307,7 @@ company:
           _minor_fill_2: ${colour/x11/grey80}
         ELEMENTS: ${TEMPLATE_chequer/.}
         EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
-        index: $[index_of (6)]
+        index: $[index_of (7)]
 
 marker:
   index:
@@ -362,8 +362,7 @@ private:
     P1:
       _:
         long_name_text_text: |
-            Ligne Longwy–
-            –Villerupt–Micheville
+            Ligne de Reims à Charleville
         power_text_text: |
             Blocks I14.
             Once per game owning company
