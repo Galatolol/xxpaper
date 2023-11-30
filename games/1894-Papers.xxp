@@ -52,6 +52,7 @@ company:
           label_text_text: |
             Chemin de fer
             d’Orléans à Rouen
+        index: $[index_of (1)]
       share:
         _:
           comment_text_text: |
@@ -82,6 +83,7 @@ company:
       charter:
         _:
           label_text_text: "Chemins de fer de l’Ouest"
+        index: $[index_of (1)]
       share:
         _:
           comment_text_text: |
@@ -110,6 +112,7 @@ company:
       charter:
         _:
           label_text_text: "Chemins de fer du Nord"
+        index: $[index_of (1)]
       share:
         _:
           comment_text_text: |
@@ -143,6 +146,7 @@ company:
           label_text_text: |
             Chemin de fer
             d'Anvers à Gand
+        index: $[index_of (1)]
       share:
         _:
           comment_text_text: |
@@ -169,6 +173,7 @@ company:
       charter:
         _:
           label_text_text: "Chemins de fer de l’Est"
+        index: $[index_of (1)]
       share:
         _:
           comment_text_text: |
@@ -202,6 +207,7 @@ company:
             Chemins de fer de Paris
             à Lyon et à la Méditerranée
           label_text_y_inset: 250
+        index: $[index_of (1)]
       share:
         _:
           comment_text_text: |
@@ -230,6 +236,7 @@ company:
             de l’État belge
           comment_text_text: |
             May not redeem shares
+        index: $[index_of (1)]
       share:
         _:
           comment_text_text: |
@@ -260,6 +267,7 @@ company:
           label_text_text: ""
           comment_text_text: |
             Available from brown phase
+        index: $[index_of (1)]
       share:
         _:
           comment_text_text: ""
@@ -293,6 +301,7 @@ company:
           label_text_text: ""
           comment_text_text: |
             Available from brown phase
+        index: $[index_of (1)]
       share:
         _:
           comment_text_text: ""
@@ -358,19 +367,6 @@ private:
 
   index:
     P1:
-      _:
-        long_name_text_text: |
-            Ligne de Reims à Charleville
-        power_text_text: |
-            Blocks I14.
-            Once per game owning company
-            may pay F60 to lay a yellow track tile,
-            in addition to regular track actions.
-        sell_text_text: "May be sold for F10 – F40"
-        cost_text_text: "Cost: F20"
-        revenue_text_text: "Revenue: F5"
-
-    P1b:
       _:
         long_name_text_text: |
             Ligne de Reims à Charleville
