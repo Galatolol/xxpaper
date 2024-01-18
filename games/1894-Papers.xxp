@@ -52,6 +52,7 @@ company:
           label_text_text: |
             Chemin de fer
             d’Orléans à Rouen
+        index: $[index_of (1)]
       share:
         _:
           comment_text_text: |
@@ -82,6 +83,7 @@ company:
       charter:
         _:
           label_text_text: "Chemins de fer de l’Ouest"
+        index: $[index_of (1)]
       share:
         _:
           comment_text_text: |
@@ -110,6 +112,7 @@ company:
       charter:
         _:
           label_text_text: "Chemins de fer du Nord"
+        index: $[index_of (1)]
       share:
         _:
           comment_text_text: |
@@ -122,7 +125,6 @@ company:
           #short_name_text_fill: $[black_or_white (${_/_major_fill})]
           bottom_half_box_fill: ${_/_major_fill}
           inner_circle_suppress: True
-        index: $[index_of(7)]
         ELEMENTS: ${TEMPLATE_wedges/.}
         EMBED_ELEMENTS: ${TEMPLATE_wedges_embed/.}
         index: $[index_of (7)]
@@ -143,6 +145,7 @@ company:
           label_text_text: |
             Chemin de fer
             d'Anvers à Gand
+        index: $[index_of (1)]
       share:
         _:
           comment_text_text: |
@@ -169,6 +172,7 @@ company:
       charter:
         _:
           label_text_text: "Chemins de fer de l’Est"
+        index: $[index_of (1)]
       share:
         _:
           comment_text_text: |
@@ -202,6 +206,7 @@ company:
             Chemins de fer de Paris
             à Lyon et à la Méditerranée
           label_text_y_inset: 250
+        index: $[index_of (1)]
       share:
         _:
           comment_text_text: |
@@ -230,6 +235,7 @@ company:
             de l’État belge
           comment_text_text: |
             May not redeem shares
+        index: $[index_of (1)]
       share:
         _:
           comment_text_text: |
@@ -260,6 +266,7 @@ company:
           label_text_text: ""
           comment_text_text: |
             Available from brown phase
+        index: $[index_of (1)]
       share:
         _:
           comment_text_text: ""
@@ -275,7 +282,6 @@ company:
           #short_name_text_fill: $[black_or_white (${_/_major_fill})]
           inner_circle_suppress: False
           inner_circle_fill: ${colour/hollasch/pink_light}
-        index: $[index_of(7)]
         ELEMENTS: ${TEMPLATE_wedges/.}
         EMBED_ELEMENTS: ${TEMPLATE_wedges_embed/.}
         index: $[index_of (6)]
@@ -293,6 +299,7 @@ company:
           label_text_text: ""
           comment_text_text: |
             Available from brown phase
+        index: $[index_of (1)]
       share:
         _:
           comment_text_text: ""
@@ -370,27 +377,11 @@ private:
         cost_text_text: "Cost: F20"
         revenue_text_text: "Revenue: F5"
 
-    P1b:
-      _:
-        long_name_text_text: |
-            Ligne de Reims à Charleville
-        power_text_text: |
-            Blocks I14.
-            Once per game owning company
-            may pay F60 to lay a yellow track tile,
-            in addition to regular track actions.
-        sell_text_text: "May be sold for F10 – F40"
-        cost_text_text: "Cost: F20"
-        revenue_text_text: "Revenue: F5"
-
     P2:
       _:
         long_name_text_text: |
             Antwerpen–Rotterdamsche
             Spoorwegmaatschappij
-#        note_text_text: |
-#            3–player
-#        note_text_y_inset: -11
         power_text_text: |
             Revenue of this is equal to F10
             if owned by a company.
@@ -398,7 +389,7 @@ private:
         cost_text_text: "Cost: F25"
         revenue_text_text: "Revenue: F5 / 10"
 
-    P3:
+    P3_a:
       _:
         long_name_text_text: |
             Gare de Liège–Guillemins
@@ -406,6 +397,21 @@ private:
             Blocks H17.
             Owning company may lay a yellow track tile
             or upgrade a track tile in Liège (H17), then
+            optionally place a station there for free.
+            Counts as track action and station placement.
+            Doesn't have to be connected.
+        sell_text_text: "May be sold for F25 – F100"
+        cost_text_text: "Cost: F50"
+        revenue_text_text: "Revenue: F10"
+
+    P3_b:
+      _:
+        long_name_text_text: |
+            Station Antwerpen–Centraal
+        power_text_text: |
+            Blocks D17.
+            Owning company may lay a yellow track tile
+            or upgrade a track tile in Antwerpen (D17), then
             optionally place a station there for free.
             Counts as track action and station placement.
             Doesn't have to be connected.
@@ -494,50 +500,6 @@ private:
       model:
         index: $[index_of (1)]
 
-    P3_b:
-      _:
-        long_name_text_text: |
-            Station Antwerpen–Centraal
-        power_text_text: |
-            Blocks D17.
-            Owning company may lay a yellow track tile
-            or upgrade a track tile in Antwerpen (D17), then
-            optionally place a station there for free.
-            Counts as track action and station placement.
-            Doesn't have to be connected.
-        sell_text_text: "May be sold for F25 – F100"
-        cost_text_text: "Cost: F50"
-        revenue_text_text: "Revenue: F10"
-
-    #P4_b:
-    #  _:
-    #    long_name_text_text: |
-    #        Ligne de Coudekerque-Branche
-    #        aux Fontinettesg
-    #    power_text_text: |
-    #        Owning company pays F40 for ferry marker.
-    #        Owning company may pay F60 to place a special
-    #        station marker in Calais (B9) or Dunkerque (B11).
-    #        Counts as station placement. Has to be connected.
-    #    sell_text_text: "May be sold for F45 – F180"
-    #    cost_text_text: "Cost: F90"
-    #    revenue_text_text: "Revenue: F15"
-
-    #P5_b:
-    #  _:
-    #    long_name_text_text: |
-    #        Crédit Mobilier
-    #    power_text_text: |
-    #        At the start of blue phase,
-    #        owning player gets F500 from the bank.
-    #        From the next Stock Round and until this closes,
-    #        at the start of each Operating Round,
-    #        they must pay F60 to the bank.
-    #    sell_text_text: "Cannot be sold"
-    #    cost_text_text: "Cost: F70"
-    #    revenue_text_text: "Revenue: F0 / –60"
-    #    closes_text_text: "Closes in purple phase"
-
 train:
   _:
     rusted_text_size: 13
@@ -568,7 +530,7 @@ train:
         cost_text_text_p: "F120"
         note_text_text: |
             Upgrade to
-            4: F220
+            4: F240
       model:
         index: $[index_of (5)]
 
@@ -578,10 +540,10 @@ train:
         rust_bar_box_fill_p: GRAY
         rusted_text_text: Rusted by 7
         long_name_text_text: "4"
-        cost_text_text_p: "F280"
+        cost_text_text_p: "F300"
         note_text_text: |
             Upgrade to
-            5: F260
+            5: F250
       model:
         index: $[index_of (4)]
 
@@ -636,7 +598,7 @@ train:
         cost_text_text_p: "F800"
         rusted_text_text: Permanent
       model:
-        index: $[index_of (8)]
+        index: $[index_of (10)]
 
     p1Pa:
       _:

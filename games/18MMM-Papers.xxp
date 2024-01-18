@@ -1,0 +1,1445 @@
+company:
+  charter:
+    _:
+      label_text_text: "Stations                              Loans"
+      comment_text_text: #May place extra yellow tile for $20 (in any order)
+      long_name_text_x: 130
+      #long_name_text_size: 14
+      type_text_text: 2 Share
+      type_text_size: 7
+      type_text_y: 310
+      type_circle_fill: ${colour/wikipedia/pink}
+      token_1_circle_suppress: False
+      token_1_circle_fill: ${colour/wikipedia/pink}
+      token_1_text_text: "Free"
+      token_1_inside_text_text: "2 Share"
+      token_1_inside_text_size: 7
+      token_2_circle_suppress: False
+      token_2_circle_fill: ${colour/wikipedia/robin_egg_blue}
+      token_2_text_text: "$50"
+      token_2_inside_text_text: "5 Share"
+      token_2_inside_text_size: 7
+      token_3_circle_suppress: False
+      token_3_circle_fill: ${colour/wikipedia/wisteria}
+      token_3_text_text: "$50"
+      token_3_inside_text_text: "10 Share"
+      token_3_inside_text_size: 7
+      token_4_circle_suppress: False
+      token_4_circle_fill: ${colour/wikipedia/wisteria}
+      token_4_text_text: "$50"
+      token_4_inside_text_text: "10 Share"
+      token_4_inside_text_size: 7
+      loan_1_square_shape_suppress: False
+      loan_1_square_shape_fill: ${colour/wikipedia/wisteria}
+      loan_1_text_text: "10 Share"
+      loan_1_text_size: 6
+      loan_2_square_shape_suppress: False
+      loan_2_square_shape_fill: ${colour/wikipedia/wisteria}
+      loan_2_text_text: "10 Share"
+      loan_2_text_size: 6
+      loan_3_square_shape_suppress: False  
+      loan_3_square_shape_fill: ${colour/wikipedia/wisteria}
+      loan_3_text_text: "10 Share"
+      loan_3_text_size: 6
+      loan_4_square_shape_suppress: False
+      loan_4_square_shape_fill: ${colour/wikipedia/wisteria}
+      loan_4_text_text: "10 Share"
+      loan_4_text_size: 6
+      loan_5_square_shape_suppress: False
+      loan_5_square_shape_fill: ${colour/wikipedia/wisteria}
+      loan_5_text_text: "10 Share"
+      loan_5_text_size: 6
+      loan_6_square_shape_suppress: False
+      loan_6_square_shape_fill: ${colour/wikipedia/pink}
+      loan_6_text_text: "2 Share"
+      loan_6_text_size: 6
+      loan_7_square_shape_suppress: False
+      loan_7_square_shape_fill: ${colour/wikipedia/pink}
+      loan_7_text_text: "2 Share"
+      loan_7_text_size: 6
+      loan_8_square_shape_suppress: False
+      loan_8_square_shape_fill: ${colour/wikipedia/robin_egg_blue}
+      loan_8_text_text: "5 Share"
+      loan_8_text_size: 6
+      loan_9_square_shape_suppress: False
+      loan_9_square_shape_fill: ${colour/wikipedia/robin_egg_blue}
+      loan_9_text_text: "5 Share"
+      loan_9_text_size: 6
+      loan_10_square_shape_suppress: False
+      loan_10_square_shape_fill: ${colour/wikipedia/robin_egg_blue}
+      loan_10_text_text: "5 Share"
+      loan_10_text_size: 6
+  share:
+    _:
+      share_desc_text_suppress: False
+      share_desc_text_text: 1 Share
+      share_desc_text_x: 55
+      share_num_text_text: 20/10%
+      share_pct_text_text: 
+      side_bar_lsplit_box_suppress: True
+      side_bar_rsplit_box_suppress: True
+      comment_text_size: 12
+      comment_text_typeface: ${DEFAULT/typeface_bold}
+      comment_text_y: 24
+      type_bar_box_fill: ${colour/wikipedia/golden_yellow}
+      type_bar_box_y: 12
+      share_num_text_x: 167
+    index:
+      "1":
+        share_pct_text:
+          text:
+        comment_text:
+          text: "President"
+        share_desc_text:
+          text: "2 Shares"
+        share_num_text:
+          text: "100/40/20%"
+      "2":
+      "3":
+      "4":
+      "5":
+      "6":
+      "7":
+      "8":
+      "9":
+  token:
+    _:
+      short_name_text_size: 8
+
+  index:
+    RRR:
+      _:
+        long_name_text_text: |
+          Raging River
+          Railroad
+        short_name_text_text: RRR
+        _major_fill: ${colour/wikipedia/blue_ryb}
+        _major_fill_2: ${colour/wikipedia/banana_yellow}
+        _minor_fill_2: ${_/_major_fill_2}
+        _minor_fill: ${_/_major_fill}
+        _minor_fill_2: ${_/_major_fill_2}
+        _related_fill: ${colour/hollasch/steel_blue}
+      token:
+        ELEMENTS: ${TEMPLATE_stripey/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
+        index: $[index_of (10)]
+
+    RD:
+      _:
+        long_name_text_text: |
+          Red Devil
+        short_name_text_text: RD
+        _major_fill: ${colour/x11/red}
+        _minor_fill: ${colour/xxp/BLACK}
+        _related_fill: ${colour/hollasch/tomato}
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: $[index_of (10)]        
+
+    RP:
+      _:
+        long_name_text_text: |
+          Razor
+          Pass
+        short_name_text_text: RP
+        _major_fill: ${colour/hollasch/brown_ochre}
+        _minor_fill: ${_\_major_fill}
+        _related_fill: ${colour/hollasch/brick}
+        name_stripe_box_suppress: True
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 12
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of (10)]        
+
+    MH:
+      _:
+        long_name_text_text: |
+          Mountain
+          Haven
+        short_name_text_text: MH
+        _major_fill: ${colour/wikipedia/light_sky_blue}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/hollasch/powder_blue}
+        name_stripe_box_suppress: True
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 12
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of (10)]
+
+    UR:
+      _:
+        long_name_text_text: |
+          Union
+          Railway
+        short_name_text_text: UR
+        _major_fill: ${colour/wikipedia/canary_yellow}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/wikipedia/icterine}
+        name_stripe_box_suppress: True
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 10
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of (10)]        
+
+    TR:
+      _:
+        long_name_text_text: |
+          Titan
+          Railway
+        short_name_text_text: TR
+        _major_fill: ${colour/wikipedia/amber_sae_ece}
+        _minor_fill: ${colour/x11/white}        
+        _related_fill: ${colour/wikipedia/pink_orange}
+      token:
+        _:
+          inner_circle_fill: ${_/_major_fill}
+          inner_circle_radius: 9
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: $[index_of (10)]
+
+    WR:
+      _:
+        long_name_text_text: |
+          Westport
+          Railway
+        short_name_text_text: WR
+        _major_fill: ${colour/xxp/BLACK}
+        _minor_fill: ${colour/xxp/WHITE}
+        _related_fill: ${colour/x11/gray43}
+        _share_pct_text_fill_x: ${colour/xxp/WHITE}
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: $[index_of (10)]
+
+    GNR:
+      _:
+        long_name_text_text: |
+          Great Northern
+          Railway
+        short_name_text_text: GNR
+        _major_fill: ${colour/xxp/D_GREEN}
+        _minor_fill: ${colour/xxp/D_GREEN}
+        _related_fill: ${colour/hollasch/cinnabar_green}
+        name_stripe_box_suppress: True
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 10
+          short_name_text_y_inset: -1
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of (10)]
+
+    LL:
+      _:
+        long_name_text_text: |
+          Laketown
+          Line
+        short_name_text_text: LL
+        _major_fill: ${colour/wikipedia/rich_lavender}
+        _minor_fill: ${colour/wikipedia/black}
+        _related_fill: ${colour/wikipedia/plum_web}
+      token:
+        _:
+          inner_circle_fill: ${_/_major_fill}
+          inner_circle_radius: 9
+          short_name_text_size: 8
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: $[index_of (10)]
+
+    GV:
+      _:
+        long_name_text_text: |
+          Green Valley
+        short_name_text_text: GV
+        _major_fill: ${colour/x11/gold}
+        _minor_fill: ${colour/x11/limegreen}
+        _related_fill: ${colour/x11/yellowgreen}
+      token:
+        index: $[index_of (10)]
+
+    HF:
+      _:
+        long_name_text_text: |
+          Harbor
+          Freightlines
+        short_name_text_text: HF
+        _major_fill: ${colour/x11/antiquewhite2}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/x11/antiquewhite}
+      token:
+        index: $[index_of (10)]
+  
+    TE:
+      _:
+        long_name_text_text: |
+          Transcontinental
+          Express
+        short_name_text_text: TE
+        _major_fill: ${colour/wikipedia/black}
+        _minor_fill: ${colour/wikipedia/lavender_gray}
+        _related_fill: ${colour/wikipedia/lavender_gray}
+        name_stripe_box_suppress: True
+        middle_box_fill: ${colour/wikipedia/dark_gray}
+      token:
+        ELEMENTS: ${TEMPLATE_boxes/.}
+        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
+        _:
+          short_name_text_size: 12
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
+        index: $[index_of (10)]
+  
+    SF:
+      _:
+        long_name_text_text: |
+          South Fork
+        short_name_text_text: SF
+        _major_fill: ${colour/wikipedia/yellow_green}
+        _minor_fill: ${colour/wikipedia/lemon_lime}
+        _related_fill: ${colour/wikipedia/lemon_lime}
+      token:
+        _:
+          outer_circle_fill: ${_/_major_fill}
+          middle_circle_fill: ${_/_minor_fill}
+          inner_circle_fill: ${_/_major_fill}
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: $[index_of (10)]
+  
+    NC:
+      _:
+        long_name_text_text: |
+          Northern
+          Connection
+        short_name_text_text: NC
+        _major_fill: ${colour/hollasch/hot_pink}
+        _minor_fill: ${colour/hollasch/misty_rose}
+        _related_fill: ${colour/hollasch/pink}
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: $[index_of (10)]
+  
+    BT:
+      _:
+        long_name_text_text: |
+          Big Transport
+        short_name_text_text: BT
+        _major_fill: ${colour/wikipedia/barn_red}
+        _major_fill_2: ${colour/wikipedia/tractor_red}
+        _minor_fill: ${_/_major_fill}
+        _minor_fill_2: ${_/_major_fill_2}
+        _related_fill: ${colour/wikipedia/chinese_red}
+      token:
+        ELEMENTS: ${TEMPLATE_stripey/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
+
+    #turquoise
+    ET:
+      _:
+        long_name_text_text: |
+            Eastern
+            Transport
+        short_name_text_text: ET
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+        _major_fill: ${colour/x11/turquoise4}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/x11/turquoise3}
+      token:
+        index: $[index_of (10)]
+
+
+private:
+  _:
+    long_name_text_size: 11
+    money_bar_box_y: 11
+    closes_text_size: 7
+    power_text_size: 8
+    revenue_text_size: 9
+    revenue_text_y: 3
+    revenue_text_x: 125
+    close_bar_box_suppress: true
+    closes_text_text: ""
+    long_name_text_y: 87
+    asset_interior_box_fill: ${colour/scale/yellow_0}
+
+  index:
+    coalContract:
+      _:
+        long_name_text_text: |
+            Coal Contract
+        value_text_text: "$30"
+        power_text_text: |
+            One of owning company's trains
+            may haul coal (+$10 per coal marker).
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (2)]
+
+    trader:
+      _:
+        long_name_text_text: |
+            Trader
+        value_text_text: "$60"
+        power_text_text: |
+            Owning company may buy trains from
+            other companies before running trains.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    exportPermit:
+      _:
+        long_name_text_text: |
+            Export Permit
+        value_text_text: "$40"
+        power_text_text: |
+            One of owning company's trains 
+            may run into offboards.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (2)]
+
+    engineeringCo:
+      _:
+        long_name_text_text: |
+            Engineering Company
+        value_text_text: "$50"
+        power_text_text: |
+            Owning company may directly lay city
+            and plain tracks of current colour. 
+            May upgrade plain tracks
+            to one colour higher.
+        cost_text_text: ""
+        revenue_text_text: "Revenue $10 if owned by player"
+      model:
+        index: $[index_of (1)]
+
+    lawFirm:
+      _:
+        long_name_text_text: |
+            Law Firm
+        value_text_text: "$40"
+        power_text_text: |
+            Owning company may close this to place
+            a station in a city without empty station slot.
+            If the city is upgraded and a new slot becomes
+            available, the station is placed in it.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    mechanics:
+      _:
+        long_name_text_text: |
+            Mechanics
+        value_text_text: "$60"
+        power_text_text: |
+            One of owning company's yellow or
+            green trains runs once more before rusting.
+            Not cumulative with plus trains.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    constructionCo:
+      _:
+        long_name_text_text: |
+            Construction Company
+        value_text_text: "$60"
+        power_text_text: |
+            Owning company may have both its
+            track actions be upgrades.
+            Must still pay for the track actions.
+        cost_text_text: ""
+        revenue_text_text: "Revenue $10 if owned by player"
+      model:
+        index: $[index_of (1)]
+
+    port:
+      _:
+        long_name_text_text: |
+            Port
+        value_text_text: "$70"
+        power_text_text: |
+            Owning company may place a port marker
+            on a non-metropolis coastal city.
+            Increases the city's value by $20 for
+            companies that have a station in that city.
+        cost_text_text: ""
+        revenue_text_text: "Revenue $10 if owned by player"
+      model:
+        index: $[index_of (1)]
+
+    locWorks:
+      _:
+        long_name_text_text: |
+            Locomotive Works
+        value_text_text: "$100"
+        power_text_text: |
+            Owning company buys trains 10%
+            cheaper. Owning company may close this
+            to buy a train (still 10% cheaper) 
+            before running trains.
+
+            Closes when first 4D train is purchased.
+        cost_text_text: ""
+        revenue_text_text: "Revenue $20 if owned by player"
+      model:
+        index: $[index_of (1)]
+
+    stationBuilders:
+      _:
+        long_name_text_text: |
+            Station Builders
+        value_text_text: "$100"
+        power_text_text: |
+            Owning company may place additional
+            stations for $100 each.
+        cost_text_text: ""
+        revenue_text_text: "Revenue $25 if owned by player"
+      model:
+        index: $[index_of (1)]
+
+    refurbishedEngine:
+      _:
+        long_name_text_text: |
+            Refurbished Engine
+        value_text_text: "$100"
+        power_text_text: |
+            Owning company may close this
+            to buy a rusted train, paying its full price.
+            The train becomes permanent, counts against
+            train limit and may not be traded.
+            The train doesn't fullfill train requirement
+            for the company.
+        money_bar_box_suppress: false
+        cost_text_text: ""
+        revenue_text_text: "Revenue $10 if owned by player"
+      model:
+        index: $[index_of (1)]
+
+    bridgesAndTunnels:
+      _:
+        long_name_text_text: |
+            Bridges and Tunnels Company
+        value_text_text: "$50"
+        power_text_text: |
+            Owning company gains $25 after laying
+            a yellow tile on a hex with terrain cost.
+            Must pay for the tile first.
+        money_bar_box_suppress: false
+        cost_text_text: ""
+        revenue_text_text: "Revenue $10 if owned by player"
+      model:
+        index: $[index_of (1)]
+
+    modernCoalWagons:
+      _:
+        long_name_text_text: |
+            Modern Coal Wagons
+        value_text_text: "$60"
+        power_text_text: |
+            Coal is worth $20 instead of $10
+            for one of the owning company's trains.
+            The train must be able to haul coal.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    newCoalMine:
+      _:
+        long_name_text_text: |
+            New Coal Mine
+        value_text_text: "$30"
+        power_text_text: |
+            When laying a yellow plain track,
+            owning company may close this to
+            place a coal marker on the track.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    mailContract:
+      _:
+        long_name_text_text: |
+            Mail Contract
+        value_text_text: "$120"
+        power_text_text: |
+            For one of owning company's trains,
+            the company is paid by the bank money equal
+            to the value of one offboard that train ran to.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    expressTrack:
+      _:
+        long_name_text_text: |
+            Express Track
+        value_text_text: "$40"
+        power_text_text: |
+            Owning company pays $10 for its first
+            track action and $0 for the second.
+        money_bar_box_suppress: false
+        cost_text_text: ""
+        revenue_text_text: "Revenue $10 if owned by player"
+      model:
+        index: $[index_of (1)]
+
+    stationSubsidy:
+      _:
+        long_name_text_text: |
+            Station Subsidy
+        value_text_text: "$50"
+        power_text_text: |
+            Every time owning company
+            converts (not merges),
+            the company is paid by the bank $50.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    ponziScheme:
+      _:
+        long_name_text_text: |
+            Ponzi Scheme
+        value_text_text: "$100"
+        power_text_text: |
+            No special power.
+
+            Minimum bid is $5.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+
+
+
+
+    conc01:
+      _:
+        long_name_text_text: |
+            Concession
+        asset_interior_box_fill: ${colour/wikipedia/white}
+        value_text_text: "1"
+        value_text_size: 65
+        value_text_y: 15
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]    
+    
+    conc02:
+      _:
+        long_name_text_text: |
+            Concession
+        asset_interior_box_fill: ${colour/wikipedia/white}
+        value_text_text: "2"
+        value_text_size: 65
+        value_text_y: 15
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]    
+    
+    conc03:
+      _:
+        long_name_text_text: |
+            Concession
+        asset_interior_box_fill: ${colour/wikipedia/white}
+        value_text_text: "3"
+        value_text_size: 65
+        value_text_y: 15
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]    
+    
+    conc04:
+      _:
+        long_name_text_text: |
+            Concession
+        asset_interior_box_fill: ${colour/wikipedia/white}
+        value_text_text: "4"
+        value_text_size: 65
+        value_text_y: 15
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]    
+    
+    conc05:
+      _:
+        long_name_text_text: |
+            Concession
+        asset_interior_box_fill: ${colour/wikipedia/white}
+        value_text_text: "5"
+        value_text_size: 65
+        value_text_y: 15
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]    
+    
+    conc06:
+      _:
+        long_name_text_text: |
+            Concession
+        asset_interior_box_fill: ${colour/wikipedia/white}
+        value_text_text: "6"
+        value_text_size: 65
+        value_text_y: 15
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+        
+    conc07:
+      _:
+        long_name_text_text: |
+            Concession
+        asset_interior_box_fill: ${colour/wikipedia/white}
+        value_text_text: "7"
+        value_text_size: 65
+        value_text_y: 15
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+        
+    conc08:
+      _:
+        long_name_text_text: |
+            Concession
+        asset_interior_box_fill: ${colour/wikipedia/white}
+        value_text_text: "8"
+        value_text_size: 65
+        value_text_y: 15
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+        
+    conc09:
+      _:
+        long_name_text_text: |
+            Concession
+        asset_interior_box_fill: ${colour/wikipedia/white}
+        value_text_text: "9"
+        value_text_size: 65
+        value_text_y: 15
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+    
+    conc10:
+      _:
+        long_name_text_text: |
+            Concession
+        asset_interior_box_fill: ${colour/wikipedia/white}
+        value_text_text: "10"
+        value_text_size: 65
+        value_text_y: 15
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+    
+    conc11:
+      _:
+        long_name_text_text: |
+            Concession
+        asset_interior_box_fill: ${colour/wikipedia/white}
+        value_text_text: "11"
+        value_text_size: 65
+        value_text_y: 15
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+    
+    conc12:
+      _:
+        long_name_text_text: |
+            Concession
+        asset_interior_box_fill: ${colour/wikipedia/white}
+        value_text_text: "12"
+        value_text_size: 65
+        value_text_y: 15
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]    
+    
+    conc13:
+      _:
+        long_name_text_text: |
+            Concession
+        asset_interior_box_fill: ${colour/wikipedia/white}
+        value_text_text: "13"
+        value_text_size: 65
+        value_text_y: 15
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]    
+    
+    conc14:
+      _:
+        long_name_text_text: |
+            Concession
+        asset_interior_box_fill: ${colour/wikipedia/white}
+        value_text_text: "14"
+        value_text_size: 65
+        value_text_y: 15
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]    
+    
+    conc15:
+      _:
+        long_name_text_text: |
+            Concession
+        asset_interior_box_fill: ${colour/wikipedia/white}
+        value_text_text: "15"
+        value_text_size: 65
+        value_text_y: 15
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]    
+    
+    conc16:
+      _:
+        long_name_text_text: |
+            Concession
+        asset_interior_box_fill: ${colour/wikipedia/white}
+        value_text_text: "16"
+        value_text_size: 65
+        value_text_y: 15
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]    
+    
+    conc17:
+      _:
+        long_name_text_text: |
+            Concession
+        asset_interior_box_fill: ${colour/wikipedia/white}
+        value_text_text: "17"
+        value_text_size: 65
+        value_text_y: 15
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]    
+    
+    conc18:
+      _:
+        long_name_text_text: |
+            Concession
+        asset_interior_box_fill: ${colour/wikipedia/white}
+        value_text_text: "18"
+        value_text_size: 65
+        value_text_y: 15
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+        
+    conc19:
+      _:
+        long_name_text_text: |
+            Concession
+        asset_interior_box_fill: ${colour/wikipedia/white}
+        value_text_text: "19"
+        value_text_size: 65
+        value_text_y: 15
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]    
+    
+    conc20:
+      _:
+        long_name_text_text: |
+            Concession
+        asset_interior_box_fill: ${colour/wikipedia/white}
+        value_text_text: "20"
+        value_text_size: 65
+        value_text_y: 15
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]    
+
+
+train:
+  _:
+    cost_text_typeface: ${DEFAULT/typeface_mono}
+    cost_text_y: 70
+    cost_text_size: 12
+    long_name_text_size: 60
+    long_name_text_y: 105
+    note_text_size: 9
+
+  index:
+    2T:
+      _:
+        asset_interior_box_fill_p: YELLOW
+        rust_bar_box_fill_p: PURPLE
+        rusted_text_text: Rusted in SR4
+        long_name_text_text: "2"
+        cost_text_text: |
+            Cost:
+            OR1:   $100
+            OR2:    $75
+            OR3.1:  $50
+      model:
+        index: $[index_of (4)]
+
+    2P:
+      _:
+        asset_interior_box_fill_p: YELLOW
+        rust_bar_box_fill_p: PURPLE
+        rusted_text_text: Rusted in SR4
+        long_name_text_text: "2P"
+        cost_text_text: |
+            Cost:
+            OR1  : $120
+            OR2  :  $90
+            OR3.1:  $60
+        note_text_text: |
+            $10 per city
+            to the treasury
+      model:
+        index: $[index_of (4)]
+
+    2H:
+      _:
+        asset_interior_box_fill_p: YELLOW
+        rust_bar_box_fill_p: PURPLE
+        rusted_text_text: Rusted in SR4
+        long_name_text_text: "2H"
+        cost_text_text: |
+            Cost:
+            OR1  : $120
+            OR2  :  $90
+            OR3.1:  $60
+        note_text_text: |
+            May run into offboards
+      model:
+        index: $[index_of (4)]
+
+    2F:
+      _:
+        asset_interior_box_fill_p: YELLOW
+        rust_bar_box_fill_p: PURPLE
+        rusted_text_text: Rusted in SR4
+        long_name_text_text: "2F"
+        cost_text_text: |
+            Cost:
+            OR1  : $120
+            OR2  :  $90
+            OR3.1:  $60
+        note_text_text: |
+            +$10 per coal marker
+            May run into offboards
+      model:
+        index: $[index_of (4)]
+
+    2A:
+      _:
+        asset_interior_box_fill: ${colour/wikipedia/yellow_orange}
+        rust_bar_box_fill_p: PURPLE
+        rusted_text_text: Rusted in SR4
+        long_name_text_text: "2A"
+        cost_text_text: |
+            Cost:
+            OR2  : $140
+            OR3.1: $105
+            OR3.2:  $70
+        note_text_text: |
+          May be purchased
+          before running
+      model:
+        index: $[index_of (2)]
+
+    2Plus:
+      _:
+        asset_interior_box_fill: ${colour/wikipedia/yellow_orange}
+        rust_bar_box_fill_p: PURPLE
+        rusted_text_text: Rusted in SR4
+        long_name_text_text: "2+"
+        cost_text_text: |
+            Cost:
+            OR2  : $100
+            OR3.1:  $75
+            OR3.2:  $50
+        note_text_text: |
+            Runs once more
+            before rusting
+      model:
+        index: $[index_of (2)]
+
+    3T:
+      _:
+        asset_interior_box_fill_p: GREEN
+        rust_bar_box_fill_p: PURPLE
+        rusted_text_text: Rusted in SR5
+        long_name_text_text: "3"
+        cost_text_text: |
+            Cost:
+            OR3.1: $200
+            OR3.2: $150
+            OR4.1: $100
+      model:
+        index: $[index_of (2)]
+
+    3H:
+      _:
+        asset_interior_box_fill_p: GREEN
+        rust_bar_box_fill_p: PURPLE
+        rusted_text_text: Rusted in SR5
+        long_name_text_text: "3H"
+        cost_text_text: |
+            Cost:
+            OR3.1: $240
+            OR3.2: $180
+            OR4.1: $120
+        note_text_text: |
+            May run into offboards
+      model:
+        index: $[index_of (2)]
+
+    3P:
+      _:
+        asset_interior_box_fill_p: GREEN
+        rust_bar_box_fill_p: PURPLE
+        rusted_text_text: Rusted in SR5
+        long_name_text_text: "3P"
+        cost_text_text: |
+            Cost:
+            OR3.1: $240
+            OR3.2: $180
+            OR4.1: $120
+        note_text_text: |
+            $10 per city
+            to the treasury
+      model:
+        index: $[index_of (2)]
+
+    3F:
+      _:
+        asset_interior_box_fill_p: GREEN
+        rust_bar_box_fill_p: PURPLE
+        rusted_text_text: Rusted in SR5
+        long_name_text_text: "3F"
+        cost_text_text: |
+            Cost:
+            OR3.1: $240
+            OR3.2: $180
+            OR4.1: $120
+        note_text_text: |
+            +$10 per coal marker
+            May run into offboards
+      model:
+        index: $[index_of (2)]
+          
+    3A:
+      _:
+        asset_interior_box_fill_p: GREEN
+        rust_bar_box_fill_p: PURPLE
+        rusted_text_text: Rusted in SR5
+        long_name_text_text: "3A"
+        cost_text_text: |
+            Cost:
+            OR3.1: $300
+            OR3.2: $225
+            OR4.1: $150
+        note_text_text: |
+          May be purchased
+          before running
+      model:
+        index: $[index_of (1)]
+
+    3Plus:
+      _:
+        asset_interior_box_fill_p: GREEN
+        rust_bar_box_fill_p: PURPLE
+        rusted_text_text: Rusted in SR5
+        long_name_text_text: "3+"
+        cost_text_text: |
+            Cost:
+            OR3.1: $300
+            OR3.2: $225
+            OR4.1: $150
+        note_text_text: |
+            Runs once more
+            before rusting
+      model:
+        index: $[index_of (1)]
+
+    4T:
+      _:
+        asset_interior_box_fill_p: BLUE
+        rust_bar_box_fill_p: PURPLE
+        rusted_text_text: Rusted in SR6
+        long_name_text_text: "4"
+        cost_text_text: |
+            Cost:
+            OR4.1: $360
+            OR4.2: $270
+            OR5.1: $180
+      model:
+        index: $[index_of (1)]
+
+    5H:
+      _:
+        asset_interior_box_fill_p: BLUE
+        rust_bar_box_fill_p: PURPLE
+        rusted_text_text: Rusted in SR6
+        long_name_text_text: "5H"
+        cost_text_text: |
+            Cost:
+            OR4.1: $400
+            OR4.2: $300
+            OR5.1: $200
+        note_text_text: |
+            May run into offboards
+      model:
+        index: $[index_of (1)]
+
+    4P:
+      _:
+        asset_interior_box_fill_p: BLUE
+        rust_bar_box_fill_p: PURPLE
+        rusted_text_text: Rusted in SR6
+        long_name_text_text: "4P"
+        cost_text_text: |
+            Cost:
+            OR4.1: $400
+            OR4.2: $300
+            OR5.1: $200
+        note_text_text: |
+            $10 per city
+            to the treasury
+      model:
+        index: $[index_of (1)]
+
+    4F:
+      _:
+        asset_interior_box_fill_p: BLUE
+        rust_bar_box_fill_p: PURPLE
+        rusted_text_text: Rusted in SR6
+        long_name_text_text: "4F"
+        cost_text_text: |
+            Cost:
+            OR4.1: $400
+            OR4.2: $300
+            OR5.1: $200
+        note_text_text: |
+            +$10 per coal marker
+            May run into offboards
+      model:
+        index: $[index_of (1)]
+
+    4Plus:
+      _:
+        asset_interior_box_fill_p: BLUE
+        rust_bar_box_fill_p: PURPLE
+        rusted_text_text: Rusted in SR6
+        long_name_text_text: "4+"
+        cost_text_text: |
+            Cost:
+            OR4.1: $440
+            OR4.2: $330
+            OR5.1: $220
+        note_text_text: |
+            Runs once more
+            before rusting
+      model:
+        index: $[index_of (1)]
+
+    4A:
+      _:
+        asset_interior_box_fill_p: BLUE
+        rust_bar_box_fill_p: PURPLE
+        rusted_text_text: Rusted in SR6
+        long_name_text_text: "4A"
+        cost_text_text: |
+            Cost:
+            OR4.1: $440
+            OR4.2: $330
+            OR5.1: $220
+        note_text_text: |
+            May be purchased
+            before running
+      model:
+        index: $[index_of (1)]
+
+    6T:
+      _:
+        asset_interior_box_fill_p: BROWN
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "6"
+        cost_text_text: |
+            Cost:
+            $600
+        rusted_text_text: Permanent
+        note_text_text: Acts as F or P train
+      model:
+        index: $[index_of (6)]
+          
+    4D:
+      _:
+        asset_interior_box_fill_p: RED
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "4D"
+        cost_text_text: |
+            Cost:
+            $900
+        rusted_text_text: Permanent
+        note_text_text: |
+            Acts as F or P train
+      model:
+        index: $[index_of (6)]
+
+    5D:
+      _:
+        asset_interior_box_fill_p: GRAY
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "5D"
+        cost_text_text: |
+            Cost:
+            $1100
+        rusted_text_text: Permanent
+        note_text_text: Acts as F or P train        
+      model:
+        index: $[index_of (12)]
+
+marker:
+  _:
+    short_name_text_size: 8
+    
+  index:
+
+    round:
+      token:
+        ELEMENTS:
+          - token_interior_box
+          - outer_circle
+          - middle_circle
+          - inner_circle
+
+        index: $[index_of (1)]
+      outer_circle:
+        fill: ${colour/galatolol/yellow}
+      middle_circle:
+        fill: ${colour/galatolol/green}
+      inner_circle:
+        fill: ${colour/galatolol/brown}    
+
+    round1:
+      token:
+        _:
+          short_name_text_text: "SR1"
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 3]
+          short_name_text_size: 10
+          name_stripe_box_suppress: True
+          _major_fill: ${colour/wikipedia/white}
+          _minor_fill: ${colour/wikipedia/white}
+        index: $[index_of (4)]
+
+    round2:
+      token:
+        _:
+          short_name_text_text: "SR2"
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 3]
+          short_name_text_size: 10
+          name_stripe_box_suppress: True
+          _major_fill: ${colour/wikipedia/white}
+          _minor_fill: ${colour/wikipedia/white}
+        index: $[index_of (4)]
+
+    round3:
+      token:
+        _:
+          short_name_text_text: "SR3"
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 3]
+          short_name_text_size: 10
+          name_stripe_box_suppress: True
+          _major_fill: ${colour/wikipedia/white}
+          _minor_fill: ${colour/wikipedia/white}
+        index: $[index_of (4)]
+
+    5share:
+      token:
+        _:
+          short_name_text_text: |
+            5
+            Share
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 4.5]
+          short_name_text_size: 8
+          name_stripe_box_suppress: True
+          _major_fill: ${colour/wikipedia/robin_egg_blue}
+          _minor_fill: ${colour/wikipedia/robin_egg_blue}
+        index: $[index_of (16)]
+
+    10share:
+      token:
+        _:
+          short_name_text_text: |
+            10
+            Share
+          short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 4.5]
+          short_name_text_size: 8
+          name_stripe_box_suppress: True
+          _major_fill: ${colour/wikipedia/wisteria}
+          _minor_fill: ${colour/wikipedia/wisteria}
+        index: $[index_of (16)]
+
+    et:
+      _:
+        short_name_text_text: ET
+      token:
+        index: "$[index_of (1)]"    
+    bt:
+      _:
+        short_name_text_text: BT
+      token:
+        index: "$[index_of (1)]"    
+    gnr:
+      _:
+        short_name_text_text: GNR
+      token:
+        index: "$[index_of (1)]"    
+    gv:
+      _:
+        short_name_text_text: GV
+      token:
+        index: "$[index_of (1)]"    
+    hf:
+      _:
+        short_name_text_text: HF
+      token:
+        index: "$[index_of (1)]"    
+    ll:
+      _:
+        short_name_text_text: LL
+      token:
+        index: "$[index_of (1)]"    
+    mh:
+      _:
+        short_name_text_text: MH
+      token:
+        index: "$[index_of (1)]"    
+    nc:
+      _:
+        short_name_text_text: NC
+      token:
+        index: "$[index_of (1)]"    
+    rd:
+      _:
+        short_name_text_text: RD
+      token:
+        index: "$[index_of (1)]"    
+    rrr:
+      _:
+        short_name_text_text: RRR
+      token:
+        index: "$[index_of (1)]"    
+    sf:
+      _:
+        short_name_text_text: SF
+      token:
+        index: "$[index_of (1)]"    
+    te:
+      _:
+        short_name_text_text: TE
+      token:
+        index: "$[index_of (1)]"    
+    tr:
+      _:
+        short_name_text_text: TR
+      token:
+        index: "$[index_of (1)]"    
+    ur:
+      _:
+        short_name_text_text: UR
+      token:
+        index: "$[index_of (1)]"    
+    wr:
+      _:
+        short_name_text_text: WR
+      token:
+        index: "$[index_of (1)]"    
+    rp:
+      _:
+        short_name_text_text: RP
+      token:
+        index: "$[index_of (1)]"    

@@ -4,6 +4,7 @@ xxpaper:
     - fonts/times/times-it.ttf
     - fonts/times/Times Bold.ttf
     - fonts/times/NTTimes BoldItalic.ttf
+    - fonts/other/cmuntt.ttf
 
 
 DEFAULT:
@@ -14,6 +15,7 @@ DEFAULT:
   typeface_bold_oblique: ${DEFAULT/typeface_bold_italic}
   typeface_italic: "times-it"
   typeface_oblique: ${DEFAULT/typeface_italic}
+  typeface_mono: "cmuntt" #"CMU Typewriter Text Regular"
   size: 14
   suppress: False
   cutline_width: 0.01
