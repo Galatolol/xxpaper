@@ -8,21 +8,8 @@ CATALOG='1894'
 
 mkdir -p $CATALOG
 
-# qpdf --replace-input - modify the file in place
-
-#xxpaper make assets $SOURCE_FILE -p A4 $CATALOG/papers.pdf
-#qpdf $CATALOG/papers.pdf --pages . 1-10 -- --replace-input
-#mv $TOKEN_OBJECT_NAME_ALT $TOKEN_OBJECT_NAME
-#xxpaper make assets $SOURCE_FILE_TOKENS -c -p A4 $CATALOG/tokens.pdf
-#qpdf $CATALOG/tokens.pdf --pages . 11 -- --replace-input
-#mv $TOKEN_OBJECT_NAME $TOKEN_OBJECT_NAME_ALT
-
-
-###
-
-
-xxpaper make assets $SOURCE_FILE -p A4 $CATALOG/papers-A4.pdf
-qpdf --pages $CATALOG/papers-A4.pdf 1-r2 -- $CATALOG/papers-A4.pdf --replace-input
+xxpaper make assets $SOURCE_FILE -p A4 $CATALOG/papers.pdf
+qpdf $CATALOG/papers.pdf --pages . 1-10 -- --replace-input
 mv $TOKEN_OBJECT_NAME_ALT $TOKEN_OBJECT_NAME
 xxpaper make assets $SOURCE_FILE_TOKENS -c -p A4 $CATALOG/markers-A4.pdf
 qpdf $CATALOG/markers-A4.pdf --pages . 11 -- --replace-input
