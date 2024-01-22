@@ -16,8 +16,8 @@ def _match_filter (name, filters):
 
 @logtool.log_call
 def do (**kwargs):
-  # Config.set ("xxpaper/cutline", kwargs["cutline"])
   load_config (kwargs["templates"])
+  Config.set ("xxpaper/cutline", kwargs["cutline"])
   match = kwargs.get ("filter")
   filters = [
     "*%s*" % f for f in

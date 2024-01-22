@@ -22,8 +22,8 @@ def do (**kwargs):
     clip.exit (err = True,
                message = "Unknown paper size: %s" % kwargs["paper"])
   paper = A4 if kwargs["paper"] == "A4" else letter
-  Config.set ("xxpaper/cutline", kwargs["cutline"])
   load_config (kwargs["templates"])
+  Config.set ("xxpaper/cutline", kwargs["cutline"])
   match = kwargs.get ("filter")
   if kwargs.get ("outfile") is None:
     outfile = Path (
