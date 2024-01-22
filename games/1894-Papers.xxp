@@ -425,9 +425,9 @@ private:
             London shipping
         power_text_text: |
             Owning company pays F40 for ferry marker.
-            Owning company may place one of its
-            station markers in A12.
-            For that company the revenue of London (A10)
+            Owning company may place
+            a station marker in A12.
+            For that company, the revenue of London (A10)
             is increased by the largest non–London,
             non–Luxembourg revenue on the route.
         sell_text_text: "May be sold for F45 – F180"
@@ -454,7 +454,7 @@ private:
             Nord minor shareholding
         power_text_text: |
             Comes with a share of the Nord.
-        sell_text_text: "May be sold for F70 – 280"
+        sell_text_text: "May be sold for F70 – F280"
         cost_text_text: "Cost: F140"
         revenue_text_text: "Revenue: F20"
 
@@ -467,7 +467,7 @@ private:
         power_text_text: |
             Comes with the president's certificate
             of randomly selected French company
-            (CFOR, Est, Nord, Ouest or PLM).
+            (CFOR, Est, Nord, Ouest, or PLM).
         sell_text_text: "Cannot be sold"
         cost_text_text: "Cost: F180"
         revenue_text_text: "Revenue: F25"
@@ -487,6 +487,7 @@ private:
 
     MAY_NOT_REDEEM_SHARES:
       _:
+        asset_interior_box_fill: ${colour/wikipedia/white_smoke}
         close_bar_box_suppress: true
         money_bar_box_suppress: true
         closes_text_text: ""
