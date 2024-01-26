@@ -639,12 +639,14 @@ company:
         long_name_text_text: |
             Società
             Leonardo da Vinci
-        short_name_text_text: "SLDV"
+        short_name_text_text: "LDV"
+        short_name_text_size: 11
+        short_name_text_y: 18
         token_1_text_text: NULL
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL     
         share_pct_text_fill: ${colour/xxp/WHITE}
-        name_stripe_box_fill: ${colour/xxp/BLACK}
+        name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/chocolate_traditional}
         _minor_fill: ${colour/x11/tan3}
         middle_box_fill: ${_/_minor_fill}
@@ -686,7 +688,7 @@ company:
             Società
             Leonardo da Vinci
         short_name_text_text: "SLDV"
-        name_stripe_box_fill: ${colour/xxp/BLACK}
+        name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/chocolate_traditional}
         _minor_fill: ${colour/x11/tan3}
         middle_box_fill: ${_/_minor_fill}
@@ -713,7 +715,9 @@ company:
             Ferrovie
             Trans Padane
         short_name_text_text: "FTP"
-        name_stripe_box_fill: ${colour/xxp/BLACK}
+        short_name_text_size: 11
+        short_name_text_y: 18
+        name_stripe_box_suppress: True
         token_1_text_text: NULL
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL     
@@ -758,7 +762,7 @@ company:
             Ferrovie
             Trans Padane
         short_name_text_text: "FTP"
-        name_stripe_box_fill: ${colour/xxp/BLACK}
+        name_stripe_box_suppress: True
         _minor_fill: ${colour/xxp/WHITE}
         _major_fill: ${colour/x11/grey50}
         middle_box_fill: ${_/_minor_fill}
@@ -781,14 +785,18 @@ company:
     CTLP:
       _:
         long_name_text_text: |
-            Compagnia
-            Trasporti La Patria
-        short_name_text_text: "CTLP"
+            La Patria
+        #Compagnia
+        #Trasporti La Patria
+        short_name_text_text: "LP"
+        short_name_text_size: 14
+        short_name_text_y: 17
+        short_name_text_fill: ${colour/xxp/WHITE}
         token_1_text_text: NULL
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL     
         share_pct_text_fill: ${colour/xxp/WHITE}
-        name_stripe_box_fill: ${colour/xxp/BLACK}
+        name_stripe_box_suppress: True
         _major_fill: ${colour/x11/grey89}
         _minor_fill: ${colour/x11/grey49}
         middle_box_fill: ${_/_minor_fill}
@@ -830,7 +838,7 @@ company:
             Compagnia
             Trasporti La Patria
         short_name_text_text: "CTLP"
-        name_stripe_box_fill: ${colour/xxp/BLACK}
+        name_stripe_box_suppress: True
         _major_fill: ${colour/x11/grey89}
         _minor_fill: ${colour/x11/grey49}
         middle_box_fill: ${_/_minor_fill}
@@ -853,9 +861,13 @@ company:
     RATF:
       _:
         long_name_text_text: |
-            Regia Azienda
-            Trasporti Ferroviari
-        short_name_text_text: RATF
+            Azienda Trasporti
+        #Regia Azienda
+        #Trasporti Ferroviari
+        short_name_text_text: AT
+        short_name_text_size: 14
+        short_name_text_y: 17
+        short_name_text_fill: $[black_or_white (${_/_major_fill})]
         token_1_text_text: NULL
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL
@@ -863,10 +875,10 @@ company:
         token_3_text_text: NULL
         token_4_text_text: NULL
         token_5_text_text: NULL
-        name_stripe_box_fill: ${colour/xxp/BLACK}
-        _major_fill: ${colour/wikipedia/liver}
-        _minor_fill: ${colour/wikipedia/liver}
-        _related_fill: ${colour/wikipedia/onyx}
+        name_stripe_box_suppress: True
+        _major_fill: ${colour/wikipedia/black}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/wikipedia/taupe_gray}
       charter:
         _:
           comment_text_text: |
@@ -882,9 +894,13 @@ company:
     ILTF:
       _:
         long_name_text_text: |
-            Impresa Latina
-            Trasporti su Ferro
-        short_name_text_text: ILTF
+            Latina Trasporti
+        #Impresa Latina
+        #Trasporti su Ferro
+        short_name_text_text: LT
+        short_name_text_size: 14
+        short_name_text_y: 17
+        short_name_text_fill: $[black_or_white (${_/_major_fill})]
         token_1_text_text: NULL
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL
@@ -892,7 +908,7 @@ company:
         token_3_text_text: NULL
         token_4_text_text: NULL
         token_5_text_text: NULL
-        name_stripe_box_fill: ${colour/xxp/BLACK}
+        name_stripe_box_suppress: True
         _major_fill: ${colour/x11/chartreuse4}
         _minor_fill: ${colour/x11/chartreuse4}
         _related_fill: ${colour/x11/chartreuse3}
@@ -915,6 +931,9 @@ company:
             Azienda
             Ferroviaria Italica
         short_name_text_text: AFI
+        short_name_text_size: 11
+        short_name_text_y: 18
+        short_name_text_fill: $[black_or_white (${_/_major_fill})]
         token_1_text_text: NULL
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL
@@ -922,10 +941,10 @@ company:
         token_3_text_text: NULL
         token_4_text_text: NULL
         token_5_text_text: NULL
-        name_stripe_box_fill: ${colour/xxp/BLACK}
-        _major_fill: ${colour/x11/red3}
-        _minor_fill: ${colour/x11/red3}
-        _related_fill: ${colour/x11/red}
+        name_stripe_box_suppress: True
+        _major_fill: ${colour/wikipedia/red}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/hollasch/tomato}
       charter:
         _:
           comment_text_text: |
@@ -943,8 +962,12 @@ company:
       _:
         long_name_text_text: |
             Reale Società
-            Ferroviaria Sabanda
-        short_name_text_text: RSFS
+        #Reale Società
+        #Ferroviaria Sabanda
+        short_name_text_text: RS
+        short_name_text_size: 14
+        short_name_text_y: 17
+        short_name_text_fill: $[black_or_white (${_/_major_fill})]
         token_1_text_text: NULL
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL
@@ -952,10 +975,10 @@ company:
         token_3_text_text: NULL
         token_4_text_text: NULL
         token_5_text_text: NULL
-        name_stripe_box_fill: ${colour/xxp/BLACK}
-        _major_fill: ${colour/x11/turquoise4}
+        name_stripe_box_suppress: True
+        _major_fill: ${colour/wikipedia/medium_electric_blue}
         _minor_fill: ${_/_major_fill}
-        _related_fill: ${colour/x11/turquoise3}
+        _related_fill: ${colour/wikipedia/han_blue}
       charter:
         _:
           comment_text_text: |
@@ -972,9 +995,13 @@ company:
     IFAI:
       _:
         long_name_text_text: |
-            Impresa Ferroviaria
             Alta Italia
-        short_name_text_text: IFAI
+        #Impresa Ferroviaria
+        #Alta Italia
+        short_name_text_text: AI
+        short_name_text_size: 14
+        short_name_text_y: 17
+        short_name_text_fill: $[black_or_white (${_/_major_fill})]
         token_1_text_text: NULL
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL
@@ -982,7 +1009,7 @@ company:
         token_3_text_text: NULL
         token_4_text_text: NULL
         token_5_text_text: NULL
-        name_stripe_box_fill: ${colour/xxp/BLACK}
+        name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/barn_red}
         _minor_fill: ${colour/wikipedia/barn_red} #${colour/wikipedia/burnt_orange}
         _related_fill: ${colour/wikipedia/chinese_red}
@@ -1003,8 +1030,11 @@ company:
       _:
         long_name_text_text: |
             Impresa Centrale
-            Strade Ferrate
-        short_name_text_text: ICSF
+        #Impresa Centrale
+        #Strade Ferrate
+        short_name_text_text: IC
+        short_name_text_size: 14
+        short_name_text_y: 17
         token_1_text_text: NULL
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL
@@ -1012,7 +1042,7 @@ company:
         token_3_text_text: NULL
         token_4_text_text: NULL
         token_5_text_text: NULL
-        name_stripe_box_fill: ${colour/xxp/BLACK}
+        name_stripe_box_suppress: True
         #_major_fill: ${colour/x11/orangered}
         _major_fill: ${colour/wikipedia/gold_metallic}
         _minor_fill: ${_/_major_fill}
@@ -1033,9 +1063,10 @@ company:
     CTS:
       _:
         long_name_text_text: |
-            Compagnia
             Trasporti Subalpini
-        short_name_text_text: CTS
+        short_name_text_text: TS
+        short_name_text_size: 14
+        short_name_text_y: 17
         token_1_text_text: NULL
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL
@@ -1043,10 +1074,10 @@ company:
         token_3_text_text: NULL
         token_4_text_text: NULL
         token_5_text_text: NULL
-        name_stripe_box_fill: ${colour/xxp/BLACK}
-        _major_fill: ${colour/x11/darkorchid3}
+        name_stripe_box_suppress: True
+        _major_fill: ${colour/wikipedia/rich_lavender}
         _minor_fill: ${_/_major_fill}
-        _related_fill: ${colour/x11/blueviolet}
+        _related_fill: ${colour/wikipedia/plum_web}
       charter:
         _:
           comment_text_text: |
@@ -1069,6 +1100,8 @@ company:
         #Trasporti
         #Dante Alighieri
         short_name_text_text: CDA
+        short_name_text_size: 11
+        short_name_text_y: 18
         token_1_text_text: NULL
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL
@@ -1076,7 +1109,7 @@ company:
         token_3_text_text: NULL
         token_4_text_text: NULL
         token_5_text_text: NULL
-        name_stripe_box_fill: ${colour/xxp/BLACK}
+        name_stripe_box_suppress: True
         _major_fill: ${colour/x11/antiquewhite2}
         _minor_fill: ${_/_major_fill}
         _related_fill: ${colour/x11/antiquewhite}
@@ -1102,6 +1135,8 @@ company:
         #per i Trasporti
         #Ferroviari
         short_name_text_text: GTF
+        short_name_text_size: 11
+        short_name_text_y: 18
         token_1_text_text: NULL
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL
@@ -1109,7 +1144,7 @@ company:
         token_3_text_text: NULL
         token_4_text_text: NULL
         token_5_text_text: NULL
-        name_stripe_box_fill: ${colour/xxp/BLACK}
+        name_stripe_box_suppress: True
         _major_fill: ${colour/x11/green2}
         _minor_fill: ${_/_major_fill}
         _related_fill: ${colour/x11/chartreuse2}
@@ -1135,6 +1170,8 @@ company:
         #Ferroviaria
         #Cante di Cavour
         short_name_text_text: CCC
+        short_name_text_size: 11
+        short_name_text_y: 18
         token_1_text_text: NULL
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL
@@ -1142,7 +1179,7 @@ company:
         token_3_text_text: NULL
         token_4_text_text: NULL
         token_5_text_text: NULL
-        name_stripe_box_fill: ${colour/xxp/BLACK}
+        name_stripe_box_suppress: True
         _major_fill: ${colour/x11/white}
         _minor_fill: ${_/_major_fill}
         _related_fill: ${colour/x11/white}
@@ -1162,9 +1199,12 @@ company:
     ATFA:
       _:
         long_name_text_text: |
-            Azienda Trasporti
             Ferroviari Ansonia
-        short_name_text_text: ATFA
+        #Azienda Trasporti
+        #Ferroviari Ansonia
+        short_name_text_text: FA
+        short_name_text_size: 14
+        short_name_text_y: 17
         token_1_text_text: NULL
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: NULL
@@ -1172,7 +1212,7 @@ company:
         token_3_text_text: NULL
         token_4_text_text: NULL
         token_5_text_text: NULL
-        name_stripe_box_fill: ${colour/xxp/BLACK}
+        name_stripe_box_suppress: True
         _major_fill: ${colour/wikipedia/waterspout}
         _minor_fill: ${_/_major_fill}
         _related_fill: ${colour/wikipedia/bubbles}
