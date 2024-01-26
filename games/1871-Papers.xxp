@@ -538,8 +538,9 @@ private:
             Can be sold to a public company
             for $1 to $200 in phase 4H or later.
 
-            Owning company may buy a train from
-            the supply anytime during its operation.
+            Owning company may close this
+            to buy a train from the supply
+            anytime during its operation.
         cost_text_text: "Cost: $110"
         revenue_text_text: "Revenue: $20"
 
