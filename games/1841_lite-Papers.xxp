@@ -280,65 +280,6 @@ company:
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
         index: "$[index_of (7)]"
 
-    SSFL:
-      _:
-        long_name_text_text: |
-            Società per la
-            Strada Ferrata
-            Leopolda
-        short_name_text_text: SSFL
-        token_1_text_text: Pisa
-        token_1_circle_fill: ${colour/hollasch/grey}
-        token_2_text_text: NULL
-        token_2_circle_fill: ${colour/hollasch/grey}
-        token_3_text_text: NULL
-        token_4_text_text: NULL
-        token_5_text_text: NULL
-        _major_fill: ${colour/wikipedia/palatinate_purple}
-        _minor_fill: ${colour/wikipedia/plum_web}
-        _related_fill: ${colour/wikipedia/plum_traditional}
-      charter:
-        _:
-          comment_text_text: |
-            Phase 4: merges with SFLP
-            and SFMA to form SFLi
-            2-5 stations, L.50 each
-      share:
-        _:
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
-          comment_text_y: 70
-      concession:
-        _:
-          closes_text_text: "Removed in phase 4"
-          long_name_text_text: |
-              SSFL Concession (6)
-          power_text_text: |
-              Owning player may start SSFL.
-              Owning player can't lose the
-              presidency of SSFL.
-              If SSFL not started at the end of SR,
-              this concession is put in the market.
-          cost_text_text: "Cost L.50 from the market"
-          cost_text_size: 10
-          bid_text_text: ""
-          bid_text_x: 168
-          long_name_text_size: 12
-          long_name_text_x: 86
-          long_name_text_y: 78
-          cost_bar_box_y: 11
-          power_text_h_center: 1
-          power_text_x_inset: 4
-          power_text_size: 8
-          token_embed_x_inset: 130
-          token_embed_y_inset: 30
-          asset_interior_box_fill: ${colour/wikipedia/plum_traditional}
-        index: "$[index_of (1)]"          
-      token:
-        ELEMENTS: ${TEMPLATE_cross/.}
-        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
-        index: "$[index_of (7)]"
-
     SFTC:
       _:
         long_name_text_text: |
@@ -394,469 +335,6 @@ company:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
         index: "$[index_of (7)]"
-
-    SFLi:
-      _:
-        long_name_text_text: |
-            Strada di Ferro
-            da Torino a Cuneo
-        short_name_text_text: SFLi
-        token_1_text_text: Pisa
-        token_1_circle_fill: ${colour/hollasch/grey}
-        token_2_text_text: Firenze
-        token_2_circle_fill: ${colour/hollasch/grey}
-        token_3_text_text: NULL
-        token_3_circle_fill: ${colour/hollasch/grey}
-        token_4_text_text: NULL
-        token_4_circle_fill: ${colour/hollasch/grey}
-        token_5_text_text: NULL
-        token_5_circle_fill: ${colour/hollasch/grey}
-        inner_circle_fill: ${colour/wikipedia/yellow_green}
-        middle_circle_fill: ${colour/wikipedia/lemon_lime}
-        outer_circle_fill: ${colour/wikipedia/yellow_green}
-        _related_fill: ${colour/wikipedia/green_yellow}
-      charter:
-        _:
-          comment_text_text: |
-            Phase 4: formed from
-            SFLP, SFMA and SSFL
-            Always has 5 stations
-      share:
-        _:
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
-          comment_text_y: 70
-
-      token:
-        ELEMENTS: ${TEMPLATE_bullseye/.}
-        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
-        index: "$[index_of (7)]"
-
-    SFLP:
-      _:
-        long_name_text_text: |
-            Strada Ferrata
-            da Lucca a Pistoia
-        short_name_text_text: "SFLP"
-        token_1_text_text: Lucca
-        token_1_circle_fill: ${colour/hollasch/grey}
-        token_2_text_text: NULL       
-        _related_fill: ${colour/wikipedia/green_yellow}
-      token:
-        _:
-          _major_fill_1: ${colour/wikipedia/yellow_green}
-          _major_fill_2: ${colour/wikipedia/lemon_lime}
-          _minor_fill_1: ${colour/wikipedia/lemon_lime}
-          _minor_fill_2: ${colour/wikipedia/yellow_green}
-        ELEMENTS: ${TEMPLATE_chequer/.}
-        EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
-        index: $[index_of (4)]    
-      share:
-        _:
-          share_num_text_text: 1 Share
-          share_pct_text_text: 20%
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
-          share_desc_text_suppress: True
-        index:
-          "1":
-            share_desc_text:
-              suppress: True
-            type_bar_box:
-              suppress: True
-            token_1_embed:
-              suppress: False
-            token_2a_embed:
-              suppress: True
-            token_2b_embed:
-              suppress: True
-          "2":
-          "3":
-      charter:
-        _:
-          label_text_text: 5 share company
-          comment_text_text: |
-            Phase 4: merges with SFMA,
-            then with SSFL to form SFLi
-            1-2 stations, L.50 each
-      concession:
-        _:
-          closes_text_text: "Removed in phase 4"
-          long_name_text_text: |
-              SFLP Concession (2)
-          power_text_text: |
-              Owning player may start SFLP.
-              Owning player can't lose the
-              presidency of SFLP.
-              If SFLP not started at the end of SR,
-              this concession is put in the market.
-          cost_text_text: "Cost L.50 from the market"
-          cost_text_size: 10
-          bid_text_text: ""
-          bid_text_x: 168
-          long_name_text_size: 12
-          long_name_text_x: 86
-          long_name_text_y: 78
-          cost_bar_box_y: 11
-          power_text_h_center: 1
-          power_text_x_inset: 4
-          power_text_size: 8
-          token_embed_x_inset: 130
-          token_embed_y_inset: 30
-          asset_interior_box_fill: ${colour/wikipedia/green_yellow}
-        index: "$[index_of (1)]"
-    SFLP_pres:
-      _:
-        long_name_text_text: |
-            Strada Ferrata
-            da Lucca a Pistoia
-        short_name_text_text: "SFLP"
-        _related_fill: ${colour/wikipedia/green_yellow}
-      charter:
-        index:
-      share:
-        _:
-          share_num_text_text: 2 Shares
-          share_pct_text_text: 40%
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
-        index:
-          "1":
-      token:
-        _:
-          _major_fill_1: ${colour/hollasch/chartreuse}
-          _major_fill_2: ${colour/wikipedia/pastel_yellow}
-          _minor_fill_1: ${colour/wikipedia/pastel_yellow}
-          _minor_fill_2: ${colour/hollasch/chartreuse}
-        ELEMENTS: ${TEMPLATE_chequer/.}
-        EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
-        index: $[index_of (4)] 
-
-    SFMA:
-      _:
-        long_name_text_text: |
-            Strada Ferrata
-            Maria Antonia
-        short_name_text_text: "SFMA"
-        token_1_text_text: Firenze
-        token_1_circle_fill: ${colour/hollasch/grey}
-        token_2_text_text: NULL       
-        _related_fill: ${colour/wikipedia/ferrari_red}
-        share_pct_text_fill: ${colour/xxp/WHITE}
-      token:
-        _:
-          _major_fill_1: ${colour/wikipedia/candy_apple_red}
-          _major_fill_2: ${colour/x11/pink1}
-          _minor_fill_1: ${colour/x11/pink1}
-          _minor_fill_2: ${colour/wikipedia/candy_apple_red}
-        ELEMENTS: ${TEMPLATE_chequer/.}
-        EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
-        index: $[index_of (4)]    
-      share:
-        _:
-          share_num_text_text: 1 Share
-          share_pct_text_text: 20%
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
-          share_desc_text_suppress: True
-        index:
-          "1":
-            share_desc_text:
-              suppress: True
-            type_bar_box:
-              suppress: True
-            token_1_embed:
-              suppress: False
-            token_2a_embed:
-              suppress: True
-            token_2b_embed:
-              suppress: True
-          "2":
-          "3":
-      charter:
-        _:
-          label_text_text: 5 share company
-          comment_text_text: |
-            Phase 4: merges with SFLP,
-            then with SSFL to form SFLi
-            1-2 stations, L.50 each
-      concession:
-        _:
-          closes_text_text: "Removed in phase 4"
-          long_name_text_text: |
-              SFMA Concession (4)
-          power_text_text: |
-              Owning player may start SFMA.
-              Owning player can't lose the
-              presidency of SFMA.
-              If SFMA not started at the end of SR,
-              this concession is put in the market.
-          cost_text_text: "Cost L.50 from the market"
-          cost_text_size: 10
-          bid_text_text: ""
-          bid_text_x: 168
-          long_name_text_size: 12
-          long_name_text_x: 86
-          long_name_text_y: 78
-          cost_bar_box_y: 11
-          power_text_h_center: 1
-          power_text_x_inset: 4
-          power_text_size: 8
-          token_embed_x_inset: 130
-          token_embed_y_inset: 30
-          asset_interior_box_fill: ${colour/wikipedia/ferrari_red}
-        index: "$[index_of (1)]"
-    SFMA_pres:
-      _:
-        long_name_text_text: |
-            Strada Ferrata
-            Maria Antonia
-        short_name_text_text: "SFMA"
-        _related_fill: ${colour/wikipedia/ferrari_red}
-      charter:
-        index:
-      share:
-        _:
-          share_num_text_text: 2 Shares
-          share_pct_text_text: 40%
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
-        index:
-          "1":
-      token:
-        _:
-          _major_fill_1: ${colour/wikipedia/candy_apple_red}
-          _major_fill_2: ${colour/x11/pink1}
-          _minor_fill_1: ${colour/x11/pink1}
-          _minor_fill_2: ${colour/wikipedia/candy_apple_red}
-        ELEMENTS: ${TEMPLATE_chequer/.}
-        EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
-        index: $[index_of (4)] 
-
-
-    SLDV:
-      _:
-        long_name_text_text: |
-            Società
-            Leonardo da Vinci
-        short_name_text_text: "LDV"
-        short_name_text_size: 11
-        short_name_text_y: 18
-        token_1_text_text: NULL
-        token_1_circle_fill: ${colour/hollasch/grey}
-        token_2_text_text: NULL     
-        share_pct_text_fill: ${colour/xxp/WHITE}
-        name_stripe_box_suppress: True
-        _major_fill: ${colour/wikipedia/chocolate_traditional}
-        _minor_fill: ${colour/x11/tan3}
-        middle_box_fill: ${_/_minor_fill}
-        _related_fill: ${colour/wikipedia/copper}
-      token:
-        _:
-        ELEMENTS: ${TEMPLATE_boxes/.}
-        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
-        index: $[index_of (4)]    
-      share:
-        _:
-          share_num_text_text: 1 Share
-          share_pct_text_text: 20%
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
-          share_desc_text_suppress: True
-        index:
-          "1":
-            share_desc_text:
-              suppress: True
-            type_bar_box:
-              suppress: True
-            token_1_embed:
-              suppress: False
-            token_2a_embed:
-              suppress: True
-            token_2b_embed:
-              suppress: True
-          "2":
-          "3":
-      charter:
-        _:
-          label_text_text: 5 share company
-          comment_text_text: |
-            1-2 stations, L.25/50/100/200 each
-    SLDV_pres:
-      _:
-        long_name_text_text: |
-            Società
-            Leonardo da Vinci
-        short_name_text_text: "SLDV"
-        name_stripe_box_suppress: True
-        _major_fill: ${colour/wikipedia/chocolate_traditional}
-        _minor_fill: ${colour/x11/tan3}
-        middle_box_fill: ${_/_minor_fill}
-        _related_fill: ${colour/wikipedia/copper}
-      charter:
-        index:
-      share:
-        _:
-          share_num_text_text: 2 Shares
-          share_pct_text_text: 40%
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
-        index:
-          "1":
-      token:
-        _:
-        ELEMENTS: ${TEMPLATE_boxes/.}
-        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
-
-
-    FTP:
-      _:
-        long_name_text_text: |
-            Ferrovie
-            Trans Padane
-        short_name_text_text: "FTP"
-        short_name_text_size: 11
-        short_name_text_y: 18
-        name_stripe_box_suppress: True
-        token_1_text_text: NULL
-        token_1_circle_fill: ${colour/hollasch/grey}
-        token_2_text_text: NULL     
-        _minor_fill: ${colour/x11/gray93}
-        _major_fill: ${colour/x11/grey50}
-        middle_box_fill: ${_/_minor_fill}
-        _related_fill: ${colour/x11/gray79}
-      token:
-        _:
-        ELEMENTS: ${TEMPLATE_boxes/.}
-        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
-        index: $[index_of (4)]    
-      share:
-        _:
-          share_num_text_text: 1 Share
-          share_pct_text_text: 20%
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
-          share_desc_text_suppress: True
-        index:
-          "1":
-            share_desc_text:
-              suppress: True
-            type_bar_box:
-              suppress: True
-            token_1_embed:
-              suppress: False
-            token_2a_embed:
-              suppress: True
-            token_2b_embed:
-              suppress: True
-          "2":
-          "3":
-      charter:
-        _:
-          label_text_text: 5 share company
-          comment_text_text: |
-            1-2 stations, L.25/50/100/200 each
-    FTP_pres:
-      _:
-        long_name_text_text: |
-            Ferrovie
-            Trans Padane
-        short_name_text_text: "FTP"
-        name_stripe_box_suppress: True
-        _minor_fill: ${colour/xxp/WHITE}
-        _major_fill: ${colour/x11/grey50}
-        middle_box_fill: ${_/_minor_fill}
-        _related_fill: ${colour/x11/grey99}
-      charter:
-        index:
-      share:
-        _:
-          share_num_text_text: 2 Shares
-          share_pct_text_text: 40%
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
-        index:
-          "1":
-      token:
-        _:
-        ELEMENTS: ${TEMPLATE_boxes/.}
-        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
-
-    CTLP:
-      _:
-        long_name_text_text: |
-            La Patria
-        #Compagnia
-        #Trasporti La Patria
-        short_name_text_text: "LP"
-        short_name_text_size: 14
-        short_name_text_y: 17
-        short_name_text_fill: ${colour/xxp/WHITE}
-        token_1_text_text: NULL
-        token_1_circle_fill: ${colour/hollasch/grey}
-        token_2_text_text: NULL     
-        share_pct_text_fill: ${colour/xxp/WHITE}
-        name_stripe_box_suppress: True
-        _major_fill: ${colour/x11/grey89}
-        _minor_fill: ${colour/x11/grey49}
-        middle_box_fill: ${_/_minor_fill}
-        _related_fill: ${colour/x11/grey59}
-      token:
-        _:
-        ELEMENTS: ${TEMPLATE_boxes/.}
-        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
-        index: $[index_of (4)]    
-      share:
-        _:
-          share_num_text_text: 1 Share
-          share_pct_text_text: 20%
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
-          share_desc_text_suppress: True
-        index:
-          "1":
-            share_desc_text:
-              suppress: True
-            type_bar_box:
-              suppress: True
-            token_1_embed:
-              suppress: False
-            token_2a_embed:
-              suppress: True
-            token_2b_embed:
-              suppress: True
-          "2":
-          "3":
-      charter:
-        _:
-          label_text_text: 5 share company
-          comment_text_text: |
-            1-2 stations, L.25/50/100/200 each
-    CTLP_pres:
-      _:
-        long_name_text_text: |
-            Compagnia
-            Trasporti La Patria
-        short_name_text_text: "CTLP"
-        name_stripe_box_suppress: True
-        _major_fill: ${colour/x11/grey89}
-        _minor_fill: ${colour/x11/grey49}
-        middle_box_fill: ${_/_minor_fill}
-        _related_fill: ${colour/x11/grey59}
-      charter:
-        index:
-      share:
-        _:
-          share_num_text_text: 2 Shares
-          share_pct_text_text: 40%
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
-        index:
-          "1":
-      token:
-        _:
-        ELEMENTS: ${TEMPLATE_boxes/.}
-        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
 
     RATF:
       _:
@@ -1147,7 +625,7 @@ company:
         name_stripe_box_suppress: True
         _major_fill: ${colour/x11/green2}
         _minor_fill: ${_/_major_fill}
-        _related_fill: ${colour/x11/chartreuse2}
+        _related_fill: ${colour/wikipedia/green_yellow}
       charter:
         _:
           comment_text_text: |
@@ -1241,7 +719,7 @@ train:
         long_name_text_text: "2"
         cost_text_text: "L.100"
       model:
-        index: $[index_of (8)]
+        index: $[index_of (6)]
     3T:
       _:
         asset_interior_box_fill_p: GREEN
@@ -1253,7 +731,7 @@ train:
         long_name_text_fill: ${colour/xxp/BLACK}
         cost_text_fill: ${colour/xxp/BLACK}
       model:
-        index: $[index_of (6)]
+        index: $[index_of (5)]
     4T:
       _:
         asset_interior_box_fill_p: BLUE
@@ -1265,7 +743,7 @@ train:
         long_name_text_fill: ${colour/xxp/BLACK}
         cost_text_fill: ${colour/xxp/BLACK}
       model:
-        index: $[index_of (4)]
+        index: $[index_of (3)]
     5T:
       _:
         asset_interior_box_fill_p: BROWN
@@ -1275,7 +753,7 @@ train:
         long_name_text_text: "5"
         cost_text_text: "L.550"
       model:
-        index: $[index_of (3)]
+        index: $[index_of (2)]
     6T:
       _:
         asset_interior_box_fill_p: GRAY
@@ -1349,12 +827,7 @@ marker:
       _:
         short_name_text_text: AT
       token:
-        index: "$[index_of (1)]"    
-    ctlp:
-      _:
-        short_name_text_text: LP
-      token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"  
     cda:
       _:
         short_name_text_text: CDA
@@ -1364,12 +837,7 @@ marker:
       _:
         short_name_text_text: IC
       token:
-        index: "$[index_of (1)]"    
-    ftp:
-      _:
-        short_name_text_text: FTP
-      token:
-        index: "$[index_of (1)]"  
+        index: "$[index_of (1)]" 
     iltf:
       _:
         short_name_text_text: LT
@@ -1384,22 +852,7 @@ marker:
       _:
         short_name_text_text: RS
       token:
-        index: "$[index_of (1)]"    
-    sflp:
-      _:
-        short_name_text_text: SFLP
-      token:
-        index: "$[index_of (1)]"    
-    sfma:
-      _:
-        short_name_text_text: SFMA
-      token:
-        index: "$[index_of (1)]"    
-    sfli:
-      _:
-        short_name_text_text: SFLi
-      token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"       
     sftg:
       _:
         short_name_text_text: SFTG
@@ -1414,17 +867,7 @@ marker:
       _:
         short_name_text_text: SFTN
       token:
-        index: "$[index_of (1)]"    
-    sldv:
-      _:
-        short_name_text_text: LDV
-      token:
-        index: "$[index_of (1)]"    
-    ssfl:
-      _:
-        short_name_text_text: SSFL
-      token:
-        index: "$[index_of (1)]"
+        index: "$[index_of (1)]"  
     afi:
       _:
         short_name_text_text: AFI
