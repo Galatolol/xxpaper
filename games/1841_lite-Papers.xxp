@@ -14,7 +14,6 @@ private:
           at the end of a Stock Round.
 
 company:
-
   charter:
     _:
       long_name_text_size: 14
@@ -32,9 +31,9 @@ company:
     _:
       long_name_text_size: 12    
       type_bar_box_fill: ${colour/wikipedia/golden_yellow}
-      type_bar_box_y: 13
-      side_bar_lsplit_box_suppress: True
-      side_bar_rsplit_box_suppress: True
+      #type_bar_box_y: 13
+      #side_bar_lsplit_box_suppress: True
+      #side_bar_rsplit_box_suppress: True
       share_num_text_x: 167
   token:
     _:
@@ -63,8 +62,6 @@ company:
             2-5 stations, L.50 each
       share:
         _:
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
           comment_text_y: 70
       concession:
         _:
@@ -121,8 +118,6 @@ company:
             2-5 stations, L.50 each
       share:
         _:
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
           comment_text_y: 70
       concession:
         _:
@@ -183,8 +178,6 @@ company:
             Gets half the IRSFF's stations
       share:
         _:
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
           comment_text_y: 70
       token:
         ELEMENTS: ${TEMPLATE_bullseye/.}
@@ -216,8 +209,6 @@ company:
             Gets half the IRSFF's stations
       share:
         _:
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
           comment_text_y: 70
       token:
         ELEMENTS: ${TEMPLATE_bullseye/.}
@@ -246,8 +237,6 @@ company:
             2-5 stations, L.50 each
       share:
         _:
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
           comment_text_y: 70
       concession:
         _:
@@ -302,8 +291,6 @@ company:
             2-5 stations, L.50 each
       share:
         _:
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
           comment_text_y: 70
       concession:
         _:
@@ -363,8 +350,6 @@ company:
             2-5 stations, L.25/50/100/200 each
       share:
         _:
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
           comment_text_y: 70
       token:
         index: "$[index_of (7)]"
@@ -397,8 +382,6 @@ company:
             2-5 stations, L.25/50/100/200 each
       share:
         _:
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
           comment_text_y: 70
       token:
         index: "$[index_of (7)]"
@@ -430,8 +413,6 @@ company:
             2-5 stations, L.25/50/100/200 each
       share:
         _:
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
           comment_text_y: 70
       token:
         index: "$[index_of (7)]"
@@ -464,8 +445,6 @@ company:
             2-5 stations, L.25/50/100/200 each
       share:
         _:
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
           comment_text_y: 70
       token:
         index: "$[index_of (7)]"
@@ -498,8 +477,6 @@ company:
             2-5 stations, L.25/50/100/200 each
       share:
         _:
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
           comment_text_y: 70
       token:
         index: "$[index_of (7)]"
@@ -532,8 +509,6 @@ company:
             2-5 stations, L.25/50/100/200 each
       share:
         _:
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
           comment_text_y: 70
       token:
         index: "$[index_of (7)]"
@@ -563,8 +538,6 @@ company:
             2-5 stations, L.25/50/100/200 each
       share:
         _:
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
           comment_text_y: 70
       token:
         index: "$[index_of (7)]"
@@ -598,8 +571,6 @@ company:
             2-5 stations, L.25/50/100/200 each
       share:
         _:
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
           comment_text_y: 70
       token:
         index: "$[index_of (7)]"
@@ -633,8 +604,6 @@ company:
             2-5 stations, L.25/50/100/200 each
       share:
         _:
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
           comment_text_y: 70
       token:
         index: "$[index_of (7)]"
@@ -668,8 +637,6 @@ company:
             2-5 stations, L.25/50/100/200 each
       share:
         _:
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
           comment_text_y: 70
       token:
         index: "$[index_of (7)]"
@@ -701,8 +668,6 @@ company:
             2-5 stations, L.25/50/100/200 each
       share:
         _:
-          side_bar_lsplit_box_suppress: True
-          side_bar_rsplit_box_suppress: True
           comment_text_y: 70
       token:
         index: "$[index_of (7)]"
@@ -756,7 +721,7 @@ train:
         index: $[index_of (2)]
     6T:
       _:
-        asset_interior_box_fill_p: GRAY
+        asset_interior_box_fill_p: RED
         rust_bar_box_fill_p: BLACK
         rusted_text_text: "Permanent"
         rusted_text_size: 14
@@ -766,7 +731,7 @@ train:
         index: $[index_of (2)]
     7T:
       _:
-        asset_interior_box_fill_p: PURPLE
+        asset_interior_box_fill_p: GRAY
         rust_bar_box_fill_p: BLACK
         rusted_text_text: "Permanent"
         rusted_text_size: 14
@@ -776,7 +741,7 @@ train:
         index: $[index_of (2)]
     8T:
       _:
-        asset_interior_box_fill: ${colour/wikipedia/cool_black}
+        asset_interior_box_fill_p: PURPLE
         rust_bar_box_fill: ${colour/xxp/BLACK}
         rusted_text_text: "Permanent"
         rusted_text_size: 14

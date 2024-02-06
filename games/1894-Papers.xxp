@@ -373,9 +373,10 @@ private:
             Once per game owning company
             may pay F60 to lay a yellow track tile,
             in addition to regular track actions.
-        sell_text_text: "May be sold for F10 – F40"
+        sell_text_text: "May be sold for F10 – 40"
         cost_text_text: "Cost: F20"
         revenue_text_text: "Revenue: F5"
+        asset_interior_box_fill: ${colour/wikipedia/peach_yellow}
 
     P2:
       _:
@@ -385,9 +386,10 @@ private:
         power_text_text: |
             Revenue of this is equal to F10
             if owned by a company.
-        sell_text_text: "May be sold for F13 – F50"
+        sell_text_text: "May be sold for F13 – 50"
         cost_text_text: "Cost: F25"
         revenue_text_text: "Revenue: F5 / 10"
+        asset_interior_box_fill: ${colour/wikipedia/peach_orange}
 
     P3_a:
       _:
@@ -400,9 +402,10 @@ private:
             optionally place a station there for free.
             Counts as track action and station placement.
             Doesn't have to be connected.
-        sell_text_text: "May be sold for F25 – F100"
+        sell_text_text: "May be sold for F25 – 100"
         cost_text_text: "Cost: F50"
         revenue_text_text: "Revenue: F10"
+        asset_interior_box_fill: ${colour/wikipedia/moss_green}
 
     P3_b:
       _:
@@ -415,9 +418,10 @@ private:
             optionally place a station there for free.
             Counts as track action and station placement.
             Doesn't have to be connected.
-        sell_text_text: "May be sold for F25 – F100"
+        sell_text_text: "May be sold for F25 – 100"
         cost_text_text: "Cost: F50"
         revenue_text_text: "Revenue: F10"
+        asset_interior_box_fill: ${colour/wikipedia/moss_green}
 
     P4:
       _:
@@ -430,9 +434,10 @@ private:
             For that company, the revenue of London (A10)
             is increased by the largest non–London,
             non–Luxembourg revenue on the route.
-        sell_text_text: "May be sold for F45 – F180"
+        sell_text_text: "May be sold for F45 – 180"
         cost_text_text: "Cost: F90"
         revenue_text_text: "Revenue: F15"
+        asset_interior_box_fill: ${colour/wikipedia/non_photo_blue}
 
     P5:
       _:
@@ -443,10 +448,11 @@ private:
             Saint–Quentin (G10) is green,
             to F100 if it is brown,
             or to F0 otherwise.
-        sell_text_text: "May be sold for F35 – F140 (until red phase)"
+        sell_text_text: "May be sold for F35 – 140 (until red phase)"
         cost_text_text: "Cost: F70"
         revenue_text_text: "Revenue: F0 / 70 / 100"
         closes_text_text: "Closes in purple phase"
+        asset_interior_box_fill: ${colour/wikipedia/brilliant_lavender}
 
     P6:
       _:
@@ -454,7 +460,7 @@ private:
             Nord minor shareholding
         power_text_text: |
             Comes with a share of the Nord.
-        sell_text_text: "May be sold for F70 – F280"
+        sell_text_text: "May be sold for F70 – 280"
         cost_text_text: "Cost: F140"
         revenue_text_text: "Revenue: F20"
 
@@ -553,6 +559,8 @@ train:
         asset_interior_box_fill_p: BROWN
         rust_bar_box_fill_p: PURPLE
         long_name_text_text: "5"
+        #long_name_text_text: "5+1"
+        #long_name_text_size: 50
         rusted_text_text: Rusted by Diesel
         cost_text_text_p: "F400"
         note_text_text: |
