@@ -610,6 +610,25 @@ train:
     long_name_text_y: 95
 
   index:
+
+
+
+    04T:
+      _:
+        asset_interior_box_fill_p: BLUE
+        rust_bar_box_fill_p: GRAY
+        rusted_text_text: Rusted by 7
+        long_name_text_text: "4"
+        cost_text_text_p: "F300"
+        note_text_text: |
+            Upgrade to
+            5+1: F250
+      model:
+        index: $[index_of (4)]
+
+
+
+
     2HT:
       _:
         asset_interior_box_fill_p: YELLOW

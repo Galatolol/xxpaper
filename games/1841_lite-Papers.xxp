@@ -201,7 +201,7 @@ company:
         inner_circle_fill: ${colour/wikipedia/jungle_green}
         middle_circle_fill: ${colour/hollasch/turquoise_pale}
         outer_circle_fill: ${colour/wikipedia/jungle_green}
-        _related_fill: ${colour/wikipedia/robin_egg_blue}
+        _related_fill: ${colour/wikipedia/pale_robin_egg_blue}
       charter:
         _:
           comment_text_text: |

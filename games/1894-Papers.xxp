@@ -136,6 +136,7 @@ company:
         short_name_text_text: AG
         token_1_text_text: D15
         token_4_text_text: F100
+        token_5_text_text: F100
         _major_fill: ${colour/wikipedia/canary_yellow}
         _minor_fill: ${_/_major_fill}
         _related_fill: ${colour/wikipedia/icterine}
@@ -476,7 +477,7 @@ private:
             (CFOR, Est, Nord, Ouest, or PLM).
         sell_text_text: "Cannot be sold"
         cost_text_text: "Cost: F180"
-        revenue_text_text: "Revenue: F25"
+        revenue_text_text: "Revenue: F40"
 
     P8:
       _:
@@ -489,7 +490,7 @@ private:
             of the Belge.
         sell_text_text: "Cannot be sold"
         cost_text_text: "Cost: F200"
-        revenue_text_text: "Revenue: F30"
+        revenue_text_text: "Revenue: F60"
 
     MAY_NOT_REDEEM_SHARES:
       _:
@@ -532,7 +533,7 @@ train:
       _:
         asset_interior_box_fill_p: GREEN
         rust_bar_box_fill_p: BROWN
-        rusted_text_text: "Rusted by 5"
+        rusted_text_text: "Rusted by 5+1"
         long_name_text_text: "3"
         cost_text_text_p: "F120"
         note_text_text: |
@@ -550,7 +551,7 @@ train:
         cost_text_text_p: "F300"
         note_text_text: |
             Upgrade to
-            5: F250
+            5+1: F250
       model:
         index: $[index_of (4)]
 
@@ -558,9 +559,8 @@ train:
       _:
         asset_interior_box_fill_p: BROWN
         rust_bar_box_fill_p: PURPLE
-        long_name_text_text: "5"
-        #long_name_text_text: "5+1"
-        #long_name_text_size: 50
+        long_name_text_text: "5+1"
+        long_name_text_size: 50
         rusted_text_text: Rusted by Diesel
         cost_text_text_p: "F400"
         note_text_text: |
