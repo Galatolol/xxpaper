@@ -36,7 +36,7 @@ company:
             Statens Järnvägar
           comment_text_text: |
             +1 train limit
-        index: $[index_of (2)]
+        index: $[index_of (1)]
       share:
         _:
           comment_text_text: |
@@ -90,7 +90,7 @@ company:
         long_name_text_text: |
             DSB
         short_name_text_text: DSB
-        token_1_text_text: F3
+        token_1_text_text: "(F3)"
         _major_fill: ${colour/x11/red}
         _minor_fill: ${colour/wikipedia/white}
         _related_fill: ${colour/hollasch/tomato}
@@ -113,7 +113,7 @@ company:
         long_name_text_text: |
             NSB
         short_name_text_text: NSB
-        token_1_text_text: D7
+        token_1_text_text: (D7)
         token_4_text_text: K100
         _major_fill: ${colour/wikipedia/alizarin_crimson}
         _minor_fill: ${colour/x11/white}
@@ -141,8 +141,8 @@ company:
             M1
         short_name_text_text: M1
         short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 2]
-        token_1_text_text: G4
-        token_2_text_text: "E6 / K40"
+        token_1_text_text: (G4)
+        token_2_text_text: "(E6) / K40"
         token_3_text_text: ""
         share_pct_text_fill: ${colour/xxp/BLACK}
         short_name_text_size: 15
@@ -158,7 +158,7 @@ company:
           comment_text_text: |
             Destination: E6
             Cost / starting capital: K260
-        index: $[index_of (2)]
+        index: $[index_of (1)]
       concession:
         _:
           long_name_text_suppress: True
@@ -168,7 +168,7 @@ company:
           token_embed_y_inset: 30
           close_bar_box_suppress: True
           cost_bar_box_suppress: True
-        index: "$[index_of (2)]"
+        index: "$[index_of (1)]"
       share:
         index: $[index_of (0)]
       token:
@@ -182,8 +182,8 @@ company:
             M2
         short_name_text_text: M2
         short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 2]
-        token_1_text_text: F11
-        token_2_text_text: "B11 / K40"
+        token_1_text_text: (F11)
+        token_2_text_text: "(B11) / K40"
         token_3_text_text: ""
         share_pct_text_fill: ${colour/xxp/BLACK}
         short_name_text_size: 15
@@ -199,7 +199,7 @@ company:
           comment_text_text: |
             Destination: B11
             Cost / starting capital: K220
-        index: $[index_of (2)]
+        index: $[index_of (1)]
       concession:
         _:
           long_name_text_suppress: True
@@ -209,7 +209,7 @@ company:
           token_embed_y_inset: 30
           close_bar_box_suppress: True
           cost_bar_box_suppress: True
-        index: "$[index_of (2)]"
+        index: "$[index_of (1)]"
       share:
         index: $[index_of (0)]
       token:
@@ -223,8 +223,8 @@ company:
             M3
         short_name_text_text: M3
         short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 2]
-        token_1_text_text: F11
-        token_2_text_text: "D7 / K40"
+        token_1_text_text: (F11)
+        token_2_text_text: "(D7) / K40"
         token_3_text_text: ""
         share_pct_text_fill: ${colour/xxp/BLACK}
         short_name_text_size: 15
@@ -240,7 +240,7 @@ company:
           comment_text_text: |
             Destination: D7
             Cost / starting capital: K200
-        index: $[index_of (2)]
+        index: $[index_of (1)]
       concession:
         _:
           long_name_text_suppress: True
@@ -250,7 +250,7 @@ company:
           token_embed_y_inset: 30
           close_bar_box_suppress: True
           cost_bar_box_suppress: True
-        index: "$[index_of (2)]"
+        index: "$[index_of (1)]"
       share:
         index: $[index_of (0)]
       token:
@@ -263,7 +263,7 @@ company:
         long_name_text_text: |
              SNJ
         short_name_text_text: SNJ
-        token_1_text_text: B20
+        token_1_text_text: (B20)
         token_3_text_text: K100
         _major_fill: ${colour/xxp/D_GREEN}
         _minor_fill: ${colour/xxp/D_GREEN}
@@ -292,7 +292,7 @@ company:
         long_name_text_text: |
           VR
         short_name_text_text: VR
-        token_1_text_text: G14
+        token_1_text_text: (G14)
         token_4_text_text: K100
         name_stripe_box_fill: ${colour/wikipedia/air_force_blue_usaf}
         _major_fill: ${colour/xxp/WHITE}
@@ -362,7 +362,7 @@ marker:
           short_name_text_text: "M1"
           short_name_text_fill: ${colour/xxp/BLACK}
           short_name_text_size: 10
-        index: "$[index_of (2)]"
+        index: "$[index_of (1)]"
 
     m2:
       token:
@@ -371,7 +371,7 @@ marker:
           short_name_text_text: "M2"
           short_name_text_fill: ${colour/xxp/BLACK}
           short_name_text_size: 10
-        index: "$[index_of (2)]"
+        index: "$[index_of (1)]"
 
     m3:
       token:
@@ -380,7 +380,7 @@ marker:
           short_name_text_text: "M3"
           short_name_text_fill: ${colour/xxp/BLACK}
           short_name_text_size: 10
-        index: "$[index_of (2)]"
+        index: "$[index_of (1)]"
 
     y:
       token:
@@ -389,7 +389,7 @@ marker:
           short_name_text_text: "Y"
           short_name_text_fill: ${colour/xxp/BLACK}
           short_name_text_size: 10
-        index: "$[index_of (4)]"
+        index: "$[index_of (2)]"
 
     o:
       token:
@@ -398,7 +398,7 @@ marker:
           short_name_text_text: "O"
           short_name_text_fill: ${colour/xxp/BLACK}
           short_name_text_size: 10
-        index: "$[index_of (2)]"
+        index: "$[index_of (1)]"
 
 private:
   _:
