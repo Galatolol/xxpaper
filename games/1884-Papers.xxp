@@ -1,0 +1,504 @@
+company:
+  charter:
+    _:
+      long_name_text_size: 14
+      token_1_circle_y: 257
+      token_2_circle_y: $[${token_1_circle/y} - 53]
+      token_3_circle_y: $[${token_2_circle/y} - 53]
+      token_4_circle_y: $[${token_3_circle/y} - 53]
+      token_5_circle_y: $[${token_4_circle/y} - 53]
+      token_1_text_y: $[${token_1_circle/y} - 27]
+      token_2_circle_suppress: false
+      token_3_circle_suppress: false
+      token_4_circle_suppress: false
+      token_5_circle_suppress: false
+      token_6_circle_suppress: false
+      token_7_circle_suppress: false
+      token_1_circle_fill: ${colour/hollasch/grey}
+      token_2_circle_fill: ${colour/hollasch/grey}
+      token_3_text_y: $[${token_3_circle/y} - 27]
+      token_4_text_y: $[${token_4_circle/y} - 27]
+      token_5_text_y: $[${token_5_circle/y} - 27]
+      token_1_text_size: 10
+      token_1_text_typeface: ${DEFAULT/typeface_italic}
+      comment_text_text: ""
+      label_text_size: 11
+      comment_text_x: 130
+      comment_text_size: 10
+      comment_text_typeface: ${DEFAULT/typeface}
+      loan_6_square_shape_suppress: False
+      loan_6_text_text: "0 zł"
+      loan_6_text_size: 10
+      loan_7_square_shape_suppress: False
+      loan_7_text_text: "10 zł"
+      loan_7_text_size: 10
+      loan_8_square_shape_suppress: False
+      loan_8_text_text: "30 zł"
+      loan_8_text_size: 10
+      loan_9_square_shape_suppress: False
+      loan_9_text_text: "60 zł"
+      loan_9_text_size: 10
+      loan_10_square_shape_suppress: False
+      loan_10_text_suppress: False
+      loan_10_text_text: "100 zł"
+      loan_10_text_size: 10
+      loan_10_text_y: $[${loan_10_square_shape/y} - 18]
+      loan_5_square_shape_suppress: True
+      loan_5_text_text: "150 zł"
+      loan_5_text_size: 10
+      loan_5_text_x: $[${loan_10_text/x}]
+      loan_5_text_y: $[${loan_10_text/y} - 30]
+  share:
+    _:
+      type_bar_box_fill: ${colour/wikipedia/golden_yellow}
+      share_num_text_x: 165
+  token:
+    _:
+      short_name_text_size: 8
+    index: $[index_of (9)]
+
+  index:
+    ZMT:
+      _:
+        long_name_text_text: |
+            Kopalnia Węgla
+            Ziemowit
+        short_name_text_text: ZMT
+        token_1_text_text: E6
+        _major_fill: ${colour/wikipedia/barn_red}
+        _major_fill_2: ${colour/wikipedia/tractor_red}
+        _minor_fill: ${_/_major_fill}
+        _minor_fill_2: ${_/_major_fill_2}
+        _related_fill: ${colour/wikipedia/chinese_red}
+      token:
+        ELEMENTS: ${TEMPLATE_stripey/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
+
+    KG:
+      _:
+        long_name_text_text: |
+            Kolej Górnośląska
+        short_name_text_text: KG
+        token_1_text_text: C4
+        _major_fill: ${colour/wikipedia/blue_ryb}
+        _major_fill_2: ${colour/wikipedia/banana_yellow}
+        _minor_fill_2: ${_/_major_fill_2}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/hollasch/steel_blue}
+      token:
+        ELEMENTS: ${TEMPLATE_stripey/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
+
+    CMK:
+      _:
+        long_name_text_text: |
+            Centralna
+            Magistrala Kolejowa
+        short_name_text_text: CMK
+        token_1_text_text: D3
+        _major_fill: ${colour/x11/red}
+        _minor_fill: ${colour/xxp/BLACK}
+        _related_fill: ${colour/hollasch/tomato}
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+
+    MW:
+      _:
+        long_name_text_text: |
+            Magistrala Węglowa
+        short_name_text_text: MW
+        token_1_text_text: E4
+        _major_fill: ${colour/wikipedia/canary_yellow}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/wikipedia/icterine}
+        name_stripe_box_suppress: True
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 12
+          short_name_text_y: 18
+
+    TKK:
+      _:
+        long_name_text_text: |
+            Towarzystwo Kolei
+            Krakowsko–Górnośląskiej
+        short_name_text_text: TKK
+        token_1_text_text: H7
+        _major_fill: ${colour/x11/gold}
+        _minor_fill: ${colour/x11/limegreen}
+        _related_fill: ${colour/x11/yellowgreen}
+
+    KWW:
+      _:
+        long_name_text_text: |
+            Kolej
+            Warszawsko–Wiedeńska
+        short_name_text_text: KWW
+        token_1_text_text: F3
+        share_pct_text_fill: ${colour/xxp/BLACK}
+        _major_fill: ${colour/wikipedia/violet_ryb}
+        _minor_fill: ${colour/wikipedia/canary_yellow}
+        _related_fill: ${colour/wikipedia/plum_web}
+        middle_rotate_angle: 135
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+
+    LHS:
+      _:
+        long_name_text_text: |
+             Linia
+             Hutniczo–Siarkowa
+        short_name_text_text: LHS
+        token_1_text_text: H3
+        _major_fill: ${colour/xxp/D_GREEN}
+        _minor_fill: ${colour/xxp/D_GREEN}
+        _related_fill: ${colour/hollasch/cinnabar_green}
+        name_stripe_box_suppress: True
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 12
+          short_name_text_y: 18
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+
+    FBL:
+      _:
+        long_name_text_text: |
+          Fablok
+        short_name_text_text: FBL
+        token_1_text_text: G6
+        name_stripe_box_suppress: True
+        _related_fill: ${colour/hollasch/pink}
+      token:
+        _:
+          _major_fill_1: ${colour/hollasch/black}
+          _major_fill_2: ${colour/hollasch/hot_pink}
+          _minor_fill_1: ${_/_major_fill_2}
+          _minor_fill_2: ${_/_major_fill_1}
+          _rotation: 0
+          _angle: $[360 / 10]
+          inner_circle_suppress: False
+          inner_circle_fill: ${colour/hollasch/pink_light}
+        ELEMENTS: ${TEMPLATE_wedges/.}
+        EMBED_ELEMENTS: ${TEMPLATE_wedges_embed/.}
+
+    KM:
+      _:
+        long_name_text_text: |
+            Kolej Małopolska
+        short_name_text_text: KM
+        token_1_text_text: G8
+        _major_fill: ${colour/wikipedia/light_sky_blue}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/hollasch/powder_blue}
+        name_stripe_box_suppress: True
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 12
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+
+    MNK:
+      _:
+        long_name_text_text: |
+            Pszczyńska Spółka
+            MNK
+        short_name_text_text: MNK
+        token_1_text_text: G8
+        _major_fill: ${colour/wikipedia/amber_sae_ece}
+        _minor_fill: ${colour/wikipedia/black}
+        _related_fill: ${colour/wikipedia/pink_orange}
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+        ELEMENTS: ${TEMPLATE_basketball/.}
+        EMBED_ELEMENTS: ${TEMPLATE_basketball_embed/.}
+
+    PF:
+      _:
+        long_name_text_text: |
+            Pater Familias Krz.
+        short_name_text_text: PF
+        token_1_text_text: J5
+        _major_fill: ${colour/wikipedia/yellow_green}
+        _minor_fill: ${colour/wikipedia/lemon_lime}
+        _related_fill: ${colour/wikipedia/lemon_lime}
+      token:
+        _:
+          outer_circle_fill: ${_/_major_fill}
+          middle_circle_fill: ${_/_minor_fill}
+          inner_circle_fill: ${_/_major_fill}
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+
+    IGN:
+      _:
+        long_name_text_text: |
+            Kopalnia Ignacy
+        short_name_text_text: Ign
+        token_1_text_text: B7
+        _major_fill: ${colour/xxp/BLACK}
+        _minor_fill: ${colour/xxp/WHITE}
+        _related_fill: ${colour/x11/gray43}
+        _share_pct_text_fill_x: ${colour/xxp/WHITE}
+      token:
+        _:
+          short_name_text_size: 7
+          short_name_text_y: 19.8
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+
+    MM:
+      _:
+        long_name_text_text: |
+            Kolej Miast
+            Morawsko–Śląskich
+        short_name_text_text: MM
+        token_1_text_text: C12
+        _major_fill: ${colour/x11/antiquewhite2}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/x11/antiquewhite}
+
+    JSW:
+      _:
+        long_name_text_text: |
+            Jastrzębska
+            Spółka Węglowa
+        short_name_text_text: JSW
+        token_1_text_text: B9
+        _major_fill: ${colour/wikipedia/black}
+        _minor_fill: ${colour/wikipedia/lavender_gray}
+        _related_fill: ${colour/wikipedia/lavender_gray}
+        name_stripe_box_suppress: True
+        middle_box_fill: ${colour/wikipedia/dark_gray}
+      token:
+        ELEMENTS: ${TEMPLATE_boxes/.}
+        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
+
+    CF:
+      _:
+        long_name_text_text: |
+            Kolej Północna
+            Cesarza Ferdynanda
+        short_name_text_text: CF
+        token_1_text_text: E12
+        _major_fill: ${colour/wikipedia/gold_metallic}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/wikipedia/jonquil}
+
+    Inka:
+      _:
+        long_name_text_text: |
+            Inka
+        short_name_text_text: Inka
+        token_1_text_text: I10
+        _major_fill: ${colour/hollasch/brown_ochre}
+        _minor_fill: ${colour/wikipedia/white}
+        _related_fill: ${colour/hollasch/brick}
+        name_stripe_box_suppress: False
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+
+    AB:
+      _:
+        long_name_text_text: |
+            Arcyksiążęcy
+            Browar Żywiec
+        short_name_text_text: AB
+        token_1_text_text: H13
+        _major_fill: ${colour/wikipedia/crimson_glory}
+        _minor_fill: ${colour/xxp/WHITE}
+        _related_fill: ${colour/wikipedia/carmine_m_p}
+        side_bar_lsplit_box_fill: ${colour/xxp/WHITE}
+        side_bar_rsplit_box_fill: ${colour/xxp/WHITE}
+        middle_rotate_angle: 45
+        name_stripe_box_suppress: True
+      token:
+        _:
+          outer_circle_fill: ${_/_minor_fill}
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 10
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
+        ELEMENTS: ${TEMPLATE_boxes/.}
+        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
+
+    GKT:
+      _:
+        long_name_text_text: |
+            Galicyjska Kolej
+            Transwersalna
+        short_name_text_text: GKT
+        token_1_text_text: H13
+        _major_fill: ${colour/wikipedia/amber_sae_ece}
+        _minor_fill: ${colour/wikipedia/canary_yellow}
+        _major_fill_1: ${_/_major_fill}
+        _major_fill_2: ${_/_minor_fill}
+        _related_fill: ${colour/wikipedia/dark_imperial_blue}
+      token:
+        _:
+          _rotation: 0
+          _angle: $[360 / 10]
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          bottom_half_box_fill: ${colour/wikipedia/blue_crayola}
+          inner_circle_suppress: True
+        index: $[index_of(7)]
+        ELEMENTS: ${TEMPLATE_wedges/.}
+        EMBED_ELEMENTS: ${TEMPLATE_wedges_embed/.}
+
+
+    CKP:
+      _:
+        long_name_text_text: |
+            Cesarsko–Królewskie
+            Koleje Państwowe
+        short_name_text_text: CKP
+        token_1_text_text: H11
+        _related_fill: ${colour/wikipedia/cosmic_latte}
+        name_stripe_box_suppress: True
+      token:
+        _:
+          short_name_text_size: 10
+          _major_fill_1: ${colour/wikipedia/canary_yellow}
+          _major_fill_2: ${colour/wikipedia/white}
+          _minor_fill_1: ${colour/wikipedia/canary_yellow}
+          _minor_fill_2: ${colour/wikipedia/white}
+        ELEMENTS: ${TEMPLATE_chequer/.}
+        EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
+
+    BD:
+      _:
+        long_name_text_text: |
+            Linia Bogumin–Dziedzice
+        short_name_text_text: BD
+        token_1_text_text: E10
+        _major_fill: ${colour/wikipedia/jungle_green}
+        _minor_fill: ${colour/hollasch/turquoise_pale}
+        _major_fill_1: ${_/_major_fill}
+        _major_fill_2: ${_/_minor_fill}
+        _related_fill: ${colour/wikipedia/robin_egg_blue}
+      token:
+        _:
+          _rotation: 0
+          _angle: $[360 / 6]
+          inner_circle_fill: ${colour/x11/darkgoldenrod1}
+          inner_circle_suppress: true
+          bottom_half_box_suppress: true
+        ELEMENTS: ${TEMPLATE_wedges/.}
+        EMBED_ELEMENTS: ${TEMPLATE_wedges_embed/.}
+
+marker:
+  index:
+    round:
+      token:
+        ELEMENTS:
+          - token_interior_box
+          - outer_circle
+          - middle_circle
+          - inner_circle
+
+        index: $[index_of (1)]
+      outer_circle:
+        fill: ${colour/galatolol/yellow}
+      middle_circle:
+        fill: ${colour/galatolol/green}
+      inner_circle:
+        fill: ${colour/galatolol/brown}
+
+
+train:
+  _:
+    rusted_text_size: 13
+    rusted_text_y: 6
+    rust_bar_box_y: 20
+    long_name_text_y: 95
+
+  index:
+    p1Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "1"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p2Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "2"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p3Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "3"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p4Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "4"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p1Pb:
+      _:
+        asset_interior_box_fill: ${colour/xxp/L_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "1"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p2Pb:
+      _:
+        asset_interior_box_fill: ${colour/xxp/L_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "2"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p3Pb:
+      _:
+        asset_interior_box_fill: ${colour/xxp/L_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "3"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p4Pb:
+      _:
+        asset_interior_box_fill: ${colour/xxp/L_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "4"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"

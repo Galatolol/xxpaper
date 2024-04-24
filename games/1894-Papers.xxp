@@ -99,7 +99,7 @@ company:
         long_name_text_text: |
             Nord
         short_name_text_text: Nord
-        token_1_text_text: E10
+        token_1_text_text: D9
         token_2_text_text: G14
         token_2_text_typeface: ${DEFAULT/typeface_italic}
         token_4_text_text: F100

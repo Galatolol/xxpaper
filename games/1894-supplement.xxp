@@ -1,0 +1,245 @@
+company:
+  charter:
+    _:
+      token_1_circle_y: 257
+      token_2_circle_y: $[${token_1_circle/y} - 53]
+      token_3_circle_y: $[${token_2_circle/y} - 53]
+      token_4_circle_y: $[${token_3_circle/y} - 53]
+      token_5_circle_y: $[${token_4_circle/y} - 53]
+      token_1_text_y: $[${token_1_circle/y} - 27]
+      token_2_text_y: $[${token_2_circle/y} - 27]
+      token_3_text_y: $[${token_3_circle/y} - 27]
+      token_4_text_y: $[${token_4_circle/y} - 27]
+      token_5_text_y: $[${token_5_circle/y} - 27]
+      token_1_text_size: 10
+      token_2_text_size: 10
+      token_3_text_size: 10
+      token_4_text_size: 10
+      token_5_text_size: 10
+      token_1_text_typeface: ${DEFAULT/typeface_italic}
+      token_2_text_text: F40
+      token_3_text_text: F100
+      comment_text_text: ""
+      label_text_size: 11
+      comment_text_x: 130
+      comment_text_size: 10
+      comment_text_typeface: ${DEFAULT/typeface}
+  share:
+    _:
+      type_bar_box_fill: ${colour/wikipedia/golden_yellow}
+      share_num_text_x: 165
+  token:
+    _:
+      short_name_text_size: 8
+
+  index:
+    Est:
+      _:
+        long_name_text_text: |
+            Est
+        short_name_text_text: Est
+        token_1_text_text: I9
+        token_4_text_text: F100
+        token_5_text_text: F100
+        _major_fill: ${colour/wikipedia/amber_sae_ece}
+        _minor_fill: ${colour/x11/white}
+        _related_fill: ${colour/wikipedia/pink_orange}
+      charter:
+        _:
+          label_text_text: "Chemins de fer de l’Est"
+        index: $[index_of (4)]
+      share:
+        _:
+          comment_text_text: |
+            Chemins de fer de l’Est
+          comment_text_y: 65
+      token:
+        _:
+          inner_circle_fill: ${_/_major_fill}
+          inner_circle_radius: 9
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: $[index_of (8)]
+
+
+private:
+  _:
+    long_name_text_size: 11
+    closes_text_size: 8
+    closes_text_text: "Closes in red phase"
+    power_text_size: 8
+    power_text_y: -1
+    revenue_text_x: 168
+    revenue_text_size: 10
+    cost_text_size: 10
+    asset_interior_box_fill: ${colour/scale/yellow_0}
+    money_bar_box_y: 11
+    money_bar_box_fill: ${colour/wikipedia/bubble_gum}
+    cost_text_fill: ${colour/xxp/BLACK}
+    revenue_text_fill: ${colour/xxp/BLACK}
+    sell_bar_box_suppress: False
+    sell_bar_box_fill: ${colour/wikipedia/bubble_gum}
+    long_name_text_y: 68
+
+  index:
+    P7:
+      _:
+        closes_text_text: "Closes when the associated company operates"
+        closes_text_x_inset: -1
+        long_name_text_text: |
+            French major shareholding
+        power_text_text: |
+            Comes with the president's certificate
+            of randomly selected French company
+            (CFOR, Est, Nord, Ouest, or PLM).
+        sell_text_text: "Cannot be sold"
+        cost_text_text: "Cost: F180"
+        revenue_text_text: "Revenue: F40"
+      model:
+        index: $[index_of (4)]
+
+    P8:
+      _:
+        closes_text_text: "Closes when the Belge operates"
+        closes_text_x_inset: -1
+        long_name_text_text: |
+            Belge major shareholding
+        power_text_text: |
+            Comes with the president's certificate
+            of the Belge.
+        sell_text_text: "Cannot be sold"
+        cost_text_text: "Cost: F200"
+        revenue_text_text: "Revenue: F60"
+      model:
+        index: $[index_of (4)]
+
+
+train:
+  _:
+    rusted_text_size: 13
+    rusted_text_y: 6
+    rust_bar_box_y: 20
+    long_name_text_y: 95
+
+  index:
+
+    3T:
+      _:
+        asset_interior_box_fill_p: GREEN
+        rust_bar_box_fill_p: BROWN
+        rusted_text_text: "Rusted by 5+1"
+        long_name_text_text: "3"
+        cost_text_text_p: "F120"
+        note_text_text: |
+            Upgrade to
+            4: F240
+      model:
+        index: $[index_of (10)]
+
+    4T:
+      _:
+        asset_interior_box_fill_p: BLUE
+        rust_bar_box_fill_p: GRAY
+        rusted_text_text: Rusted by 7
+        long_name_text_text: "4"
+        cost_text_text_p: "F300"
+        note_text_text: |
+            Upgrade to
+            5+1: F250
+      model:
+        index: $[index_of (12)]
+
+    5T:
+      _:
+        asset_interior_box_fill_p: BROWN
+        rust_bar_box_fill_p: PURPLE
+        long_name_text_text: "5+1"
+        long_name_text_size: 50
+        rusted_text_text: Rusted by Diesel
+        cost_text_text_p: "F400"
+        note_text_text: |
+            Upgrade to
+            6: F400
+            Diesel: F600
+      model:
+        index: $[index_of (10)]
+
+    p1Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "1"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (0)]"
+
+    p2Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "2"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (0)]"
+
+    p3Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "3"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (0)]"
+
+    p4Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "4"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (0)]"
+
+    p1Pb:
+      _:
+        asset_interior_box_fill: ${colour/xxp/L_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "1"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (0)]"
+
+    p2Pb:
+      _:
+        asset_interior_box_fill: ${colour/xxp/L_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "2"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (0)]"
+
+    p3Pb:
+      _:
+        asset_interior_box_fill: ${colour/xxp/L_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "3"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (0)]"
+
+    p4Pb:
+      _:
+        asset_interior_box_fill: ${colour/xxp/L_RED}
+        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        long_name_text_text: "4"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (0)]"

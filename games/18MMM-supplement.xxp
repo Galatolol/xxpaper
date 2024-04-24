@@ -1,0 +1,333 @@
+private:
+  _:
+    long_name_text_size: 11
+    money_bar_box_y: 11
+    closes_text_size: 7
+    power_text_size: 8
+    revenue_text_size: 9
+    revenue_text_y: 3
+    revenue_text_x: 125
+    close_bar_box_suppress: true
+    closes_text_text: ""
+    long_name_text_y: 87
+    asset_interior_box_fill: ${colour/scale/yellow_0}
+
+  index:
+    coalContract:
+      _:
+        long_name_text_text: |
+            Coal Contract
+        value_text_text: "$30"
+        power_text_text: |
+            One of owning company's trains
+            may haul coal (+$10 per coal marker).
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (2)]
+
+    trader:
+      _:
+        long_name_text_text: |
+            Trader
+        value_text_text: "$40"
+        power_text_text: |
+            Owning company may close this to
+            buy a single train from another
+            company before running trains.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    exportPermit:
+      _:
+        long_name_text_text: |
+            Export Permit
+        value_text_text: "$40"
+        power_text_text: |
+            One of owning company's trains
+            may run into offboards.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (2)]
+
+    engineeringCo:
+      _:
+        long_name_text_text: |
+            Engineering Company
+        value_text_text: "$50"
+        power_text_text: |
+            Owning company may directly lay city
+            and plain tracks of current colour.
+            May upgrade plain tracks
+            to one colour higher.
+        cost_text_text: ""
+        revenue_text_text: "Revenue $10 if owned by player"
+      model:
+        index: $[index_of (1)]
+
+    lawFirm:
+      _:
+        long_name_text_text: |
+            Law Firm
+        value_text_text: "$40"
+        power_text_text: |
+            Owning company may close this to place
+            a station in a city without empty station slot.
+            If the city is upgraded and a new slot becomes
+            available, the station is placed in it.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    mechanics:
+      _:
+        long_name_text_text: |
+            Mechanics
+        value_text_text: "$60"
+        power_text_text: |
+            One of owning company's yellow or
+            green trains runs once more before rusting.
+            Not cumulative with plus trains.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    constructionCo:
+      _:
+        long_name_text_text: |
+            Construction Company
+        value_text_text: "$60"
+        power_text_text: |
+            Owning company may have both its
+            track actions be upgrades.
+            Must still pay for the track actions.
+        cost_text_text: ""
+        revenue_text_text: "Revenue $10 if owned by player"
+      model:
+        index: $[index_of (1)]
+
+    port:
+      _:
+        long_name_text_text: |
+            Port
+        value_text_text: "$70"
+        power_text_text: |
+            Owning company may place a port marker
+            on a non-metropolis coastal city.
+            Increases the city's value by $20 for
+            companies that have a station in that city.
+        cost_text_text: ""
+        revenue_text_text: "Revenue $10 if owned by player"
+      model:
+        index: $[index_of (1)]
+
+    locWorks:
+      _:
+        long_name_text_text: |
+            Locomotive Works
+        value_text_text: "$100"
+        power_text_text: |
+            Owning company buys trains 10%
+            cheaper. May discard this to buy a train
+            (still 10% cheaper) before running trains.
+
+            Closes when first 4D train is purchased.
+        cost_text_text: ""
+        revenue_text_text: "Revenue $10 if owned by player"
+      model:
+        index: $[index_of (1)]
+
+    stationBuilders:
+      _:
+        long_name_text_text: |
+            Station Builders
+        value_text_text: "$100"
+        power_text_text: |
+            Owning company may place additional
+            stations for $100 each.
+        cost_text_text: ""
+        revenue_text_text: "Revenue $25 if owned by player"
+      model:
+        index: $[index_of (1)]
+
+    refurbishedEngine:
+      _:
+        long_name_text_text: |
+            Refurbished Engine
+        value_text_text: "$100"
+        power_text_text: |
+            Owning company may close this
+            to buy a rusted train, paying its full price.
+            The train becomes permanent, counts against
+            train limit and may not be traded.
+            The company still must own another train.
+        money_bar_box_suppress: false
+        cost_text_text: ""
+        revenue_text_text: "Revenue $10 if owned by player"
+      model:
+        index: $[index_of (1)]
+
+    bridgesAndTunnels:
+      _:
+        long_name_text_text: |
+            Bridges and Tunnels Company
+        value_text_text: "$50"
+        power_text_text: |
+            Owning company gains $25 after laying
+            a yellow tile on a hex with terrain cost.
+            Must pay for the tile first.
+        money_bar_box_suppress: false
+        cost_text_text: ""
+        revenue_text_text: "Revenue $10 if owned by player"
+      model:
+        index: $[index_of (1)]
+
+    modernCoalWagons:
+      _:
+        long_name_text_text: |
+            Modern Coal Wagons
+        value_text_text: "$60"
+        power_text_text: |
+            Coal is worth $20 instead of $10
+            for one of the owning company's trains.
+            The train must be able to haul coal.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    newCoalMine:
+      _:
+        long_name_text_text: |
+            New Coal Mine
+        value_text_text: "$30"
+        power_text_text: |
+            When laying a yellow plain track,
+            owning company may close this to
+            place a coal marker on the track.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    mailContract:
+      _:
+        long_name_text_text: |
+            Mail Contract
+        value_text_text: "$120"
+        power_text_text: |
+            For one of owning company's trains,
+            the company is paid by the bank money equal
+            to the value of one offboard that train ran to.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    expressTrack:
+      _:
+        long_name_text_text: |
+            Express Track
+        value_text_text: "$40"
+        power_text_text: |
+            Owning company pays $10 for its first
+            track action and $0 for the second.
+        money_bar_box_suppress: false
+        cost_text_text: ""
+        revenue_text_text: "Revenue $10 if owned by player"
+      model:
+        index: $[index_of (1)]
+
+    stationSubsidy:
+      _:
+        long_name_text_text: |
+            Station Subsidy
+        value_text_text: "$50"
+        power_text_text: |
+            Every time owning company
+            converts (not merges),
+            the company is paid by the bank $50.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+    ponziScheme:
+      _:
+        long_name_text_text: |
+            Ponzi Scheme
+        value_text_text: "$100"
+        power_text_text: |
+            No special power.
+
+            Minimum bid is $5.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+train:
+  _:
+    cost_text_typeface: ${DEFAULT/typeface_mono}
+    cost_text_y: 70
+    cost_text_size: 12
+    long_name_text_size: 60
+    long_name_text_y: 105
+    note_text_size: 9
+
+  index:
+
+
+    6T:
+      _:
+        asset_interior_box_fill_p: BROWN
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "6"
+        cost_text_text: |
+            Cost:
+            $600
+        rusted_text_text: Permanent
+        note_text_text: Acts as F or P train
+      model:
+        index: $[index_of (6)]
+
+    4D:
+      _:
+        asset_interior_box_fill_p: RED
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "4D"
+        cost_text_text: |
+            Cost:
+            $900
+        rusted_text_text: Permanent
+        note_text_text: |
+            Acts as F or P train
+      model:
+        index: $[index_of (6)]
+
+    5D:
+      _:
+        asset_interior_box_fill_p: GRAY
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "5D"
+        cost_text_text: |
+            Cost:
+            $1100
+        rusted_text_text: Permanent
+        note_text_text: Acts as F or P train
+      model:
+        index: $[index_of (8)]

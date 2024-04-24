@@ -37,7 +37,7 @@ company:
       loan_2_square_shape_fill: ${colour/wikipedia/wisteria}
       loan_2_text_text: "10 Share"
       loan_2_text_size: 6
-      loan_3_square_shape_suppress: False  
+      loan_3_square_shape_suppress: False
       loan_3_square_shape_fill: ${colour/wikipedia/wisteria}
       loan_3_text_text: "10 Share"
       loan_3_text_size: 6
@@ -75,7 +75,7 @@ company:
       share_desc_text_text: 1 Share
       share_desc_text_x: 55
       share_num_text_text: 20/10%
-      share_pct_text_text: 
+      share_pct_text_text:
       side_bar_lsplit_box_suppress: True
       side_bar_rsplit_box_suppress: True
       comment_text_size: 12
@@ -135,7 +135,7 @@ company:
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
-        index: $[index_of (10)]        
+        index: $[index_of (10)]
 
     RP:
       _:
@@ -155,7 +155,7 @@ company:
           short_name_text_y_inset: -1
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (10)]        
+        index: $[index_of (10)]
 
     MH:
       _:
@@ -195,7 +195,7 @@ company:
           short_name_text_y_inset: -1
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (10)]        
+        index: $[index_of (10)]
 
     TR:
       _:
@@ -204,7 +204,7 @@ company:
           Railway
         short_name_text_text: TR
         _major_fill: ${colour/wikipedia/amber_sae_ece}
-        _minor_fill: ${colour/x11/white}        
+        _minor_fill: ${colour/x11/white}
         _related_fill: ${colour/wikipedia/pink_orange}
       token:
         _:
@@ -288,7 +288,7 @@ company:
         _related_fill: ${colour/x11/antiquewhite}
       token:
         index: $[index_of (10)]
-  
+
     TE:
       _:
         long_name_text_text: |
@@ -308,7 +308,7 @@ company:
           short_name_text_x_inset: 0
           short_name_text_y_inset: -1
         index: $[index_of (10)]
-  
+
     SF:
       _:
         long_name_text_text: |
@@ -325,7 +325,7 @@ company:
         ELEMENTS: ${TEMPLATE_bullseye/.}
         EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
         index: $[index_of (10)]
-  
+
     NC:
       _:
         long_name_text_text: |
@@ -339,7 +339,7 @@ company:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
         index: $[index_of (10)]
-  
+
     BT:
       _:
         long_name_text_text: |
@@ -407,7 +407,7 @@ private:
         value_text_text: "$30"
         power_text_text: |
             Owning company may buy trains
-            from other companies before 
+            from other companies before
             running trains.
         money_bar_box_suppress: true
         cost_text_text: ""
@@ -436,7 +436,7 @@ private:
         value_text_text: "$50"
         power_text_text: |
             Owning company may directly lay city
-            and plain tracks of current colour. 
+            and plain tracks of current colour.
             May upgrade plain tracks
             to one colour higher.
         cost_text_text: ""
@@ -465,7 +465,7 @@ private:
         value_text_text: "$60"
         power_text_text: |
             One of owning company's 2 or 3-trains
-            runs once more before rusting. Not 
+            runs once more before rusting. Not
             cumulative with plus trains.
         money_bar_box_suppress: true
         cost_text_text: ""
@@ -494,7 +494,7 @@ private:
         power_text_text: |
             Owning company may place a port
             token on a non-metropolis coastal
-            city. Increases the city's value by 
+            city. Increases the city's value by
             $20 for companies that have a station
             there and by $10 for the others.
         cost_text_text: ""
@@ -577,8 +577,8 @@ private:
         revenue_text_text: ""
       model:
         index: $[index_of (1)]
-    
-    
+
+
     conc2:
       _:
         long_name_text_text: |
@@ -592,8 +592,8 @@ private:
         revenue_text_text: ""
       model:
         index: $[index_of (1)]
-    
-    
+
+
     conc3:
       _:
         long_name_text_text: |
@@ -607,8 +607,8 @@ private:
         revenue_text_text: ""
       model:
         index: $[index_of (1)]
-    
-    
+
+
     conc4:
       _:
         long_name_text_text: |
@@ -622,8 +622,8 @@ private:
         revenue_text_text: ""
       model:
         index: $[index_of (1)]
-    
-    
+
+
     conc5:
       _:
         long_name_text_text: |
@@ -637,8 +637,8 @@ private:
         revenue_text_text: ""
       model:
         index: $[index_of (1)]
-    
-    
+
+
     conc6:
       _:
         long_name_text_text: |
@@ -652,8 +652,8 @@ private:
         revenue_text_text: ""
       model:
         index: $[index_of (1)]
-    
-    
+
+
     conc7:
       _:
         long_name_text_text: |
@@ -667,8 +667,8 @@ private:
         revenue_text_text: ""
       model:
         index: $[index_of (1)]
-    
-    
+
+
     conc8:
       _:
         long_name_text_text: |
@@ -682,8 +682,8 @@ private:
         revenue_text_text: ""
       model:
         index: $[index_of (1)]
-    
-    
+
+
     conc9:
       _:
         long_name_text_text: |
@@ -697,8 +697,8 @@ private:
         revenue_text_text: ""
       model:
         index: $[index_of (1)]
-    
-    
+
+
     conc10:
       _:
         long_name_text_text: |
@@ -712,8 +712,8 @@ private:
         revenue_text_text: ""
       model:
         index: $[index_of (1)]
-    
-    
+
+
     conc11:
       _:
         long_name_text_text: |
@@ -727,8 +727,8 @@ private:
         revenue_text_text: ""
       model:
         index: $[index_of (1)]
-    
-    
+
+
     conc12:
       _:
         long_name_text_text: |
@@ -742,8 +742,8 @@ private:
         revenue_text_text: ""
       model:
         index: $[index_of (1)]
-    
-    
+
+
     conc13:
       _:
         long_name_text_text: |
@@ -757,8 +757,8 @@ private:
         revenue_text_text: ""
       model:
         index: $[index_of (1)]
-    
-    
+
+
     conc14:
       _:
         long_name_text_text: |
@@ -772,8 +772,8 @@ private:
         revenue_text_text: ""
       model:
         index: $[index_of (1)]
-    
-    
+
+
     conc15:
       _:
         long_name_text_text: |
@@ -787,8 +787,8 @@ private:
         revenue_text_text: ""
       model:
         index: $[index_of (1)]
-    
-    
+
+
     conc16:
       _:
         long_name_text_text: |
@@ -802,8 +802,8 @@ private:
         revenue_text_text: ""
       model:
         index: $[index_of (1)]
-    
-    
+
+
     conc17:
       _:
         long_name_text_text: |
@@ -817,8 +817,8 @@ private:
         revenue_text_text: ""
       model:
         index: $[index_of (1)]
-    
-    
+
+
     conc18:
       _:
         long_name_text_text: |
@@ -832,8 +832,8 @@ private:
         revenue_text_text: ""
       model:
         index: $[index_of (1)]
-    
-    
+
+
     conc19:
       _:
         long_name_text_text: |
@@ -847,8 +847,8 @@ private:
         revenue_text_text: ""
       model:
         index: $[index_of (1)]
-    
-    
+
+
     conc20:
       _:
         long_name_text_text: |
@@ -862,7 +862,7 @@ private:
         revenue_text_text: ""
       model:
         index: $[index_of (1)]
-    
+
 
 
 train:
@@ -967,7 +967,7 @@ train:
           "3":
           "4":
 
-    2APlus:      
+    2APlus:
       _:
         asset_interior_box_fill: ${colour/wikipedia/yellow_orange}
         rust_bar_box_fill_p: BLUE
@@ -1111,7 +1111,7 @@ train:
           or 3+ is bought
       model:
         index: $[index_of (2)]
-          
+
     3A:
       _:
         asset_interior_box_fill_p: GREEN
@@ -1202,7 +1202,7 @@ train:
             +$10 per coal marker
             May run into offboards
       model:
-        index: $[index_of (1)] 
+        index: $[index_of (1)]
 
     4Plus:
       _:
@@ -1261,8 +1261,8 @@ train:
           "3":
           "4":
           "5":
-          "6":     
-          
+          "6":
+
     34D:
       _:
         asset_interior_box_fill_p: RED
@@ -1271,20 +1271,20 @@ train:
         long_name_text_size: 34
         cost_text_text_p: $800
         rusted_text_text: Permanent
-        note_text_text: acts as F or P train        
+        note_text_text: acts as F or P train
       model:
         index:
           "1":
-            top_note_text: 
+            top_note_text:
               text: |
                 4-player
           "2":
-            top_note_text: 
+            top_note_text:
               text: |
                 5-player
           "3":
           "4":
-          "5":   
+          "5":
 
     4D:
       _:
@@ -1293,15 +1293,15 @@ train:
         long_name_text_text: "4D"
         cost_text_text_p: $1000
         rusted_text_text: Permanent
-        note_text_text: acts as F or P train        
+        note_text_text: acts as F or P train
       model:
         index:
           "1":
-            top_note_text: 
+            top_note_text:
               text: |
                 4-player
           "2":
-            top_note_text: 
+            top_note_text:
               text: |
                 5-player
           "3":
@@ -1314,14 +1314,14 @@ train:
         long_name_text_text: "5D"
         cost_text_text_p: $1200
         rusted_text_text: Permanent
-        note_text_text: acts as F or P train        
+        note_text_text: acts as F or P train
       model:
         index: $[index_of (12)]
 
 marker:
   _:
     short_name_text_size: 8
-    
+
   index:
 
     round:
@@ -1338,7 +1338,7 @@ marker:
       middle_circle:
         fill: ${colour/galatolol/green}
       inner_circle:
-        fill: ${colour/galatolol/brown}    
+        fill: ${colour/galatolol/brown}
 
     round1:
       token:
@@ -1347,9 +1347,9 @@ marker:
           short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 3]
           short_name_text_size: 10
           name_stripe_box_suppress: True
-          _major_fill: ${colour/wikipedia/white}
-          _minor_fill: ${colour/wikipedia/white}
-        index: $[index_of (4)]
+          _major_fill: ${colour/xxp/TRAIN_YELLOW}
+          _minor_fill: ${colour/xxp/TRAIN_YELLOW}
+        index: $[index_of (6)]
 
     round2:
       token:
@@ -1358,9 +1358,9 @@ marker:
           short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 3]
           short_name_text_size: 10
           name_stripe_box_suppress: True
-          _major_fill: ${colour/wikipedia/white}
-          _minor_fill: ${colour/wikipedia/white}
-        index: $[index_of (4)]
+          _major_fill: ${colour/wikipedia/yellow_orange}
+          _minor_fill: ${colour/wikipedia/yellow_orange}
+        index: $[index_of (6)]
 
     round3:
       token:
@@ -1369,9 +1369,9 @@ marker:
           short_name_text_y: $[(${token_interior_box/y} / 2) - (${short_name/size} / 2) + 3]
           short_name_text_size: 10
           name_stripe_box_suppress: True
-          _major_fill: ${colour/wikipedia/white}
-          _minor_fill: ${colour/wikipedia/white}
-        index: $[index_of (4)]
+          _major_fill: ${colour/xxp/TRAIN_GREEN}
+          _minor_fill: ${colour/xxp/TRAIN_GREEN}
+        index: $[index_of (6)]
 
     5share:
       token:
@@ -1403,79 +1403,79 @@ marker:
       _:
         short_name_text_text: ET
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     bt:
       _:
         short_name_text_text: BT
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     gnr:
       _:
         short_name_text_text: GNR
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     gv:
       _:
         short_name_text_text: GV
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     hf:
       _:
         short_name_text_text: HF
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     ll:
       _:
         short_name_text_text: LL
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     mh:
       _:
         short_name_text_text: MH
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     nc:
       _:
         short_name_text_text: NC
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     rd:
       _:
         short_name_text_text: RD
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     rrr:
       _:
         short_name_text_text: RRR
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     sf:
       _:
         short_name_text_text: SF
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     te:
       _:
         short_name_text_text: TE
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     tr:
       _:
         short_name_text_text: TR
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     ur:
       _:
         short_name_text_text: UR
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     wr:
       _:
         short_name_text_text: WR
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     rp:
       _:
         short_name_text_text: RP
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"

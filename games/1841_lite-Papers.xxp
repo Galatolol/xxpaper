@@ -4,6 +4,7 @@ private:
       _:
         long_name_text_text: |
             Bayard (1)
+        closes_text_text: "Removed in phase 4"
         cost_text_text: "Cost L.50 from the market"
         cost_text_size: 10
         long_name_text_size: 12
@@ -29,7 +30,7 @@ company:
       comment_text_size: 10
   share:
     _:
-      long_name_text_size: 12    
+      long_name_text_size: 12
       type_bar_box_fill: ${colour/wikipedia/golden_yellow}
       #type_bar_box_y: 13
       #side_bar_lsplit_box_suppress: True
@@ -43,7 +44,7 @@ company:
     SFTN:
       _:
         long_name_text_text: |
-            Strada di Ferro 
+            Strada di Ferro
             da Torino a Novara
         short_name_text_text: SFTN
         token_1_text_text: Torino
@@ -101,7 +102,7 @@ company:
             Strada Ferrata
             Ferdinandea
         short_name_text_text: IRSFF
-        token_1_text_text: Milano 
+        token_1_text_text: Milano
         token_1_circle_fill: ${colour/hollasch/grey}
         token_2_text_text: Venezia
         token_2_circle_fill: ${colour/hollasch/grey}
@@ -153,7 +154,7 @@ company:
     SB:
       _:
         long_name_text_text: |
-            Strada di Ferro 
+            Strada di Ferro
             da Torino a Cuneo
         short_name_text_text: SB
         token_1_text_text: Venezia
@@ -166,7 +167,7 @@ company:
         #inner_circle_fill: ${colour/hollasch/cadmium_yellow}
         #middle_circle_fill: ${colour/hollasch/yellow}
         #outer_circle_fill: ${colour/hollasch/cadmium_yellow}
-        #_related_fill: ${colour/wikipedia/amber}        
+        #_related_fill: ${colour/wikipedia/amber}
         inner_circle_fill: ${colour/wikipedia/tangelo}
         middle_circle_fill: ${colour/wikipedia/topaz}
         outer_circle_fill: ${colour/wikipedia/tangelo}
@@ -352,6 +353,9 @@ company:
         _:
           comment_text_y: 70
       token:
+        _:
+          short_name_text_size: 11
+          short_name_text_y: 14
         index: "$[index_of (7)]"
 
     ILTF:
@@ -378,12 +382,14 @@ company:
       charter:
         _:
           comment_text_text: |
-          comment_text_text: |
             2-5 stations, L.25/50/100/200 each
       share:
         _:
           comment_text_y: 70
       token:
+        _:
+          short_name_text_size: 11
+          short_name_text_y: 14
         index: "$[index_of (7)]"
 
     AFI:
@@ -409,12 +415,14 @@ company:
       charter:
         _:
           comment_text_text: |
-          comment_text_text: |
             2-5 stations, L.25/50/100/200 each
       share:
         _:
           comment_text_y: 70
       token:
+        _:
+          short_name_text_size: 10
+          short_name_text_y: 14
         index: "$[index_of (7)]"
 
     RSFS:
@@ -441,12 +449,14 @@ company:
       charter:
         _:
           comment_text_text: |
-          comment_text_text: |
             2-5 stations, L.25/50/100/200 each
       share:
         _:
           comment_text_y: 70
       token:
+        _:
+          short_name_text_size: 11
+          short_name_text_y: 14
         index: "$[index_of (7)]"
 
     IFAI:
@@ -473,12 +483,14 @@ company:
       charter:
         _:
           comment_text_text: |
-          comment_text_text: |
             2-5 stations, L.25/50/100/200 each
       share:
         _:
           comment_text_y: 70
       token:
+        _:
+          short_name_text_size: 11
+          short_name_text_y: 14
         index: "$[index_of (7)]"
 
     ICSF:
@@ -505,12 +517,14 @@ company:
       charter:
         _:
           comment_text_text: |
-          comment_text_text: |
             2-5 stations, L.25/50/100/200 each
       share:
         _:
           comment_text_y: 70
       token:
+        _:
+          short_name_text_size: 11
+          short_name_text_y: 14
         index: "$[index_of (7)]"
 
     CTS:
@@ -534,12 +548,14 @@ company:
       charter:
         _:
           comment_text_text: |
-          comment_text_text: |
             2-5 stations, L.25/50/100/200 each
       share:
         _:
           comment_text_y: 70
       token:
+        _:
+          short_name_text_size: 11
+          short_name_text_y: 14
         index: "$[index_of (7)]"
 
     CTDA:
@@ -567,12 +583,14 @@ company:
       charter:
         _:
           comment_text_text: |
-          comment_text_text: |
             2-5 stations, L.25/50/100/200 each
       share:
         _:
           comment_text_y: 70
       token:
+        _:
+          short_name_text_size: 10
+          short_name_text_y: 14
         index: "$[index_of (7)]"
 
     CGTF:
@@ -600,20 +618,22 @@ company:
       charter:
         _:
           comment_text_text: |
-          comment_text_text: |
             2-5 stations, L.25/50/100/200 each
       share:
         _:
           comment_text_y: 70
       token:
+        _:
+          short_name_text_size: 10
+          short_name_text_y: 14
         index: "$[index_of (7)]"
 
     CFCC:
       _:
         long_name_text_text: |
-            Compagnia 
+            Compagnia
             Cante di Cavour
-        #Compagnia 
+        #Compagnia
         #Ferroviaria
         #Cante di Cavour
         short_name_text_text: CCC
@@ -633,12 +653,14 @@ company:
       charter:
         _:
           comment_text_text: |
-          comment_text_text: |
             2-5 stations, L.25/50/100/200 each
       share:
         _:
           comment_text_y: 70
       token:
+        _:
+          short_name_text_size: 10
+          short_name_text_y: 14
         index: "$[index_of (7)]"
 
     ATFA:
@@ -664,12 +686,14 @@ company:
       charter:
         _:
           comment_text_text: |
-          comment_text_text: |
             2-5 stations, L.25/50/100/200 each
       share:
         _:
           comment_text_y: 70
       token:
+        _:
+          short_name_text_size: 11
+          short_name_text_y: 14
         index: "$[index_of (7)]"
 
 train:
@@ -771,68 +795,68 @@ marker:
       _:
         short_name_text_text: FA
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     gtf:
       _:
         short_name_text_text: GTF
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     ccc:
       _:
         short_name_text_text: CCC
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     cts:
       _:
         short_name_text_text: TS
 
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     ratf:
       _:
         short_name_text_text: AT
       token:
-        index: "$[index_of (1)]"  
+        index: "$[index_of (1)]"
     cda:
       _:
         short_name_text_text: CDA
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     icsf:
       _:
         short_name_text_text: IC
       token:
-        index: "$[index_of (1)]" 
+        index: "$[index_of (1)]"
     iltf:
       _:
         short_name_text_text: LT
       token:
-        index: "$[index_of (1)]"  
+        index: "$[index_of (1)]"
     irsff:
       _:
         short_name_text_text: IRSFF
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     rsfs:
       _:
         short_name_text_text: RS
       token:
-        index: "$[index_of (1)]"       
+        index: "$[index_of (1)]"
     sftg:
       _:
         short_name_text_text: SFTG
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     sftc:
       _:
         short_name_text_text: SFTC
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     sftn:
       _:
         short_name_text_text: SFTN
       token:
-        index: "$[index_of (1)]"  
+        index: "$[index_of (1)]"
     afi:
       _:
         short_name_text_text: AFI
@@ -842,14 +866,14 @@ marker:
       _:
         short_name_text_text: SFL
       token:
-        index: "$[index_of (1)]" 
+        index: "$[index_of (1)]"
     sb:
       _:
         short_name_text_text: SB
       token:
-        index: "$[index_of (1)]"  
+        index: "$[index_of (1)]"
     ai:
       _:
         short_name_text_text: AI
       token:
-        index: "$[index_of (1)]"   
+        index: "$[index_of (1)]"

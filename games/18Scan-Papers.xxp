@@ -64,22 +64,6 @@ company:
               note_text_text: |
                 Reserved for exchange
               note_text_fill: ${colour/wikipedia/red}
-         "10":
-            _:
-              note_text_text: |
-                Reserved for exchange
-              note_text_fill: ${colour/wikipedia/red}
-         "11":
-            _:
-              note_text_text: |
-                Reserved for exchange
-              note_text_fill: ${colour/wikipedia/red}
-         "12":
-            _:
-              note_text_text: |
-                Reserved for exchange
-              note_text_fill: ${colour/wikipedia/red}
-
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
@@ -174,7 +158,7 @@ company:
       token:
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (4)]
+        index: $[index_of (3)]
 
     M2:
       _:
@@ -215,7 +199,7 @@ company:
       token:
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (4)]
+        index: $[index_of (3)]
 
     M3:
       _:
@@ -256,7 +240,7 @@ company:
       token:
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (4)]
+        index: $[index_of (3)]
 
     SNJ:
       _:
@@ -323,7 +307,7 @@ marker:
           - middle_circle
           - inner_circle
 
-        index: $[index_of (2)]
+        index: $[index_of (1)]
       outer_circle:
         fill: ${colour/galatolol/yellow}
       middle_circle:
@@ -450,7 +434,7 @@ private:
             Jernbaneselskab
         power_text_text: |
             Comes with the DSB president certificate.
-            May lay or upgrade yellow COP tile (F3) 
+            May lay or upgrade yellow COP tile (F3)
             at no cost.
             Closes when DSB buys its first train.
         cost_text_text: "Cost: K180"
