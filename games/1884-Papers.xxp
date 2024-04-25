@@ -22,32 +22,32 @@ company:
       token_1_text_size: 10
       token_1_text_typeface: ${DEFAULT/typeface_italic}
       comment_text_text: ""
-      label_text_size: 11
+      label_text_suppress: True
       comment_text_x: 130
       comment_text_size: 10
       comment_text_typeface: ${DEFAULT/typeface}
-      loan_6_square_shape_suppress: False
-      loan_6_text_text: "0 zł"
-      loan_6_text_size: 10
-      loan_7_square_shape_suppress: False
-      loan_7_text_text: "10 zł"
-      loan_7_text_size: 10
-      loan_8_square_shape_suppress: False
-      loan_8_text_text: "30 zł"
-      loan_8_text_size: 10
-      loan_9_square_shape_suppress: False
-      loan_9_text_text: "60 zł"
-      loan_9_text_size: 10
-      loan_10_square_shape_suppress: False
-      loan_10_text_suppress: False
-      loan_10_text_text: "100 zł"
-      loan_10_text_size: 10
-      loan_10_text_y: $[${loan_10_square_shape/y} - 18]
-      loan_5_square_shape_suppress: True
-      loan_5_text_text: "150 zł"
+      loan_1_box_y_inset: 230
+      loan_1_box_suppress: False
+      loan_1_text_text: "0 zł"
+      loan_1_text_size: 10
+      loan_2_box_suppress: False
+      loan_2_text_text: "10 zł"
+      loan_2_text_size: 10
+      loan_3_box_suppress: False
+      loan_3_text_text: "30 zł"
+      loan_3_text_size: 10
+      loan_4_box_suppress: False
+      loan_4_text_text: "50 zł"
+      loan_4_text_size: 10
+      loan_5_box_suppress: False
+      loan_5_text_suppress: False
+      loan_5_text_text: "70 zł"
       loan_5_text_size: 10
-      loan_5_text_x: $[${loan_10_text/x}]
-      loan_5_text_y: $[${loan_10_text/y} - 30]
+      loan_6_text_text: "100 zł"
+      loan_6_text_size: 10
+      loan_6_text_x: ${loan_5_text/x}
+      loan_6_text_y: $[${loan_5_box/y} - 0]
+
   share:
     _:
       long_name_text_size: 12
@@ -75,11 +75,12 @@ company:
         ELEMENTS: ${TEMPLATE_stripey/.}
         EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
 
-    KG:
+    CMK:
       _:
         long_name_text_text: |
-            Kolej Górnośląska
-        short_name_text_text: KG
+            Centralna
+            Magistrala Kolejowa
+        short_name_text_text: CMK
         token_1_text_text: C4
         _major_fill: ${colour/wikipedia/blue_ryb}
         _major_fill_2: ${colour/wikipedia/banana_yellow}
@@ -90,12 +91,11 @@ company:
         ELEMENTS: ${TEMPLATE_stripey/.}
         EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
 
-    CMK:
+    PF:
       _:
         long_name_text_text: |
-            Centralna
-            Magistrala Kolejowa
-        short_name_text_text: CMK
+            Pater Familias Krz.
+        short_name_text_text: PF
         token_1_text_text: D3
         _major_fill: ${colour/x11/red}
         _minor_fill: ${colour/xxp/BLACK}
@@ -173,12 +173,13 @@ company:
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
 
-    FBL:
+    BD:
       _:
         long_name_text_text: |
-          Fablok
-        short_name_text_text: FBL
-        token_1_text_text: G6
+          Linia
+          Bogumin–Dziedzice
+        short_name_text_text: BD
+        token_1_text_text: E10
         name_stripe_box_suppress: True
         _related_fill: ${colour/hollasch/pink}
       token:
@@ -229,11 +230,11 @@ company:
         ELEMENTS: ${TEMPLATE_basketball/.}
         EMBED_ELEMENTS: ${TEMPLATE_basketball_embed/.}
 
-    PF:
+    KG:
       _:
         long_name_text_text: |
-            Pater Familias Krz.
-        short_name_text_text: PF
+            Kolej Górnośląska
+        short_name_text_text: KG
         token_1_text_text: J5
         _major_fill: ${colour/wikipedia/yellow_green}
         _minor_fill: ${colour/wikipedia/lemon_lime}
@@ -253,16 +254,33 @@ company:
         short_name_text_text: Ign
         token_1_text_text: B7
         _major_fill: ${colour/xxp/BLACK}
-        _minor_fill: ${colour/xxp/WHITE}
+        _major_fill_2: ${colour/xxp/WHITE}
+        _minor_fill_2: ${colour/xxp/WHITE}
+        _minor_fill: ${colour/xxp/BLACK}
         _related_fill: ${colour/x11/gray43}
         _share_pct_text_fill_x: ${colour/xxp/WHITE}
       token:
         _:
-          short_name_text_size: 7
-          short_name_text_y: 19.9
-        ELEMENTS: ${TEMPLATE_cross/.}
-        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
-
+          short_name_text_fill: ${colour/xxp/WHITE}
+          #short_name_text_size: 7
+          #short_name_text_y: 19.9
+        TEMPLATE_stripey_cross:
+          - token_interior_box
+          - top_half_box
+          - bottom_half_box
+          - top_line_box
+          - bottom_line_box
+          - short_name_text
+        TEMPLATE_stripey_cross_embed:
+          - token_interior_box
+          - top_half_box
+          - bottom_half_box
+          - top_line_box
+          - bottom_line_box
+          - short_name_text
+          - outline_circle
+        ELEMENTS: ${TEMPLATE_stripey_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_cross_embed/.}
     MM:
       _:
         long_name_text_text: |
@@ -350,18 +368,19 @@ company:
         _minor_fill: ${colour/wikipedia/canary_yellow}
         _major_fill_1: ${_/_major_fill}
         _major_fill_2: ${_/_minor_fill}
+        name_stripe_box_fill: ${colour/wikipedia/blue_crayola}
+        name_stripe_box_stroke: ${colour/wikipedia/blue_crayola}
         _related_fill: ${colour/wikipedia/dark_imperial_blue}
       token:
         _:
           _rotation: 0
           _angle: $[360 / 10]
-          short_name_text_fill: $[black_or_white (${_/_major_fill})]
-          bottom_half_box_fill: ${colour/wikipedia/blue_crayola}
+          short_name_text_fill: ${colour/xxp/WHITE}
+          bottom_half_box_fill: ${colour/wikipedia/sapphire}
           inner_circle_suppress: True
         index: $[index_of(7)]
         ELEMENTS: ${TEMPLATE_wedges/.}
         EMBED_ELEMENTS: ${TEMPLATE_wedges_embed/.}
-
 
     CKP:
       _:
@@ -382,12 +401,11 @@ company:
         ELEMENTS: ${TEMPLATE_chequer/.}
         EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
 
-    BD:
+    FBL:
       _:
         long_name_text_text: |
-            Linia
-            Bogumin–Dziedzice
-        short_name_text_text: BD
+            Fablok
+        short_name_text_text: FBL
         token_1_text_text: E10
         _major_fill: ${colour/wikipedia/jungle_green}
         _minor_fill: ${colour/hollasch/turquoise_pale}

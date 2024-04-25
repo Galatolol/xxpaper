@@ -351,8 +351,8 @@ loan_1_box:
   width: 0.5
   x: 36
   y: ${loan_1_box/x}
-  x_inset: $[${outside_box/x} - ${loan_1_box/x} * 2 - 14.5]
-  y_inset: 215
+  x_inset: $[${outside_box/x} - ${loan_1_box/x} - 4]
+  y_inset: 200
   radius: 0
 
 loan_1_text:
@@ -372,8 +372,8 @@ loan_2_box:
   width: 0.5
   x: ${loan_1_box/x}
   y: ${loan_1_box/x}
-  x_inset: $[${loan_1_box/x_inset} + ${loan_1_box/x} + 7]
-  y_inset: 215
+  x_inset: ${loan_1_box/x_inset}
+  y_inset: $[${loan_1_box/y_inset} - ${loan_1_box/x} - 7]
   radius: 0
 
 loan_2_text:
@@ -394,7 +394,7 @@ loan_3_box:
   x: ${loan_1_box/x}
   y: ${loan_1_box/x}
   x_inset: ${loan_1_box/x_inset}
-  y_inset: $[${loan_1_box/y_inset} - ${loan_1_box/x} - 7]
+  y_inset: $[${loan_2_box/y_inset} - ${loan_1_box/x} - 7]
   radius: 0
 
 loan_3_text:
@@ -414,8 +414,8 @@ loan_4_box:
   width: 0.5
   x: ${loan_1_box/x}
   y: ${loan_1_box/x}
-  x_inset: ${loan_2_box/x_inset}
-  y_inset: $[${loan_2_box/y_inset} - ${loan_1_box/x} - 7]
+  x_inset: ${loan_1_box/x_inset}
+  y_inset: $[${loan_3_box/y_inset} - ${loan_1_box/x} - 7]
   radius: 0
 
 loan_4_text:
@@ -436,7 +436,7 @@ loan_5_box:
   x: ${loan_1_box/x}
   y: ${loan_1_box/x}
   x_inset: ${loan_1_box/x_inset}
-  y_inset: $[${loan_3_box/y_inset} - ${loan_1_box/x} - 7]
+  y_inset: $[${loan_4_box/y_inset} - ${loan_1_box/x} - 7]
   radius: 0
 
 loan_5_text:
@@ -456,8 +456,8 @@ loan_6_box:
   width: 0.5
   x: ${loan_1_box/x}
   y: ${loan_1_box/x}
-  x_inset: ${loan_2_box/x_inset}
-  y_inset: $[${loan_4_box/y_inset} - ${loan_1_box/x} - 7]
+  x_inset: $[${outside_box/x} - ${loan_1_box/x} * 2 - 11]
+  y_inset: $[${loan_5_box/y_inset}]
   radius: 0
 
 loan_6_text:
@@ -477,8 +477,8 @@ loan_7_box:
   width: 0.5
   x: ${loan_1_box/x}
   y: ${loan_1_box/x}
-  x_inset: ${loan_1_box/x_inset}
-  y_inset: $[${loan_5_box/y_inset} - ${loan_1_box/x} - 7]
+  x_inset: ${loan_6_box/x_inset}
+  y_inset: $[${loan_6_box/y_inset} + ${loan_1_box/x} + 7]
   radius: 0
 
 loan_7_text:
@@ -498,8 +498,8 @@ loan_8_box:
   width: 0.5
   x: ${loan_1_box/x}
   y: ${loan_1_box/x}
-  x_inset: ${loan_2_box/x_inset}
-  y_inset: $[${loan_6_box/y_inset} - ${loan_1_box/x} - 7]
+  x_inset: ${loan_6_box/x_inset}
+  y_inset: $[${loan_7_box/y_inset} + ${loan_1_box/x} + 7]
   radius: 0
 
 loan_8_text:
@@ -519,8 +519,8 @@ loan_9_box:
   width: 0.5
   x: ${loan_1_box/x}
   y: ${loan_1_box/x}
-  x_inset: ${loan_1_box/x_inset}
-  y_inset: $[${loan_7_box/y_inset} - ${loan_1_box/x} - 7]
+  x_inset: ${loan_6_box/x_inset}
+  y_inset: $[${loan_8_box/y_inset} + ${loan_1_box/x} + 7]
   radius: 0
 
 loan_9_text:
@@ -540,12 +540,12 @@ loan_10_box:
   width: 0.5
   x: ${loan_1_box/x}
   y: ${loan_1_box/x}
-  x_inset: ${loan_2_box/x_inset}
-  y_inset: $[${loan_8_box/y_inset} - ${loan_1_box/x} - 7]
+  x_inset: ${loan_6_box/x_inset}
+  y_inset: $[${loan_9_box/y_inset} + ${loan_1_box/x} + 7]
   radius: 0
 
 loan_10_text:
-  suppress: $["${loan_1_text/text}" == ""]
+  suppress: $["${loan_10_text/text}" == ""]
   typeface: ${DEFAULT/typeface}
   size: 8
   x: $[${loan_10_box/x_inset} + ${loan_1_box/x} / 2]

@@ -2,6 +2,7 @@ company:
   charter:
     _:
       token_1_text_text: Free
+      token_1_text_typeface: ${DEFAULT/typeface_italic}
       token_2_text_text: $80
       token_3_text_text: $80
       token_4_text_text: $80
@@ -742,8 +743,8 @@ train:
 
     p1Pa:
       _:
-        asset_interior_box_fill: ${colour/xxp/M_BLUE}
-        rust_bar_box_fill: ${colour/xxp/L_RED}
+        asset_interior_box_fill: ${colour/wikipedia/blue}
+        rust_bar_box_fill: ${colour/wikipedia/red}
         long_name_text_text: "1"
         cost_text_text:
         rusted_text_text:
@@ -752,8 +753,8 @@ train:
 
     p2Pa:
       _:
-        asset_interior_box_fill: ${colour/xxp/M_BLUE}
-        rust_bar_box_fill: ${colour/xxp/L_RED}
+        asset_interior_box_fill: ${colour/wikipedia/blue}
+        rust_bar_box_fill: ${colour/wikipedia/red}
         long_name_text_text: "2"
         cost_text_text:
         rusted_text_text:
@@ -762,8 +763,8 @@ train:
 
     p3Pa:
       _:
-        asset_interior_box_fill: ${colour/xxp/M_BLUE}
-        rust_bar_box_fill: ${colour/xxp/L_RED}
+        asset_interior_box_fill: ${colour/wikipedia/blue}
+        rust_bar_box_fill: ${colour/wikipedia/red}
         long_name_text_text: "3"
         cost_text_text:
         rusted_text_text:
@@ -772,8 +773,8 @@ train:
 
     p4Pa:
       _:
-        asset_interior_box_fill: ${colour/xxp/M_BLUE}
-        rust_bar_box_fill: ${colour/xxp/L_RED}
+        asset_interior_box_fill: ${colour/wikipedia/blue}
+        rust_bar_box_fill: ${colour/wikipedia/red}
         long_name_text_text: "4"
         cost_text_text:
         rusted_text_text:
@@ -782,8 +783,8 @@ train:
 
     p1Pb:
       _:
-        asset_interior_box_fill: ${colour/xxp/L_RED}
-        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        asset_interior_box_fill: ${colour/wikipedia/red}
+        rust_bar_box_fill: ${colour/wikipedia/blue}
         long_name_text_text: "1"
         cost_text_text:
         rusted_text_text:
@@ -792,8 +793,8 @@ train:
 
     p2Pb:
       _:
-        asset_interior_box_fill: ${colour/xxp/L_RED}
-        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        asset_interior_box_fill: ${colour/wikipedia/red}
+        rust_bar_box_fill: ${colour/wikipedia/blue}
         long_name_text_text: "2"
         cost_text_text:
         rusted_text_text:
@@ -802,8 +803,8 @@ train:
 
     p3Pb:
       _:
-        asset_interior_box_fill: ${colour/xxp/L_RED}
-        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        asset_interior_box_fill: ${colour/wikipedia/red}
+        rust_bar_box_fill: ${colour/wikipedia/blue}
         long_name_text_text: "3"
         cost_text_text:
         rusted_text_text:
@@ -812,8 +813,8 @@ train:
 
     p4Pb:
       _:
-        asset_interior_box_fill: ${colour/xxp/L_RED}
-        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        asset_interior_box_fill: ${colour/wikipedia/red}
+        rust_bar_box_fill: ${colour/wikipedia/blue}
         long_name_text_text: "4"
         cost_text_text:
         rusted_text_text:
