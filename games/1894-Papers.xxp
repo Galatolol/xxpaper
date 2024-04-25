@@ -319,19 +319,13 @@ marker:
   index:
     round:
       token:
-        ELEMENTS:
-          - token_interior_box
-          - outer_circle
-          - middle_circle
-          - inner_circle
-
-        index: $[index_of (1)]
-      outer_circle:
-        fill: ${colour/galatolol/yellow}
-      middle_circle:
-        fill: ${colour/galatolol/green}
-      inner_circle:
-        fill: ${colour/galatolol/brown}
+        _:
+          name_stripe_box_suppress: True
+          outer_circle_fill: ${colour/galatolol/yellow}
+          middle_circle_fill: ${colour/galatolol/green}
+          inner_circle_fill: ${colour/galatolol/brown}
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        index: "$[index_of (1)]"
 
     ferry:
       token:
@@ -595,11 +589,10 @@ train:
             Upgrade to
             Diesel: F450
       model:
-        index: $[index_of (3)]   
+        index: $[index_of (3)]
 
     D:
       _:
-        #asset_interior_box_fill: ${colour/wikipedia/cool_black}
         asset_interior_box_fill_p: PURPLE
         rust_bar_box_fill_p: BLACK
         long_name_text_text: "Diesel"
@@ -607,12 +600,12 @@ train:
         cost_text_text_p: "F800"
         rusted_text_text: Permanent
       model:
-        index: $[index_of (10)]
+        index: $[index_of (8)]
 
     p1Pa:
       _:
-        asset_interior_box_fill: ${colour/xxp/M_BLUE}
-        rust_bar_box_fill: ${colour/xxp/L_RED}
+        asset_interior_box_fill: ${colour/wikipedia/blue}
+        rust_bar_box_fill: ${colour/wikipedia/red}
         long_name_text_text: "1"
         cost_text_text:
         rusted_text_text:
@@ -621,8 +614,8 @@ train:
 
     p2Pa:
       _:
-        asset_interior_box_fill: ${colour/xxp/M_BLUE}
-        rust_bar_box_fill: ${colour/xxp/L_RED}
+        asset_interior_box_fill: ${colour/wikipedia/blue}
+        rust_bar_box_fill: ${colour/wikipedia/red}
         long_name_text_text: "2"
         cost_text_text:
         rusted_text_text:
@@ -631,8 +624,8 @@ train:
 
     p3Pa:
       _:
-        asset_interior_box_fill: ${colour/xxp/M_BLUE}
-        rust_bar_box_fill: ${colour/xxp/L_RED}
+        asset_interior_box_fill: ${colour/wikipedia/blue}
+        rust_bar_box_fill: ${colour/wikipedia/red}
         long_name_text_text: "3"
         cost_text_text:
         rusted_text_text:
@@ -641,8 +634,8 @@ train:
 
     p4Pa:
       _:
-        asset_interior_box_fill: ${colour/xxp/M_BLUE}
-        rust_bar_box_fill: ${colour/xxp/L_RED}
+        asset_interior_box_fill: ${colour/wikipedia/blue}
+        rust_bar_box_fill: ${colour/wikipedia/red}
         long_name_text_text: "4"
         cost_text_text:
         rusted_text_text:
@@ -651,8 +644,8 @@ train:
 
     p1Pb:
       _:
-        asset_interior_box_fill: ${colour/xxp/L_RED}
-        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        asset_interior_box_fill: ${colour/wikipedia/red}
+        rust_bar_box_fill: ${colour/wikipedia/blue}
         long_name_text_text: "1"
         cost_text_text:
         rusted_text_text:
@@ -661,8 +654,8 @@ train:
 
     p2Pb:
       _:
-        asset_interior_box_fill: ${colour/xxp/L_RED}
-        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        asset_interior_box_fill: ${colour/wikipedia/red}
+        rust_bar_box_fill: ${colour/wikipedia/blue}
         long_name_text_text: "2"
         cost_text_text:
         rusted_text_text:
@@ -671,8 +664,8 @@ train:
 
     p3Pb:
       _:
-        asset_interior_box_fill: ${colour/xxp/L_RED}
-        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        asset_interior_box_fill: ${colour/wikipedia/red}
+        rust_bar_box_fill: ${colour/wikipedia/blue}
         long_name_text_text: "3"
         cost_text_text:
         rusted_text_text:
@@ -681,8 +674,8 @@ train:
 
     p4Pb:
       _:
-        asset_interior_box_fill: ${colour/xxp/L_RED}
-        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        asset_interior_box_fill: ${colour/wikipedia/red}
+        rust_bar_box_fill: ${colour/wikipedia/blue}
         long_name_text_text: "4"
         cost_text_text:
         rusted_text_text:

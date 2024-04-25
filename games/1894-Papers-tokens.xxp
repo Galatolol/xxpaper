@@ -242,7 +242,7 @@ company:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
           short_name_text_size: 20
           #short_name_text_x_inset: 0
-          short_name_text_y: 11 
+          short_name_text_y: 11
           #15 jeśli nie token
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
@@ -513,35 +513,6 @@ private:
         cost_text_text: "Cost: F50"
         revenue_text_text: "Revenue: F10"
 
-    #P4_b:
-    #  _:
-    #    long_name_text_text: |
-    #        Ligne de Coudekerque-Branche
-    #        aux Fontinettesg
-    #    power_text_text: |
-    #        Owning company pays F40 for ferry marker.
-    #        Owning company may pay F60 to place a special
-    #        station marker in Calais (B9) or Dunkerque (B11).
-    #        Counts as station placement. Has to be connected.
-    #    sell_text_text: "May be sold for F45 – F180"
-    #    cost_text_text: "Cost: F90"
-    #    revenue_text_text: "Revenue: F15"
-
-    #P5_b:
-    #  _:
-    #    long_name_text_text: |
-    #        Crédit Mobilier
-    #    power_text_text: |
-    #        At the start of blue phase,
-    #        owning player gets F500 from the bank.
-    #        From the next Stock Round and until this closes,
-    #        at the start of each Operating Round,
-    #        they must pay F60 to the bank.
-    #    sell_text_text: "Cannot be sold"
-    #    cost_text_text: "Cost: F70"
-    #    revenue_text_text: "Revenue: F0 / –60"
-    #    closes_text_text: "Closes in purple phase"
-
 train:
   _:
     rusted_text_size: 13
@@ -628,11 +599,10 @@ train:
             Upgrade to
             Diesel: F450
       model:
-        index: $[index_of (3)]   
+        index: $[index_of (3)]
 
     D:
       _:
-        #asset_interior_box_fill: ${colour/wikipedia/cool_black}
         asset_interior_box_fill_p: PURPLE
         rust_bar_box_fill_p: BLACK
         long_name_text_text: "Diesel"
@@ -644,7 +614,7 @@ train:
 
     p1Pa:
       _:
-        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        asset_interior_box_fill: ${colour/wikipedia/dodger_blue}
         rust_bar_box_fill: ${colour/xxp/L_RED}
         long_name_text_text: "1"
         cost_text_text:
@@ -654,7 +624,7 @@ train:
 
     p2Pa:
       _:
-        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        asset_interior_box_fill: ${colour/wikipedia/dodger_blue}
         rust_bar_box_fill: ${colour/xxp/L_RED}
         long_name_text_text: "2"
         cost_text_text:
@@ -664,7 +634,7 @@ train:
 
     p3Pa:
       _:
-        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        asset_interior_box_fill: ${colour/wikipedia/dodger_blue}
         rust_bar_box_fill: ${colour/xxp/L_RED}
         long_name_text_text: "3"
         cost_text_text:
@@ -674,7 +644,7 @@ train:
 
     p4Pa:
       _:
-        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        asset_interior_box_fill: ${colour/wikipedia/dodger_blue}
         rust_bar_box_fill: ${colour/xxp/L_RED}
         long_name_text_text: "4"
         cost_text_text:
@@ -685,7 +655,7 @@ train:
     p1Pb:
       _:
         asset_interior_box_fill: ${colour/xxp/L_RED}
-        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/wikipedia/dodger_blue}
         long_name_text_text: "1"
         cost_text_text:
         rusted_text_text:
@@ -695,7 +665,7 @@ train:
     p2Pb:
       _:
         asset_interior_box_fill: ${colour/xxp/L_RED}
-        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/wikipedia/dodger_blue}
         long_name_text_text: "2"
         cost_text_text:
         rusted_text_text:
@@ -705,7 +675,7 @@ train:
     p3Pb:
       _:
         asset_interior_box_fill: ${colour/xxp/L_RED}
-        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/wikipedia/dodger_blue}
         long_name_text_text: "3"
         cost_text_text:
         rusted_text_text:
@@ -715,7 +685,7 @@ train:
     p4Pb:
       _:
         asset_interior_box_fill: ${colour/xxp/L_RED}
-        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/wikipedia/dodger_blue}
         long_name_text_text: "4"
         cost_text_text:
         rusted_text_text:

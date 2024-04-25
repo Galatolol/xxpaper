@@ -50,6 +50,7 @@ company:
       loan_5_text_y: $[${loan_10_text/y} - 30]
   share:
     _:
+      long_name_text_size: 12
       type_bar_box_fill: ${colour/wikipedia/golden_yellow}
       share_num_text_x: 165
   token:
@@ -129,6 +130,9 @@ company:
         _major_fill: ${colour/x11/gold}
         _minor_fill: ${colour/x11/limegreen}
         _related_fill: ${colour/x11/yellowgreen}
+      share:
+        _:
+          long_name_text_size: 11
 
     KWW:
       _:
@@ -143,6 +147,9 @@ company:
         _related_fill: ${colour/wikipedia/plum_web}
         middle_rotate_angle: 135
         name_stripe_box_fill: ${colour/xxp/BLACK}
+      share:
+        _:
+          long_name_text_size: 11
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
@@ -252,7 +259,7 @@ company:
       token:
         _:
           short_name_text_size: 7
-          short_name_text_y: 19.8
+          short_name_text_y: 19.9
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
 
@@ -378,7 +385,8 @@ company:
     BD:
       _:
         long_name_text_text: |
-            Linia Bogumin–Dziedzice
+            Linia
+            Bogumin–Dziedzice
         short_name_text_text: BD
         token_1_text_text: E10
         _major_fill: ${colour/wikipedia/jungle_green}

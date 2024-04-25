@@ -66,7 +66,7 @@ share_num_text:
   h_center: -1
   v_center: 1
   fill: $[black_or_white (${asset_interior_box/fill})]
-  typeface: ${DEFAULT/typeface_italic}
+  typeface: ${DEFAULT/typeface_regular}
   size: 11
   text: 1 Share
 
@@ -108,7 +108,7 @@ note_text:
   x: 101
   y: $[${long_name_text/y} - 60]
   typeface: ${DEFAULT/typeface_italic}
-  fill: $[black_or_white (${asset_interior_box/fill})]  
+  fill: $[black_or_white (${asset_interior_box/fill})]
 
 token_1_embed:
   suppress: False

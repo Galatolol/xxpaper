@@ -98,9 +98,8 @@ token_1_circle:
 token_1_text:
   suppress: $["${token_1_text/text}" == ""]
   typeface: ${DEFAULT/typeface}
-  size: 12
   x: 42
-  y: 73.67
+  y: 99.67
   h_center: 0
   v_center: 0
   fill: $[black_or_white (${token_1_circle/fill})]
