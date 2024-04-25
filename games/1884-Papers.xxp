@@ -281,6 +281,7 @@ company:
           - outline_circle
         ELEMENTS: ${TEMPLATE_stripey_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_stripey_cross_embed/.}
+
     MM:
       _:
         long_name_text_text: |
@@ -291,6 +292,7 @@ company:
         _major_fill: ${colour/x11/antiquewhite2}
         _minor_fill: ${_/_major_fill}
         _related_fill: ${colour/x11/antiquewhite}
+        name_stripe_box_fill: ${colour/xxp/BLACK}
 
     JSW:
       _:
