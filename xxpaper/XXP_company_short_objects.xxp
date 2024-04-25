@@ -1,16 +1,12 @@
-TEMPLATE_share_default:
+TEMPLATE_short_default:
   - asset_interior_box
   - rotate
   - side_bar_box
-  - side_bar_lsplit_box
-  - side_bar_rsplit_box
-  - type_bar_box
-  - share_desc_text
-  - share_pct_text
-  - share_num_text
+  - short_desc_text
+  - short_pct_text
+  - short_num_text
   - long_name_text
   - comment_text
-  - note_text
   - token_2a_embed
   - token_3a_embed
   - token_1_embed
@@ -18,7 +14,7 @@ TEMPLATE_share_default:
   - token_2b_embed
 
 asset_interior_box:
-  fill: $[desaturate_and_brighten (${_/_related_fill}, 0.04, 0.95)]
+  fill: ${colour/hollasch/firebrick}
 
 asset_interior_clone:
   of: asset_interior_box
@@ -38,29 +34,7 @@ side_bar_box:
   y: ${asset_interior_box/x}
   fill: ${_/_related_fill}
 
-side_bar_rsplit_box:
-  suppress: $[n != "1"]
-  x_inset: 15
-  y_inset: 0
-  x: 2
-  y: ${asset_interior_box/x}
-  fill: $[black_or_white (${side_bar_box/fill})]
-
-side_bar_lsplit_box:
-  suppress: $[n != "1"]
-  x_inset: 19
-  y_inset: 0
-  x: 2
-  y: ${asset_interior_box/x}
-  fill: $[black_or_white (${side_bar_box/fill})]
-
-type_bar_box:
-  x: ${asset_interior_box/y}
-  y: 11
-  fill: ${colour/xxp/DIRECTOR}
-  suppress: True
-
-share_num_text:
+short_num_text:
   x: 160
   y: 1.5
   h_center: -1
@@ -68,25 +42,25 @@ share_num_text:
   fill: $[black_or_white (${asset_interior_box/fill})]
   typeface: ${DEFAULT/typeface_italic}
   size: 11
-  text: 1 Share
+  text: 1 Short Share
 
-share_pct_text:
+short_pct_text:
   text: 10%
   x: 18
   y: 1.5
   h_center: 0
   v_center: -1
-  typeface: ${DEFAULT/typeface_regular}
-  size: 12
+  typeface: ${DEFAULT/typeface_italic}
+  size: 11
   fill: $[black_or_white (${_/_related_fill})]
 
-share_desc_text:
-  text: President
+short_desc_text:
+  text: Director
   x: 64
   y: 1.5
   h_center: 0
   v_center: 1
-  typeface: ${DEFAULT/typeface_regular}
+  typeface: ${DEFAULT/typeface_italic}
   size: 11
   suppress: True
 
@@ -99,17 +73,6 @@ comment_text:
   typeface: ${DEFAULT/typeface_italic}
   size: 8
 
-note_text:
-  h_center: 0
-  v_center: -1
-  size: 9
-  x_inset: 0
-  y_inset: 0
-  x: 101
-  y: $[${long_name_text/y} - 60]
-  typeface: ${DEFAULT/typeface_italic}
-  fill: $[black_or_white (${asset_interior_box/fill})]  
-
 token_1_embed:
   suppress: False
   typ: token
@@ -120,13 +83,13 @@ token_2a_embed:
   suppress: True
   typ: token
   x_inset: -4
-  y_inset: $[(${side_bar_box/y} - 10) / 2.0 + ${type_bar_box/y}]
+  y_inset: $[(${side_bar_box/y} - 10) / 2.0]
 
 token_2b_embed:
   suppress: True
   typ: token
   x_inset: -4
-  y_inset: 20
+  dfgfgy_inset: 20
   y_inset: 12
 
 token_3a_embed:

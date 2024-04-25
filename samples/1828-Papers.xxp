@@ -75,12 +75,9 @@ company:
           _major_fill: ${colour/wikipedia/ultramarine}
           _minor_fill: ${colour/wikipedia/ultramarine}
           short_name_text_fill: $[black_or_white (${colour/wikipedia/ultramarine})]
-          short_name_text_size: 12
-          short_name_text_x_inset: 0
-          short_name_text_y_inset: -2
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: "$[index_of (10)]"
+        index: "$[index_of (11)]"
 
     B&O:
       _:
@@ -142,9 +139,6 @@ company:
       token:
         _:
           short_name_text_fill: $[black_or_white (${colour/wikipedia/ultramarine})]
-          short_name_text_size: 12
-          short_name_text_x_inset: 0
-          short_name_text_y_inset: -2
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
         index: "$[index_of (10)]"
@@ -229,7 +223,7 @@ company:
         token_2_text_text: $100
         token_3_text_text: $100
         token_4_text_text: $100
-        _major_fill: ${colour/xxp/M_RED}
+        _major_fill: ${colour/wikipedia/boston_university_red}
         _minor_fill: ${colour/xxp/WHITE}
         comment_text_text: |
             "The Mop"
@@ -271,10 +265,10 @@ company:
         token_2_text_text: $100
         token_3_text_text: $100
         token_4_text_text: $100
-        _major_fill: ${colour/xxp/M_RED}
-        _major_fill_2: ${colour/xxp/L_YELLOW}
-        _minor_fill: ${_/_major_fill}
-        _minor_fill_2: ${_/_major_fill_2}
+        _major_fill: ${colour/wikipedia/boston_university_red}
+        _minor_fill: ${colour/wikipedia/boston_university_red}
+        _major_fill_2: ${colour/wikipedia/amber}
+        _minor_fill_2: ${colour/wikipedia/amber}
         _related_fill: ${colour/x11/lightcoral}
         comment_text_text: |
             "Narrow & Wobbly"
@@ -307,9 +301,6 @@ company:
           _major_fill: ${colour/x11/sandybrown}
           _minor_fill: ${colour/x11/sandybrown}
           short_name_text_fill: $[black_or_white (${colour/x11/sandybrown})]
-          short_name_text_size: 12
-          short_name_text_x_inset: 0
-          short_name_text_y_inset: -2
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
         index: "$[index_of (10)]"
@@ -324,7 +315,7 @@ company:
         token_2_text_text: $100
         token_3_text_text: $100
         _major_fill: ${colour/xxp/BLACK}
-        _minor_fill: ${colour/xxp/WHITE}
+        _minor_fill: ${colour/xxp/BLACK}
         comment_text_text: |
             "No You Can't"
         _related_fill: ${colour/x11/gray50}
@@ -332,6 +323,8 @@ company:
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        vertical_stripe_box:
+          fill: ${colour/xxp/WHITE}
         index: "$[index_of (10)]"
 
     OS&H:
@@ -357,7 +350,7 @@ company:
     PRR:
       _:
         long_name_text_text: |
-             Pennsylania
+             Pennsylvania
              Railroad
         short_name_text_text: PRR
         token_1_text_text: Free
@@ -374,9 +367,6 @@ company:
       token:
         _:
           short_name_text_fill: $[black_or_white (${colour/wikipedia/ultramarine})]
-          short_name_text_size: 12
-          short_name_text_x_inset: 0
-          short_name_text_y_inset: -2
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
         index: "$[index_of (11)]"
@@ -400,7 +390,7 @@ company:
         ELEMENTS: ${TEMPLATE_boxes/.}
         EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
         short_name_text:
-          fill:  ${colour/xxp/L_YELLOW}
+          fill:  ${colour/wikipedia/canary_yellow}
         index: $[index_of (10)]
 
     C&P:
@@ -420,7 +410,7 @@ company:
           comment_text_text: |
               Owning player may place or upgrade track
               tiles on a route connected to Peterborough
-              (C16). Half-pays the revenue of a 2-train
+              (C15). Half-pays the revenue of a 2-train
               route from that track tile.
         index: $[index_of (6)]
       share:
@@ -458,9 +448,9 @@ marker:
     merger:
       _:
         name_stripe_box_suppress: True
-        outer_circle_fill: ${colour/xxp/M_BLUE}
-        middle_circle_fill: ${colour/xxp/L_YELLOW}
-        inner_circle_fill: ${colour/xxp/M_RED}
+        outer_circle_fill: ${colour/wikipedia/bleu_de_france}
+        middle_circle_fill: ${colour/wikipedia/amber}
+        inner_circle_fill: ${colour/wikipedia/boston_university_red}
       token:
         ELEMENTS: ${TEMPLATE_bullseye/.}
         index: "$[index_of (1)]"
@@ -468,9 +458,9 @@ marker:
     round:
       _:
         name_stripe_box_suppress: True
-        outer_circle_fill: ${colour/xxp/M_BLUE}
+        outer_circle_fill: ${colour/wikipedia/bleu_de_france}
         middle_circle_fill: ${colour/xxp/WHITE}
-        inner_circle_fill: ${colour/xxp/M_RED}
+        inner_circle_fill: ${colour/wikipedia/boston_university_red}
       token:
         ELEMENTS: ${TEMPLATE_bullseye/.}
         index: "$[index_of (1)]"
@@ -480,6 +470,7 @@ private:
     closes_text_text: "Closes: In RED phase"
 
   index:
+
     SV:
       _:
         asset_interior_box_fill: ${colour/scale/yellow_0}
@@ -508,7 +499,7 @@ private:
         power_text_text: |
             Blocks: Burlington (B24).
             Owning corporation may place a free,
-            track tile at B25 at any time in
+            track tile at B24 at any time in
             its operations.
         cost_text_text: "Cost: $40"
         revenue_text_text: "Revenue: $10"
@@ -597,7 +588,7 @@ private:
             May not be sold to a public company.
         cost_text_text: "Cost: $250"
         revenue_text_text: "Revenue: $40"
-        closes_text_text: "Closes: In RED phase or when purchases a train"
+        closes_text_text: "Closes: In RED phase or when acquires a train"
 
     GT:
       _:
@@ -610,7 +601,7 @@ private:
             May not be sold to a public company.
         cost_text_text: "Cost: $250"
         revenue_text_text: "Revenue: $40"
-        closes_text_text: "Closes: In RED phase or when purchases a train"
+        closes_text_text: "Closes: In RED phase or when acquires a train"
 
     IC:
       _:
@@ -623,7 +614,7 @@ private:
             May not be sold to a public company.
         cost_text_text: "Cost: $250"
         revenue_text_text: "Revenue: $40"
-        closes_text_text: "Closes: In RED phase or when purchases a train"
+        closes_text_text: "Closes: In RED phase or when acquires a train"
 
     MC:
       _:
@@ -637,7 +628,7 @@ private:
             May not be sold to a public company.
         cost_text_text: "Cost: $250"
         revenue_text_text: "Revenue: $40"
-        closes_text_text: "Closes: In RED phase or when purchases a train"
+        closes_text_text: "Closes: In RED phase or when acquires a train"
 
     MP:
       _:
@@ -651,7 +642,7 @@ private:
             May not be sold to a public company.
         cost_text_text: "Cost: $250"
         revenue_text_text: "Revenue: $40"
-        closes_text_text: "Closes: In RED phase or when purchases a train"
+        closes_text_text: "Closes: In RED phase or when acquires a train"
 
     NKP:
       _:
@@ -665,7 +656,7 @@ private:
             May not be sold to a public company.
         cost_text_text: "Cost: $250"
         revenue_text_text: "Revenue: $40"
-        closes_text_text: "Closes: In RED phase or when purchases a train"
+        closes_text_text: "Closes: In RED phase or when acquires a train"
 
     NW:
       _:
@@ -679,7 +670,7 @@ private:
             May not be sold to a public company.
         cost_text_text: "Cost: $250"
         revenue_text_text: "Revenue: $40"
-        closes_text_text: "Closes: In RED phase or when purchases a train"
+        closes_text_text: "Closes: In RED phase or when acquires a train"
 
     OS&H:
       _:
@@ -693,7 +684,7 @@ private:
             May not be sold to a public company.
         cost_text_text: "Cost: $250"
         revenue_text_text: "Revenue: $40"
-        closes_text_text: "Closes: In RED phase or when purchases a train"
+        closes_text_text: "Closes: In RED phase or when acquires a train"
 
 train:
 
@@ -770,8 +761,8 @@ train:
 
     p1Pa:
       _:
-        asset_interior_box_fill: ${colour/xxp/M_BLUE}
-        rust_bar_box_fill: ${colour/xxp/L_RED}
+        asset_interior_box_fill: ${colour/wikipedia/bleu_de_france}
+        rust_bar_box_fill: ${colour/wikipedia/cerise}
         long_name_text_text: "1"
         cost_text_text:
         rusted_text_text:
@@ -780,8 +771,8 @@ train:
 
     p2Pa:
       _:
-        asset_interior_box_fill: ${colour/xxp/M_BLUE}
-        rust_bar_box_fill: ${colour/xxp/L_RED}
+        asset_interior_box_fill: ${colour/wikipedia/bleu_de_france}
+        rust_bar_box_fill: ${colour/wikipedia/cerise}
         long_name_text_text: "2"
         cost_text_text:
         rusted_text_text:
@@ -790,8 +781,8 @@ train:
 
     p3Pa:
       _:
-        asset_interior_box_fill: ${colour/xxp/M_BLUE}
-        rust_bar_box_fill: ${colour/xxp/L_RED}
+        asset_interior_box_fill: ${colour/wikipedia/bleu_de_france}
+        rust_bar_box_fill: ${colour/wikipedia/cerise}
         long_name_text_text: "3"
         cost_text_text:
         rusted_text_text:
@@ -800,8 +791,8 @@ train:
 
     p4Pa:
       _:
-        asset_interior_box_fill: ${colour/xxp/M_BLUE}
-        rust_bar_box_fill: ${colour/xxp/L_RED}
+        asset_interior_box_fill: ${colour/wikipedia/bleu_de_france}
+        rust_bar_box_fill: ${colour/wikipedia/cerise}
         long_name_text_text: "4"
         cost_text_text:
         rusted_text_text:
@@ -810,8 +801,8 @@ train:
 
     p5Pa:
       _:
-        asset_interior_box_fill: ${colour/xxp/M_BLUE}
-        rust_bar_box_fill: ${colour/xxp/L_RED}
+        asset_interior_box_fill: ${colour/wikipedia/bleu_de_france}
+        rust_bar_box_fill: ${colour/wikipedia/cerise}
         long_name_text_text: "5"
         cost_text_text:
         rusted_text_text:
@@ -820,8 +811,8 @@ train:
 
     p1Pb:
       _:
-        asset_interior_box_fill: ${colour/xxp/L_RED}
-        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        asset_interior_box_fill: ${colour/wikipedia/cerise}
+        rust_bar_box_fill: ${colour/wikipedia/bleu_de_france}
         long_name_text_text: "1"
         cost_text_text:
         rusted_text_text:
@@ -830,8 +821,8 @@ train:
 
     p2Pb:
       _:
-        asset_interior_box_fill: ${colour/xxp/L_RED}
-        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        asset_interior_box_fill: ${colour/wikipedia/cerise}
+        rust_bar_box_fill: ${colour/wikipedia/bleu_de_france}
         long_name_text_text: "2"
         cost_text_text:
         rusted_text_text:
@@ -840,8 +831,8 @@ train:
 
     p3Pb:
       _:
-        asset_interior_box_fill: ${colour/xxp/L_RED}
-        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        asset_interior_box_fill: ${colour/wikipedia/cerise}
+        rust_bar_box_fill: ${colour/wikipedia/bleu_de_france}
         long_name_text_text: "3"
         cost_text_text:
         rusted_text_text:
@@ -850,8 +841,8 @@ train:
 
     p4Pb:
       _:
-        asset_interior_box_fill: ${colour/xxp/L_RED}
-        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        asset_interior_box_fill: ${colour/wikipedia/cerise}
+        rust_bar_box_fill: ${colour/wikipedia/bleu_de_france}
         long_name_text_text: "4"
         cost_text_text:
         rusted_text_text:
@@ -860,8 +851,8 @@ train:
 
     p5Pb:
       _:
-        asset_interior_box_fill: ${colour/xxp/L_RED}
-        rust_bar_box_fill: ${colour/xxp/M_BLUE}
+        asset_interior_box_fill: ${colour/wikipedia/cerise}
+        rust_bar_box_fill: ${colour/wikipedia/bleu_de_france}
         long_name_text_text: "5"
         cost_text_text:
         rusted_text_text:

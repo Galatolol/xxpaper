@@ -40,7 +40,8 @@ train:
     size: 14
     h_center: 0
     v_center: 0
-    x: 50
+    # x: 50
+    x: $[${asset_interior_box/x} / 2]
     y: 70
     text: "Cost: ${_/cost_text_text_p}"
 

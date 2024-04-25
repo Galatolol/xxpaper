@@ -63,6 +63,7 @@ company:
         type_bar_box:
           suppress: False
         share_num_text:
+          fill: $[black_or_white (${type_bar_box/fill})]
           text: 2 Shares
         share_desc_text:
           suppress: False
@@ -100,6 +101,14 @@ company:
     _include_:
       - XXP_company_concession_objects.xxp
 
+
+  short:
+    CUT_ELEMENT: cutline_box
+    ELEMENTS: ${TEMPLATE_short_default/.}
+    index:
+    cutline_box: ${DEFAULT/asset_tile}
+    _include_:
+      - XXP_company_short_objects.xxp
 
   token:
     index:
