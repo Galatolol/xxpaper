@@ -316,8 +316,13 @@ company:
         short_name_text_text: CF
         token_1_text_text: E12
         _major_fill: ${colour/wikipedia/gold_metallic}
+        _major_fill_2: ${colour/wikipedia/black}
+        _minor_fill_2: ${_/_major_fill_2}
         _minor_fill: ${_/_major_fill}
         _related_fill: ${colour/wikipedia/jonquil}
+      token:
+        ELEMENTS: ${TEMPLATE_stripey/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
 
     Inka:
       _:
