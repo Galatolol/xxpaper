@@ -353,7 +353,7 @@ loan_1_box:
   y: ${loan_1_box/x}
   x_inset: $[${outside_box/x} - ${loan_1_box/x} * 2 - 14.5]
   y_inset: 215
-  radius: 5
+  radius: 0
 
 loan_1_text:
   suppress: $["${loan_1_text/text}" == ""]
@@ -374,7 +374,7 @@ loan_2_box:
   y: ${loan_1_box/x}
   x_inset: $[${loan_1_box/x_inset} + ${loan_1_box/x} + 7]
   y_inset: 215
-  radius: 5
+  radius: 0
 
 loan_2_text:
   suppress: $["${loan_2_text/text}" == ""]
@@ -395,7 +395,7 @@ loan_3_box:
   y: ${loan_1_box/x}
   x_inset: ${loan_1_box/x_inset}
   y_inset: $[${loan_1_box/y_inset} - ${loan_1_box/x} - 7]
-  radius: 5
+  radius: 0
 
 loan_3_text:
   suppress: $["${loan_3_text/text}" == ""]
@@ -416,7 +416,7 @@ loan_4_box:
   y: ${loan_1_box/x}
   x_inset: ${loan_2_box/x_inset}
   y_inset: $[${loan_2_box/y_inset} - ${loan_1_box/x} - 7]
-  radius: 5
+  radius: 0
 
 loan_4_text:
   suppress: $["${loan_4_text/text}" == ""]
@@ -437,7 +437,7 @@ loan_5_box:
   y: ${loan_1_box/x}
   x_inset: ${loan_1_box/x_inset}
   y_inset: $[${loan_3_box/y_inset} - ${loan_1_box/x} - 7]
-  radius: 5
+  radius: 0
 
 loan_5_text:
   suppress: $["${loan_5_text/text}" == ""]
@@ -458,7 +458,7 @@ loan_6_box:
   y: ${loan_1_box/x}
   x_inset: ${loan_2_box/x_inset}
   y_inset: $[${loan_4_box/y_inset} - ${loan_1_box/x} - 7]
-  radius: 5
+  radius: 0
 
 loan_6_text:
   suppress: $["${loan_6_text/text}" == ""]
@@ -479,7 +479,7 @@ loan_7_box:
   y: ${loan_1_box/x}
   x_inset: ${loan_1_box/x_inset}
   y_inset: $[${loan_5_box/y_inset} - ${loan_1_box/x} - 7]
-  radius: 5
+  radius: 0
 
 loan_7_text:
   suppress: $["${loan_7_text/text}" == ""]
@@ -500,7 +500,7 @@ loan_8_box:
   y: ${loan_1_box/x}
   x_inset: ${loan_2_box/x_inset}
   y_inset: $[${loan_6_box/y_inset} - ${loan_1_box/x} - 7]
-  radius: 5
+  radius: 0
 
 loan_8_text:
   suppress: $["${loan_8_text/text}" == ""]
@@ -521,7 +521,7 @@ loan_9_box:
   y: ${loan_1_box/x}
   x_inset: ${loan_1_box/x_inset}
   y_inset: $[${loan_7_box/y_inset} - ${loan_1_box/x} - 7]
-  radius: 5
+  radius: 0
 
 loan_9_text:
   suppress: $["${loan_9_text/text}" == ""]
@@ -542,7 +542,7 @@ loan_10_box:
   y: ${loan_1_box/x}
   x_inset: ${loan_2_box/x_inset}
   y_inset: $[${loan_8_box/y_inset} - ${loan_1_box/x} - 7]
-  radius: 5
+  radius: 0
 
 loan_10_text:
   suppress: $["${loan_1_text/text}" == ""]
