@@ -39,7 +39,7 @@ company:
             CFOR
         short_name_text_text: CFOR
         token_1_text_text: D3
-        token_2_text_text: H2
+        token_2_text_text: H3
         token_2_text_typeface: ${DEFAULT/typeface_italic}
         token_4_text_text: F100
         token_5_text_text: F100
@@ -164,7 +164,7 @@ company:
         long_name_text_text: |
             Est
         short_name_text_text: Est
-        token_1_text_text: I9
+        token_1_text_text: I10
         token_4_text_text: F100
         token_5_text_text: F100
         _major_fill: ${colour/wikipedia/amber_sae_ece}
@@ -192,7 +192,7 @@ company:
         long_name_text_text: |
             PLM
         short_name_text_text: PLM
-        token_1_text_text: G4
+        token_1_text_text: G6
         token_4_text_text: F100
         token_5_text_text: F100
         share_pct_text_fill: ${colour/xxp/BLACK}
@@ -224,7 +224,7 @@ company:
         long_name_text_text: |
              Belge
         short_name_text_text: B
-        token_1_text_text: D17
+        token_1_text_text: E16
         _major_fill: ${colour/xxp/D_GREEN}
         _minor_fill: ${colour/xxp/D_GREEN}
         _related_fill: ${colour/hollasch/cinnabar_green}
