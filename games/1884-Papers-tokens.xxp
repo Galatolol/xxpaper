@@ -1,0 +1,182 @@
+company:
+  charter:
+    _:
+      long_name_text_size: 14
+      token_1_circle_y: 257
+      token_2_circle_y: $[${token_1_circle/y} - 53]
+      token_3_circle_y: $[${token_2_circle/y} - 53]
+      token_4_circle_y: $[${token_3_circle/y} - 53]
+      token_5_circle_y: $[${token_4_circle/y} - 53]
+      token_1_text_y: $[${token_1_circle/y} - 27]
+      token_1_circle_suppress: false
+      token_2_circle_suppress: false
+      token_3_circle_suppress: false
+      token_4_circle_suppress: false
+      token_5_circle_suppress: false
+      token_6_circle_suppress: false
+      token_7_circle_suppress: false
+      token_1_circle_fill: ${colour/hollasch/grey}
+      token_2_circle_fill: ${colour/hollasch/grey}
+      token_3_text_y: $[${token_3_circle/y} - 27]
+      token_4_text_y: $[${token_4_circle/y} - 27]
+      token_5_text_y: $[${token_5_circle/y} - 27]
+      token_1_text_size: 10
+      token_1_text_typeface: ${DEFAULT/typeface_italic}
+      comment_text_text: ""
+      label_text_suppress: True
+      comment_text_x: 130
+      comment_text_size: 10
+      comment_text_typeface: ${DEFAULT/typeface}
+      loan_1_box_y_inset: 230
+      loan_1_box_suppress: False
+      #loan_1_text_text: "0 zł"
+      loan_1_text_size: 10
+      loan_2_box_suppress: False
+      #loan_2_text_text: "10 zł"
+      loan_2_text_size: 10
+      loan_3_box_suppress: False
+      #loan_3_text_text: "30 zł"
+      loan_3_text_size: 10
+      loan_4_box_suppress: False
+      #loan_4_text_text: "50 zł"
+      loan_4_text_size: 10
+      loan_5_box_suppress: False
+      loan_5_text_suppress: False
+      #loan_5_text_text: "70 zł"
+      loan_5_text_size: 10
+      #loan_6_text_text: "100 zł"
+      loan_6_text_size: 10
+      loan_6_text_x: ${loan_5_text/x}
+      loan_6_text_y: $[${loan_5_box/y} - 0]
+  share:
+    _:
+      long_name_text_size: 12
+      type_bar_box_fill: ${colour/wikipedia/golden_yellow}
+      share_num_text_x: 165
+  token:
+    _:
+      short_name_text_size: 8
+    index: $[index_of (9)]
+
+  index:
+    MW:
+      _:
+        long_name_text_text: |
+            Magistrala Węglowa
+        short_name_text_text: MW
+        #token_1_text_text: E4
+        _major_fill: ${colour/wikipedia/canary_yellow}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/wikipedia/icterine}
+        name_stripe_box_suppress: True
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 10
+          #short_name_text_y: 18
+
+    LHS:
+      _:
+        long_name_text_text: |
+             Linia
+             Hutniczo–Siarkowa
+        short_name_text_text: LHS
+        #token_1_text_text: H3
+        _major_fill: ${colour/xxp/D_GREEN}
+        _minor_fill: ${colour/xxp/D_GREEN}
+        _related_fill: ${colour/hollasch/cinnabar_green}
+        name_stripe_box_suppress: True
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 10
+          #short_name_text_y: 18
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+
+    MM:
+      _:
+        long_name_text_text: |
+            Kolej Miast
+            Morawsko–Śląskich
+        short_name_text_text: MM
+        token_1_text_text: C12
+        _major_fill: ${colour/x11/antiquewhite2}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/x11/antiquewhite}
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+
+    JSW:
+      _:
+        long_name_text_text: |
+            Jastrzębska
+            Spółka Węglowa
+        short_name_text_text: JSW
+        #token_1_text_text: B9
+        _major_fill: ${colour/wikipedia/black}
+        _minor_fill: ${colour/wikipedia/lavender_gray}
+        _related_fill: ${colour/wikipedia/lavender_gray}
+        name_stripe_box_suppress: True
+        middle_box_fill: ${colour/wikipedia/dark_gray}
+      token:
+        ELEMENTS: ${TEMPLATE_boxes/.}
+        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
+
+    AB:
+      _:
+        long_name_text_text: |
+            Arcyksiążęcy
+            Browar Żywiec
+        short_name_text_text: AB
+        #token_1_text_text: H13
+        _major_fill: ${colour/wikipedia/crimson_glory}
+        _minor_fill: ${colour/xxp/WHITE}
+        _related_fill: ${colour/wikipedia/carmine_m_p}
+        side_bar_lsplit_box_fill: ${colour/xxp/WHITE}
+        side_bar_rsplit_box_fill: ${colour/xxp/WHITE}
+        middle_rotate_angle: 45
+        name_stripe_box_suppress: True
+      token:
+        _:
+          outer_circle_fill: ${_/_minor_fill}
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 10
+          short_name_text_x_inset: 0
+          short_name_text_y_inset: -1
+        ELEMENTS: ${TEMPLATE_boxes/.}
+        EMBED_ELEMENTS: ${TEMPLATE_boxes_embed/.}
+
+marker:
+  index:
+    round:
+      token:
+        ELEMENTS:
+          - token_interior_box
+          - outer_circle
+          - middle_circle
+          - inner_circle
+        index: $[index_of (1)]
+      outer_circle:
+        fill: ${colour/galatolol/yellow}
+      middle_circle:
+        fill: ${colour/galatolol/green}
+      inner_circle:
+        fill: ${colour/galatolol/brown}
+
+train:
+  _:
+    rusted_text_size: 13
+    rusted_text_y: 6
+    rust_bar_box_y: 20
+    long_name_text_y: 95
+
+  index:
+    p1Pa:
+      _:
+        asset_interior_box_fill: ${colour/xxp/M_BLUE}
+        rust_bar_box_fill: ${colour/xxp/L_RED}
+        long_name_text_text: "1"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"

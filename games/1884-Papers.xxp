@@ -8,6 +8,7 @@ company:
       token_4_circle_y: $[${token_3_circle/y} - 53]
       token_5_circle_y: $[${token_4_circle/y} - 53]
       token_1_text_y: $[${token_1_circle/y} - 27]
+      token_1_circle_suppress: false
       token_2_circle_suppress: false
       token_3_circle_suppress: false
       token_4_circle_suppress: false
@@ -64,7 +65,7 @@ company:
             Kopalnia Węgla
             Ziemowit
         short_name_text_text: ZMT
-        token_1_text_text: E6
+        #token_1_text_text: E6
         _major_fill: ${colour/wikipedia/barn_red}
         _major_fill_2: ${colour/wikipedia/tractor_red}
         _minor_fill: ${_/_major_fill}
@@ -80,7 +81,7 @@ company:
             Centralna
             Magistrala Kolejowa
         short_name_text_text: CMK
-        token_1_text_text: C4
+        #token_1_text_text: C4
         _major_fill: ${colour/wikipedia/blue_ryb}
         _major_fill_2: ${colour/wikipedia/banana_yellow}
         _minor_fill_2: ${_/_major_fill_2}
@@ -95,7 +96,7 @@ company:
         long_name_text_text: |
             Pater Familias Krz.
         short_name_text_text: PF
-        token_1_text_text: D3
+        #token_1_text_text: D3
         _major_fill: ${colour/x11/red}
         _minor_fill: ${colour/xxp/BLACK}
         _related_fill: ${colour/hollasch/tomato}
@@ -108,7 +109,7 @@ company:
         long_name_text_text: |
             Magistrala Węglowa
         short_name_text_text: MW
-        token_1_text_text: E4
+        #token_1_text_text: E4
         _major_fill: ${colour/wikipedia/canary_yellow}
         _minor_fill: ${_/_major_fill}
         _related_fill: ${colour/wikipedia/icterine}
@@ -125,7 +126,7 @@ company:
             Towarzystwo Kolei
             Krakowsko–Górnośląskiej
         short_name_text_text: TKK
-        token_1_text_text: H7
+        #token_1_text_text: H7
         _major_fill: ${colour/x11/gold}
         _minor_fill: ${colour/x11/limegreen}
         _related_fill: ${colour/x11/yellowgreen}
@@ -139,7 +140,7 @@ company:
             Kolej
             Warszawsko–Wiedeńska
         short_name_text_text: KWW
-        token_1_text_text: F3
+        #token_1_text_text: F3
         share_pct_text_fill: ${colour/xxp/BLACK}
         _major_fill: ${colour/wikipedia/violet_ryb}
         _minor_fill: ${colour/wikipedia/canary_yellow}
@@ -159,7 +160,7 @@ company:
              Linia
              Hutniczo–Siarkowa
         short_name_text_text: LHS
-        token_1_text_text: H3
+        #token_1_text_text: H3
         _major_fill: ${colour/xxp/D_GREEN}
         _minor_fill: ${colour/xxp/D_GREEN}
         _related_fill: ${colour/hollasch/cinnabar_green}
@@ -178,7 +179,7 @@ company:
           Linia
           Bogumin–Dziedzice
         short_name_text_text: BD
-        token_1_text_text: E10
+        #token_1_text_text: E10
         name_stripe_box_suppress: True
         _related_fill: ${colour/hollasch/pink}
       token:
@@ -199,7 +200,7 @@ company:
         long_name_text_text: |
             Kolej Małopolska
         short_name_text_text: KM
-        token_1_text_text: G8
+        #token_1_text_text: G8
         _major_fill: ${colour/wikipedia/light_sky_blue}
         _minor_fill: ${_/_major_fill}
         _related_fill: ${colour/hollasch/powder_blue}
@@ -219,7 +220,7 @@ company:
             Pszczyńska Spółka
             MNK
         short_name_text_text: MNK
-        token_1_text_text: G8
+        #token_1_text_text: G8
         _major_fill: ${colour/wikipedia/amber_sae_ece}
         _minor_fill: ${colour/wikipedia/black}
         _related_fill: ${colour/wikipedia/pink_orange}
@@ -234,7 +235,7 @@ company:
         long_name_text_text: |
             Kolej Górnośląska
         short_name_text_text: KG
-        token_1_text_text: J5
+        #token_1_text_text: J5
         _major_fill: ${colour/wikipedia/yellow_green}
         _minor_fill: ${colour/wikipedia/lemon_lime}
         _related_fill: ${colour/wikipedia/lemon_lime}
@@ -251,7 +252,7 @@ company:
         long_name_text_text: |
             Kopalnia Ignacy
         short_name_text_text: Ign
-        token_1_text_text: B7
+        #token_1_text_text: B7
         _major_fill: ${colour/xxp/BLACK}
         _major_fill_2: ${colour/xxp/WHITE}
         _minor_fill_2: ${colour/xxp/WHITE}
@@ -299,7 +300,7 @@ company:
             Jastrzębska
             Spółka Węglowa
         short_name_text_text: JSW
-        token_1_text_text: B9
+        #token_1_text_text: B9
         _major_fill: ${colour/wikipedia/black}
         _minor_fill: ${colour/wikipedia/lavender_gray}
         _related_fill: ${colour/wikipedia/lavender_gray}
@@ -315,7 +316,7 @@ company:
             Kolej Północna
             Cesarza Ferdynanda
         short_name_text_text: CF
-        token_1_text_text: E12
+        #token_1_text_text: E12
         _major_fill: ${colour/wikipedia/gold_metallic}
         _major_fill_2: ${colour/wikipedia/black}
         _minor_fill_2: ${_/_major_fill_2}
@@ -330,7 +331,7 @@ company:
         long_name_text_text: |
             Inka
         short_name_text_text: Inka
-        token_1_text_text: I10
+        #token_1_text_text: I10
         _major_fill: ${colour/hollasch/brown_ochre}
         _minor_fill: ${colour/wikipedia/white}
         _related_fill: ${colour/hollasch/brick}
@@ -345,7 +346,7 @@ company:
             Arcyksiążęcy
             Browar Żywiec
         short_name_text_text: AB
-        token_1_text_text: H13
+        #token_1_text_text: H13
         _major_fill: ${colour/wikipedia/crimson_glory}
         _minor_fill: ${colour/xxp/WHITE}
         _related_fill: ${colour/wikipedia/carmine_m_p}
@@ -369,7 +370,7 @@ company:
             Galicyjska Kolej
             Transwersalna
         short_name_text_text: GKT
-        token_1_text_text: H13
+        #token_1_text_text: H13
         _major_fill: ${colour/wikipedia/amber_sae_ece}
         _minor_fill: ${colour/wikipedia/canary_yellow}
         _major_fill_1: ${_/_major_fill}
@@ -393,7 +394,7 @@ company:
             Cesarsko–Królewskie
             Koleje Państwowe
         short_name_text_text: CKP
-        token_1_text_text: H11
+        #token_1_text_text: H11
         _related_fill: ${colour/wikipedia/cosmic_latte}
         name_stripe_box_suppress: True
       token:
@@ -411,7 +412,7 @@ company:
         long_name_text_text: |
             Fablok
         short_name_text_text: FBL
-        token_1_text_text: E10
+        #token_1_text_text: E10
         _major_fill: ${colour/wikipedia/jungle_green}
         _minor_fill: ${colour/hollasch/turquoise_pale}
         _major_fill_1: ${_/_major_fill}
@@ -443,7 +444,107 @@ marker:
         fill: ${colour/galatolol/green}
       inner_circle:
         fill: ${colour/galatolol/brown}
+    atfa:
+      _:
+        short_name_text_text: BD
+      token:
+        index: "$[index_of (1)]"
+    gtf:
+      _:
+        short_name_text_text: CKP
+      token:
+        index: "$[index_of (1)]"
+    ccc:
+      _:
+        short_name_text_text: AB
+      token:
+        index: "$[index_of (1)]"
+    cts:
+      _:
+        short_name_text_text: CF
 
+      token:
+        index: "$[index_of (1)]"
+    ratf:
+      _:
+        short_name_text_text: FBL
+      token:
+        index: "$[index_of (1)]"
+    ctlp:
+      _:
+        short_name_text_text: Ign
+      token:
+        index: "$[index_of (1)]"
+    cda:
+      _:
+        short_name_text_text: CMK
+      token:
+        index: "$[index_of (1)]"
+    icsf:
+      _:
+        short_name_text_text: GKT
+      token:
+        index: "$[index_of (1)]"
+    ftp:
+      _:
+        short_name_text_text: JSW
+      token:
+        index: "$[index_of (1)]"
+    iltf:
+      _:
+        short_name_text_text: KM
+      token:
+        index: "$[index_of (1)]"
+    irsff:
+      _:
+        short_name_text_text: Inka
+      token:
+        index: "$[index_of (1)]"
+    rsfs:
+      _:
+        short_name_text_text: KG
+      token:
+        index: "$[index_of (1)]"
+    sflp:
+      _:
+        short_name_text_text: LHS
+      token:
+        index: "$[index_of (1)]"
+    sfma:
+      _:
+        short_name_text_text: MNK
+      token:
+        index: "$[index_of (1)]"
+    sfli:
+      _:
+        short_name_text_text: KWW
+      token:
+        index: "$[index_of (1)]"
+    sftg:
+      _:
+        short_name_text_text: MM
+      token:
+        index: "$[index_of (1)]"
+    sftc:
+      _:
+        short_name_text_text: PF
+      token:
+        index: "$[index_of (1)]"
+    sftn:
+      _:
+        short_name_text_text: ZMT
+      token:
+        index: "$[index_of (1)]"
+    sldv:
+      _:
+        short_name_text_text: MW
+      token:
+        index: "$[index_of (1)]"
+    ssfl:
+      _:
+        short_name_text_text: TKK
+      token:
+        index: "$[index_of (1)]"
 
 train:
   _:

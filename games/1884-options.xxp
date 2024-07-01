@@ -12,6 +12,7 @@ company:
       short_num_text_x: 165
       short_num_text_y: 3
       short_num_text_text: 1 Share Option
+      short_num_text_typeface: ${DEFAULT/typeface}
       short_pct_text_text: ""
     index: $[index_of (5)]
 
