@@ -157,7 +157,7 @@ company:
         _:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
           short_name_text_size: 10
-        index: "$[index_of (7)]"
+        index: "$[index_of (8)]"
 
     Est:
       _:
@@ -206,7 +206,6 @@ company:
           label_text_text: |
             Chemins de fer de Paris
             à Lyon et à la Méditerranée
-          label_text_y_inset: 250
         index: $[index_of (1)]
       share:
         _:
