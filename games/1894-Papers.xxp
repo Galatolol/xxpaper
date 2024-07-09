@@ -24,6 +24,8 @@ company:
       comment_text_x: 130
       comment_text_size: 10
       comment_text_typeface: ${DEFAULT/typeface}
+      long_name_text_size: 17
+      long_name_text_y: 306
   share:
     _:
       type_bar_box_fill: ${colour/wikipedia/golden_yellow}

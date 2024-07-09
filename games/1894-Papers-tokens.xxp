@@ -153,7 +153,7 @@ company:
         _:
           short_name_text_fill: $[black_or_white (${_/_major_fill})]
           short_name_text_size: 10
-        index: "$[index_of (7)]"
+        index: "$[index_of (8)]"
 
     Est:
       _:
