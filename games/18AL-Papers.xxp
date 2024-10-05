@@ -1,0 +1,305 @@
+company:
+  _:
+    token_2_text_text: $40
+  charter:
+    _:
+      token_1_text_typeface: ${DEFAULT/typeface_italic}
+      token_1_text_y: 202
+      token_5_circle_y: 10
+      token_5_text_y: -20
+      token_1_text_size: 12
+      token_2_text_size: 12
+      token_3_text_size: 12
+      token_4_text_size: 12
+      comment_text_text: ""
+  share:
+    _:
+      long_name_text_size: 12
+      type_bar_box_fill: ${colour/wikipedia/golden_yellow}
+      type_bar_box_y: 13
+      side_bar_lsplit_box_suppress: True
+      side_bar_rsplit_box_suppress: True
+      share_num_text_x: 167
+  token:
+    _:
+      short_name_text_size: 8
+
+  index:
+    LN:
+      _:
+        long_name_text_text: |
+            Louisville & Nashville
+            Railroad
+        short_name_text_text: L&N
+        token_1_text_text: D1
+        token_3_text_text: $100
+        token_4_text_text: $100
+        _major_fill: ${colour/wikipedia/blue_ryb}
+        _major_fill_2: ${colour/wikipedia/banana_yellow}
+        _minor_fill_2: ${_/_major_fill_2}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/hollasch/steel_blue}
+      token:
+        ELEMENTS: ${TEMPLATE_stripey/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
+        index: $[index_of (7)]
+
+    WRA:
+      _:
+        long_name_text_text: |
+            Western Railway
+            of Alabama
+        short_name_text_text: WRA
+        token_1_text_text: E12
+        token_3_text_text: $100
+        token_4_text_text: $100
+        _major_fill: ${colour/x11/red}
+        _minor_fill: ${colour/xxp/BLACK}
+        _related_fill: ${colour/hollasch/tomato}
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: $[index_of (7)]
+
+    TAG:
+      _:
+        long_name_text_text: |
+            Tennessee, Alabama
+            & Georgia Railway
+        short_name_text_text: TAG
+        token_1_text_text: F5
+        _major_fill: ${colour/wikipedia/canary_yellow}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/wikipedia/icterine}
+        name_stripe_box_suppress: True
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 10
+          short_name_text_x_inset: 0
+          #short_name_text_y_inset: -2
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of (5)]
+
+    MO:
+      _:
+        long_name_text_text: |
+            Mobile & Ohio
+            Railroad
+        short_name_text_text: M&O
+        token_1_text_text: B17
+        token_3_text_text: $100
+        token_4_text_text: $100
+        _major_fill: ${colour/wikipedia/amber_sae_ece}
+        _minor_fill: ${colour/x11/white}
+        _related_fill: ${colour/wikipedia/pink_orange}
+      token:
+        _:
+          inner_circle_fill: ${_/_major_fill}
+          inner_circle_radius: 9
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: $[index_of (7)]
+
+    ATN:
+      _:
+        long_name_text_text: |
+            Alabama, Tennessee
+            & Northern Railroad
+        short_name_text_text: ATN
+        token_1_text_text: A6
+        token_3_text_text: $100
+        _major_fill: ${colour/xxp/BLACK}
+        _minor_fill: ${colour/xxp/WHITE}
+        _related_fill: ${colour/x11/gray43}
+        _share_pct_text_fill_x: ${colour/xxp/WHITE}
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: "$[index_of (6)]"
+
+    ABC:
+      _:
+        long_name_text_text: |
+             Atlanta, Birmingham
+             & Coast Railroad
+        short_name_text_text: ABC
+        token_1_text_text: F7
+        _major_fill: ${colour/xxp/D_GREEN}
+        _minor_fill: ${colour/xxp/D_GREEN}
+        _related_fill: ${colour/hollasch/cinnabar_green}
+        name_stripe_box_suppress: True
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 10
+          short_name_text_x_inset: 0
+          #short_name_text_y_inset: -2
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of (5)]
+
+marker:
+  index:
+    round:
+      token:
+        ELEMENTS:
+          - token_interior_box
+          - outer_circle
+          - middle_circle
+          - inner_circle
+
+        index: $[index_of (1)]
+      outer_circle:
+        fill: ${colour/galatolol/yellow}
+      middle_circle:
+        fill: ${colour/galatolol/green}
+      inner_circle:
+        fill: ${colour/galatolol/brown}
+
+private:
+  _:
+    long_name_text_size: 11
+    money_bar_box_y: 13
+    closes_text_size: 8
+    closes_text_text: "Closed by 5"
+    power_text_size: 8
+    revenue_text_x: 168
+    asset_interior_box_fill: ${colour/scale/yellow_0}
+
+  index:
+
+    TR:
+      _:
+        long_name_text_text: |
+            Tuscumbia Railway
+        power_text_text: ""
+        cost_text_text: "Cost: $20"
+        revenue_text_text: "Revenue: $5"
+
+    SNAR:
+      _:
+        long_name_text_text: |
+            South & North Alabama
+            Railroad
+        power_text_text: |
+            Owning company may place a +10 marker in
+            Gadsden, Anniston, Oxmoor, Birmingham or
+            Tuscaloosa if it can reach that city by train.
+            For that company only, that city is worth 10 more.
+            The marker is removed in Phase 6.
+        cost_text_text: "Cost: $40"
+        revenue_text_text: "Revenue: $10"
+
+    BSLC:
+      _:
+        long_name_text_text: |
+            Brown & Sons Lumber Co.
+        power_text_text: |
+            Owning company may lay the #445 tile
+            in a swamp hex.
+            Doesn't have to be connected,
+            doesn't count as track action.
+            That tile cannot be upgraded.
+        cost_text_text: "Cost: $70"
+        revenue_text_text: "Revenue: $15"
+
+    C&A:
+      _:
+        long_name_text_text: |
+            Memphis & Charleston
+            Railroad
+        power_text_text: |
+            Owning company gets the +20 and +40 markers.
+            Each OR they may be assigned to its trains.
+            +20 if route includes Atlanta and Birmingham.
+            +40 if route includes Nashville and Mobile.
+            If the presidency changes, the markers are removed.
+        cost_text_text: "Cost: $100"
+        revenue_text_text: "Revenue: $20"
+
+    NDY:
+      _:
+        closes_text_text: "Closed by 5 or when the ability used"
+        closes_text_x_inset: -1
+        long_name_text_text: |
+            New Decatur Yards
+        power_text_text: |
+            Owning company may purchase one new train
+            with a discount of 50%.
+        cost_text_text: "Cost: $120"
+        revenue_text_text: "Revenue: $20"
+
+train:
+  index:
+    2T:
+      _:
+        asset_interior_box_fill_p: YELLOW
+        rust_bar_box_fill_p: BLUE
+        rusted_text_text: Rusted by 4
+        long_name_text_text: "2"
+        cost_text_text_p: $80
+      model:
+        index: $[index_of (5)]
+
+    3T:
+      _:
+        asset_interior_box_fill_p: GREEN
+        rust_bar_box_fill_p: RED
+        rusted_text_text: Rusted by 6
+        long_name_text_text: "3"
+        cost_text_text_p: $180
+      model:
+        index: $[index_of (4)]
+
+    4T:
+      _:
+        asset_interior_box_fill_p: BLUE
+        rust_bar_box_fill_p: GRAY
+        rusted_text_text: Obsoleted by 7
+        long_name_text_text: "4"
+        cost_text_text_p: $300
+      model:
+        index: $[index_of (3)]
+
+    5T:
+      _:
+        asset_interior_box_fill_p: BROWN
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "5"
+        cost_text_text_p: $450
+        rusted_text_text: Permanent
+      model:
+        index: $[index_of (2)]
+
+    6T:
+      _:
+        asset_interior_box_fill_p: RED
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "6"
+        cost_text_text_p: $630
+        rusted_text_text: Permanent
+      model:
+        index: $[index_of (1)]
+
+    7T:
+      _:
+        asset_interior_box_fill_p: GRAY
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "7"
+        cost_text_text_p: $700
+        rusted_text_text: Permanent
+      model:
+        index: $[index_of (1)]
+
+    z4D:
+      _:
+        asset_interior_box_fill_p: PURPLE
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "4D"
+        long_name_text_size: 65
+        cost_text_text_p: $800
+        rusted_text_text: Permanent
+      model:
+        index: $[index_of (8)]

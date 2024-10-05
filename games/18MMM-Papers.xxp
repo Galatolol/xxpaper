@@ -37,7 +37,7 @@ company:
       loan_2_square_shape_fill: ${colour/wikipedia/wisteria}
       loan_2_text_text: "10 Share"
       loan_2_text_size: 6
-      loan_3_square_shape_suppress: False  
+      loan_3_square_shape_suppress: False
       loan_3_square_shape_fill: ${colour/wikipedia/wisteria}
       loan_3_text_text: "10 Share"
       loan_3_text_size: 6
@@ -75,7 +75,7 @@ company:
       share_desc_text_text: 1 Share
       share_desc_text_x: 55
       share_num_text_text: 20/10%
-      share_pct_text_text: 
+      share_pct_text_text:
       side_bar_lsplit_box_suppress: True
       side_bar_rsplit_box_suppress: True
       comment_text_size: 12
@@ -135,7 +135,7 @@ company:
       token:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
-        index: $[index_of (10)]        
+        index: $[index_of (10)]
 
     RP:
       _:
@@ -155,7 +155,7 @@ company:
           short_name_text_y_inset: -1
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (10)]        
+        index: $[index_of (10)]
 
     MH:
       _:
@@ -195,7 +195,7 @@ company:
           short_name_text_y_inset: -1
         ELEMENTS: ${TEMPLATE_solid/.}
         EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
-        index: $[index_of (10)]        
+        index: $[index_of (10)]
 
     TR:
       _:
@@ -204,7 +204,7 @@ company:
           Railway
         short_name_text_text: TR
         _major_fill: ${colour/wikipedia/amber_sae_ece}
-        _minor_fill: ${colour/x11/white}        
+        _minor_fill: ${colour/x11/white}
         _related_fill: ${colour/wikipedia/pink_orange}
       token:
         _:
@@ -288,7 +288,7 @@ company:
         _related_fill: ${colour/x11/antiquewhite}
       token:
         index: $[index_of (10)]
-  
+
     TE:
       _:
         long_name_text_text: |
@@ -308,7 +308,7 @@ company:
           short_name_text_x_inset: 0
           short_name_text_y_inset: -1
         index: $[index_of (10)]
-  
+
     SF:
       _:
         long_name_text_text: |
@@ -325,7 +325,7 @@ company:
         ELEMENTS: ${TEMPLATE_bullseye/.}
         EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
         index: $[index_of (10)]
-  
+
     NC:
       _:
         long_name_text_text: |
@@ -339,7 +339,7 @@ company:
         ELEMENTS: ${TEMPLATE_cross/.}
         EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
         index: $[index_of (10)]
-  
+
     BT:
       _:
         long_name_text_text: |
@@ -395,17 +395,28 @@ private:
         money_bar_box_suppress: true
         cost_text_text: ""
         revenue_text_text: ""
-      model:
-        index: $[index_of (2)]
+
+    coalContract_b:
+      _:
+        long_name_text_text: |
+            Coal Contract
+        value_text_text: "$30"
+        power_text_text: |
+            One of owning company's trains
+            may haul coal (+$10 per coal marker).
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
 
     trader:
       _:
         long_name_text_text: |
             Trader
-        value_text_text: "$60"
+        value_text_text: "$40"
         power_text_text: |
-            Owning company may buy trains from
-            other companies before running trains.
+            Owning company may close this
+            to buy a single train from another company
+            before running trains.
         money_bar_box_suppress: true
         cost_text_text: ""
         revenue_text_text: ""
@@ -418,7 +429,21 @@ private:
             Export Permit
         value_text_text: "$40"
         power_text_text: |
-            One of owning company's trains 
+            One of owning company's trains
+            may run into offboards.
+        money_bar_box_suppress: true
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (2)]
+
+    exportPermit_b:
+      _:
+        long_name_text_text: |
+            Export Permit
+        value_text_text: "$40"
+        power_text_text: |
+            One of owning company's trains
             may run into offboards.
         money_bar_box_suppress: true
         cost_text_text: ""
@@ -433,7 +458,7 @@ private:
         value_text_text: "$50"
         power_text_text: |
             Owning company may directly lay city
-            and plain tracks of current colour. 
+            and plain tracks of current colour.
             May upgrade plain tracks
             to one colour higher.
         cost_text_text: ""
@@ -509,12 +534,12 @@ private:
         power_text_text: |
             Owning company buys trains 10%
             cheaper. Owning company may close this
-            to buy a train (still 10% cheaper) 
+            to buy a train (still 10% cheaper)
             before running trains.
 
             Closes when first 4D train is purchased.
         cost_text_text: ""
-        revenue_text_text: "Revenue $20 if owned by player"
+        revenue_text_text: "Revenue $10 if owned by player"
       model:
         index: $[index_of (1)]
 
@@ -525,9 +550,9 @@ private:
         value_text_text: "$100"
         power_text_text: |
             Owning company may place additional
-            stations for $100 each.
+            stations (past its current limit) for $100 each.
         cost_text_text: ""
-        revenue_text_text: "Revenue $25 if owned by player"
+        revenue_text_text: "Revenue $30 if owned by player"
       model:
         index: $[index_of (1)]
 
@@ -537,12 +562,12 @@ private:
             Refurbished Engine
         value_text_text: "$100"
         power_text_text: |
-            Owning company may close this
-            to buy a rusted train, paying its full price.
+            Owning company may close this to
+            buy a rusted train, paying its maximum price,
+            even before running trains.
             The train becomes permanent, counts against
             train limit and may not be traded.
-            The train doesn't fullfill train requirement
-            for the company.
+            The company still has to own another train.
         money_bar_box_suppress: false
         cost_text_text: ""
         revenue_text_text: "Revenue $10 if owned by player"
@@ -553,7 +578,7 @@ private:
       _:
         long_name_text_text: |
             Bridges and Tunnels Company
-        value_text_text: "$50"
+        value_text_text: "$60"
         power_text_text: |
             Owning company gains $25 after laying
             a yellow tile on a hex with terrain cost.
@@ -669,8 +694,8 @@ private:
         cost_text_text: ""
         revenue_text_text: ""
       model:
-        index: $[index_of (1)]    
-    
+        index: $[index_of (1)]
+
     conc02:
       _:
         long_name_text_text: |
@@ -683,8 +708,8 @@ private:
         cost_text_text: ""
         revenue_text_text: ""
       model:
-        index: $[index_of (1)]    
-    
+        index: $[index_of (1)]
+
     conc03:
       _:
         long_name_text_text: |
@@ -697,8 +722,8 @@ private:
         cost_text_text: ""
         revenue_text_text: ""
       model:
-        index: $[index_of (1)]    
-    
+        index: $[index_of (1)]
+
     conc04:
       _:
         long_name_text_text: |
@@ -711,8 +736,8 @@ private:
         cost_text_text: ""
         revenue_text_text: ""
       model:
-        index: $[index_of (1)]    
-    
+        index: $[index_of (1)]
+
     conc05:
       _:
         long_name_text_text: |
@@ -725,8 +750,8 @@ private:
         cost_text_text: ""
         revenue_text_text: ""
       model:
-        index: $[index_of (1)]    
-    
+        index: $[index_of (1)]
+
     conc06:
       _:
         long_name_text_text: |
@@ -740,7 +765,7 @@ private:
         revenue_text_text: ""
       model:
         index: $[index_of (1)]
-        
+
     conc07:
       _:
         long_name_text_text: |
@@ -754,7 +779,7 @@ private:
         revenue_text_text: ""
       model:
         index: $[index_of (1)]
-        
+
     conc08:
       _:
         long_name_text_text: |
@@ -768,7 +793,7 @@ private:
         revenue_text_text: ""
       model:
         index: $[index_of (1)]
-        
+
     conc09:
       _:
         long_name_text_text: |
@@ -782,7 +807,7 @@ private:
         revenue_text_text: ""
       model:
         index: $[index_of (1)]
-    
+
     conc10:
       _:
         long_name_text_text: |
@@ -796,7 +821,7 @@ private:
         revenue_text_text: ""
       model:
         index: $[index_of (1)]
-    
+
     conc11:
       _:
         long_name_text_text: |
@@ -810,7 +835,7 @@ private:
         revenue_text_text: ""
       model:
         index: $[index_of (1)]
-    
+
     conc12:
       _:
         long_name_text_text: |
@@ -823,8 +848,8 @@ private:
         cost_text_text: ""
         revenue_text_text: ""
       model:
-        index: $[index_of (1)]    
-    
+        index: $[index_of (1)]
+
     conc13:
       _:
         long_name_text_text: |
@@ -837,8 +862,8 @@ private:
         cost_text_text: ""
         revenue_text_text: ""
       model:
-        index: $[index_of (1)]    
-    
+        index: $[index_of (1)]
+
     conc14:
       _:
         long_name_text_text: |
@@ -851,8 +876,8 @@ private:
         cost_text_text: ""
         revenue_text_text: ""
       model:
-        index: $[index_of (1)]    
-    
+        index: $[index_of (1)]
+
     conc15:
       _:
         long_name_text_text: |
@@ -865,8 +890,8 @@ private:
         cost_text_text: ""
         revenue_text_text: ""
       model:
-        index: $[index_of (1)]    
-    
+        index: $[index_of (1)]
+
     conc16:
       _:
         long_name_text_text: |
@@ -879,8 +904,8 @@ private:
         cost_text_text: ""
         revenue_text_text: ""
       model:
-        index: $[index_of (1)]    
-    
+        index: $[index_of (1)]
+
     conc17:
       _:
         long_name_text_text: |
@@ -893,8 +918,8 @@ private:
         cost_text_text: ""
         revenue_text_text: ""
       model:
-        index: $[index_of (1)]    
-    
+        index: $[index_of (1)]
+
     conc18:
       _:
         long_name_text_text: |
@@ -908,7 +933,7 @@ private:
         revenue_text_text: ""
       model:
         index: $[index_of (1)]
-        
+
     conc19:
       _:
         long_name_text_text: |
@@ -921,8 +946,8 @@ private:
         cost_text_text: ""
         revenue_text_text: ""
       model:
-        index: $[index_of (1)]    
-    
+        index: $[index_of (1)]
+
     conc20:
       _:
         long_name_text_text: |
@@ -935,7 +960,7 @@ private:
         cost_text_text: ""
         revenue_text_text: ""
       model:
-        index: $[index_of (1)]    
+        index: $[index_of (1)]
 
 
 train:
@@ -1109,7 +1134,7 @@ train:
             May run into offboards
       model:
         index: $[index_of (2)]
-          
+
     3A:
       _:
         asset_interior_box_fill_p: GREEN
@@ -1254,7 +1279,7 @@ train:
         note_text_text: Acts as F or P train
       model:
         index: $[index_of (6)]
-          
+
     4D:
       _:
         asset_interior_box_fill_p: RED
@@ -1278,14 +1303,14 @@ train:
             Cost:
             $1100
         rusted_text_text: Permanent
-        note_text_text: Acts as F or P train        
+        note_text_text: Acts as F or P train
       model:
         index: $[index_of (12)]
 
 marker:
   _:
     short_name_text_size: 8
-    
+
   index:
 
     round:
@@ -1302,7 +1327,7 @@ marker:
       middle_circle:
         fill: ${colour/galatolol/green}
       inner_circle:
-        fill: ${colour/galatolol/brown}    
+        fill: ${colour/galatolol/brown}
 
     round1:
       token:
@@ -1367,79 +1392,79 @@ marker:
       _:
         short_name_text_text: ET
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     bt:
       _:
         short_name_text_text: BT
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     gnr:
       _:
         short_name_text_text: GNR
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     gv:
       _:
         short_name_text_text: GV
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     hf:
       _:
         short_name_text_text: HF
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     ll:
       _:
         short_name_text_text: LL
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     mh:
       _:
         short_name_text_text: MH
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     nc:
       _:
         short_name_text_text: NC
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     rd:
       _:
         short_name_text_text: RD
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     rrr:
       _:
         short_name_text_text: RRR
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     sf:
       _:
         short_name_text_text: SF
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     te:
       _:
         short_name_text_text: TE
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     tr:
       _:
         short_name_text_text: TR
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     ur:
       _:
         short_name_text_text: UR
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     wr:
       _:
         short_name_text_text: WR
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
     rp:
       _:
         short_name_text_text: RP
       token:
-        index: "$[index_of (1)]"    
+        index: "$[index_of (1)]"
